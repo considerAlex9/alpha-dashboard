@@ -43,4 +43,8 @@ jobs:
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
           git add data index.html dashboard.html
           git diff --cached --quiet || git commit -m "data: $(TZ=Asia/Seoul date +'%F %H:%M') KST"
-          git push
+          # 실행 중에 코드가 새로 올라왔으면 먼저 합친 뒤 저장 (데이터 파일은 방금 받은 값을 우선)
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase -X theirs origin main
+          done
