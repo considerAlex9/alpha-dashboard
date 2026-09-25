@@ -22,11 +22,11 @@ def load_env():
     env = {}
     f = ROOT / ".env"
     if f.exists():
-        for line in f.read_text(encoding="utf-8").splitlines():
+        for line in f.read_text(encoding="utf-8-sig").splitlines():
             if "=" in line and not line.lstrip().startswith("#"):
                 k, v = line.split("=", 1)
                 env[k.strip()] = v.strip()
-    env.update({k: v for k, v in os.environ.items() if k in ("ALPHA_API_KEY", "COMPETITION_ID")})
+    env.update({k: v for k, v in os.environ.items() if k in ("ALPHA_API_KEY", "COMPETITION_ID", "KIS_APP_KEY", "KIS_APP_SECRET") and v})
     return env
 
 
@@ -106,14 +106,16 @@ def main():
     # 4) 시장 데이터 — 실패해도 포트폴리오 수집 결과는 그대로 둔다
     try:
         import market
-        mk = market.collect(portfolio["positions"])
+        mk = market.collect(portfolio["positions"], (env.get("KIS_APP_KEY"), env.get("KIS_APP_SECRET")))
         write_json(DATA / "market.json", mk)
         # 투자자별 순매수는 네이버가 당일 1건만 주므로 영업일별로 누적
         fl_p = DATA / "flows_history.json"
         fl = {f["bizdate"]: f for f in read_json(fl_p, [])}
-        if "KOSPI" in mk["flows"]:
+        for d in mk.get("flows_days", []):          # 한국투자증권: 최근 영업일 여러 날
+            fl[d["bizdate"]] = d
+        if "KOSPI" in mk["flows"]:                   # 네이버 예비: 당일 1건
             b = mk["flows"]["KOSPI"]["bizdate"]
-            fl[b] = {"bizdate": b, **{k: {x: v[x] for x in ("개인", "외국인", "기관")} for k, v in mk["flows"].items()}}
+            fl.setdefault(b, {"bizdate": b, **{k: {x: v[x] for x in ("개인", "외국인", "기관")} for k, v in mk["flows"].items()}})
         write_json(fl_p, sorted(fl.values(), key=lambda f: f["bizdate"]))
     except Exception as e:  # noqa: BLE001
         print(f"  [경고] 시장 데이터 수집 실패: {e}")

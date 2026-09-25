@@ -27,6 +27,8 @@ jobs:
       - name: 수집 + 빌드
         env:
           ALPHA_API_KEY: ${{ secrets.ALPHA_API_KEY }}
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           COMPETITION_ID: "9"
         run: |
           python collect.py

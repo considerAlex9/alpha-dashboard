@@ -1,7 +1,7 @@
-"""시장 데이터 수집 (키 없이 쓰는 공개 시세).
+"""시장 데이터 수집.
 
-- 국내 지수·종목 일봉: 네이버 fchart
-- 투자자별 매매동향: 네이버 모바일 증권
+- 국내 지수·종목 일봉, 투자자별 매매동향, 공매도: 한국투자증권 오픈 API (키가 있을 때, 기본)
+  → 한국투자증권 호출이 실패하거나 키가 없으면 네이버 증권으로 대신 받는다
 - 해외 지수·금리·환율·원자재: 야후 파이낸스 chart API
 
 한 곳이 실패해도 나머지는 계속 모으고, 포트폴리오 수집(collect.py)은 절대 막지 않는다.
@@ -15,7 +15,8 @@ from datetime import datetime, timezone, timedelta
 KST = timezone(timedelta(hours=9))
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
-DOMESTIC = [("KOSPI", "코스피"), ("KOSDAQ", "코스닥"), ("KPI200", "코스피200")]
+# (네이버 심볼, 이름, 한국투자증권 업종코드)
+DOMESTIC = [("KOSPI", "코스피", "0001"), ("KOSDAQ", "코스닥", "1001"), ("KPI200", "코스피200", "2001")]
 
 # (야후 심볼, 이름, 묶음, 단위 표기)
 GLOBAL = [
@@ -117,9 +118,35 @@ def yahoo(symbol):
     return series, d["meta"].get("regularMarketPrice")
 
 
-def collect(positions, log=print):
+def _kis_flows(kis, log):
+    """시장별 투자자 순매수 — 최근 영업일 여러 날을 한 번에 받는다 (억원)"""
+    today = datetime.now(KST).strftime("%Y%m%d")
+    days = {}
+    for mk, key in (("KSP", "KOSPI"), ("KSQ", "KOSDAQ")):
+        for r in kis.market_investor(mk, today):
+            b = r["stck_bsop_date"]
+            days.setdefault(b, {"bizdate": b})[key] = {
+                "개인": round(_num(r["prsn_ntby_tr_pbmn"]) / 100), "외국인": round(_num(r["frgn_ntby_tr_pbmn"]) / 100),
+                "기관": round(_num(r["orgn_ntby_tr_pbmn"]) / 100)}
+    return [days[b] for b in sorted(days) if "KOSPI" in days[b]]
+
+
+def _kis_stock_extra(kis, code):
+    """종목별 외국인·기관 5일 순매수(원)와 공매도 거래 비중"""
+    inv = [r for r in kis.stock_investor(code) if r.get("frgn_ntby_tr_pbmn") not in (None, "")][:5]
+    sh = kis.short_sale(code)[:5]
+    ratios = [_num(r["ssts_vol_rlim"]) for r in sh]
+    return {"foreign": sum(_num(r["frgn_ntby_tr_pbmn"]) for r in inv) * 1e6,
+            "organ": sum(_num(r["orgn_ntby_tr_pbmn"]) for r in inv) * 1e6,
+            "short_ratio1": ratios[0] / 100 if ratios else None,
+            "short_ratio5": sum(ratios) / len(ratios) / 100 if ratios else None,
+            "short_amt5": sum(_num(r["ssts_tr_pbmn"]) for r in sh)}
+
+
+def collect(positions, kis_keys=None, log=print):
     now = datetime.now(KST)
-    out = {"captured_at": now.isoformat(), "domestic": [], "flows": {}, "global": [], "holdings": [], "errors": []}
+    out = {"captured_at": now.isoformat(), "source": "네이버 증권", "domestic": [], "flows": {}, "flows_days": [],
+           "global": [], "holdings": [], "errors": []}
 
     def safe(label, fn):
         try:
@@ -128,19 +155,42 @@ def collect(positions, log=print):
             out["errors"].append(f"{label}: {type(e).__name__} {e}"[:200])
             return None
 
+    kis = None
+    if kis_keys and all(kis_keys):
+        import kis as kis_mod
+        kis = safe("한국투자증권 인증", lambda: kis_mod.KIS(*kis_keys))
+        if kis:
+            out["source"] = "한국투자증권"
+
+    def bars_of(sym_naver, kis_fn):
+        """한국투자증권 우선, 실패하면 네이버"""
+        if kis:
+            b = safe(f"한투 일봉 {sym_naver}", kis_fn)
+            if b:
+                return b
+        return safe(f"네이버 일봉 {sym_naver}", lambda: daily_bars(sym_naver))
+
     # 국내 지수
     idx = {}
-    for sym, name in DOMESTIC:
-        bars = safe(f"지수 {name}", lambda s=sym: daily_bars(s))
+    for sym, name, up in DOMESTIC:
+        bars = bars_of(sym, lambda u=up: kis.index_daily(u))
         if bars:
             idx[sym] = bars
             out["domestic"].append({"symbol": sym, "name": name, "bars": [b[:5] for b in bars],
                                     "chg1": _chg(bars, 1), "chg5": _chg(bars, 5), "chg20": _chg(bars, 20),
                                     "chg60": _chg(bars, 60)})
-    for sym in ("KOSPI", "KOSDAQ"):
-        f = safe(f"수급 {sym}", lambda s=sym: flows(s))
-        if f:
-            out["flows"][sym] = f
+
+    # 투자자별 순매수
+    days = safe("한투 시장 수급", lambda: _kis_flows(kis, log)) if kis else None
+    if days:
+        out["flows_days"] = days[-20:]
+        last = days[-1]
+        out["flows"] = {k: {"bizdate": last["bizdate"], **last[k]} for k in ("KOSPI", "KOSDAQ") if k in last}
+    else:
+        for sym in ("KOSPI", "KOSDAQ"):
+            f = safe(f"네이버 수급 {sym}", lambda s=sym: flows(s))
+            if f:
+                out["flows"][sym] = f
 
     # 해외
     for sym, name, group, unit in GLOBAL:
@@ -159,10 +209,10 @@ def collect(positions, log=print):
     kospi = idx.get("KOSPI")
     for p in positions:
         code = p["company_symbol"]
-        bars = safe(f"일봉 {code}", lambda c=code: daily_bars(c))
-        fl = safe(f"수급 {code}", lambda c=code: stock_flows(c)) or {}
+        bars = bars_of(code, lambda c=code: kis.stock_daily(c))
+        extra = (safe(f"한투 수급·공매도 {code}", lambda c=code: _kis_stock_extra(kis, c)) if kis else None)             or safe(f"네이버 수급 {code}", lambda c=code: stock_flows(c)) or {}
         row = {"symbol": code, "name": p.get("company_alias") or p["company_name"], "side": p["side"],
-               "weight": p["weight_pct"], "market_value": p["market_value"], **fl}
+               "weight": p["weight_pct"], "market_value": p["market_value"], **extra}
         if bars:
             closes = [b[4] for b in bars]
             ma20 = sum(closes[-20:]) / min(20, len(closes))
@@ -173,9 +223,11 @@ def collect(positions, log=print):
                         "beta60": beta(bars, kospi, 60) if kospi else None,
                         "beta252": beta(bars, kospi, 252) if kospi else None})
         out["holdings"].append(row)
-        time.sleep(0.1)
+        if not kis:
+            time.sleep(0.1)
 
     if out["errors"]:
         log(f"  시장 데이터 일부 실패 {len(out['errors'])}건: {out['errors'][:3]}")
-    log(f"  시장 데이터: 국내 {len(out['domestic'])} · 해외 {len(out['global'])} · 보유종목 {len(out['holdings'])}")
+    log(f"  시장 데이터({out['source']}): 국내 {len(out['domestic'])} · 해외 {len(out['global'])} · "
+        f"보유종목 {len(out['holdings'])} · 수급 {len(out['flows_days'])}일")
     return out

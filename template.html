@@ -246,7 +246,7 @@ footer{margin-top:24px;color:var(--muted);font-size:12px;line-height:1.7}
     </section>
 
     <section class="card mt">
-      <div class="card-h"><div><h2>수급 기록</h2><div class="sub">코스피 투자자별 순매수(억원) · 수집된 영업일만 표시</div></div></div>
+      <div class="card-h"><div><h2>수급 기록</h2><div class="sub">투자자별 순매수(억원) · 최근 20영업일</div></div></div>
       <div class="tbl-wrap"><table id="flowhist"></table></div>
     </section>
   </div>
@@ -306,7 +306,7 @@ footer{margin-top:24px;color:var(--muted);font-size:12px;line-height:1.7}
   </div>
 
   <footer>
-    데이터: Alpha Lenz 대회 API(포트폴리오·주문·리더보드·섹터 동향), 네이버 증권(국내 지수·종목 일봉·투자자별 매매), 야후 파이낸스(해외 지표).
+    데이터: Alpha Lenz 대회 API(포트폴리오·주문·리더보드·섹터 동향), 한국투자증권 오픈 API(국내 지수·종목 일봉·투자자별 매매·공매도, 실패 시 네이버 증권으로 대체), 야후 파이낸스(해외 지표).
     히스토리는 API가 주지 않아 자동 업데이트 때마다 하루 한 점씩 저장합니다. 베타는 코스피 대비 일간 수익률 회귀값입니다.
     참고용 정보이며 투자 권유가 아닙니다.
   </footer>
@@ -580,7 +580,7 @@ function renderMarket(){
 
   // 투자자별 순매수
   const F=M.flows, fb=F.KOSPI?.bizdate;
-  document.getElementById('flowsub').textContent = fb?`${fb.slice(0,4)}.${fb.slice(4,6)}.${fb.slice(6)} 기준 · 단위 억원`:'데이터 없음';
+  document.getElementById('flowsub').textContent = fb?`${fb.slice(0,4)}.${fb.slice(4,6)}.${fb.slice(6)} 기준 · 단위 억원 · ${M.source}`:'데이터 없음';
   for(const [k,id] of [['KOSPI','flowkospi'],['KOSDAQ','flowkosdaq']]){
     const f=F[k]; if(!f){ document.getElementById(id).innerHTML='<div class="sub">데이터 없음</div>'; continue; }
     const rows=['개인','외국인','기관'].map(n=>({name:n, v:f[n]}));
@@ -596,9 +596,9 @@ function renderMarket(){
     pick.map(s=>M.global.find(g=>g.symbol===s)).filter(Boolean).map(g=>`<tr><td class="l">${g.name}</td><td>${gpx(g)}</td><td>${cpct(g.chg1)}</td><td>${cpct(g.chg20,1)}</td></tr>`).join('')+'</tbody>';
 
   // 수급 기록
-  const FH=[...(D.flows_history||[])].reverse();
+  const FH=[...(D.flows_history||[])].reverse().slice(0,20);
   document.getElementById('flowhist').innerHTML = FH.length
-    ? `<thead><tr><th class="l">영업일</th><th>개인</th><th>외국인</th><th>기관</th><th>코스닥 외국인</th><th>코스닥 기관</th></tr></thead><tbody>`+
+    ? `<thead><tr><th class="l">영업일</th><th>코스피 개인</th><th>코스피 외국인</th><th>코스피 기관</th><th>코스닥 외국인</th><th>코스닥 기관</th></tr></thead><tbody>`+
       FH.map(f=>`<tr><td class="l">${f.bizdate.slice(0,4)}.${f.bizdate.slice(4,6)}.${f.bizdate.slice(6)}</td>
         ${['개인','외국인','기관'].map(n=>`<td class="${dir(f.KOSPI?.[n])}">${f.KOSPI?eok(f.KOSPI[n]):'—'}</td>`).join('')}
         ${['외국인','기관'].map(n=>`<td class="${dir(f.KOSDAQ?.[n])}">${f.KOSDAQ?eok(f.KOSDAQ[n]):'—'}</td>`).join('')}</tr>`).join('')+'</tbody>'
@@ -660,10 +660,11 @@ const hCols=[
   {h:'52주 베타',v:r=>r.beta252,f:r=>r.beta252==null?'—':r.beta252.toFixed(2)},
   {h:'외국인 5일',v:r=>r.foreign,f:r=>r.foreign==null?'—':`<span class="${dir(r.foreign)}">${won(r.foreign,true)}</span>`},
   {h:'기관 5일',v:r=>r.organ,f:r=>r.organ==null?'—':`<span class="${dir(r.organ)}">${won(r.organ,true)}</span>`},
-  {h:'외국인 보유율',v:r=>r.foreign_hold,f:r=>r.foreign_hold==null?'—':r.foreign_hold.toFixed(1)+'%'},
+  {h:'공매도 비중',v:r=>r.short_ratio1,f:r=>r.short_ratio1==null?'—':pct(r.short_ratio1,1,false)},
+  {h:'공매도 5일 평균',v:r=>r.short_ratio5,f:r=>r.short_ratio5==null?'—':pct(r.short_ratio5,1,false)},
 ];
 const drawH=sortTable(document.getElementById('htable'), hCols, ()=>H.filter(r=>hState.f==='all'||r.side===hState.f), hState,
-  list=>document.getElementById('hsub').textContent=`${list.length}종목 · 네이버 증권 일봉 ${H[0]?.date||''} 기준 · 외국인·기관은 최근 5영업일 순매수 금액`);
+  list=>document.getElementById('hsub').textContent=`${list.length}종목 · ${M?.source||''} 일봉 ${H[0]?.date||''} 기준 · 외국인·기관은 최근 5영업일 순매수 금액 · 공매도 비중은 거래량 대비`);
 segFilter('hfilter', hState, drawH);
 
 function renderHoldings(){
@@ -686,6 +687,7 @@ function renderHoldings(){
     if(r.disparity20<=-.15) add('warn',`<b>${esc(r.name)}</b> (${r.side==='long'?'롱':'숏'}) 20일 이격도 ${pct(r.disparity20,1)} — 단기 침체`);
     if(r.side==='short'&&r.foreign>0&&r.organ>0&&r.chg5>0) add('info',`<b>${esc(r.name)}</b> (숏) 외국인·기관 동반 순매수 중`);
     if(r.side==='long'&&r.foreign<0&&r.organ<0&&r.chg5<0) add('info',`<b>${esc(r.name)}</b> (롱) 외국인·기관 동반 순매도 중`);
+    if(r.side==='long'&&r.short_ratio5>=.10) add('warn',`<b>${esc(r.name)}</b> (롱) 최근 5일 공매도 비중 ${pct(r.short_ratio5,1,false)} — 하락 베팅 증가`);
   });
   const IC={crit:['!','var(--up)'],warn:['!','var(--warn)'],info:['i','var(--muted)']};
   const order={crit:0,warn:1,info:2};
