@@ -5,275 +5,108 @@
    "name": "장마감 브리핑",
    "start": "2026-09-25T08:00:00+09:00",
    "end": "2026-09-25T16:00:00+09:00",
-   "created_at": "2026-09-25T23:29:42.556455+09:00",
-   "post_count": 31,
-   "topics": [
+   "created_at": "2026-09-25T23:40:45.472294+09:00",
+   "post_count": 20,
+   "metrics": [],
+   "cards": [],
+   "refs": [
     {
-     "title": "반도체·AI",
-     "items": [
-      {
-       "headline": "주식 시황. 금리, 유가 관련 대반전 뉴스 등장. 미국-이란 협상 관련 속보와 유가 반응. AI 문제 자극한 오라클 불가 항력. 해명 나왔다. 연휴 기간 우리 증시 움직임 추정치",
-       "sources": [],
-       "time": "2026-09-25T14:47:03+09:00",
-       "url": "https://t.me/shmstory/9024"
-      },
-      {
-       "headline": "2026년 9월 25일 미국 증시 프리마켓 브리핑",
-       "sources": [],
-       "time": "2026-09-25T14:15:22+09:00",
-       "url": "https://t.me/insidertracking/64622"
-      },
-      {
-       "headline": "AI 스타트업 앤트로픽이 올해 말 기업공개(IPO)를 추진하는 가운데, IPO 이후 다리오 아모데이 CEO를 포함한 공동창업자 7명이 회사의 주요 전략적 의사결정에 대한 의결권 50.1%를 통제할 수 있는 구조를 추진 중이라고 디인포메이션이 보도.",
-       "sources": [
-        "로이터"
-       ],
-       "time": "2026-09-25T14:08:53+09:00",
-       "url": "https://t.me/insidertracking/64620"
-      },
-      {
-       "headline": "골드만삭스) 커머스 환경의 에이전틱 AI 시대 진입 (2026.09.24, Americas Technology)  골드만삭스는 2022년 11월 ChatGPT 출시와 LLM 확산에 이어, 최근 10억 명 이상의 글로벌 소비자가 대화형 에이전틱 인터페이…",
-       "sources": [
-        "골드만삭스"
-       ],
-       "time": "2026-09-25T12:22:59+09:00",
-       "url": "https://t.me/aetherjapanresearch/25485"
-      },
-      {
-       "headline": "골드만삭스) 커머스 환경의 에이전틱 AI 시대 진입 (2026.09.24, Americas Technology)",
-       "sources": [
-        "골드만삭스"
-       ],
-       "time": "2026-09-25T12:22:27+09:00",
-       "url": "https://t.me/aetherjapanresearch/25484"
-      },
-      {
-       "headline": "JP모건은 비트코인이 이번 주 반등 과정에서 자체 추산 평균 생산비용인 약 8만5,000달러를 한때 돌파했으며, 이 수준을 유지할 경우 채굴업체의 현금흐름 압박과 비트코인 매도 부담이 완화될 것으로 분석.",
-       "sources": [
-        "JP모건"
-       ],
-       "time": "2026-09-25T12:07:46+09:00",
-       "url": "https://t.me/insidertracking/64610"
-      },
-      {
-       "headline": "옥스퍼드 이코노믹스는 미국 경기순환 지표가 경기침체 구간에 진입했다고 경고. 에너지 가격 상승이 가계 실질소득을 압박하고 이민 둔화가 고용의 추세적 성장을 약화시킨 것이 주요 원인으로 지목.",
-       "sources": [],
-       "time": "2026-09-25T12:07:38+09:00",
-       "url": "https://t.me/insidertracking/64609"
-      },
-      {
-       "headline": "Citi) 이비덴 (4062.T) 해외 투자자 대상 컨퍼런스 콜 주요 내용",
-       "sources": [
-        "씨티"
-       ],
-       "time": "2026-09-25T09:44:44+09:00",
-       "url": "https://t.me/aetherjapanresearch/25481"
-      },
-      {
-       "headline": "JP모건 APAC 테크주 코멘트",
-       "sources": [],
-       "time": "2026-09-25T09:37:52+09:00",
-       "url": "https://t.me/aetherjapanresearch/25480"
-      }
-     ],
+     "title": "Instinct #내생각",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T14:22:45+09:00"
+    },
+    {
+     "title": "일론 머스크 콜로서스 1은 H100 15만 개 H200 5만 개 GB200 3만 개 로 구성되어 있습니다. 콜로서스 2는 GB200 11만 개…",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T14:17:37+09:00"
+    },
+    {
+     "title": "콜로서스 1은",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T14:15:59+09:00"
+    },
+    {
+     "title": "UI/UX가 근본적으로 재편되어야 한다.",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T13:43:43+09:00"
+    },
+    {
+     "title": "1. 건설업 주가의 국내 바닥은 높아지고 해외 상단은 확대되는 구간. 국내 주택 원가율 정상화가 실적 안정성을 높이고, 해외 신규 사업이 추가…",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T12:38:56+09:00"
+    },
+    {
+     "title": "커머스 환경의 에이전틱 AI 시대 진입 (2026.09.24, Americas Technology) 골드만삭스는 2022년 11월…",
+     "topic": null,
      "sources": [
-      "골드만삭스",
-      "로이터",
-      "JP모건",
+      "골드만삭스"
+     ],
+     "time": "2026-09-25T12:22:59+09:00"
+    },
+    {
+     "title": "미국 대통령, 중국을 '동맹국'으로 이례적 언급 트럼프 미국 대통령은 24일, 중국의 시진핑 국가주석을 환영하는 식전에서 중국이 제2차 세계대전…",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T12:17:35+09:00"
+    },
+    {
+     "title": "[Starbucks가 북미 저성과 매장 약 250곳을 추가 폐점하고 2028년까지 20억달러 비용 절감을 추진하는 한편, 미국에서는 소형 매장…",
+     "topic": null,
+     "sources": [
+      "WSJ"
+     ],
+     "time": "2026-09-25T12:17:29+09:00"
+    },
+    {
+     "title": "AI 데이터센터 투자, 세제 혜택보다 전력·인프라가 핵심 입지 요인 » AI 관련 투자가 미국 경제 성장과 주식시장의 주요 동력으로 부상하는 가…",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-09-25T12:17:21+09:00"
+    },
+    {
+     "title": "골드만삭스는 현재 2030년 전 세계 데이터센터 용량이 217GW에 이를 것으로 전망(이는 기존 전망치 168GW에서 대폭 상향된 수치)",
+     "topic": "반도체·AI",
+     "sources": [
+      "골드만삭스"
+     ],
+     "time": "2026-09-25T11:19:03+09:00"
+    },
+    {
+     "title": "1. 우리는 계속해서 가속할 것입니다.",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T10:53:53+09:00"
+    },
+    {
+     "title": "2026년 이후 5대 하이퍼스케일러 Capex 전망치 상향 추이",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T10:31:51+09:00"
+    },
+    {
+     "title": "미국 하이퍼스케일러 AI 컴퓨트 구축 3단계 프레임워크",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T10:29:53+09:00"
+    },
+    {
+     "title": "미국 대통령, 중국을 '동맹국'으로 이례적 언급",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T10:00:46+09:00"
+    },
+    {
+     "title": "이비덴 (4062.T) 해외 투자자 대상 컨퍼런스 콜 주요 내용",
+     "topic": null,
+     "sources": [
       "씨티"
-     ]
-    },
-    {
-     "title": "미중·관세·무역",
-     "items": [
-      {
-       "headline": "미국 대통령, 중국을 '동맹국'으로 이례적 언급  트럼프 미국 대통령은 24일, 중국의 시진핑 국가주석을 환영하는 식전에서 중국이 제2차 세계대전 당시 미국의 '동맹국'이었다고 말했습니다. 미국 대통령이 중국 지도자 앞에서 미국과 중국을 '동맹국'으로…",
-       "sources": [],
-       "time": "2026-09-25T12:17:35+09:00",
-       "url": "https://t.me/aetherjapanresearch/25483"
-      },
-      {
-       "headline": "백악관이 공개한 트럼프 대통령·시진핑 중국 국가주석 국빈 만찬 참석자 명단.",
-       "sources": [],
-       "time": "2026-09-25T10:19:27+09:00",
-       "url": "https://t.me/insidertracking/64598"
-      },
-      {
-       "headline": "중국과 미국의 양국 국민 간의 우호는 큰 잠재력을 지닌 가치 있는 사업입니다. 우리 함께 손을 잡고 함께 나아가 봅시다.",
-       "sources": [],
-       "time": "2026-09-25T10:10:31+09:00",
-       "url": "https://t.me/insidertracking/64596"
-      },
-      {
-       "headline": "오늘 트럼프 대통령과 저는 진솔하고 심도 있는 의견 교환을 통해 많은 문제에 대해 공감대를 형성했습니다.",
-       "sources": [],
-       "time": "2026-09-25T10:09:27+09:00",
-       "url": "https://t.me/insidertracking/64595"
-      },
-      {
-       "headline": "트럼프 대통령과 영부인이 국빈 만찬을 위해 시진핑과 펑리위안 여사를 맞이함.",
-       "sources": [],
-       "time": "2026-09-25T10:01:51+09:00",
-       "url": "https://t.me/insidertracking/64593"
-      },
-      {
-       "headline": "미국 대통령, 중국을 '동맹국'으로 이례적 언급",
-       "sources": [],
-       "time": "2026-09-25T10:00:46+09:00",
-       "url": "https://t.me/aetherjapanresearch/25482"
-      }
      ],
-     "sources": []
-    },
-    {
-     "title": "중동·지정학",
-     "items": [
-      {
-       "headline": "글로벌 뉴스 브리핑 - 2026년 9월 25일",
-       "sources": [],
-       "time": "2026-09-25T14:10:34+09:00",
-       "url": "https://t.me/insidertracking/64621"
-      },
-      {
-       "headline": "러시아 최대 정유시설 중 하나인 페름 정유공장의 설비가 이날 오전 우크라이나의 대규모 드론 공격을 받은 뒤 거센 화염에 휩싸인 모습이 확인됨.",
-       "sources": [],
-       "time": "2026-09-25T13:01:27+09:00",
-       "url": "https://t.me/insidertracking/64615"
-      },
-      {
-       "headline": "뉴욕타임즈에 따르면 이란이 전쟁 종식을 위한 7일 계획을 중재국을 통해 미국 측에 제안.",
-       "sources": [
-        "뉴욕타임스"
-       ],
-       "time": "2026-09-25T10:21:25+09:00",
-       "url": "https://t.me/insidertracking/64599"
-      },
-      {
-       "headline": "에마뉘엘 마크롱 프랑스 대통령이 24일 사우디아라비아 서부 해안 얀부항의 석유 시설을 예멘 후티 반군의 공격으로부터 보호하기 위해 프랑스군을 파견할 계획이라고 밝힘.",
-       "sources": [],
-       "time": "2026-09-25T09:53:42+09:00",
-       "url": "https://t.me/insidertracking/64592"
-      }
-     ],
-     "sources": [
-      "뉴욕타임스"
-     ]
-    },
-    {
-     "title": "유가·원자재",
-     "items": [
-      {
-       "headline": "메타에 미쳐있고, 유가 모니터링중",
-       "sources": [],
-       "time": "2026-09-25T13:10:39+09:00",
-       "url": "https://t.me/insidertracking/64618"
-      },
-      {
-       "headline": "국제유가 하락폭이 2%까지 확대. WTI 원유는 장중 2.00% 하락한 배럴당 91.94달러, 브렌트유는 약 1.8% 하락한 배럴당 98.9달러 기록.",
-       "sources": [],
-       "time": "2026-09-25T11:18:37+09:00",
-       "url": "https://t.me/insidertracking/64603"
-      }
-     ],
-     "sources": []
-    },
-    {
-     "title": "환율·달러",
-     "items": [
-      {
-       "headline": "CNBC에 따르면 피트 헤그세스 미국 국방장관이 최근 공개된 2025년도 재산 신고에서 현금과 은퇴계좌 투자자산, 비트코인 등 최소 310만 달러를 신고.",
-       "sources": [
-        "CNBC"
-       ],
-       "time": "2026-09-25T13:01:54+09:00",
-       "url": "https://t.me/insidertracking/64616"
-      },
-      {
-       "headline": "코스트코(COST) Q4 FY2026 어닝콜 요약",
-       "sources": [],
-       "time": "2026-09-25T09:49:38+09:00",
-       "url": "https://t.me/insidertracking/64591"
-      }
-     ],
-     "sources": [
-      "CNBC"
-     ]
-    },
-    {
-     "title": "미국 금리·연준",
-     "items": [
-      {
-       "headline": "미국채 10년물 5.2%, 30년물 5.5% 근접",
-       "sources": [],
-       "time": "2026-09-25T13:04:14+09:00",
-       "url": "https://t.me/insidertracking/64617"
-      }
-     ],
-     "sources": []
-    },
-    {
-     "title": "일본·중국·아시아",
-     "items": [
-      {
-       "headline": "대만 국방부에 따르면 9월 24일 오전 6시부터 25일 오전 6시까지 대만 주변에서 중국 인민해방군 군용기 2대, 중국 해군 함정 6척, 공무선 5척의 활동을 탐지.",
-       "sources": [
-        "대만 국방부"
-       ],
-       "time": "2026-09-25T11:37:49+09:00",
-       "url": "https://t.me/insidertracking/64607"
-      }
-     ],
-     "sources": [
-      "대만 국방부"
-     ]
-    },
-    {
-     "title": "미국 증시",
-     "items": [
-      {
-       "headline": "미국 개인투자자협회(AAII) 투자심리 조사에서 9월 23일 기준 향후 6개월간 미국 증시 상승 전망은 32.7%로 장기 평균 37.5%를 하회.",
-       "sources": [],
-       "time": "2026-09-25T10:36:38+09:00",
-       "url": "https://t.me/insidertracking/64600"
-      }
-     ],
-     "sources": []
-    },
-    {
-     "title": "기타",
-     "items": [
-      {
-       "headline": "https://youtube.com/shorts/zGesLPcHUvo?feature=share",
-       "sources": [],
-       "time": "2026-09-25T15:36:31+09:00",
-       "url": "https://t.me/insidertracking/64626"
-      },
-      {
-       "headline": "\"올 초 베이징을 방문했을 때, 중국 국민들의 따뜻한 환대에 깊은 감명을 받았습니다. 오늘 밤, 저희는 여러분이 10년이 넘는 기간 만에 워싱턴으로 돌아오시는 것을 기념하며, 그만큼의 존경과 환대를 보여드리고 싶습니다.\"",
-       "sources": [],
-       "time": "2026-09-25T13:00:17+09:00",
-       "url": "https://t.me/insidertracking/64614"
-      },
-      {
-       "headline": "2026년 9월 25일 트럼프 대통령 일정",
-       "sources": [],
-       "time": "2026-09-25T11:29:50+09:00",
-       "url": "https://t.me/insidertracking/64604"
-      },
-      {
-       "headline": "트럼프 대통령이 연설 도중 “잠깐만 원고에서 벗어나도 된다면…”이라고 말하자 청중이 웃기 시작했으며, 이어 “제가 꼭 해야 했습니다!”라고 발언.",
-       "sources": [],
-       "time": "2026-09-25T10:14:08+09:00",
-       "url": "https://t.me/insidertracking/64597"
-      },
-      {
-       "headline": "질문: 60% 농축된 우라늄을 포기하시겠습니까?",
-       "sources": [],
-       "time": "2026-09-25T10:08:58+09:00",
-       "url": "https://t.me/insidertracking/64594"
-      }
-     ],
-     "sources": []
+     "time": "2026-09-25T09:44:44+09:00"
     }
    ],
    "errors": []
@@ -283,479 +116,200 @@
    "name": "장전 브리핑",
    "start": "2026-09-24T16:00:00+09:00",
    "end": "2026-09-25T08:00:00+09:00",
-   "created_at": "2026-09-25T23:29:42.556455+09:00",
-   "post_count": 63,
-   "topics": [
+   "created_at": "2026-09-25T23:40:45.472294+09:00",
+   "post_count": 33,
+   "metrics": [],
+   "cards": [
     {
-     "title": "반도체·AI",
-     "items": [
-      {
-       "headline": "2026년 9월 24일 서학개미 순매수 미국 주식 TOP 50",
-       "sources": [],
-       "time": "2026-09-25T06:01:07+09:00",
-       "url": "https://t.me/insidertracking/64580"
-      },
-      {
-       "headline": "2026년 9월 25일 미국 레딧 게시물 분석",
-       "sources": [],
-       "time": "2026-09-25T05:57:34+09:00",
-       "url": "https://t.me/insidertracking/64578"
-      },
-      {
-       "headline": "미국 기업 섹터별 소식 정리 (실적 제외)",
-       "sources": [],
-       "time": "2026-09-25T05:54:53+09:00",
-       "url": "https://t.me/insidertracking/64576"
-      },
-      {
-       "headline": "2026년 9월 25일 미국 증시 브리핑",
-       "sources": [],
-       "time": "2026-09-25T05:52:07+09:00",
-       "url": "https://t.me/insidertracking/64574"
-      },
-      {
-       "headline": "특징 종목: 메타 강세, AMD, 인텔도 상승 Vs. 오라클, 샌디스크 부진",
-       "sources": [
-        "JP모건",
-        "UBS"
-       ],
-       "time": "2026-09-25T05:43:12+09:00",
-       "url": "https://t.me/ehdwl/11135"
-      },
-      {
-       "headline": "09/24 미 증시, 오라클과 금리 급등에도 미-이란 불안 완화와 옵션 수급에 제한적인 하락",
-       "sources": [],
-       "time": "2026-09-25T05:42:14+09:00",
-       "url": "https://t.me/ehdwl/11134"
-      },
-      {
-       "headline": "9월 25일 시황. 미국, 이란 협상 소식+메타로 방어",
-       "sources": [
-        "로이터"
-       ],
-       "time": "2026-09-25T05:41:22+09:00",
-       "url": "https://t.me/shmstory/9022"
-      },
-      {
-       "headline": "블룸버그) 오라클, 논란의 데이터센터 관련 자사 보호를 위해 '불가항력' 조항 원용",
-       "sources": [
-        "블룸버그"
-       ],
-       "time": "2026-09-24T22:41:54+09:00",
-       "url": "https://t.me/aetherjapanresearch/25479"
-      },
-      {
-       "headline": "Engadget) OpenAI의 에이전트가 호주 정부 웹사이트를 해킹했습니다.",
-       "sources": [
-        "뉴욕타임스",
-        "가디언"
-       ],
-       "time": "2026-09-24T22:13:46+09:00",
-       "url": "https://t.me/aetherjapanresearch/25478"
-      },
-      {
-       "headline": "Google, OpenAI and Anthropic AI Safety Group Takes Shape - The Information|FJ",
-       "sources": [],
-       "time": "2026-09-24T22:04:10+09:00",
-       "url": "https://t.me/aetherjapanresearch/25477"
-      },
-      {
-       "headline": "Citi) 미국 주식 전략: 중간선거 전망 (2026년 9월 22일, 스콧 크로너트)",
-       "sources": [
-        "씨티"
-       ],
-       "time": "2026-09-24T22:03:34+09:00",
-       "url": "https://t.me/aetherjapanresearch/25474"
-      },
-      {
-       "headline": "Citi) 메타 (META.O); 메타 커넥트 '26: 메타 AI 비전의 중심에 선 뮤즈; 메타의 제품 로드맵 가속화",
-       "sources": [
-        "씨티"
-       ],
-       "time": "2026-09-24T20:16:14+09:00",
-       "url": "https://t.me/aetherjapanresearch/25470"
-      },
-      {
-       "headline": "JP모건) Arm 홀딩스; 2026년 U.S. 올스타 컨퍼런스 주요 내용",
-       "sources": [],
-       "time": "2026-09-24T18:26:56+09:00",
-       "url": "https://t.me/aetherjapanresearch/25465"
-      },
-      {
-       "headline": "JP모건 런던 테크 투자자 마케팅 후기 (Joshua Meyers)",
-       "sources": [],
-       "time": "2026-09-24T18:24:12+09:00",
-       "url": "https://t.me/aetherjapanresearch/25464"
-      },
-      {
-       "headline": "JP모건의 마이크론 바이사이드 설문 결과",
-       "sources": [
-        "JP모건"
-       ],
-       "time": "2026-09-24T18:22:43+09:00",
-       "url": "https://t.me/aetherjapanresearch/25463"
-      }
+     "title": "한국증시 관련 수치: 휴장",
+     "bullets": [
+      "FICC: 미국 천연가스 급등, 국제유가 변동성 확대 속 상승"
      ],
+     "numbers": [],
+     "topic": "유가·원자재",
+     "sources": [],
+     "time": "2026-09-25T05:43:58+09:00",
+     "rank": 1
+    },
+    {
+     "title": "09/24 미 증시, 오라클과 금리 급등에도 미-이란 불안 완화와 옵션 수급에 제한적인 하락",
+     "bullets": [
+      "변화요인: 국채 금리, 옵션의 힘, 오라클"
+     ],
+     "numbers": [],
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-09-25T05:42:14+09:00",
+     "rank": 1
+    },
+    {
+     "title": "Beth Hammack 클리블랜드 연은 총재",
+     "bullets": [
+      "물가 전망은 불확실성이 매우 크며 위험은 상방으로 기울어 있음",
+      "높은 물가가 오래 지속될수록 물가를 되돌리는 일이 더 어렵고 비용이 증가",
+      "미국은 생산이 견조한 속도로 늘고 노동시장은 본인이 정의하는 최대고용에 가깝지만 물가는 여전히 높은 수준",
+      "공급 충격이 현재 통화정책에 상당한 과제이며, 물가안정은 중앙은행의 책임",
+      "9월 FOMC에서 25bp 기준금리 인상을 지지."
+     ],
+     "numbers": [],
+     "topic": "경제지표",
+     "sources": [],
+     "time": "2026-09-25T06:07:25+09:00",
+     "rank": 2
+    },
+    {
+     "title": "특징 종목: 메타 강세, AMD, 인텔도 상승 Vs. 오라클, 샌디스크 부진",
+     "bullets": [
+      "메모리, 스토리지 반도체: 오라클 이슈에 하락 후 금리 영향 속 변화 확대",
+      "AI 반도체: 엔비디아, 브로드컴, 마벨 약세 Vs. AMD, 인텔 상대적 강세",
+      "데이터, AI서버: 에버퓨어, 실적 기대에 급등 Vs. 델, 오라클 여파로 부진",
+      "네오클라우드: 코어위브, 네비우스 컴퓨팅 수요 기대에 강세",
+      "자동차: 내연차량 판매 감소 소식에 하락"
+     ],
+     "numbers": [],
+     "topic": "반도체·AI",
      "sources": [
       "JP모건",
       "씨티",
-      "UBS",
-      "로이터",
-      "블룸버그",
-      "뉴욕타임스"
-     ]
+      "UBS"
+     ],
+     "time": "2026-09-25T05:43:12+09:00",
+     "rank": 2
     },
     {
-     "title": "중동·지정학",
-     "items": [
-      {
-       "headline": "마수드 페제시키안 이란 대통령은 “우리는 트럼프 대통령과 합의에 도달했습니다. 해당 합의는 서명됐으며, 이를 바탕으로 우리는 계속 앞으로 나아갈 의향이 있고 지금도 이를 희망하고 있습니다. 합의의 기본 틀도 이미 마련됐습니다”라고 밝힘.",
-       "sources": [],
-       "time": "2026-09-25T07:30:10+09:00",
-       "url": "https://t.me/insidertracking/64590"
-      },
-      {
-       "headline": "CNN에 따르면 이란이 호르무즈 해협 재개방과 미국과의 ‘최종 합의’를 위한 협상 재개를 골자로 한 새로운 제안을 미국 측에 전달했다는 보도.",
-       "sources": [
-        "CNN"
-       ],
-       "time": "2026-09-25T07:29:36+09:00",
-       "url": "https://t.me/insidertracking/64589"
-      },
-      {
-       "headline": "모닝 브리핑. 미 증시 밀리다 이 뉴스에 반전. 역대급 금리 상승 원인과 루머, 비하인드 총정리. 오라클 불가항력 커버한 메타 호재. 미국-이란 협상 속보. 한국 증시 지표와 전망",
-       "sources": [],
-       "time": "2026-09-25T06:37:17+09:00",
-       "url": "https://t.me/shmstory/9023"
-      },
-      {
-       "headline": "미 상원에서 트럼프 대통령의 이란 관련 전쟁 권한을 제한하는 결의안이 찬성 49표, 반대 50표로 부결.",
-       "sources": [],
-       "time": "2026-09-25T06:07:13+09:00",
-       "url": "https://t.me/insidertracking/64587"
-      },
-      {
-       "headline": "예멘 후티반군 사령부 성명 발표:",
-       "sources": [],
-       "time": "2026-09-25T06:04:47+09:00",
-       "url": "https://t.me/insidertracking/64583"
-      },
-      {
-       "headline": "이란 바레시항공의 테헤란발 타지키스탄 수도 두샨베행 여객기가 이란과 타지키스탄 사이 인접국들로부터 영공 통과를 거부당하면서 테헤란 이맘 호메이니 국제공항으로 회항.",
-       "sources": [],
-       "time": "2026-09-25T06:03:43+09:00",
-       "url": "https://t.me/insidertracking/64582"
-      },
-      {
-       "headline": "글로벌 뉴스 브리핑 - 2026년 9월 25일",
-       "sources": [],
-       "time": "2026-09-25T05:39:26+09:00",
-       "url": "https://t.me/insidertracking/64567"
-      },
-      {
-       "headline": "Speed matters, Facts matter more",
-       "sources": [],
-       "time": "2026-09-24T21:33:18+09:00",
-       "url": "https://t.me/insidertracking/64565"
-      },
-      {
-       "headline": "글로벌 뉴스 브리핑 - 2026년 9월 24일",
-       "sources": [],
-       "time": "2026-09-24T20:51:23+09:00",
-       "url": "https://t.me/insidertracking/64560"
-      },
-      {
-       "headline": "이란, 전쟁이 인도양까지 확대될 수 있다고 경고",
-       "sources": [
-        "Fars 통신"
-       ],
-       "time": "2026-09-24T18:50:15+09:00",
-       "url": "https://t.me/insidertracking/64546"
-      },
-      {
-       "headline": "베센트 재무장관 “이란, 1주~2개월 안에 백기 들 것”…정권 내분·민중봉기·협상 3개 시나리오 제시",
-       "sources": [],
-       "time": "2026-09-24T18:13:59+09:00",
-       "url": "https://t.me/insidertracking/64545"
-      }
+     "title": "John Williams 뉴욕 연은 총재",
+     "bullets": [
+      "연말까지 한 차례 더 기준금리 인상이 적절할 가능성이 크다고 보는 것이 합리적. 다만 지켜봐야 하며, 7~9월에 그랬듯 데이터를 모아 판단할 것",
+      "명시적이고 직접적인 포워드 가이던스의 시대는 종료",
+      "가장 큰 과제는 물가이며, 물가를 적시에 목표로 되돌려야 함",
+      "최대고용 달성의 하방위험은 감소",
+      "미국 경제는 놀라운 회복력을 보였고 수요는 모든 부문에서 상당히 견조."
      ],
-     "sources": [
-      "CNN",
-      "Fars 통신"
-     ]
+     "numbers": [],
+     "topic": "금리·연준",
+     "sources": [],
+     "time": "2026-09-24T19:01:50+09:00",
+     "rank": 2
     },
     {
-     "title": "미중·관세·무역",
-     "items": [
-      {
-       "headline": "뉴욕타임즈에 따르면 마크 카니 캐나다 총리는 캐나다 당국이 약 1년간 미국의 잠재적인 군사적 압박을 포함한 극단적인 시나리오 가능성을 분석해왔다고 밝힘.",
-       "sources": [
-        "뉴욕타임스"
-       ],
-       "time": "2026-09-25T06:06:02+09:00",
-       "url": "https://t.me/insidertracking/64585"
-      },
-      {
-       "headline": "CNN과 MSDNC의 시청률은 크게 떨어졌다. 가장 큰 이유는 신뢰성이 전혀 없기 때문이다!",
-       "sources": [
-        "CNN"
-       ],
-       "time": "2026-09-25T05:52:37+09:00",
-       "url": "https://t.me/insidertracking/64575"
-      },
-      {
-       "headline": "트럼프 & 시진핑 회담 관련 정리 - 2026년 9월 25일",
-       "sources": [],
-       "time": "2026-09-25T05:43:12+09:00",
-       "url": "https://t.me/insidertracking/64569"
-      },
-      {
-       "headline": "나머지 뉴스는 내일 아침에 전달드리겠습니다! 감사합니다",
-       "sources": [],
-       "time": "2026-09-24T21:33:57+09:00",
-       "url": "https://t.me/insidertracking/64566"
-      },
-      {
-       "headline": "어제 공항에서 시진핑 주석을 만났는데, 강인하고 활력이 넘치며 건강해 보였다. 그 어느 때보다 좋아 보였다.",
-       "sources": [],
-       "time": "2026-09-24T21:26:42+09:00",
-       "url": "https://t.me/insidertracking/64562"
-      },
-      {
-       "headline": "시진핑 중국 국가주석과 중요한 하루다. 초지능(SI)이 주요 논의 주제가 될 것이지만, 나는 이를 지금 상태 그대로 두고 싶다. 중국의 입장도 마찬가지다.",
-       "sources": [],
-       "time": "2026-09-24T20:30:08+09:00",
-       "url": "https://t.me/insidertracking/64558"
-      }
+     "title": "우주개발: 스페이스X, 내부자 매도, 대규모 보호예수 물량",
+     "bullets": [
+      "비만치료제 등: 일라이릴리, FDA 승인 소식에 상승",
+      "비트코인: 금리 이슈에 크게 하락 후 낙폭 일부 축소"
      ],
+     "numbers": [],
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-25T05:43:13+09:00",
+     "rank": 3
+    }
+   ],
+   "refs": [
+    {
+     "title": "오라클, 논란의 데이터센터 관련 자사 보호를 위해 '불가항력' 조항 원용",
+     "topic": "반도체·AI",
      "sources": [
+      "블룸버그"
+     ],
+     "time": "2026-09-24T22:41:54+09:00"
+    },
+    {
+     "title": "Marvell CEO: Marvell의 2년 매출 전망이 1년 만에 약 200억 달러에서 300억 달러로 증가",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-24T22:27:29+09:00"
+    },
+    {
+     "title": "OpenAI의 에이전트가 호주 정부 웹사이트를 해킹했습니다.",
+     "topic": null,
+     "sources": [
+      "Engadget",
       "뉴욕타임스",
-      "CNN"
-     ]
+      "가디언"
+     ],
+     "time": "2026-09-24T22:13:46+09:00"
     },
     {
-     "title": "환율·달러",
-     "items": [
-      {
-       "headline": "한국증시 관련 수치: 휴장",
-       "sources": [],
-       "time": "2026-09-25T05:43:58+09:00",
-       "url": "https://t.me/ehdwl/11137"
-      },
-      {
-       "headline": "우주개발: 스페이스X, 내부자 매도, 대규모 보호예수 물량",
-       "sources": [],
-       "time": "2026-09-25T05:43:13+09:00",
-       "url": "https://t.me/ehdwl/11136"
-      },
-      {
-       "headline": "JP모건) 코어위브 — 비중확대(OW)로 상향: 매출 및 마진 상승 여력을 이끄는 유리한 단기 계약이 추가 자본 소요를 압도하며 주가 상승 여건 조성. TP $125.",
-       "sources": [],
-       "time": "2026-09-24T20:39:32+09:00",
-       "url": "https://t.me/aetherjapanresearch/25472"
-      },
-      {
-       "headline": "로이터에 따르면 아마존이 2030년까지 인도 퀵커머스 사업에 30억 달러를 투자할 계획.",
-       "sources": [
-        "로이터"
-       ],
-       "time": "2026-09-24T19:01:26+09:00",
-       "url": "https://t.me/insidertracking/64550"
-      },
-      {
-       "headline": "모건스탠리와 뱅크오브아메리카가 메타의 Muse 확장 이후 각각 ‘비중확대’와 ‘매수’ 의견 유지.",
-       "sources": [
-        "모건스탠리",
-        "BofA"
-       ],
-       "time": "2026-09-24T18:50:34+09:00",
-       "url": "https://t.me/insidertracking/64547"
-      },
-      {
-       "headline": "JP모건) 메타 플랫폼스 — 메타 뮤즈(Muse)의 모멘텀 확대; 비중확대(Overweight) 의견 재확인 및 목표주가 920달러로 상향",
-       "sources": [],
-       "time": "2026-09-24T18:22:00+09:00",
-       "url": "https://t.me/aetherjapanresearch/25462"
-      }
-     ],
+     "title": "Google, OpenAI and Anthropic AI Safety Group Takes Shape - The Information|FJ",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-24T22:04:10+09:00"
+    },
+    {
+     "title": "미국 주식 전략: 중간선거 전망 (2026년 9월 22일, 스콧 크로너트)",
+     "topic": "지정학",
      "sources": [
-      "로이터",
-      "모건스탠리",
-      "BofA"
-     ]
+      "씨티"
+     ],
+     "time": "2026-09-24T22:03:34+09:00"
     },
     {
-     "title": "물가·경제지표",
-     "items": [
-      {
-       "headline": "금일 한국시간 (KST) 기준 경제지표 및 주요 일정",
-       "sources": [],
-       "time": "2026-09-25T06:02:25+09:00",
-       "url": "https://t.me/insidertracking/64581"
-      },
-      {
-       "headline": "트럼프 발언 및 미국 정치 정리 - 2026년 9월 25일 (미중회담 제외)",
-       "sources": [
-        "폴리티코",
-        "CNN"
-       ],
-       "time": "2026-09-25T05:40:44+09:00",
-       "url": "https://t.me/insidertracking/64568"
-      },
-      {
-       "headline": "미국 신규 실업수당청구건수",
-       "sources": [],
-       "time": "2026-09-24T21:31:06+09:00",
-       "url": "https://t.me/insidertracking/64564"
-      },
-      {
-       "headline": "'K자형' 양극화 경제는 전세계 공통 현상",
-       "sources": [],
-       "time": "2026-09-24T19:56:52+09:00",
-       "url": "https://t.me/aetherjapanresearch/25467"
-      },
-      {
-       "headline": "뉴욕 연은 총재 존 윌리엄스는 높은 에너지 가격과 인공지능 투자에 따른 강한 수요를 고려할 때 미국의 인플레이션을 낮추기 위해 여전히 상당한 작업이 필요하다고 강조.",
-       "sources": [],
-       "time": "2026-09-24T19:29:45+09:00",
-       "url": "https://t.me/insidertracking/64554"
-      }
-     ],
+     "title": "이건 대체 무슨 K-게임일까",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-24T22:02:10+09:00"
+    },
+    {
+     "title": "코어위브 — 비중확대로 상향: 매출 및 마진 상승 여력을 이끄는 유리한 단기 계약이 추가 자본 소요를 압도하며 주가 상승 여건 조성.…",
+     "topic": null,
      "sources": [
-      "폴리티코",
-      "CNN"
-     ]
+      "JP모건"
+     ],
+     "time": "2026-09-24T20:39:32+09:00"
     },
     {
-     "title": "미국 금리·연준",
-     "items": [
-      {
-       "headline": "오늘 새벽 시황도 영상으로 정리하였습니다.",
-       "sources": [],
-       "time": "2026-09-25T07:15:34+09:00",
-       "url": "https://t.me/insidertracking/64588"
-      },
-      {
-       "headline": "미국 30년물 국채 금리가 2004년 이후 최고 수준으로 상승.",
-       "sources": [],
-       "time": "2026-09-24T17:37:27+09:00",
-       "url": "https://t.me/insidertracking/64544"
-      }
-     ],
-     "sources": []
+     "title": "QUALCOMM RENEWS GLOBAL PATENT LICENSE PACT WITH APPLE ...",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-24T20:37:32+09:00"
     },
     {
-     "title": "미국 증시",
-     "items": [
-      {
-       "headline": "2026년 9월 25일 미장 마감",
-       "sources": [],
-       "time": "2026-09-25T05:47:32+09:00",
-       "url": "https://t.me/insidertracking/64571"
-      }
-     ],
-     "sources": []
-    },
-    {
-     "title": "기타",
-     "items": [
-      {
-       "headline": "가디언에 따르면 미 해군 항공모함 에이브러햄 링컨 전투단 소속 장병 8명이 자살을 시도한 것으로 확인.",
-       "sources": [
-        "가디언"
-       ],
-       "time": "2026-09-25T06:06:16+09:00",
-       "url": "https://t.me/insidertracking/64586"
-      },
-      {
-       "headline": "크로아티아 매체 유타르니에 따르면 에너지 위기가 심화되면서 유럽이 에너지 위기의 중심에 놓일 가능성이 커지고 있음. 브뤼셀은 급격한 에너지 가격 상승을 완화하고 연료 부족을 방지해야 하는 동시에 유럽연합의 에너지 ‘독립’을 유지해야 하는 어려운 상황에…",
-       "sources": [
-        "유타르니"
-       ],
-       "time": "2026-09-25T06:05:44+09:00",
-       "url": "https://t.me/insidertracking/64584"
-      },
-      {
-       "headline": "52주 신고가 (시총 $1B 이상)",
-       "sources": [],
-       "time": "2026-09-25T05:55:59+09:00",
-       "url": "https://t.me/insidertracking/64577"
-      },
-      {
-       "headline": "2026년 9월 24일 프리마켓 주요 종목 동향",
-       "sources": [],
-       "time": "2026-09-24T21:27:56+09:00",
-       "url": "https://t.me/insidertracking/64563"
-      },
-      {
-       "headline": "QUALCOMM RENEWS GLOBAL PATENT LICENSE PACT WITH APPLE ...",
-       "sources": [],
-       "time": "2026-09-24T20:37:48+09:00",
-       "url": "https://t.me/insidertracking/64559"
-      },
-      {
-       "headline": "토미 튜버빌 공화당 상원의원, \"많은\" 조종사·승무원·항공 교통 관제사가 퍼리(furry)라고 경고: \"주여, 우리를 도우소서. 이걸 생각하면 끔찍합니다.\"",
-       "sources": [],
-       "time": "2026-09-24T20:14:59+09:00",
-       "url": "https://t.me/aetherjapanresearch/25469"
-      },
-      {
-       "headline": "오늘 B-1 폭격기 퍼포먼스 한거 올렸네요...",
-       "sources": [],
-       "time": "2026-09-24T20:09:06+09:00",
-       "url": "https://t.me/insidertracking/64557"
-      },
-      {
-       "headline": "일라이 릴리의 주 1회 투여 기저 인슐린 온스윅(Onswik), 제2형 당뇨병 성인 환자 대상으로 FDA 승인.",
-       "sources": [],
-       "time": "2026-09-24T19:57:31+09:00",
-       "url": "https://t.me/insidertracking/64555"
-      },
-      {
-       "headline": "AI가 전화한다더니 사람이 대신 전화…'뮤즈' 서비스 논란",
-       "sources": [],
-       "time": "2026-09-24T19:52:20+09:00",
-       "url": "https://t.me/aetherjapanresearch/25466"
-      },
-      {
-       "headline": "IBM, Swift 통합 및 디지털 자산 안전 저장 시스템의 현지 배포를 통해 디지털 은행 인프라를 확장",
-       "sources": [],
-       "time": "2026-09-24T19:19:41+09:00",
-       "url": "https://t.me/insidertracking/64553"
-      },
-      {
-       "headline": "요즘 금융시장에서 이상한 일이 생겼을 때 이 새끼를 찍으면 대충 맞음",
-       "sources": [],
-       "time": "2026-09-24T19:17:10+09:00",
-       "url": "https://t.me/insidertracking/64551"
-      },
-      {
-       "headline": "유럽자동차제조협회(ACEA)에 따르면 테슬라의 8월 유럽 자동차 등록 대수는 1만5,430대로 전년 동기 대비 4% 증가.",
-       "sources": [],
-       "time": "2026-09-24T18:56:23+09:00",
-       "url": "https://t.me/insidertracking/64549"
-      },
-      {
-       "headline": "10:00 AM (동부시간) → 한국시간 9월 24일 오후 11:00",
-       "sources": [],
-       "time": "2026-09-24T18:55:46+09:00",
-       "url": "https://t.me/insidertracking/64548"
-      },
-      {
-       "headline": "https://youtu.be/340aKFGvt08?si=YdQlLTOOOXAx0Peu",
-       "sources": [],
-       "time": "2026-09-24T16:01:29+09:00",
-       "url": "https://t.me/insidertracking/64540"
-      }
-     ],
+     "title": "메타; 메타 커넥트 '26: 메타 AI 비전의 중심에 선 뮤즈; 메타의 제품 로드맵 가속화",
+     "topic": null,
      "sources": [
-      "가디언",
-      "유타르니"
-     ]
+      "씨티"
+     ],
+     "time": "2026-09-24T20:16:14+09:00"
+    },
+    {
+     "title": "토미 튜버빌 공화당 상원의원, \"많은\" 조종사·승무원·항공 교통 관제사가 퍼리라고 경고: \"주여, 우리를 도우소서. 이걸 생각하면 끔찍합니다.\"",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-24T20:14:59+09:00"
+    },
+    {
+     "title": "» 러시아가 김정은 북한 국무위원장에게 공식적으로 러시아 방문을 초청",
+     "topic": "지정학",
+     "sources": [],
+     "time": "2026-09-24T20:02:07+09:00"
+    },
+    {
+     "title": "'K자형' 양극화 경제는 전세계 공통 현상",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-24T19:56:52+09:00"
+    },
+    {
+     "title": "AI가 전화한다더니 사람이 대신 전화…'뮤즈' 서비스 논란",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-24T19:52:20+09:00"
+    },
+    {
+     "title": "왁뿌볼보다 괜찮아보이는데..",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-24T19:35:23+09:00"
+    },
+    {
+     "title": "메타 Muse 출시 이후 전 세계 일일 활성 사용자 수",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-24T19:34:09+09:00"
     }
    ],
    "errors": []
   }
  ],
- "checked_at": "2026-09-25T23:29:42.556455+09:00"
+ "checked_at": "2026-09-25T23:40:45.472294+09:00"
 }
