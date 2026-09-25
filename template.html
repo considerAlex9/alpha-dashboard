@@ -185,6 +185,24 @@ tr.click{cursor:pointer}
 .wcard .meta{font-size:12px;color:var(--ink-2);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 10px}
 .wcard .why{font-size:12px;color:var(--muted);margin-top:3px}
 
+/* 공시 */
+.dday{font-size:12.5px;font-weight:700;color:var(--ink-2);padding:14px 0 6px;border-bottom:1px solid var(--grid);display:flex;justify-content:space-between}
+.dday:first-child{padding-top:0}
+.ditem{display:grid;grid-template-columns:150px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--grid)}
+.ditem:last-child{border-bottom:0}
+.ditem .who{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:650;min-width:0}
+.ditem .who span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ditem .who i{width:8px;height:8px;border-radius:50%;flex:none}
+.ditem a{color:var(--ink);text-decoration:none;font-size:13.5px}
+.ditem a:hover{color:var(--accent);text-decoration:underline}
+.ditem a svg{width:12px;height:12px;vertical-align:-1px;margin-left:4px;color:var(--muted)}
+.ditem.imp a{font-weight:650}
+.ditem .by{font-size:11.5px;color:var(--muted);margin-top:2px}
+.ditem .tags{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.dctrl{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:6px}
+.dctrl select{padding:6px 10px;border-radius:9px;border:1px solid var(--border);background:var(--surface-2);color:var(--ink);font:inherit;font-size:12.5px}
+@media (max-width:640px){ .ditem{grid-template-columns:1fr} .ditem .tags{justify-content:flex-start} }
+
 /* 페어 */
 .pickers{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:end}
 .picker label{display:block;font-size:12px;color:var(--ink-2);margin-bottom:4px}
@@ -233,6 +251,8 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   <symbol id="i-info" viewBox="0 0 24 24"><path d="M12 11v6M12 7.5h.01"/></symbol>
   <symbol id="i-swap" viewBox="0 0 24 24"><path d="M7 7h13l-3-3M17 17H4l3 3"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
   <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
 </svg>
 
@@ -254,6 +274,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
       <button role="tab" data-tab="market"><svg class="i"><use href="#i-activity"/></svg>시장 동향</button>
       <button role="tab" data-tab="global"><svg class="i"><use href="#i-globe"/></svg>글로벌 시장</button>
       <button role="tab" data-tab="holdings"><svg class="i"><use href="#i-radar"/></svg>보유종목 시황</button>
+      <button role="tab" data-tab="disclosure"><svg class="i"><use href="#i-doc"/></svg>공시<span class="badge" id="discbadge" hidden style="background:var(--accent)"></span></button>
       <button role="tab" data-tab="pair"><svg class="i"><use href="#i-pair"/></svg>페어 분석</button>
       <button role="tab" data-tab="alerts"><svg class="i"><use href="#i-shield"/></svg>시장경보<span class="badge" id="alertbadge" hidden></span></button>
       <button role="tab" data-tab="contest"><svg class="i"><use href="#i-trophy"/></svg>대회 동향</button>
@@ -386,6 +407,22 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
     </section>
   </div>
 
+  <!-- ================= 공시 ================= -->
+  <div class="panel" id="p-disclosure">
+    <div class="ph"><div><h2>보유종목 공시</h2><p id="dsub">금융감독원 전자공시(다트)</p></div></div>
+    <section class="grid c4" id="dtiles"></section>
+    <section class="card mt">
+      <div class="dctrl">
+        <div class="seg" id="dlevel"><button data-f="imp" aria-pressed="true">중요 공시</button><button data-f="normal">일반 포함</button><button data-f="all">전체</button></div>
+        <div class="seg" id="dside"><button data-f="all" aria-pressed="true">롱·숏</button><button data-f="long">롱</button><button data-f="short">숏</button></div>
+        <div class="seg" id="drange"><button data-n="7">7일</button><button data-n="30" aria-pressed="true">30일</button><button data-n="60">60일</button></div>
+        <select id="dstock" aria-label="종목 선택"></select>
+      </div>
+      <div class="sub" id="dcount" style="margin-bottom:6px"></div>
+      <div id="dlist"></div>
+    </section>
+  </div>
+
   <!-- ================= 페어 분석 ================= -->
   <div class="panel" id="p-pair">
     <div class="ph"><div><h2>페어 분석</h2><p>두 종목의 상대 가격 · 가격 비율(A÷B)과 이동평균 ±2σ</p></div></div>
@@ -452,7 +489,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   </div>
 
   <footer>
-    데이터 출처 — 대회 API(포트폴리오·주문·리더보드·업종 동향) · 한국투자증권 오픈 API(국내 지수·종목 일봉·투자자 매매·공매도·시가총액, 실패 시 네이버 증권으로 대체) · 한국거래소 KIND(시장경보) · 야후 파이낸스(해외 지표).<br>
+    데이터 출처 — 대회 API(포트폴리오·주문·리더보드·업종 동향) · 한국투자증권 오픈 API(국내 지수·종목 일봉·투자자 매매·공매도·시가총액, 실패 시 네이버 증권으로 대체) · 한국거래소 KIND(시장경보) · 금융감독원 다트(공시) · 야후 파이낸스(해외 지표).<br>
     히스토리는 자동 업데이트 때마다 하루 한 점씩 저장합니다. 베타는 코스피 대비 일간 수익률 회귀값, 체크 포인트는 정해 둔 규칙에 따른 자동 신호입니다. 참고용 정보이며 투자 권유가 아닙니다.
   </footer>
 </main>
@@ -646,6 +683,12 @@ const warnOf = {};                 // code → [kind, label, row]
 if(W){ [['risk','투자위험'],['warning','투자경고'],['caution','투자주의']].forEach(([k,l])=>(W[k]||[]).forEach(r=>{ if(!warnOf[r.code]) warnOf[r.code]=[k,l,r]; })); }
 H.forEach(h=>{ if(!warnOf[h.symbol]&&WARN[h.warn]) warnOf[h.symbol]=[...WARN[h.warn],null]; });
 
+// 다트 공시
+const DISC = D.disclosures?.items || [];
+const HEAVY = new Set(['거래정지·관리','자금조달·희석','소송·제재','조회공시·해명','최대주주·경영권']);
+const todayKST = new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
+function daysAgo(n){ return new Date(Date.now()+9*3600e3-n*864e5).toISOString().slice(0,10); }
+
 // 체크 포인트 규칙
 function buildAlerts(){
   const A=[]; const add=(lvl,txt,kind)=>A.push({lvl,txt,kind});
@@ -660,6 +703,13 @@ function buildAlerts(){
     if(r.side==='long'&&r.short_ratio5>=.10) add('warn',`${lab(r)} 최근 5일 공매도 비중 ${pct(r.short_ratio5,1,false)} — 하락 베팅 증가`,'공매도');
     if(r.side==='short'&&r.foreign>0&&r.organ>0&&r.chg5>0) add('info',`${lab(r)} 외국인·기관 동반 순매수 중`,'수급');
     if(r.side==='long'&&r.foreign<0&&r.organ<0&&r.chg5<0) add('info',`${lab(r)} 외국인·기관 동반 순매도 중`,'수급');
+  });
+  // 최근 3일 중요 공시 — 종목별로 묶어서 한 줄
+  const recent={};
+  DISC.filter(d=>d.important&&d.date>=daysAgo(3)).forEach(d=>(recent[d.code]??=[]).push(d));
+  Object.values(recent).forEach(list=>{
+    const d=list[0], heavy=list.some(x=>HEAVY.has(x.category));
+    add(heavy?'warn':'info', `<b>${esc(d.name)}</b> (${d.side==='long'?'롱':'숏'}) 최근 3일 중요 공시 ${list.length}건 — ${esc(d.title)}${list.length>1?' 외':''}`, '공시');
   });
   const order={crit:0,warn:1,info:2};
   return A.sort((a,b)=>order[a.lvl]-order[b.lvl]);
@@ -882,6 +932,51 @@ function renderHoldings(){
 }
 
 // ============================================================
+// 공시 탭
+// ============================================================
+const dState={level:'imp',side:'all',n:30,code:''};
+const WD=['일','월','화','수','목','금','토'];
+function renderDisclosure(){
+  if(!D.disclosures){ document.getElementById('dlist').innerHTML='<div class="empty">공시 데이터가 아직 없습니다. 다음 자동 업데이트 후 표시됩니다.</div>'; return; }
+  const since7=daysAgo(7), last=DISC[0]?.date;
+  document.getElementById('dsub').textContent=`금융감독원 전자공시(다트) · 보유 ${P.positions.length}종목 · 최근 ${D.disclosures.days}일 · 수집 ${KST(D.disclosures.captured_at)} · 제목을 누르면 원문`;
+  const d7=DISC.filter(d=>d.date>=since7);
+  document.getElementById('dtiles').innerHTML=[
+    tile('최근 공시일', last?`${md(last)}`:'—', last?`${DISC.filter(d=>d.date===last).length}건 접수`:''),
+    tile('최근 7일 중요 공시', `${d7.filter(d=>d.important).length}건`, `전체 ${d7.length}건 중`),
+    tile('최근 7일 공시 종목', `${new Set(d7.map(d=>d.code)).size}종목`, `롱 ${new Set(d7.filter(d=>d.side==='long').map(d=>d.code)).size} · 숏 ${new Set(d7.filter(d=>d.side==='short').map(d=>d.code)).size}`),
+    tile('주의할 공시 (7일)', `${d7.filter(d=>HEAVY.has(d.category)).length}건`, '거래정지·증자·소송·해명 등', d7.some(d=>HEAVY.has(d.category))?'accent':''),
+  ].join('');
+  const cnt={}; DISC.forEach(d=>cnt[d.code]=(cnt[d.code]||0)+1);
+  const opts=[...new Map(DISC.map(d=>[d.code,d.name]))].sort((a,b)=>a[1].localeCompare(b[1],'ko'));
+  const sel=document.getElementById('dstock');
+  sel.innerHTML=`<option value="">전체 종목</option>`+opts.map(([c,n])=>`<option value="${c}">${esc(n)} (${cnt[c]})</option>`).join('');
+  sel.value=dState.code; sel.onchange=()=>{dState.code=sel.value; drawDisclosure();};
+  seg('dlevel', d=>{dState.level=d.f; drawDisclosure();});
+  seg('dside', d=>{dState.side=d.f; drawDisclosure();});
+  seg('drange', d=>{dState.n=+d.n; drawDisclosure();});
+  drawDisclosure();
+}
+function drawDisclosure(){
+  const since=daysAgo(dState.n);
+  const list=DISC.filter(d=>d.date>=since
+    && (dState.level==='all' || (dState.level==='imp'? d.important : d.category!=='증권 발행 서류'))
+    && (dState.side==='all'||d.side===dState.side) && (!dState.code||d.code===dState.code));
+  document.getElementById('dcount').textContent=`${list.length}건 · 최신순`;
+  if(!list.length){ document.getElementById('dlist').innerHTML='<div class="empty">조건에 맞는 공시가 없습니다.</div>'; return; }
+  const byDay={}; list.forEach(d=>(byDay[d.date]??=[]).push(d));
+  document.getElementById('dlist').innerHTML=Object.entries(byDay).map(([day,items])=>{
+    const w=WD[new Date(day+'T12:00:00Z').getUTCDay()];
+    return `<div class="dday"><span>${md(day)} (${w})${day===todayKST?' · 오늘':''}</span><span class="muted">${items.length}건</span></div>`+
+      items.map(d=>`<div class="ditem ${d.important?'imp':''}">
+        <div class="who"><i style="background:var(--${d.side})"></i><span>${esc(d.name)}</span><span class="sym">${d.side==='long'?'롱':'숏'}</span></div>
+        <div><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${d.rcept_no}" target="_blank" rel="noopener">${esc(d.title)}${ico('ext')}</a><div class="by">제출 ${esc(d.filer)}</div></div>
+        <div class="tags">${d.correction?'<span class="tag plain">정정</span>':''}<span class="tag ${HEAVY.has(d.category)?'risk':d.important?'hold':'plain'}">${esc(d.category)}</span></div>
+      </div>`).join('');
+  }).join('');
+}
+
+// ============================================================
 // 탭 5. 페어 분석
 // ============================================================
 const PR=M?.pairs, PS=PR?.stocks||{};
@@ -1066,9 +1161,11 @@ function renderContest(){
 // ============================================================
 const nHeldWarn=Object.keys(warnOf).filter(c=>posBySym[c]).length;
 if(nHeldWarn){ const b=document.getElementById('alertbadge'); b.hidden=false; b.textContent=nHeldWarn; b.title=`내 보유 종목 ${nHeldWarn}개가 시장경보 지정 중`; }
+const nNewDisc=DISC.filter(d=>d.important&&d.date>=daysAgo(3)).length;
+if(nNewDisc){ const b=document.getElementById('discbadge'); b.hidden=false; b.textContent=nNewDisc; b.title=`최근 3일 중요 공시 ${nNewDisc}건`; }
 const drawn={};
 const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();}, market:()=>{renderMarket();drawIdx();}, global:renderGlobal,
-  holdings:renderHoldings, pair:renderPair, alerts:renderAlerts, contest:renderContest};
+  holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContest};
 const REDRAW={portfolio:drawNav, market:()=>{renderMarket();drawIdx();}, global:renderGlobal, pair:drawPair, contest:renderContest};
 let cur=null;
 function show(t){

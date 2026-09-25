@@ -1,3 +1,4 @@
 .env
 __pycache__/
 .kis_token.json
+.dart_corp.json

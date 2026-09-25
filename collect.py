@@ -26,7 +26,7 @@ def load_env():
             if "=" in line and not line.lstrip().startswith("#"):
                 k, v = line.split("=", 1)
                 env[k.strip()] = v.strip()
-    env.update({k: v for k, v in os.environ.items() if k in ("ALPHA_API_KEY", "COMPETITION_ID", "KIS_APP_KEY", "KIS_APP_SECRET") and v})
+    env.update({k: v for k, v in os.environ.items() if k in ("ALPHA_API_KEY", "COMPETITION_ID", "KIS_APP_KEY", "KIS_APP_SECRET", "DART_API_KEY") and v})
     return env
 
 
@@ -119,6 +119,15 @@ def main():
         write_json(fl_p, sorted(fl.values(), key=lambda f: f["bizdate"]))
     except Exception as e:  # noqa: BLE001
         print(f"  [경고] 시장 데이터 수집 실패: {e}")
+
+    # 5) 다트 공시 — 키가 있을 때만, 실패해도 나머지는 그대로
+    if env.get("DART_API_KEY"):
+        try:
+            import dart
+            held = [(p["company_symbol"], p.get("company_alias") or p["company_name"], p["side"]) for p in portfolio["positions"]]
+            write_json(DATA / "disclosures.json", dart.collect(env["DART_API_KEY"], held))
+        except Exception as e:  # noqa: BLE001
+            print(f"  [경고] 다트 공시 수집 실패: {e}")
 
     rank = f"{me['rank']}/{len(leaderboard)}위" if me else "순위 미확인"
     print(f"[{now:%Y-%m-%d %H:%M}] NAV {portfolio['nav']:,.0f}  수익률 {portfolio['total_pnl_pct']*100:+.2f}%  "
