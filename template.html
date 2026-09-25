@@ -188,6 +188,25 @@ tr.click{cursor:pointer}
 .wcard .meta{font-size:12px;color:var(--ink-2);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 10px}
 .wcard .why{font-size:12px;color:var(--muted);margin-top:3px}
 
+/* 매크로 뉴스 */
+.nhead{font-size:15.5px;font-weight:700;line-height:1.5;padding:12px 14px;border-radius:10px;background:var(--accent-soft);margin-bottom:12px}
+.topics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.topic{border:1px solid var(--border);border-radius:12px;padding:13px 15px;background:var(--surface)}
+.topic .tt{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.topic .tt b{font-size:14px;line-height:1.4}
+.topic p{margin:6px 0 8px;font-size:13px;line-height:1.65;color:var(--ink-2)}
+.topic .src{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.topic .src a{font-size:11.5px;color:var(--muted);text-decoration:none;margin-left:auto}
+.topic .src a:hover{color:var(--accent)}
+.tag.pos{background:color-mix(in srgb,var(--up) 13%,transparent);color:var(--up)}
+.tag.neg{background:color-mix(in srgb,var(--down) 14%,transparent);color:var(--down)}
+.plist{display:grid;gap:2px}
+.pitem{display:grid;grid-template-columns:48px 1fr auto;gap:10px;padding:8px 0;border-bottom:1px solid var(--grid);font-size:13px;align-items:baseline}
+.pitem:last-child{border-bottom:0}
+.pitem time{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+.pitem a{color:var(--muted);font-size:12px;text-decoration:none}
+@media (max-width:860px){ .topics{grid-template-columns:1fr} }
+
 /* 공시 */
 .dday{font-size:12.5px;font-weight:700;color:var(--ink-2);padding:14px 0 6px;border-bottom:1px solid var(--grid);display:flex;justify-content:space-between}
 .dday:first-child{padding-top:0}
@@ -303,12 +322,13 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
       <div class="card"><div class="card-h"><h3>리스크</h3></div><div class="stats" id="risk"></div></div>
     </section>
 
-    <section class="card mt" id="todaycard">
+    <section class="card mt" id="newscard">
       <div class="card-h">
-        <div><h3><svg class="i"><use href="#i-flag"/></svg>오늘의 체크 포인트</h3><div class="sub" id="todaysub"></div></div>
-        <button class="link" data-go="holdings">전체 보기<svg class="i"><use href="#i-arrow"/></svg></button>
+        <div><h3><svg class="i"><use href="#i-globe"/></svg>오늘의 매크로 뉴스</h3><div class="sub" id="newssub"></div></div>
+        <button class="link" data-go="holdings" id="ckptlink">보유종목 체크 포인트<svg class="i"><use href="#i-arrow"/></svg></button>
       </div>
-      <div class="alerts" id="todayalerts"></div>
+      <div id="newshead"></div>
+      <div id="newsbody"></div>
     </section>
 
     <section class="card mt">
@@ -492,7 +512,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   </div>
 
   <footer>
-    데이터 출처 — 대회 API(포트폴리오·주문·리더보드·업종 동향) · 한국투자증권 오픈 API(국내 지수·종목 일봉·투자자 매매·공매도·시가총액, 실패 시 네이버 증권으로 대체) · 한국거래소 KIND(시장경보) · 금융감독원 다트(공시) · 야후 파이낸스(해외 지표).<br>
+    데이터 출처 — 대회 API(포트폴리오·주문·리더보드·업종 동향) · 한국투자증권 오픈 API(국내 지수·종목 일봉·투자자 매매·공매도·시가총액, 실패 시 네이버 증권으로 대체) · 한국거래소 KIND(시장경보) · 금융감독원 다트(공시) · 야후 파이낸스(해외 지표) · 증권사·리서치 텔레그램 공개 채널(매크로 뉴스, Claude 요약).<br>
     히스토리는 자동 업데이트 때마다 하루 한 점씩 저장합니다. 베타는 코스피 대비 일간 수익률 회귀값, 체크 포인트는 정해 둔 규칙에 따른 자동 신호입니다. 참고용 정보이며 투자 권유가 아닙니다.
   </footer>
 </main>
@@ -745,10 +765,7 @@ function renderPortfolio(){
     stat('실질 현금 비중',pct((P.cash_balance-P.short_mv)/P.nav,1,false),'공매도 대금 제외'),
   ].join('');
 
-  // 오늘의 체크 포인트 (상위 5개)
-  const crit=ALERTS.filter(a=>a.lvl==='crit').length, warn=ALERTS.filter(a=>a.lvl==='warn').length;
-  document.getElementById('todaysub').textContent = ALERTS.length? `주의 ${crit}건 · 확인 ${warn}건 · 전체 ${ALERTS.length}건 중 중요한 순서로 5건` : '특이 신호 없음';
-  document.getElementById('todayalerts').innerHTML = ALERTS.length? ALERTS.slice(0,5).map(alertHtml).join('') : '<div class="sub">특이 신호가 없습니다.</div>';
+  renderNews();
 
   // 업종 노출
   const bySec={};
@@ -932,6 +949,35 @@ function renderHoldings(){
   ].join('');
   document.getElementById('alerts').innerHTML = ALERTS.length? ALERTS.map(alertHtml).join('') : '<div class="sub">특이 신호가 없습니다.</div>';
   drawH();
+}
+
+// ============================================================
+// 오늘의 매크로 뉴스 (포트폴리오 탭)
+// ============================================================
+const TONE={'긍정':['pos','긍정'],'부정':['neg','부정'],'중립':['plain','중립']};
+function renderNews(){
+  const N=D.news, S=N?.summary;
+  const crit=ALERTS.filter(a=>a.lvl==='crit').length;
+  document.getElementById('ckptlink').innerHTML=`보유종목 체크 포인트 ${ALERTS.length}건${crit?` · 주의 ${crit}`:''}${ico('arrow')}`;
+  if(!N){ document.getElementById('newsbody').innerHTML='<div class="empty">뉴스 데이터가 아직 없습니다. 다음 자동 업데이트 후 표시됩니다.</div>'; return; }
+  if(S){
+    document.getElementById('newssub').textContent=`증권사·리서치 텔레그램 ${S.post_count}개 글을 주제별로 정리 · 요약 ${KST(S.created_at)} · AI 요약이라 원문 확인 권장`;
+    document.getElementById('newshead').innerHTML=`<div class="nhead">${esc(S.headline)}</div>`;
+    document.getElementById('newsbody').innerHTML=`<div class="topics">`+S.topics.map(t=>{
+      const tn=TONE[t.tone]||TONE['중립'];
+      return `<div class="topic"><div class="tt"><b>${esc(t.title)}</b><span class="tag ${tn[0]}">${tn[1]}</span></div>
+        <p>${esc(t.summary)}</p>
+        <div class="src">${(t.sources.length?t.sources:['원 출처 미표기']).map(s=>`<span class="tag plain">${esc(s)}</span>`).join('')}
+          ${t.links.length?`<a href="${esc(t.links[0])}" target="_blank" rel="noopener">원문 ${t.links.length}건${ico('ext')}</a>`:''}</div></div>`;
+    }).join('')+`</div>`;
+    return;
+  }
+  // 요약 키가 없을 때: 최근 글 첫 줄
+  document.getElementById('newssub').textContent=`증권사·리서치 텔레그램 최근 ${N.hours||24}시간 글 ${N.post_count}개 · 수집 ${KST(N.captured_at)} · 주제별 AI 요약은 요약 키 등록 후 표시`;
+  document.getElementById('newsbody').innerHTML=`<div class="plist">`+N.posts.slice(0,10).map(p=>{
+    const first=(p.text.split('\n').find(l=>(l.match(/[가-힣A-Za-z0-9]/g)||[]).length>=8)||p.text).trim();   // 이모지만 있는 줄은 건너뜀
+    return `<div class="pitem"><time>${p.time.slice(11,16)}</time><span>${esc(first.length>110?first.slice(0,110)+'…':first)}</span><a href="${esc(p.url)}" target="_blank" rel="noopener">원문${ico('ext')}</a></div>`;
+  }).join('')+`</div>`;
 }
 
 // ============================================================

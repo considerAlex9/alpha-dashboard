@@ -27,6 +27,7 @@ def main():
         "market": read_opt("market.json", None),
         "flows_history": read_opt("flows_history.json", []),
         "disclosures": read_opt("disclosures.json", None),
+        "news": read_opt("news.json", None),
     }
     # </script> 가 데이터에 섞여도 페이지가 깨지지 않게
     blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
