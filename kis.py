@@ -5,6 +5,7 @@
 - 키는 환경변수 KIS_APP_KEY / KIS_APP_SECRET (.env 또는 깃허브 비밀 보관함)
 """
 import json
+import threading
 import time
 import urllib.parse
 import urllib.request
@@ -13,7 +14,7 @@ from pathlib import Path
 
 BASE = "https://openapi.koreainvestment.com:9443"   # 실전 서버 (시세 조회용)
 TOKEN_CACHE = Path(__file__).resolve().parent / ".kis_token.json"
-MIN_INTERVAL = 0.07   # 실전 계좌 초당 호출 제한(약 20건)보다 여유 있게
+MIN_INTERVAL = 0.1    # 초당 10건 — 실전 계좌 한도(약 20건)보다 넉넉하게 (여러 스레드가 함께 씀)
 
 
 class KIS:
@@ -21,6 +22,7 @@ class KIS:
         self.key, self.secret = app_key, app_secret
         self.token = self._token()
         self._last = 0.0
+        self._lock = threading.Lock()      # 여러 스레드가 동시에 불러도 초당 호출 한도를 지키도록
 
     # ---------- 인증 ----------
     def _token(self):
@@ -40,12 +42,13 @@ class KIS:
             pass
         return d["access_token"]
 
-    def get(self, path, tr_id, params, tries=3):
+    def get(self, path, tr_id, params, tries=6):
         for i in range(tries):
-            wait = MIN_INTERVAL - (time.time() - self._last)
-            if wait > 0:
-                time.sleep(wait)
-            self._last = time.time()
+            with self._lock:
+                wait = MIN_INTERVAL - (time.time() - self._last)
+                if wait > 0:
+                    time.sleep(wait)
+                self._last = time.time()
             req = urllib.request.Request(f"{BASE}{path}?{urllib.parse.urlencode(params)}", headers={
                 "content-type": "application/json; charset=utf-8", "authorization": f"Bearer {self.token}",
                 "appkey": self.key, "appsecret": self.secret, "tr_id": tr_id, "custtype": "P"})
@@ -57,7 +60,7 @@ class KIS:
             if d.get("rt_cd") == "0":
                 return d
             if d.get("msg_cd") == "EGW00201":        # 초당 호출 초과 → 잠깐 쉬고 재시도
-                time.sleep(1 + i)
+                time.sleep(1.0 * (i + 1))
                 continue
             raise RuntimeError(f"{tr_id} {d.get('msg_cd')} {d.get('msg1')}")
         raise RuntimeError(f"{tr_id} 호출 초과로 실패")

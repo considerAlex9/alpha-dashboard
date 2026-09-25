@@ -106,7 +106,8 @@ def main():
     # 4) 시장 데이터 — 실패해도 포트폴리오 수집 결과는 그대로 둔다
     try:
         import market
-        mk = market.collect(portfolio["positions"], (env.get("KIS_APP_KEY"), env.get("KIS_APP_SECRET")))
+        mk = market.collect(portfolio["positions"], (env.get("KIS_APP_KEY"), env.get("KIS_APP_SECRET")),
+                            prev=read_json(DATA / "market.json", None))
         write_json(DATA / "market.json", mk)
         # 투자자별 순매수는 네이버가 당일 1건만 주므로 영업일별로 누적
         fl_p = DATA / "flows_history.json"

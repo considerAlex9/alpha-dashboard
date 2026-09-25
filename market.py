@@ -9,11 +9,14 @@
 import json
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone, timedelta
 
 KST = timezone(timedelta(hours=9))
+WORKERS = 4            # 한국투자증권 동시 조회 수 (초당 한도는 kis.py 가 지킴)
+REUSE_HOURS = 6        # 이 시간 안에 받아 둔 페어 분석·시장경보 보강값은 재사용
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
 # (네이버 심볼, 이름, 한국투자증권 업종코드)
@@ -53,6 +56,10 @@ def _get(url, raw=False, tries=3):
 
 def _num(s):
     return float(str(s).replace(",", "").replace("+", "").replace("%", "")) if s not in (None, "", "-") else 0.0
+
+
+def _compact(v):
+    return (int(v) if v == int(v) else round(v, 2)) if v is not None else None
 
 
 def daily_bars(symbol, count=260):
@@ -188,7 +195,8 @@ def _kis_stock_extra(kis, code):
             "short_amt5": sum(_num(r["ssts_tr_pbmn"]) for r in sh)}
 
 
-def collect(positions, kis_keys=None, log=print):
+def collect(positions, kis_keys=None, log=print, prev=None):
+    """prev: 지난번 market.json — REUSE_HOURS 안이면 느린 부분을 재사용한다"""
     now = datetime.now(KST)
     out = {"captured_at": now.isoformat(), "source": "네이버 증권", "domestic": [], "flows": {}, "flows_days": [],
            "global": [], "holdings": [], "errors": []}
@@ -250,12 +258,15 @@ def collect(positions, kis_keys=None, log=print):
                                   "chg1": ch(1), "chg5": ch(5), "chg20": ch(21), "series": series[-130:]})
         time.sleep(0.2)
 
-    # 보유 종목별 시황 — 베타는 KOSPI 대비 일간 수익률 회귀
+    # 보유 종목별 시황 — 베타는 KOSPI 대비 일간 수익률 회귀 (여러 종목을 동시에 조회)
     kospi = idx.get("KOSPI")
-    for p in positions:
+    t0 = time.time()
+
+    def one_holding(p):
         code = p["company_symbol"]
         bars = bars_of(code, lambda c=code: kis.stock_daily(c))
-        extra = (safe(f"한투 수급·공매도 {code}", lambda c=code: _kis_stock_extra(kis, c)) if kis else None)             or safe(f"네이버 수급 {code}", lambda c=code: stock_flows(c)) or {}
+        extra = (safe(f"한투 수급·공매도 {code}", lambda c=code: _kis_stock_extra(kis, c)) if kis else None) \
+            or safe(f"네이버 수급 {code}", lambda c=code: stock_flows(c)) or {}
         row = {"symbol": code, "name": p.get("company_alias") or p["company_name"], "side": p["side"],
                "weight": p["weight_pct"], "market_value": p["market_value"], **extra}
         if bars:
@@ -268,55 +279,93 @@ def collect(positions, kis_keys=None, log=print):
                         "high52": max(b[2] for b in bars), "low52": min(b[3] for b in bars),
                         "beta60": beta(bars, kospi, 60) if kospi else None,
                         "beta252": beta(bars, kospi, 252) if kospi else None})
-        out["holdings"].append(row)
-        if not kis:
-            time.sleep(0.1)
+        return row
+
+    with ThreadPoolExecutor(max_workers=WORKERS if kis else 2) as ex:
+        out["holdings"] = list(ex.map(one_holding, positions))
+    log(f"  · 보유종목 {len(positions)}개 {time.time() - t0:.0f}초")
+
+    # 몇 시간 안에 받아 둔 값이 있으면 그대로 쓴다 (페어 분석 종목·시장경보 종목 시가총액은 하루 중 크게 안 변함)
+    fetched = ((prev or {}).get("pairs") or {}).get("captured_at")          # 페어 묶음을 '새로 수집한' 시각 기준
+    prev_age = (now - datetime.fromisoformat(fetched)) if fetched else None
+    reuse = prev if prev_age is not None and prev_age < timedelta(hours=REUSE_HOURS) else None
 
     # ---------- 시장경보 (KIND) ----------
+    t0 = time.time()
     warn = safe("KIND 시장경보", kind_warnings)
     if warn:
-        if kis:     # 시가총액·등락률 보강
-            for key in warn:
-                for r in warn[key]:
-                    info = safe(f"한투 현재가 {r['code']}", lambda c=r["code"]: kis.price(c))
-                    if info:
-                        r.update(mcap=info["mcap"], chg1=info["chg1"], sector=info["sector"])
+        if kis:     # 시가총액·등락률 보강 — 이전에 받아 둔 종목은 재사용
+            known = {r["code"]: r for rows in ((reuse or {}).get("warnings") or {}).values() for r in rows if r.get("mcap")}
+            todo = []
+            for rows in warn.values():
+                for r in rows:
+                    if r["code"] in known:
+                        r.update({k: known[r["code"]].get(k) for k in ("mcap", "chg1", "sector")})
+                    else:
+                        todo.append(r)
+
+            def enrich(r):
+                info = safe(f"한투 현재가 {r['code']}", lambda c=r["code"]: kis.price(c))
+                if info:
+                    r.update(mcap=info["mcap"], chg1=info["chg1"], sector=info["sector"])
+            with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+                list(ex.map(enrich, todo))
         out["warnings"] = warn
+    log(f"  · 시장경보 {time.time() - t0:.0f}초")
 
     # ---------- 페어 분석용 종목 묶음: 보유 종목 + 코스피·코스닥 시총 상위 ----------
-    if kis:
+    t0 = time.time()
+    held_bars = {h["symbol"]: h.pop("_bars") for h in out["holdings"] if "_bars" in h}
+    if kis and reuse and (reuse.get("pairs") or {}).get("stocks"):
+        # 재사용: 지난번 묶음을 그대로 두고, 보유 종목만 방금 받은 일봉으로 바꾸거나 새로 넣는다
+        pairs = reuse["pairs"]
+        dates = pairs["dates"]
+        for p in positions:
+            code, bars = p["company_symbol"], held_bars.get(p["company_symbol"])
+            if not bars:
+                continue
+            c = {x[0]: x[4] for x in bars}
+            st = pairs["stocks"].get(code) or {"name": p.get("company_alias") or p["company_name"], "sector": "", "market": "",
+                                                "mcap": None, "chg1": None, "warn": "00"}
+            tvs = [x[6] for x in bars if len(x) > 6]
+            st.update({"tv3": sum(tvs[-3:]) / 3 if len(tvs) >= 3 else st.get("tv3"),
+                       "tv20": sum(tvs[-20:]) / 20 if len(tvs) >= 20 else st.get("tv20"),
+                       "beta60": beta(bars, kospi, 60) if kospi else None, "beta252": beta(bars, kospi, 252) if kospi else None,
+                       "close": [_compact(c.get(d)) for d in dates]})
+            pairs["stocks"][code] = st
+        out["pairs"] = pairs
+    elif kis:
         universe = {p["company_symbol"]: p.get("company_alias") or p["company_name"] for p in positions}
         for ic in ("0001", "1001"):
             for code, name in safe(f"한투 시총순위 {ic}", lambda c=ic: kis.market_cap_top(c)) or []:
                 universe.setdefault(code, name)
-        held_bars = {h["symbol"]: h.pop("_bars") for h in out["holdings"] if "_bars" in h}
-        stocks, dates = {}, set()
-        for code, name in universe.items():
-            bars = held_bars.get(code) or safe(f"한투 일봉 {code}", lambda c=code: kis.stock_daily(c))
+
+        def one_stock(item):
+            code, name = item
+            bars = held_bars.get(code) or bars_of(code, lambda c=code: kis.stock_daily(c))      # 실패하면 네이버
             info = safe(f"한투 현재가 {code}", lambda c=code: kis.price(c)) or {}
             if not bars:
-                continue
+                return None
             tvs = [b[6] for b in bars if len(b) > 6]
-            stocks[code] = {"name": name, "sector": info.get("sector", ""), "market": info.get("market", ""),
-                            "mcap": info.get("mcap"), "chg1": info.get("chg1"), "warn": info.get("warn", "00"),
-                            "tv3": sum(tvs[-3:]) / 3 if len(tvs) >= 3 else None,
-                            "tv20": sum(tvs[-20:]) / 20 if len(tvs) >= 20 else None,
-                            "beta60": beta(bars, kospi, 60) if kospi else None,
-                            "beta252": beta(bars, kospi, 252) if kospi else None,
-                            "_c": {b[0]: b[4] for b in bars}}
-            dates |= set(stocks[code]["_c"])
-        dates = sorted(dates)[-260:]
+            return code, {"name": name, "sector": info.get("sector", ""), "market": info.get("market", ""),
+                          "mcap": info.get("mcap"), "chg1": info.get("chg1"), "warn": info.get("warn", "00"),
+                          "tv3": sum(tvs[-3:]) / 3 if len(tvs) >= 3 else None,
+                          "tv20": sum(tvs[-20:]) / 20 if len(tvs) >= 20 else None,
+                          "beta60": beta(bars, kospi, 60) if kospi else None,
+                          "beta252": beta(bars, kospi, 252) if kospi else None,
+                          "_c": {b[0]: b[4] for b in bars}}
+        with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+            stocks = dict(r for r in ex.map(one_stock, universe.items()) if r)
+        dates = sorted(set().union(*(st["_c"] for st in stocks.values())))[-260:] if stocks else []
         for st in stocks.values():
             c = st.pop("_c")
-            st["close"] = [(int(v) if v == int(v) else round(v, 2)) if v is not None else None
-                           for v in (c.get(d) for d in dates)]
-        out["pairs"] = {"dates": dates, "stocks": stocks}
-        # 보유 종목 시장경보 코드도 붙여 둔다
-        for h in out["holdings"]:
-            if h["symbol"] in stocks:
-                h["warn"] = stocks[h["symbol"]]["warn"]
-    for h in out["holdings"]:
-        h.pop("_bars", None)
+            st["close"] = [_compact(c.get(d)) for d in dates]
+        out["pairs"] = {"dates": dates, "stocks": stocks, "captured_at": now.isoformat()}
+    if out.get("pairs"):
+        for h in out["holdings"]:      # 보유 종목 시장경보 코드도 붙여 둔다
+            if h["symbol"] in out["pairs"]["stocks"]:
+                h["warn"] = out["pairs"]["stocks"][h["symbol"]].get("warn", "00")
+    log(f"  · 페어 분석 {'재사용' if reuse else '새로 수집'} {time.time() - t0:.0f}초")
 
     if out["errors"]:
         log(f"  시장 데이터 일부 실패 {len(out['errors'])}건: {out['errors'][:3]}")
