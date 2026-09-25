@@ -6,6 +6,11 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 
 
+def read_opt(name, default):
+    p = DATA / name
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else default
+
+
 def main():
     snaps = sorted((DATA / "snapshots").glob("*.json"))
     if not snaps:
@@ -18,6 +23,9 @@ def main():
         "leaderboard": latest["leaderboard"],
         "history": json.loads((DATA / "history.json").read_text(encoding="utf-8")),
         "trades": json.loads((DATA / "trades_all.json").read_text(encoding="utf-8"))[:300],
+        "sector_sentiment": latest.get("sector_sentiment", []),
+        "market": read_opt("market.json", None),
+        "flows_history": read_opt("flows_history.json", []),
     }
     # </script> 가 데이터에 섞여도 페이지가 깨지지 않게
     blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")

@@ -5,6 +5,9 @@ on:
     # GitHub cron은 UTC 기준. 평일 09:10~16:10 KST 매시 10분 (장중 갱신 + 마감 후 확정값)
     - cron: "10 0-7 * * 1-5"
   workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
+  push:                   # 코드를 고치면 바로 한 번 돌려서 사이트에 반영
+    branches: [main]
+    paths: ["*.py", "template.html", ".github/workflows/**"]
 
 permissions:
   contents: write

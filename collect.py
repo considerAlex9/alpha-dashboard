@@ -59,6 +59,7 @@ def main():
     orders = get(f"{comp}/orders", key)
     trades = get(f"{comp}/trades", key)
     leaderboard = get(f"{comp}/leaderboard", key)
+    sector_sentiment = get(f"{comp}/sector-sentiment", key)  # 전체 참가자의 섹터별 롱·숏 합계
 
     now = datetime.now(KST)
     today = now.strftime("%Y-%m-%d")
@@ -69,6 +70,7 @@ def main():
     # 1) 원본 스냅샷 (그날 마지막 상태)
     write_json(DATA / "snapshots" / f"{today}.json", {
         "captured_at": now.isoformat(), "portfolio": portfolio, "orders": orders, "leaderboard": leaderboard,
+        "sector_sentiment": sector_sentiment,
     })
 
     # 2) 일별 요약 히스토리 — 차트용
@@ -100,6 +102,21 @@ def main():
     merged = {t["id"]: t for t in read_json(tr_p, [])}
     merged.update({t["id"]: t for t in trades})
     write_json(tr_p, sorted(merged.values(), key=lambda t: t["created_at"], reverse=True))
+
+    # 4) 시장 데이터 — 실패해도 포트폴리오 수집 결과는 그대로 둔다
+    try:
+        import market
+        mk = market.collect(portfolio["positions"])
+        write_json(DATA / "market.json", mk)
+        # 투자자별 순매수는 네이버가 당일 1건만 주므로 영업일별로 누적
+        fl_p = DATA / "flows_history.json"
+        fl = {f["bizdate"]: f for f in read_json(fl_p, [])}
+        if "KOSPI" in mk["flows"]:
+            b = mk["flows"]["KOSPI"]["bizdate"]
+            fl[b] = {"bizdate": b, **{k: {x: v[x] for x in ("개인", "외국인", "기관")} for k, v in mk["flows"].items()}}
+        write_json(fl_p, sorted(fl.values(), key=lambda f: f["bizdate"]))
+    except Exception as e:  # noqa: BLE001
+        print(f"  [경고] 시장 데이터 수집 실패: {e}")
 
     rank = f"{me['rank']}/{len(leaderboard)}위" if me else "순위 미확인"
     print(f"[{now:%Y-%m-%d %H:%M}] NAV {portfolio['nav']:,.0f}  수익률 {portfolio['total_pnl_pct']*100:+.2f}%  "

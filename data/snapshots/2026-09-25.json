@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-09-25T18:14:03.291304+09:00",
+ "captured_at": "2026-09-25T18:45:05.750499+09:00",
  "portfolio": {
   "nav": 100072254303.0439,
   "cash_balance": 92679810713.0439,
@@ -4955,6 +4955,104 @@
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
    "composite_score": 0.3471
+  }
+ ],
+ "sector_sentiment": [
+  {
+   "sector": "Technology",
+   "long_mv": 880137184638.0,
+   "short_mv": 518344388627.0,
+   "net_mv": 361792796011.0,
+   "long_count": 615,
+   "short_count": 409
+  },
+  {
+   "sector": "Industrials",
+   "long_mv": 818423289295.0,
+   "short_mv": 561570950234.0,
+   "net_mv": 256852339061.0,
+   "long_count": 641,
+   "short_count": 481
+  },
+  {
+   "sector": "Consumer Cyclical",
+   "long_mv": 106544723191.0,
+   "short_mv": 212552317420.0,
+   "net_mv": -106007594229.0,
+   "long_count": 103,
+   "short_count": 174
+  },
+  {
+   "sector": "Healthcare",
+   "long_mv": 168326230905.0,
+   "short_mv": 256602926120.0,
+   "net_mv": -88276695215.0,
+   "long_count": 159,
+   "short_count": 218
+  },
+  {
+   "sector": "Communication Services",
+   "long_mv": 107105302805.0,
+   "short_mv": 175771591300.0,
+   "net_mv": -68666288495.0,
+   "long_count": 86,
+   "short_count": 154
+  },
+  {
+   "sector": "Unknown",
+   "long_mv": 382349211900.0,
+   "short_mv": 320011567695.0,
+   "net_mv": 62337644205.0,
+   "long_count": 293,
+   "short_count": 269
+  },
+  {
+   "sector": "Consumer Defensive",
+   "long_mv": 188443083850.0,
+   "short_mv": 229570167130.0,
+   "net_mv": -41127083280.0,
+   "long_count": 171,
+   "short_count": 196
+  },
+  {
+   "sector": "Financial Services",
+   "long_mv": 206832928416.0,
+   "short_mv": 182072270620.0,
+   "net_mv": 24760657796.0,
+   "long_count": 177,
+   "short_count": 161
+  },
+  {
+   "sector": "Energy",
+   "long_mv": 53777067300.0,
+   "short_mv": 33001201800.0,
+   "net_mv": 20775865500.0,
+   "long_count": 40,
+   "short_count": 25
+  },
+  {
+   "sector": "Utilities",
+   "long_mv": 18933523950.0,
+   "short_mv": 37124570300.0,
+   "net_mv": -18191046350.0,
+   "long_count": 14,
+   "short_count": 29
+  },
+  {
+   "sector": "Basic Materials",
+   "long_mv": 100604523550.0,
+   "short_mv": 117733149150.0,
+   "net_mv": -17128625600.0,
+   "long_count": 97,
+   "short_count": 101
+  },
+  {
+   "sector": "Real Estate",
+   "long_mv": 11668105190.0,
+   "short_mv": 11407347110.0,
+   "net_mv": 260758080.0,
+   "long_count": 9,
+   "short_count": 10
   }
  ]
 }
