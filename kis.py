@@ -83,7 +83,7 @@ class KIS:
 
     def stock_daily(self, code, days=260):
         return self._daily("/uapi/domestic-stock/v1/quotations/inquire-daily-itemchartprice", "FHKST03010100", "J", code, days,
-                           ("stck_oprc", "stck_hgpr", "stck_lwpr", "stck_clpr", "acml_vol"))
+                           ("stck_oprc", "stck_hgpr", "stck_lwpr", "stck_clpr", "acml_vol", "acml_tr_pbmn"))
 
     def index_daily(self, code, days=260):
         """업종코드: 0001 코스피, 1001 코스닥, 2001 코스피200"""
@@ -102,6 +102,24 @@ class KIS:
         return self.get("/uapi/domestic-stock/v1/quotations/inquire-investor-daily-by-market", "FHPTJ04040000",
                         {"FID_COND_MRKT_DIV_CODE": "U", "FID_INPUT_ISCD": idx, "FID_INPUT_DATE_1": date,
                          "FID_INPUT_ISCD_1": market, "FID_INPUT_DATE_2": date, "FID_INPUT_ISCD_2": idx}).get("output", [])
+
+    # ---------- 현재가·순위 ----------
+    def price(self, code):
+        """현재가 요약: 업종명, 시가총액(억), 등락률, 시장경고(00 없음 01 주의 02 경고 03 위험)"""
+        d = self.get("/uapi/domestic-stock/v1/quotations/inquire-price", "FHKST01010100",
+                     {"FID_COND_MRKT_DIV_CODE": "J", "FID_INPUT_ISCD": code})["output"]
+        return {"sector": d.get("bstp_kor_isnm") or "", "mcap": float(d.get("hts_avls") or 0) * 1e8,
+                "price": float(d.get("stck_prpr") or 0), "chg1": float(d.get("prdy_ctrt") or 0) / 100,
+                "tv": float(d.get("acml_tr_pbmn") or 0), "warn": d.get("mrkt_warn_cls_code") or "00",
+                "market": d.get("rprs_mrkt_kor_name") or ""}
+
+    def market_cap_top(self, index_code):
+        """시가총액 상위 (한 번에 30종목). index_code: 0001 코스피, 1001 코스닥"""
+        d = self.get("/uapi/domestic-stock/v1/ranking/market-cap", "FHPST01740000",
+                     {"FID_COND_MRKT_DIV_CODE": "J", "FID_COND_SCR_DIV_CODE": "20174", "FID_DIV_CLS_CODE": "1",
+                      "FID_INPUT_ISCD": index_code, "FID_TRGT_CLS_CODE": "0", "FID_TRGT_EXLS_CLS_CODE": "0",
+                      "FID_INPUT_PRICE_1": "", "FID_INPUT_PRICE_2": "", "FID_VOL_CNT": ""})
+        return [(r["mksc_shrn_iscd"], r["hts_kor_isnm"]) for r in d.get("output", []) if r.get("mksc_shrn_iscd")]
 
     # ---------- 공매도 ----------
     def short_sale(self, code, days=30):

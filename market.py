@@ -9,6 +9,7 @@
 import json
 import re
 import time
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone, timedelta
 
@@ -118,6 +119,50 @@ def yahoo(symbol):
     return series, d["meta"].get("regularMarketPrice")
 
 
+KIND = "https://kind.krx.co.kr/investwarn/investattentwarnrisky.do"
+KIND_KIND = {1: ("caution", "invstcautnisu_sub"), 2: ("warning", "invstwarnisu_sub"), 3: ("risk", "invstriskisu_sub")}
+KIND_MARKET = {"유가증권": "코스피", "코스닥": "코스닥", "코넥스": "코넥스"}
+
+
+def kind_warnings(days=7):
+    """한국거래소 KIND 시장경보 — 투자주의(최근 days일 지정), 투자경고·투자위험(미해제)"""
+    import http.cookiejar
+    jar = http.cookiejar.CookieJar()
+    op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+    ua = {**UA, "Referer": f"{KIND}?method=investattentwarnriskyMain"}
+    op.open(urllib.request.Request(f"{KIND}?method=investattentwarnriskyMain", headers=ua), timeout=20).read()
+    today = datetime.now(KST)
+    out = {}
+    for menu, (key, fwd) in KIND_KIND.items():
+        start = today - timedelta(days=days if key == "caution" else 120)
+        body = urllib.parse.urlencode({
+            "method": "investattentwarnriskySub", "currentPageSize": "300", "pageIndex": "1", "orderMode": "4",
+            "orderStat": "D", "searchCodeType": "", "searchCorpName": "", "marketType": "", "repIsuSrtCd": "",
+            "menuIndex": str(menu), "forward": fwd,
+            "startDate": start.strftime("%Y-%m-%d"), "endDate": today.strftime("%Y-%m-%d")}).encode()
+        html = op.open(urllib.request.Request(KIND, data=body, headers={**ua, "X-Requested-With": "XMLHttpRequest"}),
+                       timeout=30).read().decode("utf-8", "replace")
+        if "잠시 후 다시" in html:
+            raise RuntimeError("KIND 응답 거부")
+        rows = []
+        for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S):
+            m = re.search(r"companysummary_open\('(\d+)'\)", tr)
+            if not m:
+                continue
+            tds = [re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", t)).strip() for t in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
+            mk = re.search(r"alt='(유가증권|코스닥|코넥스)'", tr)
+            row = {"code": m.group(1) + "0", "name": tds[1], "market": KIND_MARKET.get(mk.group(1), "") if mk else ""}
+            if key == "caution":
+                row.update(reason=tds[2], disclosed=tds[3], designated=tds[4])
+            else:
+                row.update(disclosed=tds[2], designated=tds[3], released=None if tds[4] in ("-", "") else tds[4])
+            rows.append(row)
+        if key != "caution":
+            rows = [r for r in rows if not r["released"]]      # 경고·위험은 아직 해제되지 않은 것만
+        out[key] = rows
+    return out
+
+
 def _kis_flows(kis, log):
     """시장별 투자자 순매수 — 최근 영업일 여러 날을 한 번에 받는다 (억원)"""
     today = datetime.now(KST).strftime("%Y%m%d")
@@ -214,6 +259,7 @@ def collect(positions, kis_keys=None, log=print):
         row = {"symbol": code, "name": p.get("company_alias") or p["company_name"], "side": p["side"],
                "weight": p["weight_pct"], "market_value": p["market_value"], **extra}
         if bars:
+            row["_bars"] = bars
             closes = [b[4] for b in bars]
             ma20 = sum(closes[-20:]) / min(20, len(closes))
             row.update({"close": closes[-1], "date": bars[-1][0],
@@ -226,8 +272,56 @@ def collect(positions, kis_keys=None, log=print):
         if not kis:
             time.sleep(0.1)
 
+    # ---------- 시장경보 (KIND) ----------
+    warn = safe("KIND 시장경보", kind_warnings)
+    if warn:
+        if kis:     # 시가총액·등락률 보강
+            for key in warn:
+                for r in warn[key]:
+                    info = safe(f"한투 현재가 {r['code']}", lambda c=r["code"]: kis.price(c))
+                    if info:
+                        r.update(mcap=info["mcap"], chg1=info["chg1"], sector=info["sector"])
+        out["warnings"] = warn
+
+    # ---------- 페어 분석용 종목 묶음: 보유 종목 + 코스피·코스닥 시총 상위 ----------
+    if kis:
+        universe = {p["company_symbol"]: p.get("company_alias") or p["company_name"] for p in positions}
+        for ic in ("0001", "1001"):
+            for code, name in safe(f"한투 시총순위 {ic}", lambda c=ic: kis.market_cap_top(c)) or []:
+                universe.setdefault(code, name)
+        held_bars = {h["symbol"]: h.pop("_bars") for h in out["holdings"] if "_bars" in h}
+        stocks, dates = {}, set()
+        for code, name in universe.items():
+            bars = held_bars.get(code) or safe(f"한투 일봉 {code}", lambda c=code: kis.stock_daily(c))
+            info = safe(f"한투 현재가 {code}", lambda c=code: kis.price(c)) or {}
+            if not bars:
+                continue
+            tvs = [b[6] for b in bars if len(b) > 6]
+            stocks[code] = {"name": name, "sector": info.get("sector", ""), "market": info.get("market", ""),
+                            "mcap": info.get("mcap"), "chg1": info.get("chg1"), "warn": info.get("warn", "00"),
+                            "tv3": sum(tvs[-3:]) / 3 if len(tvs) >= 3 else None,
+                            "tv20": sum(tvs[-20:]) / 20 if len(tvs) >= 20 else None,
+                            "beta60": beta(bars, kospi, 60) if kospi else None,
+                            "beta252": beta(bars, kospi, 252) if kospi else None,
+                            "_c": {b[0]: b[4] for b in bars}}
+            dates |= set(stocks[code]["_c"])
+        dates = sorted(dates)[-260:]
+        for st in stocks.values():
+            c = st.pop("_c")
+            st["close"] = [(int(v) if v == int(v) else round(v, 2)) if v is not None else None
+                           for v in (c.get(d) for d in dates)]
+        out["pairs"] = {"dates": dates, "stocks": stocks}
+        # 보유 종목 시장경보 코드도 붙여 둔다
+        for h in out["holdings"]:
+            if h["symbol"] in stocks:
+                h["warn"] = stocks[h["symbol"]]["warn"]
+    for h in out["holdings"]:
+        h.pop("_bars", None)
+
     if out["errors"]:
         log(f"  시장 데이터 일부 실패 {len(out['errors'])}건: {out['errors'][:3]}")
     log(f"  시장 데이터({out['source']}): 국내 {len(out['domestic'])} · 해외 {len(out['global'])} · "
-        f"보유종목 {len(out['holdings'])} · 수급 {len(out['flows_days'])}일")
+        f"보유종목 {len(out['holdings'])} · 수급 {len(out['flows_days'])}일 · "
+        f"페어 {len(out.get('pairs', {}).get('stocks', {}))}종목 · 시장경보 "
+        f"{'/'.join(str(len(v)) for v in out.get('warnings', {}).values()) or '없음'}")
     return out
