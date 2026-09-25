@@ -15,6 +15,7 @@
   --up:#d03b3b; --down:#2a78d6;              /* 한국식: 상승 빨강 · 하락 파랑 */
   --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b; --dot:#c9c8c0;
   --warn-soft:rgba(250,178,25,.14); --serious-soft:rgba(236,131,90,.14); --crit-soft:rgba(208,59,59,.10);
+  --idx:#e34948; --ma20:#eda100; --ma60:#4a3aa7;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
@@ -25,6 +26,7 @@
     --long:#199e70; --short:#d95926; --s1:#3987e5; --s2:#d95926; --s3:#199e70;
     --up:#e66767; --down:#3987e5; --dot:#45464b;
     --warn-soft:rgba(250,178,25,.13); --serious-soft:rgba(236,131,90,.14); --crit-soft:rgba(230,103,103,.14);
+    --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9;
   }
 }
 :root[data-theme="dark"]{
@@ -35,6 +37,7 @@
   --long:#199e70; --short:#d95926; --s1:#3987e5; --s2:#d95926; --s3:#199e70;
   --up:#e66767; --down:#3987e5; --dot:#45464b;
   --warn-soft:rgba(250,178,25,.13); --serious-soft:rgba(236,131,90,.14); --crit-soft:rgba(230,103,103,.14);
+  --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9;
 }
 *{box-sizing:border-box}
 html{scroll-padding-top:120px}
@@ -360,7 +363,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
         </div>
       </div>
       <div class="legend" style="margin-bottom:8px">
-        <span><i class="lkey" style="background:var(--s1)"></i>종가</span><span><i class="lkey" style="background:var(--s2)"></i>20일 이동평균</span><span><i class="lkey" style="background:var(--s3)"></i>60일 이동평균</span>
+        <span><i class="lkey" style="background:var(--idx);height:3px"></i>종가</span><span><i class="lkey" style="background:var(--ma20)"></i>20일 이동평균</span><span><i class="lkey" style="background:var(--ma60)"></i>60일 이동평균</span>
       </div>
       <div class="chart" id="idxchart"></div>
     </section>
@@ -597,7 +600,7 @@ function lineChart(box, {series, band=null, height=240, yFmt=v=>num(v), tipFmt, 
     let d='',pen=false;
     s.pts.forEach((p,i)=>{ if(p[1]==null||isNaN(p[1])){pen=false;return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+y(p[1]).toFixed(1); pen=true; });
     return `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="${s.w||2}" stroke-linejoin="round" stroke-linecap="round" ${s.dash?`stroke-dasharray="${s.dash}"`:''}/>`;
-  }).join('');
+  }).reverse().join('');   // 첫 번째 선(주인공)이 맨 위에 그려지도록
   const s0=series[0]; let endDot='',endTxt='';
   if(s0){ const li=s0.pts.map(p=>p[1]).findLastIndex(v=>v!=null);
     if(li>=0){ endDot=`<circle cx="${x(li)}" cy="${y(s0.pts[li][1])}" r="${spark?3:4.5}" fill="${s0.color}" stroke="var(--surface)" stroke-width="2"/>`;
@@ -830,7 +833,7 @@ function renderMarket(){
       <div class="spark" data-sym="${d.symbol}"></div></div>`).join('');
   document.querySelectorAll('#idxcards .spark').forEach(el=>{
     const d=dom.find(x=>x.symbol===el.dataset.sym);
-    lineChart(el,{spark:true,height:44,series:[{name:d.name,color:'var(--s1)',pts:d.bars.slice(-60).map(b=>[b[0],b[4]])}],yFmt:v=>num(v,2)});
+    lineChart(el,{spark:true,height:44,series:[{name:d.name,color:'var(--idx)',w:2.5,pts:d.bars.slice(-60).map(b=>[b[0],b[4]])}],yFmt:v=>num(v,2)});
   });
   document.getElementById('idxpick').innerHTML=dom.map(d=>`<button data-s="${d.symbol}" aria-pressed="${d.symbol===idxSel}">${d.name}</button>`).join('');
   seg('idxpick', d=>{idxSel=d.s; drawIdx();});
@@ -865,7 +868,7 @@ function drawIdx(){
   const cut=arr=>d.bars.slice(from).map((b,i)=>[b[0],arr[from+i]]);
   document.getElementById('idxsub').textContent=`${d.name} · ${d.bars[from][0]} ~ ${d.bars.at(-1)[0]} · 20일 이격도 ${pct(closes.at(-1)/m20.at(-1)-1,1)}`;
   lineChart(document.getElementById('idxchart'),{height:280,yFmt:v=>num(v,v<2000?1:0),tipFmt:v=>v==null?'—':num(v,2),series:[
-    {name:'종가',color:'var(--s1)',pts:cut(closes)},{name:'20일 이동평균',color:'var(--s2)',w:1.5,pts:cut(m20)},{name:'60일 이동평균',color:'var(--s3)',w:1.5,pts:cut(m60)}]});
+    {name:'종가',color:'var(--idx)',w:3,pts:cut(closes)},{name:'20일 이동평균',color:'var(--ma20)',w:1.8,pts:cut(m20)},{name:'60일 이동평균',color:'var(--ma60)',w:1.8,pts:cut(m60)}]});
 }
 function gpx(g){
   const d = g.price>=1000?0 : g.price>=100?1 : 2;
