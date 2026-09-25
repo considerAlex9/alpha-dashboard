@@ -1,7 +1,7 @@
 [
  {
   "date": "2026-09-25",
-  "captured_at": "2026-09-25T17:38:15.064979+09:00",
+  "captured_at": "2026-09-25T18:14:03.291304+09:00",
   "price_as_of": "2026-09-25T06:50:30Z",
   "nav": 100072254303.0439,
   "total_pnl": 72254303.04389954,
@@ -9,12 +9,12 @@
   "realized_pnl": -433405825.9157,
   "unrealized_pnl": 599438050.7984,
   "max_drawdown_pct": -0.00739484,
-  "sharpe_ratio": 0.2762,
+  "sharpe_ratio": 0.2689,
   "long_mv": 31226622590.0,
   "short_mv": 23834179000.0,
   "net_exposure_pct": 0.07387106087981016,
   "gross_exposure": 55060801590.0,
-  "rank": 49,
+  "rank": 45,
   "participants": 209
  }
 ]

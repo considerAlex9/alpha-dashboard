@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-09-25T17:38:15.064979+09:00",
+ "captured_at": "2026-09-25T18:14:03.291304+09:00",
  "portfolio": {
   "nav": 100072254303.0439,
   "cash_balance": 92679810713.0439,
@@ -9,7 +9,7 @@
   "realized_pnl": -433405825.9157,
   "unrealized_pnl": 599438050.7984,
   "max_drawdown_pct": -0.00739484,
-  "sharpe_ratio": 0.2762,
+  "sharpe_ratio": 0.2689,
   "gross_exposure": 55060801590.0,
   "net_exposure": 7392443590.0,
   "net_exposure_pct": 0.07387106087981016,
@@ -2248,9 +2248,9 @@
    "status": "active",
    "nav": 106767707607.1676,
    "total_return_pct": 6.77,
-   "sharpe_ratio": 7.542,
+   "sharpe_ratio": 7.2938,
    "max_drawdown_pct": -0.0161145,
-   "composite_score": 0.6697
+   "composite_score": 0.6974
   },
   {
    "rank": 2,
@@ -2261,9 +2261,9 @@
    "status": "active",
    "nav": 103997580096.1034,
    "total_return_pct": 4.0,
-   "sharpe_ratio": 9.5927,
+   "sharpe_ratio": 9.2395,
    "max_drawdown_pct": -0.0186668,
-   "composite_score": 0.5982
+   "composite_score": 0.6293
   },
   {
    "rank": 3,
@@ -2274,9 +2274,9 @@
    "status": "active",
    "nav": 102285100157.7713,
    "total_return_pct": 2.29,
-   "sharpe_ratio": 7.0316,
+   "sharpe_ratio": 6.806,
    "max_drawdown_pct": -0.00692274,
-   "composite_score": 0.5852
+   "composite_score": 0.6121
   },
   {
    "rank": 4,
@@ -2287,9 +2287,9 @@
    "status": "active",
    "nav": 104835330748.7593,
    "total_return_pct": 4.84,
-   "sharpe_ratio": 4.3476,
+   "sharpe_ratio": 4.2231,
    "max_drawdown_pct": -0.0266877,
-   "composite_score": 0.5818
+   "composite_score": 0.6041
   },
   {
    "rank": 5,
@@ -2300,9 +2300,9 @@
    "status": "active",
    "nav": 103568007901.1791,
    "total_return_pct": 3.57,
-   "sharpe_ratio": 6.133,
+   "sharpe_ratio": 5.9444,
    "max_drawdown_pct": -0.0199256,
-   "composite_score": 0.5753
+   "composite_score": 0.6006
   },
   {
    "rank": 6,
@@ -2313,9 +2313,9 @@
    "status": "active",
    "nav": 103300763736.5553,
    "total_return_pct": 3.3,
-   "sharpe_ratio": 7.2393,
+   "sharpe_ratio": 7.0046,
    "max_drawdown_pct": -0.0203097,
-   "composite_score": 0.5702
+   "composite_score": 0.5974
   },
   {
    "rank": 7,
@@ -2326,9 +2326,9 @@
    "status": "active",
    "nav": 101256933583.6459,
    "total_return_pct": 1.26,
-   "sharpe_ratio": 7.2158,
+   "sharpe_ratio": 6.9822,
    "max_drawdown_pct": -0.00431819,
-   "composite_score": 0.5681
+   "composite_score": 0.5952
   },
   {
    "rank": 8,
@@ -2339,38 +2339,12 @@
    "status": "active",
    "nav": 104050150119.6222,
    "total_return_pct": 4.05,
-   "sharpe_ratio": 4.9663,
+   "sharpe_ratio": 4.8127,
    "max_drawdown_pct": -0.0258785,
-   "composite_score": 0.5671
+   "composite_score": 0.589
   },
   {
    "rank": 9,
-   "user_id": 5447,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "정*호",
-   "status": "active",
-   "nav": 100285364655.4708,
-   "total_return_pct": 0.29,
-   "sharpe_ratio": 10.5088,
-   "max_drawdown_pct": -0.000599386,
-   "composite_score": 0.5624
-  },
-  {
-   "rank": 10,
-   "user_id": 5446,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "J******* **e",
-   "status": "active",
-   "nav": 100175471357.6796,
-   "total_return_pct": 0.18,
-   "sharpe_ratio": 32.2925,
-   "max_drawdown_pct": -0.00186733,
-   "composite_score": 0.5592
-  },
-  {
-   "rank": 11,
    "user_id": 5302,
    "participant_id": null,
    "score_breakdown": null,
@@ -2378,12 +2352,12 @@
    "status": "active",
    "nav": 100724862833.1525,
    "total_return_pct": 0.72,
-   "sharpe_ratio": 6.1407,
+   "sharpe_ratio": 5.9518,
    "max_drawdown_pct": -0.00295423,
-   "composite_score": 0.5564
+   "composite_score": 0.5817
   },
   {
-   "rank": 12,
+   "rank": 10,
    "user_id": 5386,
    "participant_id": null,
    "score_breakdown": null,
@@ -2391,25 +2365,12 @@
    "status": "active",
    "nav": 102216581654.5552,
    "total_return_pct": 2.22,
-   "sharpe_ratio": 4.3402,
+   "sharpe_ratio": 4.209,
    "max_drawdown_pct": -0.014109,
-   "composite_score": 0.556
+   "composite_score": 0.5768
   },
   {
-   "rank": 13,
-   "user_id": 5359,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "J* K",
-   "status": "active",
-   "nav": 102217617536.7848,
-   "total_return_pct": 2.22,
-   "sharpe_ratio": 3.256,
-   "max_drawdown_pct": -0.0139259,
-   "composite_score": 0.553
-  },
-  {
-   "rank": 14,
+   "rank": 11,
    "user_id": 3565,
    "participant_id": null,
    "score_breakdown": null,
@@ -2417,12 +2378,25 @@
    "status": "active",
    "nav": 100388242170.5538,
    "total_return_pct": 0.39,
-   "sharpe_ratio": 5.9622,
+   "sharpe_ratio": 5.7802,
    "max_drawdown_pct": -0.00180793,
-   "composite_score": 0.5511
+   "composite_score": 0.5761
   },
   {
-   "rank": 15,
+   "rank": 12,
+   "user_id": 5359,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "J* K",
+   "status": "active",
+   "nav": 102217617536.7848,
+   "total_return_pct": 2.22,
+   "sharpe_ratio": 3.1658,
+   "max_drawdown_pct": -0.0139259,
+   "composite_score": 0.5734
+  },
+  {
+   "rank": 13,
    "user_id": 2848,
    "participant_id": null,
    "score_breakdown": null,
@@ -2430,12 +2404,12 @@
    "status": "active",
    "nav": 102766026515.3406,
    "total_return_pct": 2.77,
-   "sharpe_ratio": 4.5432,
+   "sharpe_ratio": 4.4049,
    "max_drawdown_pct": -0.021118,
-   "composite_score": 0.5487
+   "composite_score": 0.57
   },
   {
-   "rank": 16,
+   "rank": 14,
    "user_id": 2884,
    "participant_id": null,
    "score_breakdown": null,
@@ -2443,12 +2417,12 @@
    "status": "active",
    "nav": 101808191580.4478,
    "total_return_pct": 1.81,
-   "sharpe_ratio": 3.9914,
+   "sharpe_ratio": 3.8784,
    "max_drawdown_pct": -0.0128575,
-   "composite_score": 0.5479
+   "composite_score": 0.5696
   },
   {
-   "rank": 17,
+   "rank": 15,
    "user_id": 5363,
    "participant_id": null,
    "score_breakdown": null,
@@ -2456,12 +2430,25 @@
    "status": "active",
    "nav": 100762668031.271,
    "total_return_pct": 0.76,
-   "sharpe_ratio": 4.5292,
+   "sharpe_ratio": 4.3987,
    "max_drawdown_pct": -0.00515646,
-   "composite_score": 0.5467
+   "composite_score": 0.5693
   },
   {
-   "rank": 18,
+   "rank": 16,
+   "user_id": 5447,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "정*호",
+   "status": "active",
+   "nav": 100285364655.4708,
+   "total_return_pct": 0.29,
+   "sharpe_ratio": 8.7161,
+   "max_drawdown_pct": -0.000599386,
+   "composite_score": 0.5656
+  },
+  {
+   "rank": 17,
    "user_id": 5273,
    "participant_id": null,
    "score_breakdown": null,
@@ -2469,12 +2456,12 @@
    "status": "active",
    "nav": 101919020096.1358,
    "total_return_pct": 1.92,
-   "sharpe_ratio": 3.623,
+   "sharpe_ratio": 3.5216,
    "max_drawdown_pct": -0.0146481,
-   "composite_score": 0.5443
+   "composite_score": 0.5653
   },
   {
-   "rank": 19,
+   "rank": 18,
    "user_id": 5296,
    "participant_id": null,
    "score_breakdown": null,
@@ -2482,12 +2469,12 @@
    "status": "active",
    "nav": 100970511574.2261,
    "total_return_pct": 0.97,
-   "sharpe_ratio": 3.3047,
+   "sharpe_ratio": 3.2131,
    "max_drawdown_pct": -0.00688268,
-   "composite_score": 0.5436
+   "composite_score": 0.5641
   },
   {
-   "rank": 20,
+   "rank": 19,
    "user_id": 5232,
    "participant_id": null,
    "score_breakdown": null,
@@ -2495,9 +2482,22 @@
    "status": "active",
    "nav": 100047974100.768,
    "total_return_pct": 0.05,
-   "sharpe_ratio": 3.9528,
+   "sharpe_ratio": 3.841,
    "max_drawdown_pct": -0.000469467,
-   "composite_score": 0.5418
+   "composite_score": 0.5634
+  },
+  {
+   "rank": 20,
+   "user_id": 5446,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "J******* **e",
+   "status": "active",
+   "nav": 100175471357.6796,
+   "total_return_pct": 0.18,
+   "sharpe_ratio": 15.7038,
+   "max_drawdown_pct": -0.00186733,
+   "composite_score": 0.5625
   },
   {
    "rank": 21,
@@ -2508,9 +2508,9 @@
    "status": "active",
    "nav": 100242251360.0852,
    "total_return_pct": 0.24,
-   "sharpe_ratio": 3.418,
+   "sharpe_ratio": 3.323,
    "max_drawdown_pct": -0.00228189,
-   "composite_score": 0.5398
+   "composite_score": 0.5605
   },
   {
    "rank": 22,
@@ -2521,22 +2521,22 @@
    "status": "active",
    "nav": 100933813053.4085,
    "total_return_pct": 0.93,
-   "sharpe_ratio": 3.1268,
+   "sharpe_ratio": 3.0405,
    "max_drawdown_pct": -0.00789066,
-   "composite_score": 0.5392
+   "composite_score": 0.5594
   },
   {
    "rank": 23,
-   "user_id": 5305,
+   "user_id": 2882,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "­*** * ** * ***과",
+   "username": "신*교",
    "status": "active",
-   "nav": 100012362400.0,
-   "total_return_pct": 0.01,
-   "sharpe_ratio": 2.5832,
-   "max_drawdown_pct": -0.000150988,
-   "composite_score": 0.5385
+   "nav": 101465186571.6538,
+   "total_return_pct": 1.47,
+   "sharpe_ratio": 4.1864,
+   "max_drawdown_pct": -0.0139654,
+   "composite_score": 0.559
   },
   {
    "rank": 24,
@@ -2547,38 +2547,25 @@
    "status": "active",
    "nav": 105555224135.4485,
    "total_return_pct": 5.56,
-   "sharpe_ratio": 3.7987,
+   "sharpe_ratio": 3.6918,
    "max_drawdown_pct": -0.0469056,
-   "composite_score": 0.5369
+   "composite_score": 0.5582
   },
   {
    "rank": 25,
-   "user_id": 2882,
+   "user_id": 5305,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "신*교",
+   "username": "­*** * ** * ***과",
    "status": "active",
-   "nav": 101465186571.6538,
-   "total_return_pct": 1.47,
-   "sharpe_ratio": 4.3097,
-   "max_drawdown_pct": -0.0139654,
-   "composite_score": 0.5368
+   "nav": 100012362400.0,
+   "total_return_pct": 0.01,
+   "sharpe_ratio": 2.5128,
+   "max_drawdown_pct": -0.000150988,
+   "composite_score": 0.5578
   },
   {
    "rank": 26,
-   "user_id": 5415,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "김*재",
-   "status": "active",
-   "nav": 100327550486.0971,
-   "total_return_pct": 0.33,
-   "sharpe_ratio": 2.6607,
-   "max_drawdown_pct": -0.00762327,
-   "composite_score": 0.5352
-  },
-  {
-   "rank": 27,
    "user_id": 5331,
    "participant_id": null,
    "score_breakdown": null,
@@ -2586,12 +2573,12 @@
    "status": "active",
    "nav": 100264828627.7764,
    "total_return_pct": 0.26,
-   "sharpe_ratio": 2.8947,
+   "sharpe_ratio": 2.8153,
    "max_drawdown_pct": -0.00360474,
-   "composite_score": 0.5351
+   "composite_score": 0.5548
   },
   {
-   "rank": 28,
+   "rank": 27,
    "user_id": 5304,
    "participant_id": null,
    "score_breakdown": null,
@@ -2599,25 +2586,12 @@
    "status": "active",
    "nav": 100048827619.306,
    "total_return_pct": 0.05,
-   "sharpe_ratio": 1.7016,
+   "sharpe_ratio": 1.656,
    "max_drawdown_pct": -0.00115268,
-   "composite_score": 0.5342
+   "composite_score": 0.5519
   },
   {
-   "rank": 29,
-   "user_id": 5317,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "성*창",
-   "status": "active",
-   "nav": 100003561713.868,
-   "total_return_pct": 0.0,
-   "sharpe_ratio": 0.3495,
-   "max_drawdown_pct": -0.000468428,
-   "composite_score": 0.5319
-  },
-  {
-   "rank": 30,
+   "rank": 28,
    "user_id": 4746,
    "participant_id": null,
    "score_breakdown": null,
@@ -2625,12 +2599,12 @@
    "status": "active",
    "nav": 100371022173.9628,
    "total_return_pct": 0.37,
-   "sharpe_ratio": 2.6323,
+   "sharpe_ratio": 2.5605,
    "max_drawdown_pct": -0.00532008,
-   "composite_score": 0.5318
+   "composite_score": 0.5512
   },
   {
-   "rank": 31,
+   "rank": 29,
    "user_id": 4688,
    "participant_id": null,
    "score_breakdown": null,
@@ -2638,25 +2612,12 @@
    "status": "active",
    "nav": 100329747089.6944,
    "total_return_pct": 0.33,
-   "sharpe_ratio": 2.2278,
+   "sharpe_ratio": 2.1676,
    "max_drawdown_pct": -0.0050966,
-   "composite_score": 0.5305
+   "composite_score": 0.5491
   },
   {
-   "rank": 32,
-   "user_id": 5293,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "T** *** *********** *** *** **********e",
-   "status": "active",
-   "nav": 100510361261.3984,
-   "total_return_pct": 0.51,
-   "sharpe_ratio": 2.0195,
-   "max_drawdown_pct": -0.00770803,
-   "composite_score": 0.5302
-  },
-  {
-   "rank": 33,
+   "rank": 30,
    "user_id": 5395,
    "participant_id": null,
    "score_breakdown": null,
@@ -2664,38 +2625,25 @@
    "status": "active",
    "nav": 103744964233.1203,
    "total_return_pct": 3.74,
-   "sharpe_ratio": 4.7877,
+   "sharpe_ratio": 4.6319,
    "max_drawdown_pct": -0.0363491,
-   "composite_score": 0.5281
+   "composite_score": 0.5483
   },
   {
-   "rank": 34,
-   "user_id": 5431,
+   "rank": 31,
+   "user_id": 5317,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "박*완",
+   "username": "성*창",
    "status": "active",
-   "nav": 99735105880.4098,
-   "total_return_pct": -0.26,
-   "sharpe_ratio": -6.6924,
-   "max_drawdown_pct": -0.00323507,
-   "composite_score": 0.5278
+   "nav": 100003561713.868,
+   "total_return_pct": 0.0,
+   "sharpe_ratio": 0.3402,
+   "max_drawdown_pct": -0.000468428,
+   "composite_score": 0.5472
   },
   {
-   "rank": 35,
-   "user_id": 5411,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "한*경",
-   "status": "active",
-   "nav": 99968111766.6864,
-   "total_return_pct": -0.03,
-   "sharpe_ratio": -1.1505,
-   "max_drawdown_pct": -0.00273701,
-   "composite_score": 0.5273
-  },
-  {
-   "rank": 36,
+   "rank": 32,
    "user_id": 5338,
    "participant_id": null,
    "score_breakdown": null,
@@ -2703,12 +2651,25 @@
    "status": "active",
    "nav": 100749311873.6274,
    "total_return_pct": 0.75,
-   "sharpe_ratio": 2.3633,
+   "sharpe_ratio": 2.2992,
    "max_drawdown_pct": -0.00978381,
-   "composite_score": 0.527
+   "composite_score": 0.5459
   },
   {
-   "rank": 37,
+   "rank": 33,
+   "user_id": 5293,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "T** *** *********** *** *** **********e",
+   "status": "active",
+   "nav": 100510361261.3984,
+   "total_return_pct": 0.51,
+   "sharpe_ratio": 1.9549,
+   "max_drawdown_pct": -0.00770803,
+   "composite_score": 0.545
+  },
+  {
+   "rank": 34,
    "user_id": 4722,
    "participant_id": null,
    "score_breakdown": null,
@@ -2716,25 +2677,25 @@
    "status": "active",
    "nav": 100351752946.0433,
    "total_return_pct": 0.35,
-   "sharpe_ratio": 1.5145,
+   "sharpe_ratio": 1.474,
    "max_drawdown_pct": -0.00592298,
-   "composite_score": 0.5268
+   "composite_score": 0.5442
   },
   {
-   "rank": 38,
-   "user_id": 5326,
+   "rank": 35,
+   "user_id": 5415,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "J **m",
+   "username": "김*재",
    "status": "active",
-   "nav": 100023062121.4601,
-   "total_return_pct": 0.02,
-   "sharpe_ratio": 0.2572,
-   "max_drawdown_pct": -0.00342855,
-   "composite_score": 0.5231
+   "nav": 100327550486.0971,
+   "total_return_pct": 0.33,
+   "sharpe_ratio": 2.5095,
+   "max_drawdown_pct": -0.00762327,
+   "composite_score": 0.5424
   },
   {
-   "rank": 39,
+   "rank": 36,
    "user_id": 4751,
    "participant_id": null,
    "score_breakdown": null,
@@ -2742,25 +2703,12 @@
    "status": "active",
    "nav": 100701749243.5253,
    "total_return_pct": 0.7,
-   "sharpe_ratio": 3.2046,
+   "sharpe_ratio": 3.1159,
    "max_drawdown_pct": -0.0118944,
-   "composite_score": 0.5214
+   "composite_score": 0.5418
   },
   {
-   "rank": 40,
-   "user_id": 5332,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "류*정",
-   "status": "active",
-   "nav": 100725077773.047,
-   "total_return_pct": 0.73,
-   "sharpe_ratio": 2.7514,
-   "max_drawdown_pct": -0.0117456,
-   "composite_score": 0.5214
-  },
-  {
-   "rank": 41,
+   "rank": 37,
    "user_id": 4726,
    "participant_id": null,
    "score_breakdown": null,
@@ -2768,12 +2716,77 @@
    "status": "active",
    "nav": 101723012062.4841,
    "total_return_pct": 1.72,
-   "sharpe_ratio": 3.7307,
+   "sharpe_ratio": 3.626,
    "max_drawdown_pct": -0.0211866,
-   "composite_score": 0.5198
+   "composite_score": 0.5411
+  },
+  {
+   "rank": 38,
+   "user_id": 5332,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "류*정",
+   "status": "active",
+   "nav": 100725077773.047,
+   "total_return_pct": 0.73,
+   "sharpe_ratio": 2.6761,
+   "max_drawdown_pct": -0.0117456,
+   "composite_score": 0.5409
+  },
+  {
+   "rank": 39,
+   "user_id": 5326,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "J **m",
+   "status": "active",
+   "nav": 100023062121.4601,
+   "total_return_pct": 0.02,
+   "sharpe_ratio": 0.2504,
+   "max_drawdown_pct": -0.00342855,
+   "composite_score": 0.5383
+  },
+  {
+   "rank": 40,
+   "user_id": 5411,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "한*경",
+   "status": "active",
+   "nav": 99968111766.6864,
+   "total_return_pct": -0.03,
+   "sharpe_ratio": -1.1117,
+   "max_drawdown_pct": -0.00273701,
+   "composite_score": 0.5367
+  },
+  {
+   "rank": 41,
+   "user_id": 5,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "H**** ***k",
+   "status": "active",
+   "nav": 101140761649.4688,
+   "total_return_pct": 1.14,
+   "sharpe_ratio": 3.0266,
+   "max_drawdown_pct": -0.0174532,
+   "composite_score": 0.5354
   },
   {
    "rank": 42,
+   "user_id": 5233,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "J* K",
+   "status": "active",
+   "nav": 99993486424.3246,
+   "total_return_pct": -0.01,
+   "sharpe_ratio": 0.0884,
+   "max_drawdown_pct": -0.00587069,
+   "composite_score": 0.5295
+  },
+  {
+   "rank": 43,
    "user_id": 5217,
    "participant_id": null,
    "score_breakdown": null,
@@ -2781,48 +2794,35 @@
    "status": "active",
    "nav": 99917576533.4895,
    "total_return_pct": -0.08,
-   "sharpe_ratio": -2.8897,
+   "sharpe_ratio": -2.8104,
    "max_drawdown_pct": -0.00140701,
-   "composite_score": 0.519
-  },
-  {
-   "rank": 43,
-   "user_id": 2879,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "황*언",
-   "status": "active",
-   "nav": 99745640886.3478,
-   "total_return_pct": -0.25,
-   "sharpe_ratio": -4.0269,
-   "max_drawdown_pct": -0.00379985,
-   "composite_score": 0.5176
+   "composite_score": 0.5287
   },
   {
    "rank": 44,
-   "user_id": 5404,
+   "user_id": 5431,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "민*석",
+   "username": "박*완",
    "status": "active",
-   "nav": 99836052405.9681,
-   "total_return_pct": -0.16,
-   "sharpe_ratio": -3.6246,
-   "max_drawdown_pct": -0.00340541,
-   "composite_score": 0.5175
+   "nav": 99735105880.4098,
+   "total_return_pct": -0.26,
+   "sharpe_ratio": -6.1903,
+   "max_drawdown_pct": -0.00323507,
+   "composite_score": 0.5278
   },
   {
    "rank": 45,
-   "user_id": 5426,
+   "user_id": 4711,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "­*** * ** * ***부",
+   "username": "구*준",
    "status": "active",
-   "nav": 99839347473.632,
-   "total_return_pct": -0.16,
-   "sharpe_ratio": -11.8615,
-   "max_drawdown_pct": -0.00221635,
-   "composite_score": 0.5161
+   "nav": 100072254303.0439,
+   "total_return_pct": 0.07,
+   "sharpe_ratio": 0.2689,
+   "max_drawdown_pct": -0.00739484,
+   "composite_score": 0.5276
   },
   {
    "rank": 46,
@@ -2833,48 +2833,48 @@
    "status": "active",
    "nav": 99863120599.4886,
    "total_return_pct": -0.14,
-   "sharpe_ratio": -1.813,
+   "sharpe_ratio": -1.7643,
    "max_drawdown_pct": -0.00284194,
-   "composite_score": 0.5159
+   "composite_score": 0.5275
   },
   {
    "rank": 47,
-   "user_id": 5,
+   "user_id": 5264,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "H**** ***k",
+   "username": "설*준",
    "status": "active",
-   "nav": 101140761649.4688,
-   "total_return_pct": 1.14,
-   "sharpe_ratio": 3.1125,
-   "max_drawdown_pct": -0.0174532,
-   "composite_score": 0.5152
+   "nav": 100919267894.0322,
+   "total_return_pct": 0.92,
+   "sharpe_ratio": 2.313,
+   "max_drawdown_pct": -0.017308,
+   "composite_score": 0.5273
   },
   {
    "rank": 48,
-   "user_id": 5233,
+   "user_id": 2880,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "J* K",
+   "username": "신*철",
    "status": "active",
-   "nav": 99993486424.3246,
-   "total_return_pct": -0.01,
-   "sharpe_ratio": 0.0908,
-   "max_drawdown_pct": -0.00587069,
-   "composite_score": 0.5146
+   "nav": 100166233491.3099,
+   "total_return_pct": 0.17,
+   "sharpe_ratio": 0.8276,
+   "max_drawdown_pct": -0.00923472,
+   "composite_score": 0.5267
   },
   {
    "rank": 49,
-   "user_id": 4711,
+   "user_id": 5258,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "구*준",
+   "username": "J***** *****n",
    "status": "active",
-   "nav": 100072254303.0439,
-   "total_return_pct": 0.07,
-   "sharpe_ratio": 0.2762,
-   "max_drawdown_pct": -0.00739484,
-   "composite_score": 0.5123
+   "nav": 101240241841.8972,
+   "total_return_pct": 1.24,
+   "sharpe_ratio": 2.2001,
+   "max_drawdown_pct": -0.0199565,
+   "composite_score": 0.5267
   },
   {
    "rank": 50,
@@ -2885,9 +2885,9 @@
    "status": "active",
    "nav": 100035768121.0281,
    "total_return_pct": 0.04,
-   "sharpe_ratio": 0.3228,
+   "sharpe_ratio": 0.3143,
    "max_drawdown_pct": -0.00751306,
-   "composite_score": 0.5112
+   "composite_score": 0.5265
   },
   {
    "rank": 51,
@@ -2898,25 +2898,12 @@
    "status": "active",
    "nav": 99924900889.7905,
    "total_return_pct": -0.08,
-   "sharpe_ratio": -0.7245,
+   "sharpe_ratio": -0.7052,
    "max_drawdown_pct": -0.00580715,
-   "composite_score": 0.5111
+   "composite_score": 0.5246
   },
   {
    "rank": 52,
-   "user_id": 2880,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "신*철",
-   "status": "active",
-   "nav": 100166233491.3099,
-   "total_return_pct": 0.17,
-   "sharpe_ratio": 0.8501,
-   "max_drawdown_pct": -0.00923472,
-   "composite_score": 0.5105
-  },
-  {
-   "rank": 53,
    "user_id": 5335,
    "participant_id": null,
    "score_breakdown": null,
@@ -2924,9 +2911,22 @@
    "status": "active",
    "nav": 99852888444.7317,
    "total_return_pct": -0.15,
-   "sharpe_ratio": -0.3843,
+   "sharpe_ratio": -0.3741,
    "max_drawdown_pct": -0.00574537,
-   "composite_score": 0.5103
+   "composite_score": 0.5244
+  },
+  {
+   "rank": 53,
+   "user_id": 5404,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "민*석",
+   "status": "active",
+   "nav": 99836052405.9681,
+   "total_return_pct": -0.16,
+   "sharpe_ratio": -3.496,
+   "max_drawdown_pct": -0.00340541,
+   "composite_score": 0.5235
   },
   {
    "rank": 54,
@@ -2937,9 +2937,9 @@
    "status": "active",
    "nav": 99840104271.7886,
    "total_return_pct": -0.16,
-   "sharpe_ratio": -0.9144,
+   "sharpe_ratio": -0.8901,
    "max_drawdown_pct": -0.0053115,
-   "composite_score": 0.51
+   "composite_score": 0.5232
   },
   {
    "rank": 55,
@@ -2950,51 +2950,25 @@
    "status": "active",
    "nav": 99862242699.1208,
    "total_return_pct": -0.14,
-   "sharpe_ratio": -1.1516,
+   "sharpe_ratio": -1.1209,
    "max_drawdown_pct": -0.00553732,
-   "composite_score": 0.5093
+   "composite_score": 0.522
   },
   {
    "rank": 56,
-   "user_id": 5264,
+   "user_id": 2879,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "설*준",
+   "username": "황*언",
    "status": "active",
-   "nav": 100919267894.0322,
-   "total_return_pct": 0.92,
-   "sharpe_ratio": 2.3775,
-   "max_drawdown_pct": -0.017308,
-   "composite_score": 0.5084
+   "nav": 99745640886.3478,
+   "total_return_pct": -0.25,
+   "sharpe_ratio": -3.8602,
+   "max_drawdown_pct": -0.00379985,
+   "composite_score": 0.522
   },
   {
    "rank": 57,
-   "user_id": 5258,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "J***** *****n",
-   "status": "active",
-   "nav": 101240241841.8972,
-   "total_return_pct": 1.24,
-   "sharpe_ratio": 2.2613,
-   "max_drawdown_pct": -0.0199565,
-   "composite_score": 0.508
-  },
-  {
-   "rank": 58,
-   "user_id": 5252,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "박*외",
-   "status": "active",
-   "nav": 99870355016.8136,
-   "total_return_pct": -0.13,
-   "sharpe_ratio": -1.3668,
-   "max_drawdown_pct": -0.0059219,
-   "composite_score": 0.5078
-  },
-  {
-   "rank": 59,
    "user_id": 5275,
    "participant_id": null,
    "score_breakdown": null,
@@ -3002,12 +2976,12 @@
    "status": "active",
    "nav": 100031998582.8435,
    "total_return_pct": 0.03,
-   "sharpe_ratio": 0.3141,
+   "sharpe_ratio": 0.3058,
    "max_drawdown_pct": -0.00915314,
-   "composite_score": 0.5061
+   "composite_score": 0.5214
   },
   {
-   "rank": 60,
+   "rank": 58,
    "user_id": 5214,
    "participant_id": null,
    "score_breakdown": null,
@@ -3015,9 +2989,35 @@
    "status": "active",
    "nav": 100057528791.3001,
    "total_return_pct": 0.06,
-   "sharpe_ratio": 1.0151,
+   "sharpe_ratio": 0.9881,
    "max_drawdown_pct": -0.0105249,
-   "composite_score": 0.5043
+   "composite_score": 0.5208
+  },
+  {
+   "rank": 59,
+   "user_id": 5252,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "박*외",
+   "status": "active",
+   "nav": 99870355016.8136,
+   "total_return_pct": -0.13,
+   "sharpe_ratio": -1.3303,
+   "max_drawdown_pct": -0.0059219,
+   "composite_score": 0.5202
+  },
+  {
+   "rank": 60,
+   "user_id": 5341,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "조*규",
+   "status": "active",
+   "nav": 100002252369.6568,
+   "total_return_pct": 0.0,
+   "sharpe_ratio": 0.03,
+   "max_drawdown_pct": -0.0107216,
+   "composite_score": 0.5147
   },
   {
    "rank": 61,
@@ -3028,38 +3028,12 @@
    "status": "active",
    "nav": 99721609772.5321,
    "total_return_pct": -0.28,
-   "sharpe_ratio": -2.2543,
+   "sharpe_ratio": -2.1899,
    "max_drawdown_pct": -0.00606163,
-   "composite_score": 0.5034
+   "composite_score": 0.5135
   },
   {
    "rank": 62,
-   "user_id": 5436,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "이*제",
-   "status": "active",
-   "nav": 99572478247.9976,
-   "total_return_pct": -0.43,
-   "sharpe_ratio": -4.3979,
-   "max_drawdown_pct": -0.0108315,
-   "composite_score": 0.5025
-  },
-  {
-   "rank": 63,
-   "user_id": 5341,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "조*규",
-   "status": "active",
-   "nav": 100002252369.6568,
-   "total_return_pct": 0.0,
-   "sharpe_ratio": 0.0308,
-   "max_drawdown_pct": -0.0107216,
-   "composite_score": 0.4999
-  },
-  {
-   "rank": 64,
    "user_id": 4929,
    "participant_id": null,
    "score_breakdown": null,
@@ -3067,38 +3041,25 @@
    "status": "active",
    "nav": 99832016090.1253,
    "total_return_pct": -0.17,
-   "sharpe_ratio": -0.3389,
+   "sharpe_ratio": -0.33,
    "max_drawdown_pct": -0.00949614,
-   "composite_score": 0.4985
+   "composite_score": 0.5127
   },
   {
-   "rank": 65,
-   "user_id": 3965,
+   "rank": 63,
+   "user_id": 5426,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "j****** ***l",
+   "username": "­*** * ** * ***부",
    "status": "active",
-   "nav": 99757718039.2185,
-   "total_return_pct": -0.24,
-   "sharpe_ratio": -0.9465,
-   "max_drawdown_pct": -0.00928298,
-   "composite_score": 0.4958
+   "nav": 99839347473.632,
+   "total_return_pct": -0.16,
+   "sharpe_ratio": -11.0589,
+   "max_drawdown_pct": -0.00221635,
+   "composite_score": 0.5125
   },
   {
-   "rank": 66,
-   "user_id": 4716,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "정*빈",
-   "status": "active",
-   "nav": 99568040098.9044,
-   "total_return_pct": -0.43,
-   "sharpe_ratio": -2.9102,
-   "max_drawdown_pct": -0.00680014,
-   "composite_score": 0.4939
-  },
-  {
-   "rank": 67,
+   "rank": 64,
    "user_id": 5391,
    "participant_id": null,
    "score_breakdown": null,
@@ -3106,22 +3067,61 @@
    "status": "active",
    "nav": 105077867809.6353,
    "total_return_pct": 5.08,
-   "sharpe_ratio": 3.6396,
+   "sharpe_ratio": 3.5257,
    "max_drawdown_pct": -0.0577033,
-   "composite_score": 0.4938
+   "composite_score": 0.5122
+  },
+  {
+   "rank": 65,
+   "user_id": 5288,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "손*빈",
+   "status": "active",
+   "nav": 100359955993.6874,
+   "total_return_pct": 0.36,
+   "sharpe_ratio": 2.849,
+   "max_drawdown_pct": -0.0188836,
+   "composite_score": 0.5109
+  },
+  {
+   "rank": 66,
+   "user_id": 3965,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "j****** ***l",
+   "status": "active",
+   "nav": 99757718039.2185,
+   "total_return_pct": -0.24,
+   "sharpe_ratio": -0.9213,
+   "max_drawdown_pct": -0.00928298,
+   "composite_score": 0.5089
+  },
+  {
+   "rank": 67,
+   "user_id": 5295,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "J* M",
+   "status": "active",
+   "nav": 100094263252.3589,
+   "total_return_pct": 0.09,
+   "sharpe_ratio": 0.4739,
+   "max_drawdown_pct": -0.0148405,
+   "composite_score": 0.5064
   },
   {
    "rank": 68,
-   "user_id": 2845,
+   "user_id": 19,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "홍*우",
+   "username": "S*** **** **m",
    "status": "active",
-   "nav": 99637183589.0638,
-   "total_return_pct": -0.36,
-   "sharpe_ratio": -4.0122,
-   "max_drawdown_pct": -0.00659056,
-   "composite_score": 0.4935
+   "nav": 99850683222.557,
+   "total_return_pct": -0.15,
+   "sharpe_ratio": 0.102,
+   "max_drawdown_pct": -0.0125097,
+   "composite_score": 0.5058
   },
   {
    "rank": 69,
@@ -3132,61 +3132,61 @@
    "status": "active",
    "nav": 99832995276.122,
    "total_return_pct": -0.17,
-   "sharpe_ratio": -0.6694,
+   "sharpe_ratio": -0.6516,
    "max_drawdown_pct": -0.0115415,
-   "composite_score": 0.4915
+   "composite_score": 0.5051
   },
   {
    "rank": 70,
-   "user_id": 5288,
+   "user_id": 5436,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "손*빈",
+   "username": "이*제",
    "status": "active",
-   "nav": 100359955993.6874,
-   "total_return_pct": 0.36,
-   "sharpe_ratio": 2.9295,
-   "max_drawdown_pct": -0.0188836,
-   "composite_score": 0.491
+   "nav": 99572478247.9976,
+   "total_return_pct": -0.43,
+   "sharpe_ratio": -4.1025,
+   "max_drawdown_pct": -0.0108315,
+   "composite_score": 0.5038
   },
   {
    "rank": 71,
-   "user_id": 19,
+   "user_id": 4716,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "S*** **** **m",
+   "username": "정*빈",
    "status": "active",
-   "nav": 99850683222.557,
-   "total_return_pct": -0.15,
-   "sharpe_ratio": 0.1048,
-   "max_drawdown_pct": -0.0125097,
-   "composite_score": 0.4909
+   "nav": 99568040098.9044,
+   "total_return_pct": -0.43,
+   "sharpe_ratio": -2.8303,
+   "max_drawdown_pct": -0.00680014,
+   "composite_score": 0.5035
   },
   {
    "rank": 72,
-   "user_id": 5295,
+   "user_id": 2845,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "J* M",
+   "username": "홍*우",
    "status": "active",
-   "nav": 100094263252.3589,
-   "total_return_pct": 0.09,
-   "sharpe_ratio": 0.4868,
-   "max_drawdown_pct": -0.0148405,
-   "composite_score": 0.4908
+   "nav": 99637183589.0638,
+   "total_return_pct": -0.36,
+   "sharpe_ratio": -3.8985,
+   "max_drawdown_pct": -0.00659056,
+   "composite_score": 0.5013
   },
   {
    "rank": 73,
-   "user_id": 2870,
+   "user_id": 5297,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "S* ***k",
+   "username": "박*훈",
    "status": "active",
-   "nav": 99455418148.7894,
-   "total_return_pct": -0.54,
-   "sharpe_ratio": -3.0404,
-   "max_drawdown_pct": -0.00850617,
-   "composite_score": 0.4856
+   "nav": 101365820093.0518,
+   "total_return_pct": 1.37,
+   "sharpe_ratio": 1.9784,
+   "max_drawdown_pct": -0.0292318,
+   "composite_score": 0.5006
   },
   {
    "rank": 74,
@@ -3197,25 +3197,12 @@
    "status": "active",
    "nav": 99845324538.6218,
    "total_return_pct": -0.15,
-   "sharpe_ratio": -0.4623,
+   "sharpe_ratio": -0.45,
    "max_drawdown_pct": -0.0139406,
-   "composite_score": 0.485
+   "composite_score": 0.499
   },
   {
    "rank": 75,
-   "user_id": 5297,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "박*훈",
-   "status": "active",
-   "nav": 101365820093.0518,
-   "total_return_pct": 1.37,
-   "sharpe_ratio": 2.0333,
-   "max_drawdown_pct": -0.0292318,
-   "composite_score": 0.4823
-  },
-  {
-   "rank": 76,
    "user_id": 5314,
    "participant_id": null,
    "score_breakdown": null,
@@ -3223,64 +3210,25 @@
    "status": "active",
    "nav": 100174815569.4079,
    "total_return_pct": 0.17,
-   "sharpe_ratio": 0.6871,
+   "sharpe_ratio": 0.6689,
    "max_drawdown_pct": -0.0189231,
-   "composite_score": 0.4808
+   "composite_score": 0.4968
+  },
+  {
+   "rank": 76,
+   "user_id": 2870,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "S* ***k",
+   "status": "active",
+   "nav": 99455418148.7894,
+   "total_return_pct": -0.54,
+   "sharpe_ratio": -2.9566,
+   "max_drawdown_pct": -0.00850617,
+   "composite_score": 0.495
   },
   {
    "rank": 77,
-   "user_id": 5237,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "김*인",
-   "status": "active",
-   "nav": 99199206869.3672,
-   "total_return_pct": -0.8,
-   "sharpe_ratio": -3.9662,
-   "max_drawdown_pct": -0.00820708,
-   "composite_score": 0.4778
-  },
-  {
-   "rank": 78,
-   "user_id": 5290,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "S*** *** **e",
-   "status": "active",
-   "nav": 99427087635.8874,
-   "total_return_pct": -0.57,
-   "sharpe_ratio": -8.2808,
-   "max_drawdown_pct": -0.00681504,
-   "composite_score": 0.4772
-  },
-  {
-   "rank": 79,
-   "user_id": 5348,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "이*호",
-   "status": "active",
-   "nav": 99338346830.7962,
-   "total_return_pct": -0.66,
-   "sharpe_ratio": -7.1772,
-   "max_drawdown_pct": -0.00699162,
-   "composite_score": 0.4771
-  },
-  {
-   "rank": 80,
-   "user_id": 5394,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "장*재",
-   "status": "active",
-   "nav": 99424138716.0683,
-   "total_return_pct": -0.58,
-   "sharpe_ratio": -2.4688,
-   "max_drawdown_pct": -0.0128049,
-   "composite_score": 0.4769
-  },
-  {
-   "rank": 81,
    "user_id": 5215,
    "participant_id": null,
    "score_breakdown": null,
@@ -3288,25 +3236,38 @@
    "status": "active",
    "nav": 99428688560.0574,
    "total_return_pct": -0.57,
-   "sharpe_ratio": -2.2308,
+   "sharpe_ratio": -2.1705,
    "max_drawdown_pct": -0.0118607,
-   "composite_score": 0.4767
+   "composite_score": 0.4875
   },
   {
-   "rank": 82,
-   "user_id": 5336,
+   "rank": 78,
+   "user_id": 5394,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "심*주",
+   "username": "장*재",
    "status": "active",
-   "nav": 99392783443.7858,
-   "total_return_pct": -0.61,
-   "sharpe_ratio": -2.1688,
-   "max_drawdown_pct": -0.0140646,
-   "composite_score": 0.4692
+   "nav": 99424138716.0683,
+   "total_return_pct": -0.58,
+   "sharpe_ratio": -2.3938,
+   "max_drawdown_pct": -0.0128049,
+   "composite_score": 0.486
   },
   {
-   "rank": 83,
+   "rank": 79,
+   "user_id": 5237,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "김*인",
+   "status": "active",
+   "nav": 99199206869.3672,
+   "total_return_pct": -0.8,
+   "sharpe_ratio": -3.8541,
+   "max_drawdown_pct": -0.00820708,
+   "composite_score": 0.4857
+  },
+  {
+   "rank": 80,
    "user_id": 5362,
    "participant_id": null,
    "score_breakdown": null,
@@ -3314,9 +3275,48 @@
    "status": "active",
    "nav": 99574513892.2061,
    "total_return_pct": -0.43,
-   "sharpe_ratio": -1.2346,
+   "sharpe_ratio": -1.2017,
    "max_drawdown_pct": -0.016566,
-   "composite_score": 0.4684
+   "composite_score": 0.481
+  },
+  {
+   "rank": 81,
+   "user_id": 5336,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "심*주",
+   "status": "active",
+   "nav": 99392783443.7858,
+   "total_return_pct": -0.61,
+   "sharpe_ratio": -2.1102,
+   "max_drawdown_pct": -0.0140646,
+   "composite_score": 0.4802
+  },
+  {
+   "rank": 82,
+   "user_id": 5348,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "이*호",
+   "status": "active",
+   "nav": 99338346830.7962,
+   "total_return_pct": -0.66,
+   "sharpe_ratio": -6.9453,
+   "max_drawdown_pct": -0.00699162,
+   "composite_score": 0.4795
+  },
+  {
+   "rank": 83,
+   "user_id": 5290,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "S*** *** **e",
+   "status": "active",
+   "nav": 99427087635.8874,
+   "total_return_pct": -0.57,
+   "sharpe_ratio": -7.9974,
+   "max_drawdown_pct": -0.00681504,
+   "composite_score": 0.4777
   },
   {
    "rank": 84,
@@ -3327,9 +3327,9 @@
    "status": "active",
    "nav": 99293802334.6398,
    "total_return_pct": -0.71,
-   "sharpe_ratio": -2.5834,
+   "sharpe_ratio": -2.513,
    "max_drawdown_pct": -0.0145399,
-   "composite_score": 0.4643
+   "composite_score": 0.4746
   },
   {
    "rank": 85,
@@ -3340,9 +3340,9 @@
    "status": "active",
    "nav": 99666367436.0722,
    "total_return_pct": -0.33,
-   "sharpe_ratio": -0.9735,
+   "sharpe_ratio": -0.9476,
    "max_drawdown_pct": -0.0209301,
-   "composite_score": 0.4581
+   "composite_score": 0.4711
   },
   {
    "rank": 86,
@@ -3353,9 +3353,9 @@
    "status": "active",
    "nav": 99444377462.4168,
    "total_return_pct": -0.56,
-   "sharpe_ratio": -2.2844,
+   "sharpe_ratio": -2.2225,
    "max_drawdown_pct": -0.0186048,
-   "composite_score": 0.4564
+   "composite_score": 0.4672
   },
   {
    "rank": 87,
@@ -3366,9 +3366,9 @@
    "status": "active",
    "nav": 99331684597.8792,
    "total_return_pct": -0.67,
-   "sharpe_ratio": -2.2791,
+   "sharpe_ratio": -2.2174,
    "max_drawdown_pct": -0.0177984,
-   "composite_score": 0.4561
+   "composite_score": 0.4669
   },
   {
    "rank": 88,
@@ -3379,25 +3379,12 @@
    "status": "active",
    "nav": 99549278550.631,
    "total_return_pct": -0.45,
-   "sharpe_ratio": -3.3319,
+   "sharpe_ratio": -3.2395,
    "max_drawdown_pct": -0.019398,
-   "composite_score": 0.454
+   "composite_score": 0.463
   },
   {
    "rank": 89,
-   "user_id": 5299,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "곽*욱",
-   "status": "active",
-   "nav": 99021146264.2191,
-   "total_return_pct": -0.98,
-   "sharpe_ratio": -3.9982,
-   "max_drawdown_pct": -0.0146417,
-   "composite_score": 0.4538
-  },
-  {
-   "rank": 90,
    "user_id": 5383,
    "participant_id": null,
    "score_breakdown": null,
@@ -3405,9 +3392,22 @@
    "status": "active",
    "nav": 99724700122.0547,
    "total_return_pct": -0.28,
-   "sharpe_ratio": 0.0469,
+   "sharpe_ratio": 0.0456,
    "max_drawdown_pct": -0.0260206,
-   "composite_score": 0.4481
+   "composite_score": 0.4619
+  },
+  {
+   "rank": 90,
+   "user_id": 5299,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "곽*욱",
+   "status": "active",
+   "nav": 99021146264.2191,
+   "total_return_pct": -0.98,
+   "sharpe_ratio": -3.885,
+   "max_drawdown_pct": -0.0146417,
+   "composite_score": 0.4616
   },
   {
    "rank": 91,
@@ -3418,9 +3418,9 @@
    "status": "active",
    "nav": 99438305854.9952,
    "total_return_pct": -0.56,
-   "sharpe_ratio": -1.2329,
+   "sharpe_ratio": -1.1982,
    "max_drawdown_pct": -0.0230782,
-   "composite_score": 0.447
+   "composite_score": 0.4587
   },
   {
    "rank": 92,
@@ -3431,9 +3431,9 @@
    "status": "active",
    "nav": 101140027992.9186,
    "total_return_pct": 1.14,
-   "sharpe_ratio": 1.7883,
+   "sharpe_ratio": 1.7376,
    "max_drawdown_pct": -0.0409472,
-   "composite_score": 0.4418
+   "composite_score": 0.4585
   },
   {
    "rank": 93,
@@ -3444,9 +3444,9 @@
    "status": "active",
    "nav": 98587969158.5964,
    "total_return_pct": -1.41,
-   "sharpe_ratio": -2.7116,
+   "sharpe_ratio": -2.6375,
    "max_drawdown_pct": -0.0203459,
-   "composite_score": 0.4288
+   "composite_score": 0.4389
   },
   {
    "rank": 94,
@@ -3457,9 +3457,9 @@
    "status": "active",
    "nav": 99082473531.192,
    "total_return_pct": -0.92,
-   "sharpe_ratio": -2.8059,
+   "sharpe_ratio": -2.7291,
    "max_drawdown_pct": -0.024328,
-   "composite_score": 0.4288
+   "composite_score": 0.4386
   },
   {
    "rank": 95,
@@ -3470,25 +3470,12 @@
    "status": "active",
    "nav": 98578509218.966,
    "total_return_pct": -1.42,
-   "sharpe_ratio": -9.3893,
+   "sharpe_ratio": -9.0477,
    "max_drawdown_pct": -0.0152088,
-   "composite_score": 0.4279
+   "composite_score": 0.4267
   },
   {
    "rank": 96,
-   "user_id": 5428,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "박*영",
-   "status": "active",
-   "nav": 97480111974.1795,
-   "total_return_pct": -2.52,
-   "sharpe_ratio": -12.0684,
-   "max_drawdown_pct": -0.026534,
-   "composite_score": 0.3902
-  },
-  {
-   "rank": 97,
    "user_id": 2,
    "participant_id": null,
    "score_breakdown": null,
@@ -3496,9 +3483,22 @@
    "status": "active",
    "nav": 98568041883.4449,
    "total_return_pct": -1.43,
-   "sharpe_ratio": -2.8533,
+   "sharpe_ratio": -2.7751,
    "max_drawdown_pct": -0.0332595,
-   "composite_score": 0.3887
+   "composite_score": 0.3985
+  },
+  {
+   "rank": 97,
+   "user_id": 5428,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "박*영",
+   "status": "active",
+   "nav": 97480111974.1795,
+   "total_return_pct": -2.52,
+   "sharpe_ratio": -11.0692,
+   "max_drawdown_pct": -0.026534,
+   "composite_score": 0.3868
   },
   {
    "rank": 98,
@@ -3509,9 +3509,9 @@
    "status": "active",
    "nav": 97774418303.9613,
    "total_return_pct": -2.23,
-   "sharpe_ratio": -4.9684,
+   "sharpe_ratio": -4.8229,
    "max_drawdown_pct": -0.0321015,
-   "composite_score": 0.3674
+   "composite_score": 0.3735
   },
   {
    "rank": 99,
@@ -3522,9 +3522,9 @@
    "status": "active",
    "nav": 97658450606.7838,
    "total_return_pct": -2.34,
-   "sharpe_ratio": -4.9006,
+   "sharpe_ratio": -4.7575,
    "max_drawdown_pct": -0.0312631,
-   "composite_score": 0.3672
+   "composite_score": 0.3735
   },
   {
    "rank": 100,
@@ -3535,25 +3535,12 @@
    "status": "active",
    "nav": 98167005194.9175,
    "total_return_pct": -1.83,
-   "sharpe_ratio": -3.4194,
+   "sharpe_ratio": -3.3243,
    "max_drawdown_pct": -0.0474538,
-   "composite_score": 0.3342
+   "composite_score": 0.343
   },
   {
    "rank": 101,
-   "user_id": 4735,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "한*훈",
-   "status": "active",
-   "nav": 96691340608.6777,
-   "total_return_pct": -3.31,
-   "sharpe_ratio": -8.5325,
-   "max_drawdown_pct": -0.033883,
-   "composite_score": 0.3264
-  },
-  {
-   "rank": 102,
    "user_id": 5320,
    "participant_id": null,
    "score_breakdown": null,
@@ -3561,9 +3548,22 @@
    "status": "active",
    "nav": 96800689582.8337,
    "total_return_pct": -3.2,
-   "sharpe_ratio": -3.3552,
+   "sharpe_ratio": -3.262,
    "max_drawdown_pct": -0.0390642,
-   "composite_score": 0.326
+   "composite_score": 0.3349
+  },
+  {
+   "rank": 102,
+   "user_id": 4735,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "한*훈",
+   "status": "active",
+   "nav": 96691340608.6777,
+   "total_return_pct": -3.31,
+   "sharpe_ratio": -8.2365,
+   "max_drawdown_pct": -0.033883,
+   "composite_score": 0.3265
   },
   {
    "rank": 103,
@@ -3574,9 +3574,9 @@
    "status": "active",
    "nav": 97880072888.6898,
    "total_return_pct": -2.12,
-   "sharpe_ratio": -2.1239,
+   "sharpe_ratio": -2.0666,
    "max_drawdown_pct": -0.0529365,
-   "composite_score": 0.3136
+   "composite_score": 0.3247
   },
   {
    "rank": 104,
@@ -3587,9 +3587,9 @@
    "status": "active",
    "nav": 98151750034.2521,
    "total_return_pct": -1.85,
-   "sharpe_ratio": -2.1944,
+   "sharpe_ratio": -2.135,
    "max_drawdown_pct": -0.0591191,
-   "composite_score": 0.3014
+   "composite_score": 0.3123
   },
   {
    "rank": 105,
@@ -3600,9 +3600,9 @@
    "status": "active",
    "nav": 98873407611.0036,
    "total_return_pct": -1.13,
-   "sharpe_ratio": -6.5762,
+   "sharpe_ratio": -6.3698,
    "max_drawdown_pct": -0.0657751,
-   "composite_score": 0.2883
+   "composite_score": 0.2917
   },
   {
    "rank": 106,
@@ -3613,9 +3613,9 @@
    "status": "active",
    "nav": 96796347609.739,
    "total_return_pct": -3.2,
-   "sharpe_ratio": -3.4633,
+   "sharpe_ratio": -3.3668,
    "max_drawdown_pct": -0.0653416,
-   "composite_score": 0.2457
+   "composite_score": 0.2545
   },
   {
    "rank": 107,
@@ -3628,7 +3628,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.354
+   "composite_score": 0.3553
   },
   {
    "rank": 108,
@@ -3641,7 +3641,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.354
+   "composite_score": 0.3553
   },
   {
    "rank": 109,
@@ -3654,7 +3654,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3478
+   "composite_score": 0.353
   },
   {
    "rank": 110,
@@ -3667,7 +3667,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3401
+   "composite_score": 0.35
   },
   {
    "rank": 111,
@@ -3680,7 +3680,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.337
+   "composite_score": 0.3489
   },
   {
    "rank": 112,
@@ -3693,7 +3693,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3339
+   "composite_score": 0.3477
   },
   {
    "rank": 113,
@@ -3706,7 +3706,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3339
+   "composite_score": 0.3477
   },
   {
    "rank": 114,
@@ -3719,7 +3719,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3339
+   "composite_score": 0.3477
   },
   {
    "rank": 115,
@@ -3732,7 +3732,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 116,
@@ -3745,7 +3745,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 117,
@@ -3758,7 +3758,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 118,
@@ -3771,7 +3771,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 119,
@@ -3784,7 +3784,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 120,
@@ -3797,7 +3797,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 121,
@@ -3810,7 +3810,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 122,
@@ -3823,7 +3823,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 123,
@@ -3836,7 +3836,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 124,
@@ -3849,7 +3849,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 125,
@@ -3862,7 +3862,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 126,
@@ -3875,7 +3875,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 127,
@@ -3888,7 +3888,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 128,
@@ -3901,7 +3901,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 129,
@@ -3914,7 +3914,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 130,
@@ -3927,7 +3927,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 131,
@@ -3940,7 +3940,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 132,
@@ -3953,7 +3953,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 133,
@@ -3966,7 +3966,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 134,
@@ -3979,7 +3979,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 135,
@@ -3992,7 +3992,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 136,
@@ -4005,7 +4005,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 137,
@@ -4018,7 +4018,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 138,
@@ -4031,7 +4031,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 139,
@@ -4044,7 +4044,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 140,
@@ -4057,7 +4057,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 141,
@@ -4070,7 +4070,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 142,
@@ -4083,7 +4083,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 143,
@@ -4096,7 +4096,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 144,
@@ -4109,7 +4109,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 145,
@@ -4122,7 +4122,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 146,
@@ -4135,7 +4135,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 147,
@@ -4148,7 +4148,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 148,
@@ -4161,7 +4161,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 149,
@@ -4174,7 +4174,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 150,
@@ -4187,7 +4187,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 151,
@@ -4200,7 +4200,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 152,
@@ -4213,7 +4213,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 153,
@@ -4226,7 +4226,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 154,
@@ -4239,7 +4239,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 155,
@@ -4252,7 +4252,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 156,
@@ -4265,7 +4265,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 157,
@@ -4278,7 +4278,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 158,
@@ -4291,7 +4291,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 159,
@@ -4304,7 +4304,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 160,
@@ -4317,7 +4317,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 161,
@@ -4330,7 +4330,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 162,
@@ -4343,7 +4343,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 163,
@@ -4356,7 +4356,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 164,
@@ -4369,7 +4369,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 165,
@@ -4382,7 +4382,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 166,
@@ -4395,7 +4395,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 167,
@@ -4408,7 +4408,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 168,
@@ -4421,7 +4421,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 169,
@@ -4434,7 +4434,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 170,
@@ -4447,7 +4447,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 171,
@@ -4460,7 +4460,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 172,
@@ -4473,7 +4473,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 173,
@@ -4486,7 +4486,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 174,
@@ -4499,7 +4499,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 175,
@@ -4512,7 +4512,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 176,
@@ -4525,7 +4525,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 177,
@@ -4538,7 +4538,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 178,
@@ -4551,7 +4551,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 179,
@@ -4564,7 +4564,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 180,
@@ -4577,7 +4577,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 181,
@@ -4590,7 +4590,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 182,
@@ -4603,7 +4603,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 183,
@@ -4616,7 +4616,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 184,
@@ -4629,7 +4629,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 185,
@@ -4642,7 +4642,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 186,
@@ -4655,7 +4655,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 187,
@@ -4668,7 +4668,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 188,
@@ -4681,7 +4681,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 189,
@@ -4694,7 +4694,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 190,
@@ -4707,7 +4707,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 191,
@@ -4720,7 +4720,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 192,
@@ -4733,7 +4733,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 193,
@@ -4746,7 +4746,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 194,
@@ -4759,7 +4759,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 195,
@@ -4772,7 +4772,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 196,
@@ -4785,7 +4785,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 197,
@@ -4798,7 +4798,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 198,
@@ -4811,7 +4811,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 199,
@@ -4824,7 +4824,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 200,
@@ -4837,7 +4837,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 201,
@@ -4850,7 +4850,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 202,
@@ -4863,7 +4863,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 203,
@@ -4876,7 +4876,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 204,
@@ -4889,7 +4889,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 205,
@@ -4902,7 +4902,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 206,
@@ -4915,7 +4915,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 207,
@@ -4928,7 +4928,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 208,
@@ -4941,7 +4941,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   },
   {
    "rank": 209,
@@ -4954,7 +4954,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3324
+   "composite_score": 0.3471
   }
  ]
 }
