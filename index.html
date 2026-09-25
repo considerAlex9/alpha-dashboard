@@ -217,7 +217,7 @@ const hideTip=()=>tip.style.display='none';
 const me = D.leaderboard.find(r=>Math.abs(r.nav-P.nav)<1);
 document.getElementById('asof').textContent=`가격 기준 ${KST(P.price_as_of)} · 수집 ${KST(D.captured_at)}`;
 document.getElementById('rankchip').innerHTML = me
-  ? `리더보드 <b>${me.rank}위</b> / ${D.leaderboard.length}명 · 상위 ${(me.rank/D.leaderboard.length*100).toFixed(0)}%`
+  ? `리더보드 <b>${me.rank}위</b> / ${D.leaderboard.length}명 · 상위 ${(me.rank/D.leaderboard.length*100).toFixed(0)}% · ${KST(D.captured_at)} 기준`
   : '리더보드 순위 확인 불가';
 document.getElementById('nav').innerHTML=`${(P.nav/1e8).toLocaleString('ko-KR',{minimumFractionDigits:2,maximumFractionDigits:2})}<small>억 원</small>`;
 document.getElementById('navsub').innerHTML=
@@ -231,7 +231,8 @@ const tiles=[
   ['순노출 Net', pct(P.net_exposure_pct), `Long ${won(P.long_mv)} − Short ${won(P.short_mv)}`],
   ['총노출 Gross', pct(P.gross_exposure/P.nav,1,false), `${won(P.gross_exposure)}원`],
   ['종목 수', `${P.long_count} L / ${P.short_count} S`, `총 ${P.positions.length}종목`],
-  ['현금 비중', pct(P.cash_balance/P.nav,1,false), 'NAV 대비'],
+  // API의 cash_balance 에는 공매도로 받은 매도대금이 포함되어 있어 그대로 나누면 과대 표시된다
+  ['실질 현금 비중', pct((P.cash_balance-P.short_mv)/P.nav,1,false), `공매도 대금 제외 · 잔고상 현금 ${won(P.cash_balance)}`],
 ];
 document.getElementById('tiles').innerHTML=tiles.map(([l,v,n])=>
   `<div class="card tile"><div class="label">${l}</div><div class="value">${v}</div><div class="note">${esc(n)}</div></div>`).join('');
