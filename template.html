@@ -196,8 +196,16 @@ tr.click{cursor:pointer}
 .topic .tt b{font-size:14px;line-height:1.4}
 .topic p{margin:6px 0 8px;font-size:13px;line-height:1.65;color:var(--ink-2)}
 .topic .src{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
-.topic .src a{font-size:11.5px;color:var(--muted);text-decoration:none;margin-left:auto}
-.topic .src a:hover{color:var(--accent)}
+.topic ul{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:7px}
+.topic li{font-size:13px;line-height:1.55;display:grid;grid-template-columns:1fr auto;gap:8px;align-items:baseline}
+.topic li a{color:var(--ink);text-decoration:none}
+.topic li a:hover{color:var(--accent);text-decoration:underline}
+.topic li .s{display:flex;gap:3px;flex-wrap:wrap;justify-content:flex-end}
+.topic li time{color:var(--muted);font-size:11.5px;margin-right:6px;font-variant-numeric:tabular-nums}
+.topic .cnt{font-size:12px;color:var(--muted)}
+.topic details summary{cursor:pointer;color:var(--accent);font-size:12.5px;margin-top:8px;list-style:none}
+.topic details summary::-webkit-details-marker{display:none}
+.topic.wide{grid-column:1/-1}
 .tag.pos{background:color-mix(in srgb,var(--up) 13%,transparent);color:var(--up)}
 .tag.neg{background:color-mix(in srgb,var(--down) 14%,transparent);color:var(--down)}
 .plist{display:grid;gap:2px}
@@ -324,7 +332,8 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
 
     <section class="card mt" id="newscard">
       <div class="card-h">
-        <div><h3><svg class="i"><use href="#i-globe"/></svg>오늘의 매크로 뉴스</h3><div class="sub" id="newssub"></div></div>
+        <div><h3><svg class="i"><use href="#i-globe"/></svg>매크로 뉴스 브리핑</h3><div class="sub" id="newssub"></div></div>
+        <div class="seg" id="newsed"></div>
         <button class="link" data-go="holdings" id="ckptlink">보유종목 체크 포인트<svg class="i"><use href="#i-arrow"/></svg></button>
       </div>
       <div id="newshead"></div>
@@ -512,7 +521,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   </div>
 
   <footer>
-    데이터 출처 — 대회 API(포트폴리오·주문·리더보드·업종 동향) · 한국투자증권 오픈 API(국내 지수·종목 일봉·투자자 매매·공매도·시가총액, 실패 시 네이버 증권으로 대체) · 한국거래소 KIND(시장경보) · 금융감독원 다트(공시) · 야후 파이낸스(해외 지표) · 증권사·리서치 텔레그램 공개 채널(매크로 뉴스, Claude 요약).<br>
+    데이터 출처 — 대회 API(포트폴리오·주문·리더보드·업종 동향) · 한국투자증권 오픈 API(국내 지수·종목 일봉·투자자 매매·공매도·시가총액, 실패 시 네이버 증권으로 대체) · 한국거래소 KIND(시장경보) · 금융감독원 다트(공시) · 야후 파이낸스(해외 지표) · 증권사·리서치 텔레그램 공개 채널(매크로 뉴스, 장전 08:00·장마감 16:00 규칙 기반 정리).<br>
     히스토리는 자동 업데이트 때마다 하루 한 점씩 저장합니다. 베타는 코스피 대비 일간 수익률 회귀값, 체크 포인트는 정해 둔 규칙에 따른 자동 신호입니다. 참고용 정보이며 투자 권유가 아닙니다.
   </footer>
 </main>
@@ -954,32 +963,30 @@ function renderHoldings(){
 // ============================================================
 // 오늘의 매크로 뉴스 (포트폴리오 탭)
 // ============================================================
-const TONE={'긍정':['pos','긍정'],'부정':['neg','부정'],'중립':['plain','중립']};
+let newsIdx=0;
 function renderNews(){
-  const N=D.news, S=N?.summary;
+  const E=D.news?.editions||[];
   const crit=ALERTS.filter(a=>a.lvl==='crit').length;
   document.getElementById('ckptlink').innerHTML=`보유종목 체크 포인트 ${ALERTS.length}건${crit?` · 주의 ${crit}`:''}${ico('arrow')}`;
-  if(!N){ document.getElementById('newsbody').innerHTML='<div class="empty">뉴스 데이터가 아직 없습니다. 다음 자동 업데이트 후 표시됩니다.</div>'; return; }
-  if(S){
-    document.getElementById('newssub').textContent=`증권사·리서치 텔레그램 ${S.post_count}개 글을 주제별로 정리 · 요약 ${KST(S.created_at)} · AI 요약이라 원문 확인 권장`;
-    document.getElementById('newshead').innerHTML=`<div class="nhead">${esc(S.headline)}</div>`;
-    document.getElementById('newsbody').innerHTML=`<div class="topics">`+S.topics.map(t=>{
-      const tn=TONE[t.tone]||TONE['중립'];
-      return `<div class="topic"><div class="tt"><b>${esc(t.title)}</b><span class="tag ${tn[0]}">${tn[1]}</span></div>
-        <p>${esc(t.summary)}</p>
-        <div class="src">${(t.sources.length?t.sources:['원 출처 미표기']).map(s=>`<span class="tag plain">${esc(s)}</span>`).join('')}
-          ${t.links.length?`<a href="${esc(t.links[0])}" target="_blank" rel="noopener">원문 ${t.links.length}건${ico('ext')}</a>`:''}</div></div>`;
-    }).join('')+`</div>`;
-    return;
-  }
-  // 요약 키가 없을 때: 최근 글 첫 줄
-  document.getElementById('newssub').textContent=`증권사·리서치 텔레그램 최근 ${N.hours||24}시간 글 ${N.post_count}개 · 수집 ${KST(N.captured_at)} · 주제별 AI 요약은 요약 키 등록 후 표시`;
-  document.getElementById('newsbody').innerHTML=`<div class="plist">`+N.posts.slice(0,10).map(p=>{
-    const first=(p.text.split('\n').find(l=>(l.match(/[가-힣A-Za-z0-9]/g)||[]).length>=8)||p.text).trim();   // 이모지만 있는 줄은 건너뜀
-    return `<div class="pitem"><time>${p.time.slice(11,16)}</time><span>${esc(first.length>110?first.slice(0,110)+'…':first)}</span><a href="${esc(p.url)}" target="_blank" rel="noopener">원문${ico('ext')}</a></div>`;
-  }).join('')+`</div>`;
+  if(!E.length){ document.getElementById('newsbody').innerHTML='<div class="empty">첫 브리핑은 다음 장전(08:00) 또는 장마감(16:00) 시각 이후 자동 업데이트 때 만들어집니다.</div>'; return; }
+  const fmt=s=>`${+s.slice(5,7)}/${+s.slice(8,10)} ${s.slice(11,16)}`;      // 저장된 시각은 모두 한국 시간
+  document.getElementById('newsed').innerHTML=E.slice(0,4).map((e,i)=>`<button data-i="${i}" aria-pressed="${i===newsIdx}">${+e.end.slice(5,7)}/${+e.end.slice(8,10)} ${e.name.replace(' 브리핑','')}</button>`).join('');
+  seg('newsed', d=>{newsIdx=+d.i; renderNews();});
+  const e=E[newsIdx]||E[0];
+  const nTopic=e.topics.filter(t=>t.title!=='기타').length;
+  document.getElementById('newssub').textContent=`${e.name} · ${fmt(e.start)} ~ ${fmt(e.end)} 사이 증권사·리서치 텔레그램 글 ${e.post_count}개를 ${nTopic}개 주제로 정리 · 출처는 글에 적힌 원 출처`;
+  document.getElementById('newshead').innerHTML='';
+  if(!e.topics.length){ document.getElementById('newsbody').innerHTML='<div class="empty">이 기간에 올라온 글이 없습니다.</div>'; return; }
+  const li=it=>`<li><a href="${esc(it.url)}" target="_blank" rel="noopener"><time>${it.time.slice(11,16)}</time>${esc(it.headline)}</a>
+    <span class="s">${it.sources.map(s=>`<span class="tag plain">${esc(s)}</span>`).join('')}</span></li>`;
+  document.getElementById('newsbody').innerHTML=`<div class="topics">`+e.topics.map(t=>`
+    <div class="topic ${t.title==='기타'?'wide':''}">
+      <div class="tt"><b>${esc(t.title)}</b><span class="cnt">${t.items.length}건</span></div>
+      ${t.sources.length?`<div class="src" style="margin-top:6px">${t.sources.map(s=>`<span class="tag hold">${esc(s)}</span>`).join('')}</div>`:''}
+      <ul>${t.items.slice(0,4).map(li).join('')}</ul>
+      ${t.items.length>4?`<details><summary>${t.items.length-4}건 더 보기</summary><ul>${t.items.slice(4).map(li).join('')}</ul></details>`:''}
+    </div>`).join('')+`</div>`;
 }
-
 // ============================================================
 // 공시 탭
 // ============================================================
