@@ -188,6 +188,30 @@ tr.click{cursor:pointer}
 .wcard .meta{font-size:12px;color:var(--ink-2);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 10px}
 .wcard .why{font-size:12px;color:var(--muted);margin-top:3px}
 
+/* 섹터별 롱·숏 */
+.themes{display:grid}
+.th-row{display:grid;grid-template-columns:150px 1fr 1fr 96px 100px;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--grid)}
+.th-row:last-child{border-bottom:0}
+.th-row.head{padding:0 0 8px;font-size:12px;color:var(--muted);font-weight:600}
+.th-row.head div:nth-child(n+4){text-align:right}
+.th-name b{font-size:13.5px;display:block}
+.th-name span{font-size:11.5px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.pchip{display:inline-flex;align-items:baseline;gap:5px;padding:4px 9px 4px 8px;border-radius:8px;background:var(--surface-2);
+  border-left:3px solid var(--c);font-size:12.5px;white-space:nowrap}
+.pchip em{font-style:normal;color:var(--muted);font-size:11.5px}
+.pchip b{font-weight:650;font-size:11.5px}
+.th-num{text-align:right;font-variant-numeric:tabular-nums;font-size:13px}
+.th-num small{display:block;font-size:11px;color:var(--muted)}
+.nobox{color:var(--muted);font-size:12px}
+@media (max-width:860px){
+  .th-row{grid-template-columns:1fr 1fr;gap:6px 10px}
+  .th-row.head{display:none}
+  .th-name{grid-column:1/-1}
+  .th-row .chips{grid-column:auto}
+  .th-num{text-align:left}
+}
+
 /* 매크로 뉴스 */
 .mrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
 .metric{padding:9px 13px;border-radius:10px;background:var(--surface-2);min-width:120px}
@@ -358,6 +382,14 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
         </div>
         <div class="bf" id="pnl"></div>
       </div>
+    </section>
+
+    <section class="card mt">
+      <div class="card-h">
+        <div><h3>섹터별 롱·숏</h3><div class="sub">보유 종목을 투자 테마로 묶어 롱과 숏을 나란히 · 순노출은 순자산 대비 · 칩 안의 숫자는 비중과 수익률</div></div>
+        <div class="legend"><span><i class="key" style="background:var(--long)"></i>롱</span><span><i class="key" style="background:var(--short)"></i>숏</span></div>
+      </div>
+      <div class="themes" id="themes"></div>
     </section>
 
     <section class="card mt">
@@ -771,6 +803,8 @@ function renderPortfolio(){
 
   renderNews();
 
+  renderThemes();
+
   // 업종 노출
   const bySec={};
   P.positions.forEach(p=>{ const k=sec(p.sector); bySec[k]??={long:0,short:0,nl:0,ns:0}; bySec[k][p.side]+=p.market_value; bySec[k][p.side==='long'?'nl':'ns']++; });
@@ -800,6 +834,28 @@ function renderPortfolio(){
       <td class="l"><span class="side"><i style="background:var(--${(SIDE[o.side]||['short'])[0]})"></i>${(SIDE[o.side]||[0,esc(o.side)])[1]} · ${o.order_type==='market'?'시장가':'지정가'}</span></td>
       <td>${num(o.filled_quantity||o.quantity)}</td><td>${o.filled_avg_price?num(o.filled_avg_price):'—'}</td>
       <td><span class="tag plain">${ST[o.status]||esc(o.status)}</span></td></tr>`).join('')+'</tbody>';
+}
+
+// 섹터별 롱·숏 — sectors.json 의 테마, 없으면 한국투자증권 업종명
+function renderThemes(){
+  const T=D.themes||{}, byCode={};
+  Object.entries(T).forEach(([t,codes])=>{ if(Array.isArray(codes)) codes.forEach(c=>byCode[c]=t); });
+  const PSx=M?.pairs?.stocks||{};
+  const G={};
+  pos.forEach(p=>{
+    const t=byCode[p.company_symbol] || PSx[p.company_symbol]?.sector || sec(p.sector);
+    (G[t]??={name:t,long:[],short:[],lmv:0,smv:0,pnl:0});
+    G[t][p.side].push(p); G[t][p.side==='long'?'lmv':'smv']+=p.market_value; G[t].pnl+=p.unrealized_pnl;
+  });
+  const rows=Object.values(G).sort((a,b)=>((b.long.length&&b.short.length)-(a.long.length&&a.short.length)) || (b.lmv+b.smv)-(a.lmv+a.smv));
+  const chip=(p,side)=>`<span class="pchip" style="--c:var(--${side})" title="${esc(p.company_alias)} · 평가손익 ${won(p.unrealized_pnl,true)}원">${esc(p.company_alias)}<em>${pct(p.weight_pct,1,false)}</em><b class="${dir(p.ret)}">${pct(p.ret,1)}</b></span>`;
+  const list=(arr,side)=>arr.length?`<div class="chips">${[...arr].sort((a,b)=>b.market_value-a.market_value).map(p=>chip(p,side)).join('')}</div>`:'<span class="nobox">—</span>';
+  document.getElementById('themes').innerHTML=`<div class="th-row head"><div>테마</div><div>롱</div><div>숏</div><div>순노출</div><div>평가손익</div></div>`+
+    rows.map(g=>{ const net=(g.lmv-g.smv)/P.nav, pair=g.long.length&&g.short.length;
+      return `<div class="th-row"><div class="th-name"><b>${esc(g.name)}</b><span>${pair?'롱·숏 페어':g.long.length?'롱만':'숏만'} · ${g.long.length+g.short.length}종목</span></div>
+        ${list(g.long,'long')}${list(g.short,'short')}
+        <div class="th-num"><span class="${dir(net)}">${pct(net,1)}</span><small>롱 ${won(g.lmv)} · 숏 ${won(g.smv)}</small></div>
+        <div class="th-num"><span class="${dir(g.pnl)}">${won(g.pnl,true)}</span><small>원</small></div></div>`; }).join('');
 }
 
 const posState={i:8,desc:true,f:'all'};
