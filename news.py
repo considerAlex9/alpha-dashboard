@@ -16,8 +16,8 @@ from datetime import datetime, time, timedelta, timezone
 KST = timezone(timedelta(hours=9))
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
-MARKET_CHANNELS = ["lim_econ", "hanwhastrategy", "ehdwl", "yieldnspread"]           # 시황 채널
-REFERENCE_CHANNELS = ["aetherjapanresearch", "free_life59", "Jstockclass"]          # 그 외 참고 채널
+MARKET_CHANNELS = ["cahier_de_market", "ehdwl", "hedgecat0301", "lim_econ", "strategy_kis", "hanwhastrategy", "Jstockclass"]
+REFERENCE_CHANNELS = []          # 제목만 짧게 보여줄 참고 채널 (지금은 없음)
 EDITIONS = [(time(8, 0), "장전 브리핑"), (time(16, 0), "장마감 브리핑")]
 KEEP = 10                  # 보관할 지난 브리핑 수
 MAX_CHARS = 4000
@@ -63,6 +63,29 @@ LEAD = re.compile(rf"^[\s\-–—•·*★☆▶▷►■□◆◇●○※>#{EM
 CIRCLED = "①②③④⑤⑥⑦⑧⑨⑩"
 BULLET = re.compile(rf"^\s*([\-–•·▶►■◆●※]|[{CIRCLED}]|\d{{1,2}}[\.\)]\s)")
 URL = re.compile(r"https?://\S+")
+KNOWN = {  # 글에 나오는 이름 → 화면에 쓸 이름
+    "KOSPI": "코스피", "코스피": "코스피", "KOSDAQ": "코스닥", "코스닥": "코스닥", "다우": "다우", "S&P500": "S&P500", "S&P 500": "S&P500",
+    "나스닥": "나스닥", "필라델피아 반도체": "필라델피아 반도체", "러셀2000": "러셀2000", "미 10년물": "미 10년물", "10년물": "미 10년물",
+    "미 2년물": "미 2년물", "30년물": "미 30년물", "WTI": "WTI", "브렌트": "브렌트유", "원/달러": "원/달러", "달러/원": "원/달러",
+    "달러인덱스": "달러인덱스", "DXY": "달러인덱스", "비트코인": "비트코인", "VIX": "VIX", "닛케이": "닛케이", "엔/달러": "엔/달러",
+}
+INDEX_LIKE = {"코스피", "코스닥", "다우", "S&P500", "나스닥", "필라델피아 반도체", "러셀2000", "닛케이"}
+INLINE = re.compile(
+    r"(?<![가-힣A-Za-z])(?P<n>" + "|".join(re.escape(k) for k in sorted(KNOWN, key=len, reverse=True)) + r")"
+    r"(?:\s*(?:지수|금리|환율|유가|선물))?\s*(?P<v>\d[\d,]*(?:\.\d+)?)?\s*(?P<u>pt|p|%|원|bp|달러)?"
+    r"\s*\(?\s*(?P<c>[+\-−]\d[\d,]*(?:\.\d+)?\s?(?:%|bp|원|pt|p)?)?\)?")
+
+
+def inline_metrics(line):
+    out = []
+    for m in INLINE.finditer(line):
+        name, v, u, c = KNOWN[m.group("n")], m.group("v"), m.group("u") or "", m.group("c")
+        if not v and not c:
+            continue
+        if v and not c and u == "%" and name in INDEX_LIKE:      # '다우 0.0%' 처럼 등락률만 적힌 경우
+            v, u, c = None, "", v + "%"
+        out.append({"label": name, "value": (v + ("pt" if u in ("p", "pt") else u)) if v else "", "chg": (c or "").replace("−", "-").replace(" ", "")})
+    return out
 METRIC = re.compile(r"^([A-Za-z가-힣/ ]*?[A-Za-z가-힣](?:\s?\d+년물)?)\s+([\d,]+(?:\.\d+)?)\s*(pt|%|원|bp)?\s+([+\-−][\d,]+(?:\.\d+)?)\s*(%|bp|원|pt)?\s*$")
 
 
@@ -135,6 +158,9 @@ def parse(text):
         return None
     title = re.sub(r"\s*\(\d{1,2}/\d{1,2}\)$", "", title)            # '주식 마감 시황 (9/23)' → '주식 마감 시황'
     title = re.sub(r"_\d{1,2}/\d{1,2}.*$", "", title)                 # '…5가지_9/23 Bloomberg' → '…5가지'
+    title = re.sub(r"^\[(.*)\]$", r"\1", title).strip()             # [제목] → 제목
+    title = re.sub(r"^(\d{4}년\s*)?\d{1,2}월\s*\d{1,2}일\s*|^\d{1,2}/\d{1,2},?\s*", "", title)   # 앞의 날짜
+    title = re.sub(r",\s*[가-힣]{2,5}\s[가-힣]{2,4}$", "", title)      # '…, 키움 한지영' 작성자
     lead_src = None
     m = re.match(r"^([A-Za-z가-힣&\. ]{2,20})\)\s*(.+)", title)            # '블룸버그) 오라클…' → 출처 + 제목
     if m:
@@ -143,8 +169,12 @@ def parse(text):
     for l in body:
         m = METRIC.match(LEAD.sub("", l).strip())
         if m:
-            metrics.append({"label": m.group(1).strip(), "value": m.group(2) + (m.group(3) or ""),
+            label = re.sub(r"\s*(환율|지수)$", "", m.group(1).strip())
+            metrics.append({"label": KNOWN.get(label, label), "value": m.group(2) + (m.group(3) or ""),
                             "chg": m.group(4).replace("−", "-") + (m.group(5) or "")})
+        elif len(l) < 120:
+            metrics += inline_metrics(l)
+    metrics = list({m["label"]: m for m in metrics}.values())
     circled = [l for l in body if l[:1] in CIRCLED]
     if circled:                                                        # ① ② ③ 로 번호 붙인 글은 그 소제목만
         bullets = [_tidy(l, 70) for l in circled]
@@ -155,7 +185,7 @@ def parse(text):
         else:                                                          # 문단 글은 '소제목: …' 줄 또는 첫 문장들
             heads = [l for l in body if re.match(r"^\*?[^:：]{2,30}[:：]\s*\S", l) and len(l) < 200]
             bullets = [_tidy(l, 95) for l in heads] if heads else [_tidy(_first_sentence(l), 95) for l in body if len(l) > 30]
-    bullets = [b for b in bullets if _meaningful(b)]
+    bullets = [b for b in bullets if _meaningful(b) and len(inline_metrics(b)) < 2]    # 숫자만 나열한 줄은 숫자 칩으로 보여주므로 뺌
     return {"title": title, "bullets": list(dict.fromkeys(bullets))[:5], "metrics": metrics, "lead_src": lead_src}
 
 
@@ -187,7 +217,7 @@ def sources_of(text):
     return list(dict.fromkeys(found))[:3]
 
 
-WRAP = re.compile(r"시황|증시|마감|개장|알아야|브리핑|마켓|모닝|이브닝")     # 하루 시장을 정리한 글은 위로
+WRAP = re.compile(r"시황|증시|마감|개장|장 시작|장전|시장 정리|알아야|브리핑|마켓|모닝|이브닝")     # 하루 시장을 정리한 글은 위로
 
 
 def _srcs(r, text):
