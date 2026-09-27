@@ -1,0 +1,8 @@
+// 클라우드플레어 사이트 설정 — site 폴더(대시보드 화면)만 공개한다. 코드·데이터 파일은 올라가지 않음.
+{
+  "name": "alpha-dashboard",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./site"
+  }
+}
