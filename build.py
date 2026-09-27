@@ -34,8 +34,10 @@ def main():
     blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
     html = (ROOT / "template.html").read_text(encoding="utf-8").replace("/*__DATA__*/null", blob)
     # index.html 은 웹(GitHub Pages) 첫 화면용, dashboard.html 은 로컬에서 여는 용
-    for name in ("index.html", "dashboard.html"):
-        (ROOT / name).write_text(html, encoding="utf-8")
+    # site/index.html 은 클라우드플레어 사이트용 — 이 폴더만 공개되므로 코드·데이터 파일은 올라가지 않는다
+    (ROOT / "site").mkdir(exist_ok=True)
+    for path in (ROOT / "index.html", ROOT / "dashboard.html", ROOT / "site" / "index.html"):
+        path.write_text(html, encoding="utf-8")
     print(f"index.html / dashboard.html 생성 완료 ({snaps[-1].stem} 기준)")
 
 
