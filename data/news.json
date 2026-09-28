@@ -1,6 +1,318 @@
 {
  "editions": [
   {
+   "id": "2026-09-29-pre",
+   "name": "장전 브리핑",
+   "start": "2026-09-28T19:00:00+09:00",
+   "end": "2026-09-29T08:00:00+09:00",
+   "final": false,
+   "created_at": "2026-09-29T08:15:28.714232+09:00",
+   "post_count": 23,
+   "metrics": [
+    {
+     "label": "다우",
+     "value": "",
+     "chg": "-0.7%"
+    },
+    {
+     "label": "S&P500",
+     "value": "",
+     "chg": "-0.8%"
+    },
+    {
+     "label": "나스닥",
+     "value": "",
+     "chg": "-0.9%"
+    },
+    {
+     "label": "미 10년물",
+     "value": "5.27%",
+     "chg": ""
+    },
+    {
+     "label": "미 30년물",
+     "value": "5.55%",
+     "chg": ""
+    },
+    {
+     "label": "WTI",
+     "value": "93.2달러",
+     "chg": ""
+    },
+    {
+     "label": "코스피",
+     "value": "26",
+     "chg": ""
+    }
+   ],
+   "cards": [
+    {
+     "title": "오늘 개장전 꼭 알아야 할 5가지",
+     "bullets": [
+      "① 미·이란 합의 기대 후퇴",
+      "② ECB 인상 기대 약화",
+      "③ 미국채 10년물 5.27%",
+      "④ 사우디 핵심 송유관 재가동",
+      "⑤ 엔비디아 자사주 매입 확대"
+     ],
+     "numbers": [
+      {
+       "label": "미 10년물",
+       "value": "5.27%",
+       "chg": ""
+      }
+     ],
+     "link": "https://t.me/lim_econ/2081",
+     "link_label": "텔레그램 원문",
+     "topic": "유가·원자재",
+     "sources": [
+      "블룸버그",
+      "골드만삭스"
+     ],
+     "time": "2026-09-29T07:56:48+09:00",
+     "rank": 0
+    },
+    {
+     "title": "장 시작 전 생각: 반복적인 노출",
+     "bullets": [
+      "엔비디아 +1.7%, 메타 -4.8%, 마이크론 -2.6%"
+     ],
+     "numbers": [
+      {
+       "label": "다우",
+       "value": "",
+       "chg": "-0.7%"
+      },
+      {
+       "label": "S&P500",
+       "value": "",
+       "chg": "-0.8%"
+      },
+      {
+       "label": "나스닥",
+       "value": "",
+       "chg": "-0.9%"
+      },
+      {
+       "label": "미 10년물",
+       "value": "5.24%",
+       "chg": ""
+      }
+     ],
+     "link": "https://www.kiwoom.com/h/invest/research/VMarketSDDetailView?sqno=7208",
+     "link_label": "kiwoom.com",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-09-29T07:38:28+09:00",
+     "rank": 0
+    },
+    {
+     "title": "한국 증시 관련 수치: 금리 불안, 분기말 리밸런싱 Vs. 선반영, 되돌림",
+     "bullets": [
+      "FICC: 국채 금리, 국제유가 상승 반납에도 높은 수준 여전"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11144",
+     "link_label": "텔레그램 원문",
+     "topic": "유가·원자재",
+     "sources": [],
+     "time": "2026-09-29T05:19:55+09:00",
+     "rank": 1
+    },
+    {
+     "title": "미 증시, 높은 국채 금리 여파로 기술주 중심 매물 출회되며 하락",
+     "bullets": [
+      "변화요인: 국채 금리 상승 요인과 위험도"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11142",
+     "link_label": "텔레그램 원문",
+     "topic": "금리·연준",
+     "sources": [],
+     "time": "2026-09-29T05:18:21+09:00",
+     "rank": 1
+    },
+    {
+     "title": "삼성전기 FC-BGA 슈퍼사이클, 이익 추정치 상향 재개",
+     "bullets": [
+      "1. 증설 규모와 투자 구조",
+      "9/28 세종 4.27조원(인프라+설비), 베트남 2.51조원(설비만) 등 총 2건, 합산 약 6.8조원 규모의 패키지기판 증설을 공시",
+      "베트남 인프라 투자와 보완성 부산 증설까지 포함하면 실질 투자액은 약 8.5~10조원 수준으로 커질 것으로 추정",
+      "투자 재원의 절반 이상(약 70% 이상, 약 8조원)은 고객사 선수금·지원금으로 충당될 전망이며, 별도 자금조달 부담은 크지 않을 것으로 봄",
+      "2. FC-BGA 중장기 성장성 확대"
+     ],
+     "numbers": [],
+     "link": "https://t.me/Jstockclass/15144",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-29T07:51:26+09:00",
+     "rank": 2
+    },
+    {
+     "title": "미국 경제는 왜 고금리·고유가에도 견조한가?",
+     "bullets": [
+      "골드만삭스는 3분기 미국 경제가 연율 3.4% 성장한 것으로 추정",
+      "2026년 전체성장률 전망은 2.2%로, 잠재성장률 추정치 2.3%에 근접",
+      "연초 전망 대비 하향폭은 0.3pp에 그쳐, 금리와 유가의 대폭 상승에도 경제가 견조하다는 점이 핵심 질문",
+      "2. 금융환경: 금리 상승이 다른 요인에 의해 상쇄",
+      "연초 이후 금리는 큰 폭으로 올랐지만, 주가 상승·신용스프레드 축소·달러 약세가 이를 거의 상쇄"
+     ],
+     "numbers": [],
+     "link": "https://t.me/Jstockclass/15143",
+     "link_label": "텔레그램 원문",
+     "topic": "유가·원자재",
+     "sources": [
+      "골드만삭스"
+     ],
+     "time": "2026-09-29T07:14:38+09:00",
+     "rank": 2
+    },
+    {
+     "title": "US 시장 전략: 전술적 강세 전환, 테크 중심 롱 유지",
+     "bullets": [
+      "1. 스탠스 변화 및 배경",
+      "8/31 Cautious/Neutral로 전환",
+      "채권 금리가 레벨을 찾고 유가는 등락을 보이며 하락 추세일 가능성이 높아, 시장 셋업이 더 우호적이라고 판단해 Tactically Bullish로 전환",
+      "기존 우려 요인이던 연준 불확실성, 포지셔닝, 크레딧 스프레드, 부정적 계절성, 모멘텀 언와인딩이 완화되는 국면",
+      "2. 강세 전환의 근거"
+     ],
+     "numbers": [],
+     "link": "https://t.me/Jstockclass/15142",
+     "link_label": "텔레그램 원문",
+     "topic": "경제지표",
+     "sources": [],
+     "time": "2026-09-29T07:01:59+09:00",
+     "rank": 2
+    },
+    {
+     "title": "AMD, 페이페이 리의 World Labs 82억달러에 인수…피지컬 AI까지 컴퓨팅 영역 확대",
+     "bullets": [
+      "AMD가 AI 연구기업 World Labs를 약 82억달러 규모의 전액 주식거래로 인수하기로 합의.",
+      "World Labs는 스탠퍼드대 교수이자 AI 연구자인 페이페이 리가 공동창업한 기업.",
+      "World Labs는 텍스트와 이미지, 동영상을 입력받아 상호작용 가능한 3D 환경을 생성·재구성·시뮬레이션하는 공간지능 모델을 개발.",
+      "기존 생성형 AI가 텍스트와 이미지 생성에 집중했다면 공간지능은 AI가 현실 공간의 구조와 물체 간 관계를 이해하고 시뮬레이션하는 데 초점.",
+      "AMD는 AI가 추론, 로봇, 시뮬레이션, 피지컬 AI로 확산되면서 필요한 컴퓨팅 구조도 다양해지고 있다고 설명."
+     ],
+     "numbers": [],
+     "link": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+     "link_label": "ir.amd.com",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-09-29T06:39:33+09:00",
+     "rank": 2
+    },
+    {
+     "title": "특징 종목: 엔비디아, 팔로알토 상승 Vs. 메타, 테슬라, 마이크론",
+     "bullets": [
+      "메모리, 스토리지 반도체: 높은 금리와 OpenAI 최신 모델 학습 중단에 하락",
+      "AI 반도체: 엔비디아, 자사주 매입에 상승 Vs. 여타 종목 부진",
+      "광통신: 차익 실현 등으로 하락",
+      "자동차: 테슬라, JP모건의 목표주가 하향 조정에 하락",
+      "대형 기술주: 메타, Muse 선점 효과 약화 가능성에 하락"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11143",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [
+      "JP모건"
+     ],
+     "time": "2026-09-29T05:19:21+09:00",
+     "rank": 2
+    },
+    {
+     "title": "Noah Shinn(Instinct 창업자, 23세) 인터뷰",
+     "bullets": [
+      "1. Instinct이 무엇인가",
+      "새로운 UI를 만들지 않는다.",
+      "단순 챗봇이 아니라 능동적으로 움직인다.",
+      "2. 놀라운 성장 지표 (마케팅 비용 0원)",
+      "일일 사용자 성장률 약 10% (초대로만 가입 가능, 1인당 초대권 5장)."
+     ],
+     "numbers": [],
+     "link": "https://youtu.be/Am7IWP8IpEc?si=slRuWZITkQK0r5Ho",
+     "link_label": "youtu.be",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-29T00:05:09+09:00",
+     "rank": 2
+    },
+    {
+     "title": "스콧 베센트 재무장관은 제프리스($JEF)의 애널리스트 데이비드 제르보스를 고문으로 임명. 월요일 재무부는 \"제르보스는 글로벌 금융 시장, 중앙…",
+     "bullets": [
+      "제르보스는 자신의 게시물에서 임기가 4월에 끝난다고 언급했는데, 이는 특정 프로젝트를 이끌거나 참여하기 위해 발탁되었음을 시사."
+     ],
+     "numbers": [],
+     "link": "https://t.me/cahier_de_market/10861",
+     "link_label": "텔레그램 원문",
+     "topic": "금리·연준",
+     "sources": [],
+     "time": "2026-09-29T07:57:40+09:00",
+     "rank": 3
+    },
+    {
+     "title": "Claude Sonnet 5.5의 가격과 성능",
+     "bullets": [
+      "현존하는 가성비 최고 모델인듯",
+      "이전 모델을 압살하는(가격, 성능 모두) 새로운 모델의 출시주기가 이제 주 단위로 빨라짐"
+     ],
+     "numbers": [],
+     "link": "https://t.me/cahier_de_market/10859",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-29T07:34:48+09:00",
+     "rank": 3
+    },
+    {
+     "title": "OpenAI, 안전성 우려에 신규 AI 모델 출시 철회",
+     "bullets": [
+      "1. 자신이 한 행동을 사용자에게 정확히 알리지 않는 등 기만적 행동 증가",
+      "2. 사용자 허가 없이 작업을 계속하거나 외부 도구·서비스를 사용하는 권한 범위 이탈"
+     ],
+     "numbers": [],
+     "link": "https://t.me/cahier_de_market/10858",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [
+      "WSJ"
+     ],
+     "time": "2026-09-29T07:12:47+09:00",
+     "rank": 3
+    },
+    {
+     "title": "사우디아라비아, 이라크, 쿠웨이트, UAE, 바레인, 카타르로부터의 원유 수출",
+     "bullets": [
+      "막대한 비용과 미 해군의 도움으로, 이 그룹은 원유 수출을 전쟁 이전 수준의 거의 80%까지 끌어올렸다(중요한 점은 원유만 해당된다는 것)."
+     ],
+     "numbers": [],
+     "link": "https://x.com/JavierBlas/status/2104554616008401344",
+     "link_label": "x.com",
+     "topic": "유가·원자재",
+     "sources": [],
+     "time": "2026-09-29T07:11:37+09:00",
+     "rank": 3
+    },
+    {
+     "title": "이란이 미국 제재 완화와의 교환으로 우라늄 농축 중단에 동의했다는 소식",
+     "bullets": [
+      "~ Iran has agreed to halt uranium enrichment in exchange for an easing of the US sanctions, acc…",
+      "~ According to Report, the broadcaster said mediators involved in Iran-US negotiations had help…"
+     ],
+     "numbers": [],
+     "link": "https://report.az/en/amp/region/iran-agrees-to-halt-uranium-enrichment-in-return-for-sanctions-relief",
+     "link_label": "report.az",
+     "topic": null,
+     "sources": [],
+     "time": "2026-09-29T05:51:31+09:00",
+     "rank": 3
+    }
+   ],
+   "refs": [],
+   "errors": []
+  },
+  {
    "id": "2026-09-28-post",
    "name": "장마감 브리핑",
    "start": "2026-09-28T09:00:00+09:00",
@@ -962,5 +1274,5 @@
    "errors": []
   }
  ],
- "checked_at": "2026-09-28T19:18:08.637120+09:00"
+ "checked_at": "2026-09-29T08:15:28.714232+09:00"
 }
