@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-09-28T08:10:14.329983+09:00",
+ "captured_at": "2026-09-28T09:33:04.674197+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-23",
+   "filer": "스피어",
+   "rcept_no": "20260923900306"
+  },
   {
    "code": "259960",
    "name": "크래프톤",
@@ -123,6 +135,30 @@
    "rcept_no": "20260923000042"
   },
   {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-22",
+   "filer": "스피어",
+   "rcept_no": "20260922900293"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-22",
+   "filer": "스피어",
+   "rcept_no": "20260922900291"
+  },
+  {
    "code": "329180",
    "name": "HD현대중공업",
    "side": "long",
@@ -157,18 +193,6 @@
    "date": "2026-09-22",
    "filer": "정인철",
    "rcept_no": "20260922000361"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "[기재정정]주요사항보고서(영업정지)",
-   "category": "거래정지·관리",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-22",
-   "filer": "GS건설",
-   "rcept_no": "20260922000001"
   },
   {
    "code": "042660",
@@ -351,18 +375,6 @@
    "rcept_no": "20260918800250"
   },
   {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-18",
-   "filer": "GS건설",
-   "rcept_no": "20260918800131"
-  },
-  {
    "code": "047040",
    "name": "대우건설",
    "side": "short",
@@ -385,18 +397,6 @@
    "date": "2026-09-18",
    "filer": "한미반도체",
    "rcept_no": "20260918800064"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-18",
-   "filer": "GS건설",
-   "rcept_no": "20260918800056"
   },
   {
    "code": "272210",
@@ -433,6 +433,18 @@
    "date": "2026-09-18",
    "filer": "박정원",
    "rcept_no": "20260918000335"
+  },
+  {
+   "code": "354320",
+   "name": "알멕",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-18",
+   "filer": "다이엑스",
+   "rcept_no": "20260918000333"
   },
   {
    "code": "039490",
@@ -637,18 +649,6 @@
    "date": "2026-09-17",
    "filer": "두산",
    "rcept_no": "20260917800240"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-17",
-   "filer": "GS건설",
-   "rcept_no": "20260917800210"
   },
   {
    "code": "272210",
@@ -903,6 +903,18 @@
    "rcept_no": "20260916000342"
   },
   {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-15",
+   "filer": "스피어",
+   "rcept_no": "20260915900405"
+  },
+  {
    "code": "078930",
    "name": "GS",
    "side": "long",
@@ -1057,6 +1069,18 @@
    "date": "2026-09-14",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260914000001"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-11",
+   "filer": "스피어",
+   "rcept_no": "20260911900492"
   },
   {
    "code": "259960",
@@ -1321,30 +1345,6 @@
    "date": "2026-09-10",
    "filer": "HD현대중공업",
    "rcept_no": "20260910800161"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "GS건설",
-   "rcept_no": "20260910800149"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "GS건설",
-   "rcept_no": "20260910800109"
   },
   {
    "code": "047040",
@@ -1743,6 +1743,18 @@
    "rcept_no": "20260907900349"
   },
   {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-07",
+   "filer": "스피어",
+   "rcept_no": "20260907900282"
+  },
+  {
    "code": "252990",
    "name": "샘씨엔에스",
    "side": "long",
@@ -1765,6 +1777,18 @@
    "date": "2026-09-07",
    "filer": "GS",
    "rcept_no": "20260907800562"
+  },
+  {
+   "code": "007660",
+   "name": "이수페타시스",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-07",
+   "filer": "이수페타시스",
+   "rcept_no": "20260907800463"
   },
   {
    "code": "207940",
@@ -1791,16 +1815,28 @@
    "rcept_no": "20260907800340"
   },
   {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
    "important": false,
    "correction": false,
    "date": "2026-09-07",
-   "filer": "GS건설",
-   "rcept_no": "20260907800182"
+   "filer": "최병철",
+   "rcept_no": "20260907000265"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-07",
+   "filer": "윤상현",
+   "rcept_no": "20260907000263"
   },
   {
    "code": "039490",
@@ -1899,16 +1935,16 @@
    "rcept_no": "20260904800510"
   },
   {
-   "code": "298380",
-   "name": "에이비엘바이오",
+   "code": "007660",
+   "name": "이수페타시스",
    "side": "short",
    "title": "주식등의대량보유상황보고서(일반)",
    "category": "지분 변동",
    "important": false,
    "correction": false,
    "date": "2026-09-04",
-   "filer": "LEESANGHOON",
-   "rcept_no": "20260904000494"
+   "filer": "이수",
+   "rcept_no": "20260904000407"
   },
   {
    "code": "039490",
@@ -2259,6 +2295,30 @@
    "rcept_no": "20260902000018"
   },
   {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-01",
+   "filer": "스피어",
+   "rcept_no": "20260901900472"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-01",
+   "filer": "스피어",
+   "rcept_no": "20260901900467"
+  },
+  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -2343,6 +2403,30 @@
    "rcept_no": "20260901000189"
   },
   {
+   "code": "007660",
+   "name": "이수페타시스",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "미래에셋자산운용",
+   "rcept_no": "20260901000187"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "스피어",
+   "rcept_no": "20260831900199"
+  },
+  {
    "code": "047040",
    "name": "대우건설",
    "side": "short",
@@ -2413,18 +2497,6 @@
    "date": "2026-08-31",
    "filer": "HD현대중공업",
    "rcept_no": "20260831800001"
-  },
-  {
-   "code": "298380",
-   "name": "에이비엘바이오",
-   "side": "short",
-   "title": "[기재정정]주식매수선택권부여에관한신고",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-31",
-   "filer": "에이비엘바이오",
-   "rcept_no": "20260831001504"
   },
   {
    "code": "039490",
@@ -2547,18 +2619,6 @@
    "rcept_no": "20260831000478"
   },
   {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "GS건설",
-   "rcept_no": "20260831000443"
-  },
-  {
    "code": "000500",
    "name": "가온전선",
    "side": "short",
@@ -2605,18 +2665,6 @@
    "date": "2026-08-28",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260828800869"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "GS건설",
-   "rcept_no": "20260828800368"
   },
   {
    "code": "082740",
@@ -2847,6 +2895,18 @@
    "rcept_no": "20260828000529"
   },
   {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-28",
+   "filer": "OCI홀딩스",
+   "rcept_no": "20260828000369"
+  },
+  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -2893,18 +2953,6 @@
    "date": "2026-08-28",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260828000001"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "[기재정정]타인에대한채무보증결정",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-27",
-   "filer": "GS건설",
-   "rcept_no": "20260827800459"
   },
   {
    "code": "329180",
@@ -3087,18 +3135,6 @@
    "rcept_no": "20260826800242"
   },
   {
-   "code": "298380",
-   "name": "에이비엘바이오",
-   "side": "short",
-   "title": "주식매수선택권부여에관한신고",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-26",
-   "filer": "에이비엘바이오",
-   "rcept_no": "20260826000795"
-  },
-  {
    "code": "078930",
    "name": "GS",
    "side": "long",
@@ -3253,6 +3289,18 @@
    "date": "2026-08-25",
    "filer": "심텍",
    "rcept_no": "20260825900407"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-25",
+   "filer": "스피어",
+   "rcept_no": "20260825900258"
   },
   {
    "code": "042660",
@@ -3723,6 +3771,18 @@
    "rcept_no": "20260821000262"
   },
   {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-20",
+   "filer": "스피어",
+   "rcept_no": "20260820900468"
+  },
+  {
    "code": "031980",
    "name": "피에스케이홀딩스",
    "side": "long",
@@ -3817,18 +3877,6 @@
    "date": "2026-08-20",
    "filer": "LIG디펜스앤에어로스페이스",
    "rcept_no": "20260820800033"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "특수관계인에대한출자",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "GS건설",
-   "rcept_no": "20260820000414"
   },
   {
    "code": "005935",
@@ -4275,6 +4323,18 @@
    "rcept_no": "20260814003359"
   },
   {
+   "code": "437730",
+   "name": "삼현",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "삼현",
+   "rcept_no": "20260814003171"
+  },
+  {
    "code": "005935",
    "name": "삼성전자우",
    "side": "long",
@@ -4285,6 +4345,18 @@
    "date": "2026-08-14",
    "filer": "삼성전자",
    "rcept_no": "20260814003162"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "스피어",
+   "rcept_no": "20260814003121"
   },
   {
    "code": "005935",
@@ -4309,6 +4381,18 @@
    "date": "2026-08-14",
    "filer": "삼양식품",
    "rcept_no": "20260814003053"
+  },
+  {
+   "code": "354320",
+   "name": "알멕",
+   "side": "long",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "알멕",
+   "rcept_no": "20260814002981"
   },
   {
    "code": "329180",
@@ -4369,18 +4453,6 @@
    "date": "2026-08-14",
    "filer": "한화엔진",
    "rcept_no": "20260814002747"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "GS건설",
-   "rcept_no": "20260814002722"
   },
   {
    "code": "042660",
@@ -4477,6 +4549,18 @@
    "date": "2026-08-14",
    "filer": "디앤디파마텍",
    "rcept_no": "20260814002436"
+  },
+  {
+   "code": "007660",
+   "name": "이수페타시스",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "이수페타시스",
+   "rcept_no": "20260814002283"
   },
   {
    "code": "035420",
@@ -4707,18 +4791,6 @@
    "rcept_no": "20260814000576"
   },
   {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "GS건설",
-   "rcept_no": "20260814000541"
-  },
-  {
    "code": "020150",
    "name": "롯데에너지머티리얼즈",
    "side": "long",
@@ -4765,6 +4837,18 @@
    "date": "2026-08-13",
    "filer": "한화시스템",
    "rcept_no": "20260813001258"
+  },
+  {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-13",
+   "filer": "OCI홀딩스",
+   "rcept_no": "20260813000901"
   },
   {
    "code": "241590",
@@ -4971,6 +5055,42 @@
    "rcept_no": "20260812000344"
   },
   {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-11",
+   "filer": "스피어",
+   "rcept_no": "20260811900849"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-11",
+   "filer": "스피어",
+   "rcept_no": "20260811900844"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-11",
+   "filer": "스피어",
+   "rcept_no": "20260811900841"
+  },
+  {
    "code": "222800",
    "name": "심텍",
    "side": "long",
@@ -5043,16 +5163,16 @@
    "rcept_no": "20260811800212"
   },
   {
-   "code": "298380",
-   "name": "에이비엘바이오",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "신탁계약해지결과보고서",
+   "category": "기타",
    "important": false,
    "correction": false,
    "date": "2026-08-11",
-   "filer": "에이비엘바이오",
-   "rcept_no": "20260811000637"
+   "filer": "OCI홀딩스",
+   "rcept_no": "20260811000330"
   },
   {
    "code": "005935",
@@ -5079,6 +5199,42 @@
    "rcept_no": "20260811000011"
   },
   {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "본점소재지변경",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-10",
+   "filer": "스피어",
+   "rcept_no": "20260810900474"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "유상증자결정(종속회사의주요경영사항)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-10",
+   "filer": "스피어",
+   "rcept_no": "20260810900470"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "타법인주식및출자증권취득결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-10",
+   "filer": "스피어",
+   "rcept_no": "20260810900447"
+  },
+  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -5103,6 +5259,18 @@
    "rcept_no": "20260810800589"
   },
   {
+   "code": "007660",
+   "name": "이수페타시스",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-10",
+   "filer": "이수페타시스",
+   "rcept_no": "20260810800489"
+  },
+  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -5125,6 +5293,18 @@
    "date": "2026-08-10",
    "filer": "SK하이닉스",
    "rcept_no": "20260810800434"
+  },
+  {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "주요사항보고서(자기주식취득신탁계약해지결정)(자회사의 주요경영사항)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-10",
+   "filer": "OCI홀딩스",
+   "rcept_no": "20260810800314"
   },
   {
    "code": "329180",
@@ -5199,18 +5379,6 @@
    "rcept_no": "20260810000546"
   },
   {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "국민연금공단",
-   "rcept_no": "20260810000527"
-  },
-  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -5233,6 +5401,18 @@
    "date": "2026-08-10",
    "filer": "박상권",
    "rcept_no": "20260810000353"
+  },
+  {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "주요사항보고서(자기주식취득신탁계약해지결정)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-10",
+   "filer": "OCI홀딩스",
+   "rcept_no": "20260810000268"
   },
   {
    "code": "005935",
@@ -5379,18 +5559,6 @@
    "rcept_no": "20260807800212"
   },
   {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-07",
-   "filer": "GS건설",
-   "rcept_no": "20260807800114"
-  },
-  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -5523,6 +5691,18 @@
    "rcept_no": "20260807000357"
   },
   {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-06",
+   "filer": "스피어",
+   "rcept_no": "20260806900189"
+  },
+  {
    "code": "047040",
    "name": "대우건설",
    "side": "short",
@@ -5617,6 +5797,18 @@
    "date": "2026-08-06",
    "filer": "김병수",
    "rcept_no": "20260806000454"
+  },
+  {
+   "code": "007660",
+   "name": "이수페타시스",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-06",
+   "filer": "이수",
+   "rcept_no": "20260806000398"
   },
   {
    "code": "005935",
@@ -5799,6 +5991,18 @@
    "rcept_no": "20260805000010"
   },
   {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-04",
+   "filer": "스피어",
+   "rcept_no": "20260804900693"
+  },
+  {
    "code": "078930",
    "name": "GS",
    "side": "long",
@@ -5809,18 +6013,6 @@
    "date": "2026-08-04",
    "filer": "GS",
    "rcept_no": "20260804800559"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-04",
-   "filer": "GS건설",
-   "rcept_no": "20260804800529"
   },
   {
    "code": "047040",
@@ -5931,18 +6123,6 @@
    "rcept_no": "20260804000544"
   },
   {
-   "code": "298380",
-   "name": "에이비엘바이오",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-04",
-   "filer": "LEESANGHOON",
-   "rcept_no": "20260804000533"
-  },
-  {
    "code": "005935",
    "name": "삼성전자우",
    "side": "long",
@@ -5989,6 +6169,18 @@
    "date": "2026-08-04",
    "filer": "NAVER",
    "rcept_no": "20260804000335"
+  },
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-03",
+   "filer": "스피어",
+   "rcept_no": "20260803901070"
   },
   {
    "code": "020150",
@@ -6157,18 +6349,6 @@
    "date": "2026-07-31",
    "filer": "티에프이",
    "rcept_no": "20260731900827"
-  },
-  {
-   "code": "006360",
-   "name": "GS건설",
-   "side": "long",
-   "title": "[기재정정]투자판단관련주요경영사항",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-07-31",
-   "filer": "GS건설",
-   "rcept_no": "20260731801379"
   },
   {
    "code": "005935",

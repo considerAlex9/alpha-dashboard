@@ -1,22 +1,22 @@
 {
- "captured_at": "2026-09-28T08:08:27.937653+09:00",
+ "captured_at": "2026-09-28T09:32:02.360054+09:00",
  "portfolio": {
-  "nav": 100072254303.0439,
-  "cash_balance": 92679810713.0439,
+  "nav": 99920542483.8283,
+  "cash_balance": 92154334032.1451,
   "initial_capital": 100000000000.0,
-  "total_pnl": 72254303.04389954,
-  "total_pnl_pct": 0.0007225430304389954,
-  "realized_pnl": -433405825.9157,
-  "unrealized_pnl": 599438050.7984,
+  "total_pnl": -79457516.17170715,
+  "total_pnl_pct": -0.0007945751617170715,
+  "realized_pnl": -459713727.4611,
+  "unrealized_pnl": 487617140.8849,
   "max_drawdown_pct": -0.00739484,
   "sharpe_ratio": 0.2689,
-  "gross_exposure": 55060801590.0,
-  "net_exposure": 7392443590.0,
-  "net_exposure_pct": 0.07387106087981016,
-  "long_mv": 31226622590.0,
-  "short_mv": 23834179000.0,
-  "long_count": 18,
-  "short_count": 15,
+  "gross_exposure": 63087907408.3168,
+  "net_exposure": 7766208451.6832,
+  "net_exposure_pct": 0.07772384195111957,
+  "long_mv": 35427057930.0,
+  "short_mv": 27660849478.3168,
+  "long_count": 19,
+  "short_count": 17,
   "positions": [
    {
     "id": 6634,
@@ -29,14 +29,14 @@
     "side": "long",
     "quantity": 1378,
     "average_entry_price": 1453595.6254,
-    "current_price": 1515000.0,
-    "market_value": 2087670000.0,
-    "unrealized_pnl": 84615228.1988,
+    "current_price": 1519000.0,
+    "market_value": 2093182000.0,
+    "unrealized_pnl": 90127228.1988,
     "weight_pct": 0.0209,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 2087670000.0,
-    "market_value_krw": 2087670000.0,
+    "market_value_local": 2093182000.0,
+    "market_value_krw": 2093182000.0,
     "fx_rate": 1.0,
     "stop_loss_price": 1320000.0,
     "take_profit_price": null
@@ -52,14 +52,14 @@
     "side": "short",
     "quantity": 4360,
     "average_entry_price": 315522.8561,
-    "current_price": 318000.0,
-    "market_value": 1386480000.0,
-    "unrealized_pnl": -10800347.404,
-    "weight_pct": 0.0139,
+    "current_price": 313500.0,
+    "market_value": 1366860000.0,
+    "unrealized_pnl": 8819652.596,
+    "weight_pct": 0.0137,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1386480000.0,
-    "market_value_krw": 1386480000.0,
+    "market_value_local": 1366860000.0,
+    "market_value_krw": 1366860000.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -75,14 +75,14 @@
     "side": "long",
     "quantity": 972,
     "average_entry_price": 1848294.8568,
-    "current_price": 1863000.0,
-    "market_value": 1810836000.0,
-    "unrealized_pnl": 14293399.1904,
-    "weight_pct": 0.0181,
+    "current_price": 1818000.0,
+    "market_value": 1767096000.0,
+    "unrealized_pnl": -29446600.8096,
+    "weight_pct": 0.0177,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1810836000.0,
-    "market_value_krw": 1810836000.0,
+    "market_value_local": 1767096000.0,
+    "market_value_krw": 1767096000.0,
     "fx_rate": 1.0,
     "stop_loss_price": 1700000.0,
     "take_profit_price": null
@@ -98,14 +98,14 @@
     "side": "short",
     "quantity": 1573,
     "average_entry_price": 1253686.8816,
-    "current_price": 1218000.0,
-    "market_value": 1915914000.0,
-    "unrealized_pnl": 56135464.7568,
-    "weight_pct": 0.0191,
+    "current_price": 1208000.0,
+    "market_value": 1900184000.0,
+    "unrealized_pnl": 71865464.7568,
+    "weight_pct": 0.019,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1915914000.0,
-    "market_value_krw": 1915914000.0,
+    "market_value_local": 1900184000.0,
+    "market_value_krw": 1900184000.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -121,39 +121,16 @@
     "side": "long",
     "quantity": 8686,
     "average_entry_price": 219219.2489,
-    "current_price": 222000.0,
-    "market_value": 1928292000.0,
-    "unrealized_pnl": 24153604.0546,
-    "weight_pct": 0.0193,
+    "current_price": 212500.0,
+    "market_value": 1845775000.0,
+    "unrealized_pnl": -58363395.9454,
+    "weight_pct": 0.0185,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1928292000.0,
-    "market_value_krw": 1928292000.0,
+    "market_value_local": 1845775000.0,
+    "market_value_krw": 1845775000.0,
     "fx_rate": 1.0,
     "stop_loss_price": 205000.0,
-    "take_profit_price": null
-   },
-   {
-    "id": 6734,
-    "company_id": 345,
-    "company_name": "GS Engineering & Construction Corporation",
-    "company_alias": "GS건설",
-    "company_symbol": "006360",
-    "exchange": "KRX",
-    "sector": "Industrials",
-    "side": "long",
-    "quantity": 40537,
-    "average_entry_price": 36967.4956,
-    "current_price": 34750.0,
-    "market_value": 1408660750.0,
-    "unrealized_pnl": -89890619.1372,
-    "weight_pct": 0.0141,
-    "beta": null,
-    "local_currency": "KRW",
-    "market_value_local": 1408660750.0,
-    "market_value_krw": 1408660750.0,
-    "fx_rate": 1.0,
-    "stop_loss_price": null,
     "take_profit_price": null
    },
    {
@@ -167,16 +144,62 @@
     "side": "long",
     "quantity": 3033,
     "average_entry_price": 544644.7279,
-    "current_price": 521000.0,
-    "market_value": 1580193000.0,
-    "unrealized_pnl": -71714459.7207,
-    "weight_pct": 0.0158,
+    "current_price": 539000.0,
+    "market_value": 1634787000.0,
+    "unrealized_pnl": -17120459.7207,
+    "weight_pct": 0.0164,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1580193000.0,
-    "market_value_krw": 1580193000.0,
+    "market_value_local": 1634787000.0,
+    "market_value_krw": 1634787000.0,
     "fx_rate": 1.0,
     "stop_loss_price": 500000.0,
+    "take_profit_price": null
+   },
+   {
+    "id": 7797,
+    "company_id": 385,
+    "company_name": "Isu Petasys Co. Ltd.",
+    "company_alias": "이수페타시스",
+    "company_symbol": "007660",
+    "exchange": "KRX",
+    "sector": "Technology",
+    "side": "short",
+    "quantity": 16908,
+    "average_entry_price": 114429.5096,
+    "current_price": 114429.5096,
+    "market_value": 1934774148.3168,
+    "unrealized_pnl": 0.0,
+    "weight_pct": 0.0194,
+    "beta": null,
+    "local_currency": "KRW",
+    "market_value_local": 1934774148.3168,
+    "market_value_krw": 1934774148.3168,
+    "fx_rate": 1.0,
+    "stop_loss_price": null,
+    "take_profit_price": null
+   },
+   {
+    "id": 7752,
+    "company_id": 455,
+    "company_name": "Oci Holdings Co. Ltd.",
+    "company_alias": "OCI홀딩스",
+    "company_symbol": "010060",
+    "exchange": "KRX",
+    "sector": "Financial Services",
+    "side": "long",
+    "quantity": 8733,
+    "average_entry_price": 222729.5294,
+    "current_price": 227000.0,
+    "market_value": 1982391000.0,
+    "unrealized_pnl": 37294019.7498,
+    "weight_pct": 0.0198,
+    "beta": null,
+    "local_currency": "KRW",
+    "market_value_local": 1982391000.0,
+    "market_value_krw": 1982391000.0,
+    "fx_rate": 1.0,
+    "stop_loss_price": null,
     "take_profit_price": null
    },
    {
@@ -190,14 +213,14 @@
     "side": "long",
     "quantity": 40102,
     "average_entry_price": 42958.9146,
-    "current_price": 40100.0,
-    "market_value": 1608090200.0,
-    "unrealized_pnl": -114648193.2892,
-    "weight_pct": 0.0161,
+    "current_price": 43400.0,
+    "market_value": 1740426800.0,
+    "unrealized_pnl": 17688406.7108,
+    "weight_pct": 0.0174,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1608090200.0,
-    "market_value_krw": 1608090200.0,
+    "market_value_local": 1740426800.0,
+    "market_value_krw": 1740426800.0,
     "fx_rate": 1.0,
     "stop_loss_price": 38500.0,
     "take_profit_price": null
@@ -213,14 +236,14 @@
     "side": "long",
     "quantity": 11380,
     "average_entry_price": 165421.9907,
-    "current_price": 163200.0,
-    "market_value": 1857216000.0,
-    "unrealized_pnl": -25286254.166,
-    "weight_pct": 0.0186,
+    "current_price": 168700.0,
+    "market_value": 1919806000.0,
+    "unrealized_pnl": 37303745.834,
+    "weight_pct": 0.0192,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1857216000.0,
-    "market_value_krw": 1857216000.0,
+    "market_value_local": 1919806000.0,
+    "market_value_krw": 1919806000.0,
     "fx_rate": 1.0,
     "stop_loss_price": 152000.0,
     "take_profit_price": 195000.0
@@ -236,14 +259,14 @@
     "side": "short",
     "quantity": 9122,
     "average_entry_price": 196782.1112,
-    "current_price": 196000.0,
-    "market_value": 1787912000.0,
-    "unrealized_pnl": 7134418.3664,
-    "weight_pct": 0.0179,
+    "current_price": 199200.0,
+    "market_value": 1817102400.0,
+    "unrealized_pnl": -22055981.6336,
+    "weight_pct": 0.0182,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1787912000.0,
-    "market_value_krw": 1787912000.0,
+    "market_value_local": 1817102400.0,
+    "market_value_krw": 1817102400.0,
     "fx_rate": 1.0,
     "stop_loss_price": 230000.0,
     "take_profit_price": null
@@ -259,14 +282,14 @@
     "side": "short",
     "quantity": 6864,
     "average_entry_price": 260155.0376,
-    "current_price": 265000.0,
-    "market_value": 1818960000.0,
-    "unrealized_pnl": -33255821.9136,
-    "weight_pct": 0.0182,
+    "current_price": 260000.0,
+    "market_value": 1784640000.0,
+    "unrealized_pnl": 1064178.0864,
+    "weight_pct": 0.0179,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1818960000.0,
-    "market_value_krw": 1818960000.0,
+    "market_value_local": 1784640000.0,
+    "market_value_krw": 1784640000.0,
     "fx_rate": 1.0,
     "stop_loss_price": 300000.0,
     "take_profit_price": null
@@ -282,14 +305,14 @@
     "side": "short",
     "quantity": 21280,
     "average_entry_price": 79602.9938,
-    "current_price": 80700.0,
-    "market_value": 1717296000.0,
-    "unrealized_pnl": -23344291.936,
+    "current_price": 80600.0,
+    "market_value": 1715168000.0,
+    "unrealized_pnl": -21216291.936,
     "weight_pct": 0.0172,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1717296000.0,
-    "market_value_krw": 1717296000.0,
+    "market_value_local": 1715168000.0,
+    "market_value_krw": 1715168000.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -328,14 +351,14 @@
     "side": "short",
     "quantity": 100057,
     "average_entry_price": 18898.3607,
-    "current_price": 17700.0,
-    "market_value": 1771008900.0,
-    "unrealized_pnl": 119904376.5599,
-    "weight_pct": 0.0177,
+    "current_price": 18740.0,
+    "market_value": 1875068180.0,
+    "unrealized_pnl": 15845096.5599,
+    "weight_pct": 0.0188,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1771008900.0,
-    "market_value_krw": 1771008900.0,
+    "market_value_local": 1875068180.0,
+    "market_value_krw": 1875068180.0,
     "fx_rate": 1.0,
     "stop_loss_price": 23000.0,
     "take_profit_price": null
@@ -351,14 +374,14 @@
     "side": "long",
     "quantity": 17438,
     "average_entry_price": 114892.1015,
-    "current_price": 110600.0,
-    "market_value": 1928642800.0,
-    "unrealized_pnl": -74845665.957,
-    "weight_pct": 0.0193,
+    "current_price": 113100.0,
+    "market_value": 1972237800.0,
+    "unrealized_pnl": -31250665.957,
+    "weight_pct": 0.0197,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1928642800.0,
-    "market_value_krw": 1928642800.0,
+    "market_value_local": 1972237800.0,
+    "market_value_krw": 1972237800.0,
     "fx_rate": 1.0,
     "stop_loss_price": 100000.0,
     "take_profit_price": null
@@ -374,14 +397,14 @@
     "side": "long",
     "quantity": 1991,
     "average_entry_price": 749466.1035,
-    "current_price": 699000.0,
-    "market_value": 1391709000.0,
-    "unrealized_pnl": -100478012.0685,
-    "weight_pct": 0.0139,
+    "current_price": 689000.0,
+    "market_value": 1371799000.0,
+    "unrealized_pnl": -120388012.0685,
+    "weight_pct": 0.0137,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1391709000.0,
-    "market_value_krw": 1391709000.0,
+    "market_value_local": 1371799000.0,
+    "market_value_krw": 1371799000.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -397,14 +420,14 @@
     "side": "short",
     "quantity": 15344,
     "average_entry_price": 47691.9485,
-    "current_price": 48100.0,
-    "market_value": 738046400.0,
-    "unrealized_pnl": -6261142.216,
+    "current_price": 48225.0,
+    "market_value": 739964400.0,
+    "unrealized_pnl": -8179142.216,
     "weight_pct": 0.0074,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 738046400.0,
-    "market_value_krw": 738046400.0,
+    "market_value_local": 739964400.0,
+    "market_value_krw": 739964400.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -420,14 +443,14 @@
     "side": "short",
     "quantity": 9027,
     "average_entry_price": 133146.2188,
-    "current_price": 133700.0,
-    "market_value": 1206909900.0,
-    "unrealized_pnl": -4998982.8924,
-    "weight_pct": 0.0121,
+    "current_price": 132900.0,
+    "market_value": 1199688300.0,
+    "unrealized_pnl": 2222617.1076,
+    "weight_pct": 0.012,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1206909900.0,
-    "market_value_krw": 1206909900.0,
+    "market_value_local": 1199688300.0,
+    "market_value_krw": 1199688300.0,
     "fx_rate": 1.0,
     "stop_loss_price": 145000.0,
     "take_profit_price": null
@@ -443,14 +466,14 @@
     "side": "long",
     "quantity": 130372,
     "average_entry_price": 14668.0702,
-    "current_price": 13940.0,
-    "market_value": 1817385680.0,
-    "unrealized_pnl": -94919968.1144,
-    "weight_pct": 0.0182,
+    "current_price": 14180.0,
+    "market_value": 1848674960.0,
+    "unrealized_pnl": -63630688.1144,
+    "weight_pct": 0.0185,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1817385680.0,
-    "market_value_krw": 1817385680.0,
+    "market_value_local": 1848674960.0,
+    "market_value_krw": 1848674960.0,
     "fx_rate": 1.0,
     "stop_loss_price": 13000.0,
     "take_profit_price": null
@@ -466,14 +489,14 @@
     "side": "long",
     "quantity": 13264,
     "average_entry_price": 141223.5654,
-    "current_price": 161900.0,
-    "market_value": 2147441600.0,
-    "unrealized_pnl": 274252228.5344,
-    "weight_pct": 0.0215,
+    "current_price": 163000.0,
+    "market_value": 2162032000.0,
+    "unrealized_pnl": 288842628.5344,
+    "weight_pct": 0.0216,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 2147441600.0,
-    "market_value_krw": 2147441600.0,
+    "market_value_local": 2162032000.0,
+    "market_value_krw": 2162032000.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -489,14 +512,14 @@
     "side": "short",
     "quantity": 4513,
     "average_entry_price": 306939.0495,
-    "current_price": 301500.0,
-    "market_value": 1360669500.0,
-    "unrealized_pnl": 24546430.3935,
-    "weight_pct": 0.0136,
+    "current_price": 297000.0,
+    "market_value": 1340361000.0,
+    "unrealized_pnl": 44854930.3935,
+    "weight_pct": 0.0134,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1360669500.0,
-    "market_value_krw": 1360669500.0,
+    "market_value_local": 1340361000.0,
+    "market_value_krw": 1340361000.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -512,14 +535,14 @@
     "side": "long",
     "quantity": 7281,
     "average_entry_price": 258994.7711,
-    "current_price": 289000.0,
-    "market_value": 2104209000.0,
-    "unrealized_pnl": 218468071.6209,
-    "weight_pct": 0.021,
+    "current_price": 283500.0,
+    "market_value": 2064163500.0,
+    "unrealized_pnl": 178422571.6209,
+    "weight_pct": 0.0207,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 2104209000.0,
-    "market_value_krw": 2104209000.0,
+    "market_value_local": 2064163500.0,
+    "market_value_krw": 2064163500.0,
     "fx_rate": 1.0,
     "stop_loss_price": 220000.0,
     "take_profit_price": null
@@ -535,14 +558,14 @@
     "side": "long",
     "quantity": 1286,
     "average_entry_price": 1400058.5293,
-    "current_price": 1373000.0,
-    "market_value": 1765678000.0,
-    "unrealized_pnl": -34797268.6798,
-    "weight_pct": 0.0176,
+    "current_price": 1387000.0,
+    "market_value": 1783682000.0,
+    "unrealized_pnl": -16793268.6798,
+    "weight_pct": 0.0179,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1765678000.0,
-    "market_value_krw": 1765678000.0,
+    "market_value_local": 1783682000.0,
+    "market_value_krw": 1783682000.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -556,16 +579,16 @@
     "exchange": "KRX",
     "sector": "Technology",
     "side": "long",
-    "quantity": 100,
-    "average_entry_price": 148997.906,
-    "current_price": 149400.0,
-    "market_value": 14940000.0,
-    "unrealized_pnl": 40209.4,
-    "weight_pct": 0.0001,
+    "quantity": 9973,
+    "average_entry_price": 151825.9556,
+    "current_price": 151100.0,
+    "market_value": 1506920300.0,
+    "unrealized_pnl": -7239955.1988,
+    "weight_pct": 0.0151,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 14940000.0,
-    "market_value_krw": 14940000.0,
+    "market_value_local": 1506920300.0,
+    "market_value_krw": 1506920300.0,
     "fx_rate": 1.0,
     "stop_loss_price": 135000.0,
     "take_profit_price": null
@@ -581,14 +604,14 @@
     "side": "short",
     "quantity": 304820,
     "average_entry_price": 2782.5073,
-    "current_price": 2690.0,
-    "market_value": 819965800.0,
-    "unrealized_pnl": 28198075.186,
+    "current_price": 2685.0,
+    "market_value": 818441700.0,
+    "unrealized_pnl": 29722175.186,
     "weight_pct": 0.0082,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 819965800.0,
-    "market_value_krw": 819965800.0,
+    "market_value_local": 818441700.0,
+    "market_value_krw": 818441700.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -604,14 +627,14 @@
     "side": "long",
     "quantity": 99371,
     "average_entry_price": 18117.1536,
-    "current_price": 18110.0,
-    "market_value": 1799608810.0,
-    "unrealized_pnl": -710860.3856,
-    "weight_pct": 0.018,
+    "current_price": 18320.0,
+    "market_value": 1820476720.0,
+    "unrealized_pnl": 20157049.6144,
+    "weight_pct": 0.0182,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1799608810.0,
-    "market_value_krw": 1799608810.0,
+    "market_value_local": 1820476720.0,
+    "market_value_krw": 1820476720.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -627,14 +650,14 @@
     "side": "short",
     "quantity": 9445,
     "average_entry_price": 199444.3506,
-    "current_price": 198500.0,
-    "market_value": 1874832500.0,
-    "unrealized_pnl": 8919391.417,
-    "weight_pct": 0.0187,
+    "current_price": 200000.0,
+    "market_value": 1889000000.0,
+    "unrealized_pnl": -5248108.583,
+    "weight_pct": 0.0189,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1874832500.0,
-    "market_value_krw": 1874832500.0,
+    "market_value_local": 1889000000.0,
+    "market_value_krw": 1889000000.0,
     "fx_rate": 1.0,
     "stop_loss_price": 230000.0,
     "take_profit_price": null
@@ -650,37 +673,14 @@
     "side": "short",
     "quantity": 24927,
     "average_entry_price": 79738.6512,
-    "current_price": 74400.0,
-    "market_value": 1854568800.0,
-    "unrealized_pnl": 133076558.4624,
-    "weight_pct": 0.0185,
+    "current_price": 73900.0,
+    "market_value": 1842105300.0,
+    "unrealized_pnl": 145540058.4624,
+    "weight_pct": 0.0184,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1854568800.0,
-    "market_value_krw": 1854568800.0,
-    "fx_rate": 1.0,
-    "stop_loss_price": null,
-    "take_profit_price": null
-   },
-   {
-    "id": 6646,
-    "company_id": 2203,
-    "company_name": "ABL Bio Inc.",
-    "company_alias": "에이비엘바이오",
-    "company_symbol": "298380",
-    "exchange": "KRX",
-    "sector": "Healthcare",
-    "side": "short",
-    "quantity": 31061,
-    "average_entry_price": 55960.7029,
-    "current_price": 50700.0,
-    "market_value": 1574792700.0,
-    "unrealized_pnl": 163402692.7769,
-    "weight_pct": 0.0157,
-    "beta": null,
-    "local_currency": "KRW",
-    "market_value_local": 1574792700.0,
-    "market_value_krw": 1574792700.0,
+    "market_value_local": 1842105300.0,
+    "market_value_krw": 1842105300.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -699,13 +699,36 @@
     "current_price": 444000.0,
     "market_value": 1834164000.0,
     "unrealized_pnl": -72009496.7568,
-    "weight_pct": 0.0183,
+    "weight_pct": 0.0184,
     "beta": null,
     "local_currency": "KRW",
     "market_value_local": 1834164000.0,
     "market_value_krw": 1834164000.0,
     "fx_rate": 1.0,
     "stop_loss_price": 420000.0,
+    "take_profit_price": null
+   },
+   {
+    "id": 7791,
+    "company_id": 2335,
+    "company_name": "Life Semantics Corp",
+    "company_alias": "스피어",
+    "company_symbol": "347700",
+    "exchange": "KRX",
+    "sector": "Healthcare",
+    "side": "short",
+    "quantity": 68623,
+    "average_entry_price": 23214.6485,
+    "current_price": 23350.0,
+    "market_value": 1602347050.0,
+    "unrealized_pnl": -9288225.9845,
+    "weight_pct": 0.016,
+    "beta": null,
+    "local_currency": "KRW",
+    "market_value_local": 1602347050.0,
+    "market_value_krw": 1602347050.0,
+    "fx_rate": 1.0,
+    "stop_loss_price": null,
     "take_profit_price": null
    },
    {
@@ -719,14 +742,37 @@
     "side": "long",
     "quantity": 41263,
     "average_entry_price": 45058.8434,
-    "current_price": 44650.0,
-    "market_value": 1842392950.0,
-    "unrealized_pnl": -16870105.2142,
-    "weight_pct": 0.0184,
+    "current_price": 45150.0,
+    "market_value": 1863024450.0,
+    "unrealized_pnl": 3761394.7858,
+    "weight_pct": 0.0186,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1842392950.0,
-    "market_value_krw": 1842392950.0,
+    "market_value_local": 1863024450.0,
+    "market_value_krw": 1863024450.0,
+    "fx_rate": 1.0,
+    "stop_loss_price": null,
+    "take_profit_price": null
+   },
+   {
+    "id": 7794,
+    "company_id": 2366,
+    "company_name": "Almac Co. Ltd.",
+    "company_alias": "알멕",
+    "company_symbol": "354320",
+    "exchange": "KRX",
+    "sector": "Common Stock",
+    "side": "long",
+    "quantity": 47360,
+    "average_entry_price": 41730.5722,
+    "current_price": 41150.0,
+    "market_value": 1948864000.0,
+    "unrealized_pnl": -27495899.392,
+    "weight_pct": 0.0195,
+    "beta": null,
+    "local_currency": "KRW",
+    "market_value_local": 1948864000.0,
+    "market_value_krw": 1948864000.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
@@ -742,16 +788,39 @@
     "side": "long",
     "quantity": 35486,
     "average_entry_price": 57096.732,
-    "current_price": 64800.0,
-    "market_value": 2299492800.0,
-    "unrealized_pnl": 273358168.248,
-    "weight_pct": 0.023,
+    "current_price": 63900.0,
+    "market_value": 2267555400.0,
+    "unrealized_pnl": 241420768.248,
+    "weight_pct": 0.0227,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 2299492800.0,
-    "market_value_krw": 2299492800.0,
+    "market_value_local": 2267555400.0,
+    "market_value_krw": 2267555400.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
+    "take_profit_price": null
+   },
+   {
+    "id": 7761,
+    "company_id": 2547,
+    "company_name": "Samhyun Co., Ltd.",
+    "company_alias": "삼현",
+    "company_symbol": "437730",
+    "exchange": "KRX",
+    "sector": "Industrials",
+    "side": "short",
+    "quantity": 32737,
+    "average_entry_price": 50308.2941,
+    "current_price": 51700.0,
+    "market_value": 1692502900.0,
+    "unrealized_pnl": -45560276.0483,
+    "weight_pct": 0.0169,
+    "beta": null,
+    "local_currency": "KRW",
+    "market_value_local": 1692502900.0,
+    "market_value_krw": 1692502900.0,
+    "fx_rate": 1.0,
+    "stop_loss_price": 57000.0,
     "take_profit_price": null
    },
    {
@@ -765,22 +834,308 @@
     "side": "short",
     "quantity": 17871,
     "average_entry_price": 109875.4574,
-    "current_price": 109500.0,
-    "market_value": 1956874500.0,
-    "unrealized_pnl": 6709799.1954,
-    "weight_pct": 0.0196,
+    "current_price": 117100.0,
+    "market_value": 2092694100.0,
+    "unrealized_pnl": -129109800.8046,
+    "weight_pct": 0.0209,
     "beta": null,
     "local_currency": "KRW",
-    "market_value_local": 1956874500.0,
-    "market_value_krw": 1956874500.0,
+    "market_value_local": 2092694100.0,
+    "market_value_krw": 2092694100.0,
     "fx_rate": 1.0,
     "stop_loss_price": null,
     "take_profit_price": null
    }
   ],
-  "price_as_of": "2026-09-25T21:50:31Z"
+  "price_as_of": "2026-09-28T00:30:31Z"
  },
  "orders": [
+  {
+   "id": 20925,
+   "participant_id": 292,
+   "company_id": 385,
+   "company_name": "Isu Petasys Co. Ltd.",
+   "company_symbol": "007660",
+   "side": "short",
+   "order_type": "market",
+   "status": "filled",
+   "quantity": 16908,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 16908,
+   "filled_avg_price": 114429.5096,
+   "rejection_reason": null,
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": "market",
+   "pov_rate": null,
+   "created_at": "2026-09-28T00:30:47+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20920,
+   "participant_id": 292,
+   "company_id": 2366,
+   "company_name": "Almac Co. Ltd.",
+   "company_symbol": "354320",
+   "side": "buy",
+   "order_type": "market",
+   "status": "filled",
+   "quantity": 47360,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 47360,
+   "filled_avg_price": 41730.5722,
+   "rejection_reason": null,
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": "market",
+   "pov_rate": null,
+   "created_at": "2026-09-28T00:29:17+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20916,
+   "participant_id": 292,
+   "company_id": 2335,
+   "company_name": "Life Semantics Corp",
+   "company_symbol": "347700",
+   "side": "short",
+   "order_type": "market",
+   "status": "filled",
+   "quantity": 68623,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 68623,
+   "filled_avg_price": 23214.6485,
+   "rejection_reason": null,
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": "market",
+   "pov_rate": null,
+   "created_at": "2026-09-28T00:28:45+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20861,
+   "participant_id": 292,
+   "company_id": 985,
+   "company_name": "Daewoo Engineering & Construction Co. Ltd.",
+   "company_symbol": "047040",
+   "side": "cover",
+   "order_type": "market",
+   "status": "rejected",
+   "quantity": 100057,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 0,
+   "filled_avg_price": null,
+   "rejection_reason": "순노출 11.2%가 ±10% 한도를 초과 — 리밸런싱하려면 SHORT만 가능",
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": null,
+   "pov_rate": null,
+   "created_at": "2026-09-28T00:16:31+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20811,
+   "participant_id": 292,
+   "company_id": 1971,
+   "company_name": "SIMMTECH Co., Ltd.",
+   "company_symbol": "222800",
+   "side": "buy",
+   "order_type": "market",
+   "status": "filled",
+   "quantity": 9873,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 9873,
+   "filled_avg_price": 151854.5999,
+   "rejection_reason": null,
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": "market",
+   "pov_rate": null,
+   "created_at": "2026-09-28T00:11:10+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20809,
+   "participant_id": 292,
+   "company_id": 2547,
+   "company_name": "Samhyun Co., Ltd.",
+   "company_symbol": "437730",
+   "side": "short",
+   "order_type": "market",
+   "status": "filled",
+   "quantity": 32737,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": 57000.0,
+   "take_profit_price": null,
+   "filled_quantity": 32737,
+   "filled_avg_price": 50308.2941,
+   "rejection_reason": null,
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": "market",
+   "pov_rate": null,
+   "created_at": "2026-09-28T00:10:38+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20759,
+   "participant_id": 292,
+   "company_id": 455,
+   "company_name": "Oci Holdings Co. Ltd.",
+   "company_symbol": "010060",
+   "side": "buy",
+   "order_type": "market",
+   "status": "filled",
+   "quantity": 8733,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 8733,
+   "filled_avg_price": 222729.5294,
+   "rejection_reason": null,
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": "market",
+   "pov_rate": null,
+   "created_at": "2026-09-28T00:05:31+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20753,
+   "participant_id": 292,
+   "company_id": 345,
+   "company_name": "GS Engineering & Construction Corporation",
+   "company_symbol": "006360",
+   "side": "sell",
+   "order_type": "market",
+   "status": "filled",
+   "quantity": 40537,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 40537,
+   "filled_avg_price": 33568.8271,
+   "rejection_reason": null,
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": null,
+   "pov_rate": null,
+   "created_at": "2026-09-28T00:04:48+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20587,
+   "participant_id": 292,
+   "company_id": 2203,
+   "company_name": "ABL Bio Inc.",
+   "company_symbol": "298380",
+   "side": "cover",
+   "order_type": "market",
+   "status": "rejected",
+   "quantity": 31061,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 0,
+   "filled_avg_price": null,
+   "rejection_reason": "청산할 숏 포지션이 없습니다",
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": null,
+   "pov_rate": null,
+   "created_at": "2026-09-27T23:12:03+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20586,
+   "participant_id": 292,
+   "company_id": 2203,
+   "company_name": "ABL Bio Inc.",
+   "company_symbol": "298380",
+   "side": "cover",
+   "order_type": "market",
+   "status": "rejected",
+   "quantity": 31061,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 0,
+   "filled_avg_price": null,
+   "rejection_reason": "청산할 숏 포지션이 없습니다",
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": null,
+   "pov_rate": null,
+   "created_at": "2026-09-27T23:12:02+00:00",
+   "warnings": []
+  },
+  {
+   "id": 20585,
+   "participant_id": 292,
+   "company_id": 2203,
+   "company_name": "ABL Bio Inc.",
+   "company_symbol": "298380",
+   "side": "cover",
+   "order_type": "market",
+   "status": "filled",
+   "quantity": 31061,
+   "limit_price": null,
+   "stop_price": null,
+   "stop_loss_price": null,
+   "take_profit_price": null,
+   "filled_quantity": 31061,
+   "filled_avg_price": 52372.1537,
+   "rejection_reason": null,
+   "time_horizon": null,
+   "conviction": null,
+   "thesis": null,
+   "strategy": null,
+   "fill_strategy": null,
+   "pov_rate": null,
+   "created_at": "2026-09-27T23:12:00+00:00",
+   "warnings": []
+  },
   {
    "id": 19980,
    "participant_id": 292,
@@ -2246,102 +2601,102 @@
    "score_breakdown": null,
    "username": "김*수",
    "status": "active",
-   "nav": 106767707607.1676,
-   "total_return_pct": 6.77,
+   "nav": 106495522249.3378,
+   "total_return_pct": 6.5,
    "sharpe_ratio": 7.2938,
    "max_drawdown_pct": -0.0161145,
-   "composite_score": 0.6974
+   "composite_score": 0.7012
   },
   {
    "rank": 2,
-   "user_id": 5310,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "유*영",
-   "status": "active",
-   "nav": 103997580096.1034,
-   "total_return_pct": 4.0,
-   "sharpe_ratio": 9.2395,
-   "max_drawdown_pct": -0.0186668,
-   "composite_score": 0.6293
-  },
-  {
-   "rank": 3,
    "user_id": 5309,
    "participant_id": null,
    "score_breakdown": null,
    "username": "K** ****g",
    "status": "active",
-   "nav": 102285100157.7713,
-   "total_return_pct": 2.29,
+   "nav": 102252351877.7713,
+   "total_return_pct": 2.25,
    "sharpe_ratio": 6.806,
    "max_drawdown_pct": -0.00692274,
-   "composite_score": 0.6121
+   "composite_score": 0.622
+  },
+  {
+   "rank": 3,
+   "user_id": 5310,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "유*영",
+   "status": "active",
+   "nav": 102953804728.0034,
+   "total_return_pct": 2.95,
+   "sharpe_ratio": 9.2395,
+   "max_drawdown_pct": -0.0186668,
+   "composite_score": 0.6165
   },
   {
    "rank": 4,
-   "user_id": 5263,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "박*진",
-   "status": "active",
-   "nav": 104835330748.7593,
-   "total_return_pct": 4.84,
-   "sharpe_ratio": 4.2231,
-   "max_drawdown_pct": -0.0266877,
-   "composite_score": 0.6041
-  },
-  {
-   "rank": 5,
-   "user_id": 5210,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "H *",
-   "status": "active",
-   "nav": 103568007901.1791,
-   "total_return_pct": 3.57,
-   "sharpe_ratio": 5.9444,
-   "max_drawdown_pct": -0.0199256,
-   "composite_score": 0.6006
-  },
-  {
-   "rank": 6,
    "user_id": 2857,
    "participant_id": null,
    "score_breakdown": null,
    "username": "박**욱",
    "status": "active",
-   "nav": 103300763736.5553,
-   "total_return_pct": 3.3,
+   "nav": 103506534630.1053,
+   "total_return_pct": 3.51,
    "sharpe_ratio": 7.0046,
    "max_drawdown_pct": -0.0203097,
-   "composite_score": 0.5974
+   "composite_score": 0.6157
   },
   {
-   "rank": 7,
+   "rank": 5,
    "user_id": 4895,
    "participant_id": null,
    "score_breakdown": null,
    "username": "K****** **m",
    "status": "active",
-   "nav": 101256933583.6459,
-   "total_return_pct": 1.26,
+   "nav": 101314753963.6459,
+   "total_return_pct": 1.31,
    "sharpe_ratio": 6.9822,
    "max_drawdown_pct": -0.00431819,
-   "composite_score": 0.5952
+   "composite_score": 0.6074
   },
   {
-   "rank": 8,
+   "rank": 6,
+   "user_id": 5210,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "H *",
+   "status": "active",
+   "nav": 103133197221.1791,
+   "total_return_pct": 3.13,
+   "sharpe_ratio": 5.9444,
+   "max_drawdown_pct": -0.0199256,
+   "composite_score": 0.6032
+  },
+  {
+   "rank": 7,
    "user_id": 5238,
    "participant_id": null,
    "score_breakdown": null,
    "username": "강*균",
    "status": "active",
-   "nav": 104050150119.6222,
-   "total_return_pct": 4.05,
+   "nav": 103641449178.4319,
+   "total_return_pct": 3.64,
    "sharpe_ratio": 4.8127,
    "max_drawdown_pct": -0.0258785,
-   "composite_score": 0.589
+   "composite_score": 0.5933
+  },
+  {
+   "rank": 8,
+   "user_id": 5263,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "박*진",
+   "status": "active",
+   "nav": 103723792192.9889,
+   "total_return_pct": 3.72,
+   "sharpe_ratio": 4.2231,
+   "max_drawdown_pct": -0.0266877,
+   "composite_score": 0.5911
   },
   {
    "rank": 9,
@@ -2350,37 +2705,37 @@
    "score_breakdown": null,
    "username": "Y***** *N",
    "status": "active",
-   "nav": 100724862833.1525,
-   "total_return_pct": 0.72,
+   "nav": 100477021307.0233,
+   "total_return_pct": 0.48,
    "sharpe_ratio": 5.9518,
    "max_drawdown_pct": -0.00295423,
-   "composite_score": 0.5817
+   "composite_score": 0.5865
   },
   {
    "rank": 10,
+   "user_id": 2884,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "k***** **o",
+   "status": "active",
+   "nav": 101932944947.7009,
+   "total_return_pct": 1.93,
+   "sharpe_ratio": 3.8784,
+   "max_drawdown_pct": -0.0128575,
+   "composite_score": 0.585
+  },
+  {
+   "rank": 11,
    "user_id": 5386,
    "participant_id": null,
    "score_breakdown": null,
    "username": "강*수",
    "status": "active",
-   "nav": 102216581654.5552,
-   "total_return_pct": 2.22,
+   "nav": 102030636846.6988,
+   "total_return_pct": 2.03,
    "sharpe_ratio": 4.209,
    "max_drawdown_pct": -0.014109,
-   "composite_score": 0.5768
-  },
-  {
-   "rank": 11,
-   "user_id": 3565,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "K**** **a",
-   "status": "active",
-   "nav": 100388242170.5538,
-   "total_return_pct": 0.39,
-   "sharpe_ratio": 5.7802,
-   "max_drawdown_pct": -0.00180793,
-   "composite_score": 0.5761
+   "composite_score": 0.5848
   },
   {
    "rank": 12,
@@ -2389,362 +2744,362 @@
    "score_breakdown": null,
    "username": "J* K",
    "status": "active",
-   "nav": 102217617536.7848,
-   "total_return_pct": 2.22,
+   "nav": 102158654707.1411,
+   "total_return_pct": 2.16,
    "sharpe_ratio": 3.1658,
    "max_drawdown_pct": -0.0139259,
-   "composite_score": 0.5734
+   "composite_score": 0.5844
   },
   {
    "rank": 13,
-   "user_id": 2848,
+   "user_id": 3565,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "­*** * ** * ***부",
+   "username": "K**** **a",
    "status": "active",
-   "nav": 102766026515.3406,
-   "total_return_pct": 2.77,
-   "sharpe_ratio": 4.4049,
-   "max_drawdown_pct": -0.021118,
-   "composite_score": 0.57
+   "nav": 100209519960.3898,
+   "total_return_pct": 0.21,
+   "sharpe_ratio": 5.7802,
+   "max_drawdown_pct": -0.00187876,
+   "composite_score": 0.5823
   },
   {
    "rank": 14,
-   "user_id": 2884,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "k***** **o",
-   "status": "active",
-   "nav": 101808191580.4478,
-   "total_return_pct": 1.81,
-   "sharpe_ratio": 3.8784,
-   "max_drawdown_pct": -0.0128575,
-   "composite_score": 0.5696
-  },
-  {
-   "rank": 15,
    "user_id": 5363,
    "participant_id": null,
    "score_breakdown": null,
    "username": "D**** ***g",
    "status": "active",
-   "nav": 100762668031.271,
-   "total_return_pct": 0.76,
+   "nav": 100789116900.7496,
+   "total_return_pct": 0.79,
    "sharpe_ratio": 4.3987,
    "max_drawdown_pct": -0.00515646,
-   "composite_score": 0.5693
+   "composite_score": 0.5812
   },
   {
-   "rank": 16,
+   "rank": 15,
    "user_id": 5447,
    "participant_id": null,
    "score_breakdown": null,
    "username": "정*호",
    "status": "active",
-   "nav": 100285364655.4708,
-   "total_return_pct": 0.29,
+   "nav": 100367749030.013,
+   "total_return_pct": 0.37,
    "sharpe_ratio": 8.7161,
    "max_drawdown_pct": -0.000599386,
-   "composite_score": 0.5656
+   "composite_score": 0.578
   },
   {
-   "rank": 17,
-   "user_id": 5273,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "D**** **m",
-   "status": "active",
-   "nav": 101919020096.1358,
-   "total_return_pct": 1.92,
-   "sharpe_ratio": 3.5216,
-   "max_drawdown_pct": -0.0146481,
-   "composite_score": 0.5653
-  },
-  {
-   "rank": 18,
-   "user_id": 5296,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "김*중",
-   "status": "active",
-   "nav": 100970511574.2261,
-   "total_return_pct": 0.97,
-   "sharpe_ratio": 3.2131,
-   "max_drawdown_pct": -0.00688268,
-   "composite_score": 0.5641
-  },
-  {
-   "rank": 19,
-   "user_id": 5232,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "노****서",
-   "status": "active",
-   "nav": 100047974100.768,
-   "total_return_pct": 0.05,
-   "sharpe_ratio": 3.841,
-   "max_drawdown_pct": -0.000469467,
-   "composite_score": 0.5634
-  },
-  {
-   "rank": 20,
-   "user_id": 5446,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "J******* **e",
-   "status": "active",
-   "nav": 100175471357.6796,
-   "total_return_pct": 0.18,
-   "sharpe_ratio": 15.7038,
-   "max_drawdown_pct": -0.00186733,
-   "composite_score": 0.5625
-  },
-  {
-   "rank": 21,
-   "user_id": 5286,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "A*** ***g",
-   "status": "active",
-   "nav": 100242251360.0852,
-   "total_return_pct": 0.24,
-   "sharpe_ratio": 3.323,
-   "max_drawdown_pct": -0.00228189,
-   "composite_score": 0.5605
-  },
-  {
-   "rank": 22,
-   "user_id": 5277,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "k******** ***A",
-   "status": "active",
-   "nav": 100933813053.4085,
-   "total_return_pct": 0.93,
-   "sharpe_ratio": 3.0405,
-   "max_drawdown_pct": -0.00789066,
-   "composite_score": 0.5594
-  },
-  {
-   "rank": 23,
-   "user_id": 2882,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "신*교",
-   "status": "active",
-   "nav": 101465186571.6538,
-   "total_return_pct": 1.47,
-   "sharpe_ratio": 4.1864,
-   "max_drawdown_pct": -0.0139654,
-   "composite_score": 0.559
-  },
-  {
-   "rank": 24,
+   "rank": 16,
    "user_id": 5292,
    "participant_id": null,
    "score_breakdown": null,
    "username": "노*민",
    "status": "active",
-   "nav": 105555224135.4485,
-   "total_return_pct": 5.56,
+   "nav": 105547243750.4485,
+   "total_return_pct": 5.55,
    "sharpe_ratio": 3.6918,
    "max_drawdown_pct": -0.0469056,
-   "composite_score": 0.5582
+   "composite_score": 0.5762
   },
   {
-   "rank": 25,
-   "user_id": 5305,
+   "rank": 17,
+   "user_id": 5232,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "­*** * ** * ***과",
+   "username": "노****서",
    "status": "active",
-   "nav": 100012362400.0,
-   "total_return_pct": 0.01,
-   "sharpe_ratio": 2.5128,
-   "max_drawdown_pct": -0.000150988,
-   "composite_score": 0.5578
+   "nav": 100097427647.8333,
+   "total_return_pct": 0.1,
+   "sharpe_ratio": 3.841,
+   "max_drawdown_pct": -0.000469467,
+   "composite_score": 0.5752
   },
   {
-   "rank": 26,
-   "user_id": 5331,
+   "rank": 18,
+   "user_id": 5273,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "T*** **m",
+   "username": "D**** **m",
    "status": "active",
-   "nav": 100264828627.7764,
-   "total_return_pct": 0.26,
-   "sharpe_ratio": 2.8153,
-   "max_drawdown_pct": -0.00360474,
-   "composite_score": 0.5548
+   "nav": 101698525447.654,
+   "total_return_pct": 1.7,
+   "sharpe_ratio": 3.5216,
+   "max_drawdown_pct": -0.0146481,
+   "composite_score": 0.5728
   },
   {
-   "rank": 27,
-   "user_id": 5304,
+   "rank": 19,
+   "user_id": 5296,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "­*** * ** * ***과",
+   "username": "김*중",
    "status": "active",
-   "nav": 100048827619.306,
-   "total_return_pct": 0.05,
-   "sharpe_ratio": 1.656,
-   "max_drawdown_pct": -0.00115268,
-   "composite_score": 0.5519
+   "nav": 100920921664.2261,
+   "total_return_pct": 0.92,
+   "sharpe_ratio": 3.2131,
+   "max_drawdown_pct": -0.00808449,
+   "composite_score": 0.571
   },
   {
-   "rank": 28,
-   "user_id": 4746,
+   "rank": 20,
+   "user_id": 2882,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "김*준",
+   "username": "신*교",
    "status": "active",
-   "nav": 100371022173.9628,
-   "total_return_pct": 0.37,
-   "sharpe_ratio": 2.5605,
-   "max_drawdown_pct": -0.00532008,
-   "composite_score": 0.5512
+   "nav": 101429005747.942,
+   "total_return_pct": 1.43,
+   "sharpe_ratio": 4.1864,
+   "max_drawdown_pct": -0.0139654,
+   "composite_score": 0.571
   },
   {
-   "rank": 29,
-   "user_id": 4688,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "ᄋ**ᄎ",
-   "status": "active",
-   "nav": 100329747089.6944,
-   "total_return_pct": 0.33,
-   "sharpe_ratio": 2.1676,
-   "max_drawdown_pct": -0.0050966,
-   "composite_score": 0.5491
-  },
-  {
-   "rank": 30,
+   "rank": 21,
    "user_id": 5395,
    "participant_id": null,
    "score_breakdown": null,
    "username": "H***** *********]",
    "status": "active",
-   "nav": 103744964233.1203,
-   "total_return_pct": 3.74,
+   "nav": 103983889278.1203,
+   "total_return_pct": 3.98,
    "sharpe_ratio": 4.6319,
    "max_drawdown_pct": -0.0363491,
-   "composite_score": 0.5483
+   "composite_score": 0.5708
   },
   {
-   "rank": 31,
-   "user_id": 5317,
+   "rank": 22,
+   "user_id": 5286,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "성*창",
+   "username": "A*** ***g",
    "status": "active",
-   "nav": 100003561713.868,
-   "total_return_pct": 0.0,
-   "sharpe_ratio": 0.3402,
-   "max_drawdown_pct": -0.000468428,
-   "composite_score": 0.5472
+   "nav": 100192751360.0852,
+   "total_return_pct": 0.19,
+   "sharpe_ratio": 3.323,
+   "max_drawdown_pct": -0.00228189,
+   "composite_score": 0.5702
   },
   {
-   "rank": 32,
-   "user_id": 5338,
+   "rank": 23,
+   "user_id": 5305,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "양*원",
+   "username": "­*** * ** * ***과",
    "status": "active",
-   "nav": 100749311873.6274,
-   "total_return_pct": 0.75,
-   "sharpe_ratio": 2.2992,
-   "max_drawdown_pct": -0.00978381,
-   "composite_score": 0.5459
+   "nav": 100045446945.0,
+   "total_return_pct": 0.05,
+   "sharpe_ratio": 2.5128,
+   "max_drawdown_pct": -0.000150988,
+   "composite_score": 0.5691
   },
   {
-   "rank": 33,
-   "user_id": 5293,
+   "rank": 24,
+   "user_id": 5331,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "T** *** *********** *** *** **********e",
+   "username": "T*** **m",
    "status": "active",
-   "nav": 100510361261.3984,
-   "total_return_pct": 0.51,
-   "sharpe_ratio": 1.9549,
-   "max_drawdown_pct": -0.00770803,
-   "composite_score": 0.545
+   "nav": 100330404397.7764,
+   "total_return_pct": 0.33,
+   "sharpe_ratio": 2.8153,
+   "max_drawdown_pct": -0.00360474,
+   "composite_score": 0.5676
   },
   {
-   "rank": 34,
-   "user_id": 4722,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "김*준",
-   "status": "active",
-   "nav": 100351752946.0433,
-   "total_return_pct": 0.35,
-   "sharpe_ratio": 1.474,
-   "max_drawdown_pct": -0.00592298,
-   "composite_score": 0.5442
-  },
-  {
-   "rank": 35,
+   "rank": 25,
    "user_id": 5415,
    "participant_id": null,
    "score_breakdown": null,
    "username": "김*재",
    "status": "active",
-   "nav": 100327550486.0971,
-   "total_return_pct": 0.33,
+   "nav": 100707331223.2042,
+   "total_return_pct": 0.71,
    "sharpe_ratio": 2.5095,
    "max_drawdown_pct": -0.00762327,
-   "composite_score": 0.5424
+   "composite_score": 0.5637
   },
   {
-   "rank": 36,
-   "user_id": 4751,
+   "rank": 26,
+   "user_id": 5304,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "H** **y",
+   "username": "­*** * ** * ***과",
    "status": "active",
-   "nav": 100701749243.5253,
-   "total_return_pct": 0.7,
-   "sharpe_ratio": 3.1159,
-   "max_drawdown_pct": -0.0118944,
-   "composite_score": 0.5418
+   "nav": 100026369119.306,
+   "total_return_pct": 0.03,
+   "sharpe_ratio": 1.656,
+   "max_drawdown_pct": -0.00115268,
+   "composite_score": 0.5621
   },
   {
-   "rank": 37,
-   "user_id": 4726,
+   "rank": 27,
+   "user_id": 4746,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "이*호",
+   "username": "김*준",
    "status": "active",
-   "nav": 101723012062.4841,
-   "total_return_pct": 1.72,
-   "sharpe_ratio": 3.626,
-   "max_drawdown_pct": -0.0211866,
-   "composite_score": 0.5411
+   "nav": 100283242739.9124,
+   "total_return_pct": 0.28,
+   "sharpe_ratio": 2.5605,
+   "max_drawdown_pct": -0.00532008,
+   "composite_score": 0.5605
   },
   {
-   "rank": 38,
-   "user_id": 5332,
+   "rank": 28,
+   "user_id": 5338,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "류*정",
+   "username": "양*원",
    "status": "active",
-   "nav": 100725077773.047,
-   "total_return_pct": 0.73,
-   "sharpe_ratio": 2.6761,
-   "max_drawdown_pct": -0.0117456,
-   "composite_score": 0.5409
+   "nav": 100846579743.7034,
+   "total_return_pct": 0.85,
+   "sharpe_ratio": 2.2992,
+   "max_drawdown_pct": -0.00978381,
+   "composite_score": 0.5605
   },
   {
-   "rank": 39,
+   "rank": 29,
+   "user_id": 5277,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "k******** ***A",
+   "status": "active",
+   "nav": 100478778467.4085,
+   "total_return_pct": 0.48,
+   "sharpe_ratio": 3.0405,
+   "max_drawdown_pct": -0.00789066,
+   "composite_score": 0.5601
+  },
+  {
+   "rank": 30,
+   "user_id": 4688,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "ᄋ**ᄎ",
+   "status": "active",
+   "nav": 100304783616.7376,
+   "total_return_pct": 0.3,
+   "sharpe_ratio": 2.1676,
+   "max_drawdown_pct": -0.0050966,
+   "composite_score": 0.56
+  },
+  {
+   "rank": 31,
+   "user_id": 5446,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "J******* **e",
+   "status": "active",
+   "nav": 99825793563.5681,
+   "total_return_pct": -0.17,
+   "sharpe_ratio": 15.7038,
+   "max_drawdown_pct": -0.00455751,
+   "composite_score": 0.5573
+  },
+  {
+   "rank": 32,
+   "user_id": 5317,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "성*창",
+   "status": "active",
+   "nav": 99976835024.5511,
+   "total_return_pct": -0.02,
+   "sharpe_ratio": 0.3402,
+   "max_drawdown_pct": -0.000539046,
+   "composite_score": 0.557
+  },
+  {
+   "rank": 33,
+   "user_id": 4722,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "김*준",
+   "status": "active",
+   "nav": 100373577846.0433,
+   "total_return_pct": 0.37,
+   "sharpe_ratio": 1.474,
+   "max_drawdown_pct": -0.00592298,
+   "composite_score": 0.5564
+  },
+  {
+   "rank": 34,
+   "user_id": 5391,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "유*열",
+   "status": "active",
+   "nav": 105962384314.6353,
+   "total_return_pct": 5.96,
+   "sharpe_ratio": 3.5257,
+   "max_drawdown_pct": -0.0577033,
+   "composite_score": 0.5546
+  },
+  {
+   "rank": 35,
    "user_id": 5326,
    "participant_id": null,
    "score_breakdown": null,
    "username": "J **m",
    "status": "active",
-   "nav": 100023062121.4601,
-   "total_return_pct": 0.02,
+   "nav": 100140683061.4601,
+   "total_return_pct": 0.14,
    "sharpe_ratio": 0.2504,
    "max_drawdown_pct": -0.00342855,
-   "composite_score": 0.5383
+   "composite_score": 0.5525
+  },
+  {
+   "rank": 36,
+   "user_id": 5332,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "류*정",
+   "status": "active",
+   "nav": 100653481988.047,
+   "total_return_pct": 0.65,
+   "sharpe_ratio": 2.6761,
+   "max_drawdown_pct": -0.0117456,
+   "composite_score": 0.552
+  },
+  {
+   "rank": 37,
+   "user_id": 5293,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "T** *** *********** *** *** **********e",
+   "status": "active",
+   "nav": 100297142351.3984,
+   "total_return_pct": 0.3,
+   "sharpe_ratio": 1.9549,
+   "max_drawdown_pct": -0.00770803,
+   "composite_score": 0.5518
+  },
+  {
+   "rank": 38,
+   "user_id": 4726,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "이*호",
+   "status": "active",
+   "nav": 101517215662.4841,
+   "total_return_pct": 1.52,
+   "sharpe_ratio": 3.626,
+   "max_drawdown_pct": -0.0211866,
+   "composite_score": 0.5505
+  },
+  {
+   "rank": 39,
+   "user_id": 2848,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "­*** * ** * ***부",
+   "status": "active",
+   "nav": 101357264275.425,
+   "total_return_pct": 1.36,
+   "sharpe_ratio": 4.4049,
+   "max_drawdown_pct": -0.021118,
+   "composite_score": 0.5496
   },
   {
    "rank": 40,
@@ -2753,24 +3108,24 @@
    "score_breakdown": null,
    "username": "한*경",
    "status": "active",
-   "nav": 99968111766.6864,
-   "total_return_pct": -0.03,
+   "nav": 99985161766.6864,
+   "total_return_pct": -0.01,
    "sharpe_ratio": -1.1117,
    "max_drawdown_pct": -0.00273701,
-   "composite_score": 0.5367
+   "composite_score": 0.5482
   },
   {
    "rank": 41,
-   "user_id": 5,
+   "user_id": 4751,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "H**** ***k",
+   "username": "H** **y",
    "status": "active",
-   "nav": 101140761649.4688,
-   "total_return_pct": 1.14,
-   "sharpe_ratio": 3.0266,
-   "max_drawdown_pct": -0.0174532,
-   "composite_score": 0.5354
+   "nav": 100348138023.5253,
+   "total_return_pct": 0.35,
+   "sharpe_ratio": 3.1159,
+   "max_drawdown_pct": -0.0118944,
+   "composite_score": 0.546
   },
   {
    "rank": 42,
@@ -2779,193 +3134,193 @@
    "score_breakdown": null,
    "username": "J* K",
    "status": "active",
-   "nav": 99993486424.3246,
-   "total_return_pct": -0.01,
+   "nav": 100125442704.3246,
+   "total_return_pct": 0.13,
    "sharpe_ratio": 0.0884,
    "max_drawdown_pct": -0.00587069,
-   "composite_score": 0.5295
+   "composite_score": 0.5445
   },
   {
    "rank": 43,
-   "user_id": 5217,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "강*훈",
-   "status": "active",
-   "nav": 99917576533.4895,
-   "total_return_pct": -0.08,
-   "sharpe_ratio": -2.8104,
-   "max_drawdown_pct": -0.00140701,
-   "composite_score": 0.5287
-  },
-  {
-   "rank": 44,
-   "user_id": 5431,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "박*완",
-   "status": "active",
-   "nav": 99735105880.4098,
-   "total_return_pct": -0.26,
-   "sharpe_ratio": -6.1903,
-   "max_drawdown_pct": -0.00323507,
-   "composite_score": 0.5278
-  },
-  {
-   "rank": 45,
-   "user_id": 4711,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "구*준",
-   "status": "active",
-   "nav": 100072254303.0439,
-   "total_return_pct": 0.07,
-   "sharpe_ratio": 0.2689,
-   "max_drawdown_pct": -0.00739484,
-   "composite_score": 0.5276
-  },
-  {
-   "rank": 46,
-   "user_id": 5229,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "L**** ****s",
-   "status": "active",
-   "nav": 99863120599.4886,
-   "total_return_pct": -0.14,
-   "sharpe_ratio": -1.7643,
-   "max_drawdown_pct": -0.00284194,
-   "composite_score": 0.5275
-  },
-  {
-   "rank": 47,
-   "user_id": 5264,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "설*준",
-   "status": "active",
-   "nav": 100919267894.0322,
-   "total_return_pct": 0.92,
-   "sharpe_ratio": 2.313,
-   "max_drawdown_pct": -0.017308,
-   "composite_score": 0.5273
-  },
-  {
-   "rank": 48,
-   "user_id": 2880,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "신*철",
-   "status": "active",
-   "nav": 100166233491.3099,
-   "total_return_pct": 0.17,
-   "sharpe_ratio": 0.8276,
-   "max_drawdown_pct": -0.00923472,
-   "composite_score": 0.5267
-  },
-  {
-   "rank": 49,
    "user_id": 5258,
    "participant_id": null,
    "score_breakdown": null,
    "username": "J***** *****n",
    "status": "active",
-   "nav": 101240241841.8972,
-   "total_return_pct": 1.24,
+   "nav": 101337278421.8972,
+   "total_return_pct": 1.34,
    "sharpe_ratio": 2.2001,
    "max_drawdown_pct": -0.0199565,
-   "composite_score": 0.5267
+   "composite_score": 0.5434
   },
   {
-   "rank": 50,
+   "rank": 44,
+   "user_id": 5,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "H**** ***k",
+   "status": "active",
+   "nav": 100889091047.5834,
+   "total_return_pct": 0.89,
+   "sharpe_ratio": 3.0266,
+   "max_drawdown_pct": -0.0174532,
+   "composite_score": 0.5432
+  },
+  {
+   "rank": 45,
+   "user_id": 2880,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "신*철",
+   "status": "active",
+   "nav": 100322471098.859,
+   "total_return_pct": 0.32,
+   "sharpe_ratio": 0.8276,
+   "max_drawdown_pct": -0.00923472,
+   "composite_score": 0.543
+  },
+  {
+   "rank": 46,
+   "user_id": 5217,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "강*훈",
+   "status": "active",
+   "nav": 99995726533.4895,
+   "total_return_pct": -0.0,
+   "sharpe_ratio": -2.8104,
+   "max_drawdown_pct": -0.00140701,
+   "composite_score": 0.5414
+  },
+  {
+   "rank": 47,
+   "user_id": 5431,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "박*완",
+   "status": "active",
+   "nav": 99719005880.4098,
+   "total_return_pct": -0.28,
+   "sharpe_ratio": -6.1903,
+   "max_drawdown_pct": -0.00326372,
+   "composite_score": 0.5387
+  },
+  {
+   "rank": 48,
    "user_id": 5340,
    "participant_id": null,
    "score_breakdown": null,
    "username": "­*** * ** * **부",
    "status": "active",
-   "nav": 100035768121.0281,
-   "total_return_pct": 0.04,
+   "nav": 99981820621.0281,
+   "total_return_pct": -0.02,
    "sharpe_ratio": 0.3143,
    "max_drawdown_pct": -0.00751306,
-   "composite_score": 0.5265
+   "composite_score": 0.5374
   },
   {
-   "rank": 51,
+   "rank": 49,
    "user_id": 5315,
    "participant_id": null,
    "score_breakdown": null,
    "username": "S***** **e",
    "status": "active",
-   "nav": 99924900889.7905,
-   "total_return_pct": -0.08,
+   "nav": 99964203509.7905,
+   "total_return_pct": -0.04,
    "sharpe_ratio": -0.7052,
    "max_drawdown_pct": -0.00580715,
-   "composite_score": 0.5246
+   "composite_score": 0.5374
+  },
+  {
+   "rank": 50,
+   "user_id": 5229,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "L**** ****s",
+   "status": "active",
+   "nav": 99800163899.4886,
+   "total_return_pct": -0.2,
+   "sharpe_ratio": -1.7643,
+   "max_drawdown_pct": -0.00284194,
+   "composite_score": 0.5372
+  },
+  {
+   "rank": 51,
+   "user_id": 4711,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "구*준",
+   "status": "active",
+   "nav": 99920542484.2892,
+   "total_return_pct": -0.08,
+   "sharpe_ratio": 0.2689,
+   "max_drawdown_pct": -0.00739484,
+   "composite_score": 0.5361
   },
   {
    "rank": 52,
-   "user_id": 5335,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "김*규",
-   "status": "active",
-   "nav": 99852888444.7317,
-   "total_return_pct": -0.15,
-   "sharpe_ratio": -0.3741,
-   "max_drawdown_pct": -0.00574537,
-   "composite_score": 0.5244
-  },
-  {
-   "rank": 53,
-   "user_id": 5404,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "민*석",
-   "status": "active",
-   "nav": 99836052405.9681,
-   "total_return_pct": -0.16,
-   "sharpe_ratio": -3.496,
-   "max_drawdown_pct": -0.00340541,
-   "composite_score": 0.5235
-  },
-  {
-   "rank": 54,
    "user_id": 4753,
    "participant_id": null,
    "score_breakdown": null,
    "username": "이*호",
    "status": "active",
-   "nav": 99840104271.7886,
+   "nav": 99844604271.7886,
    "total_return_pct": -0.16,
    "sharpe_ratio": -0.8901,
    "max_drawdown_pct": -0.0053115,
-   "composite_score": 0.5232
+   "composite_score": 0.5351
   },
   {
-   "rank": 55,
+   "rank": 53,
+   "user_id": 5335,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "김*규",
+   "status": "active",
+   "nav": 99758229344.7317,
+   "total_return_pct": -0.24,
+   "sharpe_ratio": -0.3741,
+   "max_drawdown_pct": -0.00574537,
+   "composite_score": 0.534
+  },
+  {
+   "rank": 54,
    "user_id": 5343,
    "participant_id": null,
    "score_breakdown": null,
    "username": "박*훈",
    "status": "active",
-   "nav": 99862242699.1208,
-   "total_return_pct": -0.14,
+   "nav": 99851816699.1208,
+   "total_return_pct": -0.15,
    "sharpe_ratio": -1.1209,
    "max_drawdown_pct": -0.00553732,
-   "composite_score": 0.522
+   "composite_score": 0.5336
+  },
+  {
+   "rank": 55,
+   "user_id": 5252,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "박*외",
+   "status": "active",
+   "nav": 99857188676.8136,
+   "total_return_pct": -0.14,
+   "sharpe_ratio": -1.3303,
+   "max_drawdown_pct": -0.0059219,
+   "composite_score": 0.5318
   },
   {
    "rank": 56,
-   "user_id": 2879,
+   "user_id": 5264,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "황*언",
+   "username": "설*준",
    "status": "active",
-   "nav": 99745640886.3478,
-   "total_return_pct": -0.25,
-   "sharpe_ratio": -3.8602,
-   "max_drawdown_pct": -0.00379985,
-   "composite_score": 0.522
+   "nav": 100523410674.0322,
+   "total_return_pct": 0.52,
+   "sharpe_ratio": 2.313,
+   "max_drawdown_pct": -0.017308,
+   "composite_score": 0.5316
   },
   {
    "rank": 57,
@@ -2974,297 +3329,297 @@
    "score_breakdown": null,
    "username": "가***게",
    "status": "active",
-   "nav": 100031998582.8435,
-   "total_return_pct": 0.03,
+   "nav": 99929493842.4735,
+   "total_return_pct": -0.07,
    "sharpe_ratio": 0.3058,
    "max_drawdown_pct": -0.00915314,
-   "composite_score": 0.5214
+   "composite_score": 0.5315
   },
   {
    "rank": 58,
-   "user_id": 5214,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "유*석",
-   "status": "active",
-   "nav": 100057528791.3001,
-   "total_return_pct": 0.06,
-   "sharpe_ratio": 0.9881,
-   "max_drawdown_pct": -0.0105249,
-   "composite_score": 0.5208
-  },
-  {
-   "rank": 59,
-   "user_id": 5252,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "박*외",
-   "status": "active",
-   "nav": 99870355016.8136,
-   "total_return_pct": -0.13,
-   "sharpe_ratio": -1.3303,
-   "max_drawdown_pct": -0.0059219,
-   "composite_score": 0.5202
-  },
-  {
-   "rank": 60,
    "user_id": 5341,
    "participant_id": null,
    "score_breakdown": null,
    "username": "조*규",
    "status": "active",
-   "nav": 100002252369.6568,
-   "total_return_pct": 0.0,
+   "nav": 100135709329.6568,
+   "total_return_pct": 0.14,
    "sharpe_ratio": 0.03,
    "max_drawdown_pct": -0.0107216,
-   "composite_score": 0.5147
+   "composite_score": 0.5309
+  },
+  {
+   "rank": 59,
+   "user_id": 5404,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "민*석",
+   "status": "active",
+   "nav": 99750714305.9681,
+   "total_return_pct": -0.25,
+   "sharpe_ratio": -3.496,
+   "max_drawdown_pct": -0.00427152,
+   "composite_score": 0.5304
+  },
+  {
+   "rank": 60,
+   "user_id": 5214,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "유*석",
+   "status": "active",
+   "nav": 99870514501.1144,
+   "total_return_pct": -0.13,
+   "sharpe_ratio": 0.9881,
+   "max_drawdown_pct": -0.0105249,
+   "composite_score": 0.5292
   },
   {
    "rank": 61,
-   "user_id": 5390,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "C*** ******N",
-   "status": "active",
-   "nav": 99721609772.5321,
-   "total_return_pct": -0.28,
-   "sharpe_ratio": -2.1899,
-   "max_drawdown_pct": -0.00606163,
-   "composite_score": 0.5135
-  },
-  {
-   "rank": 62,
-   "user_id": 4929,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "김*열",
-   "status": "active",
-   "nav": 99832016090.1253,
-   "total_return_pct": -0.17,
-   "sharpe_ratio": -0.33,
-   "max_drawdown_pct": -0.00949614,
-   "composite_score": 0.5127
-  },
-  {
-   "rank": 63,
-   "user_id": 5426,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "­*** * ** * ***부",
-   "status": "active",
-   "nav": 99839347473.632,
-   "total_return_pct": -0.16,
-   "sharpe_ratio": -11.0589,
-   "max_drawdown_pct": -0.00221635,
-   "composite_score": 0.5125
-  },
-  {
-   "rank": 64,
-   "user_id": 5391,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "유*열",
-   "status": "active",
-   "nav": 105077867809.6353,
-   "total_return_pct": 5.08,
-   "sharpe_ratio": 3.5257,
-   "max_drawdown_pct": -0.0577033,
-   "composite_score": 0.5122
-  },
-  {
-   "rank": 65,
-   "user_id": 5288,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "손*빈",
-   "status": "active",
-   "nav": 100359955993.6874,
-   "total_return_pct": 0.36,
-   "sharpe_ratio": 2.849,
-   "max_drawdown_pct": -0.0188836,
-   "composite_score": 0.5109
-  },
-  {
-   "rank": 66,
-   "user_id": 3965,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "j****** ***l",
-   "status": "active",
-   "nav": 99757718039.2185,
-   "total_return_pct": -0.24,
-   "sharpe_ratio": -0.9213,
-   "max_drawdown_pct": -0.00928298,
-   "composite_score": 0.5089
-  },
-  {
-   "rank": 67,
-   "user_id": 5295,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "J* M",
-   "status": "active",
-   "nav": 100094263252.3589,
-   "total_return_pct": 0.09,
-   "sharpe_ratio": 0.4739,
-   "max_drawdown_pct": -0.0148405,
-   "composite_score": 0.5064
-  },
-  {
-   "rank": 68,
    "user_id": 19,
    "participant_id": null,
    "score_breakdown": null,
    "username": "S*** **** **m",
    "status": "active",
-   "nav": 99850683222.557,
-   "total_return_pct": -0.15,
+   "nav": 100170500772.557,
+   "total_return_pct": 0.17,
    "sharpe_ratio": 0.102,
    "max_drawdown_pct": -0.0125097,
-   "composite_score": 0.5058
+   "composite_score": 0.527
   },
   {
-   "rank": 69,
-   "user_id": 2859,
+   "rank": 62,
+   "user_id": 5288,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "김*광",
+   "username": "손*빈",
    "status": "active",
-   "nav": 99832995276.122,
-   "total_return_pct": -0.17,
-   "sharpe_ratio": -0.6516,
-   "max_drawdown_pct": -0.0115415,
-   "composite_score": 0.5051
+   "nav": 100383620168.6874,
+   "total_return_pct": 0.38,
+   "sharpe_ratio": 2.849,
+   "max_drawdown_pct": -0.0188836,
+   "composite_score": 0.5261
   },
   {
-   "rank": 70,
+   "rank": 63,
+   "user_id": 5390,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "C*** ******N",
+   "status": "active",
+   "nav": 99691666572.5321,
+   "total_return_pct": -0.31,
+   "sharpe_ratio": -2.1899,
+   "max_drawdown_pct": -0.00606163,
+   "composite_score": 0.5248
+  },
+  {
+   "rank": 64,
+   "user_id": 4929,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "김*열",
+   "status": "active",
+   "nav": 99742313082.1253,
+   "total_return_pct": -0.26,
+   "sharpe_ratio": -0.33,
+   "max_drawdown_pct": -0.00949614,
+   "composite_score": 0.5233
+  },
+  {
+   "rank": 65,
+   "user_id": 3965,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "j****** ***l",
+   "status": "active",
+   "nav": 99806395334.3685,
+   "total_return_pct": -0.19,
+   "sharpe_ratio": -0.9213,
+   "max_drawdown_pct": -0.00928298,
+   "composite_score": 0.5229
+  },
+  {
+   "rank": 66,
    "user_id": 5436,
    "participant_id": null,
    "score_breakdown": null,
    "username": "이*제",
    "status": "active",
-   "nav": 99572478247.9976,
-   "total_return_pct": -0.43,
+   "nav": 99582060827.9976,
+   "total_return_pct": -0.42,
    "sharpe_ratio": -4.1025,
    "max_drawdown_pct": -0.0108315,
-   "composite_score": 0.5038
+   "composite_score": 0.5173
   },
   {
-   "rank": 71,
-   "user_id": 4716,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "정*빈",
-   "status": "active",
-   "nav": 99568040098.9044,
-   "total_return_pct": -0.43,
-   "sharpe_ratio": -2.8303,
-   "max_drawdown_pct": -0.00680014,
-   "composite_score": 0.5035
-  },
-  {
-   "rank": 72,
-   "user_id": 2845,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "홍*우",
-   "status": "active",
-   "nav": 99637183589.0638,
-   "total_return_pct": -0.36,
-   "sharpe_ratio": -3.8985,
-   "max_drawdown_pct": -0.00659056,
-   "composite_score": 0.5013
-  },
-  {
-   "rank": 73,
+   "rank": 67,
    "user_id": 5297,
    "participant_id": null,
    "score_breakdown": null,
    "username": "박*훈",
    "status": "active",
-   "nav": 101365820093.0518,
-   "total_return_pct": 1.37,
+   "nav": 101313776463.0518,
+   "total_return_pct": 1.31,
    "sharpe_ratio": 1.9784,
    "max_drawdown_pct": -0.0292318,
-   "composite_score": 0.5006
+   "composite_score": 0.5159
   },
   {
-   "rank": 74,
-   "user_id": 5278,
+   "rank": 68,
+   "user_id": 5426,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "선*준",
+   "username": "­*** * ** * ***부",
    "status": "active",
-   "nav": 99845324538.6218,
-   "total_return_pct": -0.15,
-   "sharpe_ratio": -0.45,
-   "max_drawdown_pct": -0.0139406,
-   "composite_score": 0.499
+   "nav": 99617883656.2351,
+   "total_return_pct": -0.38,
+   "sharpe_ratio": -11.0589,
+   "max_drawdown_pct": -0.00396111,
+   "composite_score": 0.5133
   },
   {
-   "rank": 75,
-   "user_id": 5314,
+   "rank": 69,
+   "user_id": 2845,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "김*윤",
+   "username": "홍*우",
    "status": "active",
-   "nav": 100174815569.4079,
-   "total_return_pct": 0.17,
-   "sharpe_ratio": 0.6689,
-   "max_drawdown_pct": -0.0189231,
-   "composite_score": 0.4968
+   "nav": 99573957021.0638,
+   "total_return_pct": -0.43,
+   "sharpe_ratio": -3.8985,
+   "max_drawdown_pct": -0.00659056,
+   "composite_score": 0.512
   },
   {
-   "rank": 76,
+   "rank": 70,
+   "user_id": 5295,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "J* M",
+   "status": "active",
+   "nav": 99709829342.3589,
+   "total_return_pct": -0.29,
+   "sharpe_ratio": 0.4739,
+   "max_drawdown_pct": -0.0148405,
+   "composite_score": 0.5109
+  },
+  {
+   "rank": 71,
    "user_id": 2870,
    "participant_id": null,
    "score_breakdown": null,
    "username": "S* ***k",
    "status": "active",
-   "nav": 99455418148.7894,
-   "total_return_pct": -0.54,
+   "nav": 99563766619.8868,
+   "total_return_pct": -0.44,
    "sharpe_ratio": -2.9566,
    "max_drawdown_pct": -0.00850617,
-   "composite_score": 0.495
+   "composite_score": 0.5104
   },
   {
-   "rank": 77,
-   "user_id": 5215,
+   "rank": 72,
+   "user_id": 2859,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "김*평",
+   "username": "김*광",
    "status": "active",
-   "nav": 99428688560.0574,
-   "total_return_pct": -0.57,
-   "sharpe_ratio": -2.1705,
-   "max_drawdown_pct": -0.0118607,
-   "composite_score": 0.4875
+   "nav": 99455153380.6724,
+   "total_return_pct": -0.54,
+   "sharpe_ratio": -0.6516,
+   "max_drawdown_pct": -0.0115415,
+   "composite_score": 0.5092
   },
   {
-   "rank": 78,
+   "rank": 73,
    "user_id": 5394,
    "participant_id": null,
    "score_breakdown": null,
    "username": "장*재",
    "status": "active",
-   "nav": 99424138716.0683,
-   "total_return_pct": -0.58,
+   "nav": 99746876336.0683,
+   "total_return_pct": -0.25,
    "sharpe_ratio": -2.3938,
    "max_drawdown_pct": -0.0128049,
-   "composite_score": 0.486
+   "composite_score": 0.5076
   },
   {
-   "rank": 79,
+   "rank": 74,
+   "user_id": 5314,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "김*윤",
+   "status": "active",
+   "nav": 99879675972.6633,
+   "total_return_pct": -0.12,
+   "sharpe_ratio": 0.6689,
+   "max_drawdown_pct": -0.0189231,
+   "composite_score": 0.5044
+  },
+  {
+   "rank": 75,
+   "user_id": 4716,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "정*빈",
+   "status": "active",
+   "nav": 99287993908.9044,
+   "total_return_pct": -0.71,
+   "sharpe_ratio": -2.8303,
+   "max_drawdown_pct": -0.0085039,
+   "composite_score": 0.5043
+  },
+  {
+   "rank": 76,
+   "user_id": 5215,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "김*평",
+   "status": "active",
+   "nav": 99499233060.0574,
+   "total_return_pct": -0.5,
+   "sharpe_ratio": -2.1705,
+   "max_drawdown_pct": -0.0118607,
+   "composite_score": 0.5028
+  },
+  {
+   "rank": 77,
+   "user_id": 5278,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "선*준",
+   "status": "active",
+   "nav": 99324449318.6218,
+   "total_return_pct": -0.68,
+   "sharpe_ratio": -0.45,
+   "max_drawdown_pct": -0.0139406,
+   "composite_score": 0.5001
+  },
+  {
+   "rank": 78,
    "user_id": 5237,
    "participant_id": null,
    "score_breakdown": null,
    "username": "김*인",
    "status": "active",
-   "nav": 99199206869.3672,
-   "total_return_pct": -0.8,
+   "nav": 99263889239.3672,
+   "total_return_pct": -0.74,
    "sharpe_ratio": -3.8541,
    "max_drawdown_pct": -0.00820708,
-   "composite_score": 0.4857
+   "composite_score": 0.5001
+  },
+  {
+   "rank": 79,
+   "user_id": 2895,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "민*",
+   "status": "active",
+   "nav": 99587246988.6398,
+   "total_return_pct": -0.41,
+   "sharpe_ratio": -2.513,
+   "max_drawdown_pct": -0.0145399,
+   "composite_score": 0.4959
   },
   {
    "rank": 80,
@@ -3273,37 +3628,37 @@
    "score_breakdown": null,
    "username": "T** ***n",
    "status": "active",
-   "nav": 99574513892.2061,
-   "total_return_pct": -0.43,
+   "nav": 99530220137.2061,
+   "total_return_pct": -0.47,
    "sharpe_ratio": -1.2017,
    "max_drawdown_pct": -0.016566,
-   "composite_score": 0.481
+   "composite_score": 0.4945
   },
   {
    "rank": 81,
-   "user_id": 5336,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "심*주",
-   "status": "active",
-   "nav": 99392783443.7858,
-   "total_return_pct": -0.61,
-   "sharpe_ratio": -2.1102,
-   "max_drawdown_pct": -0.0140646,
-   "composite_score": 0.4802
-  },
-  {
-   "rank": 82,
    "user_id": 5348,
    "participant_id": null,
    "score_breakdown": null,
    "username": "이*호",
    "status": "active",
-   "nav": 99338346830.7962,
-   "total_return_pct": -0.66,
+   "nav": 99372780030.7962,
+   "total_return_pct": -0.63,
    "sharpe_ratio": -6.9453,
    "max_drawdown_pct": -0.00699162,
-   "composite_score": 0.4795
+   "composite_score": 0.4929
+  },
+  {
+   "rank": 82,
+   "user_id": 2879,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "황*언",
+   "status": "active",
+   "nav": 98893644786.3478,
+   "total_return_pct": -1.11,
+   "sharpe_ratio": -3.8602,
+   "max_drawdown_pct": -0.0110636,
+   "composite_score": 0.4925
   },
   {
    "rank": 83,
@@ -3312,63 +3667,63 @@
    "score_breakdown": null,
    "username": "S*** *** **e",
    "status": "active",
-   "nav": 99427087635.8874,
-   "total_return_pct": -0.57,
+   "nav": 99396046935.8874,
+   "total_return_pct": -0.6,
    "sharpe_ratio": -7.9974,
-   "max_drawdown_pct": -0.00681504,
-   "composite_score": 0.4777
+   "max_drawdown_pct": -0.00692672,
+   "composite_score": 0.4891
   },
   {
    "rank": 84,
-   "user_id": 2895,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "민*",
-   "status": "active",
-   "nav": 99293802334.6398,
-   "total_return_pct": -0.71,
-   "sharpe_ratio": -2.513,
-   "max_drawdown_pct": -0.0145399,
-   "composite_score": 0.4746
-  },
-  {
-   "rank": 85,
-   "user_id": 5220,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "오*서",
-   "status": "active",
-   "nav": 99666367436.0722,
-   "total_return_pct": -0.33,
-   "sharpe_ratio": -0.9476,
-   "max_drawdown_pct": -0.0209301,
-   "composite_score": 0.4711
-  },
-  {
-   "rank": 86,
-   "user_id": 2893,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "김*훈",
-   "status": "active",
-   "nav": 99444377462.4168,
-   "total_return_pct": -0.56,
-   "sharpe_ratio": -2.2225,
-   "max_drawdown_pct": -0.0186048,
-   "composite_score": 0.4672
-  },
-  {
-   "rank": 87,
    "user_id": 5312,
    "participant_id": null,
    "score_breakdown": null,
    "username": "이*훈",
    "status": "active",
-   "nav": 99331684597.8792,
-   "total_return_pct": -0.67,
+   "nav": 99299959157.8792,
+   "total_return_pct": -0.7,
    "sharpe_ratio": -2.2174,
    "max_drawdown_pct": -0.0177984,
-   "composite_score": 0.4669
+   "composite_score": 0.4811
+  },
+  {
+   "rank": 85,
+   "user_id": 2893,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "김*훈",
+   "status": "active",
+   "nav": 99381808872.4168,
+   "total_return_pct": -0.62,
+   "sharpe_ratio": -2.2225,
+   "max_drawdown_pct": -0.0186048,
+   "composite_score": 0.4808
+  },
+  {
+   "rank": 86,
+   "user_id": 5388,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "­*** * ** * ***과",
+   "status": "active",
+   "nav": 99603519444.9952,
+   "total_return_pct": -0.4,
+   "sharpe_ratio": -1.1982,
+   "max_drawdown_pct": -0.0230782,
+   "composite_score": 0.4789
+  },
+  {
+   "rank": 87,
+   "user_id": 5220,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "오*서",
+   "status": "active",
+   "nav": 99341613526.0722,
+   "total_return_pct": -0.66,
+   "sharpe_ratio": -0.9476,
+   "max_drawdown_pct": -0.0209301,
+   "composite_score": 0.4788
   },
   {
    "rank": 88,
@@ -3377,102 +3732,102 @@
    "score_breakdown": null,
    "username": "장****광",
    "status": "active",
-   "nav": 99549278550.631,
-   "total_return_pct": -0.45,
+   "nav": 99565835490.631,
+   "total_return_pct": -0.43,
    "sharpe_ratio": -3.2395,
    "max_drawdown_pct": -0.019398,
-   "composite_score": 0.463
+   "composite_score": 0.4787
   },
   {
    "rank": 89,
-   "user_id": 5383,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "G***** *****T",
-   "status": "active",
-   "nav": 99724700122.0547,
-   "total_return_pct": -0.28,
-   "sharpe_ratio": 0.0456,
-   "max_drawdown_pct": -0.0260206,
-   "composite_score": 0.4619
-  },
-  {
-   "rank": 90,
-   "user_id": 5299,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "곽*욱",
-   "status": "active",
-   "nav": 99021146264.2191,
-   "total_return_pct": -0.98,
-   "sharpe_ratio": -3.885,
-   "max_drawdown_pct": -0.0146417,
-   "composite_score": 0.4616
-  },
-  {
-   "rank": 91,
-   "user_id": 5388,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "­*** * ** * ***과",
-   "status": "active",
-   "nav": 99438305854.9952,
-   "total_return_pct": -0.56,
-   "sharpe_ratio": -1.1982,
-   "max_drawdown_pct": -0.0230782,
-   "composite_score": 0.4587
-  },
-  {
-   "rank": 92,
    "user_id": 2842,
    "participant_id": null,
    "score_breakdown": null,
    "username": "H*** ***I",
    "status": "active",
-   "nav": 101140027992.9186,
-   "total_return_pct": 1.14,
+   "nav": 101013865687.9186,
+   "total_return_pct": 1.01,
    "sharpe_ratio": 1.7376,
    "max_drawdown_pct": -0.0409472,
-   "composite_score": 0.4585
+   "composite_score": 0.4748
   },
   {
-   "rank": 93,
-   "user_id": 5289,
+   "rank": 90,
+   "user_id": 5383,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "채*기",
+   "username": "G***** *****T",
    "status": "active",
-   "nav": 98587969158.5964,
-   "total_return_pct": -1.41,
-   "sharpe_ratio": -2.6375,
-   "max_drawdown_pct": -0.0203459,
-   "composite_score": 0.4389
+   "nav": 99374330552.0547,
+   "total_return_pct": -0.63,
+   "sharpe_ratio": 0.0456,
+   "max_drawdown_pct": -0.0260206,
+   "composite_score": 0.4701
   },
   {
-   "rank": 94,
+   "rank": 91,
+   "user_id": 5299,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "곽*욱",
+   "status": "active",
+   "nav": 98787825494.2191,
+   "total_return_pct": -1.21,
+   "sharpe_ratio": -3.885,
+   "max_drawdown_pct": -0.0162816,
+   "composite_score": 0.4658
+  },
+  {
+   "rank": 92,
    "user_id": 4695,
    "participant_id": null,
    "score_breakdown": null,
    "username": "밋***간",
    "status": "active",
-   "nav": 99082473531.192,
-   "total_return_pct": -0.92,
+   "nav": 98968006952.3441,
+   "total_return_pct": -1.03,
    "sharpe_ratio": -2.7291,
    "max_drawdown_pct": -0.024328,
-   "composite_score": 0.4386
+   "composite_score": 0.4525
   },
   {
-   "rank": 95,
+   "rank": 93,
+   "user_id": 5336,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "심*주",
+   "status": "active",
+   "nav": 98351716945.6849,
+   "total_return_pct": -1.65,
+   "sharpe_ratio": -2.1102,
+   "max_drawdown_pct": -0.0210493,
+   "composite_score": 0.4495
+  },
+  {
+   "rank": 94,
    "user_id": 5283,
    "participant_id": null,
    "score_breakdown": null,
    "username": "정*수",
    "status": "active",
-   "nav": 98578509218.966,
-   "total_return_pct": -1.42,
+   "nav": 98620165078.966,
+   "total_return_pct": -1.38,
    "sharpe_ratio": -9.0477,
    "max_drawdown_pct": -0.0152088,
-   "composite_score": 0.4267
+   "composite_score": 0.4425
+  },
+  {
+   "rank": 95,
+   "user_id": 5428,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "박*영",
+   "status": "active",
+   "nav": 97710758976.4079,
+   "total_return_pct": -2.29,
+   "sharpe_ratio": -11.0692,
+   "max_drawdown_pct": -0.026534,
+   "composite_score": 0.4105
   },
   {
    "rank": 96,
@@ -3481,50 +3836,50 @@
    "score_breakdown": null,
    "username": "T** **m",
    "status": "active",
-   "nav": 98568041883.4449,
-   "total_return_pct": -1.43,
+   "nav": 98022114693.4449,
+   "total_return_pct": -1.98,
    "sharpe_ratio": -2.7751,
    "max_drawdown_pct": -0.0332595,
-   "composite_score": 0.3985
+   "composite_score": 0.4043
   },
   {
    "rank": 97,
-   "user_id": 5428,
+   "user_id": 5289,
    "participant_id": null,
    "score_breakdown": null,
-   "username": "박*영",
+   "username": "채*기",
    "status": "active",
-   "nav": 97480111974.1795,
-   "total_return_pct": -2.52,
-   "sharpe_ratio": -11.0692,
-   "max_drawdown_pct": -0.026534,
-   "composite_score": 0.3868
+   "nav": 97608224958.5964,
+   "total_return_pct": -2.39,
+   "sharpe_ratio": -2.6375,
+   "max_drawdown_pct": -0.0302396,
+   "composite_score": 0.4034
   },
   {
    "rank": 98,
-   "user_id": 5306,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "성*******영",
-   "status": "active",
-   "nav": 97774418303.9613,
-   "total_return_pct": -2.23,
-   "sharpe_ratio": -4.8229,
-   "max_drawdown_pct": -0.0321015,
-   "composite_score": 0.3735
-  },
-  {
-   "rank": 99,
    "user_id": 5351,
    "participant_id": null,
    "score_breakdown": null,
    "username": "원*석",
    "status": "active",
-   "nav": 97658450606.7838,
-   "total_return_pct": -2.34,
+   "nav": 97599622616.7838,
+   "total_return_pct": -2.4,
    "sharpe_ratio": -4.7575,
    "max_drawdown_pct": -0.0312631,
-   "composite_score": 0.3735
+   "composite_score": 0.3911
+  },
+  {
+   "rank": 99,
+   "user_id": 5306,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "성*******영",
+   "status": "active",
+   "nav": 97273679513.9613,
+   "total_return_pct": -2.73,
+   "sharpe_ratio": -4.8229,
+   "max_drawdown_pct": -0.0321015,
+   "composite_score": 0.3806
   },
   {
    "rank": 100,
@@ -3533,11 +3888,11 @@
    "score_breakdown": null,
    "username": "B* *o",
    "status": "active",
-   "nav": 98167005194.9175,
-   "total_return_pct": -1.83,
+   "nav": 97781914069.0798,
+   "total_return_pct": -2.22,
    "sharpe_ratio": -3.3243,
    "max_drawdown_pct": -0.0474538,
-   "composite_score": 0.343
+   "composite_score": 0.3563
   },
   {
    "rank": 101,
@@ -3546,11 +3901,11 @@
    "score_breakdown": null,
    "username": "김*시",
    "status": "active",
-   "nav": 96800689582.8337,
-   "total_return_pct": -3.2,
+   "nav": 96601355467.8337,
+   "total_return_pct": -3.4,
    "sharpe_ratio": -3.262,
    "max_drawdown_pct": -0.0390642,
-   "composite_score": 0.3349
+   "composite_score": 0.3515
   },
   {
    "rank": 102,
@@ -3559,11 +3914,11 @@
    "score_breakdown": null,
    "username": "한*훈",
    "status": "active",
-   "nav": 96691340608.6777,
-   "total_return_pct": -3.31,
+   "nav": 96816627343.6777,
+   "total_return_pct": -3.18,
    "sharpe_ratio": -8.2365,
    "max_drawdown_pct": -0.033883,
-   "composite_score": 0.3265
+   "composite_score": 0.3498
   },
   {
    "rank": 103,
@@ -3572,37 +3927,37 @@
    "score_breakdown": null,
    "username": "제**녀",
    "status": "active",
-   "nav": 97880072888.6898,
-   "total_return_pct": -2.12,
+   "nav": 97493713214.6898,
+   "total_return_pct": -2.51,
    "sharpe_ratio": -2.0666,
    "max_drawdown_pct": -0.0529365,
-   "composite_score": 0.3247
+   "composite_score": 0.3393
   },
   {
    "rank": 104,
-   "user_id": 4752,
-   "participant_id": null,
-   "score_breakdown": null,
-   "username": "서*름",
-   "status": "active",
-   "nav": 98151750034.2521,
-   "total_return_pct": -1.85,
-   "sharpe_ratio": -2.135,
-   "max_drawdown_pct": -0.0591191,
-   "composite_score": 0.3123
-  },
-  {
-   "rank": 105,
    "user_id": 5311,
    "participant_id": null,
    "score_breakdown": null,
    "username": "민**수",
    "status": "active",
-   "nav": 98873407611.0036,
-   "total_return_pct": -1.13,
+   "nav": 98912260731.0036,
+   "total_return_pct": -1.09,
    "sharpe_ratio": -6.3698,
    "max_drawdown_pct": -0.0657751,
-   "composite_score": 0.2917
+   "composite_score": 0.3191
+  },
+  {
+   "rank": 105,
+   "user_id": 4752,
+   "participant_id": null,
+   "score_breakdown": null,
+   "username": "서*름",
+   "status": "active",
+   "nav": 96180009574.2521,
+   "total_return_pct": -3.82,
+   "sharpe_ratio": -2.135,
+   "max_drawdown_pct": -0.0611082,
+   "composite_score": 0.2842
   },
   {
    "rank": 106,
@@ -3611,11 +3966,11 @@
    "score_breakdown": null,
    "username": "김****후",
    "status": "active",
-   "nav": 96796347609.739,
-   "total_return_pct": -3.2,
+   "nav": 96255898109.739,
+   "total_return_pct": -3.74,
    "sharpe_ratio": -3.3668,
-   "max_drawdown_pct": -0.0653416,
-   "composite_score": 0.2545
+   "max_drawdown_pct": -0.0712083,
+   "composite_score": 0.2524
   },
   {
    "rank": 107,
@@ -3628,7 +3983,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3553
+   "composite_score": 0.3658
   },
   {
    "rank": 108,
@@ -3641,7 +3996,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3553
+   "composite_score": 0.3658
   },
   {
    "rank": 109,
@@ -3654,7 +4009,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.353
+   "composite_score": 0.3635
   },
   {
    "rank": 110,
@@ -3667,7 +4022,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.35
+   "composite_score": 0.3605
   },
   {
    "rank": 111,
@@ -3680,7 +4035,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3489
+   "composite_score": 0.3594
   },
   {
    "rank": 112,
@@ -3693,7 +4048,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3477
+   "composite_score": 0.3582
   },
   {
    "rank": 113,
@@ -3706,7 +4061,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3477
+   "composite_score": 0.3582
   },
   {
    "rank": 114,
@@ -3719,7 +4074,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3477
+   "composite_score": 0.3582
   },
   {
    "rank": 115,
@@ -3732,7 +4087,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 116,
@@ -3745,7 +4100,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 117,
@@ -3758,7 +4113,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 118,
@@ -3771,7 +4126,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 119,
@@ -3784,7 +4139,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 120,
@@ -3797,7 +4152,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 121,
@@ -3810,7 +4165,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 122,
@@ -3823,7 +4178,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 123,
@@ -3836,7 +4191,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 124,
@@ -3849,7 +4204,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 125,
@@ -3862,7 +4217,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 126,
@@ -3875,7 +4230,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 127,
@@ -3888,7 +4243,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 128,
@@ -3901,7 +4256,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 129,
@@ -3914,7 +4269,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 130,
@@ -3927,7 +4282,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 131,
@@ -3940,7 +4295,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 132,
@@ -3953,7 +4308,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 133,
@@ -3966,7 +4321,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 134,
@@ -3979,7 +4334,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 135,
@@ -3992,7 +4347,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 136,
@@ -4005,7 +4360,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 137,
@@ -4018,7 +4373,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 138,
@@ -4031,7 +4386,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 139,
@@ -4044,7 +4399,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 140,
@@ -4057,7 +4412,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 141,
@@ -4070,7 +4425,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 142,
@@ -4083,7 +4438,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 143,
@@ -4096,7 +4451,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 144,
@@ -4109,7 +4464,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 145,
@@ -4122,7 +4477,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 146,
@@ -4135,7 +4490,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 147,
@@ -4148,7 +4503,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 148,
@@ -4161,7 +4516,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 149,
@@ -4174,7 +4529,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 150,
@@ -4187,7 +4542,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 151,
@@ -4200,7 +4555,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 152,
@@ -4213,7 +4568,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 153,
@@ -4226,7 +4581,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 154,
@@ -4239,7 +4594,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 155,
@@ -4252,7 +4607,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 156,
@@ -4265,7 +4620,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 157,
@@ -4278,7 +4633,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 158,
@@ -4291,7 +4646,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 159,
@@ -4304,7 +4659,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 160,
@@ -4317,7 +4672,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 161,
@@ -4330,7 +4685,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 162,
@@ -4343,7 +4698,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 163,
@@ -4356,7 +4711,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 164,
@@ -4369,7 +4724,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 165,
@@ -4382,7 +4737,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 166,
@@ -4395,7 +4750,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 167,
@@ -4408,7 +4763,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 168,
@@ -4421,7 +4776,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 169,
@@ -4434,7 +4789,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 170,
@@ -4447,7 +4802,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 171,
@@ -4460,7 +4815,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 172,
@@ -4473,7 +4828,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 173,
@@ -4486,7 +4841,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 174,
@@ -4499,7 +4854,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 175,
@@ -4512,7 +4867,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 176,
@@ -4525,7 +4880,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 177,
@@ -4538,7 +4893,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 178,
@@ -4551,7 +4906,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 179,
@@ -4564,7 +4919,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 180,
@@ -4577,7 +4932,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 181,
@@ -4590,7 +4945,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 182,
@@ -4603,7 +4958,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 183,
@@ -4616,7 +4971,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 184,
@@ -4629,7 +4984,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 185,
@@ -4642,7 +4997,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 186,
@@ -4655,7 +5010,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 187,
@@ -4668,7 +5023,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 188,
@@ -4681,7 +5036,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 189,
@@ -4694,7 +5049,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 190,
@@ -4707,7 +5062,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 191,
@@ -4720,7 +5075,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 192,
@@ -4733,7 +5088,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 193,
@@ -4746,7 +5101,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 194,
@@ -4759,7 +5114,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 195,
@@ -4772,7 +5127,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 196,
@@ -4785,7 +5140,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 197,
@@ -4798,7 +5153,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 198,
@@ -4811,7 +5166,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 199,
@@ -4824,7 +5179,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 200,
@@ -4837,7 +5192,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 201,
@@ -4850,7 +5205,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 202,
@@ -4863,7 +5218,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 203,
@@ -4876,7 +5231,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 204,
@@ -4889,7 +5244,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 205,
@@ -4902,7 +5257,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 206,
@@ -4915,7 +5270,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 207,
@@ -4928,7 +5283,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 208,
@@ -4941,7 +5296,7 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   },
   {
    "rank": 209,
@@ -4954,103 +5309,103 @@
    "total_return_pct": 0.0,
    "sharpe_ratio": null,
    "max_drawdown_pct": 0.0,
-   "composite_score": 0.3471
+   "composite_score": 0.3576
   }
  ],
  "sector_sentiment": [
   {
    "sector": "Technology",
-   "long_mv": 880137184638.0,
-   "short_mv": 518344388627.0,
-   "net_mv": 361792796011.0,
+   "long_mv": 872459530020.0416,
+   "short_mv": 515446022619.0651,
+   "net_mv": 357013507400.9765,
    "long_count": 615,
-   "short_count": 409
+   "short_count": 412
   },
   {
    "sector": "Industrials",
-   "long_mv": 818423289295.0,
-   "short_mv": 561570950234.0,
-   "net_mv": 256852339061.0,
-   "long_count": 641,
-   "short_count": 481
+   "long_mv": 815780612258.4357,
+   "short_mv": 568564023292.625,
+   "net_mv": 247216588965.81067,
+   "long_count": 644,
+   "short_count": 484
   },
   {
    "sector": "Consumer Cyclical",
-   "long_mv": 106544723191.0,
-   "short_mv": 212552317420.0,
-   "net_mv": -106007594229.0,
-   "long_count": 103,
-   "short_count": 174
+   "long_mv": 107935249442.3121,
+   "short_mv": 215653314750.54642,
+   "net_mv": -107718065308.23431,
+   "long_count": 105,
+   "short_count": 179
   },
   {
    "sector": "Healthcare",
-   "long_mv": 168326230905.0,
-   "short_mv": 256602926120.0,
-   "net_mv": -88276695215.0,
-   "long_count": 159,
-   "short_count": 218
+   "long_mv": 175989389254.5805,
+   "short_mv": 252145243086.89307,
+   "net_mv": -76155853832.31256,
+   "long_count": 163,
+   "short_count": 213
   },
   {
    "sector": "Communication Services",
-   "long_mv": 107105302805.0,
-   "short_mv": 175771591300.0,
-   "net_mv": -68666288495.0,
-   "long_count": 86,
-   "short_count": 154
+   "long_mv": 108282522826.7312,
+   "short_mv": 181667925916.0012,
+   "net_mv": -73385403089.26999,
+   "long_count": 87,
+   "short_count": 162
   },
   {
    "sector": "Unknown",
-   "long_mv": 382349211900.0,
-   "short_mv": 320011567695.0,
-   "net_mv": 62337644205.0,
-   "long_count": 293,
-   "short_count": 269
+   "long_mv": 391457183839.7154,
+   "short_mv": 321540305794.0331,
+   "net_mv": 69916878045.68231,
+   "long_count": 296,
+   "short_count": 272
   },
   {
    "sector": "Consumer Defensive",
-   "long_mv": 188443083850.0,
-   "short_mv": 229570167130.0,
-   "net_mv": -41127083280.0,
-   "long_count": 171,
-   "short_count": 196
+   "long_mv": 188871514406.32883,
+   "short_mv": 228522049474.86188,
+   "net_mv": -39650535068.53305,
+   "long_count": 174,
+   "short_count": 197
   },
   {
    "sector": "Financial Services",
-   "long_mv": 206832928416.0,
-   "short_mv": 182072270620.0,
-   "net_mv": 24760657796.0,
-   "long_count": 177,
-   "short_count": 161
+   "long_mv": 213370708958.8272,
+   "short_mv": 179151351351.7537,
+   "net_mv": 34219357607.073517,
+   "long_count": 178,
+   "short_count": 160
   },
   {
    "sector": "Energy",
-   "long_mv": 53777067300.0,
-   "short_mv": 33001201800.0,
-   "net_mv": 20775865500.0,
+   "long_mv": 56099867200.0,
+   "short_mv": 34342090746.6588,
+   "net_mv": 21757776453.3412,
    "long_count": 40,
    "short_count": 25
   },
   {
+   "sector": "Basic Materials",
+   "long_mv": 99111889320.41641,
+   "short_mv": 117653557658.8893,
+   "net_mv": -18541668338.472885,
+   "long_count": 97,
+   "short_count": 102
+  },
+  {
    "sector": "Utilities",
-   "long_mv": 18933523950.0,
-   "short_mv": 37124570300.0,
-   "net_mv": -18191046350.0,
+   "long_mv": 19211093700.0,
+   "short_mv": 37387339371.7283,
+   "net_mv": -18176245671.728302,
    "long_count": 14,
    "short_count": 29
   },
   {
-   "sector": "Basic Materials",
-   "long_mv": 100604523550.0,
-   "short_mv": 117733149150.0,
-   "net_mv": -17128625600.0,
-   "long_count": 97,
-   "short_count": 101
-  },
-  {
    "sector": "Real Estate",
-   "long_mv": 11668105190.0,
-   "short_mv": 11407347110.0,
-   "net_mv": 260758080.0,
+   "long_mv": 11901935685.0,
+   "short_mv": 11639223300.0,
+   "net_mv": 262712385.0,
    "long_count": 9,
    "short_count": 10
   }
