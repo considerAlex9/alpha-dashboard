@@ -1054,7 +1054,7 @@ function renderNews(){
   document.getElementById('newsed').innerHTML=E.slice(0,4).map((e,i)=>`<button data-i="${i}" aria-pressed="${i===newsIdx}">${+e.end.slice(5,7)}/${+e.end.slice(8,10)} ${e.name.replace(' 브리핑','')}</button>`).join('');
   seg('newsed', d=>{newsIdx=+d.i; newsMore=false; renderNews();});
   const e=E[newsIdx]||E[0];
-  document.getElementById('newssub').textContent=`${e.name} · ${fmt(e.start)} ~ ${fmt(e.end)} 사이 시황 채널 글을 정리 · 출처는 글에 적힌 원 출처`;
+  document.getElementById('newssub').textContent=`${e.name} · ${fmt(e.start)} ~ ${fmt(e.end)} 글 ${e.post_count}개 · ${e.final?'최종':`1차 (${e.name.startsWith('장전')?'09:00':'19:00'}에 한 번 더 업데이트)`} · 출처는 글에 적힌 원 출처`;
   const chg=v=>{ const n=parseFloat(String(v).replace(/[^\d.\-+]/g,'')); return `<span class="mc ${n>0?'up':n<0?'down':''}">${esc(v)}</span>`; };
   document.getElementById('newshead').innerHTML = e.metrics?.length
     ? `<div class="mrow">${e.metrics.map(m=>`<div class="metric"><div class="ml">${esc(m.label)}</div><div class="mv">${esc(m.value)}${chg(m.chg)}</div></div>`).join('')}</div>` : '';

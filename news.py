@@ -1,8 +1,8 @@
 """텔레그램 공개 채널 → 매크로 뉴스 브리핑 (무료, 규칙 기반).
 
-- 하루 두 번 발행: 장전 08:00 · 장마감 후 16:00
-  각 브리핑은 '직전 브리핑 기준 시각 ~ 이번 기준 시각' 사이의 글만 다뤄서 서로 겹치지 않는다.
-  (월요일 장전 브리핑은 금요일 16:00 이후 주말 글 전체)
+- 장전 브리핑: 전 평일 19:00 ~ 당일 09:00 글 (08:00 에 1차, 09:00 에 최종 업데이트)
+  장마감 브리핑: 당일 09:00 ~ 19:00 글 (16:00 에 1차, 19:00 에 최종 업데이트)
+  (월요일 장전 브리핑은 금요일 19:00 이후 주말 글 전체)
 - 시황 채널: 애널리스트가 이미 '제목 + 핵심 항목'으로 정리해 올리므로, 그 제목과 핵심 항목만 뽑아 카드로 보여준다.
   주가·환율·금리 숫자가 적힌 시황 글에서는 숫자를 따로 뽑아 맨 위에 보여준다.
 - 참고 채널: 글 제목만 짧게.
@@ -19,7 +19,14 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
 MARKET_CHANNELS = ["cahier_de_market", "ehdwl", "hedgecat0301", "lim_econ", "strategy_kis", "hanwhastrategy", "Jstockclass"]
 REFERENCE_CHANNELS = []          # 제목만 짧게 보여줄 참고 채널 (지금은 없음)
-EDITIONS = [(time(8, 0), "장전 브리핑"), (time(16, 0), "장마감 브리핑")]
+# 브리핑 종류: (id 꼬리, 이름, 시작 시각, 업데이트 시각들 — 마지막이 최종)
+#   장전   = 전 평일 19:00 ~ 당일 09:00  (08:00 1차 → 09:00 최종)
+#   장마감 = 당일 09:00 ~ 19:00         (16:00 1차 → 19:00 최종)
+#   경계가 09:00 · 19:00 으로 딱 맞물려서 서로 겹치지도, 빠지지도 않는다.
+EDITIONS = [
+    ("pre", "장전 브리핑", "prev19", [time(8, 0), time(9, 0)]),
+    ("post", "장마감 브리핑", time(9, 0), [time(16, 0), time(19, 0)]),
+]
 KEEP = 10                  # 보관할 지난 브리핑 수
 MAX_CHARS = 4000
 
@@ -268,55 +275,59 @@ def organize(market_posts, ref_posts):
 
 
 # ---------------- 발행 시각 관리 ----------------
-def due_edition(now, done_ids):
-    """지금 발행해야 할 가장 최근 브리핑(기준 시각, 이름, id). 평일만, 이미 만든 것은 건너뜀."""
-    for back in range(0, 4):
+def _prev_weekday(day):
+    day -= timedelta(days=1)
+    while day.weekday() >= 5:
+        day -= timedelta(days=1)
+    return day
+
+
+def due_editions(now, days_back=4):
+    """최근 평일들의 브리핑 중, 지금까지 지난 업데이트 시각이 있는 것 → (id, 이름, 시작, 이번 기준 시각, 최종 여부)"""
+    out = []
+    for back in range(days_back, -1, -1):
         day = (now - timedelta(days=back)).date()
         if day.weekday() >= 5:
             continue
-        for at, name in reversed(EDITIONS):
-            cut = datetime.combine(day, at, KST)
-            eid = f"{cut:%Y-%m-%d %H%M}"
-            if cut <= now:
-                return (cut, name, eid) if eid not in done_ids else None
-    return None
+        for tail, name, start_at, stages in EDITIONS:
+            start = (datetime.combine(_prev_weekday(day), time(19, 0), KST) if start_at == "prev19"
+                     else datetime.combine(day, start_at, KST))
+            passed = [datetime.combine(day, t, KST) for t in stages if datetime.combine(day, t, KST) <= now]
+            if passed:
+                out.append((f"{day:%Y-%m-%d}-{tail}", name, start, passed[-1], len(passed) == len(stages)))
+    return out
 
 
-def prev_slot(cut):
-    """바로 앞 브리핑 기준 시각: 16:00 → 같은 날 08:00, 08:00 → 직전 평일 16:00"""
-    if cut.time() == EDITIONS[1][0]:
-        return datetime.combine(cut.date(), EDITIONS[0][0], KST)
-    day = cut.date() - timedelta(days=1)
-    while day.weekday() >= 5:
-        day -= timedelta(days=1)
-    return datetime.combine(day, EDITIONS[1][0], KST)
-
-
-def build(cut, name, eid, start, now, log):
+def build(eid, name, start, cut, final, now, log):
     errors = []
     mp = fetch_posts(MARKET_CHANNELS, start, cut, errors)
     rp = fetch_posts(REFERENCE_CHANNELS, start, cut, errors)
     metrics, cards, refs = organize(mp, rp)
-    log(f"  매크로 뉴스: {name}({cut:%m/%d %H:%M}) · 시황 글 {len(mp)}개 → 카드 {len(cards)}개 · 숫자 {len(metrics)}개 · 참고 {len(refs)}개"
+    log(f"  매크로 뉴스: {name} {start:%m/%d %H:%M}~{cut:%m/%d %H:%M}{' (최종)' if final else ''} · 시황 글 {len(mp)}개 → 카드 {len(cards)}개 · 숫자 {len(metrics)}개"
         + (f" · 실패 {errors}" if errors else ""))
-    return {"id": eid, "name": name, "start": start.isoformat(), "end": cut.isoformat(), "created_at": now.isoformat(),
-            "post_count": len(mp) + len(rp), "metrics": metrics, "cards": cards, "refs": refs, "errors": errors}
+    return {"id": eid, "name": name, "start": start.isoformat(), "end": cut.isoformat(), "final": final,
+            "created_at": now.isoformat(), "post_count": len(mp) + len(rp), "metrics": metrics, "cards": cards,
+            "refs": refs, "errors": errors}
 
 
 def collect(prev, log=print):
-    """prev: 지난번 news.json (없으면 None). 발행 시각이 지났으면 새 브리핑을 앞에 추가한다."""
+    """prev: 지난번 news.json (없으면 None). 업데이트 시각이 지난 브리핑만 새로 만들거나 덧붙여 다시 만든다."""
     now = datetime.now(KST)
-    editions = [e for e in (prev or {}).get("editions", []) if "cards" in e]      # 예전 형식 브리핑은 버림
-    due = due_edition(now, {e["id"] for e in editions})
-    if not due:
-        log("  매크로 뉴스: 새 브리핑 발행 시각 아님 → 기존 유지")
-        return {"editions": editions, "checked_at": now.isoformat()}
-    cut, name, eid = due
-    if not editions:
-        # 처음 실행: 바로 앞 브리핑도 함께 만들어 두 개로 시작
-        p_cut = prev_slot(cut)
-        p_name = dict(EDITIONS)[p_cut.time()]
-        editions = [build(p_cut, p_name, f"{p_cut:%Y-%m-%d %H%M}", prev_slot(p_cut), now, log)]
-    # 시작 = 직전 브리핑의 기준 시각 → 브리핑끼리 겹치지 않고, 발행을 놓친 시간도 빠지지 않음
-    start = max(datetime.fromisoformat(e["end"]) for e in editions)
-    return {"editions": ([build(cut, name, eid, start, now, log)] + editions)[:KEEP], "checked_at": now.isoformat()}
+    have = {e["id"]: e for e in (prev or {}).get("editions", []) if "final" in e}   # 예전 형식 브리핑은 버림
+    first = not have
+    due = due_editions(now)
+    if first:
+        due = due[-4:]                     # 처음에는 최근 브리핑 4개만 만든다
+    changed = 0
+    for eid, name, start, cut, final in due:
+        old = have.get(eid)
+        if old and datetime.fromisoformat(old["end"]) >= cut:
+            continue                       # 이미 이 기준 시각까지 반영됨
+        if not old and not first and start < min(datetime.fromisoformat(e["start"]) for e in have.values()):
+            continue                       # 보관 중인 것보다 오래된 브리핑은 새로 만들지 않음
+        have[eid] = build(eid, name, start, cut, final, now, log)
+        changed += 1
+    if not changed:
+        log("  매크로 뉴스: 새로 반영할 업데이트 시각 아님 → 기존 유지")
+    editions = sorted(have.values(), key=lambda e: e["end"], reverse=True)[:KEEP]
+    return {"editions": editions, "checked_at": now.isoformat()}
