@@ -26,7 +26,7 @@ def load_env():
             if "=" in line and not line.lstrip().startswith("#"):
                 k, v = line.split("=", 1)
                 env[k.strip()] = v.strip()
-    env.update({k: v for k, v in os.environ.items() if k in ("ALPHA_API_KEY", "COMPETITION_ID", "KIS_APP_KEY", "KIS_APP_SECRET", "DART_API_KEY") and v})
+    env.update({k: v for k, v in os.environ.items() if k in ("ALPHA_API_KEY", "COMPETITION_ID", "KIS_APP_KEY", "KIS_APP_SECRET", "DART_API_KEY", "DASH_PASSWORD") and v})
     return env
 
 
@@ -68,10 +68,14 @@ def main():
     me = next((r for r in leaderboard if abs(r["nav"] - portfolio["nav"]) < 1), None)
 
     # 1) 원본 스냅샷 (그날 마지막 상태)
-    write_json(DATA / "snapshots" / f"{today}.json", {
-        "captured_at": now.isoformat(), "portfolio": portfolio, "orders": orders, "leaderboard": leaderboard,
-        "sector_sentiment": sector_sentiment,
-    })
+    #    대회 동향(리더보드·참가자 업종 포지션)은 비밀번호로 암호화한 것만 저장한다. 비밀번호가 없으면 저장하지 않음.
+    me_info = {k: me[k] for k in ("rank", "nav", "total_return_pct", "sharpe_ratio", "max_drawdown_pct", "composite_score")} if me else None
+    snap = {"captured_at": now.isoformat(), "portfolio": portfolio, "orders": orders,
+            "me": {**(me_info or {}), "participants": len(leaderboard)}}
+    if env.get("DASH_PASSWORD"):
+        import lock
+        snap["contest_lock"] = lock.encrypt({"leaderboard": leaderboard, "sector_sentiment": sector_sentiment}, env["DASH_PASSWORD"])
+    write_json(DATA / "snapshots" / f"{today}.json", snap)
 
     # 2) 일별 요약 히스토리 — 차트용
     hist_p = DATA / "history.json"

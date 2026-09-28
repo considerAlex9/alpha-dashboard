@@ -20,10 +20,10 @@ def main():
         "captured_at": latest["captured_at"],
         "portfolio": latest["portfolio"],
         "orders": latest["orders"],
-        "leaderboard": latest["leaderboard"],
+        "me": latest.get("me"),                         # 내 순위 요약 (공개)
+        "contest_lock": latest.get("contest_lock"),     # 대회 동향 — 비밀번호로 암호화된 상태로만 들어감
         "history": json.loads((DATA / "history.json").read_text(encoding="utf-8")),
         "trades": json.loads((DATA / "trades_all.json").read_text(encoding="utf-8"))[:300],
-        "sector_sentiment": latest.get("sector_sentiment", []),
         "market": read_opt("market.json", None),
         "flows_history": read_opt("flows_history.json", []),
         "disclosures": read_opt("disclosures.json", None),

@@ -189,6 +189,17 @@ tr.click{cursor:pointer}
 .wcard .meta{font-size:12px;color:var(--ink-2);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 10px}
 .wcard .why{font-size:12px;color:var(--muted);margin-top:3px}
 
+/* 비밀번호 잠금 */
+.lockbox{max-width:420px;margin:30px auto;text-align:center;padding:32px 28px}
+.lockbox .big{width:34px;height:34px;color:var(--accent);margin-bottom:8px}
+.lockbox h3{margin:0 0 4px;font-size:17px}
+.lockbox form{display:flex;gap:8px;margin-top:16px}
+.lockbox input[type=password]{flex:1;padding:10px 12px;border-radius:9px;border:1px solid var(--border);background:var(--surface-2);color:var(--ink);font:inherit}
+.lockbox button{padding:10px 18px;border-radius:9px;border:0;background:var(--accent);color:#fff;font-weight:650;cursor:pointer}
+.lockbox button:disabled{opacity:.6;cursor:wait}
+.lockbox .remember{display:flex;gap:6px;align-items:center;justify-content:center;margin-top:10px;font-size:12.5px;color:var(--ink-2)}
+.lockbox .lockerr{color:var(--crit);font-size:12.5px;margin-top:8px;min-height:18px}
+
 /* 섹터별 롱·숏 */
 .themes{display:grid}
 .th-row{display:grid;grid-template-columns:150px 1fr 1fr 96px 100px;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--grid)}
@@ -303,6 +314,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
   <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
   <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
 </svg>
 
@@ -327,7 +339,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
       <button role="tab" data-tab="disclosure"><svg class="i"><use href="#i-doc"/></svg>공시<span class="badge" id="discbadge" hidden style="background:var(--accent)"></span></button>
       <button role="tab" data-tab="pair"><svg class="i"><use href="#i-pair"/></svg>페어 분석</button>
       <button role="tab" data-tab="alerts"><svg class="i"><use href="#i-shield"/></svg>시장경보<span class="badge" id="alertbadge" hidden></span></button>
-      <button role="tab" data-tab="contest"><svg class="i"><use href="#i-trophy"/></svg>대회 동향</button>
+      <button role="tab" data-tab="contest"><svg class="i"><use href="#i-trophy"/></svg>대회 동향<svg class="i" id="lockicon" style="width:13px;height:13px;color:var(--muted)"><use href="#i-lock"/></svg></button>
     </nav>
   </div>
 </div>
@@ -533,7 +545,20 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
 
   <!-- ================= 대회 동향 ================= -->
   <div class="panel" id="p-contest">
-    <div class="ph"><div><h2>대회 동향</h2><p>전체 참가자의 포지션과 순위 분포</p></div></div>
+    <div class="ph"><div><h2>대회 동향</h2><p>전체 참가자의 포지션과 순위 분포</p></div>
+      <button class="link" id="relock" hidden>잠그기<svg class="i"><use href="#i-lock"/></svg></button></div>
+    <section class="card lockbox" id="lockbox">
+      <svg class="i big"><use href="#i-lock"/></svg>
+      <h3>비밀번호가 필요한 화면이에요</h3>
+      <p class="sub" id="locksub">대회 동향은 비밀번호를 아는 사람만 볼 수 있어요.</p>
+      <form id="lockform" autocomplete="off">
+        <input type="password" id="lockpw" placeholder="비밀번호" aria-label="비밀번호">
+        <button type="submit">열기</button>
+      </form>
+      <label class="remember"><input type="checkbox" id="lockremember"> 이 기기에서 기억하기</label>
+      <div class="lockerr" id="lockerr"></div>
+    </section>
+    <div id="contestbody" hidden>
     <section class="grid c5" id="ctiles"></section>
     <section class="card mt">
       <div class="card-h">
@@ -546,6 +571,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
       <div class="card"><div class="card-h"><div><h3>리더보드 위치</h3><div class="sub" id="lbsub"></div></div></div><div class="chart" id="lbchart"></div></div>
       <div class="card"><div class="card-h"><div><h3>상위 10명</h3><div class="sub">종합 점수 순</div></div></div><div class="tbl-wrap"><table id="lbtable"></table></div></div>
     </section>
+    </div>
   </div>
 
   <footer>
@@ -724,9 +750,9 @@ const tile = (l,v,n,cls='') => `<div class="card tile ${cls}"><div class="l">${l
 // ============================================================
 // 공통 데이터
 // ============================================================
-const me = D.leaderboard.find(r=>Math.abs(r.nav-P.nav)<1);
+let me = D.me && D.me.rank ? D.me : null;          // 내 순위 요약은 공개, 전체 리더보드는 잠김
 document.getElementById('asof').textContent=`${KST(D.captured_at)} 업데이트 · 가격 ${KST(P.price_as_of)}`;
-document.getElementById('rankchip').innerHTML = me ? `리더보드 <b>${me.rank}위</b> / ${D.leaderboard.length}` : '순위 확인 불가';
+document.getElementById('rankchip').innerHTML = me ? `리더보드 <b>${me.rank}위</b> / ${D.me.participants}` : '순위 확인 불가';
 
 const posBySym = Object.fromEntries(P.positions.map(p=>[p.company_symbol,p]));
 const H = (M?.holdings||[]).map(h=>({...h, w:h.market_value/P.nav, sgn:h.side==='long'?1:-1}));
@@ -1217,7 +1243,54 @@ seg('wfilter', d=>{wFilter=d.f; renderAlerts();});
 // ============================================================
 // 탭 7. 대회 동향
 // ============================================================
+// ---------- 비밀번호 잠금 (브라우저의 웹 암호화 기능으로 풂) ----------
+async function unlockBox(box, pw){
+  const b=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+  const base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+  const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b(box.salt),iterations:box.iter,hash:'SHA-256'}, base, {name:'AES-GCM',length:256}, false, ['decrypt']);
+  const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:b(box.iv)}, key, b(box.ct));
+  return JSON.parse(new TextDecoder().decode(plain));
+}
+let contestOpen=false;
+function contestShown(open){
+  contestOpen=open;
+  document.getElementById('lockbox').hidden=open;
+  document.getElementById('contestbody').hidden=!open;
+  document.getElementById('relock').hidden=!open;
+  document.querySelector('#lockicon use').setAttribute('href', open?'#i-lock':'#i-lock');
+  document.getElementById('lockicon').style.opacity=open?.35:1;
+}
+async function tryUnlock(pw, remember){
+  const data=await unlockBox(D.contest_lock, pw);
+  D.leaderboard=data.leaderboard; D.sector_sentiment=data.sector_sentiment;
+  me = D.leaderboard.find(r=>Math.abs(r.nav-P.nav)<1) || me;
+  if(remember){ try{ localStorage.setItem('dashpw', pw); }catch(e){} }
+  contestShown(true); renderContest();
+}
+function renderContestGate(){
+  if(contestOpen){ renderContest(); return; }
+  contestShown(false);
+  const err=document.getElementById('lockerr'), form=document.getElementById('lockform'), btn=form.querySelector('button');
+  if(!D.contest_lock){
+    document.getElementById('locksub').textContent='아직 비밀번호가 설정되지 않아 대회 동향을 숨겨 두었어요.';
+    form.hidden=true; document.querySelector('.lockbox .remember').hidden=true; return;
+  }
+  form.onsubmit=async ev=>{
+    ev.preventDefault(); err.textContent=''; btn.disabled=true; btn.textContent='확인 중';
+    try{ await tryUnlock(document.getElementById('lockpw').value, document.getElementById('lockremember').checked); }
+    catch(e){ err.textContent='비밀번호가 맞지 않아요.'; }
+    finally{ btn.disabled=false; btn.textContent='열기'; }
+  };
+  let saved=null; try{ saved=localStorage.getItem('dashpw'); }catch(e){}
+  if(saved) tryUnlock(saved,false).catch(()=>{ try{ localStorage.removeItem('dashpw'); }catch(e){} });
+}
+document.getElementById('relock').onclick=()=>{
+  try{ localStorage.removeItem('dashpw'); }catch(e){}
+  D.leaderboard=null; D.sector_sentiment=null; document.getElementById('lockpw').value=''; contestShown(false);
+};
+
 function renderContest(){
+  if(!contestOpen) return;
   const L=D.leaderboard, rets=L.map(r=>r.total_return_pct).sort((a,b)=>a-b);
   const median=rets[Math.floor(rets.length/2)], avg=rets.reduce((s,v)=>s+v,0)/rets.length, winners=rets.filter(v=>v>0).length;
   document.getElementById('ctiles').innerHTML=[
@@ -1278,7 +1351,7 @@ const nNewDisc=DISC.filter(d=>d.important&&d.date>=daysAgo(3)).length;
 if(nNewDisc){ const b=document.getElementById('discbadge'); b.hidden=false; b.textContent=nNewDisc; b.title=`최근 3일 중요 공시 ${nNewDisc}건`; }
 const drawn={};
 const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();}, market:()=>{renderMarket();drawIdx();}, global:renderGlobal,
-  holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContest};
+  holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContestGate};
 const REDRAW={portfolio:drawNav, market:()=>{renderMarket();drawIdx();}, global:renderGlobal, pair:drawPair, contest:renderContest};
 let cur=null;
 function show(t){

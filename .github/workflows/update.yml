@@ -33,8 +33,10 @@ jobs:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          DASH_PASSWORD: ${{ secrets.DASH_PASSWORD }}
           COMPETITION_ID: "9"
         run: |
+          pip install -q cryptography
           python collect.py
           python build.py
       - name: 결과 커밋
