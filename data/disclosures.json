@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-09-28T15:36:26.296908+09:00",
+ "captured_at": "2026-09-28T16:11:59.294929+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,42 @@
    "date": "2026-09-28",
    "filer": "스피어",
    "rcept_no": "20260928900234"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "주요사항보고서(자기주식취득결정)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "한화오션",
+   "rcept_no": "20260928000252"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "한화오션",
+   "rcept_no": "20260928000249"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "한화오션",
+   "rcept_no": "20260928000243"
   },
   {
    "code": "347700",
