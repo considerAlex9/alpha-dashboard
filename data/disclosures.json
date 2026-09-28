@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-09-28T13:26:46.214217+09:00",
+ "captured_at": "2026-09-28T14:29:54.964143+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "스피어",
+   "rcept_no": "20260928900234"
+  },
   {
    "code": "347700",
    "name": "스피어",
