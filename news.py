@@ -10,6 +10,7 @@
 """
 import html
 import re
+import urllib.parse
 import urllib.request
 from datetime import datetime, time, timedelta, timezone
 
@@ -107,8 +108,12 @@ def _page(channel, before=None):
         body = re.search(r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', block, re.S)
         if not (pid and tm and body):
             continue
+        # 글 안의 원문 기사 주소 (텔레그램 자체 주소는 제외)
+        hrefs = [html.unescape(h) for h in re.findall(r'href="(https?://[^"]+)"', body.group(1))
+                 if not re.match(r"https?://(t\.me|telegram\.me)/", h)]
         posts.append({"id": pid.group(1), "time": datetime.fromisoformat(tm.group(1)).astimezone(KST),
-                      "text": _clean(body.group(1))[:MAX_CHARS]})
+                      "text": _clean(body.group(1))[:MAX_CHARS], "post_url": f"https://t.me/{pid.group(1)}",
+                      "links": list(dict.fromkeys(hrefs))[:3]})
     return posts
 
 
@@ -132,7 +137,8 @@ def fetch_posts(channels, start, end, errors):
 def _tidy(line, limit=110):
     s = LEAD.sub("", URL.sub("", line)).strip()
     s = re.sub(r"^<(.*)>$", r"\1", s).strip()                       # <제목> → 제목
-    s = re.sub(r"\s*\((?=[A-Za-z])[^()가-힣]*\)?", "", s)                # 영어 원문 괄호는 빼고 한국어만
+    s = re.sub(r"\s*\((?=[A-Za-z])[^()가-힣]*\)", "", s)            # 영어 원문 괄호는 빼고 한국어만 (한글이 섞인 괄호는 유지)
+    s = re.sub(r"\s*\((?=[A-Za-z])[^()가-힣]*$", "", s)             # 잘려서 닫는 괄호가 없는 영어 괄호
     s = re.sub(r"\s+", " ", s).strip()
     return s if len(s) <= limit else s[:limit].rstrip() + "…"
 
@@ -228,6 +234,14 @@ def _srcs(r, text):
     return found[:3]
 
 
+def _link(p):
+    """출처 링크: 글에 원문 기사 주소가 있으면 그 기사, 없으면 텔레그램 원문 글"""
+    if p.get("links"):
+        host = re.sub(r"^www\.", "", urllib.parse.urlsplit(p["links"][0]).netloc)
+        return {"link": p["links"][0], "link_label": host}
+    return {"link": p.get("post_url"), "link_label": "텔레그램 원문"}
+
+
 def organize(market_posts, ref_posts):
     metrics, cards, seen = {}, [], set()
     for p in market_posts:
@@ -239,7 +253,7 @@ def organize(market_posts, ref_posts):
             metrics[m["label"]] = m                                    # 같은 지표는 가장 최근 값
         if not r["bullets"] and not r["metrics"]:
             continue
-        cards.append({"title": r["title"], "bullets": r["bullets"], "numbers": r["metrics"][:4],
+        cards.append({"title": r["title"], "bullets": r["bullets"], "numbers": r["metrics"][:4], **_link(p),
                       "topic": topic_of(p["text"]), "sources": _srcs(r, p["text"]), "time": p["time"].isoformat(),
                       "rank": 0 if r["metrics"] else 1 if WRAP.search(r["title"]) else (2 if len(r["bullets"]) >= 3 else 3)})
     # 숫자가 있는 시황 글 → 핵심 항목이 많은 글 → 나머지, 같은 순위 안에서는 최신 글 먼저
@@ -249,7 +263,7 @@ def organize(market_posts, ref_posts):
         r = parse(p["text"])
         if r and r["title"][:30] not in seen:
             seen.add(r["title"][:30])
-            refs.append({"title": r["title"], "topic": topic_of(p["text"]), "sources": _srcs(r, p["text"]), "time": p["time"].isoformat()})
+            refs.append({"title": r["title"], "topic": topic_of(p["text"]), "sources": _srcs(r, p["text"]), "time": p["time"].isoformat(), **_link(p)})
     return list(metrics.values())[:10], cards, refs[:15]
 
 

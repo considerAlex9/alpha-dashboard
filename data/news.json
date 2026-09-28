@@ -5,7 +5,7 @@
    "name": "장전 브리핑",
    "start": "2026-09-25T16:00:00+09:00",
    "end": "2026-09-28T08:00:00+09:00",
-   "created_at": "2026-09-28T08:10:38.609255+09:00",
+   "created_at": "2026-09-28T15:06:51.628416+09:00",
    "post_count": 40,
    "metrics": [
     {
@@ -62,6 +62,8 @@
        "chg": "-0.31pt"
       }
      ],
+     "link": "https://t.me/hanwhastrategy/29118",
+     "link_label": "텔레그램 원문",
      "topic": "환율",
      "sources": [],
      "time": "2026-09-28T07:59:45+09:00",
@@ -89,6 +91,8 @@
        "chg": "+0.48%"
       }
      ],
+     "link": "https://t.me/hanwhastrategy/29117",
+     "link_label": "텔레그램 원문",
      "topic": "미국 증시",
      "sources": [],
      "time": "2026-09-28T07:59:25+09:00",
@@ -111,6 +115,8 @@
        "chg": "-3.7bp"
       }
      ],
+     "link": "https://t.me/hanwhastrategy/29116",
+     "link_label": "텔레그램 원문",
      "topic": "금리·연준",
      "sources": [],
      "time": "2026-09-28T07:59:08+09:00",
@@ -122,6 +128,8 @@
       "FICC: 장기 금리 상승 반납, 단기 금리 하락"
      ],
      "numbers": [],
+     "link": "https://t.me/ehdwl/11140",
+     "link_label": "텔레그램 원문",
      "topic": "환율",
      "sources": [],
      "time": "2026-09-26T05:24:51+09:00",
@@ -133,13 +141,15 @@
       "변화요인: 국채 금리, 미-이란, 미-중 정상회담"
      ],
      "numbers": [],
+     "link": "https://t.me/ehdwl/11138",
+     "link_label": "텔레그램 원문",
      "topic": "지정학",
      "sources": [],
      "time": "2026-09-26T05:23:06+09:00",
      "rank": 1
     },
     {
-     "title": "대덕전자 : 실적 시즌 다가올수록 Peer 캐치업 전망증권)",
+     "title": "대덕전자 : 실적 시즌 다가올수록 Peer 캐치업 전망 (IM증권)",
      "bullets": [
       "1. 목표주가 상향",
       "목표주가 150,000원→190,000원 상향",
@@ -148,6 +158,8 @@
       "환율 유지 시 800억원 이상 가능했던 셈, 펀더멘털 강화 중"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15137",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [],
      "time": "2026-09-28T07:54:57+09:00",
@@ -163,6 +175,8 @@
       "9월 근원 CPI는 전월비 +0.24%, 10월은 +0.22%로 예비 전망"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15136",
+     "link_label": "텔레그램 원문",
      "topic": "경제지표",
      "sources": [],
      "time": "2026-09-28T07:47:53+09:00",
@@ -178,6 +192,8 @@
       "9월 24일 정상회담은 나흘 전 뉴욕에서 열린 단 1회의 실무협상만을 거쳐 성사되어, 작년 부산 정상회담 전 약 5개월간 5차례 협상이 진행됐던 것과 비교해 협상 기반이…"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15135",
+     "link_label": "텔레그램 원문",
      "topic": "관세·무역",
      "sources": [
       "BofA"
@@ -195,6 +211,8 @@
       "연속 정상회담 일정으로 연말까지 미·중 관계 안정 가능성 확대, 실질 성과는 후속 협상과 합의 이행에 좌우"
      ],
      "numbers": [],
+     "link": "https://www.ft.com/content/bd99d372-d3d1-4972-a3fe-1bed8f71e14c",
+     "link_label": "ft.com",
      "topic": "관세·무역",
      "sources": [
       "FT"
@@ -212,6 +230,8 @@
       "작년에는 AI, 국방, 기업 밸류업, 중국의 반내권 정책 등으로 논의가 분산되었으나 올해는 AI가 투자자 대화의 절반 이상을 차지"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15132",
+     "link_label": "텔레그램 원문",
      "topic": "반도체·AI",
      "sources": [],
      "time": "2026-09-27T20:08:27+09:00",
@@ -227,13 +247,15 @@
       "2. 5대 시사점"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15130",
+     "link_label": "텔레그램 원문",
      "topic": "반도체·AI",
      "sources": [],
      "time": "2026-09-27T17:45:09+09:00",
      "rank": 2
     },
     {
-     "title": "Fran Cardells수석 과학자, 전 Microsoft CVP of Engineering, Data & AI 시니어 디렉터)",
+     "title": "Fran Cardells (Quantoid 수석 과학자, 전 Microsoft CVP of Engineering, Data & AI 시니어 디렉…",
      "bullets": [
       "Expert Call by BofA",
       "제목 : KV cache, memory hierarchy & model choice",
@@ -242,6 +264,8 @@
       "KV 캐시는 이전 토큰, 기업 컨텍스트, 가드레일, 에이전트 결정 로그를 저장해 에이전트 간 컨텍스트를 재계산 없이 이동시킴."
      ],
      "numbers": [],
+     "link": "https://t.me/cahier_de_market/10840",
+     "link_label": "텔레그램 원문",
      "topic": "반도체·AI",
      "sources": [],
      "time": "2026-09-27T10:40:12+09:00",
@@ -257,6 +281,8 @@
       "실현되지 못한 모든 바람은 인간의 잠재력이 조용히 사라지는 비극이다."
      ],
      "numbers": [],
+     "link": "https://x.com/alexandr_wang/status/2103551714536439951?s=46",
+     "link_label": "x.com",
      "topic": null,
      "sources": [],
      "time": "2026-09-26T20:54:36+09:00",
@@ -270,6 +296,8 @@
       "하이퍼스케일러 Capex와 매출상관계수 높은(0.9 이상) 업종은 IT하드웨어, 전력기기, 반도체"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15129",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [],
      "time": "2026-09-26T18:44:42+09:00",
@@ -285,6 +313,8 @@
       "즉 현재 수준 자체는 투자자들이 이미 상당히 몸을 사리고 있다는 의미이며, 매크로 불확실성이 완화되면 재차 주식 비중을 늘릴 '여력'이 있다는 신호로 해석 가능"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15126",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [
       "골드만삭스"
@@ -302,6 +332,8 @@
       "한국 시장도 이 흐름에서 예외가 아니다."
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15128",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [],
      "time": "2026-09-26T09:28:33+09:00",
@@ -317,6 +349,8 @@
       "은행: 일본 BOJ 통화정책회의록"
      ],
      "numbers": [],
+     "link": "https://t.me/ehdwl/11141",
+     "link_label": "텔레그램 원문",
      "topic": "경제지표",
      "sources": [],
      "time": "2026-09-26T05:40:37+09:00",
@@ -332,6 +366,8 @@
       "대형 기술주: MS 상승 Vs. 메타 부진"
      ],
      "numbers": [],
+     "link": "https://t.me/ehdwl/11139",
+     "link_label": "텔레그램 원문",
      "topic": "반도체·AI",
      "sources": [
       "모건스탠리"
@@ -349,6 +385,8 @@
       "이는 시장이 정책당국의 긴축을 신뢰회복 과정으로 받아들이며 주가에 긍정적으로 반영하고 있음을 시사"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15125",
+     "link_label": "텔레그램 원문",
      "topic": "금리·연준",
      "sources": [],
      "time": "2026-09-25T19:59:47+09:00",
@@ -364,6 +402,8 @@
       "골드만삭스는 뮤즈의 차별점이 단순한 모델 지능이 아니라 메타의 글로벌 유통망, 퍼스트파티 데이터, 컴퓨트, 서드파티 커넥터 생태계의 결합에 있다고 강조"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15124",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [
       "골드만삭스",
@@ -383,6 +423,8 @@
       "이는 2026년 예상 글로벌 소프트웨어 지출(약 1조 5,000억 달러) 및 AI발 노동생산성 향상분(약 1조 8,000억 달러)과 견줄 만한 수준이나, 이 생산성 향상분…"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15121",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [],
      "time": "2026-09-25T19:56:51+09:00",
@@ -398,6 +440,8 @@
       "연준이 금리를 더 올릴수록 인플레이션은 더 높아지고, 그러면 연준은 다시 금리를 더 올려야 하며, 이런 과정이 계속 반복될 수 있습니다."
      ],
      "numbers": [],
+     "link": "https://t.me/cahier_de_market/10833",
+     "link_label": "텔레그램 원문",
      "topic": "금리·연준",
      "sources": [],
      "time": "2026-09-25T17:20:29+09:00",
@@ -410,6 +454,8 @@
       "“클라우드 비즈니스는 사람들이 더 많은 서비스를 사용하면서 규모 자체가 몇 자릿수 단위로 커졌습니다."
      ],
      "numbers": [],
+     "link": "https://t.me/cahier_de_market/10843",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [],
      "time": "2026-09-27T23:36:35+09:00",
@@ -421,6 +467,8 @@
       "대선 2년차엔 상승 빈도 8/10회, 평균 +7.80%로 더 강한 계절성"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15134",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [],
      "time": "2026-09-27T20:59:36+09:00",
@@ -432,6 +480,8 @@
       "9월 신고가 이후 4분기 상승 확률 88%, 평균 수익률 +3.72%"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15133",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [],
      "time": "2026-09-27T20:59:35+09:00",
@@ -443,6 +493,8 @@
       "데이터 센터와 AI 인프라에 대한 총 투자는 2025년부터 2032년까지 매년 미국 GDP의 3.63%를 평균적으로 차지할 것으로 예상되며, 이는 1800년대 이후 주요…"
      ],
      "numbers": [],
+     "link": "https://x.com/KobeissiLetter/status/2103563602200281411",
+     "link_label": "x.com",
      "topic": null,
      "sources": [],
      "time": "2026-09-27T18:13:57+09:00",
@@ -454,6 +506,8 @@
       "OpenAI 연구의 80~90%가 GPT-7, 8 및 그 이후를 목표로 하고 있으며, 거대한 Astra 교사 모델을 작은 Luna 모델로 증류한다고 밝힘"
      ],
      "numbers": [],
+     "link": "https://x.com/firesidealpha/status/2103821387307651085",
+     "link_label": "x.com",
      "topic": null,
      "sources": [],
      "time": "2026-09-27T10:54:58+09:00",
@@ -465,6 +519,8 @@
       "\"현재 들어오는 수요의 75%를 거절하고 있다\""
      ],
      "numbers": [],
+     "link": "https://x.com/firesidealpha/status/2103579227065045482",
+     "link_label": "x.com",
      "topic": null,
      "sources": [],
      "time": "2026-09-26T08:58:26+09:00",
@@ -476,6 +532,8 @@
       "2025~2030년 데이터센터 전력 수요 증가율: 기존 +117% → +170%"
      ],
      "numbers": [],
+     "link": "https://t.me/cahier_de_market/10834",
+     "link_label": "텔레그램 원문",
      "topic": "반도체·AI",
      "sources": [
       "골드만삭스"
@@ -492,7 +550,7 @@
    "name": "장마감 브리핑",
    "start": "2026-09-25T08:00:00+09:00",
    "end": "2026-09-25T16:00:00+09:00",
-   "created_at": "2026-09-26T09:43:43.383985+09:00",
+   "created_at": "2026-09-28T15:06:51.628416+09:00",
    "post_count": 6,
    "metrics": [],
    "cards": [
@@ -506,6 +564,8 @@
       "MS는 2,270억 달러에서 3,730억 달러로, 아마존은 3,010억 달러에서 5,050억 달러로 각각 상승"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15119",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [],
      "time": "2026-09-25T10:29:53+09:00",
@@ -521,6 +581,8 @@
       "2. 2단계 (2026~27년 예상)"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15120",
+     "link_label": "텔레그램 원문",
      "topic": null,
      "sources": [],
      "time": "2026-09-25T10:29:53+09:00",
@@ -536,6 +598,8 @@
       "2. MLCC 가동률"
      ],
      "numbers": [],
+     "link": "https://t.me/Jstockclass/15118",
+     "link_label": "텔레그램 원문",
      "topic": "반도체·AI",
      "sources": [],
      "time": "2026-09-25T09:27:15+09:00",
@@ -544,73 +608,7 @@
    ],
    "refs": [],
    "errors": []
-  },
-  {
-   "id": "2026-09-25 0800",
-   "name": "장전 브리핑",
-   "start": "2026-09-24T16:00:00+09:00",
-   "end": "2026-09-25T08:00:00+09:00",
-   "created_at": "2026-09-26T09:43:43.383985+09:00",
-   "post_count": 4,
-   "metrics": [],
-   "cards": [
-    {
-     "title": "한국증시 관련 수치: 휴장",
-     "bullets": [
-      "FICC: 미국 천연가스 급등, 국제유가 변동성 확대 속 상승"
-     ],
-     "numbers": [],
-     "topic": "유가·원자재",
-     "sources": [],
-     "time": "2026-09-25T05:43:58+09:00",
-     "rank": 1
-    },
-    {
-     "title": "미 증시, 오라클과 금리 급등에도 미-이란 불안 완화와 옵션 수급에 제한적인 하락",
-     "bullets": [
-      "변화요인: 국채 금리, 옵션의 힘, 오라클"
-     ],
-     "numbers": [],
-     "topic": "반도체·AI",
-     "sources": [],
-     "time": "2026-09-25T05:42:14+09:00",
-     "rank": 1
-    },
-    {
-     "title": "특징 종목: 메타 강세, AMD, 인텔도 상승 Vs. 오라클",
-     "bullets": [
-      "메모리, 스토리지 반도체: 오라클 이슈에 하락 후 금리 영향 속 변화 확대",
-      "AI 반도체: 엔비디아, 브로드컴, 마벨 약세 Vs. AMD, 인텔 상대적 강세",
-      "데이터, AI서버: 에버퓨어, 실적 기대에 급등 Vs. 델, 오라클 여파로 부진",
-      "네오클라우드: 코어위브, 네비우스 컴퓨팅 수요 기대에 강세",
-      "자동차: 내연차량 판매 감소 소식에 하락"
-     ],
-     "numbers": [],
-     "topic": "반도체·AI",
-     "sources": [
-      "JP모건",
-      "씨티",
-      "UBS"
-     ],
-     "time": "2026-09-25T05:43:12+09:00",
-     "rank": 2
-    },
-    {
-     "title": "우주개발: 스페이스X, 내부자 매도, 대규모 보호예수 물량",
-     "bullets": [
-      "비만치료제 등: 일라이릴리, FDA 승인 소식에 상승",
-      "비트코인: 금리 이슈에 크게 하락 후 낙폭 일부 축소"
-     ],
-     "numbers": [],
-     "topic": null,
-     "sources": [],
-     "time": "2026-09-25T05:43:13+09:00",
-     "rank": 3
-    }
-   ],
-   "refs": [],
-   "errors": []
   }
  ],
- "checked_at": "2026-09-28T15:02:00.146718+09:00"
+ "checked_at": "2026-09-28T15:06:51.628416+09:00"
 }

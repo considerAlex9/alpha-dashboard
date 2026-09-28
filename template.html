@@ -238,6 +238,9 @@ tr.click{cursor:pointer}
 .ncard li{font-size:13px;line-height:1.55;color:var(--ink-2);padding-left:14px;position:relative}
 .ncard li::before{content:"";position:absolute;left:2px;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
 .ncard .nnum{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12.5px;font-variant-numeric:tabular-nums}
+.nlink{display:inline-flex;align-items:center;gap:4px;margin-top:10px;font-size:12px;color:var(--accent);text-decoration:none}
+.nlink:hover{text-decoration:underline}
+.nlink svg{width:12px;height:12px}
 .nsec{font-size:13px;font-weight:700;color:var(--ink-2);margin:18px 0 8px;display:flex;justify-content:space-between;align-items:center}
 .rlist{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
 .ritem{display:flex;gap:8px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--grid);font-size:13px;min-width:0}
@@ -996,7 +999,7 @@ function renderGlobal(){
         <div class="spark" data-sym="${esc(g.symbol)}"></div></div>`).join('')+'</div>').join('');
   el.querySelectorAll('.spark').forEach(s=>{
     const g=M.global.find(x=>x.symbol===s.dataset.sym);
-    lineChart(s,{spark:true,height:48,series:[{name:g.name,color:'var(--s1)',pts:g.series}],yFmt:v=>v==null?'—':gpx({...g,price:v})});
+    lineChart(s,{spark:true,height:48,series:[{name:g.name,color:'var(--idx)',w:2.5,pts:g.series}],yFmt:v=>v==null?'—':gpx({...g,price:v})});
   });
 }
 
@@ -1059,7 +1062,8 @@ function renderNews(){
   const card=c=>`<div class="ncard"><div class="nt">${esc(c.title)}</div>
       <div class="nm"><span>${c.time.slice(11,16)}</span>${chips(c)}</div>
       ${c.numbers?.length?`<div class="nnum">${c.numbers.map(m=>`<span>${esc(m.label)} <b>${esc(m.value)}</b>${chg(m.chg)}</span>`).join('')}</div>`:''}
-      ${c.bullets.length?`<ul>${c.bullets.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>`:''}</div>`;
+      ${c.bullets.length?`<ul>${c.bullets.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>`:''}
+      ${c.link?`<a class="nlink" href="${esc(c.link)}" target="_blank" rel="noopener noreferrer">출처 · ${esc(c.link_label)}${ico('ext')}</a>`:''}</div>`;
   const cards=e.cards||[], shown=newsMore?cards:cards.slice(0,6);
   let html = cards.length
     ? `<div class="cards">${shown.map(card).join('')}</div>`+(cards.length>6?`<button class="morebtn" id="newsmore">${newsMore?'접기':`시황 ${cards.length-6}개 더 보기`}</button>`:'')
