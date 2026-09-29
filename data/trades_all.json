@@ -1,5 +1,35 @@
 [
  {
+  "id": 1631765,
+  "order_id": 22374,
+  "company_id": 37,
+  "company_name": "Gaon Cable Co., Ltd.",
+  "company_symbol": "000500",
+  "side": "cover",
+  "quantity": 4360,
+  "price": 306884.0632,
+  "commission": 1338014.5157,
+  "fx_rate": 1.0,
+  "value_krw": 1338014515.7062,
+  "realized_pnl": 37665136.8898,
+  "created_at": "2026-09-29T03:25:51+00:00"
+ },
+ {
+  "id": 1631763,
+  "order_id": 22365,
+  "company_id": 2031,
+  "company_name": "Hwaseung Enterprise Co., Ltd.",
+  "company_symbol": "241590",
+  "side": "cover",
+  "quantity": 304820,
+  "price": 2770.922,
+  "commission": 844632.4298,
+  "fx_rate": 1.0,
+  "value_krw": 844632429.8406,
+  "realized_pnl": 3531445.3454,
+  "created_at": "2026-09-29T03:25:26+00:00"
+ },
+ {
   "id": 1599329,
   "order_id": 21956,
   "company_id": 324,

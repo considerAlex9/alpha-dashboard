@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-09-29T12:26:22.816384+09:00",
+ "captured_at": "2026-09-29T13:25:41.557010+09:00",
  "days": 60,
  "items": [
   {
@@ -1165,18 +1165,6 @@
    "date": "2026-09-11",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260911000480"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등거래계획보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-11",
-   "filer": "LS전선",
-   "rcept_no": "20260911000445"
   },
   {
    "code": "035420",
@@ -2463,18 +2451,6 @@
    "rcept_no": "20260831800342"
   },
   {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "가온전선",
-   "rcept_no": "20260831800149"
-  },
-  {
    "code": "329180",
    "name": "HD현대중공업",
    "side": "long",
@@ -2605,18 +2581,6 @@
    "date": "2026-08-31",
    "filer": "삼성SDI",
    "rcept_no": "20260831000478"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "가온전선",
-   "rcept_no": "20260831000415"
   },
   {
    "code": "207940",
@@ -4383,30 +4347,6 @@
    "rcept_no": "20260814001298"
   },
   {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "가온전선",
-   "rcept_no": "20260814001287"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "가온전선",
-   "rcept_no": "20260814001273"
-  },
-  {
    "code": "082740",
    "name": "한화엔진",
    "side": "short",
@@ -4441,18 +4381,6 @@
    "date": "2026-08-14",
    "filer": "엘앤에프",
    "rcept_no": "20260814000995"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "가온전선",
-   "rcept_no": "20260814000919"
   },
   {
    "code": "066970",
@@ -4549,18 +4477,6 @@
    "date": "2026-08-13",
    "filer": "OCI홀딩스",
    "rcept_no": "20260813000901"
-  },
-  {
-   "code": "241590",
-   "name": "화승엔터프라이즈",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-13",
-   "filer": "화승엔터프라이즈",
-   "rcept_no": "20260813000771"
   },
   {
    "code": "095610",
@@ -4669,78 +4585,6 @@
    "date": "2026-08-12",
    "filer": "NAVER",
    "rcept_no": "20260812000394"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "약관에의한금융거래시계열금융회사의거래상대방의공시",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-12",
-   "filer": "가온전선",
-   "rcept_no": "20260812000390"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-12",
-   "filer": "가온전선",
-   "rcept_no": "20260812000389"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-12",
-   "filer": "가온전선",
-   "rcept_no": "20260812000384"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-12",
-   "filer": "가온전선",
-   "rcept_no": "20260812000378"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-12",
-   "filer": "가온전선",
-   "rcept_no": "20260812000376"
-  },
-  {
-   "code": "000500",
-   "name": "가온전선",
-   "side": "short",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-12",
-   "filer": "가온전선",
-   "rcept_no": "20260812000369"
   },
   {
    "code": "000660",
