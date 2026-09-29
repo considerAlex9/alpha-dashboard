@@ -1,5 +1,20 @@
 [
  {
+  "id": 1599329,
+  "order_id": 21956,
+  "company_id": 324,
+  "company_name": "Samsung Electronics Co., Ltd. (Preferred)",
+  "company_symbol": "005935",
+  "side": "sell",
+  "quantity": 8686,
+  "price": 203190.1815,
+  "commission": 1764909.9165,
+  "fx_rate": 1.0,
+  "value_krw": 1764909916.4697,
+  "realized_pnl": -139228479.4757,
+  "created_at": "2026-09-29T00:00:11+00:00"
+ },
+ {
   "id": 1467611,
   "order_id": 20925,
   "company_id": 385,

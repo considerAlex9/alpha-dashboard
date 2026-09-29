@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-09-29T08:14:46.874150+09:00",
+ "captured_at": "2026-09-29T09:31:35.680139+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "042700",
+   "name": "한미반도체",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결(자율공시)",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-29",
+   "filer": "한미반도체",
+   "rcept_no": "20260929800083"
+  },
   {
    "code": "347700",
    "name": "스피어",
@@ -243,18 +255,6 @@
    "rcept_no": "20260922800219"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-22",
-   "filer": "허은녕",
-   "rcept_no": "20260922000524"
-  },
-  {
    "code": "000660",
    "name": "SK하이닉스",
    "side": "long",
@@ -349,18 +349,6 @@
    "date": "2026-09-18",
    "filer": "한화시스템",
    "rcept_no": "20260918800776"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "삼성전자",
-   "rcept_no": "20260918800754"
   },
   {
    "code": "272210",
@@ -541,30 +529,6 @@
    "date": "2026-09-18",
    "filer": "키움증권",
    "rcept_no": "20260918000279"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "조혜경",
-   "rcept_no": "20260918000212"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "이혁재",
-   "rcept_no": "20260918000191"
   },
   {
    "code": "039490",
@@ -843,18 +807,6 @@
    "rcept_no": "20260917000118"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "신제윤",
-   "rcept_no": "20260917000097"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1105,18 +1057,6 @@
    "date": "2026-09-14",
    "filer": "삼성자산운용",
    "rcept_no": "20260914000251"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-14",
-   "filer": "아포테커마띠유",
-   "rcept_no": "20260914000248"
   },
   {
    "code": "039490",
@@ -1575,18 +1515,6 @@
    "rcept_no": "20260909800003"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등거래계획보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "이재용",
-   "rcept_no": "20260909000516"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1671,18 +1599,6 @@
    "rcept_no": "20260909000202"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "배상기",
-   "rcept_no": "20260909000113"
-  },
-  {
    "code": "042700",
    "name": "한미반도체",
    "side": "short",
@@ -1693,18 +1609,6 @@
    "date": "2026-09-09",
    "filer": "곽동신",
    "rcept_no": "20260909000058"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-08",
-   "filer": "삼성전자",
-   "rcept_no": "20260908800624"
   },
   {
    "code": "066970",
@@ -2703,30 +2607,6 @@
    "rcept_no": "20260831000415"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "삼성전자",
-   "rcept_no": "20260831000250"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "김은용",
-   "rcept_no": "20260831000066"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -2811,18 +2691,6 @@
    "rcept_no": "20260828100005"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "삼성물산",
-   "rcept_no": "20260828001916"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -2833,18 +2701,6 @@
    "date": "2026-08-28",
    "filer": "키움증권",
    "rcept_no": "20260828001841"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "포르치니마우로",
-   "rcept_no": "20260828001836"
   },
   {
    "code": "039490",
@@ -3243,18 +3099,6 @@
    "rcept_no": "20260826000471"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-26",
-   "filer": "김경륜",
-   "rcept_no": "20260826000445"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -3265,18 +3109,6 @@
    "date": "2026-08-26",
    "filer": "키움증권",
    "rcept_no": "20260826000441"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-26",
-   "filer": "조미선",
-   "rcept_no": "20260826000434"
   },
   {
    "code": "039490",
@@ -3483,18 +3315,6 @@
    "rcept_no": "20260824000267"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-24",
-   "filer": "안성준",
-   "rcept_no": "20260824000222"
-  },
-  {
    "code": "347850",
    "name": "디앤디파마텍",
    "side": "long",
@@ -3505,30 +3325,6 @@
    "date": "2026-08-21",
    "filer": "디앤디파마텍",
    "rcept_no": "20260821900144"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "기타경영사항(자율공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "삼성전자",
-   "rcept_no": "20260821800837"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "수시공시의무관련사항(공정공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "삼성전자",
-   "rcept_no": "20260821800763"
   },
   {
    "code": "000660",
@@ -3649,18 +3445,6 @@
    "date": "2026-08-21",
    "filer": "키움증권",
    "rcept_no": "20260821000619"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "주요사항보고서(자기주식취득결정)",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "삼성전자",
-   "rcept_no": "20260821000616"
   },
   {
    "code": "000660",
@@ -3831,18 +3615,6 @@
    "rcept_no": "20260821000402"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "이명재",
-   "rcept_no": "20260821000262"
-  },
-  {
    "code": "347700",
    "name": "스피어",
    "side": "short",
@@ -3951,18 +3723,6 @@
    "rcept_no": "20260820800033"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "김경태",
-   "rcept_no": "20260820000290"
-  },
-  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -3997,18 +3757,6 @@
    "date": "2026-08-20",
    "filer": "한화시스템",
    "rcept_no": "20260820000123"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "이희곤",
-   "rcept_no": "20260820000040"
   },
   {
    "code": "000660",
@@ -4179,30 +3927,6 @@
    "rcept_no": "20260814004019"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-14",
-   "filer": "박태훈",
-   "rcept_no": "20260814003973"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-14",
-   "filer": "박태훈",
-   "rcept_no": "20260814003950"
-  },
-  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -4215,18 +3939,6 @@
    "rcept_no": "20260814003925"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-14",
-   "filer": "박태훈",
-   "rcept_no": "20260814003912"
-  },
-  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -4237,18 +3949,6 @@
    "date": "2026-08-14",
    "filer": "크래프톤",
    "rcept_no": "20260814003894"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-14",
-   "filer": "박태훈",
-   "rcept_no": "20260814003844"
   },
   {
    "code": "086790",
@@ -4275,42 +3975,6 @@
    "rcept_no": "20260814003779"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-14",
-   "filer": "박태훈",
-   "rcept_no": "20260814003747"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "삼성전자",
-   "rcept_no": "20260814003699"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-14",
-   "filer": "박태훈",
-   "rcept_no": "20260814003672"
-  },
-  {
    "code": "042700",
    "name": "한미반도체",
    "side": "short",
@@ -4333,18 +3997,6 @@
    "date": "2026-08-14",
    "filer": "삼성SDI",
    "rcept_no": "20260814003578"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "삼성전자",
-   "rcept_no": "20260814003549"
   },
   {
    "code": "000660",
@@ -4407,18 +4059,6 @@
    "rcept_no": "20260814003171"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "삼성전자",
-   "rcept_no": "20260814003162"
-  },
-  {
    "code": "347700",
    "name": "스피어",
    "side": "short",
@@ -4429,18 +4069,6 @@
    "date": "2026-08-14",
    "filer": "스피어",
    "rcept_no": "20260814003121"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "삼성전자",
-   "rcept_no": "20260814003055"
   },
   {
    "code": "003230",
@@ -4489,18 +4117,6 @@
    "date": "2026-08-14",
    "filer": "서승원",
    "rcept_no": "20260814002859"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "삼성전자",
-   "rcept_no": "20260814002809"
   },
   {
    "code": "207940",
@@ -5247,30 +4863,6 @@
    "rcept_no": "20260811000330"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-11",
-   "filer": "여명구",
-   "rcept_no": "20260811000285"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-11",
-   "filer": "손영수",
-   "rcept_no": "20260811000011"
-  },
-  {
    "code": "347700",
    "name": "스피어",
    "side": "short",
@@ -5463,18 +5055,6 @@
    "rcept_no": "20260810000473"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "박상권",
-   "rcept_no": "20260810000353"
-  },
-  {
    "code": "010060",
    "name": "OCI홀딩스",
    "side": "long",
@@ -5487,30 +5067,6 @@
    "rcept_no": "20260810000268"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "허길영",
-   "rcept_no": "20260810000256"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "강석채",
-   "rcept_no": "20260810000227"
-  },
-  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -5521,18 +5077,6 @@
    "date": "2026-08-10",
    "filer": "한화시스템",
    "rcept_no": "20260810000226"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "이상우",
-   "rcept_no": "20260810000078"
   },
   {
    "code": "078930",
@@ -5667,18 +5211,6 @@
    "rcept_no": "20260807800011"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-07",
-   "filer": "김유석",
-   "rcept_no": "20260807000756"
-  },
-  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -5689,18 +5221,6 @@
    "date": "2026-08-07",
    "filer": "강경돈",
    "rcept_no": "20260807000722"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-07",
-   "filer": "임성수",
-   "rcept_no": "20260807000626"
   },
   {
    "code": "086790",
@@ -5725,42 +5245,6 @@
    "date": "2026-08-07",
    "filer": "SK하이닉스",
    "rcept_no": "20260807000537"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-07",
-   "filer": "이학민",
-   "rcept_no": "20260807000528"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-07",
-   "filer": "김홍경",
-   "rcept_no": "20260807000459"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-07",
-   "filer": "김은용",
-   "rcept_no": "20260807000357"
   },
   {
    "code": "347700",
@@ -5835,18 +5319,6 @@
    "rcept_no": "20260806800043"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "김영아",
-   "rcept_no": "20260806000484"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -5881,42 +5353,6 @@
    "date": "2026-08-06",
    "filer": "이수",
    "rcept_no": "20260806000398"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "김경륜",
-   "rcept_no": "20260806000236"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "김용찬",
-   "rcept_no": "20260806000098"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "김용성",
-   "rcept_no": "20260806000001"
   },
   {
    "code": "222800",
@@ -6013,54 +5449,6 @@
    "date": "2026-08-05",
    "filer": "새로닉스",
    "rcept_no": "20260805000396"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-05",
-   "filer": "황상준",
-   "rcept_no": "20260805000333"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-05",
-   "filer": "심재현",
-   "rcept_no": "20260805000203"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-05",
-   "filer": "이태관",
-   "rcept_no": "20260805000166"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-05",
-   "filer": "얀손헨릭",
-   "rcept_no": "20260805000010"
   },
   {
    "code": "347700",
@@ -6181,42 +5569,6 @@
    "date": "2026-08-04",
    "filer": "대우건설",
    "rcept_no": "20260804800070"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-04",
-   "filer": "송방영",
-   "rcept_no": "20260804000544"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-04",
-   "filer": "나기홍",
-   "rcept_no": "20260804000531"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-04",
-   "filer": "얀손헨릭",
-   "rcept_no": "20260804000499"
   },
   {
    "code": "078930",
@@ -6351,30 +5703,6 @@
    "rcept_no": "20260803000246"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-03",
-   "filer": "신영주",
-   "rcept_no": "20260803000197"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-03",
-   "filer": "김현우",
-   "rcept_no": "20260803000173"
-  },
-  {
    "code": "000150",
    "name": "두산",
    "side": "long",
@@ -6387,30 +5715,6 @@
    "rcept_no": "20260803000139"
   },
   {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-03",
-   "filer": "조익현",
-   "rcept_no": "20260803000043"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-03",
-   "filer": "박태훈",
-   "rcept_no": "20260803000004"
-  },
-  {
    "code": "425420",
    "name": "티에프이",
    "side": "long",
@@ -6421,18 +5725,6 @@
    "date": "2026-07-31",
    "filer": "티에프이",
    "rcept_no": "20260731900827"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-07-31",
-   "filer": "삼성전자",
-   "rcept_no": "20260731801296"
   },
   {
    "code": "047040",
@@ -6493,42 +5785,6 @@
    "date": "2026-07-31",
    "filer": "두산",
    "rcept_no": "20260731000787"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-07-31",
-   "filer": "삼성물산",
-   "rcept_no": "20260731000779"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-07-31",
-   "filer": "노태문",
-   "rcept_no": "20260731000755"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-07-31",
-   "filer": "이종민",
-   "rcept_no": "20260731000690"
   },
   {
    "code": "329180",
