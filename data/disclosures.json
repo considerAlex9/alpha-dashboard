@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-09-29T15:30:58.104944+09:00",
+ "captured_at": "2026-09-29T16:11:45.692188+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "347700",
+   "name": "스피어",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-29",
+   "filer": "스피어",
+   "rcept_no": "20260929900534"
+  },
   {
    "code": "079550",
    "name": "LIG디펜스앤에어로스페이스",
