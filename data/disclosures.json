@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-09-29T10:28:01.830281+09:00",
+ "captured_at": "2026-09-29T11:23:31.128015+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "주요사항보고서(영업정지)(자회사의 주요경영사항)",
+   "category": "거래정지·관리",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-29",
+   "filer": "OCI홀딩스",
+   "rcept_no": "20260929800197"
+  },
   {
    "code": "042700",
    "name": "한미반도체",
