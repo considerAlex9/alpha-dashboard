@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-09-30T16:08:09.767085+09:00",
+ "captured_at": "2026-09-30T16:32:52.043015+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,30 @@
    "date": "2026-09-30",
    "filer": "스피어",
    "rcept_no": "20260930900438"
+  },
+  {
+   "code": "082740",
+   "name": "한화엔진",
+   "side": "short",
+   "title": "[기재정정]신규시설투자등",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-09-30",
+   "filer": "한화엔진",
+   "rcept_no": "20260930800883"
+  },
+  {
+   "code": "259960",
+   "name": "크래프톤",
+   "side": "short",
+   "title": "주식소각결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "크래프톤",
+   "rcept_no": "20260930800878"
   },
   {
    "code": "010060",
@@ -37,6 +61,18 @@
    "date": "2026-09-30",
    "filer": "HD현대중공업",
    "rcept_no": "20260930800154"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "키움증권",
+   "rcept_no": "20260930000655"
   },
   {
    "code": "354320",
@@ -3193,18 +3229,6 @@
    "date": "2026-08-26",
    "filer": "키움증권",
    "rcept_no": "20260826000239"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-26",
-   "filer": "키움증권",
-   "rcept_no": "20260826000229"
   },
   {
    "code": "006400",
