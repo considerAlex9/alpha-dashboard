@@ -1,7 +1,55 @@
 {
- "captured_at": "2026-09-30T09:34:04.944881+09:00",
+ "captured_at": "2026-09-30T10:26:35.577208+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "329180",
+   "name": "HD현대중공업",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-30",
+   "filer": "HD현대중공업",
+   "rcept_no": "20260930800154"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "키움증권",
+   "rcept_no": "20260930000092"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "키움증권",
+   "rcept_no": "20260930000087"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "키움증권",
+   "rcept_no": "20260930000071"
+  },
   {
    "code": "039490",
    "name": "키움증권",
@@ -75,6 +123,18 @@
    "rcept_no": "20260929800197"
   },
   {
+   "code": "192650",
+   "name": "드림텍",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-29",
+   "filer": "드림텍",
+   "rcept_no": "20260929800154"
+  },
+  {
    "code": "042700",
    "name": "한미반도체",
    "side": "short",
@@ -97,6 +157,18 @@
    "date": "2026-09-29",
    "filer": "한화오션",
    "rcept_no": "20260929000302"
+  },
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "루닛",
+   "rcept_no": "20260928900615"
   },
   {
    "code": "347700",
@@ -157,6 +229,18 @@
    "date": "2026-09-28",
    "filer": "한화오션",
    "rcept_no": "20260928000243"
+  },
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-23",
+   "filer": "루닛",
+   "rcept_no": "20260923900544"
   },
   {
    "code": "347700",
@@ -327,6 +411,18 @@
    "rcept_no": "20260922800219"
   },
   {
+   "code": "192650",
+   "name": "드림텍",
+   "side": "long",
+   "title": "[기재정정]타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-09-22",
+   "filer": "드림텍",
+   "rcept_no": "20260922800090"
+  },
+  {
    "code": "000660",
    "name": "SK하이닉스",
    "side": "long",
@@ -349,6 +445,18 @@
    "date": "2026-09-21",
    "filer": "한화오션",
    "rcept_no": "20260921800302"
+  },
+  {
+   "code": "192650",
+   "name": "드림텍",
+   "side": "long",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-21",
+   "filer": "드림텍",
+   "rcept_no": "20260921800130"
   },
   {
    "code": "006400",
@@ -1587,30 +1695,6 @@
    "rcept_no": "20260908800099"
   },
   {
-   "code": "108490",
-   "name": "로보티즈",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-08",
-   "filer": "김병수",
-   "rcept_no": "20260908000413"
-  },
-  {
-   "code": "108490",
-   "name": "로보티즈",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-08",
-   "filer": "김병수",
-   "rcept_no": "20260908000406"
-  },
-  {
    "code": "329180",
    "name": "HD현대중공업",
    "side": "long",
@@ -1801,6 +1885,18 @@
    "date": "2026-09-07",
    "filer": "키움증권",
    "rcept_no": "20260907000074"
+  },
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "전환가액의조정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-04",
+   "filer": "루닛",
+   "rcept_no": "20260904900638"
   },
   {
    "code": "222800",
@@ -2317,6 +2413,18 @@
    "date": "2026-09-01",
    "filer": "미래에셋자산운용",
    "rcept_no": "20260901000187"
+  },
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "루닛",
+   "rcept_no": "20260831900522"
   },
   {
    "code": "347700",
@@ -3147,30 +3255,6 @@
    "rcept_no": "20260824000280"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-24",
-   "filer": "키움증권",
-   "rcept_no": "20260824000275"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-상장지수증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-24",
-   "filer": "키움증권",
-   "rcept_no": "20260824000267"
-  },
-  {
    "code": "347850",
    "name": "디앤디파마텍",
    "side": "long",
@@ -3277,18 +3361,6 @@
    "date": "2026-08-21",
    "filer": "유가증권시장본부",
    "rcept_no": "20260821800054"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "키움증권",
-   "rcept_no": "20260821000619"
   },
   {
    "code": "000660",
@@ -3507,6 +3579,18 @@
    "rcept_no": "20260820800033"
   },
   {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "주식매수선택권부여에관한신고",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-20",
+   "filer": "루닛",
+   "rcept_no": "20260820000351"
+  },
+  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -3675,6 +3759,18 @@
    "rcept_no": "20260814802986"
   },
   {
+   "code": "192650",
+   "name": "드림텍",
+   "side": "long",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "드림텍",
+   "rcept_no": "20260814004101"
+  },
+  {
    "code": "000150",
    "name": "두산",
    "side": "long",
@@ -3781,18 +3877,6 @@
    "date": "2026-08-14",
    "filer": "SK하이닉스",
    "rcept_no": "20260814003509"
-  },
-  {
-   "code": "108490",
-   "name": "로보티즈",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "로보티즈",
-   "rcept_no": "20260814003380"
   },
   {
    "code": "207940",
@@ -4491,6 +4575,18 @@
    "rcept_no": "20260811800212"
   },
   {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "루닛",
+   "rcept_no": "20260811000657"
+  },
+  {
    "code": "010060",
    "name": "OCI홀딩스",
    "side": "long",
@@ -4645,18 +4741,6 @@
    "date": "2026-08-10",
    "filer": "장병규",
    "rcept_no": "20260810000634"
-  },
-  {
-   "code": "108490",
-   "name": "로보티즈",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "남형철",
-   "rcept_no": "20260810000614"
   },
   {
    "code": "082740",
@@ -4899,18 +4983,6 @@
    "rcept_no": "20260806000473"
   },
   {
-   "code": "108490",
-   "name": "로보티즈",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등거래계획보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "김병수",
-   "rcept_no": "20260806000454"
-  },
-  {
    "code": "007660",
    "name": "이수페타시스",
    "side": "short",
@@ -4921,6 +4993,54 @@
    "date": "2026-08-06",
    "filer": "이수",
    "rcept_no": "20260806000398"
+  },
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "[기재정정]주식매수선택권부여에관한신고",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-06",
+   "filer": "루닛",
+   "rcept_no": "20260806000375"
+  },
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "[기재정정]주식매수선택권부여에관한신고",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-06",
+   "filer": "루닛",
+   "rcept_no": "20260806000371"
+  },
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "[기재정정]주식매수선택권부여에관한신고",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-06",
+   "filer": "루닛",
+   "rcept_no": "20260806000365"
+  },
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "[기재정정]주식매수선택권부여에관한신고",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-06",
+   "filer": "루닛",
+   "rcept_no": "20260806000357"
   },
   {
    "code": "222800",
@@ -5125,6 +5245,18 @@
    "date": "2026-08-03",
    "filer": "스피어",
    "rcept_no": "20260803901070"
+  },
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-03",
+   "filer": "루닛",
+   "rcept_no": "20260803900789"
   },
   {
    "code": "020150",
