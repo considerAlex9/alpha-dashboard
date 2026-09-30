@@ -1,5 +1,20 @@
 [
  {
+  "id": 1702082,
+  "order_id": 23273,
+  "company_id": 16523,
+  "company_name": "빅웨이브로보틱스",
+  "company_symbol": "0035S0",
+  "side": "cover",
+  "quantity": 75000,
+  "price": 32802.4482,
+  "commission": 2460183.6126,
+  "fx_rate": 1.0,
+  "value_krw": 2460183612.6056,
+  "realized_pnl": -733112270.1056,
+  "created_at": "2026-09-30T03:07:23+00:00"
+ },
+ {
   "id": 1677847,
   "order_id": 22953,
   "company_id": 1850,
