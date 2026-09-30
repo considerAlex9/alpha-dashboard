@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-09-30T14:31:13.110779+09:00",
+ "captured_at": "2026-09-30T15:34:42.586772+09:00",
  "days": 60,
  "items": [
   {
@@ -15,6 +15,18 @@
    "rcept_no": "20260930900438"
   },
   {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "[기재정정]유형자산취득결정(종속회사의주요경영사항)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-09-30",
+   "filer": "OCI홀딩스",
+   "rcept_no": "20260930800489"
+  },
+  {
    "code": "329180",
    "name": "HD현대중공업",
    "side": "long",
@@ -25,6 +37,54 @@
    "date": "2026-09-30",
    "filer": "HD현대중공업",
    "rcept_no": "20260930800154"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "키움증권",
+   "rcept_no": "20260930000496"
+  },
+  {
+   "code": "079550",
+   "name": "LIG디펜스앤에어로스페이스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "국민연금공단",
+   "rcept_no": "20260930000466"
+  },
+  {
+   "code": "007660",
+   "name": "이수페타시스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "국민연금공단",
+   "rcept_no": "20260930000461"
+  },
+  {
+   "code": "079550",
+   "name": "LIG디펜스앤에어로스페이스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "국민연금공단",
+   "rcept_no": "20260930000458"
   },
   {
    "code": "039490",
@@ -3253,18 +3313,6 @@
    "date": "2026-08-24",
    "filer": "HD현대중공업",
    "rcept_no": "20260824800122"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-24",
-   "filer": "키움증권",
-   "rcept_no": "20260824000280"
   },
   {
    "code": "347850",
