@@ -1,5 +1,35 @@
 [
  {
+  "id": 1673565,
+  "order_id": 22893,
+  "company_id": 16437,
+  "company_name": "코스모로보틱스",
+  "company_symbol": "439960",
+  "side": "short",
+  "quantity": 220000,
+  "price": 7440.3114,
+  "commission": 1636868.5049,
+  "fx_rate": 1.0,
+  "value_krw": 1636868504.8823,
+  "realized_pnl": null,
+  "created_at": "2026-09-30T00:32:12+00:00"
+ },
+ {
+  "id": 1672749,
+  "order_id": 22875,
+  "company_id": 985,
+  "company_name": "Daewoo Engineering & Construction Co. Ltd.",
+  "company_symbol": "047040",
+  "side": "cover",
+  "quantity": 100057,
+  "price": 17612.5355,
+  "commission": 1762257.4632,
+  "fx_rate": 1.0,
+  "value_krw": 1762257463.1871,
+  "realized_pnl": 128655813.3728,
+  "created_at": "2026-09-30T00:25:58+00:00"
+ },
+ {
   "id": 1631765,
   "order_id": 22374,
   "company_id": 37,
