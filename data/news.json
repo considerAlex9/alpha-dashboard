@@ -1,6 +1,143 @@
 {
  "editions": [
   {
+   "id": "2026-09-30-post",
+   "name": "장마감 브리핑",
+   "start": "2026-09-30T09:00:00+09:00",
+   "end": "2026-09-30T16:00:00+09:00",
+   "final": false,
+   "created_at": "2026-09-30T16:08:39.704649+09:00",
+   "post_count": 5,
+   "metrics": [
+    {
+     "label": "국고채 3년물",
+     "value": "4.005%",
+     "chg": "-6.7bp"
+    },
+    {
+     "label": "국고채 10년물",
+     "value": "4.399%",
+     "chg": "-7.1bp"
+    },
+    {
+     "label": "코스피",
+     "value": "6,838.04pt",
+     "chg": "-0.48%"
+    },
+    {
+     "label": "코스닥",
+     "value": "855.91pt",
+     "chg": "+0.72%"
+    }
+   ],
+   "cards": [
+    {
+     "title": "주식 마감 시황",
+     "bullets": [
+      "국내 증시는 유가 하락과 수급 영향에 혼조 마감."
+     ],
+     "numbers": [
+      {
+       "label": "코스피",
+       "value": "6,838.04pt",
+       "chg": "-0.48%"
+      },
+      {
+       "label": "코스닥",
+       "value": "855.91pt",
+       "chg": "+0.72%"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29132",
+     "link_label": "텔레그램 원문",
+     "topic": "국내 증시",
+     "sources": [],
+     "time": "2026-09-30T15:48:47+09:00",
+     "rank": 0
+    },
+    {
+     "title": "채권 마감 시황",
+     "bullets": [
+      "국고채 시장은 국제유가와 재경부 발언을 살피며 강세 마감."
+     ],
+     "numbers": [
+      {
+       "label": "국고채 3년물",
+       "value": "4.005%",
+       "chg": "-6.7bp"
+      },
+      {
+       "label": "국고채 10년물",
+       "value": "4.399%",
+       "chg": "-7.1bp"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29131",
+     "link_label": "텔레그램 원문",
+     "topic": "유가·원자재",
+     "sources": [],
+     "time": "2026-09-30T15:48:34+09:00",
+     "rank": 0
+    },
+    {
+     "title": "중국의 ‘미니 부양책’, GDP 목표 달성 이상의 효과는 제한적",
+     "bullets": [
+      "중국, 경기 둔화 대응 위해 주택담보대출 이자 보조·정책금융 금리 인하·재대출 한도 확대 발표",
+      "담보보완대출 금리 0.25%포인트 인하, 기술·인프라 등을 위한 재대출 한도 7,000억 위안 증액",
+      "신규 생애 첫 주택 대출에 연 1%포인트 보조 제공, 장기 침체한 부동산 수요 회복 시도",
+      "부양책, 2026년 성장률 목표 4.5~5% 달성에는 기여하나 내수·고용·부동산의 구조적 부진 해소에는 역부족",
+      "자본유출 위험·높은 부채·은행 수익성 악화로 대규모 통화완화 제약, 추가 재정지원 필요성 지속"
+     ],
+     "numbers": [],
+     "link": "https://www.bloomberg.com/news/articles/2026-09-30/china-s-mini-stimulus-seen-securing-gdp-target-not-much-more",
+     "link_label": "bloomberg.com",
+     "topic": "경제지표",
+     "sources": [
+      "블룸버그"
+     ],
+     "time": "2026-09-30T15:16:21+09:00",
+     "rank": 2
+    },
+    {
+     "title": "미국 반도체: 에이전틱 AI 경쟁이 AI 데이터센터 TAM을 2030년 2.2조 달러로 끌어올린다",
+     "bullets": [
+      "1. AI 데이터센터 TAM 2.2조 달러로 상향",
+      "CY26~30E AI 데이터센터 시스템 TAM을 종전 1.8조 달러(연 +33%)에서 2.2조 달러(연 +40%)로 상향했으며, 에이전틱 툴 채택과 AI 랩 간 경쟁, 제…",
+      "AI 가속기가 약 1.5조 달러, AI 네트워킹이 약 4,000억 달러를 차지하고, 데이터센터 메모리 매출은 2030E 약 1.3조 달러에 이를 전망",
+      "SOX는 선행 PER 21배로 ChatGPT 이후 중앙값(24배) 대비 12% 낮아, 40%+ 수준의 EPS 성장 잠재력에 비해 매력적이라고 평가",
+      "2. 4분기 Top Picks와 서버 CPU 전망"
+     ],
+     "numbers": [],
+     "link": "https://t.me/Jstockclass/15155",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-09-30T14:23:23+09:00",
+     "rank": 2
+    },
+    {
+     "title": "Anthropic의 5,180억달러 AI 인프라 투자 계획, 대부분 취소 불가능한 계약에 기반 — IPO 문서",
+     "bullets": [
+      "전체 약정액의 약 80%는 실제 사용 여부와 관계없이 지급 의무",
+      "Google·Amazon·Microsoft에 대한 최소 지출 약정만 약 2,500억달러",
+      "Anthropic은 향후 AI 성장의 제약 요인이 ‘수요’가 아니라 ‘컴퓨팅 자원 부족’이 될 것으로 전망"
+     ],
+     "numbers": [],
+     "link": "https://www.reuters.com/business/anthropics-518-billion-ai-buildout-hinges-largely-deals-that-cannot-be-canceled-2026-09-29/",
+     "link_label": "reuters.com",
+     "topic": null,
+     "sources": [
+      "로이터",
+      "IPO 투자설명서"
+     ],
+     "time": "2026-09-30T09:24:45+09:00",
+     "rank": 2
+    }
+   ],
+   "refs": [],
+   "errors": []
+  },
+  {
    "id": "2026-09-30-pre",
    "name": "장전 브리핑",
    "start": "2026-09-29T19:00:00+09:00",
@@ -1987,5 +2124,5 @@
    "errors": []
   }
  ],
- "checked_at": "2026-09-30T15:35:24.878070+09:00"
+ "checked_at": "2026-09-30T16:08:39.704649+09:00"
 }
