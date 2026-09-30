@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-09-30T16:32:52.043015+09:00",
+ "captured_at": "2026-09-30T19:21:21.371554+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,18 @@
    "date": "2026-09-30",
    "filer": "스피어",
    "rcept_no": "20260930900438"
+  },
+  {
+   "code": "329180",
+   "name": "HD현대중공업",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "HD현대중공업",
+   "rcept_no": "20260930801140"
   },
   {
    "code": "082740",
@@ -61,6 +73,18 @@
    "date": "2026-09-30",
    "filer": "HD현대중공업",
    "rcept_no": "20260930800154"
+  },
+  {
+   "code": "000660",
+   "name": "SK하이닉스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "서진우",
+   "rcept_no": "20260930000861"
   },
   {
    "code": "039490",
