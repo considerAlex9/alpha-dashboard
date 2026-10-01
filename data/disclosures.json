@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-01T08:13:25.031383+09:00",
+ "captured_at": "2026-10-01T09:38:46.124202+09:00",
  "days": 60,
  "items": [
   {
@@ -277,18 +277,6 @@
    "date": "2026-09-29",
    "filer": "드림텍",
    "rcept_no": "20260929800154"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결(자율공시)",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-29",
-   "filer": "한미반도체",
-   "rcept_no": "20260929800083"
   },
   {
    "code": "042660",
@@ -745,18 +733,6 @@
    "date": "2026-09-18",
    "filer": "HD현대중공업",
    "rcept_no": "20260918800250"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한미반도체",
-   "rcept_no": "20260918800064"
   },
   {
    "code": "272210",
@@ -1275,18 +1251,6 @@
    "rcept_no": "20260914800398"
   },
   {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-14",
-   "filer": "한미반도체",
-   "rcept_no": "20260914800059"
-  },
-  {
    "code": "439960",
    "name": "코스모로보틱스",
    "side": "short",
@@ -1801,18 +1765,6 @@
    "date": "2026-09-09",
    "filer": "키움증권",
    "rcept_no": "20260909000202"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등거래계획보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "곽동신",
-   "rcept_no": "20260909000058"
   },
   {
    "code": "066970",
@@ -2799,18 +2751,6 @@
    "rcept_no": "20260828800130"
   },
   {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "한미반도체",
-   "rcept_no": "20260828800101"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -3783,42 +3723,6 @@
    "rcept_no": "20260819800197"
   },
   {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "한미반도체",
-   "rcept_no": "20260819800096"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "한미반도체",
-   "rcept_no": "20260819800095"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "한미반도체",
-   "rcept_no": "20260819800093"
-  },
-  {
    "code": "000660",
    "name": "SK하이닉스",
    "side": "long",
@@ -3841,18 +3745,6 @@
    "date": "2026-08-18",
    "filer": "삼양식품",
    "rcept_no": "20260818800427"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "유형자산취득결정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-18",
-   "filer": "한미반도체",
-   "rcept_no": "20260818800167"
   },
   {
    "code": "095610",
@@ -3961,18 +3853,6 @@
    "date": "2026-08-14",
    "filer": "GS",
    "rcept_no": "20260814003779"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "한미반도체",
-   "rcept_no": "20260814003665"
   },
   {
    "code": "006400",
@@ -4837,18 +4717,6 @@
    "date": "2026-08-10",
    "filer": "유가증권시장본부",
    "rcept_no": "20260810800101"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "기타경영사항(자율공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "한미반도체",
-   "rcept_no": "20260810800065"
   },
   {
    "code": "259960",

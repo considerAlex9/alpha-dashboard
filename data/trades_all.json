@@ -1,5 +1,20 @@
 [
  {
+  "id": 1747514,
+  "order_id": 23818,
+  "company_id": 942,
+  "company_name": "Hanmi Semiconductor Co., Ltd.",
+  "company_symbol": "042700",
+  "side": "cover",
+  "quantity": 8436,
+  "price": 265385.4549,
+  "commission": 2238791.6976,
+  "fx_rate": 1.0,
+  "value_krw": 2238791697.6038,
+  "realized_pnl": -251782273.3154,
+  "created_at": "2026-10-01T00:02:04+00:00"
+ },
+ {
   "id": 1702082,
   "order_id": 23273,
   "company_id": 16523,
