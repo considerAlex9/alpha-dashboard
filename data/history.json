@@ -124,5 +124,23 @@
   "gross_exposure": 60587782280.0,
   "rank": 61,
   "participants": 209
+ },
+ {
+  "date": "2026-10-02",
+  "captured_at": "2026-10-02T08:07:31.674816+09:00",
+  "price_as_of": "2026-10-01T21:50:31Z",
+  "nav": 100101417387.2315,
+  "total_pnl": 101417387.23150635,
+  "total_pnl_pct": 0.0010141738723150634,
+  "realized_pnl": -1336410949.8703,
+  "unrealized_pnl": 1564116207.6589,
+  "max_drawdown_pct": -0.0116626,
+  "sharpe_ratio": -0.0696,
+  "long_mv": 36862803420.0,
+  "short_mv": 24165293450.0,
+  "net_exposure_pct": 0.12684645533919922,
+  "gross_exposure": 61028096870.0,
+  "rank": 60,
+  "participants": 209
  }
 ]
