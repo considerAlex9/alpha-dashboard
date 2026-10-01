@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-01T16:12:02.480903+09:00",
+ "captured_at": "2026-10-01T16:29:30.672433+09:00",
  "days": 60,
  "items": [
   {
@@ -37,6 +37,30 @@
    "date": "2026-10-01",
    "filer": "하나금융지주",
    "rcept_no": "20261001800144"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "[기재정정]투자설명서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-01",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261001000485"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "[발행조건확정]증권신고서(지분증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-01",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261001000477"
   },
   {
    "code": "207940",
