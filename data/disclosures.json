@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-01T14:27:01.427921+09:00",
+ "captured_at": "2026-10-01T15:37:24.105614+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "유상증자신주발행가액(안내공시)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-01",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261001800318"
+  },
   {
    "code": "086790",
    "name": "하나금융지주",
@@ -13,6 +25,54 @@
    "date": "2026-10-01",
    "filer": "하나금융지주",
    "rcept_no": "20261001800144"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-01",
+   "filer": "키움증권",
+   "rcept_no": "20261001000403"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-01",
+   "filer": "키움증권",
+   "rcept_no": "20261001000384"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-01",
+   "filer": "키움증권",
+   "rcept_no": "20261001000363"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-01",
+   "filer": "키움증권",
+   "rcept_no": "20261001000310"
   },
   {
    "code": "039490",
@@ -3111,42 +3171,6 @@
    "rcept_no": "20260827000268"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-27",
-   "filer": "키움증권",
-   "rcept_no": "20260827000200"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-27",
-   "filer": "키움증권",
-   "rcept_no": "20260827000188"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-27",
-   "filer": "키움증권",
-   "rcept_no": "20260827000184"
-  },
-  {
    "code": "078930",
    "name": "GS",
    "side": "long",
@@ -3205,18 +3229,6 @@
    "date": "2026-08-26",
    "filer": "새로닉스",
    "rcept_no": "20260826000546"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-26",
-   "filer": "키움증권",
-   "rcept_no": "20260826000471"
   },
   {
    "code": "006400",
