@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-02T15:31:23.426442+09:00",
+ "captured_at": "2026-10-02T16:11:50.465268+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,66 @@
    "date": "2026-10-02",
    "filer": "GS",
    "rcept_no": "20261002800330"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000471"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "심동윤",
+   "rcept_no": "20261002000450"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "오성권",
+   "rcept_no": "20261002000443"
+  },
+  {
+   "code": "079550",
+   "name": "LIG디펜스앤에어로스페이스",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000439"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000438"
   },
   {
    "code": "062040",
@@ -3181,18 +3241,6 @@
    "date": "2026-08-28",
    "filer": "키움증권",
    "rcept_no": "20260828001831"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "키움증권",
-   "rcept_no": "20260828001767"
   },
   {
    "code": "207940",
