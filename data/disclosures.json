@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-02T13:26:37.699879+09:00",
+ "captured_at": "2026-10-02T14:26:33.034017+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,66 @@
    "date": "2026-10-02",
    "filer": "GS",
    "rcept_no": "20261002800330"
+  },
+  {
+   "code": "066970",
+   "name": "엘앤에프",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000292"
+  },
+  {
+   "code": "222800",
+   "name": "심텍",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000233"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "키움증권",
+   "rcept_no": "20261002000231"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "키움증권",
+   "rcept_no": "20261002000223"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "키움증권",
+   "rcept_no": "20261002000217"
   },
   {
    "code": "039490",
@@ -385,18 +445,6 @@
    "date": "2026-09-30",
    "filer": "키움증권",
    "rcept_no": "20260930000655"
-  },
-  {
-   "code": "354320",
-   "name": "알멕",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "다이엑스",
-   "rcept_no": "20260930000558"
   },
   {
    "code": "039490",
@@ -1023,18 +1071,6 @@
    "rcept_no": "20260918000460"
   },
   {
-   "code": "354320",
-   "name": "알멕",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "다이엑스",
-   "rcept_no": "20260918000333"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1479,18 +1515,6 @@
    "rcept_no": "20260914000269"
   },
   {
-   "code": "131290",
-   "name": "티에스이",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-14",
-   "filer": "삼성자산운용",
-   "rcept_no": "20260914000254"
-  },
-  {
    "code": "095610",
    "name": "테스",
    "side": "long",
@@ -1609,6 +1633,18 @@
    "date": "2026-09-11",
    "filer": "이종화",
    "rcept_no": "20260911000383"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "자기주식취득결과보고서",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-11",
+   "filer": "케이티",
+   "rcept_no": "20260911000358"
   },
   {
    "code": "086790",
@@ -1875,6 +1911,18 @@
    "rcept_no": "20260909800003"
   },
   {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-09",
+   "filer": "한국산업은행",
+   "rcept_no": "20260909000435"
+  },
+  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1885,6 +1933,18 @@
    "date": "2026-09-09",
    "filer": "키움증권",
    "rcept_no": "20260909000410"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "신탁계약해지결과보고서",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-09",
+   "filer": "케이티",
+   "rcept_no": "20260909000391"
   },
   {
    "code": "259960",
@@ -1909,6 +1969,18 @@
    "date": "2026-09-09",
    "filer": "키움증권",
    "rcept_no": "20260909000351"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "주요사항보고서(자기주식취득신탁계약해지결정)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-09",
+   "filer": "케이티",
+   "rcept_no": "20260909000349"
   },
   {
    "code": "039490",
@@ -2041,18 +2113,6 @@
    "date": "2026-09-07",
    "filer": "스피어",
    "rcept_no": "20260907900282"
-  },
-  {
-   "code": "252990",
-   "name": "샘씨엔에스",
-   "side": "long",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "샘씨엔에스",
-   "rcept_no": "20260907900184"
   },
   {
    "code": "078930",
@@ -2415,18 +2475,6 @@
    "rcept_no": "20260903000080"
   },
   {
-   "code": "131290",
-   "name": "티에스이",
-   "side": "long",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "티에스이",
-   "rcept_no": "20260902900204"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -2595,6 +2643,18 @@
    "rcept_no": "20260901900467"
   },
   {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260901800425"
+  },
+  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -2643,6 +2703,18 @@
    "rcept_no": "20260901000233"
   },
   {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "자기주식처분결과보고서",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260901000214"
+  },
+  {
    "code": "078930",
    "name": "GS",
    "side": "long",
@@ -2653,6 +2725,66 @@
    "date": "2026-09-01",
    "filer": "허광수",
    "rcept_no": "20260901000212"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "임태섭",
+   "rcept_no": "20260901000208"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "이성엽",
+   "rcept_no": "20260901000205"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "오혜연",
+   "rcept_no": "20260901000202"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "노미경",
+   "rcept_no": "20260901000199"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "김창보",
+   "rcept_no": "20260901000194"
   },
   {
    "code": "222800",
@@ -3003,18 +3135,6 @@
    "rcept_no": "20260828001147"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "키움증권",
-   "rcept_no": "20260828000947"
-  },
-  {
    "code": "000660",
    "name": "SK하이닉스",
    "side": "long",
@@ -3025,18 +3145,6 @@
    "date": "2026-08-28",
    "filer": "SK하이닉스",
    "rcept_no": "20260828000879"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "키움증권",
-   "rcept_no": "20260828000829"
   },
   {
    "code": "079550",
@@ -3075,6 +3183,18 @@
    "rcept_no": "20260828000319"
   },
   {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-28",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260828000124"
+  },
+  {
    "code": "329180",
    "name": "HD현대중공업",
    "side": "long",
@@ -3111,6 +3231,30 @@
    "rcept_no": "20260828000001"
   },
   {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "타법인주식및출자증권처분결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-27",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260827800684"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "회사분할결정(종속회사의주요경영사항)",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-27",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260827800679"
+  },
+  {
    "code": "329180",
    "name": "HD현대중공업",
    "side": "long",
@@ -3135,16 +3279,16 @@
    "rcept_no": "20260827000908"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "주요사항보고서(자기주식처분결정)",
+   "category": "자사주·배당",
    "important": false,
    "correction": false,
    "date": "2026-08-27",
-   "filer": "키움증권",
-   "rcept_no": "20260827000824"
+   "filer": "SK텔레콤",
+   "rcept_no": "20260827000390"
   },
   {
    "code": "078930",
@@ -3205,6 +3349,18 @@
    "date": "2026-08-26",
    "filer": "새로닉스",
    "rcept_no": "20260826000546"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-26",
+   "filer": "케이티",
+   "rcept_no": "20260826000341"
   },
   {
    "code": "006400",
@@ -3687,6 +3843,18 @@
    "rcept_no": "20260820000123"
   },
   {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-19",
+   "filer": "알지노믹스",
+   "rcept_no": "20260819900641"
+  },
+  {
    "code": "000660",
    "name": "SK하이닉스",
    "side": "long",
@@ -3867,6 +4035,18 @@
    "rcept_no": "20260814003509"
   },
   {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "케이티",
+   "rcept_no": "20260814003463"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -3925,18 +4105,6 @@
    "date": "2026-08-14",
    "filer": "삼양식품",
    "rcept_no": "20260814003053"
-  },
-  {
-   "code": "354320",
-   "name": "알멕",
-   "side": "long",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "알멕",
-   "rcept_no": "20260814002981"
   },
   {
    "code": "329180",
@@ -4009,18 +4177,6 @@
    "date": "2026-08-14",
    "filer": "오현진",
    "rcept_no": "20260814002654"
-  },
-  {
-   "code": "131290",
-   "name": "티에스이",
-   "side": "long",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "티에스이",
-   "rcept_no": "20260814002616"
   },
   {
    "code": "035420",
@@ -4117,18 +4273,6 @@
    "date": "2026-08-14",
    "filer": "NAVER",
    "rcept_no": "20260814002266"
-  },
-  {
-   "code": "252990",
-   "name": "샘씨엔에스",
-   "side": "long",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "샘씨엔에스",
-   "rcept_no": "20260814001644"
   },
   {
    "code": "078930",
@@ -4275,6 +4419,30 @@
    "rcept_no": "20260813001778"
   },
   {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-13",
+   "filer": "알지노믹스",
+   "rcept_no": "20260813001761"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-13",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260813001728"
+  },
+  {
    "code": "222800",
    "name": "심텍",
    "side": "long",
@@ -4323,6 +4491,18 @@
    "rcept_no": "20260813000486"
   },
   {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-13",
+   "filer": "케이티",
+   "rcept_no": "20260813000374"
+  },
+  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -4333,6 +4513,18 @@
    "date": "2026-08-13",
    "filer": "한화시스템",
    "rcept_no": "20260813000245"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-13",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260813000153"
   },
   {
    "code": "078930",
@@ -4381,6 +4573,42 @@
    "date": "2026-08-12",
    "filer": "롯데에너지머티리얼즈",
    "rcept_no": "20260812800576"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "기업가치제고계획(자율공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-12",
+   "filer": "케이티",
+   "rcept_no": "20260812800092"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-12",
+   "filer": "케이티",
+   "rcept_no": "20260812800090"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-12",
+   "filer": "케이티",
+   "rcept_no": "20260812800089"
   },
   {
    "code": "042660",
@@ -4803,6 +5031,18 @@
    "rcept_no": "20260807800589"
   },
   {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-07",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260807800543"
+  },
+  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -5019,18 +5259,6 @@
    "rcept_no": "20260805900457"
   },
   {
-   "code": "252990",
-   "name": "샘씨엔에스",
-   "side": "long",
-   "title": "영업(잠정)실적(공정공시)",
-   "category": "실적",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-05",
-   "filer": "샘씨엔에스",
-   "rcept_no": "20260805900145"
-  },
-  {
    "code": "000660",
    "name": "SK하이닉스",
    "side": "long",
@@ -5041,6 +5269,30 @@
    "date": "2026-08-05",
    "filer": "SK하이닉스",
    "rcept_no": "20260805800806"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-05",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260805800077"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-05",
+   "filer": "SK텔레콤",
+   "rcept_no": "20260805800075"
   },
   {
    "code": "000660",
@@ -5283,16 +5535,28 @@
    "rcept_no": "20260803000429"
   },
   {
-   "code": "252990",
-   "name": "샘씨엔에스",
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-03",
+   "filer": "국민연금공단",
+   "rcept_no": "20260803000428"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
    "side": "long",
    "title": "임원ㆍ주요주주특정증권등소유상황보고서",
    "category": "지분 변동",
    "important": false,
    "correction": false,
    "date": "2026-08-03",
-   "filer": "이창원",
-   "rcept_no": "20260803000246"
+   "filer": "하명복",
+   "rcept_no": "20260803000395"
   }
  ]
 }
