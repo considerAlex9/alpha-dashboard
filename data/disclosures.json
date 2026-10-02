@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-02T16:11:50.465268+09:00",
+ "captured_at": "2026-10-02T16:31:53.545326+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "328130",
+   "name": "루닛",
+   "side": "short",
+   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "루닛",
+   "rcept_no": "20261002900904"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결(자율공시)",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261002800830"
+  },
   {
    "code": "078930",
    "name": "GS",
