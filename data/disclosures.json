@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-02T10:26:12.279426+09:00",
+ "captured_at": "2026-10-02T11:24:35.667287+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "066970",
+   "name": "엘앤에프",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "새로닉스",
+   "rcept_no": "20261002000082"
+  },
   {
    "code": "039490",
    "name": "키움증권",
