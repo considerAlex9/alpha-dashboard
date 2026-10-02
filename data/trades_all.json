@@ -1,5 +1,35 @@
 [
  {
+  "id": 1811390,
+  "order_id": 25010,
+  "company_id": 13,
+  "company_name": "Doosan Co., Ltd.",
+  "company_symbol": "000150",
+  "side": "sell",
+  "quantity": 1378,
+  "price": 1314792.4233,
+  "commission": 1811783.9593,
+  "fx_rate": 1.0,
+  "value_krw": 1811783959.348,
+  "realized_pnl": -191270812.4532,
+  "created_at": "2026-10-02T01:05:04+00:00"
+ },
+ {
+  "id": 1810915,
+  "order_id": 24994,
+  "company_id": 757,
+  "company_name": "PSK Holdings Inc.",
+  "company_symbol": "031980",
+  "side": "sell",
+  "quantity": 11380,
+  "price": 194244.6701,
+  "commission": 2210504.3458,
+  "fx_rate": 1.0,
+  "value_krw": 2210504345.8062,
+  "realized_pnl": 328002091.6402,
+  "created_at": "2026-10-02T01:00:06+00:00"
+ },
+ {
   "id": 1747514,
   "order_id": 23818,
   "company_id": 942,

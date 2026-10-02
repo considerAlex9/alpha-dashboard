@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-02T09:36:52.132658+09:00",
+ "captured_at": "2026-10-02T10:26:12.279426+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "키움증권",
+   "rcept_no": "20261002000036"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "키움증권",
+   "rcept_no": "20261002000035"
+  },
   {
    "code": "328130",
    "name": "루닛",
@@ -615,18 +639,6 @@
    "rcept_no": "20260923000623"
   },
   {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "김용운",
-   "rcept_no": "20260923000504"
-  },
-  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -637,18 +649,6 @@
    "date": "2026-09-23",
    "filer": "장병규",
    "rcept_no": "20260923000499"
-  },
-  {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "이준호",
-   "rcept_no": "20260923000490"
   },
   {
    "code": "039490",
@@ -951,18 +951,6 @@
    "rcept_no": "20260918000460"
   },
   {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "박정원",
-   "rcept_no": "20260918000335"
-  },
-  {
    "code": "354320",
    "name": "알멕",
    "side": "long",
@@ -1131,30 +1119,6 @@
    "rcept_no": "20260917800269"
   },
   {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "투자판단관련주요경영사항 (채무보증 제공의 건)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "두산",
-   "rcept_no": "20260917800260"
-  },
-  {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "투자판단관련주요경영사항 (증설 투자의 건)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "두산",
-   "rcept_no": "20260917800240"
-  },
-  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -1165,30 +1129,6 @@
    "date": "2026-09-17",
    "filer": "유가증권시장본부",
    "rcept_no": "20260917800184"
-  },
-  {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "매매거래정지및정지해제(중요내용공시)",
-   "category": "거래정지·관리",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "유가증권시장본부",
-   "rcept_no": "20260917800165"
-  },
-  {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "주식소각결정",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "두산",
-   "rcept_no": "20260917800163"
   },
   {
    "code": "035420",
@@ -1249,18 +1189,6 @@
    "date": "2026-09-17",
    "filer": "키움증권",
    "rcept_no": "20260917000138"
-  },
-  {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "특수관계인에대한담보제공",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "두산",
-   "rcept_no": "20260917000118"
   },
   {
    "code": "039490",
@@ -2451,30 +2379,6 @@
    "rcept_no": "20260902000239"
   },
   {
-   "code": "031980",
-   "name": "피에스케이홀딩스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "박경수",
-   "rcept_no": "20260902000222"
-  },
-  {
-   "code": "031980",
-   "name": "피에스케이홀딩스",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "박경수",
-   "rcept_no": "20260902000220"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -2835,18 +2739,6 @@
    "rcept_no": "20260831000793"
   },
   {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "두산",
-   "rcept_no": "20260831000717"
-  },
-  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -3205,30 +3097,6 @@
    "date": "2026-08-27",
    "filer": "키움증권",
    "rcept_no": "20260827000776"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-27",
-   "filer": "키움증권",
-   "rcept_no": "20260827000338"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-27",
-   "filer": "키움증권",
-   "rcept_no": "20260827000268"
   },
   {
    "code": "078930",
@@ -3663,18 +3531,6 @@
    "rcept_no": "20260820900468"
   },
   {
-   "code": "031980",
-   "name": "피에스케이홀딩스",
-   "side": "long",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "피에스케이홀딩스",
-   "rcept_no": "20260820900128"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -3877,18 +3733,6 @@
    "date": "2026-08-14",
    "filer": "드림텍",
    "rcept_no": "20260814004101"
-  },
-  {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "두산",
-   "rcept_no": "20260814004047"
   },
   {
    "code": "086790",
@@ -4227,18 +4071,6 @@
    "rcept_no": "20260814002266"
   },
   {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "[기재정정]지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-14",
-   "filer": "두산",
-   "rcept_no": "20260814001723"
-  },
-  {
    "code": "252990",
    "name": "샘씨엔에스",
    "side": "long",
@@ -4249,18 +4081,6 @@
    "date": "2026-08-14",
    "filer": "샘씨엔에스",
    "rcept_no": "20260814001644"
-  },
-  {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "두산",
-   "rcept_no": "20260814001555"
   },
   {
    "code": "078930",
@@ -4357,18 +4177,6 @@
    "date": "2026-08-14",
    "filer": "엘앤에프",
    "rcept_no": "20260814000818"
-  },
-  {
-   "code": "031980",
-   "name": "피에스케이홀딩스",
-   "side": "long",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "피에스케이홀딩스",
-   "rcept_no": "20260814000743"
   },
   {
    "code": "259960",
@@ -5437,18 +5245,6 @@
    "date": "2026-08-03",
    "filer": "이창원",
    "rcept_no": "20260803000246"
-  },
-  {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "[첨부정정]주요사항보고서(타법인주식및출자증권양수결정)",
-   "category": "합병·분할",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-03",
-   "filer": "두산",
-   "rcept_no": "20260803000139"
   }
  ]
 }
