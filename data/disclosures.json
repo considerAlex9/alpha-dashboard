@@ -1,7 +1,67 @@
 {
- "captured_at": "2026-10-02T12:30:35.749027+09:00",
+ "captured_at": "2026-10-02T13:26:37.699879+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "078930",
+   "name": "GS",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "GS",
+   "rcept_no": "20261002800330"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "키움증권",
+   "rcept_no": "20261002000205"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "키움증권",
+   "rcept_no": "20261002000201"
+  },
+  {
+   "code": "095610",
+   "name": "테스",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000192"
+  },
+  {
+   "code": "078930",
+   "name": "GS",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "허창수",
+   "rcept_no": "20261002000155"
+  },
   {
    "code": "066970",
    "name": "엘앤에프",
@@ -3085,30 +3145,6 @@
    "date": "2026-08-27",
    "filer": "키움증권",
    "rcept_no": "20260827000824"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-27",
-   "filer": "키움증권",
-   "rcept_no": "20260827000817"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-27",
-   "filer": "키움증권",
-   "rcept_no": "20260827000776"
   },
   {
    "code": "078930",
