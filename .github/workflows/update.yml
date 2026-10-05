@@ -12,7 +12,7 @@ on:
   workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
   push:                   # 코드를 고치면 바로 한 번 돌려서 사이트에 반영
     branches: [main]
-    paths: ["*.py", "template.html", ".github/workflows/**"]
+    paths: ["*.py", "template.html", "sectors.json", "limits.json", "market_themes.json", ".github/workflows/**"]
 
 permissions:
   contents: write
@@ -36,6 +36,8 @@ jobs:
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           DASH_PASSWORD: ${{ secrets.DASH_PASSWORD }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}   # 없으면 알림만 건너뜀
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           COMPETITION_ID: "9"
         run: |
           pip install -q cryptography

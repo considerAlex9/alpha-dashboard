@@ -13,6 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone, timedelta
+from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
 WORKERS = 4            # 한국투자증권 동시 조회 수 (초당 한도는 kis.py 가 지킴)
@@ -195,6 +196,29 @@ def _kis_stock_extra(kis, code):
             "short_amt5": sum(_num(r["ssts_tr_pbmn"]) for r in sh)}
 
 
+def theme_board(kis, safe, kospi_bars):
+    """테마별 대표 종목의 전일 대비 등락률 → 테마 평균 (단순 평균)"""
+    T = json.loads((Path(__file__).resolve().parent / "market_themes.json").read_text(encoding="utf-8"))
+    items = [(t, c, n) for t, m in T.items() if not t.startswith("_") for c, n in m.items()]
+
+    def one(it):
+        t, c, n = it
+        return t, c, n, safe(f"한투 현재가 {c}", lambda: kis.price(c))
+    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+        res = list(ex.map(one, items))
+    board = {}
+    for t, c, n, info in res:
+        if info and info.get("price"):
+            board.setdefault(t, []).append({"code": c, "name": n, "chg1": round(info["chg1"], 4),
+                                            "mcap": info["mcap"], "tv": info["tv"]})
+    rows = []
+    for t, st in board.items():
+        rows.append({"theme": t, "chg1": round(sum(r["chg1"] for r in st) / len(st), 4),
+                     "up": sum(r["chg1"] > 0 for r in st), "down": sum(r["chg1"] < 0 for r in st),
+                     "stocks": sorted(st, key=lambda r: -r["chg1"])})
+    return {"date": kospi_bars[-1][0] if kospi_bars else None, "rows": sorted(rows, key=lambda r: -r["chg1"])}
+
+
 def collect(positions, kis_keys=None, log=print, prev=None):
     """prev: 지난번 market.json — REUSE_HOURS 안이면 느린 부분을 재사용한다"""
     now = datetime.now(KST)
@@ -312,6 +336,12 @@ def collect(positions, kis_keys=None, log=print, prev=None):
                 list(ex.map(enrich, todo))
         out["warnings"] = warn
     log(f"  · 시장경보 {time.time() - t0:.0f}초")
+
+    # ---------- 테마별 오늘 등락판 (market_themes.json 의 대표 종목 현재가) ----------
+    if kis:
+        t0 = time.time()
+        out["themes"] = safe("테마 등락판", lambda: theme_board(kis, safe, idx.get("KOSPI")))
+        log(f"  · 테마 등락판 {time.time() - t0:.0f}초")
 
     # ---------- 페어 분석용 종목 묶음: 보유 종목 + 코스피·코스닥 시총 상위 ----------
     t0 = time.time()

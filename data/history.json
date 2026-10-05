@@ -1,6 +1,6 @@
 [
  {
-  "date": "2026-09-25",
+  "date": "2026-09-23",
   "captured_at": "2026-09-25T23:57:52.959624+09:00",
   "price_as_of": "2026-09-25T14:50:31Z",
   "nav": 100072254303.0439,
@@ -15,42 +15,7 @@
   "net_exposure_pct": 0.07387106087981016,
   "gross_exposure": 55060801590.0,
   "rank": 45,
-  "participants": 209
- },
- {
-  "date": "2026-09-26",
-  "captured_at": "2026-09-26T09:44:42.424638+09:00",
-  "price_as_of": "2026-09-25T21:50:31Z",
-  "nav": 100072254303.0439,
-  "total_pnl": 72254303.04389954,
-  "total_pnl_pct": 0.0007225430304389954,
-  "realized_pnl": -433405825.9157,
-  "unrealized_pnl": 599438050.7984,
-  "max_drawdown_pct": -0.00739484,
-  "sharpe_ratio": 0.2689,
-  "long_mv": 31226622590.0,
-  "short_mv": 23834179000.0,
-  "net_exposure_pct": 0.07387106087981016,
-  "gross_exposure": 55060801590.0,
-  "rank": 45,
-  "participants": 209
- },
- {
-  "date": "2026-09-27",
-  "captured_at": "2026-09-27T16:00:02.509441+09:00",
-  "price_as_of": "2026-09-25T21:50:31Z",
-  "nav": 100072254303.0439,
-  "total_pnl": 72254303.04389954,
-  "total_pnl_pct": 0.0007225430304389954,
-  "realized_pnl": -433405825.9157,
-  "unrealized_pnl": 599438050.7984,
-  "max_drawdown_pct": -0.00739484,
-  "sharpe_ratio": 0.2689,
-  "long_mv": 31226622590.0,
-  "short_mv": 23834179000.0,
-  "net_exposure_pct": 0.07387106087981016,
-  "gross_exposure": 55060801590.0,
-  "rank": 45,
+  "score": 0.5276,
   "participants": 209
  },
  {
@@ -69,6 +34,7 @@
   "net_exposure_pct": 0.0769744615042276,
   "gross_exposure": 62106569320.0,
   "rank": 50,
+  "score": 0.5499,
   "participants": 209
  },
  {
@@ -87,6 +53,7 @@
   "net_exposure_pct": 0.08396075261724009,
   "gross_exposure": 58250732110.0,
   "rank": 46,
+  "score": 0.5453,
   "participants": 209
  },
  {
@@ -105,6 +72,7 @@
   "net_exposure_pct": 0.09591548961143155,
   "gross_exposure": 60721250610.0,
   "rank": 79,
+  "score": 0.499,
   "participants": 209
  },
  {
@@ -123,6 +91,7 @@
   "net_exposure_pct": 0.12552444567193138,
   "gross_exposure": 60587782280.0,
   "rank": 61,
+  "score": 0.5419,
   "participants": 209
  },
  {
@@ -141,24 +110,7 @@
   "net_exposure_pct": 0.00438755233360505,
   "gross_exposure": 59277728750.0,
   "rank": 50,
-  "participants": 209
- },
- {
-  "date": "2026-10-05",
-  "captured_at": "2026-10-05T19:18:01.236534+09:00",
-  "price_as_of": "2026-10-05T06:50:30Z",
-  "nav": 100394291869.3706,
-  "total_pnl": 394291869.37060547,
-  "total_pnl_pct": 0.0039429186937060545,
-  "realized_pnl": -768759247.8268,
-  "unrealized_pnl": 1307639132.3228,
-  "max_drawdown_pct": -0.0116626,
-  "sharpe_ratio": 0.7278,
-  "long_mv": 29816140780.0,
-  "short_mv": 29493906920.0,
-  "net_exposure_pct": 0.0032096830805807067,
-  "gross_exposure": 59310047700.0,
-  "rank": 52,
+  "score": 0.5552,
   "participants": 209
  }
 ]

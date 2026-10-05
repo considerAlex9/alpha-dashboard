@@ -1,0 +1,105 @@
+{
+ "captured_at": "2026-10-05T22:48:41.284397+09:00",
+ "source": "Forex Factory 주간 일정",
+ "events": [
+  {
+   "key": "CNY|Bank Holiday|2026-10-05",
+   "time": "2026-10-05T08:01:00+09:00",
+   "country": "중국",
+   "title": "휴장 (공휴일)",
+   "title_en": "Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|ISM Services PMI|2026-10-05",
+   "time": "2026-10-05T23:00:00+09:00",
+   "country": "미국",
+   "title": "ISM 서비스업 지수",
+   "title_en": "ISM Services PMI",
+   "impact": "보통",
+   "forecast": "55.1",
+   "previous": "55.4",
+   "actual": ""
+  },
+  {
+   "key": "CNY|Bank Holiday|2026-10-06",
+   "time": "2026-10-06T08:01:00+09:00",
+   "country": "중국",
+   "title": "휴장 (공휴일)",
+   "title_en": "Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "JPY|BOJ Gov Ueda Speaks|2026-10-06",
+   "time": "2026-10-06T15:35:00+09:00",
+   "country": "일본",
+   "title": "일본은행 총재 우에다 발언",
+   "title_en": "BOJ Gov Ueda Speaks",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "CNY|Bank Holiday|2026-10-07",
+   "time": "2026-10-07T08:01:00+09:00",
+   "country": "중국",
+   "title": "휴장 (공휴일)",
+   "title_en": "Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|FOMC Meeting Minutes|2026-10-08",
+   "time": "2026-10-08T03:00:00+09:00",
+   "country": "미국",
+   "title": "FOMC 의사록 공개",
+   "title_en": "FOMC Meeting Minutes",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|Unemployment Claims|2026-10-08",
+   "time": "2026-10-08T21:30:00+09:00",
+   "country": "미국",
+   "title": "주간 신규 실업수당 청구",
+   "title_en": "Unemployment Claims",
+   "impact": "보통",
+   "forecast": "200K",
+   "previous": "197K",
+   "actual": ""
+  },
+  {
+   "key": "USD|Prelim UoM Consumer Sentiment|2026-10-09",
+   "time": "2026-10-09T23:00:00+09:00",
+   "country": "미국",
+   "title": "미시간대 소비자심리 (예비)",
+   "title_en": "Prelim UoM Consumer Sentiment",
+   "impact": "보통",
+   "forecast": "47.6",
+   "previous": "47.8",
+   "actual": ""
+  },
+  {
+   "key": "USD|Prelim UoM Inflation Expectations|2026-10-09",
+   "time": "2026-10-09T23:00:00+09:00",
+   "country": "미국",
+   "title": "미시간대 기대인플레이션 (예비)",
+   "title_en": "Prelim UoM Inflation Expectations",
+   "impact": "보통",
+   "forecast": "",
+   "previous": "4.6%",
+   "actual": ""
+  }
+ ]
+}
