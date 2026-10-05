@@ -437,16 +437,6 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
       </div>
     </section>
 
-    <section class="card mt" id="newscard">
-      <div class="card-h">
-        <div><h3><svg class="i"><use href="#i-globe"/></svg>매크로 뉴스 브리핑</h3><div class="sub" id="newssub"></div></div>
-        <div class="seg" id="newsed"></div>
-        <button class="link" data-go="holdings" id="ckptlink">보유종목 체크 포인트<svg class="i"><use href="#i-arrow"/></svg></button>
-      </div>
-      <div id="newshead"></div>
-      <div id="newsbody"></div>
-    </section>
-
     <section class="card mt">
       <div class="card-h">
         <div><h3>하루 손익 원인</h3><div class="sub" id="attrsub"></div></div>
@@ -517,6 +507,15 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   <div class="panel" id="p-market">
     <div class="ph"><div><h2>시장 동향</h2><p id="mktsub">국내 지수와 투자자별 수급</p></div></div>
     <section class="grid c3" id="idxcards"></section>
+    <section class="card mt" id="newscard">
+      <div class="card-h">
+        <div><h3><svg class="i"><use href="#i-globe"/></svg>매크로 뉴스 브리핑</h3><div class="sub" id="newssub"></div></div>
+        <div class="seg" id="newsed"></div>
+        <button class="link" data-go="holdings" id="ckptlink">보유종목 체크 포인트<svg class="i"><use href="#i-arrow"/></svg></button>
+      </div>
+      <div id="newshead"></div>
+      <div id="newsbody"></div>
+    </section>
     <section class="card mt">
       <div class="card-h">
         <div><h3>테마별 오늘 등락</h3><div class="sub" id="heatsub"></div></div>
@@ -948,7 +947,6 @@ function renderPortfolio(){
   ].join('');
 
   renderRisk();
-  renderNews();
   renderAttr();
   renderThemes();
 
@@ -1608,7 +1606,7 @@ if(nHeldWarn){ const b=document.getElementById('alertbadge'); b.hidden=false; b.
 const nNewDisc=DISC.filter(d=>d.important&&d.date>=daysAgo(3)).length;
 if(nNewDisc){ const b=document.getElementById('discbadge'); b.hidden=false; b.textContent=nNewDisc; b.title=`최근 3일 중요 공시 ${nNewDisc}건`; }
 const drawn={};
-const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();drawRank();}, market:()=>{renderMarket();drawIdx();renderHeat();}, global:renderGlobal,
+const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();drawRank();}, market:()=>{renderMarket();renderNews();drawIdx();renderHeat();}, global:renderGlobal,
   holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContestGate};
 const REDRAW={portfolio:()=>{drawNav();drawRank();}, market:()=>{renderMarket();drawIdx();}, global:renderGlobal, pair:drawPair, contest:renderContest};
 let cur=null;
