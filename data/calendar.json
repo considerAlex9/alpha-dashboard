@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-05T23:14:20.595009+09:00",
+ "captured_at": "2026-10-06T08:12:34.602673+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
   {
@@ -63,6 +63,28 @@
    "country": "미국",
    "title": "FOMC 의사록 공개",
    "title_en": "FOMC Meeting Minutes",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|FOMC Member Waller Speaks|2026-10-08",
+   "time": "2026-10-08T17:30:00+09:00",
+   "country": "미국",
+   "title": "FOMC 위원 월러 발언",
+   "title_en": "FOMC Member Waller Speaks",
+   "impact": "보통",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "GBP|BOE Gov Bailey Speaks|2026-10-08",
+   "time": "2026-10-08T21:15:00+09:00",
+   "country": "영국",
+   "title": "영란은행 총재 베일리 발언",
+   "title_en": "BOE Gov Bailey Speaks",
    "impact": "높음",
    "forecast": "",
    "previous": "",
