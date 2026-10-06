@@ -1,5 +1,20 @@
 [
  {
+  "id": 1874839,
+  "order_id": 25752,
+  "company_id": 2291,
+  "company_name": "Hd Hyundai Heavy Industries Co., Ltd.",
+  "company_symbol": "329180",
+  "side": "sell",
+  "quantity": 4131,
+  "price": 419121.6316,
+  "commission": 1731391.4602,
+  "fx_rate": 1.0,
+  "value_krw": 1731391460.1612,
+  "realized_pnl": -174782036.5956,
+  "created_at": "2026-10-06T01:27:03+00:00"
+ },
+ {
   "id": 1865834,
   "order_id": 25581,
   "company_id": 2289,
