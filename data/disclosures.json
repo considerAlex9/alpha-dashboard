@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-06T16:32:12.681625+09:00",
+ "captured_at": "2026-10-06T19:16:47.442484+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261006800676"
+  },
   {
    "code": "062040",
    "name": "산일전기",
