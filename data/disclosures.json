@@ -1,7 +1,55 @@
 {
- "captured_at": "2026-10-06T13:27:42.876144+09:00",
+ "captured_at": "2026-10-06T14:31:06.146061+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "키움증권",
+   "rcept_no": "20261006000240"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "국민연금공단",
+   "rcept_no": "20261006000200"
+  },
+  {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "국민연금공단",
+   "rcept_no": "20261006000170"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "국민연금공단",
+   "rcept_no": "20261006000130"
+  },
   {
    "code": "039490",
    "name": "키움증권",
@@ -1887,6 +1935,18 @@
    "rcept_no": "20260909000202"
   },
   {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "HLB",
+   "rcept_no": "20260908900429"
+  },
+  {
    "code": "066970",
    "name": "엘앤에프",
    "side": "short",
@@ -2029,6 +2089,18 @@
    "date": "2026-09-07",
    "filer": "키움증권",
    "rcept_no": "20260907000184"
+  },
+  {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-07",
+   "filer": "BlackRockFundAdvisors",
+   "rcept_no": "20260907000092"
   },
   {
    "code": "039490",
@@ -2631,18 +2703,6 @@
    "rcept_no": "20260831001090"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "키움증권",
-   "rcept_no": "20260831000793"
-  },
-  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -2689,6 +2749,18 @@
    "date": "2026-08-31",
    "filer": "삼성SDI",
    "rcept_no": "20260831000478"
+  },
+  {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "전환가액의조정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-28",
+   "filer": "HLB",
+   "rcept_no": "20260828900517"
   },
   {
    "code": "207940",
@@ -2749,18 +2821,6 @@
    "date": "2026-09-14",
    "filer": "금융감독원",
    "rcept_no": "20260828100005"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "키움증권",
-   "rcept_no": "20260828001841"
   },
   {
    "code": "207940",
@@ -3387,6 +3447,30 @@
    "rcept_no": "20260820000142"
   },
   {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-20",
+   "filer": "진양곤",
+   "rcept_no": "20260820000132"
+  },
+  {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-20",
+   "filer": "진양곤",
+   "rcept_no": "20260820000131"
+  },
+  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -3421,6 +3505,18 @@
    "date": "2026-08-19",
    "filer": "알지노믹스",
    "rcept_no": "20260819900641"
+  },
+  {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "증권발행결과(자율공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-19",
+   "filer": "HLB",
+   "rcept_no": "20260819900418"
   },
   {
    "code": "000660",
@@ -3481,6 +3577,18 @@
    "date": "2026-08-18",
    "filer": "삼양식품",
    "rcept_no": "20260818800427"
+  },
+  {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "파생상품거래손실발생",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "HLB",
+   "rcept_no": "20260814902346"
   },
   {
    "code": "095610",
@@ -3721,6 +3829,18 @@
    "date": "2026-08-14",
    "filer": "한화엔진",
    "rcept_no": "20260814002747"
+  },
+  {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "HLB",
+   "rcept_no": "20260814002713"
   },
   {
    "code": "042660",
