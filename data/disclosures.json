@@ -1,7 +1,103 @@
 {
- "captured_at": "2026-10-06T14:31:06.146061+09:00",
+ "captured_at": "2026-10-06T15:32:02.368631+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "062040",
+   "name": "산일전기",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "산일전기",
+   "rcept_no": "20261006800320"
+  },
+  {
+   "code": "066970",
+   "name": "엘앤에프",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "정성엽",
+   "rcept_no": "20261006000268"
+  },
+  {
+   "code": "082740",
+   "name": "한화엔진",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "윤우석",
+   "rcept_no": "20261006000266"
+  },
+  {
+   "code": "000660",
+   "name": "SK하이닉스",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "SK하이닉스",
+   "rcept_no": "20261006000253"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "키움증권",
+   "rcept_no": "20261006000250"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "키움증권",
+   "rcept_no": "20261006000248"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "키움증권",
+   "rcept_no": "20261006000246"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "키움증권",
+   "rcept_no": "20261006000243"
+  },
   {
    "code": "039490",
    "name": "키움증권",
@@ -2463,18 +2559,6 @@
    "rcept_no": "20260902000036"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "키움증권",
-   "rcept_no": "20260902000018"
-  },
-  {
    "code": "017670",
    "name": "SK텔레콤",
    "side": "long",
@@ -2653,42 +2737,6 @@
    "date": "2026-08-31",
    "filer": "한화오션",
    "rcept_no": "20260831800342"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "키움증권",
-   "rcept_no": "20260831001268"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "키움증권",
-   "rcept_no": "20260831001165"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "키움증권",
-   "rcept_no": "20260831001118"
   },
   {
    "code": "042660",
