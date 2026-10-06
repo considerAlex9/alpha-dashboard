@@ -1,18 +1,18 @@
 {
- "captured_at": "2026-10-05T23:13:40.329485+09:00",
+ "captured_at": "2026-10-06T09:40:38.853348+09:00",
  "days": 60,
  "items": [
   {
-   "code": "328130",
-   "name": "루닛",
+   "code": "039490",
+   "name": "키움증권",
    "side": "short",
-   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
-   "category": "자금조달·희석",
-   "important": true,
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
    "correction": false,
-   "date": "2026-10-02",
-   "filer": "루닛",
-   "rcept_no": "20261002900904"
+   "date": "2026-10-06",
+   "filer": "키움증권",
+   "rcept_no": "20261006000001"
   },
   {
    "code": "207940",
@@ -25,18 +25,6 @@
    "date": "2026-10-02",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261002800830"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "GS",
-   "rcept_no": "20261002800330"
   },
   {
    "code": "035420",
@@ -133,18 +121,6 @@
    "date": "2026-10-02",
    "filer": "HD현대",
    "rcept_no": "20261002000385"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "국민연금공단",
-   "rcept_no": "20261002000380"
   },
   {
    "code": "093370",
@@ -255,18 +231,6 @@
    "rcept_no": "20261002000192"
   },
   {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "허창수",
-   "rcept_no": "20261002000155"
-  },
-  {
    "code": "066970",
    "name": "엘앤에프",
    "side": "short",
@@ -301,18 +265,6 @@
    "date": "2026-10-02",
    "filer": "키움증권",
    "rcept_no": "20261002000035"
-  },
-  {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "전환가액의조정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-01",
-   "filer": "루닛",
-   "rcept_no": "20261001900466"
   },
   {
    "code": "267260",
@@ -507,18 +459,6 @@
    "rcept_no": "20261001000085"
   },
   {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "스피어",
-   "rcept_no": "20260930900438"
-  },
-  {
    "code": "329180",
    "name": "HD현대중공업",
    "side": "long",
@@ -639,18 +579,6 @@
    "rcept_no": "20260930000466"
   },
   {
-   "code": "007660",
-   "name": "이수페타시스",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "국민연금공단",
-   "rcept_no": "20260930000461"
-  },
-  {
    "code": "079550",
    "name": "LIG디펜스앤에어로스페이스",
    "side": "long",
@@ -735,18 +663,6 @@
    "rcept_no": "20260930000030"
   },
   {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-29",
-   "filer": "스피어",
-   "rcept_no": "20260929900534"
-  },
-  {
    "code": "079550",
    "name": "LIG디펜스앤에어로스페이스",
    "side": "long",
@@ -795,30 +711,6 @@
    "rcept_no": "20260929000302"
   },
   {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-28",
-   "filer": "루닛",
-   "rcept_no": "20260928900615"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-28",
-   "filer": "스피어",
-   "rcept_no": "20260928900234"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -865,30 +757,6 @@
    "date": "2026-09-28",
    "filer": "한화오션",
    "rcept_no": "20260928000243"
-  },
-  {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "루닛",
-   "rcept_no": "20260923900544"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "스피어",
-   "rcept_no": "20260923900306"
   },
   {
    "code": "259960",
@@ -985,30 +853,6 @@
    "date": "2026-09-23",
    "filer": "키움증권",
    "rcept_no": "20260923000042"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-22",
-   "filer": "스피어",
-   "rcept_no": "20260922900293"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-22",
-   "filer": "스피어",
-   "rcept_no": "20260922900291"
   },
   {
    "code": "329180",
@@ -1587,30 +1431,6 @@
    "rcept_no": "20260916000342"
   },
   {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-15",
-   "filer": "스피어",
-   "rcept_no": "20260915900405"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-15",
-   "filer": "GS",
-   "rcept_no": "20260915800598"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1621,18 +1441,6 @@
    "date": "2026-09-15",
    "filer": "키움증권",
    "rcept_no": "20260915000140"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "[기재정정]장래사업ㆍ경영계획(공정공시)",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-09-14",
-   "filer": "GS",
-   "rcept_no": "20260914800650"
   },
   {
    "code": "329180",
@@ -1657,18 +1465,6 @@
    "date": "2026-09-14",
    "filer": "엔비에이치캐피탈",
    "rcept_no": "20260914000391"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "특수관계인에대한출자",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-14",
-   "filer": "GS",
-   "rcept_no": "20260914000364"
   },
   {
    "code": "039490",
@@ -1717,18 +1513,6 @@
    "date": "2026-09-14",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260914000001"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-11",
-   "filer": "스피어",
-   "rcept_no": "20260911900492"
   },
   {
    "code": "259960",
@@ -2295,42 +2079,6 @@
    "rcept_no": "20260907900349"
   },
   {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "스피어",
-   "rcept_no": "20260907900282"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "GS",
-   "rcept_no": "20260907800562"
-  },
-  {
-   "code": "007660",
-   "name": "이수페타시스",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "이수페타시스",
-   "rcept_no": "20260907800463"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -2353,30 +2101,6 @@
    "date": "2026-09-07",
    "filer": "엘앤에프",
    "rcept_no": "20260907800340"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "최병철",
-   "rcept_no": "20260907000265"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "윤상현",
-   "rcept_no": "20260907000263"
   },
   {
    "code": "039490",
@@ -2427,18 +2151,6 @@
    "rcept_no": "20260907000074"
   },
   {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "전환가액의조정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "루닛",
-   "rcept_no": "20260904900638"
-  },
-  {
    "code": "222800",
    "name": "심텍",
    "side": "long",
@@ -2485,18 +2197,6 @@
    "date": "2026-09-04",
    "filer": "삼성SDI",
    "rcept_no": "20260904800510"
-  },
-  {
-   "code": "007660",
-   "name": "이수페타시스",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "이수",
-   "rcept_no": "20260904000407"
   },
   {
    "code": "039490",
@@ -2811,30 +2511,6 @@
    "rcept_no": "20260902000018"
   },
   {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-01",
-   "filer": "스피어",
-   "rcept_no": "20260901900472"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-01",
-   "filer": "스피어",
-   "rcept_no": "20260901900467"
-  },
-  {
    "code": "017670",
    "name": "SK텔레콤",
    "side": "long",
@@ -2907,18 +2583,6 @@
    "rcept_no": "20260901000214"
   },
   {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등거래계획보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-01",
-   "filer": "허광수",
-   "rcept_no": "20260901000212"
-  },
-  {
    "code": "017670",
    "name": "SK텔레콤",
    "side": "long",
@@ -2989,42 +2653,6 @@
    "date": "2026-09-01",
    "filer": "미래에셋자산운용",
    "rcept_no": "20260901000189"
-  },
-  {
-   "code": "007660",
-   "name": "이수페타시스",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-01",
-   "filer": "미래에셋자산운용",
-   "rcept_no": "20260901000187"
-  },
-  {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "전환사채(해외전환사채포함)발행후만기전사채취득",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "루닛",
-   "rcept_no": "20260831900522"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "스피어",
-   "rcept_no": "20260831900199"
   },
   {
    "code": "207940",
@@ -3255,18 +2883,6 @@
    "rcept_no": "20260828001841"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "키움증권",
-   "rcept_no": "20260828001831"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -3301,18 +2917,6 @@
    "date": "2026-08-28",
    "filer": "엘아이지",
    "rcept_no": "20260828001248"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "GS",
-   "rcept_no": "20260828001147"
   },
   {
    "code": "000660",
@@ -3495,18 +3099,6 @@
    "rcept_no": "20260827000390"
   },
   {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-26",
-   "filer": "GS",
-   "rcept_no": "20260826800727"
-  },
-  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -3529,18 +3121,6 @@
    "date": "2026-08-26",
    "filer": "하나금융지주",
    "rcept_no": "20260826800242"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-26",
-   "filer": "허창수",
-   "rcept_no": "20260826000775"
   },
   {
    "code": "062040",
@@ -3613,18 +3193,6 @@
    "date": "2026-08-25",
    "filer": "심텍",
    "rcept_no": "20260825900407"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-25",
-   "filer": "스피어",
-   "rcept_no": "20260825900258"
   },
   {
    "code": "042660",
@@ -3939,18 +3507,6 @@
    "rcept_no": "20260821000464"
   },
   {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "스피어",
-   "rcept_no": "20260820900468"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -3961,18 +3517,6 @@
    "date": "2026-08-20",
    "filer": "한화오션",
    "rcept_no": "20260820800640"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "GS",
-   "rcept_no": "20260820800409"
   },
   {
    "code": "329180",
@@ -4021,18 +3565,6 @@
    "date": "2026-08-20",
    "filer": "LIG디펜스앤에어로스페이스",
    "rcept_no": "20260820800033"
-  },
-  {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "주식매수선택권부여에관한신고",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "루닛",
-   "rcept_no": "20260820000351"
   },
   {
    "code": "272210",
@@ -4227,18 +3759,6 @@
    "rcept_no": "20260814003800"
   },
   {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "GS",
-   "rcept_no": "20260814003779"
-  },
-  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -4333,18 +3853,6 @@
    "date": "2026-08-14",
    "filer": "삼현",
    "rcept_no": "20260814003171"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "스피어",
-   "rcept_no": "20260814003121"
   },
   {
    "code": "003230",
@@ -4515,18 +4023,6 @@
    "rcept_no": "20260814002436"
   },
   {
-   "code": "007660",
-   "name": "이수페타시스",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "이수페타시스",
-   "rcept_no": "20260814002283"
-  },
-  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -4537,18 +4033,6 @@
    "date": "2026-08-14",
    "filer": "NAVER",
    "rcept_no": "20260814002266"
-  },
-  {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "GS",
-   "rcept_no": "20260814001553"
   },
   {
    "code": "079550",
@@ -4839,18 +4323,6 @@
    "rcept_no": "20260813000024"
   },
   {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-12",
-   "filer": "GS",
-   "rcept_no": "20260812800778"
-  },
-  {
    "code": "003230",
    "name": "삼양식품",
    "side": "short",
@@ -4935,18 +4407,6 @@
    "rcept_no": "20260812000829"
   },
   {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-12",
-   "filer": "허연수",
-   "rcept_no": "20260812000742"
-  },
-  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -4969,42 +4429,6 @@
    "date": "2026-08-12",
    "filer": "SK하이닉스",
    "rcept_no": "20260812000344"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-11",
-   "filer": "스피어",
-   "rcept_no": "20260811900849"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-11",
-   "filer": "스피어",
-   "rcept_no": "20260811900844"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-11",
-   "filer": "스피어",
-   "rcept_no": "20260811900841"
   },
   {
    "code": "222800",
@@ -5031,18 +4455,6 @@
    "rcept_no": "20260811800447"
   },
   {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
-   "category": "실적",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-11",
-   "filer": "GS",
-   "rcept_no": "20260811800401"
-  },
-  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -5067,18 +4479,6 @@
    "rcept_no": "20260811800212"
   },
   {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-11",
-   "filer": "루닛",
-   "rcept_no": "20260811000657"
-  },
-  {
    "code": "010060",
    "name": "OCI홀딩스",
    "side": "long",
@@ -5091,42 +4491,6 @@
    "rcept_no": "20260811000330"
   },
   {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "본점소재지변경",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "스피어",
-   "rcept_no": "20260810900474"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "유상증자결정(종속회사의주요경영사항)",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "스피어",
-   "rcept_no": "20260810900470"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "타법인주식및출자증권취득결정",
-   "category": "합병·분할",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "스피어",
-   "rcept_no": "20260810900447"
-  },
-  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -5137,18 +4501,6 @@
    "date": "2026-08-10",
    "filer": "크래프톤",
    "rcept_no": "20260810800768"
-  },
-  {
-   "code": "007660",
-   "name": "이수페타시스",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "이수페타시스",
-   "rcept_no": "20260810800489"
   },
   {
    "code": "272210",
@@ -5307,18 +4659,6 @@
    "rcept_no": "20260810000226"
   },
   {
-   "code": "078930",
-   "name": "GS",
-   "side": "long",
-   "title": "기업가치제고계획(자율공시) (2025년 이행현황)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-07",
-   "filer": "GS",
-   "rcept_no": "20260807800986"
-  },
-  {
    "code": "000660",
    "name": "SK하이닉스",
    "side": "long",
@@ -5473,126 +4813,6 @@
    "date": "2026-08-07",
    "filer": "SK하이닉스",
    "rcept_no": "20260807000537"
-  },
-  {
-   "code": "347700",
-   "name": "스피어",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-06",
-   "filer": "스피어",
-   "rcept_no": "20260806900189"
-  },
-  {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
-   "category": "실적",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "엘앤에프",
-   "rcept_no": "20260806800304"
-  },
-  {
-   "code": "079550",
-   "name": "LIG디펜스앤에어로스페이스",
-   "side": "long",
-   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
-   "category": "실적",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "LIG디펜스앤에어로스페이스",
-   "rcept_no": "20260806800228"
-  },
-  {
-   "code": "020150",
-   "name": "롯데에너지머티리얼즈",
-   "side": "long",
-   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
-   "category": "실적",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "롯데에너지머티리얼즈",
-   "rcept_no": "20260806800043"
-  },
-  {
-   "code": "207940",
-   "name": "삼성바이오로직스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "조성환",
-   "rcept_no": "20260806000473"
-  },
-  {
-   "code": "007660",
-   "name": "이수페타시스",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-06",
-   "filer": "이수",
-   "rcept_no": "20260806000398"
-  },
-  {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "[기재정정]주식매수선택권부여에관한신고",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-06",
-   "filer": "루닛",
-   "rcept_no": "20260806000375"
-  },
-  {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "[기재정정]주식매수선택권부여에관한신고",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-06",
-   "filer": "루닛",
-   "rcept_no": "20260806000371"
-  },
-  {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "[기재정정]주식매수선택권부여에관한신고",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-06",
-   "filer": "루닛",
-   "rcept_no": "20260806000365"
-  },
-  {
-   "code": "328130",
-   "name": "루닛",
-   "side": "short",
-   "title": "[기재정정]주식매수선택권부여에관한신고",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-06",
-   "filer": "루닛",
-   "rcept_no": "20260806000357"
   }
  ]
 }
