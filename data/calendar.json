@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-06T19:17:17.605270+09:00",
+ "captured_at": "2026-10-07T08:10:42.387131+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
   {
@@ -108,7 +108,7 @@
    "title": "미시간대 소비자심리 (예비)",
    "title_en": "Prelim UoM Consumer Sentiment",
    "impact": "보통",
-   "forecast": "47.6",
+   "forecast": "47.5",
    "previous": "47.8",
    "actual": ""
   },
