@@ -2,6 +2,7 @@
 
 자동 업데이트가 돌 때마다 새로 생긴 일만 한 번씩 보낸다. 이미 보낸 것은 data/alerts_state.json 에 적어 두고 다시 보내지 않는다.
   - 매크로 뉴스 브리핑 (장전·장마감, 처음 만들어질 때 한 번)
+  - 장 마감 시황 (거래일 16:30)
   - 손절가 근접·도달
   - 보유 종목 급등락 (오늘 등락률이 기준 이상)
   - 보유 종목 새 중요 공시
@@ -164,6 +165,12 @@ def briefs():
             lines.append("이 시간대에 올라온 시황 글이 없습니다.")
         lines.append(f'<a href="{SITE}">대시보드에서 자세히 보기</a>')
         out.append((f"news:{ed['id']}", "\n".join(lines)))
+    w = ((_read(DATA / "wrap.json", {}) or {}).get("wraps") or [None])[0]
+    if w:                                          # 장 마감 시황 (거래일 16:30)
+        lines = [f"📊 <b>장 마감 시황</b> · {w['date'][5:7]}/{w['date'][8:10]}", f"<b>{e(w['headline'])}</b>"]
+        lines += [f"• {e(x)}" for x in w["glance"][:5]]
+        lines.append(f'<a href="{SITE}#wrap">대시보드에서 자세히 보기</a>')
+        out.append((f"wrap:{w['date']}", "\n".join(lines)))
     return out
 
 
