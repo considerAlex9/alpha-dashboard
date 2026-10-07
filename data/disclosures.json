@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-07T14:29:05.964333+09:00",
+ "captured_at": "2026-10-07T15:35:47.255716+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-07",
+   "filer": "NAVER",
+   "rcept_no": "20261007800306"
+  },
   {
    "code": "207940",
    "name": "삼성바이오로직스",
@@ -37,18 +49,6 @@
    "date": "2026-10-06",
    "filer": "정성엽",
    "rcept_no": "20261006000268"
-  },
-  {
-   "code": "082740",
-   "name": "한화엔진",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "윤우석",
-   "rcept_no": "20261006000266"
   },
   {
    "code": "000660",
@@ -625,18 +625,6 @@
    "date": "2026-09-30",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20260930801077"
-  },
-  {
-   "code": "082740",
-   "name": "한화엔진",
-   "side": "short",
-   "title": "[기재정정]신규시설투자등",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-09-30",
-   "filer": "한화엔진",
-   "rcept_no": "20260930800883"
   },
   {
    "code": "259960",
@@ -2787,18 +2775,6 @@
    "rcept_no": "20260831000598"
   },
   {
-   "code": "082740",
-   "name": "한화엔진",
-   "side": "short",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "한화엔진",
-   "rcept_no": "20260831000549"
-  },
-  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -2833,18 +2809,6 @@
    "date": "2026-08-28",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260828800869"
-  },
-  {
-   "code": "082740",
-   "name": "한화엔진",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "한화엔진",
-   "rcept_no": "20260828800365"
   },
   {
    "code": "207940",
@@ -3879,18 +3843,6 @@
    "rcept_no": "20260814002752"
   },
   {
-   "code": "082740",
-   "name": "한화엔진",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "한화엔진",
-   "rcept_no": "20260814002747"
-  },
-  {
    "code": "028300",
    "name": "HLB",
    "side": "short",
@@ -4045,18 +3997,6 @@
    "date": "2026-08-14",
    "filer": "티에프이",
    "rcept_no": "20260814001298"
-  },
-  {
-   "code": "082740",
-   "name": "한화엔진",
-   "side": "short",
-   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "한화엔진",
-   "rcept_no": "20260814001164"
   },
   {
    "code": "006400",
@@ -4573,18 +4513,6 @@
    "date": "2026-08-10",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20260810000551"
-  },
-  {
-   "code": "082740",
-   "name": "한화엔진",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "국민연금공단",
-   "rcept_no": "20260810000546"
   },
   {
    "code": "035420",

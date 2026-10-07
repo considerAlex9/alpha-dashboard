@@ -1,5 +1,20 @@
 [
  {
+  "id": 1960301,
+  "order_id": 26620,
+  "company_id": 1342,
+  "company_name": "Hanwha Aerospace Co., Ltd.",
+  "company_symbol": "082740",
+  "side": "cover",
+  "quantity": 15344,
+  "price": 45916.7796,
+  "commission": 704547.066,
+  "fx_rate": 1.0,
+  "value_krw": 704547065.9893,
+  "realized_pnl": 27238191.7947,
+  "created_at": "2026-10-07T05:31:01+00:00"
+ },
+ {
   "id": 1908069,
   "order_id": 25946,
   "company_id": 733,
