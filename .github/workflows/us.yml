@@ -1,0 +1,41 @@
+name: 미국 패턴 터미널 업데이트
+
+on:
+  schedule:
+    # 미국장 마감 후 매일 아침 07:00 KST (= 22:00 UTC, 미국 월~금 거래일 다음 날 아침)
+    - cron: "0 22 * * 1-5"
+  workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update           # 다른 업데이트와 같은 줄에 세워서 저장 충돌을 막음
+  cancel-in-progress: false
+
+jobs:
+  us:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: 미국 500종목 일봉·패턴·실적 일정 수집 + 빌드
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+        run: |
+          python us.py
+          python build.py
+      - name: 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/us.json data/us_universe.json us.html
+          git diff --cached --quiet || git commit -m "us: $(TZ=Asia/Seoul date +'%F %H:%M') KST"
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase -X theirs origin main
+          done

@@ -93,6 +93,11 @@ def main():
     # index.html 은 웹(GitHub Pages) 첫 화면용, dashboard.html 은 로컬에서 여는 용
     for name in ("index.html", "dashboard.html"):
         (ROOT / name).write_text(html, encoding="utf-8")
+    # 미국 패턴 터미널 (us.html) — data/us.json 이 있을 때만
+    us_p, us_t = DATA / "us.json", ROOT / "us_template.html"
+    if us_t.exists():
+        blob_us = us_p.read_text(encoding="utf-8").replace("</", "<\\/") if us_p.exists() else "null"
+        (ROOT / "us.html").write_text(us_t.read_text(encoding="utf-8").replace("/*__US__*/null", blob_us), encoding="utf-8")
     print(f"index.html / dashboard.html 생성 완료 ({snaps[-1][0]} 기준 · 거래일 기록 {len(by_day)}일)")
 
 

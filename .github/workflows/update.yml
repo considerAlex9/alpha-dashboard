@@ -14,7 +14,7 @@ on:
   workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
   push:                   # 코드를 고치면 바로 한 번 돌려서 사이트에 반영
     branches: [main]
-    paths: ["*.py", "template.html", "sectors.json", "limits.json", "market_themes.json", ".github/workflows/**"]
+    paths: ["*.py", "template.html", "us_template.html", "sectors.json", "limits.json", "market_themes.json", ".github/workflows/**"]
 
 permissions:
   contents: write
@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add data index.html dashboard.html
+          git add data index.html dashboard.html us.html
           git diff --cached --quiet || git commit -m "data: $(TZ=Asia/Seoul date +'%F %H:%M') KST"
           # 실행 중에 코드가 새로 올라왔으면 먼저 합친 뒤 저장 (데이터 파일은 방금 받은 값을 우선)
           for i in 1 2 3; do
