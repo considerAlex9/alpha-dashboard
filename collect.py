@@ -154,7 +154,19 @@ def main():
     except Exception as e:  # noqa: BLE001
         print(f"  [경고] 경제 일정 수집 실패: {e}")
 
-    # 8) 내 텔레그램으로 알림 — 봇 토큰과 대화방 번호가 있을 때만
+    # 8) 장 마감 시황 — 거래일 16:25 이후 첫 실행에서 한 번 만든다
+    if trade_date and now.hour * 60 + now.minute >= 16 * 60 + 25 and env.get("KIS_APP_KEY") and mk:
+        try:
+            import kis as kis_mod
+            import wrap
+            k = kis_mod.KIS(env["KIS_APP_KEY"], env["KIS_APP_SECRET"])
+            write_json(DATA / "wrap.json", wrap.collect(read_json(DATA / "wrap.json", None), k, mk, read_json(DATA / "news.json", None),
+                                                        read_json(DATA / "calendar.json", None), read_json(DATA / "disclosures.json", None),
+                                                        portfolio["positions"], now))
+        except Exception as e:  # noqa: BLE001
+            print(f"  [경고] 장 마감 시황 실패: {e}")
+
+    # 9) 내 텔레그램으로 알림 — 봇 토큰과 대화방 번호가 있을 때만
     if env.get("TELEGRAM_BOT_TOKEN") and env.get("TELEGRAM_CHAT_ID"):
         try:
             import alerts

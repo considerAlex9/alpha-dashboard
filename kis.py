@@ -124,6 +124,52 @@ class KIS:
                       "FID_INPUT_PRICE_1": "", "FID_INPUT_PRICE_2": "", "FID_VOL_CNT": ""})
         return [(r["mksc_shrn_iscd"], r["hts_kor_isnm"]) for r in d.get("output", []) if r.get("mksc_shrn_iscd")]
 
+    # ---------- 장 마감 시황용 ----------
+    def index_price(self, code):
+        """업종 현재지수: 지수, 등락률, 거래대금(원), 상승·하락·보합·상한·하한 종목 수. code: 0001 코스피, 1001 코스닥"""
+        o = self.get("/uapi/domestic-stock/v1/quotations/inquire-index-price", "FHPUP02100000",
+                     {"FID_COND_MRKT_DIV_CODE": "U", "FID_INPUT_ISCD": code})["output"]
+        n = lambda k: float(o.get(k) or 0)
+        return {"close": n("bstp_nmix_prpr"), "chg1": n("bstp_nmix_prdy_ctrt") / 100, "value": n("acml_tr_pbmn") * 1e6,
+                "up": int(n("ascn_issu_cnt")), "down": int(n("down_issu_cnt")), "flat": int(n("stnr_issu_cnt")),
+                "limit_up": int(n("uplm_issu_cnt")), "limit_down": int(n("lslm_issu_cnt"))}
+
+    def index_minutes(self, code, step=300):
+        """업종 분봉 (step 초 단위, 300 = 5분) → 오늘 것만 [(HHMM, 지수)] 시간순"""
+        d = self.get("/uapi/domestic-stock/v1/quotations/inquire-time-indexchartprice", "FHKUP03500200",
+                     {"FID_COND_MRKT_DIV_CODE": "U", "FID_ETC_CLS_CODE": "0", "FID_INPUT_ISCD": code,
+                      "FID_INPUT_HOUR_1": str(step), "FID_PW_DATA_INCU_YN": "Y"})
+        rows = [r for r in d.get("output2", []) if r.get("stck_cntg_hour", "").isdigit() and r["stck_cntg_hour"] != "888888"]
+        if not rows:
+            return []
+        day = max(r["stck_bsop_date"] for r in rows)
+        return sorted((r["stck_cntg_hour"][:4], float(r["bstp_nmix_prpr"])) for r in rows if r["stck_bsop_date"] == day)
+
+    def value_rank(self, index_code):
+        """거래대금 상위 30종목 (ETF·ETN 포함). index_code: 0001 코스피, 1001 코스닥"""
+        d = self.get("/uapi/domestic-stock/v1/quotations/volume-rank", "FHPST01710000",
+                     {"FID_COND_MRKT_DIV_CODE": "J", "FID_COND_SCR_DIV_CODE": "20171", "FID_INPUT_ISCD": index_code,
+                      "FID_DIV_CLS_CODE": "0", "FID_BLNG_CLS_CODE": "3", "FID_TRGT_CLS_CODE": "111111111",
+                      "FID_TRGT_EXLS_CLS_CODE": "0000000000", "FID_INPUT_PRICE_1": "", "FID_INPUT_PRICE_2": "",
+                      "FID_VOL_CNT": "", "FID_INPUT_DATE_1": ""})
+        return [{"code": r["mksc_shrn_iscd"], "name": r["hts_kor_isnm"], "price": float(r["stck_prpr"]),
+                 "chg1": float(r["prdy_ctrt"]) / 100, "value": float(r["acml_tr_pbmn"])}
+                for r in d.get("output", []) if r.get("mksc_shrn_iscd")]
+
+    def rates(self):
+        """금리 종합: 국고채 등 국내 금리(2)와 해외 금리(1) → {이름: (금리, 전일 대비 %p)}"""
+        out = {}
+        for div in ("2", "1"):
+            d = self.get("/uapi/domestic-stock/v1/quotations/comp-interest", "FHPST07020000",
+                         {"FID_COND_MRKT_DIV_CODE": "I", "FID_COND_SCR_DIV_CODE": "20702", "FID_DIV_CLS_CODE": div,
+                          "FID_DIV_CLS_CODE1": ""})
+            for r in d.get("output1") or []:
+                try:
+                    out[r["hts_kor_isnm"].strip()] = (float(r["bond_mnrt_prpr"]), float(r["bond_mnrt_prdy_vrss"]))
+                except (KeyError, ValueError):
+                    pass
+        return out
+
     # ---------- 공매도 ----------
     def short_sale(self, code, days=30):
         end = datetime.now()
