@@ -1,7 +1,55 @@
 {
- "captured_at": "2026-10-07T15:35:47.255716+09:00",
+ "captured_at": "2026-10-07T16:13:17.927814+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "[기재정정]타법인주식및출자증권취득결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-07",
+   "filer": "한화오션",
+   "rcept_no": "20261007800463"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-07",
+   "filer": "한화오션",
+   "rcept_no": "20261007800450"
+  },
+  {
+   "code": "066970",
+   "name": "엘앤에프",
+   "side": "short",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "엘앤에프",
+   "rcept_no": "20261007800399"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "결산실적공시예고(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261007800351"
+  },
   {
    "code": "035420",
    "name": "NAVER",
@@ -13,6 +61,18 @@
    "date": "2026-10-07",
    "filer": "NAVER",
    "rcept_no": "20261007800306"
+  },
+  {
+   "code": "222800",
+   "name": "심텍",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "삼성자산운용",
+   "rcept_no": "20261007000299"
   },
   {
    "code": "207940",
