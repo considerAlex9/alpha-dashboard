@@ -1,0 +1,39 @@
+name: 국내 기술적 분석 업데이트
+
+on:
+  schedule:
+    # 거래일 16:40 KST (= 07:40 UTC) — 장 마감 시황(16:30) 다음
+    - cron: "40 7 * * 1-5"
+  workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  kr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: 코스피 전 종목 + 코스닥 100 기술적 분석
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+        run: python kr_ta.py
+      - name: 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/kr_ta.json
+          git diff --cached --quiet || git commit -m "ta: $(TZ=Asia/Seoul date +'%F %H:%M') KST"
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase -X theirs origin main
+          done

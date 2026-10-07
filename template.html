@@ -366,6 +366,44 @@ tr.click{cursor:pointer}
 @media (max-width:1100px){ .wtiles{grid-template-columns:repeat(3,1fr)} }
 @media (max-width:640px){ .wtiles{grid-template-columns:repeat(2,1fr)} .wh h3{font-size:20px} }
 
+/* 기술적 분석 */
+.sigboard{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.sgt{font-size:11.5px;color:var(--muted);font-weight:650;margin-bottom:6px}
+.sgi{display:flex;flex-wrap:wrap;gap:6px}
+.sigbtn{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--border);background:var(--surface-2);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:12.5px;color:var(--ink)}
+.sigbtn b{font-variant-numeric:tabular-nums}
+.sigbtn.bull b{color:var(--up)} .sigbtn.bear b{color:var(--down)} .sigbtn.info b{color:var(--accent)}
+.sigbtn[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);font-weight:650}
+.tawrap{display:grid;grid-template-columns:minmax(0,1fr) 460px;gap:14px;align-items:start}
+.tadetail{position:sticky;top:118px;max-height:calc(100vh - 130px);overflow:auto}
+.tabar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tabar input[type=search],.tasel{padding:7px 10px;border-radius:9px;border:1px solid var(--border);background:var(--surface-2);color:var(--ink);font:inherit;font-size:12.5px}
+.tabar input[type=search]{flex:1;min-width:160px}
+.tacards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.tacard{border:1px solid var(--border);border-radius:12px;padding:11px 12px;cursor:pointer;background:var(--surface);min-width:0}
+.tacard:hover{border-color:color-mix(in srgb,var(--accent) 40%,var(--border))}
+.tacard.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.tah{display:flex;justify-content:space-between;gap:8px;font-size:13px}
+.tah b{font-size:14px}
+.tamini{height:96px;margin:6px 0}
+.tatags{display:flex;flex-wrap:wrap;gap:4px}
+.stag{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:650;padding:2px 7px;border-radius:999px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.stag i{font-style:normal;font-weight:400;opacity:.75}
+.stag.bull{background:color-mix(in srgb,var(--up) 12%,transparent);color:var(--up)}
+.stag.bear{background:color-mix(in srgb,var(--down) 12%,transparent);color:var(--down)}
+.stag.info{background:var(--accent-soft);color:var(--accent)}
+.stag.trend.up{background:var(--up);color:#fff} .stag.trend.down{background:var(--down);color:#fff}
+.tapat{display:flex;justify-content:space-between;font-size:12px;margin-top:6px;font-weight:650}
+.tasigs{display:grid;gap:8px}
+.tasig{padding:8px 10px;background:var(--surface-2);border-radius:9px;font-size:12.5px}
+.tasig .sub{margin-left:6px}
+.tasig div.sub{margin-left:0}
+.tainfo{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:12.5px}
+.tainfo span:nth-child(even){text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:1250px){ .sigboard{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@media (max-width:1100px){ .tawrap{grid-template-columns:1fr} .tadetail{position:static;max-height:none} }
+@media (max-width:640px){ .sigboard{grid-template-columns:1fr 1fr} .tacards{grid-template-columns:1fr} }
+
 /* 설치 버튼 */
 .installbtn{display:none;cursor:pointer}
 .installbtn.on{display:inline-flex}
@@ -417,6 +455,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18h2"/></symbol>
   <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
   <symbol id="i-paper" viewBox="0 0 24 24"><path d="M4 5h13v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v10a2 2 0 0 1-2 2M8 9h5M8 13h5M8 17h3"/></symbol>
+  <symbol id="i-candle" viewBox="0 0 24 24"><path d="M7 3v4M7 15v6M17 5v3M17 17v3"/><rect x="5" y="7" width="4" height="8" rx="1"/><rect x="15" y="8" width="4" height="9" rx="1"/></symbol>
   <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
 </svg>
 
@@ -439,6 +478,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
       <button role="tab" data-tab="portfolio"><svg class="i"><use href="#i-brief"/></svg>포트폴리오</button>
       <button role="tab" data-tab="market"><svg class="i"><use href="#i-activity"/></svg>시장 동향</button>
       <button role="tab" data-tab="wrap"><svg class="i"><use href="#i-paper"/></svg>장 마감 시황</button>
+      <button role="tab" data-tab="ta"><svg class="i"><use href="#i-candle"/></svg>기술적 분석</button>
       <button role="tab" data-tab="global"><svg class="i"><use href="#i-globe"/></svg>글로벌 시장</button>
       <button role="tab" data-tab="holdings"><svg class="i"><use href="#i-radar"/></svg>보유종목 시황</button>
       <button role="tab" data-tab="disclosure"><svg class="i"><use href="#i-doc"/></svg>공시<span class="badge" id="discbadge" hidden style="background:var(--accent)"></span></button>
@@ -611,6 +651,12 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
     <div id="wrapbody"></div>
   </div>
 
+  <!-- ================= 기술적 분석 ================= -->
+  <div class="panel" id="p-ta">
+    <div class="ph"><div><h2>기술적 분석</h2><p id="tasub">코스피 전 종목 + 코스닥 시가총액 상위 100 · 이동평균·크로스·베이스·차트 패턴</p></div></div>
+    <div id="tabody"></div>
+  </div>
+
   <!-- ================= 글로벌 시장 ================= -->
   <div class="panel" id="p-global">
     <div class="ph"><div><h2>글로벌 시장</h2><p id="globalsub"></p></div></div>
@@ -738,7 +784,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   </div>
 
   <footer>
-    데이터 출처 — 대회 API(포트폴리오·주문·리더보드·업종 동향) · 한국투자증권 오픈 API(국내 지수·종목 일봉·투자자 매매·공매도·시가총액, 실패 시 네이버 증권으로 대체) · 한국거래소 KIND(시장경보) · 금융감독원 다트(공시) · 야후 파이낸스(해외 지표) · 증권사·리서치 텔레그램 공개 채널(매크로 뉴스, 장전 08:00·09:00 / 장마감 16:00·19:00 정리) · Forex Factory(해외 경제 일정). 장 마감 시황은 거래일 16:30 이후 첫 자동 업데이트 때 규칙에 따라 자동으로 정리합니다.<br>
+    데이터 출처 — 대회 API(포트폴리오·주문·리더보드·업종 동향) · 한국투자증권 오픈 API(국내 지수·종목 일봉·투자자 매매·공매도·시가총액, 실패 시 네이버 증권으로 대체) · 한국거래소 KIND(시장경보) · 금융감독원 다트(공시) · 야후 파이낸스(해외 지표) · 증권사·리서치 텔레그램 공개 채널(매크로 뉴스, 장전 08:00·09:00 / 장마감 16:00·19:00 정리) · Forex Factory(해외 경제 일정) · 기술적 분석은 네이버 일봉(코스피 보통주 전체·코스닥 시총 상위 100, 거래일 16:40). 장 마감 시황은 거래일 16:30 이후 첫 자동 업데이트 때 규칙에 따라 자동으로 정리합니다.<br>
     일별 기록은 거래일(코스피가 열린 날) 09시 이후 값만 그 날짜로 저장합니다. 하루 손익은 전 거래일 마지막 기록과 비교한 값입니다. 베타는 코스피 대비 일간 수익률 회귀값, 체크 포인트는 정해 둔 규칙에 따른 자동 신호입니다. 참고용 정보이며 투자 권유가 아닙니다.
   </footer>
 </main>
@@ -1396,6 +1442,234 @@ function drawWrapCharts(){
 }
 
 // ============================================================
+// 기술적 분석 (코스피 전 종목 + 코스닥 시총 상위 100) — 탭을 열 때 data/kr_ta.json 을 따로 불러옴
+// ============================================================
+let TA=null, taLoading=false, taSel=null, taPat=0, taShown=0, taList=[];
+const TF={mk:'all', sig:null, trend:'all', q:'', held:false, sort:'mc'};
+const TA_PAGE=48;
+const SIG_GROUPS=[
+  ['추세 전환',[['gc','골든크로스'],['dc','데드크로스'],['gc_long','장기 골든크로스'],['dc_long','장기 데드크로스'],['ma200_up','200일선 돌파'],['ma200_dn','200일선 이탈']]],
+  ['이동평균 배열',[['align_up','정배열'],['align_dn','역배열']]],
+  ['베이스',[['base_bo','베이스 돌파'],['base','베이스 형성·근접']]],
+  ['가격·거래량',[['hi52','52주 신고가'],['hi52_near','신고가 근접'],['vol','거래량 급증'],['rsi_hi','RSI 과매수'],['rsi_lo','RSI 과매도']]],
+];
+const SIG_DESC={
+  gc:'20일선(약 한 달 평균)이 60일선(약 석 달 평균) 위로 올라섰어요. 단기 흐름이 중기 흐름보다 강해졌다는 뜻으로, 상승 전환 신호로 봅니다.',
+  dc:'20일선이 60일선 아래로 내려갔어요. 단기 흐름이 약해졌다는 뜻으로, 하락 전환 신호로 봅니다.',
+  gc_long:'60일선이 120일선 위로 올라섰어요. 몇 달 단위의 큰 흐름이 위로 돌아섰다는 신호입니다.',
+  dc_long:'60일선이 120일선 아래로 내려갔어요. 몇 달 단위의 큰 흐름이 아래로 돌아섰다는 신호입니다.',
+  align_up:'짧은 이동평균일수록 위에 있는 상태(5 > 20 > 60 > 120일선)예요. 모든 기간에서 사는 힘이 우세한 전형적인 상승 추세입니다.',
+  align_dn:'짧은 이동평균일수록 아래에 있는 상태(5 < 20 < 60 < 120일선)예요. 모든 기간에서 파는 힘이 우세한 전형적인 하락 추세입니다.',
+  ma200_up:'주가가 200일선(약 1년 평균)을 위로 뚫었어요. 장기 투자자들이 가장 많이 보는 선이라, 추세가 바뀌는 신호로 많이 씁니다.',
+  ma200_dn:'주가가 200일선 아래로 내려갔어요. 장기 추세가 약해졌다는 신호입니다.',
+  base:'앞서 30% 이상 오른 뒤, 가격이 좁은 범위 안에서 오래 다져지고 있어요. 매물이 소화되는 구간으로, 상단을 거래량과 함께 넘으면 새 상승이 시작되는 경우가 많습니다.',
+  base_bo:'오래 다진 베이스의 상단을 넘었어요. 거래량이 평소의 1.5배 이상 붙었으면 더 믿을 만한 돌파로 봅니다.',
+  hi52:'1년 중 가장 높은 가격권이에요. 위에 물려 있는 매물이 없어서 추세가 이어지기 쉽습니다.',
+  hi52_near:'52주 고가 바로 아래예요. 신고가를 넘는지 지켜볼 자리입니다.',
+  vol:'오늘 거래량이 최근 20일 평균의 3배를 넘었어요. 큰 변화(뉴스·수급)가 있었다는 뜻입니다.',
+  rsi_hi:'RSI가 70 이상이에요. 단기간에 많이 올라 쉬어 갈 수 있는 자리입니다.',
+  rsi_lo:'RSI가 30 이하예요. 단기간에 많이 내려 반등이 나올 수 있는 자리입니다.'};
+const PAT_DESC={
+  asc_tri:'고점은 같은 높이에서 막히고 저점은 점점 올라오는 모양입니다. 위쪽 저항선을 넘으면 삼각형 높이만큼 더 오르는 경우가 많습니다.',
+  desc_tri:'저점은 버티지만 고점이 점점 낮아지는 모양입니다. 아래 지지선이 깨지면 삼각형 높이만큼 더 내리는 경우가 많습니다.',
+  sym_tri:'고점은 낮아지고 저점은 높아지며 좁혀지는 모양입니다. 깨지는 쪽으로 따라가는 것이 기본입니다.',
+  rising_wedge:'고점과 저점이 함께 오르지만 폭이 좁아지는 모양입니다. 아래 선이 깨지면 하락으로 돌아서기 쉽습니다.',
+  falling_wedge:'고점과 저점이 함께 내리지만 폭이 좁아지는 모양입니다. 위 선을 넘으면 반등으로 돌아서기 쉽습니다.',
+  asc_channel:'나란한 두 선 사이에서 계단식으로 오르는 모양입니다.', desc_channel:'나란한 두 선 사이에서 계단식으로 내리는 모양입니다.',
+  dbl_bottom:'비슷한 가격에서 두 번 바닥을 확인한 모양(W)입니다. 목선을 넘으면 바닥과 목선 차이만큼 오르는 것을 목표로 봅니다.',
+  dbl_top:'비슷한 가격에서 두 번 막힌 모양(M)입니다. 목선이 깨지면 천장과 목선 차이만큼 내리는 것을 목표로 봅니다.',
+  inv_hs:'가운데 바닥이 가장 낮고 양쪽 바닥이 비슷한 모양입니다. 목선을 넘으면 머리 깊이만큼 오르는 것을 목표로 봅니다.',
+  hs:'가운데 고점이 가장 높고 양쪽 고점이 비슷한 모양입니다. 목선이 깨지면 머리 높이만큼 내리는 것을 목표로 봅니다.',
+  range:'일정한 범위 안에서 위아래로 움직이는 모양입니다.', bull_flag:'급등 뒤 살짝 내려가며 쉬는 모양입니다. 위쪽 선을 넘으면 다시 오르는 것을 목표로 봅니다.',
+  bear_flag:'급락 뒤 살짝 오르며 쉬는 모양입니다. 아래쪽 선이 깨지면 다시 내리는 것을 목표로 봅니다.',
+  round_bottom:'천천히 내려왔다가 천천히 올라가는 그릇 모양입니다. 시작 높이를 넘으면 상승 추세로 이어지기 쉽습니다.'};
+const PST={confirmed:'돌파 확정',retest:'되돌림',forming:'형성 중',target:'목표 도달'};
+const TREND={up:['상승 추세','up'],down:['하락 추세','down'],side:['횡보·혼조','']};
+const taSigOf=(s,k)=>k==='base'?s.sig.find(x=>x.k==='base'):s.sig.find(x=>x.k===k);
+const agoTxt=a=>a==null?'':a===0?'오늘':`${a}일 전`;
+
+async function renderTA(){
+  const box=document.getElementById('tabody');
+  if(!TA){
+    if(taLoading) return; taLoading=true;
+    box.innerHTML='<div class="empty">국내 종목 분석 자료를 불러오는 중… (약 6MB, 처음 한 번만)</div>';
+    try{ const r=await fetch('data/kr_ta.json',{cache:'no-cache'}); if(!r.ok) throw new Error(r.status); TA=await r.json(); }
+    catch(e){ box.innerHTML='<div class="empty">기술적 분석 자료가 아직 없습니다. 거래일 16:40 자동 업데이트 후 표시됩니다.</div>'; taLoading=false; return; }
+    TA.stocks.forEach(s=>{ s.held=posBySym[s.s]?.side||s.held||null; s.above200=s.ma200.at(-1)!=null&&s.c.at(-1)>s.ma200.at(-1); });
+  }
+  const S=TA.stocks;
+  document.getElementById('tasub').textContent=`${dayLabel(TA.date)} 종가 · 코스피 보통주 ${S.filter(s=>s.m==='KOSPI').length} + 코스닥 시총 상위 ${S.filter(s=>s.m==='KOSDAQ').length} · 네이버 일봉 · 매 거래일 16:40 업데이트`;
+  box.innerHTML=`
+    <section class="grid c4" id="tatiles"></section>
+    <section class="card mt"><div class="card-h"><div><h3>신호판</h3><div class="sub">누르면 그 신호가 나온 종목만 봅니다 · 크로스·200일선은 최근 5거래일(장기 크로스는 10거래일) 안에 나온 것</div></div>
+      <div class="seg" id="tamk"><button data-m="all" aria-pressed="true">전체</button><button data-m="KOSPI" aria-pressed="false">코스피</button><button data-m="KOSDAQ" aria-pressed="false">코스닥100</button></div></div>
+      <div class="sigboard" id="sigboard"></div></section>
+    <section class="tawrap mt">
+      <div class="card" style="min-width:0">
+        <div class="tabar">
+          <input type="search" id="taq" placeholder="종목명 · 코드 · 신호 · 패턴" value="${esc(TF.q)}">
+          <div class="seg" id="tatrend"><button data-t="all" aria-pressed="true">전체</button><button data-t="up" aria-pressed="false">상승 추세</button><button data-t="down" aria-pressed="false">하락 추세</button><button data-t="side" aria-pressed="false">횡보</button></div>
+          <label class="sub" style="display:inline-flex;gap:5px;align-items:center"><input type="checkbox" id="taheld">내 보유 종목만</label>
+          <select id="tasort" class="tasel"><option value="mc">시가총액 순</option><option value="chg1">1일 등락 순</option><option value="chg20">20일 등락 순</option><option value="vr">거래량 배수 순</option><option value="sig">신호 많은 순</option><option value="q">패턴 품질 순</option></select>
+        </div>
+        <div class="sub" id="tacount" style="margin:10px 0 4px"></div>
+        <div class="tacards" id="tacards"></div>
+        <button class="morebtn" id="tamore" hidden></button>
+      </div>
+      <div class="card tadetail" id="tadetail"></div>
+    </section>`;
+  // 요약 타일
+  const n=S.length, c=k=>S.filter(s=>s.sig.some(x=>x.k===k)).length;
+  const up=S.filter(s=>s.trend==='up').length, dn=S.filter(s=>s.trend==='down').length, a200=S.filter(s=>s.above200).length;
+  document.getElementById('tatiles').innerHTML=[
+    tile('분석 종목',`${n}`,`상승 추세 ${up} · 하락 추세 ${dn} · 횡보 ${n-up-dn}`),
+    tile('200일선 위',`${(a200/n*100).toFixed(0)}%`,`${a200}종목 · 장기 추세가 살아 있는 종목 비율`),
+    tile('정배열 / 역배열',`<span class="up">${c('align_up')}</span> / <span class="down">${c('align_dn')}</span>`,'5·20·60·120일선 순서'),
+    tile('골든 / 데드크로스',`<span class="up">${c('gc')}</span> / <span class="down">${c('dc')}</span>`,`20·60일선 · 장기 ${c('gc_long')} / ${c('dc_long')}`),
+  ].join('');
+  // 신호판
+  const sb=document.getElementById('sigboard');
+  const pool=S.filter(s=>TF.mk==='all'||s.m===TF.mk);
+  sb.innerHTML=SIG_GROUPS.map(([g,items])=>`<div class="sgroup"><div class="sgt">${g}</div><div class="sgi">${items.map(([k,l])=>{
+      const cnt=pool.filter(s=>taSigOf(s,k)).length, tone=(SIG_TONE[k]||'info');
+      return `<button class="sigbtn ${tone}" data-k="${k}" aria-pressed="${TF.sig===k}"><span>${l}</span><b>${cnt}</b></button>`; }).join('')}</div></div>`).join('')+
+    `<div class="sgroup"><div class="sgt">차트 패턴</div><div class="sgi">${[['pat_bull','상승 패턴'],['pat_bear','하락 패턴'],['pat_conf','돌파 확정']].map(([k,l])=>{
+      const cnt=pool.filter(s=>taPatMatch(s,k)).length;
+      return `<button class="sigbtn ${k==='pat_bear'?'bear':'bull'}" data-k="${k}" aria-pressed="${TF.sig===k}"><span>${l}</span><b>${cnt}</b></button>`; }).join('')}</div></div>`;
+  sb.querySelectorAll('.sigbtn').forEach(b=>b.onclick=()=>{ TF.sig=TF.sig===b.dataset.k?null:b.dataset.k; renderTA(); });
+  seg('tamk',d=>{ TF.mk=d.m; renderTA(); });
+  document.querySelectorAll('#tamk button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===TF.mk));
+  seg('tatrend',d=>{ TF.trend=d.t; taRenderList(); });
+  document.querySelectorAll('#tatrend button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===TF.trend));
+  document.getElementById('taq').oninput=e=>{ TF.q=e.target.value.trim(); taRenderList(); };
+  document.getElementById('taheld').checked=TF.held;
+  document.getElementById('taheld').onchange=e=>{ TF.held=e.target.checked; taRenderList(); };
+  document.getElementById('tasort').value=TF.sort;
+  document.getElementById('tasort').onchange=e=>{ TF.sort=e.target.value; taRenderList(); };
+  document.getElementById('tamore').onclick=taMore;
+  taRenderList();
+}
+const SIG_TONE={gc:'bull',gc_long:'bull',ma200_up:'bull',align_up:'bull',base_bo:'bull',hi52:'bull',hi52_near:'bull',rsi_lo:'bull',
+  dc:'bear',dc_long:'bear',ma200_dn:'bear',align_dn:'bear',rsi_hi:'bear',base:'info',vol:'info'};
+function taPatMatch(s,k){ return k==='pat_bull'?s.pats.some(p=>p.bias==='bull'):k==='pat_bear'?s.pats.some(p=>p.bias==='bear'):s.pats.some(p=>p.st==='confirmed'||p.st==='retest'); }
+function taPass(s){
+  if(TF.mk!=='all'&&s.m!==TF.mk) return false;
+  if(TF.trend!=='all'&&s.trend!==TF.trend) return false;
+  if(TF.held&&!s.held) return false;
+  if(TF.sig){ if(TF.sig.startsWith('pat_')){ if(!taPatMatch(s,TF.sig)) return false; } else if(!taSigOf(s,TF.sig)) return false; }
+  if(TF.q){ const q=TF.q.toLowerCase(); if(!(s.n.toLowerCase().includes(q)||s.s.includes(q)||s.sig.some(x=>x.name.includes(TF.q))||s.pats.some(p=>p.name.includes(TF.q)))) return false; }
+  return true;
+}
+function taSortKey(s){
+  switch(TF.sort){ case 'chg1': return -(s.chg1??-9); case 'chg20': return -(s.chg20??-9); case 'vr': return -(s.vr??0);
+    case 'sig': return -s.sig.filter(x=>x.tone!=='info').length*10-(s.sig.some(x=>x.ago===0)?1:0); case 'q': return s.pats[0]?-s.pats[0].q:1e9;
+    default: return -s.mc; } }
+function taRenderList(){
+  taList=TA.stocks.filter(taPass).sort((a,b)=>taSortKey(a)-taSortKey(b));
+  const lab=TF.sig?(SIG_GROUPS.flatMap(g=>g[1]).find(x=>x[0]===TF.sig)?.[1]||{pat_bull:'상승 패턴',pat_bear:'하락 패턴',pat_conf:'패턴 돌파 확정'}[TF.sig]):'';
+  document.getElementById('tacount').innerHTML=`<b>${taList.length}종목</b>${lab?` · 신호: <b>${lab}</b> <button class="link" id="taclr">해제</button>`:''}`;
+  const clr=document.getElementById('taclr'); if(clr) clr.onclick=()=>{ TF.sig=null; renderTA(); };
+  document.getElementById('tacards').innerHTML=''; taShown=0; taMore();
+  if(!taList.length) document.getElementById('tacards').innerHTML='<div class="empty" style="grid-column:1/-1">조건에 맞는 종목이 없어요.</div>';
+  if(!taSel||!taList.find(s=>s.s===taSel)){ if(taList[0]) taSelect(taList[0].s,0); else document.getElementById('tadetail').innerHTML='<div class="empty">종목을 고르세요.</div>'; }
+  else taRenderDetail();
+}
+const taIO=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ taIO.unobserve(e.target); const s=TA.stocks.find(x=>x.s===e.target.closest('.tacard').dataset.s); taChart(e.target,s,{height:96}); } }),{rootMargin:'300px'});
+function taCard(s){
+  const tr=TREND[s.trend], p=s.pats[0];
+  const tags=s.sig.slice().sort((a,b)=>(a.ago??99)-(b.ago??99)).slice(0,4).map(x=>`<span class="stag ${x.tone}">${esc(x.name)}${x.ago!=null?` <i>${agoTxt(x.ago)}</i>`:''}</span>`).join('');
+  return `<div class="tacard ${s.s===taSel?'sel':''}" data-s="${s.s}">
+    <div class="tah"><div style="min-width:0"><b>${esc(s.n)}</b><span class="sym">${s.s}</span>${s.held?` <span class="tag" style="background:color-mix(in srgb,var(--${s.held}) 15%,transparent);color:var(--${s.held})">내 ${s.held==='long'?'롱':'숏'}</span>`:''}
+      <div class="sub" style="font-size:11.5px">${s.m==='KOSPI'?'코스피':'코스닥'} ${s.r}위 · ${won(s.mc)}</div></div>
+      <div style="text-align:right"><div style="font-weight:700">${num(s.last)}</div><div>${cpct(s.chg1)}</div></div></div>
+    <div class="tamini"></div>
+    <div class="tatags"><span class="stag trend ${tr[1]}">${tr[0]}</span>${tags}</div>
+    ${p?`<div class="tapat"><span class="${p.bias==='bull'?'up':p.bias==='bear'?'down':''}">${p.bias==='bull'?'▲':p.bias==='bear'?'▼':'■'} ${esc(p.name)}</span><span class="sub">${PST[p.st]} · 품질 ${p.q}</span></div>`:''}
+  </div>`; }
+function taMore(){
+  const chunk=taList.slice(taShown,taShown+TA_PAGE); taShown+=chunk.length;
+  const box=document.getElementById('tacards'); box.insertAdjacentHTML('beforeend',chunk.map(taCard).join(''));
+  [...box.querySelectorAll('.tacard')].slice(-chunk.length).forEach(c=>{ c.onclick=()=>{ taSelect(c.dataset.s,0); if(innerWidth<1100) document.getElementById('tadetail').scrollIntoView({behavior:'smooth'}); }; taIO.observe(c.querySelector('.tamini')); });
+  const mb=document.getElementById('tamore'); mb.hidden=taShown>=taList.length; mb.textContent=`더 보기 (${taList.length-taShown}종목 남음)`;
+}
+function taSelect(code,pi){ taSel=code; taPat=pi; document.querySelectorAll('.tacard').forEach(c=>c.classList.toggle('sel',c.dataset.s===code)); taRenderDetail(); }
+function taRenderDetail(){
+  const s=TA.stocks.find(x=>x.s===taSel), el=document.getElementById('tadetail'); if(!s) return;
+  const p=s.pats[taPat]||null, tr=TREND[s.trend];
+  el.innerHTML=`
+    <div class="card-h" style="margin-bottom:8px"><div><h3 style="font-size:17px">${esc(s.n)} <span class="sym">${s.s}</span></h3>
+      <div class="sub">${s.m==='KOSPI'?'코스피':'코스닥'} 시총 ${s.r}위 · ${won(s.mc)}원 · ${dayLabel(s.date)} 종가</div></div>
+      <a class="link" href="https://finance.naver.com/item/main.naver?code=${s.s}" target="_blank" rel="noopener noreferrer">네이버 증권 ${ico('ext')}</a></div>
+    <div class="mrow">
+      <div class="metric"><div class="ml">종가</div><div class="mv">${num(s.last)}<span class="mc ${dir(s.chg1)}">${pct(s.chg1)}</span></div></div>
+      <div class="metric"><div class="ml">추세</div><div class="mv ${tr[1]}">${tr[0]}</div></div>
+      <div class="metric"><div class="ml">RSI 14</div><div class="mv">${s.rsi??'—'}</div></div>
+      <div class="metric"><div class="ml">거래량</div><div class="mv">${s.vr!=null?s.vr.toFixed(1)+'배':'—'}</div></div>
+    </div>
+    <div class="legend" style="margin-bottom:6px"><span><i class="lkey" style="background:var(--ma20)"></i>20일선</span><span><i class="lkey" style="background:var(--ma60)"></i>60일선</span><span><i class="lkey" style="background:var(--s3)"></i>120일선</span><span><i class="lkey" style="background:var(--short)"></i>200일선</span>${s.base?'<span><i class="key" style="background:var(--accent-soft);border:1px solid var(--accent)"></i>베이스</span>':''}${p?'<span><i class="lkey" style="background:var(--good)"></i>목표</span><span><i class="lkey" style="background:var(--crit)"></i>손절</span>':''}</div>
+    <div class="chart" id="tabig"></div>
+    <div class="nsec"><span>신호 ${s.sig.length}개</span></div>
+    <div class="tasigs">${s.sig.map(x=>`<div class="tasig"><span class="stag ${x.tone}">${esc(x.name)}</span><span class="sub">${esc(x.note)}${x.ago!=null?` · ${agoTxt(x.ago)}`:''}</span>
+      <div class="sub" style="margin-top:3px;color:var(--ink-2)">${SIG_DESC[x.k==='base_bo'?'base_bo':x.k]||''}</div></div>`).join('')||'<div class="sub">눈에 띄는 신호가 없어요.</div>'}</div>
+    ${s.pats.length?`<div class="nsec"><span>차트 패턴</span></div><div class="seg" id="tapats">${s.pats.map((x,i)=>`<button data-i="${i}" aria-pressed="${i===taPat}">${esc(x.name)} ${x.q}</button>`).join('')}</div>
+      ${p?`<div class="sub" style="margin-top:8px;color:var(--ink-2);line-height:1.6">${PAT_DESC[p.k]||''}</div>
+      <div class="mrow" style="margin-top:8px">
+        <div class="metric"><div class="ml">상태</div><div class="mv">${PST[p.st]}</div></div>
+        <div class="metric"><div class="ml">목표가</div><div class="mv" style="color:var(--good)">${num(p.target)}<span class="mc">${pct(p.target/s.last-1,1)}</span></div></div>
+        <div class="metric"><div class="ml">손절가</div><div class="mv" style="color:var(--crit)">${num(p.stop)}<span class="mc">${pct(p.stop/s.last-1,1)}</span></div></div>
+        <div class="metric"><div class="ml">손익비</div><div class="mv">${p.rr!=null?p.rr.toFixed(2):'—'}</div></div></div>`:''}`:''}
+    <div class="nsec"><span>가격 정보</span></div>
+    <div class="tainfo"><span>5일 · 20일 · 60일</span><span>${cpct(s.chg5,1)} · ${cpct(s.chg20,1)} · ${cpct(s.chg60,1)}</span>
+      <span>52주 고가 · 저가</span><span>${num(s.hi52)} · ${num(s.lo52)}</span><span>고가 대비</span><span>${pct(s.last/s.hi52-1,1)}</span>
+      <span>200일선</span><span>${s.ma200.at(-1)!=null?`${num(s.ma200.at(-1))} (${s.above200?'위':'아래'} ${pct(s.last/s.ma200.at(-1)-1,1)})`:'—'}</span></div>`;
+  el.querySelectorAll('#tapats button').forEach(b=>b.onclick=()=>{ taPat=+b.dataset.i; taRenderDetail(); });
+  taChart(document.getElementById('tabig'),s,{height:380,big:true,pat:p});
+}
+// 캔들 차트 (밝은/어두운 화면 공통 색)
+function taChart(box,s,{height=96,big=false,pat=null}={}){
+  const W=box.clientWidth||280, n=s.c.length, H=height;
+  const m={t:6,r:big?58:4,b:big?18:2,l:4}, volH=big?44:14, gap=big?6:2, pH=H-m.t-m.b-volH-gap;
+  let lo=Infinity, hi=-Infinity;
+  for(let i=0;i<n;i++){ if(s.h[i]!=null){ lo=Math.min(lo,s.l[i]); hi=Math.max(hi,s.h[i]); } }
+  [s.ma20,s.ma60,s.ma120,s.ma200].forEach(a=>a.forEach(v=>{ if(v!=null&&v<hi*1.25&&v>lo*.8){ lo=Math.min(lo,v); hi=Math.max(hi,v);} }));
+  if(pat) [pat.target,pat.stop].forEach(v=>{ if(v!=null&&v<hi*1.3&&v>lo*.7){ lo=Math.min(lo,v); hi=Math.max(hi,v);} });
+  const pad=(hi-lo)*.05||1; lo-=pad; hi+=pad;
+  const step=(W-m.l-m.r)/n, x=i=>m.l+(i+.5)*step, y=v=>m.t+pH*(1-(v-lo)/(hi-lo)), cw=Math.max(1,step*.62);
+  let g='';
+  if(big){ for(let k=0;k<=4;k++){ const v=lo+(hi-lo)*k/4; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text class="axis-t" x="${W-m.r+6}" y="${y(v)+4}">${num(v)}</text>`; }
+    const D_=TA.dates||[]; for(let i=0;i<n;i+=20){ const d=D_[D_.length-n+i]; if(d) g+=`<text class="axis-t" x="${x(i)}" y="${H-4}" text-anchor="middle">${md(d)}</text>`; } }
+  if(s.base){ const [a,b,t,bt]=s.base; g+=`<rect x="${x(a)-step/2}" y="${y(t)}" width="${x(b)-x(a)+step}" height="${Math.max(1,y(bt)-y(t))}" fill="var(--accent-soft)" stroke="var(--accent)" stroke-dasharray="3 3"/>`+
+    (big?`<text x="${x(a)+4}" y="${y(t)-4}" font-size="11" fill="var(--accent)" font-weight="700">베이스 ${b-a+1}일</text>`:''); }
+  const line=(arr,c,w,dash)=>{ let d='',pen=false; arr.forEach((v,i)=>{ if(v==null){pen=false;return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1); pen=true; }); return d?`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" ${dash?`stroke-dasharray="${dash}"`:''}/>`:''; };
+  for(let i=0;i<n;i++){ if(s.o[i]==null) continue; const up=s.c[i]>=s.o[i], col=up?'var(--up)':'var(--down)';
+    g+=`<line x1="${x(i)}" x2="${x(i)}" y1="${y(s.h[i])}" y2="${y(s.l[i])}" stroke="${col}"/>`;
+    const a=y(Math.max(s.o[i],s.c[i])), b=y(Math.min(s.o[i],s.c[i]));
+    g+=`<rect x="${x(i)-cw/2}" y="${a}" width="${cw}" height="${Math.max(1,b-a)}" fill="${up?'var(--surface)':col}" stroke="${col}"/>`; }
+  g+=line(s.ma20,'var(--ma20)',big?1.6:1.2)+line(s.ma60,'var(--ma60)',big?1.6:1.2);
+  if(big) g+=line(s.ma120,'var(--s3)',1.5)+line(s.ma200,'var(--short)',1.8,'5 3');
+  // 크로스 표시
+  if(big) s.sig.filter(x_=>['gc','dc','gc_long','dc_long','ma200_up','ma200_dn'].includes(x_.k)&&x_.ago!=null).forEach(x_=>{
+    const i=n-1-x_.ago, arr=x_.k.startsWith('ma200')?s.c:x_.k.endsWith('long')?s.ma60:s.ma20, v=arr[i]; if(v==null) return;
+    const c=x_.tone==='bull'?'var(--up)':'var(--down)';
+    g+=`<circle cx="${x(i)}" cy="${y(v)}" r="6" fill="none" stroke="${c}" stroke-width="2"/><text x="${x(i)}" y="${y(v)+(x_.tone==='bull'?20:-11)}" font-size="10.5" font-weight="700" fill="${c}" text-anchor="middle">${esc(x_.name.replace('장기 ',''))}</text>`; });
+  if(pat){
+    const LC={res:['var(--accent)','5 4'],sup:['var(--s3)','5 4'],neck:['var(--accent)',''],pole:['var(--muted)','2 3'],curve:['var(--ma60)','']};
+    pat.lines.forEach(([a,y1,b,y2,k])=>{ const [c,d]=LC[k]||LC.res; g+=`<line x1="${x(a)}" y1="${y(y1)}" x2="${x(b)}" y2="${y(y2)}" stroke="${c}" stroke-width="1.6" ${d?`stroke-dasharray="${d}"`:''}/>`; });
+    const hl=(v,c,lab)=>{ if(v==null||v<lo||v>hi) return; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="3 3"/>`+(big?`<text x="${W-m.r+6}" y="${y(v)-3}" font-size="10.5" font-weight="700" fill="${c}">${lab}</text>`:''); };
+    hl(pat.target,'var(--good)','목표'); hl(pat.stop,'var(--crit)','손절');
+  }
+  const vmax=Math.max(1,...s.v), vy=m.t+pH+gap;
+  for(let i=0;i<n;i++){ const hh=volH*s.v[i]/vmax; g+=`<rect x="${x(i)-cw/2}" y="${vy+volH-hh}" width="${cw}" height="${hh}" fill="${s.c[i]>=s.o[i]?'var(--up)':'var(--down)'}" opacity=".35"/>`; }
+  box.innerHTML=`<svg height="${H}" viewBox="0 0 ${W} ${H}" style="display:block;width:100%">${g}${big?`<line class="xh" y1="${m.t}" y2="${H-m.b}" stroke="var(--axis)" style="display:none"/><rect class="hit" x="${m.l}" y="0" width="${W-m.l-m.r}" height="${H}" fill="transparent"/>`:''}</svg>`;
+  if(big){ const svg=box.querySelector('svg'), xh=svg.querySelector('.xh'), D_=TA.dates||[];
+    svg.querySelector('.hit').addEventListener('mousemove',e=>{ const r=svg.getBoundingClientRect(); const i=Math.max(0,Math.min(n-1,Math.floor((e.clientX-r.left-m.l)/step)));
+      xh.setAttribute('x1',x(i)); xh.setAttribute('x2',x(i)); xh.style.display='';
+      showTip(e,D_[D_.length-n+i]||'',[['시가',num(s.o[i])],['고가',num(s.h[i])],['저가',num(s.l[i])],['종가',num(s.c[i])],['20일선',num(s.ma20[i])],['60일선',num(s.ma60[i])],['200일선',num(s.ma200[i])],['거래량',num(s.v[i]*1000)]]); });
+    svg.querySelector('.hit').addEventListener('mouseleave',()=>{ xh.style.display='none'; hideTip(); }); }
+}
+function taRedraw(){ if(!TA) return; document.querySelectorAll('.tamini').forEach(m=>{ if(m.innerHTML){ const s=TA.stocks.find(x=>x.s===m.closest('.tacard').dataset.s); taChart(m,s,{height:96}); } }); if(taSel) taRenderDetail(); }
+
+// ============================================================
 // 탭 3. 글로벌 시장
 // ============================================================
 // 이번 주 주요 경제 일정
@@ -1787,8 +2061,8 @@ const nNewDisc=DISC.filter(d=>d.important&&d.date>=daysAgo(3)).length;
 if(nNewDisc){ const b=document.getElementById('discbadge'); b.hidden=false; b.textContent=nNewDisc; b.title=`최근 3일 중요 공시 ${nNewDisc}건`; }
 const drawn={};
 const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();drawRank();}, market:()=>{renderMarket();renderNews();drawLive();drawIdx();renderHeat();}, global:renderGlobal,
-  wrap:renderWrap, holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContestGate};
-const REDRAW={portfolio:()=>{drawNav();drawRank();}, wrap:drawWrapCharts, market:()=>{renderMarket();drawLive();drawIdx();}, global:renderGlobal, pair:drawPair, contest:renderContest};
+  wrap:renderWrap, ta:renderTA, holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContestGate};
+const REDRAW={portfolio:()=>{drawNav();drawRank();}, wrap:drawWrapCharts, ta:taRedraw, market:()=>{renderMarket();drawLive();drawIdx();}, global:renderGlobal, pair:drawPair, contest:renderContest};
 let cur=null;
 function show(t){
   if(!RENDER[t]) t='portfolio';
