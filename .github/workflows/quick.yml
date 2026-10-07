@@ -1,0 +1,47 @@
+name: 장중 10분 업데이트
+
+on:
+  schedule:
+    # GitHub cron은 UTC 기준. 평일 09:00~15:50 KST 10분마다 (매시 10분은 전체 업데이트가 돌아서 뺌)
+    - cron: "0,20,30,40,50 0-6 * * 1-5"
+  workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update           # 전체 업데이트와 같은 줄에 세워서 동시에 저장하다 충돌하지 않게
+  cancel-in-progress: false
+
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: 빠른 수집 (포트폴리오·지수 흐름·거래대금) + 빌드
+        env:
+          ALPHA_API_KEY: ${{ secrets.ALPHA_API_KEY }}
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+          DASH_PASSWORD: ${{ secrets.DASH_PASSWORD }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          COMPETITION_ID: "9"
+        run: |
+          pip install -q cryptography
+          python collect.py --quick
+          python build.py
+      - name: 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data index.html dashboard.html
+          git diff --cached --quiet || git commit -m "data: $(TZ=Asia/Seoul date +'%F %H:%M') KST (10분)"
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase -X theirs origin main
+          done

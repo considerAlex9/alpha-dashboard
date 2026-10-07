@@ -90,9 +90,21 @@ def main():
     merged.update({t["id"]: t for t in trades})
     write_json(tr_p, sorted(merged.values(), key=lambda t: t["created_at"], reverse=True))
 
+    # --quick: 장중 10분 업데이트 — 포트폴리오·지수 흐름·거래대금만 (무거운 시장 데이터·공시·뉴스·일정은 건너뜀)
+    quick = "--quick" in sys.argv
+    kis_client = []
+
+    def get_kis():
+        if not kis_client and env.get("KIS_APP_KEY") and env.get("KIS_APP_SECRET"):
+            import kis as kis_mod
+            kis_client.append(kis_mod.KIS(env["KIS_APP_KEY"], env["KIS_APP_SECRET"]))
+        return kis_client[0] if kis_client else None
+
     # 2) 시장 데이터 — 실패해도 포트폴리오 수집 결과는 그대로 둔다
     mk, fresh = read_json(DATA / "market.json", None), False
     try:
+        if quick:
+            raise StopIteration
         import market
         mk = market.collect(portfolio["positions"], (env.get("KIS_APP_KEY"), env.get("KIS_APP_SECRET")), prev=mk)
         write_json(DATA / "market.json", mk)
@@ -106,12 +118,32 @@ def main():
             b = mk["flows"]["KOSPI"]["bizdate"]
             fl.setdefault(b, {"bizdate": b, **{k: {x: v[x] for x in ("개인", "외국인", "기관")} for k, v in mk["flows"].items()}})
         write_json(fl_p, sorted(fl.values(), key=lambda f: f["bizdate"]))
+    except StopIteration:
+        pass
     except Exception as e:  # noqa: BLE001
         print(f"  [경고] 시장 데이터 수집 실패: {e}")
 
+    # 2-1) 장중 흐름 (지수·거래대금·내 포트 하루 수익률) — 평일 09~17시
+    hist_p = DATA / "history.json"
+    hist = read_json(hist_p, [])
+    trading_now = None
+    if now.weekday() < 5 and 9 <= now.hour < 17:
+        try:
+            import intraday
+            k = get_kis()
+            if k:
+                data, trading_now = intraday.update(k, read_json(DATA / "intraday.json", None), portfolio, hist, now)
+                if trading_now:
+                    write_json(DATA / "intraday.json", data)
+        except Exception as e:  # noqa: BLE001
+            print(f"  [경고] 장중 흐름 실패: {e}")
+
     # 3) 원본 스냅샷 (그날 마지막 상태) — trade_date: 이 값이 어느 거래일 값인지 (휴장일·장 시작 전이면 None)
     #    대회 동향(리더보드·참가자 업종 포지션)은 비밀번호로 암호화한 것만 저장한다. 비밀번호가 없으면 저장하지 않음.
-    trade_date = days.trade_date_now(now, mk, fresh)
+    if quick and trading_now is not None:          # 빠른 모드: 오늘 분봉이 있으면 거래일
+        trade_date = today if trading_now else None
+    else:
+        trade_date = days.trade_date_now(now, mk, fresh)
     me_info = {k: me[k] for k in ("rank", "nav", "total_return_pct", "sharpe_ratio", "max_drawdown_pct", "composite_score")} if me else None
     snap = {"captured_at": now.isoformat(), "trade_date": trade_date, "portfolio": portfolio, "orders": orders,
             "me": {**(me_info or {}), "participants": len(leaderboard)}}
@@ -121,8 +153,6 @@ def main():
     write_json(DATA / "snapshots" / f"{today}.json", snap)
 
     # 4) 일별 기록 — 거래일 값만
-    hist_p = DATA / "history.json"
-    hist = read_json(hist_p, [])
     if trade_date:
         hist = [h for h in hist if h["date"] != trade_date]
         hist.append(hist_entry(trade_date, now.isoformat(), portfolio, me, len(leaderboard)))
@@ -132,7 +162,7 @@ def main():
         print("  일별 기록: 휴장일이거나 장 시작 전이라 이번 값은 기록하지 않음")
 
     # 5) 다트 공시 — 키가 있을 때만, 실패해도 나머지는 그대로
-    if env.get("DART_API_KEY"):
+    if env.get("DART_API_KEY") and not quick:
         try:
             import dart
             held = [(p["company_symbol"], p.get("company_alias") or p["company_name"], p["side"]) for p in portfolio["positions"]]
@@ -142,24 +172,31 @@ def main():
 
     # 6) 텔레그램 매크로 뉴스 — 장전·장마감 브리핑 (업데이트 시각이 지났을 때만 새로 만듦)
     try:
+        if quick:
+            raise StopIteration
         import news
         write_json(DATA / "news.json", news.collect(read_json(DATA / "news.json", None)))
+    except StopIteration:
+        pass
     except Exception as e:  # noqa: BLE001
         print(f"  [경고] 매크로 뉴스 수집 실패: {e}")
 
     # 7) 이번 주 경제 일정
     try:
+        if quick:
+            raise StopIteration
         import econ
         write_json(DATA / "calendar.json", econ.collect(read_json(DATA / "calendar.json", None)))
+    except StopIteration:
+        pass
     except Exception as e:  # noqa: BLE001
         print(f"  [경고] 경제 일정 수집 실패: {e}")
 
     # 8) 장 마감 시황 — 거래일 16:25 이후 첫 실행에서 한 번 만든다
-    if trade_date and now.hour * 60 + now.minute >= 16 * 60 + 25 and env.get("KIS_APP_KEY") and mk:
+    if trade_date and not quick and now.hour * 60 + now.minute >= 16 * 60 + 25 and env.get("KIS_APP_KEY") and mk:
         try:
-            import kis as kis_mod
             import wrap
-            k = kis_mod.KIS(env["KIS_APP_KEY"], env["KIS_APP_SECRET"])
+            k = get_kis()
             write_json(DATA / "wrap.json", wrap.collect(read_json(DATA / "wrap.json", None), k, mk, read_json(DATA / "news.json", None),
                                                         read_json(DATA / "calendar.json", None), read_json(DATA / "disclosures.json", None),
                                                         portfolio["positions"], now))
@@ -175,7 +212,7 @@ def main():
             print(f"  [경고] 텔레그램 알림 실패: {e}")
 
     rank = f"{me['rank']}/{len(leaderboard)}위" if me else "순위 미확인"
-    print(f"[{now:%Y-%m-%d %H:%M}] NAV {portfolio['nav']:,.0f}  수익률 {portfolio['total_pnl_pct']*100:+.2f}%  "
+    print(f"[{now:%Y-%m-%d %H:%M}{' 빠른 모드' if quick else ''}] NAV {portfolio['nav']:,.0f}  수익률 {portfolio['total_pnl_pct']*100:+.2f}%  "
           f"{rank}  기록 {len(hist)}거래일{'' if trade_date else ' (이번 값은 기록 안 함)'}  체결 누적 {len(merged)}건")
 
 

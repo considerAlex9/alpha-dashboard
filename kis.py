@@ -1,12 +1,13 @@
 """한국투자증권 오픈 API — 시세 '조회'만 사용한다. 주문 기능은 넣지 않는다.
 
-- 접근토큰은 1분에 1회만 발급되므로, 내 컴퓨터에서는 .kis_token.json 에 저장해 재사용한다
-  (이 파일은 .gitignore 로 깃허브에 올라가지 않음). 깃허브 자동 실행은 매번 새로 발급한다.
+- 접근토큰은 24시간 유효하고, 유효한 동안 다시 요청하면 같은 토큰을 돌려준다. 발급 요청은 1분에 1회까지라
+  겹치면 1분 기다렸다가 다시 받는다. 내 컴퓨터에서는 .kis_token.json 에 저장해 재사용한다 (.gitignore 처리).
 - 키는 환경변수 KIS_APP_KEY / KIS_APP_SECRET (.env 또는 깃허브 비밀 보관함)
 """
 import json
 import threading
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
@@ -31,9 +32,17 @@ class KIS:
             if c.get("app_key_tail") == self.key[-6:] and c["expires"] > (datetime.now() + timedelta(minutes=30)).isoformat():
                 return c["token"]
         body = json.dumps({"grant_type": "client_credentials", "appkey": self.key, "appsecret": self.secret}).encode()
-        req = urllib.request.Request(f"{BASE}/oauth2/tokenP", data=body, headers={"content-type": "application/json"})
-        with urllib.request.urlopen(req, timeout=20) as r:
-            d = json.load(r)
+        for i in range(3):
+            req = urllib.request.Request(f"{BASE}/oauth2/tokenP", data=body, headers={"content-type": "application/json"})
+            try:
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    d = json.load(r)
+                break
+            except urllib.error.HTTPError as e:
+                d = json.loads(e.read() or b"{}")
+                if d.get("error_code") != "EGW00133" or i == 2:      # 1분에 1회 제한 → 기다렸다 다시
+                    raise RuntimeError(f"토큰 발급 실패 {d.get('error_code')} {d.get('error_description')}")
+                time.sleep(62)
         exp = datetime.strptime(d["access_token_token_expired"], "%Y-%m-%d %H:%M:%S")
         try:
             TOKEN_CACHE.write_text(json.dumps({"token": d["access_token"], "expires": exp.isoformat(),
@@ -135,15 +144,20 @@ class KIS:
                 "limit_up": int(n("uplm_issu_cnt")), "limit_down": int(n("lslm_issu_cnt"))}
 
     def index_minutes(self, code, step=300):
-        """업종 분봉 (step 초 단위, 300 = 5분) → 오늘 것만 [(HHMM, 지수)] 시간순"""
+        """업종 분봉 (step 초 단위, 300 = 5분) → 가장 최근 거래일 것만 [(HHMM, 지수)] 시간순"""
+        return [(t, v) for t, v, _ in self.index_minutes_full(code, step)[1]]
+
+    def index_minutes_full(self, code, step=300):
+        """업종 분봉 → (거래일 YYYYMMDD, [(HHMM, 지수, 누적 거래대금 원)])"""
         d = self.get("/uapi/domestic-stock/v1/quotations/inquire-time-indexchartprice", "FHKUP03500200",
                      {"FID_COND_MRKT_DIV_CODE": "U", "FID_ETC_CLS_CODE": "0", "FID_INPUT_ISCD": code,
                       "FID_INPUT_HOUR_1": str(step), "FID_PW_DATA_INCU_YN": "Y"})
         rows = [r for r in d.get("output2", []) if r.get("stck_cntg_hour", "").isdigit() and r["stck_cntg_hour"] != "888888"]
         if not rows:
-            return []
+            return None, []
         day = max(r["stck_bsop_date"] for r in rows)
-        return sorted((r["stck_cntg_hour"][:4], float(r["bstp_nmix_prpr"])) for r in rows if r["stck_bsop_date"] == day)
+        return day, sorted((r["stck_cntg_hour"][:4], float(r["bstp_nmix_prpr"]), float(r.get("acml_tr_pbmn") or 0) * 1e6)
+                           for r in rows if r["stck_bsop_date"] == day)
 
     def value_rank(self, index_code):
         """거래대금 상위 30종목 (ETF·ETN 포함). index_code: 0001 코스피, 1001 코스닥"""

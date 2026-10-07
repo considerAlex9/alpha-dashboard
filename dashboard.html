@@ -544,6 +544,17 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   <div class="panel" id="p-market">
     <div class="ph"><div><h2>시장 동향</h2><p id="mktsub">국내 지수와 투자자별 수급</p></div></div>
     <section class="grid c3" id="idxcards"></section>
+    <section class="card mt" id="livecard">
+      <div class="card-h">
+        <div><h3>오늘 장중 흐름</h3><div class="sub" id="livesub"></div></div>
+        <div class="legend"><span><i class="lkey" style="background:var(--idx);height:3px"></i>코스피</span><span><i class="lkey" style="background:var(--s1)"></i>코스닥</span><span><i class="lkey" style="background:var(--long);height:3px"></i>내 포트폴리오</span></div>
+      </div>
+      <div class="mrow" id="livetiles"></div>
+      <div class="grid c2">
+        <div><div class="sub" style="font-weight:650;margin-bottom:4px">전일 종가 대비 등락률 <span class="muted" style="font-weight:400">내 포트폴리오는 전 거래일 마감 순자산 대비</span></div><div class="chart" id="livechart"></div></div>
+        <div><div class="sub" style="font-weight:650;margin-bottom:4px">누적 거래대금</div><div class="chart" id="valchart"></div></div>
+      </div>
+    </section>
     <section class="card mt" id="newscard">
       <div class="card-h">
         <div><h3><svg class="i"><use href="#i-globe"/></svg>매크로 뉴스 브리핑</h3><div class="sub" id="newssub"></div></div>
@@ -832,8 +843,9 @@ function lineChart(box, {series, band=null, height=240, yFmt=v=>num(v), tipFmt, 
   }
   const paths=series.map(s=>{
     let d='',pen=false;
-    s.pts.forEach((p,i)=>{ if(p[1]==null||isNaN(p[1])){pen=false;return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+y(p[1]).toFixed(1); pen=true; });
-    return `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="${s.w||2}" stroke-linejoin="round" stroke-linecap="round" ${s.dash?`stroke-dasharray="${s.dash}"`:''}/>`;
+    s.pts.forEach((p,i)=>{ if(p[1]==null||isNaN(p[1])){ if(!s.connect) pen=false; return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+y(p[1]).toFixed(1); pen=true; });
+    const dots=s.dots?s.pts.map((p,i)=>p[1]==null||isNaN(p[1])?'':`<circle cx="${x(i).toFixed(1)}" cy="${y(p[1]).toFixed(1)}" r="2.6" fill="${s.color}"/>`).join(''):'';
+    return `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="${s.w||2}" stroke-linejoin="round" stroke-linecap="round" ${s.dash?`stroke-dasharray="${s.dash}"`:''}/>${dots}`;
   }).reverse().join('');   // 첫 번째 선(주인공)이 맨 위에 그려지도록
   const s0=series[0]; let endDot='',endTxt='';
   if(s0){ const li=s0.pts.map(p=>p[1]).findLastIndex(v=>v!=null);
@@ -1190,12 +1202,13 @@ function renderMarket(){
   if(!M){ document.getElementById('p-market').innerHTML+='<div class="empty">시장 데이터가 아직 없습니다.</div>'; return; }
   const dom=M.domestic;
   document.getElementById('mktsub').textContent=`국내 지수와 투자자별 수급 · ${M.source} · ${dom[0]?.bars.at(-1)[0]||''} 종가 기준`;
-  document.getElementById('idxcards').innerHTML=dom.map(d=>`
-    <div class="card q"><div class="nm"><span>${d.name}</span><span>${md(d.bars.at(-1)[0])} 종가</span></div>
-      <div class="px">${num(d.bars.at(-1)[4],2)}</div>
-      <div class="ch">${cpct(d.chg1)} <span class="sub" style="font-weight:400">전일 대비</span></div>
+  const liveOf=d=>ID&&ID[d.symbol]&&ID.date>=d.bars.at(-1)[0]?ID[d.symbol]:null;
+  document.getElementById('idxcards').innerHTML=dom.map(d=>{ const L=liveOf(d); return `
+    <div class="card q"><div class="nm"><span>${d.name}</span><span>${L?(ID.date===todayKST&&KST(ID.updated_at).slice(-5)<'15:30'?`${KST(ID.updated_at).slice(-5)} 현재`:`${md(ID.date)} 종가`):`${md(d.bars.at(-1)[0])} 종가`}</span></div>
+      <div class="px">${num(L?L.close:d.bars.at(-1)[4],2)}</div>
+      <div class="ch">${cpct(L?L.chg1:d.chg1)} <span class="sub" style="font-weight:400">전일 대비</span></div>
       <div class="mini"><span>5일 ${pct(d.chg5,1)}</span><span>20일 ${pct(d.chg20,1)}</span><span>60일 ${pct(d.chg60,1)}</span></div>
-      <div class="spark" data-sym="${d.symbol}"></div></div>`).join('');
+      <div class="spark" data-sym="${d.symbol}"></div></div>`; }).join('');
   document.querySelectorAll('#idxcards .spark').forEach(el=>{
     const d=dom.find(x=>x.symbol===el.dataset.sym);
     lineChart(el,{spark:true,height:44,series:[{name:d.name,color:'var(--idx)',w:2.5,pts:d.bars.slice(-60).map(b=>[b[0],b[4]])}],yFmt:v=>num(v,2)});
@@ -1238,6 +1251,33 @@ function drawIdx(){
 function gpx(g){
   const d = g.price>=1000?0 : g.price>=100?1 : 2;
   return g.unit==='%'? g.price.toFixed(3)+'%' : (g.unit==='$'?'$':'')+num(g.price,d)+(g.unit==='원'?'원':'');
+}
+
+// 오늘 장중 흐름 (10분마다)
+const ID = D.intraday || null;
+function drawLive(){
+  const box=document.getElementById('livechart');
+  if(!ID?.KOSPI){ document.getElementById('livecard').style.display='none'; return; }
+  const K=ID.KOSPI, Q=ID.KOSDAQ||{series:[]}, PF=ID.portfolio||[];
+  const hm=KST(ID.updated_at).slice(-5), live=ID.date===todayKST&&hm<'15:30';
+  document.getElementById('livesub').textContent=`${dayLabel(ID.date)} ${live?`${hm} 현재`:'마감'} · 거래일 장중 10분마다 업데이트 · 지수·거래대금은 5분 단위 · 한국투자증권`;
+  const last=PF.at(-1);
+  const t=(l,v,sub)=>`<div class="metric"><div class="ml">${l}</div><div class="mv">${v}</div>${sub?`<div class="ml" style="margin-top:2px">${sub}</div>`:''}</div>`;
+  document.getElementById('livetiles').innerHTML=[
+    t('코스피',`${num(K.close,2)} ${cpct(K.chg1)}`,`상승 ${K.up} · 하락 ${K.down}`),
+    Q.close?t('코스닥',`${num(Q.close,2)} ${cpct(Q.chg1)}`,`상승 ${Q.up} · 하락 ${Q.down}`):'',
+    t('거래대금',`${won(K.value)}${Q.value?` · ${won(Q.value)}`:''}`,'코스피 · 코스닥'),
+    last?t('내 포트폴리오 오늘',cpct(last[1]),`${won(last[2]-last[2]/(1+last[1]),true)}원 · 코스피 대비 <b class="${dir(last[1]-K.chg1)}">${((last[1]-K.chg1)*100).toFixed(2)}%p</b>`):'',
+  ].join('');
+  const times=[...new Set([...K.series,...Q.series,...PF].map(p=>p[0]))].sort();
+  const at=(arr,i=1)=>{ const m=Object.fromEntries(arr.map(p=>[p[0],p[i]])); return times.map(x=>[x,m[x]??null]); };
+  const series=[{name:'코스피',color:'var(--idx)',w:2.6,pts:at(K.series)}];
+  if(Q.series.length) series.push({name:'코스닥',color:'var(--s1)',w:1.6,pts:at(Q.series)});
+  if(PF.length) series.push({name:'내 포트폴리오',color:'var(--long)',w:2.4,connect:true,dots:true,pts:at(PF)});
+  lineChart(box,{series,height:230,zero:true,endLabel:false,xFmt:x=>x,yFmt:v=>v==null?'—':pct(v,1),tipFmt:v=>pct(v)});
+  const vs=[{name:'코스피',color:'var(--idx)',w:2.2,pts:at(K.series,2)}];
+  if(Q.series.length) vs.push({name:'코스닥',color:'var(--s1)',w:1.6,pts:at(Q.series,2)});
+  lineChart(document.getElementById('valchart'),{series:vs,height:230,endLabel:false,xFmt:x=>x,yFmt:v=>v==null?'—':(v/1e12).toFixed(1)+'조',tipFmt:v=>v==null?'—':won(v)+'원'});
 }
 
 // 테마별 오늘 등락판
@@ -1745,9 +1785,9 @@ if(nHeldWarn){ const b=document.getElementById('alertbadge'); b.hidden=false; b.
 const nNewDisc=DISC.filter(d=>d.important&&d.date>=daysAgo(3)).length;
 if(nNewDisc){ const b=document.getElementById('discbadge'); b.hidden=false; b.textContent=nNewDisc; b.title=`최근 3일 중요 공시 ${nNewDisc}건`; }
 const drawn={};
-const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();drawRank();}, market:()=>{renderMarket();renderNews();drawIdx();renderHeat();}, global:renderGlobal,
+const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();drawRank();}, market:()=>{renderMarket();renderNews();drawLive();drawIdx();renderHeat();}, global:renderGlobal,
   wrap:renderWrap, holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContestGate};
-const REDRAW={portfolio:()=>{drawNav();drawRank();}, wrap:drawWrapCharts, market:()=>{renderMarket();drawIdx();}, global:renderGlobal, pair:drawPair, contest:renderContest};
+const REDRAW={portfolio:()=>{drawNav();drawRank();}, wrap:drawWrapCharts, market:()=>{renderMarket();drawLive();drawIdx();}, global:renderGlobal, pair:drawPair, contest:renderContest};
 let cur=null;
 function show(t){
   if(!RENDER[t]) t='portfolio';

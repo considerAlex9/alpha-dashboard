@@ -82,6 +82,7 @@ def main():
         "disclosures": read_opt("disclosures.json", None),
         "news": read_opt("news.json", None),
         "calendar": read_opt("calendar.json", None),
+        "intraday": read_opt("intraday.json", None),         # 오늘 장중 흐름 (10분마다)
         "wrap": read_opt("wrap.json", None),                 # 장 마감 시황
         "themes": read_opt("sectors.json", {}, ROOT),
         "limits": read_opt("limits.json", {}, ROOT),
