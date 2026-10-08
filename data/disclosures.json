@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-08T14:29:33.212162+09:00",
+ "captured_at": "2026-10-08T15:39:11.232911+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "222800",
+   "name": "심텍",
+   "side": "long",
+   "title": "전환청구권행사",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "심텍",
+   "rcept_no": "20261008900522"
+  },
+  {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "OCI홀딩스",
+   "rcept_no": "20261008800499"
+  },
   {
    "code": "006400",
    "name": "삼성SDI",
