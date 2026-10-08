@@ -171,11 +171,89 @@ def signals(o, h, l, c, v):
     return out, trend, (m20, m60, m120, m200), b, r
 
 
+# ---------------- 종합 판단: 롱 / 숏 / 관망 + 그 방향의 목표·손절 ----------------
+SIG_SCORE = {"gc": (2, "골든크로스 (20·60일선)"), "gc_long": (1, "장기 골든크로스 (60·120일선)"), "ma200_up": (2, "200일선 돌파"),
+             "ma200_dn": (-2, "200일선 이탈"), "base_bo": (2, "베이스 돌파"), "hi52": (1, "52주 신고가"), "hi52_near": (1, "신고가 근접")}
+ST_W = {"confirmed": 2, "retest": 2, "forming": 1, "target": 0}
+
+
+def verdict(h, l, c, sig, trend, pats, b, r, mas):
+    m20, m60, m120, m200 = mas
+    last, n = c[-1], len(c)
+    why = []
+
+    def add(pt, txt):
+        if pt:
+            why.append([pt, txt])
+    add(2 if trend == "up" else -2 if trend == "down" else 0, "정배열·상승 추세" if trend == "up" else "역배열·하락 추세")
+    if m200[-1] is not None and not any(x["k"] in ("ma200_up", "ma200_dn") for x in sig):
+        add(1 if last > m200[-1] else -1, "200일선 위" if last > m200[-1] else "200일선 아래")
+    for x in sig:
+        if x["k"] in SIG_SCORE:
+            add(*SIG_SCORE[x["k"]])
+        elif x["k"] == "base" and x["name"] == "베이스 상단 근접":
+            add(1, "베이스 상단 근접")
+    if r is not None and r >= 75:
+        add(-1, f"RSI {r:.0f} 과열")
+    elif r is not None and r <= 25:
+        add(1, f"RSI {r:.0f} 과매도")
+    for side_ in ("bull", "bear"):                    # 방향별로 가장 강한 패턴 하나씩만 반영
+        ps = [p for p in pats if p["bias"] == side_ and ST_W[p["st"]]]
+        if ps:
+            p = max(ps, key=lambda p: (ST_W[p["st"]], p["q"]))
+            w = ST_W[p["st"]] * (1 if side_ == "bull" else -1)
+            add(w, f"{p['name']} {'돌파 확정' if p['st'] == 'confirmed' else '되돌림' if p['st'] == 'retest' else '형성 중'}")
+    score = sum(x[0] for x in why)
+    d = "long" if score >= 3 else "short" if score <= -3 else "wait"
+    plan = None
+    if d != "wait":
+        bias = "bull" if d == "long" else "bear"
+        ps = sorted([p for p in pats if p["bias"] == bias and p["st"] != "target" and p.get("rr")],
+                    key=lambda p: (-ST_W[p["st"]], -p["q"]))
+        if ps:
+            p = ps[0]
+            plan = {"target": p["target"], "stop": p["stop"], "basis": f"{p['name']} 패턴의 목표·손절"}
+        else:                                        # 패턴이 없으면 지지·저항선으로
+            hi_, lo_ = us.pivots(h, l, max(0, n - 120))
+            piv_lo = [l[i] for i in lo_][-6:]
+            piv_hi = [h[i] for i in hi_][-6:]
+            mav = [a[-1] for a in (m20, m60, m120, m200) if a[-1] is not None]
+            base_lv = [b[2], b[3]] if b else []
+            if d == "long":
+                sup = [x for x in piv_lo + mav + base_lv if x < last * 0.98]
+                res = [x for x in piv_hi + [max(h[-250:])] + base_lv if x > last * 1.03]
+                if b and b[4] in ("breakout", "near"):
+                    res.append(b[2] + (b[2] - b[3]))
+                if sup:
+                    stop = max(sup) * 0.99
+                    risk = last - stop
+                    good = sorted(x for x in res if (x - last) >= 1.5 * risk)
+                    target, basis = (good[0], "아래 지지선 밑 손절 · 위쪽 저항선 목표") if good else (last + 2 * risk, "아래 지지선 밑 손절 · 손절 폭의 2배 목표")
+                    plan = {"target": target, "stop": stop, "basis": basis}
+            else:
+                res = [x for x in piv_hi + mav + base_lv if x > last * 1.02]
+                sup = [x for x in piv_lo + [min(l[-250:])] + base_lv if x < last * 0.97]
+                if res:
+                    stop = min(res) * 1.01
+                    risk = stop - last
+                    good = sorted((x for x in sup if (last - x) >= 1.5 * risk), reverse=True)
+                    target, basis = (good[0], "위 저항선 위 손절 · 아래쪽 지지선 목표") if good else (last - 2 * risk, "위 저항선 위 손절 · 손절 폭의 2배 목표")
+                    plan = {"target": target, "stop": stop, "basis": basis}
+        if plan:
+            t, st = plan["target"], plan["stop"]
+            rr = (t - last) / (last - st) if d == "long" else (last - t) / (st - last)
+            plan.update(target=round(t), stop=round(st), rr=round(rr, 2))
+    return {"dir": d, "score": score, "why": why, "plan": plan}
+
+
 def analyze(meta, bars):
     o, h, l, c, v = ([b[k] for b in bars] for k in range(1, 6))
     n = len(c)
     sig, trend, (m20, m60, m120, m200), b, r = signals(o, h, l, c, v)
     pats = us.detect(o, h, l, c, v)
+    vd = verdict(h, l, c, sig, trend, pats, b, r, (m20, m60, m120, m200))
+    order = {"long": "bull", "short": "bear"}.get(vd["dir"])
+    pats.sort(key=lambda p: p["bias"] != order)       # 종합 판단과 같은 방향 패턴을 앞에
     base = n - SHOW
     w = lambda i: max(0, i - base)
     for p in pats:
@@ -191,7 +269,7 @@ def analyze(meta, bars):
             "ma20": iv(m20), "ma60": iv(m60), "ma120": iv(m120), "ma200": iv(m200),
             "last": c[-1], "chg1": chg(1), "chg5": chg(5), "chg20": chg(20), "chg60": chg(60),
             "rsi": round(r, 1) if r is not None else None, "hi52": max(h[-250:]), "lo52": min(l[-250:]),
-            "vr": round(v[-1] / av20, 2) if av20 else None, "trend": trend, "sig": sig, "pats": pats,
+            "vr": round(v[-1] / av20, 2) if av20 else None, "trend": trend, "sig": sig, "pats": pats, "vd": vd,
             "base": [w(b[0]), w(b[1]), round(b[2]), round(b[3]), b[4]] if b and b[1] >= base else None}
 
 

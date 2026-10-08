@@ -368,7 +368,7 @@ tr.click{cursor:pointer}
 @media (max-width:640px){ .wtiles{grid-template-columns:repeat(2,1fr)} .wh h3{font-size:20px} }
 
 /* 기술적 분석 */
-.sigboard{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.sigboard{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
 .sgt{font-size:11.5px;color:var(--muted);font-weight:650;margin-bottom:6px}
 .sgi{display:flex;flex-wrap:wrap;gap:6px}
 .sigbtn{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--border);background:var(--surface-2);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:12.5px;color:var(--ink)}
@@ -431,7 +431,19 @@ tr.click{cursor:pointer}
 .stag.bull{background:color-mix(in srgb,var(--up) 12%,transparent);color:var(--up)}
 .stag.bear{background:color-mix(in srgb,var(--down) 12%,transparent);color:var(--down)}
 .stag.info{background:var(--accent-soft);color:var(--accent)}
-.stag.trend.up{background:var(--up);color:#fff} .stag.trend.down{background:var(--down);color:#fff}
+.stag.trend.up{background:color-mix(in srgb,var(--up) 12%,transparent);color:var(--up)} .stag.trend.down{background:color-mix(in srgb,var(--down) 12%,transparent);color:var(--down)}
+.stag.vd{background:var(--ink-2);color:var(--surface)} .stag.vd.up{background:var(--up);color:#fff} .stag.vd.down{background:var(--down);color:#fff}
+.vdbox{display:grid;grid-template-columns:200px 1fr;gap:16px;align-items:start;border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:12px}
+.vdbox.up{border-color:color-mix(in srgb,var(--up) 45%,transparent);background:color-mix(in srgb,var(--up) 5%,var(--surface))}
+.vdbox.down{border-color:color-mix(in srgb,var(--down) 45%,transparent);background:color-mix(in srgb,var(--down) 5%,var(--surface))}
+.vdhead .l{font-size:11.5px;color:var(--muted)} .vdhead .v{font-size:22px;font-weight:800} .vdhead .n{font-size:12px;color:var(--ink-2)}
+.vdplan{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.vdplan>div{background:var(--surface);border:1px solid var(--border);border-radius:9px;padding:7px 10px}
+.vdplan .l{font-size:11px;color:var(--muted)} .vdplan .v{font-size:15px;font-weight:750;font-variant-numeric:tabular-nums}
+.vdwhy{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+.vdwhy span{font-size:11.5px;padding:2px 8px;border-radius:999px;background:var(--surface-2);color:var(--ink-2)}
+.vdwhy span.p{color:var(--up)} .vdwhy span.m{color:var(--down)}
+@media (max-width:860px){ .vdbox{grid-template-columns:1fr} .vdplan{grid-template-columns:1fr 1fr} }
 .tapat{display:flex;justify-content:space-between;font-size:12px;margin-top:6px;font-weight:650}
 .tasigs{display:grid;gap:8px}
 .tasig{padding:8px 10px;background:var(--surface-2);border-radius:9px;font-size:12.5px}
@@ -1496,6 +1508,7 @@ let TA=null, taLoading=false, taSel=null, taPat=0, taShown=0, taList=[];
 const TF={mk:'all', sig:null, trend:'all', q:'', held:false, sort:'mc'};
 const TA_PAGE=48;
 const SIG_GROUPS=[
+  ['종합 판단',[['vd_long','롱 관점'],['vd_short','숏 관점'],['vd_wait','관망']]],
   ['추세 전환',[['gc','골든크로스'],['gc_long','장기 골든크로스'],['ma200_up','200일선 돌파'],['ma200_dn','200일선 이탈']]],
   ['이동평균 배열',[['align_up','정배열'],['align_dn','역배열']]],
   ['베이스',[['base_bo','베이스 돌파'],['base','베이스 형성·근접']]],
@@ -1534,7 +1547,10 @@ const PAT_DESC={
 const PST={confirmed:'돌파 확정',retest:'되돌림',forming:'형성 중',target:'목표 도달'};
 const TREND={up:['상승 추세','up'],down:['하락 추세','down'],side:['횡보·혼조','']};
 const side = pt => !pt?'':pt.bias==='bear'?'숏 ':pt.bias==='bull'?'롱 ':'';
-const taSigOf=(s,k)=>k==='base'?s.sig.find(x=>x.k==='base'):s.sig.find(x=>x.k===k);
+const VD={long:['롱 관점','up'],short:['숏 관점','down'],wait:['관망','']};
+const vdOf = s => s.vd||{dir:'wait',score:0,why:[],plan:null};
+const vdSide = d => d==='long'?'롱 ':d==='short'?'숏 ':'';
+const taSigOf=(s,k)=>k.startsWith('vd_')?vdOf(s).dir===k.slice(3):k==='base'?s.sig.find(x=>x.k==='base'):s.sig.find(x=>x.k===k);
 const agoTxt=a=>a==null?'':a===0?'오늘':`${a}일 전`;
 
 async function renderTA(){
@@ -1559,7 +1575,7 @@ async function renderTA(){
           <input type="search" id="taq" placeholder="종목명 · 코드 · 신호 · 패턴" value="${esc(TF.q)}">
           <div class="seg" id="tatrend"><button data-t="all" aria-pressed="true">전체</button><button data-t="up" aria-pressed="false">상승 추세</button><button data-t="down" aria-pressed="false">하락 추세</button><button data-t="side" aria-pressed="false">횡보</button></div>
           <label class="sub" style="display:inline-flex;gap:5px;align-items:center"><input type="checkbox" id="taheld">내 보유 종목만</label>
-          <select id="tasort" class="tasel"><option value="mc">시가총액 순</option><option value="chg1">1일 등락 순</option><option value="chg20">20일 등락 순</option><option value="vr">거래량 배수 순</option><option value="sig">신호 많은 순</option><option value="q">패턴 품질 순</option></select>
+          <select id="tasort" class="tasel"><option value="mc">시가총액 순</option><option value="chg1">1일 등락 순</option><option value="chg20">20일 등락 순</option><option value="vr">거래량 배수 순</option><option value="vd">종합 점수 (롱 강한 순)</option><option value="vds">종합 점수 (숏 강한 순)</option><option value="sig">신호 많은 순</option><option value="q">패턴 품질 순</option></select>
         </div>
         <div class="sub" id="tacount" style="margin:10px 0 4px"></div>
         <div class="tacards" id="tacards"></div>
@@ -1573,7 +1589,7 @@ async function renderTA(){
     tile('분석 종목',`${n}`,`상승 추세 ${up} · 하락 추세 ${dn} · 횡보 ${n-up-dn}`),
     tile('200일선 위',`${(a200/n*100).toFixed(0)}%`,`${a200}종목 · 장기 추세가 살아 있는 종목 비율`),
     tile('정배열 / 역배열',`<span class="up">${c('align_up')}</span> / <span class="down">${c('align_dn')}</span>`,'5·20·60·120일선 순서'),
-    tile('골든크로스',`<span class="up">${c('gc')}</span>`,`20일선이 60일선 상향 돌파 · 장기(60·120일선) ${c('gc_long')}`),
+    tile('종합 판단 롱 / 숏',`<span class="up">${S.filter(s=>vdOf(s).dir==='long').length}</span> / <span class="down">${S.filter(s=>vdOf(s).dir==='short').length}</span>`,`관망 ${S.filter(s=>vdOf(s).dir==='wait').length} · 추세·이동평균·크로스·베이스·패턴 점수 합산`),
   ].join('');
   // 신호판
   const sb=document.getElementById('sigboard');
@@ -1597,7 +1613,7 @@ async function renderTA(){
   document.getElementById('tamore').onclick=taMore;
   taRenderList();
 }
-const SIG_TONE={gc:'bull',gc_long:'bull',ma200_up:'bull',align_up:'bull',base_bo:'bull',hi52:'bull',hi52_near:'bull',rsi_lo:'bull',
+const SIG_TONE={vd_long:'bull',vd_short:'bear',vd_wait:'info',gc:'bull',gc_long:'bull',ma200_up:'bull',align_up:'bull',base_bo:'bull',hi52:'bull',hi52_near:'bull',rsi_lo:'bull',
   dc:'bear',dc_long:'bear',ma200_dn:'bear',align_dn:'bear',rsi_hi:'bear',base:'info',vol:'info'};
 function taPatMatch(s,k){ return k==='pat_bull'?s.pats.some(p=>p.bias==='bull'):k==='pat_bear'?s.pats.some(p=>p.bias==='bear'):s.pats.some(p=>p.st==='confirmed'||p.st==='retest'); }
 function taPass(s){
@@ -1610,6 +1626,7 @@ function taPass(s){
 }
 function taSortKey(s){
   switch(TF.sort){ case 'chg1': return -(s.chg1??-9); case 'chg20': return -(s.chg20??-9); case 'vr': return -(s.vr??0);
+    case 'vd': return -vdOf(s).score; case 'vds': return vdOf(s).score;
     case 'sig': return -s.sig.filter(x=>x.tone!=='info').length*10-(s.sig.some(x=>x.ago===0)?1:0); case 'q': return s.pats[0]?-s.pats[0].q:1e9;
     default: return -s.mc; } }
 function taRenderList(){
@@ -1630,7 +1647,7 @@ function taCard(s){
       <div class="sub" style="font-size:11.5px">${s.m==='KOSPI'?'코스피':'코스닥'} ${s.r}위 · ${won(s.mc)}</div></div>
       <div style="text-align:right"><div style="font-weight:700">${num(s.last)}</div><div>${cpct(s.chg1)}</div></div></div>
     <div class="tamini"></div>
-    <div class="tatags"><span class="stag trend ${tr[1]}">${tr[0]}</span>${tags}</div>
+    <div class="tatags"><span class="stag vd ${VD[vdOf(s).dir][1]}">${VD[vdOf(s).dir][0]}${vdOf(s).score?` ${vdOf(s).score>0?'+':''}${vdOf(s).score}`:''}</span><span class="stag trend ${tr[1]}">${tr[0]}</span>${tags}</div>
     ${p?`<div class="tapat"><span class="${p.bias==='bull'?'up':p.bias==='bear'?'down':''}">${p.bias==='bull'?'▲':p.bias==='bear'?'▼':'■'} ${esc(p.name)}</span><span class="sub">${PST[p.st]} · 품질 ${p.q}</span></div>`:''}
   </div>`; }
 function taMore(){
@@ -1680,22 +1697,30 @@ function taRenderDetail(){
       <div><div class="l">거래량</div><div class="v">${s.vr!=null?s.vr.toFixed(1)+'배':'—'}</div></div>
       <div><div class="l">품질</div><div class="v" style="color:var(--accent)">${p?p.q+'/100':'—'}</div></div>
     </div>
+    ${(()=>{ const V=vdOf(s), P=V.plan, cls=VD[V.dir][1];
+      return `<div class="vdbox ${cls}"><div class="vdhead"><div class="l">종합 판단 (점수 ${V.score>0?'+':''}${V.score})</div><div class="v ${cls}">${VD[V.dir][0]}</div>
+        <div class="n">${V.dir==='wait'?'오를 신호와 내릴 신호가 섞여 방향이 뚜렷하지 않아요':P?esc(P.basis):'목표·손절을 잡을 지지·저항선이 없어요'}</div></div>
+        <div>${P?`<div class="vdplan"><div><div class="l">기준가 (종가)</div><div class="v">${num(s.last)}</div></div>
+          <div><div class="l">${vdSide(V.dir)}목표가</div><div class="v" style="color:var(--good)">${num(P.target)} <small>${pct(P.target/s.last-1,1)}</small></div></div>
+          <div><div class="l">${vdSide(V.dir)}손절가</div><div class="v" style="color:var(--crit)">${num(P.stop)} <small>${pct(P.stop/s.last-1,1)}</small></div></div>
+          <div><div class="l">손익비</div><div class="v">${P.rr.toFixed(2)}</div></div></div>`:''}
+          <div class="vdwhy">${V.why.map(([pt,t])=>`<span class="${pt>0?'p':'m'}">${pt>0?'+':''}${pt} ${esc(t)}</span>`).join('')}</div></div></div>`; })()}
     <div class="pchips2">${s.pats.map((x,i)=>`<button class="pchip2" data-i="${i}" aria-pressed="${i===taPat}">${esc(x.name)} ${x.q}</button>`).join('')||'<span class="sub">찾은 차트 패턴 없음</span>'}</div>
     <div class="ptitle"><div><b class="ptk">${s.n}</b> <b class="${bc}">${p?esc(p.name):'차트'}</b>${p?` <span class="pst ${p.st}">${PST[p.st]}</span>`:''}</div>
       <div class="seg" id="tamode"><button data-m="candle" aria-pressed="${taMode==='candle'}">캔들</button><button data-m="line" aria-pressed="${taMode==='line'}">선</button></div></div>
     <div class="plegend">${TA_MA.map(([k,l,c])=>`<button class="mabtn" data-k="${k}" aria-pressed="${!!taMaOn[k]}"><i style="background:${c}"></i>${l}</button>`).join('')}
-      ${p?`<span><i style="background:var(--good)"></i>${side(p)}목표</span><span><i style="background:var(--crit)"></i>${side(p)}손절</span>${p.level?'<span><i style="background:var(--pres)"></i>돌파선·목선</span>':''}`:''}
+      ${vdOf(s).plan?`<span><i style="background:var(--good)"></i>${vdSide(vdOf(s).dir)}목표</span><span><i style="background:var(--crit)"></i>${vdSide(vdOf(s).dir)}손절</span>`:''}${p&&p.level?'<span><i style="background:var(--pres);height:4px"></i>돌파선·목선</span>':''}
       ${s.base?'<span><i style="background:var(--accent);height:8px;opacity:.35"></i>베이스</span>':''}</div>
     <div class="chart" id="tabig"></div>
     <div class="mcols">
       <div><div class="nsec" style="margin-top:6px"><span>신호 ${s.sig.length}개</span></div>
         <div class="tasigs">${s.sig.map(x=>`<div class="tasig"><span class="stag ${x.tone}">${esc(x.name)}</span><span class="sub">${esc(x.note)}${x.ago!=null?` · ${agoTxt(x.ago)}`:''}</span>
           <div class="sub" style="margin-top:3px;color:var(--ink-2)">${SIG_DESC[x.k]||''}</div></div>`).join('')||'<div class="sub">눈에 띄는 신호가 없어요.</div>'}</div></div>
-      <div>${p?`<div class="nsec" style="margin-top:6px"><span>패턴 해설 · ${esc(p.fam)} · ${p.bias==='bull'?'상승 (롱 관점)':p.bias==='bear'?'하락 (숏 관점)':'중립'}</span></div>
+      <div>${p?`<div class="nsec" style="margin-top:6px"><span>패턴 해설 (참고) · ${esc(p.fam)} · ${p.bias==='bull'?'상승 (롱 관점)':p.bias==='bear'?'하락 (숏 관점)':'중립'}</span></div>
         <div class="sub" style="color:var(--ink-2);line-height:1.65">${PAT_DESC[p.k]||''}${p.st==='target'?' <b style="color:var(--accent)">이미 목표가에 도달한 패턴이에요. 새로 들어갈 자리가 아니라 지나간 신호로 보세요.</b>':p.bias==='bear'?' <b>하락(숏) 관점이라 목표가는 아래, 손절가는 위에 있어요.</b>':p.bias==='bull'?' <b>상승(롱) 관점이라 목표가는 위, 손절가는 아래에 있어요.</b>':''}</div>
         <div class="tainfo" style="margin-top:10px">
-          <span>${side(p)}목표가</span><span style="color:var(--good);font-weight:650">${num(p.target)} (${pct(p.target/s.last-1,1)})</span>
-          <span>${side(p)}손절가</span><span style="color:var(--crit);font-weight:650">${num(p.stop)} (${pct(p.stop/s.last-1,1)})</span>
+          <span>패턴 기준 ${side(p)}목표</span><span style="color:var(--good);font-weight:650">${num(p.target)} (${pct(p.target/s.last-1,1)})</span>
+          <span>패턴 기준 ${side(p)}손절</span><span style="color:var(--crit);font-weight:650">${num(p.stop)} (${pct(p.stop/s.last-1,1)})</span>
           ${p.level?`<span>돌파선</span><span>${num(p.level)}</span>`:''}
           <span>손익비</span><span>${p.rr!=null?p.rr.toFixed(2):'—'}</span>
           <span>돌파 거래량</span><span>${p.vol?'평균의 1.5배 이상 ✓':'—'}</span>
@@ -1727,9 +1752,11 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
   let lo=Infinity, hi=-Infinity;
   for(let i=0;i<n;i++){ if(s.h[i]!=null){ lo=Math.min(lo,s.l[i]); hi=Math.max(hi,s.h[i]); } }
   mas.forEach(([k])=>(s['ma'+k]||[]).forEach(v=>{ if(v!=null&&v<hi*1.25&&v>lo*.8){ lo=Math.min(lo,v); hi=Math.max(hi,v);} }));
-  if(pat) [pat.target,pat.stop,pat.level].forEach(v=>{ if(v!=null&&v<hi*1.3&&v>lo*.7){ lo=Math.min(lo,v); hi=Math.max(hi,v);} });
+  const PLAN=big?vdOf(s).plan:null, PD=vdOf(s).dir;
+  [PLAN?.target,PLAN?.stop,pat?.level].forEach(v=>{ if(v!=null&&v<hi*1.35&&v>lo*.65){ lo=Math.min(lo,v); hi=Math.max(hi,v);} });
   const pad=(hi-lo)*.06||1; lo-=pad; hi+=pad;
-  const step=(W-m.l-m.r)/n, x=i=>m.l+(i+.5)*step, y=v=>m.t+pH*(1-(v-lo)/(hi-lo)), cw=Math.max(1,step*.62);
+  const nF=big?12:0;                                          // 오른쪽 빈 칸: 목표·손절 구간 상자
+  const step=(W-m.l-m.r)/(n+nF), x=i=>m.l+(i+.5)*step, y=v=>m.t+pH*(1-(v-lo)/(hi-lo)), cw=Math.max(1,step*.62);
   const TAGS=[];
   const tag=(v,txt,col,solid)=>{ TAGS.push({yy:y(v),txt,col,solid}); return ''; };
   const drawTags=()=>{ TAGS.sort((a,b)=>a.yy-b.yy);                 // 겹치는 이름표는 위아래로 비켜 놓음
@@ -1745,11 +1772,18 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
   }
   if(s.base){ const [a,b,t,bt]=s.base; g+=`<rect x="${x(a)-step/2}" y="${y(t)}" width="${x(b)-x(a)+step}" height="${Math.max(1,y(bt)-y(t))}" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width=".8" stroke-dasharray="4 3"/>`;
     if(big) g+=`<text x="${x(a)+4}" y="${y(t)-5}" font-size="11" font-weight="700" fill="var(--accent)">베이스 ${b-a+1}일</text>`; }
-  // 목표·손절·돌파선 (가로 점선)
-  if(pat){
-    const hl=(v,c,lab)=>{ if(v==null||v<lo||v>hi) return; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="4 4" stroke-width="1.1"/>`; if(big) labels+=tag(v,lab,c); };
-    hl(pat.target,'var(--good)',side(pat)+'목표'+(pat.st==='target'?' ✓':'')); hl(pat.stop,'var(--crit)',side(pat)+'손절');
-    if(pat.level&&big) hl(pat.level,'var(--pres)','돌파선');
+  // 종합 판단의 목표·손절 (가로 점선 + 오른쪽 구간 상자), 패턴 돌파선 (굵은 실선)
+  if(PLAN){
+    const x0=x(n-1)+step*.8, x1=W-m.r, yl=y(s.c.at(-1));
+    const zone=(v,c)=>{ if(v==null) return; const vv=Math.max(lo,Math.min(hi,v)), a=Math.min(yl,y(vv)), b=Math.max(yl,y(vv));
+      g+=`<rect x="${x0}" y="${a}" width="${x1-x0}" height="${Math.max(1,b-a)}" fill="${c}" opacity=".13"/><rect x="${x0}" y="${a}" width="${x1-x0}" height="${Math.max(1,b-a)}" fill="none" stroke="${c}" stroke-width="1" opacity=".6"/>`; };
+    zone(PLAN.target,'var(--good)'); zone(PLAN.stop,'var(--crit)');
+    const hl=(v,c,lab)=>{ if(v==null||v<lo||v>hi) return; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="5 4" stroke-width="1.4"/>`; labels+=tag(v,lab,c); };
+    hl(PLAN.target,'var(--good)',vdSide(PD)+'목표'); hl(PLAN.stop,'var(--crit)',vdSide(PD)+'손절');
+  }
+  if(pat&&pat.level&&big&&pat.level>=lo&&pat.level<=hi){
+    g+=`<line x1="${m.l}" x2="${x(n-1)+step}" y1="${y(pat.level)}" y2="${y(pat.level)}" stroke="var(--pres)" stroke-width="2.6"/>`;
+    labels+=tag(pat.level,'돌파선','var(--pres)');
   }
   // 이동평균
   const line=(arr,c,w,dash)=>{ let d='',pen=false; arr.forEach((v,i)=>{ if(v==null){pen=false;return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1); pen=true; }); return d?`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round" ${dash?`stroke-dasharray="${dash}"`:''}/>`:''; };
@@ -1762,7 +1796,7 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
   // 패턴 선 · 꼭짓점
   if(pat){
     const LC={res:['var(--pres)','6 4'],sup:['var(--psup)','6 4'],neck:['var(--pres)',''],pole:['var(--muted)','2 3'],curve:['var(--ta60)','']};
-    pat.lines.forEach(([a,y1,b,y2,k])=>{ const [c,d]=LC[k]||LC.res; g+=`<line x1="${x(a)}" y1="${y(y1)}" x2="${x(b)}" y2="${y(y2)}" stroke="${c}" stroke-width="${big?2:1.2}" ${d?`stroke-dasharray="${d}"`:''}/>`; });
+    pat.lines.forEach(([a,y1,b,y2,k])=>{ const [c,d]=LC[k]||LC.res; g+=`<line x1="${x(a)}" y1="${y(y1)}" x2="${x(b)}" y2="${y(y2)}" stroke="${c}" stroke-width="${big?(k==='neck'?2.6:2.2):1.2}" ${d?`stroke-dasharray="${d}"`:''}/>`; });
     if(big) pat.pts.forEach(([a,v,t])=>{ g+=`<circle cx="${x(a)}" cy="${y(v)}" r="5" fill="none" stroke="var(--pres)" stroke-width="2"/>`;
       if(t!=='H'&&t!=='L') g+=`<text x="${x(a)}" y="${y(v)+(t==='머리'&&pat.bias==='bear'||t==='1'&&pat.bias==='bear'?-10:18)}" font-size="11" font-weight="700" fill="var(--pres)" text-anchor="middle">${esc(t)}</text>`; });
   }
