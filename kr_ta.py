@@ -2,7 +2,7 @@
 
 - 종목 목록·시가총액: 네이버 증권 시가총액 순위 (ETF·ETN·스팩·우선주·거래정지 종목 제외)
 - 일봉: 한국투자증권 일봉(수정주가) 400거래일 (실패하면 네이버) · 장 마감(15:40) 전이면 오늘 미완성 일봉은 뺌. 마지막 날 거래량이 0이면 거래정지로 보고 제외
-- 신호: 골든크로스(20·60일선), 장기 골든크로스(60·120일선), 정배열·역배열, 200일선 돌파·이탈 (데드크로스는 잡음이 많아 뺌),
+- 신호: 골든크로스(20·60일선), 장기 골든크로스(60·120일선), 정배열·역배열, 200일선·50주선 돌파·이탈 (데드크로스는 잡음이 많아 뺌),
         베이스(가격이 좁은 범위에서 오래 다져지는 구간)와 베이스 돌파, 52주 신고가, 거래량 급증, RSI 과매수·과매도
 - 차트 패턴: 미국 패턴 터미널과 같은 규칙 (us.detect)
 결과는 data/kr_ta.json (기술적 분석 탭을 열 때 따로 불러옴 — 대시보드 본문을 가볍게 유지)
@@ -115,9 +115,22 @@ def base_of(h, l, c, v):
     return None
 
 
-def signals(o, h, l, c, v):
+def week_ma(c, dates, weeks=50):
+    """50주선: 지난 (weeks-1)주 주봉 종가 + 오늘 종가의 평균 (주봉 차트의 50주 이동평균과 같은 값)"""
+    from datetime import date
+    wk = [date.fromisoformat(d).isocalendar()[:2] for d in dates]
+    out, closes = [], []                       # closes: 끝난 주들의 주봉 종가
+    for i in range(len(c)):
+        if i > 0 and wk[i] != wk[i - 1]:
+            closes.append(c[i - 1])            # 지난주 마지막 날 종가 = 지난주 주봉 종가
+        out.append((sum(closes[-(weeks - 1):]) + c[i]) / weeks if len(closes) >= weeks - 1 else None)
+    return out
+
+
+def signals(o, h, l, c, v, dates=None):
     n = len(c)
     m5, m20, m60, m120, m200 = (us.sma(c, k) for k in (5, 20, 60, 120, 200))
+    w50 = week_ma(c, dates) if dates else [None] * len(c)
     out = []
 
     def add(k, name, tone, ago=None, note=""):
@@ -136,6 +149,13 @@ def signals(o, h, l, c, v):
     if dn(n - 1):
         k = next((j for j in range(1, 6) if not dn(n - 1 - j)), None)
         add("align_dn", "역배열 전환" if k else "역배열", "bear", (k - 1) if k else None, "5 < 20 < 60 < 120일선 순서")
+    if w50[-1] is not None:
+        k = _cross(c, w50, 5)
+        if k is not None and c[-1] > w50[-1]:
+            add("w50_up", "50주선 돌파", "bull", k, "종가가 50주선(주봉 50개 평균)을 위로 뚫음")
+        k = _cross(w50, c, 5)
+        if k is not None and c[-1] < w50[-1]:
+            add("w50_dn", "50주선 이탈", "bear", k, "종가가 50주선 아래로 내려감")
     if m200[-1] is not None:
         k = _cross(c, m200, 5)
         if k is not None and c[-1] > m200[-1]:
@@ -168,17 +188,17 @@ def signals(o, h, l, c, v):
         add("rsi_lo", "RSI 과매도", "bull", None, f"RSI {r:.0f}")
     trend = "up" if up(n - 1) or (None not in (m20[-1], m60[-1], m120[-1]) and c[-1] > m20[-1] > m60[-1] > m120[-1]) else \
         "down" if dn(n - 1) or (None not in (m20[-1], m60[-1], m120[-1]) and c[-1] < m20[-1] < m60[-1] < m120[-1]) else "side"
-    return out, trend, (m20, m60, m120, m200), b, r
+    return out, trend, (m20, m60, m120, m200, w50), b, r
 
 
 # ---------------- 종합 판단: 롱 / 숏 / 관망 + 그 방향의 목표·손절 ----------------
-SIG_SCORE = {"gc": (2, "골든크로스 (20·60일선)"), "gc_long": (1, "장기 골든크로스 (60·120일선)"), "ma200_up": (2, "200일선 돌파"),
+SIG_SCORE = {"w50_up": (2, "50주선 돌파"), "w50_dn": (-2, "50주선 이탈"), "gc": (2, "골든크로스 (20·60일선)"), "gc_long": (1, "장기 골든크로스 (60·120일선)"), "ma200_up": (2, "200일선 돌파"),
              "ma200_dn": (-2, "200일선 이탈"), "base_bo": (2, "베이스 돌파"), "hi52": (1, "52주 신고가"), "hi52_near": (1, "신고가 근접")}
 ST_W = {"confirmed": 2, "retest": 2, "forming": 1, "target": 0}
 
 
 def verdict(h, l, c, sig, trend, pats, b, r, mas):
-    m20, m60, m120, m200 = mas
+    m20, m60, m120, m200 = mas[:4]
     last, n = c[-1], len(c)
     why = []
 
@@ -249,7 +269,7 @@ def verdict(h, l, c, sig, trend, pats, b, r, mas):
 def analyze(meta, bars):
     o, h, l, c, v = ([b[k] for b in bars] for k in range(1, 6))
     n = len(c)
-    sig, trend, (m20, m60, m120, m200), b, r = signals(o, h, l, c, v)
+    sig, trend, (m20, m60, m120, m200, w50), b, r = signals(o, h, l, c, v, [x[0] for x in bars])
     pats = us.detect(o, h, l, c, v)
     vd = verdict(h, l, c, sig, trend, pats, b, r, (m20, m60, m120, m200))
     order = {"long": "bull", "short": "bear"}.get(vd["dir"])
@@ -266,7 +286,7 @@ def analyze(meta, bars):
     chg = lambda k: round(c[-1] / c[-1 - k] - 1, 5) if n > k and c[-1 - k] else None
     av20 = sum(v[-21:-1]) / 20
     return {**meta, "date": bars[-1][0], "o": iv(o), "h": iv(h), "l": iv(l), "c": iv(c), "v": [int(x // 1000) for x in v[-SHOW:]],
-            "ma20": iv(m20), "ma60": iv(m60), "ma120": iv(m120), "ma200": iv(m200),
+            "ma20": iv(m20), "ma60": iv(m60), "ma120": iv(m120), "ma200": iv(m200), "ma50w": iv(w50),
             "last": c[-1], "chg1": chg(1), "chg5": chg(5), "chg20": chg(20), "chg60": chg(60),
             "rsi": round(r, 1) if r is not None else None, "hi52": max(h[-250:]), "lo52": min(l[-250:]),
             "vr": round(v[-1] / av20, 2) if av20 else None, "trend": trend, "sig": sig, "pats": pats, "vd": vd,

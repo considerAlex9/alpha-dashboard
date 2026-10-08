@@ -25,7 +25,7 @@
   --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b; --dot:#c9c8c0;
   --warn-soft:rgba(250,178,25,.14); --serious-soft:rgba(236,131,90,.14); --crit-soft:rgba(208,59,59,.10);
   --idx:#e34948; --ma20:#eda100; --ma60:#4a3aa7;
-  --ta20:#e8a317; --ta60:#7c6bd6; --ta120:#2fa58f; --ta200:#6b7280; --pres:#e8590c; --psup:#0891b2;
+  --ta20:#e8a317; --ta60:#7c6bd6; --ta120:#2fa58f; --ta200:#6b7280; --ta50w:#1d4ed8; --pres:#e8590c; --psup:#0891b2;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
@@ -36,7 +36,7 @@
     --long:#199e70; --short:#d95926; --s1:#3987e5; --s2:#d95926; --s3:#199e70;
     --up:#e66767; --down:#3987e5; --dot:#45464b;
     --warn-soft:rgba(250,178,25,.13); --serious-soft:rgba(236,131,90,.14); --crit-soft:rgba(230,103,103,.14);
-    --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9; --ta20:#f2b53d; --ta60:#a194f0; --ta120:#4cc3a9; --ta200:#a3a9b5; --pres:#fb8c3c; --psup:#38bdf8;
+    --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9; --ta20:#f2b53d; --ta60:#a194f0; --ta120:#4cc3a9; --ta200:#a3a9b5; --ta50w:#7aa2ff; --pres:#fb8c3c; --psup:#38bdf8;
   }
 }
 :root[data-theme="dark"]{
@@ -47,7 +47,7 @@
   --long:#199e70; --short:#d95926; --s1:#3987e5; --s2:#d95926; --s3:#199e70;
   --up:#e66767; --down:#3987e5; --dot:#45464b;
   --warn-soft:rgba(250,178,25,.13); --serious-soft:rgba(236,131,90,.14); --crit-soft:rgba(230,103,103,.14);
-  --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9; --ta20:#f2b53d; --ta60:#a194f0; --ta120:#4cc3a9; --ta200:#a3a9b5; --pres:#fb8c3c; --psup:#38bdf8;
+  --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9; --ta20:#f2b53d; --ta60:#a194f0; --ta120:#4cc3a9; --ta200:#a3a9b5; --ta50w:#7aa2ff; --pres:#fb8c3c; --psup:#38bdf8;
 }
 *{box-sizing:border-box}
 html{scroll-padding-top:120px}
@@ -1506,7 +1506,7 @@ const TF={mk:'all', sig:null, trend:'all', q:'', held:false, sort:'mc'};
 const TA_PAGE=48;
 const SIG_GROUPS=[
   ['종합 판단',[['vd_long','롱 관점'],['vd_short','숏 관점'],['vd_wait','관망']]],
-  ['추세 전환',[['gc','골든크로스'],['gc_long','장기 골든크로스'],['ma200_up','200일선 돌파'],['ma200_dn','200일선 이탈']]],
+  ['추세 전환',[['gc','골든크로스'],['gc_long','장기 골든크로스'],['ma200_up','200일선 돌파'],['ma200_dn','200일선 이탈'],['w50_up','50주선 돌파'],['w50_dn','50주선 이탈']]],
   ['이동평균 배열',[['align_up','정배열'],['align_dn','역배열']]],
   ['베이스',[['base_bo','베이스 돌파'],['base','베이스 형성·근접']]],
   ['가격·거래량',[['hi52','52주 신고가'],['hi52_near','신고가 근접'],['vol','거래량 급증'],['rsi_hi','RSI 과매수'],['rsi_lo','RSI 과매도']]],
@@ -1520,6 +1520,8 @@ const SIG_DESC={
   align_dn:'짧은 이동평균일수록 아래에 있는 상태(5 < 20 < 60 < 120일선)예요. 모든 기간에서 파는 힘이 우세한 전형적인 하락 추세입니다.',
   ma200_up:'주가가 200일선(약 1년 평균)을 위로 뚫었어요. 장기 투자자들이 가장 많이 보는 선이라, 추세가 바뀌는 신호로 많이 씁니다.',
   ma200_dn:'주가가 200일선 아래로 내려갔어요. 장기 추세가 약해졌다는 신호입니다.',
+  w50_up:'주가가 50주선(주봉 종가 50개 평균, 약 1년)을 위로 뚫었어요. 기관·장기 투자자가 추세 전환을 판단할 때 200일선과 함께 가장 많이 보는 선입니다.',
+  w50_dn:'주가가 50주선 아래로 내려갔어요. 1년 단위 장기 추세가 꺾였다는 신호로 봅니다.',
   base:'앞서 30% 이상 오른 뒤, 가격이 좁은 범위 안에서 오래 다져지고 있어요. 매물이 소화되는 구간으로, 상단을 거래량과 함께 넘으면 새 상승이 시작되는 경우가 많습니다.',
   base_bo:'오래 다진 베이스의 상단을 넘었어요. 거래량이 평소의 1.5배 이상 붙었으면 더 믿을 만한 돌파로 봅니다.',
   hi52:'1년 중 가장 높은 가격권이에요. 위에 물려 있는 매물이 없어서 추세가 이어지기 쉽습니다.',
@@ -1610,7 +1612,7 @@ async function renderTA(){
   document.getElementById('tamore').onclick=taMore;
   taRenderList();
 }
-const SIG_TONE={vd_long:'bull',vd_short:'bear',vd_wait:'info',gc:'bull',gc_long:'bull',ma200_up:'bull',align_up:'bull',base_bo:'bull',hi52:'bull',hi52_near:'bull',rsi_lo:'bull',
+const SIG_TONE={vd_long:'bull',vd_short:'bear',vd_wait:'info',w50_up:'bull',w50_dn:'bear',gc:'bull',gc_long:'bull',ma200_up:'bull',align_up:'bull',base_bo:'bull',hi52:'bull',hi52_near:'bull',rsi_lo:'bull',
   dc:'bear',dc_long:'bear',ma200_dn:'bear',align_dn:'bear',rsi_hi:'bear',base:'info',vol:'info'};
 function taPatMatch(s,k){ return k==='pat_bull'?s.pats.some(p=>p.bias==='bull'):k==='pat_bear'?s.pats.some(p=>p.bias==='bear'):s.pats.some(p=>p.st==='confirmed'||p.st==='retest'); }
 function taPass(s){
@@ -1654,8 +1656,8 @@ function taMore(){
   const mb=document.getElementById('tamore'); mb.hidden=taShown>=taList.length; mb.textContent=`더 보기 (${taList.length-taShown}종목 남음)`;
 }
 // ---------- 가운데 팝업 창 ----------
-const TA_MA=[[20,'20일선','var(--ta20)'],[60,'60일선','var(--ta60)'],[120,'120일선','var(--ta120)'],[200,'200일선','var(--ta200)']];
-let taMaOn=(()=>{ try{ const v=JSON.parse(localStorage.getItem('ta_ma')); if(v) return v; }catch(e){} return {20:true,60:true,120:false,200:true}; })();
+const TA_MA=[[20,'20일선','var(--ta20)'],[60,'60일선','var(--ta60)'],[120,'120일선','var(--ta120)'],[200,'200일선','var(--ta200)'],['50w','50주선','var(--ta50w)']];
+let taMaOn=(()=>{ let v=null; try{ v=JSON.parse(localStorage.getItem('ta_ma')); }catch(e){} v=v||{20:true,60:true,120:false,200:true}; if(v['50w']===undefined) v['50w']=true; return v; })();
 function taOpen(code,pi=0){
   taSel=code; taPat=pi;
   document.querySelectorAll('.tacard').forEach(c=>c.classList.toggle('sel',c.dataset.s===code));
@@ -1723,7 +1725,7 @@ function taRenderDetail(){
           <span>돌파 거래량</span><span>${p.vol?'평균의 1.5배 이상 ✓':'—'}</span>
           <span>품질</span><span>${p.q>=85?'교과서':p.q>=72?'양호':'보통'} · ${p.q}</span></div>`:''}
         <div class="nsec"><span>가격 정보</span></div>
-        <div class="tainfo"><span>5일 · 20일 · 60일</span><span>${cpct(s.chg5,1)} · ${cpct(s.chg20,1)} · ${cpct(s.chg60,1)}</span>
+        <div class="tainfo"><span>50주선</span><span>${s.ma50w?.at(-1)!=null?`${num(s.ma50w.at(-1))} (${s.last>s.ma50w.at(-1)?'위':'아래'} ${pct(s.last/s.ma50w.at(-1)-1,1)})`:'—'}</span><span>5일 · 20일 · 60일</span><span>${cpct(s.chg5,1)} · ${cpct(s.chg20,1)} · ${cpct(s.chg60,1)}</span>
           <span>52주 고가 · 저가</span><span>${num(s.hi52)} · ${num(s.lo52)}</span><span>고가 대비</span><span>${pct(s.last/s.hi52-1,1)}</span>
           <span>200일선</span><span>${s.ma200.at(-1)!=null?`${num(s.ma200.at(-1))} (${s.above200?'위':'아래'} ${pct(s.last/s.ma200.at(-1)-1,1)})`:'—'}</span></div></div>
     </div>`;
@@ -1784,7 +1786,7 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
   }
   // 이동평균
   const line=(arr,c,w,dash)=>{ let d='',pen=false; arr.forEach((v,i)=>{ if(v==null){pen=false;return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1); pen=true; }); return d?`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round" ${dash?`stroke-dasharray="${dash}"`:''}/>`:''; };
-  mas.forEach(([k,,c])=>{ g+=line(s['ma'+k]||[],c,big?1.6:1.1,''); });
+  mas.forEach(([k,,c])=>{ g+=line(s['ma'+k]||[],c,big?(k==='50w'?2.4:1.6):1.1,k==='50w'?'9 4':''); });
   // 가격
   if(big&&taMode==='line') g+=line(s.c,'var(--ink)',1.8,'');
   else for(let i=0;i<n;i++){ if(s.o[i]==null) continue; const col=s.c[i]>=s.o[i]?'var(--up)':'var(--down)';
@@ -1798,8 +1800,8 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
       if(t!=='H'&&t!=='L') g+=`<text x="${x(a)}" y="${y(v)+(t==='머리'&&pat.bias==='bear'||t==='1'&&pat.bias==='bear'?-10:18)}" font-size="11" font-weight="700" fill="var(--pres)" text-anchor="middle">${esc(t)}</text>`; });
   }
   // 크로스 표시
-  if(big) s.sig.filter(z=>['gc','gc_long','ma200_up','ma200_dn'].includes(z.k)&&z.ago!=null).forEach(z=>{
-    const i=n-1-z.ago, arr=z.k.startsWith('ma200')?s.c:z.k==='gc_long'?s.ma60:s.ma20, v=arr[i]; if(v==null) return;
+  if(big) s.sig.filter(z=>['gc','gc_long','ma200_up','ma200_dn','w50_up','w50_dn'].includes(z.k)&&z.ago!=null).forEach(z=>{
+    const i=n-1-z.ago, arr=z.k.startsWith('ma200')||z.k.startsWith('w50')?s.c:z.k==='gc_long'?s.ma60:s.ma20, v=arr[i]; if(v==null) return;
     const c=z.tone==='bull'?'var(--up)':'var(--down)', yy=Math.max(m.t+12,Math.min(m.t+pH-8,y(v)+(z.tone==='bull'?24:-18)));
     g+=`<circle cx="${x(i)}" cy="${y(v)}" r="5" fill="var(--surface)" stroke="${c}" stroke-width="2.2"/><text x="${Math.min(x(i),W-m.r-40)}" y="${yy}" font-size="11" font-weight="700" fill="${c}" text-anchor="middle" paint-order="stroke" stroke="var(--surface)" stroke-width="4">${esc(z.name)}</text>`; });
   // 현재가
