@@ -273,6 +273,7 @@ const md = d => d?`${+d.slice(5,7)}/${+d.slice(8,10)}`:'';
 const WD='일월화수목금토', dayLabel = d => `${md(d)}(${WD[new Date(d+'T12:00:00Z').getUTCDay()]})`;
 const ST={confirmed:'돌파 확정',retest:'되돌림',forming:'형성 중',target:'목표 도달'};
 const BIAS={bull:'상승',bear:'하락',neutral:'중립'};
+const side = pt => !pt?'':pt.bias==='bear'?'숏 ':pt.bias==='bull'?'롱 ':'';
 const qLabel = q => q>=85?'교과서':q>=72?'양호':'보통';
 const FAMS=['지속형','반전형','박스권','곡선형'];
 const DESC={
@@ -343,7 +344,7 @@ function candles(box,s,{height=120,pat=null,big=false,mode='candle'}={}){
     pat.pts.forEach(([a,v,t])=>{ g+=`<circle cx="${x(a)}" cy="${y(v)}" r="${big?3.5:2.2}" fill="none" stroke="var(--acc)" stroke-width="1.4"/>`+(big?`<text x="${x(a)}" y="${y(v)+(t==='H'||t==='머리'&&pat.bias==='bear'?-7:13)}" font-size="9.5" fill="var(--acc)" text-anchor="middle">${esc(t==='H'||t==='L'?'':t)}</text>`:''); });
     const hl=(v,c,lab)=>{ if(v==null||v<lo||v>hi) return; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="3 3" stroke-width="1"/>`;
       if(big) g+=`<rect x="${W-m.r+2}" y="${y(v)-8}" width="${m.r-4}" height="15" fill="${c}" opacity=".18"/><text x="${W-m.r+5}" y="${y(v)+3}" font-size="9.5" fill="${c}">${lab}</text>`; };
-    hl(pat.target,'var(--good)','목표'); hl(pat.stop,'var(--bad)','손절'); if(pat.level) hl(pat.level,'var(--acc)','돌파선');
+    hl(pat.target,'var(--good)',side(pat)+'목표'); hl(pat.stop,'var(--bad)',side(pat)+'손절'); if(pat.level) hl(pat.level,'var(--acc)','돌파선');
   }
   // 거래량
   const vmax=Math.max(1,...s.v.filter(v=>v!=null)), vy=m.t+pH+gap;
@@ -436,8 +437,8 @@ function card(s){ const p=prim(s);
     <div class="pl"><span class="${p?p.bias:'neutral'}">${p?`${p.bias==='bull'?'▲':p.bias==='bear'?'▼':'■'} ${esc(p.name)}`:'—'}</span><span class="q">${p?`${qLabel(p.q)} · ${p.q}`:''}</span></div>
     <div class="mini"></div>
     <div class="kv"><div><div class="l">종가</div><div class="v">${usd(s.last)}</div></div>
-      <div><div class="l">목표</div><div class="v" style="color:var(--good)">${p?usd(p.target):'—'}</div></div>
-      <div><div class="l">손절</div><div class="v" style="color:var(--bad)">${p?usd(p.stop):'—'}</div></div>
+      <div><div class="l">${side(p)}목표</div><div class="v" style="color:var(--good)">${p?usd(p.target):'—'}</div></div>
+      <div><div class="l">${side(p)}손절</div><div class="v" style="color:var(--bad)">${p?usd(p.stop):'—'}</div></div>
       <div><div class="l">손익비</div><div class="v">${p&&p.rr!=null?p.rr.toFixed(1):'—'}</div></div></div>
     <div class="cf"><span>${s.x==='NAS'?'나스닥':s.x==='NYS'?'뉴욕':'아멕스'} · ${mcap(s.mc)} · ${esc(s.sec||'')}</span>
       <span>${cp(s.chg1)} <button class="star ${WATCH.has(s.s)?'on':''}" data-w="${esc(s.s)}" title="관심 종목">${WATCH.has(s.s)?'★':'☆'}</button></span></div></div>`; }
@@ -464,11 +465,11 @@ function renderDetail(){
     <div class="pchips">${s.pats.map((x,i)=>`<button class="pchip" data-i="${i}" aria-pressed="${i===selPat}">${esc(x.name)} ${x.q}</button>`).join('')||'<span class="muted" style="font-size:11px">찾은 패턴 없음</span>'}</div>
     <div class="dh"><h3><span class="tk">${esc(s.s)}</span><span class="${p?p.bias:''}">${p?esc(p.name):'차트'}</span>${p?`<span class="stb ${p.st}">${ST[p.st]}</span>`:''}</h3>
       <div class="seg" id="dmode"><button data-m="candle" aria-pressed="${detailMode==='candle'}">캔들</button><button data-m="line" aria-pressed="${detailMode==='line'}">선</button></div></div>
-    <div class="lg"><span><i style="background:var(--yellow)"></i>20일선</span><span><i style="background:var(--cyan)"></i>50일선</span><span><i style="background:var(--violet)"></i>200일선</span>${p?'<span><i style="background:var(--good)"></i>목표</span><span><i style="background:var(--bad)"></i>손절</span><span><i style="background:var(--acc)"></i>돌파선·목선</span>':''}</div>
+    <div class="lg"><span><i style="background:var(--yellow)"></i>20일선</span><span><i style="background:var(--cyan)"></i>50일선</span><span><i style="background:var(--violet)"></i>200일선</span>${p?`<span><i style="background:var(--good)"></i>${side(p)}목표</span><span><i style="background:var(--bad)"></i>${side(p)}손절</span><span><i style="background:var(--acc)"></i>돌파선·목선</span>`:''}</div>
     <div class="big" id="bigchart" style="padding:4px 4px 0 8px"></div>
-    ${p?`<div class="dsec"><h4>패턴 해설 · ${esc(p.fam)} · ${BIAS[p.bias]}</h4>${DESC[p.k]||''}
-      <div class="grid2" style="margin-top:8px"><span>목표가</span><span style="color:var(--good)">${usd(p.target)} (${pct(p.target/s.last-1,1)})</span>
-      <span>손절가</span><span style="color:var(--bad)">${usd(p.stop)} (${pct(p.stop/s.last-1,1)})</span>
+    ${p?`<div class="dsec"><h4>패턴 해설 · ${esc(p.fam)} · ${BIAS[p.bias]}${p.bias==='bear'?' (숏 관점)':p.bias==='bull'?' (롱 관점)':''}</h4>${DESC[p.k]||''}${p.bias==='bear'?' <b style="color:var(--ink)">하락(숏) 관점이라 목표가는 아래, 손절가는 위예요.</b>':''}
+      <div class="grid2" style="margin-top:8px"><span>${side(p)}목표가</span><span style="color:var(--good)">${usd(p.target)} (${pct(p.target/s.last-1,1)})</span>
+      <span>${side(p)}손절가</span><span style="color:var(--bad)">${usd(p.stop)} (${pct(p.stop/s.last-1,1)})</span>
       ${p.level?`<span>돌파선</span><span>${usd(p.level)}</span>`:''}<span>손익비</span><span>${p.rr!=null?p.rr.toFixed(2):'—'}</span>
       <span>돌파 거래량</span><span>${p.vol?'평균의 1.5배 이상 ✓':'—'}</span><span>품질</span><span>${qLabel(p.q)} · ${p.q}</span></div></div>`:''}
     <div class="dsec"><h4>종목 정보</h4><div class="grid2">

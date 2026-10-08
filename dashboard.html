@@ -1485,6 +1485,7 @@ const PAT_DESC={
   round_bottom:'천천히 내려왔다가 천천히 올라가는 그릇 모양입니다. 시작 높이를 넘으면 상승 추세로 이어지기 쉽습니다.'};
 const PST={confirmed:'돌파 확정',retest:'되돌림',forming:'형성 중',target:'목표 도달'};
 const TREND={up:['상승 추세','up'],down:['하락 추세','down'],side:['횡보·혼조','']};
+const side = pt => !pt?'':pt.bias==='bear'?'숏 ':pt.bias==='bull'?'롱 ':'';
 const taSigOf=(s,k)=>k==='base'?s.sig.find(x=>x.k==='base'):s.sig.find(x=>x.k===k);
 const agoTxt=a=>a==null?'':a===0?'오늘':`${a}일 전`;
 
@@ -1606,17 +1607,17 @@ function taRenderDetail(){
       <div class="metric"><div class="ml">RSI 14</div><div class="mv">${s.rsi??'—'}</div></div>
       <div class="metric"><div class="ml">거래량</div><div class="mv">${s.vr!=null?s.vr.toFixed(1)+'배':'—'}</div></div>
     </div>
-    <div class="legend" style="margin-bottom:6px"><span><i class="lkey" style="background:var(--ma20)"></i>20일선</span><span><i class="lkey" style="background:var(--ma60)"></i>60일선</span><span><i class="lkey" style="background:var(--s3)"></i>120일선</span><span><i class="lkey" style="background:var(--short)"></i>200일선</span>${s.base?'<span><i class="key" style="background:var(--accent-soft);border:1px solid var(--accent)"></i>베이스</span>':''}${p?'<span><i class="lkey" style="background:var(--good)"></i>목표</span><span><i class="lkey" style="background:var(--crit)"></i>손절</span>':''}</div>
+    <div class="legend" style="margin-bottom:6px"><span><i class="lkey" style="background:var(--ma20)"></i>20일선</span><span><i class="lkey" style="background:var(--ma60)"></i>60일선</span><span><i class="lkey" style="background:var(--s3)"></i>120일선</span><span><i class="lkey" style="background:var(--short)"></i>200일선</span>${s.base?'<span><i class="key" style="background:var(--accent-soft);border:1px solid var(--accent)"></i>베이스</span>':''}${p?`<span><i class="lkey" style="background:var(--good)"></i>${side(p)}목표</span><span><i class="lkey" style="background:var(--crit)"></i>${side(p)}손절</span>`:''}</div>
     <div class="chart" id="tabig"></div>
     <div class="nsec"><span>신호 ${s.sig.length}개</span></div>
     <div class="tasigs">${s.sig.map(x=>`<div class="tasig"><span class="stag ${x.tone}">${esc(x.name)}</span><span class="sub">${esc(x.note)}${x.ago!=null?` · ${agoTxt(x.ago)}`:''}</span>
       <div class="sub" style="margin-top:3px;color:var(--ink-2)">${SIG_DESC[x.k==='base_bo'?'base_bo':x.k]||''}</div></div>`).join('')||'<div class="sub">눈에 띄는 신호가 없어요.</div>'}</div>
     ${s.pats.length?`<div class="nsec"><span>차트 패턴</span></div><div class="seg" id="tapats">${s.pats.map((x,i)=>`<button data-i="${i}" aria-pressed="${i===taPat}">${esc(x.name)} ${x.q}</button>`).join('')}</div>
-      ${p?`<div class="sub" style="margin-top:8px;color:var(--ink-2);line-height:1.6">${PAT_DESC[p.k]||''}</div>
+      ${p?`<div class="sub" style="margin-top:8px;color:var(--ink-2);line-height:1.6">${PAT_DESC[p.k]||''}${p.bias==='bear'?' <b>하락(숏) 관점이라 목표가는 아래, 손절가는 위에 있어요.</b>':p.bias==='bull'?' <b>상승(롱) 관점이라 목표가는 위, 손절가는 아래에 있어요.</b>':''}</div>
       <div class="mrow" style="margin-top:8px">
         <div class="metric"><div class="ml">상태</div><div class="mv">${PST[p.st]}</div></div>
-        <div class="metric"><div class="ml">목표가</div><div class="mv" style="color:var(--good)">${num(p.target)}<span class="mc">${pct(p.target/s.last-1,1)}</span></div></div>
-        <div class="metric"><div class="ml">손절가</div><div class="mv" style="color:var(--crit)">${num(p.stop)}<span class="mc">${pct(p.stop/s.last-1,1)}</span></div></div>
+        <div class="metric"><div class="ml">${side(p)}목표가</div><div class="mv" style="color:var(--good)">${num(p.target)}<span class="mc">${pct(p.target/s.last-1,1)}</span></div></div>
+        <div class="metric"><div class="ml">${side(p)}손절가</div><div class="mv" style="color:var(--crit)">${num(p.stop)}<span class="mc">${pct(p.stop/s.last-1,1)}</span></div></div>
         <div class="metric"><div class="ml">손익비</div><div class="mv">${p.rr!=null?p.rr.toFixed(2):'—'}</div></div></div>`:''}`:''}
     <div class="nsec"><span>가격 정보</span></div>
     <div class="tainfo"><span>5일 · 20일 · 60일</span><span>${cpct(s.chg5,1)} · ${cpct(s.chg20,1)} · ${cpct(s.chg60,1)}</span>
@@ -1656,7 +1657,7 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
     const LC={res:['var(--accent)','5 4'],sup:['var(--s3)','5 4'],neck:['var(--accent)',''],pole:['var(--muted)','2 3'],curve:['var(--ma60)','']};
     pat.lines.forEach(([a,y1,b,y2,k])=>{ const [c,d]=LC[k]||LC.res; g+=`<line x1="${x(a)}" y1="${y(y1)}" x2="${x(b)}" y2="${y(y2)}" stroke="${c}" stroke-width="1.6" ${d?`stroke-dasharray="${d}"`:''}/>`; });
     const hl=(v,c,lab)=>{ if(v==null||v<lo||v>hi) return; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="3 3"/>`+(big?`<text x="${W-m.r+6}" y="${y(v)-3}" font-size="10.5" font-weight="700" fill="${c}">${lab}</text>`:''); };
-    hl(pat.target,'var(--good)','목표'); hl(pat.stop,'var(--crit)','손절');
+    hl(pat.target,'var(--good)',side(pat)+'목표'); hl(pat.stop,'var(--crit)',side(pat)+'손절');
   }
   const vmax=Math.max(1,...s.v), vy=m.t+pH+gap;
   for(let i=0;i<n;i++){ const hh=volH*s.v[i]/vmax; g+=`<rect x="${x(i)-cw/2}" y="${vy+volH-hh}" width="${cw}" height="${hh}" fill="${s.c[i]>=s.o[i]?'var(--up)':'var(--down)'}" opacity=".35"/>`; }

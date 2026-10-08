@@ -1,7 +1,7 @@
 """국내 기술적 분석 — 코스피 전 종목(보통주) + 코스닥 시가총액 상위 100 종목.
 
-- 종목 목록·시가총액: 네이버 증권 시가총액 순위 (ETF·ETN·스팩·우선주 제외)
-- 일봉: 네이버 일봉 400거래일 (실패하면 한국투자증권)
+- 종목 목록·시가총액: 네이버 증권 시가총액 순위 (ETF·ETN·스팩·우선주·거래정지 종목 제외)
+- 일봉: 한국투자증권 일봉(수정주가) 400거래일 (실패하면 네이버) · 장 마감(15:40) 전이면 오늘 미완성 일봉은 뺌. 마지막 날 거래량이 0이면 거래정지로 보고 제외
 - 신호: 골든크로스·데드크로스(20·60일선), 장기 골든·데드크로스(60·120일선), 정배열·역배열, 200일선 돌파·이탈,
         베이스(가격이 좁은 범위에서 오래 다져지는 구간)와 베이스 돌파, 52주 신고가, 거래량 급증, RSI 과매수·과매도
 - 차트 패턴: 미국 패턴 터미널과 같은 규칙 (us.detect)
@@ -39,7 +39,7 @@ def _n(s):
 
 
 def universe(log):
-    out = []
+    out, halted = [], []
     for mk, limit in (("KOSPI", None), ("KOSDAQ", KOSDAQ_N)):
         rows, page = [], 1
         while True:
@@ -48,6 +48,9 @@ def universe(log):
             for s in st:
                 name = s["stockName"]
                 if s.get("stockEndType") != "stock" or "스팩" in name or PREF.search(name):
+                    continue
+                if (s.get("tradeStopType") or {}).get("name", "TRADING") != "TRADING":    # 거래정지 (예: 금양)
+                    halted.append(name)
                     continue
                 rows.append({"s": s["itemCode"], "n": name, "m": mk, "mc": (_n(s.get("marketValue")) or 0) * 1e8})
             if not st or (limit and len(rows) >= limit) or page * 100 >= d.get("totalCount", 0):
@@ -58,7 +61,8 @@ def universe(log):
         for i, r in enumerate(rows):
             r["r"] = i + 1
         out += rows
-    log(f"  국내 종목: 코스피 {sum(r['m'] == 'KOSPI' for r in out)} · 코스닥 {sum(r['m'] == 'KOSDAQ' for r in out)}")
+    log(f"  국내 종목: 코스피 {sum(r['m'] == 'KOSPI' for r in out)} · 코스닥 {sum(r['m'] == 'KOSDAQ' for r in out)}"
+        f" · 거래정지 제외 {len(halted)} {halted[:8]}")
     return out
 
 
@@ -201,23 +205,31 @@ def collect(kis=None, held=None, log=print):
     t0 = time.time()
     held = held or {}
     uni = universe(log)
-    fails = []
+    fails, halted = [], []
+    now = datetime.now(KST)
+    today, closed = now.strftime("%Y-%m-%d"), now.hour * 60 + now.minute >= 15 * 60 + 40
 
     def one(m):
         bars = None
-        try:
-            bars = naver_bars(m["s"])
-        except Exception:  # noqa: BLE001
-            pass
-        bars = [b for b in (bars or []) if b[2] > 0 and b[3] > 0 and b[4] > 0]       # 거래정지일(가격 0) 제외
-        for b in bars:
-            if not b[1]:
-                b[1] = b[4]
-        if (not bars or len(bars) < 130) and kis:
+        if kis:
             try:
                 bars = kis.stock_daily(m["s"], 400)
             except Exception:  # noqa: BLE001
                 bars = None
+        if not bars or len(bars) < 130:
+            try:
+                bars = naver_bars(m["s"])
+            except Exception:  # noqa: BLE001
+                pass
+        bars = [b[:6] for b in (bars or []) if b[2] > 0 and b[3] > 0 and b[4] > 0]   # 가격 0인 날 제외
+        if bars and bars[-1][0] == today and not closed:                 # 장중·장 시작 전이면 오늘 미완성 일봉은 뺌
+            bars = bars[:-1]
+        for b in bars:
+            if not b[1]:
+                b[1] = b[4]
+        if bars and bars[-1][5] == 0:                                    # 마지막 날 거래량 0 → 거래정지
+            halted.append(m["n"])
+            return None
         if not bars or len(bars) < 130:
             fails.append(f"{m['s']}:{len(bars) if bars else 0}일")
             return None
@@ -226,7 +238,7 @@ def collect(kis=None, held=None, log=print):
         except Exception as e:  # noqa: BLE001
             fails.append(f"{m['s']}:{e}")
             return None
-    with ThreadPoolExecutor(max_workers=6) as ex:
+    with ThreadPoolExecutor(max_workers=4 if kis else 6) as ex:
         stocks = [r for r in ex.map(one, uni) if r]
     last = max(s["date"] for s in stocks)
     stocks = [s for s in stocks if s["date"] == last]              # 거래정지 등으로 오늘 일봉이 없는 종목 제외
@@ -237,7 +249,7 @@ def collect(kis=None, held=None, log=print):
     for s in stocks:
         for x in s["sig"]:
             cnt[x["k"]] = cnt.get(x["k"], 0) + 1
-    log(f"  기술적 분석: {len(stocks)}종목 · 실패 {len(fails)} {fails[:6]} · " + ", ".join(f"{k} {v}" for k, v in sorted(cnt.items())) +
+    log(f"  기술적 분석: {len(stocks)}종목 · 거래량 0(거래정지) 제외 {len(halted)} {halted[:6]} · 실패 {len(fails)} {fails[:6]} · " + ", ".join(f"{k} {v}" for k, v in sorted(cnt.items())) +
         f" · 패턴 {sum(len(s['pats']) for s in stocks)} · {time.time() - t0:.0f}초")
     return {"captured_at": datetime.now(KST).isoformat(), "date": last, "dates": dates, "stocks": stocks,
             "counts": cnt, "failed": len(fails)}
