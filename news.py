@@ -9,10 +9,12 @@
 - 출처는 채널명이 아니라 글 안에 적힌 원 출처(블룸버그, 씨티 등). 링크는 넣지 않는다.
 """
 import html
+import json
 import re
 import urllib.parse
 import urllib.request
 from datetime import datetime, time, timedelta, timezone
+from pathlib import Path
 
 KST = timezone(timedelta(hours=9))
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
@@ -80,8 +82,43 @@ KNOWN = {  # 글에 나오는 이름 → 화면에 쓸 이름
 INDEX_LIKE = {"코스피", "코스닥", "다우", "S&P500", "나스닥", "필라델피아 반도체", "러셀2000", "닛케이"}
 INLINE = re.compile(
     r"(?<![가-힣A-Za-z])(?P<n>" + "|".join(re.escape(k) for k in sorted(KNOWN, key=len, reverse=True)) + r")"
-    r"(?:\s*(?:지수|금리|환율|유가|선물))?\s*(?P<v>\d[\d,]*(?:\.\d+)?)?\s*(?P<u>pt|p|%|원|bp|달러)?"
+    r"(?:\s*(?:지수|금리|환율|유가|선물))?\s*(?P<v>\d[\d,]*(?:\.\d+)?(?![\d,.]*\s*(?:조|억|만|천|개|명|배|건|주|위|년|월|일|분기|종목)))?\s*(?P<u>pt|p|%|원|bp|달러)?"
     r"\s*\(?\s*(?P<c>[+\-−]\d[\d,]*(?:\.\d+)?\s?(?:%|bp|원|pt|p)?)?\)?")
+
+
+# 실제 시세와 비교해서 말이 안 되는 숫자는 버린다 (예: '코스피 1330조원' 영업이익을 지수로 읽는 실수)
+REF_SYM = {"코스피": "KOSPI", "코스닥": "KOSDAQ", "다우": "^DJI", "S&P500": "^GSPC", "나스닥": "^IXIC", "필라델피아 반도체": "^SOX",
+           "닛케이": "^N225", "VIX": "^VIX", "WTI": "CL=F", "원/달러": "KRW=X", "달러인덱스": "DX-Y.NYB", "비트코인": "BTC-USD",
+           "미 10년물": "^TNX"}
+_REF = None
+
+
+def _ref():
+    global _REF
+    if _REF is None:
+        _REF = {}
+        try:
+            mk = json.loads((Path(__file__).resolve().parent / "data" / "market.json").read_text(encoding="utf-8"))
+            _REF.update({d["symbol"]: d["bars"][-1][4] for d in mk.get("domestic", [])})
+            _REF.update({g["symbol"]: g["price"] for g in mk.get("global", [])})
+        except Exception:  # noqa: BLE001
+            pass
+    return _REF
+
+
+def plausible(label, value, chg):
+    """→ (value, chg) — 실제 최근 값과 30% 넘게 다르면 값을, 지수 하루 등락이 15% 넘으면 등락을 버림"""
+    ref = _ref().get(REF_SYM.get(label))
+    num = lambda t: float(re.sub(r"[^\d.]", "", t) or "nan")
+    if value and ref:
+        v = num(value)
+        if v == v and not (0.7 <= v / ref <= 1.3):
+            value = ""
+    if chg and label in INDEX_LIKE and chg.endswith("%"):
+        c = num(chg)
+        if c == c and c > 15:
+            chg = ""
+    return value, chg
 
 
 def inline_metrics(line):
@@ -92,7 +129,9 @@ def inline_metrics(line):
             continue
         if v and not c and u == "%" and name in INDEX_LIKE:      # '다우 0.0%' 처럼 등락률만 적힌 경우
             v, u, c = None, "", v + "%"
-        out.append({"label": name, "value": (v + ("pt" if u in ("p", "pt") else u)) if v else "", "chg": (c or "").replace("−", "-").replace(" ", "")})
+        val, chg = plausible(name, (v + ("pt" if u in ("p", "pt") else u)) if v else "", (c or "").replace("−", "-").replace(" ", ""))
+        if val or chg:
+            out.append({"label": name, "value": val, "chg": chg})
     return out
 METRIC = re.compile(r"^([A-Za-z가-힣/ ]*?[A-Za-z가-힣](?:\s?\d+년물)?)\s+([\d,]+(?:\.\d+)?)\s*(pt|%|원|bp)?\s+([+\-−][\d,]+(?:\.\d+)?)\s*(%|bp|원|pt)?\s*$")
 
@@ -183,8 +222,10 @@ def parse(text):
         m = METRIC.match(LEAD.sub("", l).strip())
         if m:
             label = re.sub(r"\s*(환율|지수)$", "", m.group(1).strip())
-            metrics.append({"label": KNOWN.get(label, label), "value": m.group(2) + (m.group(3) or ""),
-                            "chg": m.group(4).replace("−", "-") + (m.group(5) or "")})
+            lab = KNOWN.get(label, label)
+            val, chg = plausible(lab, m.group(2) + (m.group(3) or ""), m.group(4).replace("−", "-") + (m.group(5) or ""))
+            if val or chg:
+                metrics.append({"label": lab, "value": val, "chg": chg})
         elif len(l) < 120:
             metrics += inline_metrics(l)
     metrics = list({m["label"]: m for m in metrics}.values())
