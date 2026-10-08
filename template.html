@@ -25,6 +25,7 @@
   --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b; --dot:#c9c8c0;
   --warn-soft:rgba(250,178,25,.14); --serious-soft:rgba(236,131,90,.14); --crit-soft:rgba(208,59,59,.10);
   --idx:#e34948; --ma20:#eda100; --ma60:#4a3aa7;
+  --ta20:#e8a317; --ta60:#7c6bd6; --ta120:#2fa58f; --ta200:#6b7280;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
@@ -35,7 +36,7 @@
     --long:#199e70; --short:#d95926; --s1:#3987e5; --s2:#d95926; --s3:#199e70;
     --up:#e66767; --down:#3987e5; --dot:#45464b;
     --warn-soft:rgba(250,178,25,.13); --serious-soft:rgba(236,131,90,.14); --crit-soft:rgba(230,103,103,.14);
-    --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9;
+    --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9; --ta20:#f2b53d; --ta60:#a194f0; --ta120:#4cc3a9; --ta200:#a3a9b5;
   }
 }
 :root[data-theme="dark"]{
@@ -46,7 +47,7 @@
   --long:#199e70; --short:#d95926; --s1:#3987e5; --s2:#d95926; --s3:#199e70;
   --up:#e66767; --down:#3987e5; --dot:#45464b;
   --warn-soft:rgba(250,178,25,.13); --serious-soft:rgba(236,131,90,.14); --crit-soft:rgba(230,103,103,.14);
-  --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9;
+  --idx:#ff5c5c; --ma20:#f5b82e; --ma60:#9085e9; --ta20:#f2b53d; --ta60:#a194f0; --ta120:#4cc3a9; --ta200:#a3a9b5;
 }
 *{box-sizing:border-box}
 html{scroll-padding-top:120px}
@@ -374,8 +375,26 @@ tr.click{cursor:pointer}
 .sigbtn b{font-variant-numeric:tabular-nums}
 .sigbtn.bull b{color:var(--up)} .sigbtn.bear b{color:var(--down)} .sigbtn.info b{color:var(--accent)}
 .sigbtn[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);font-weight:650}
-.tawrap{display:grid;grid-template-columns:minmax(0,1fr) 460px;gap:14px;align-items:start}
-.tadetail{position:sticky;top:118px;max-height:calc(100vh - 130px);overflow:auto}
+.tawrap{display:block}
+.tamodal{position:fixed;inset:0;z-index:60;display:grid;place-items:center;padding:24px}
+.tamodal[hidden]{display:none}
+.tamodal .bg{position:absolute;inset:0;background:rgba(10,12,16,.55);backdrop-filter:blur(2px)}
+.tamodal .box{position:relative;width:min(1180px,100%);max-height:calc(100vh - 48px);overflow:auto;background:var(--surface);border:1px solid var(--border);
+  border-radius:16px;padding:18px 22px;box-shadow:0 24px 60px rgba(0,0,0,.28);animation:pop .16s ease}
+@keyframes pop{from{opacity:.4;transform:translateY(6px) scale(.99)}to{opacity:1;transform:none}}
+.mhead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px}
+.mtitle{font-size:19px;font-weight:760;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.mnav{display:flex;gap:8px;align-items:center;flex:none}
+.mbtn{width:32px;height:32px;border-radius:9px;border:1px solid var(--border);background:var(--surface-2);cursor:pointer;font-size:16px;line-height:1;color:var(--ink)}
+.mbtn:disabled{opacity:.35;cursor:default}
+.matog{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:2px 0 8px}
+.mabtn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);background:transparent;border-radius:999px;padding:4px 10px;font-size:12px;cursor:pointer;color:var(--muted)}
+.mabtn i{display:inline-block;width:16px;height:3px;border-radius:2px;opacity:.35}
+.mabtn[aria-pressed="true"]{color:var(--ink);background:var(--surface-2);font-weight:650}
+.mabtn[aria-pressed="true"] i{opacity:1}
+.malg{font-size:12px;color:var(--ink-2);display:inline-flex;align-items:center;gap:4px;margin-left:6px}
+.mcols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.mcols>*{min-width:0}
 .tabar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .tabar input[type=search],.tasel{padding:7px 10px;border-radius:9px;border:1px solid var(--border);background:var(--surface-2);color:var(--ink);font:inherit;font-size:12.5px}
 .tabar input[type=search]{flex:1;min-width:160px}
@@ -401,7 +420,7 @@ tr.click{cursor:pointer}
 .tainfo{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:12.5px}
 .tainfo span:nth-child(even){text-align:right;font-variant-numeric:tabular-nums}
 @media (max-width:1250px){ .sigboard{grid-template-columns:repeat(3,minmax(0,1fr))} }
-@media (max-width:1100px){ .tawrap{grid-template-columns:1fr} .tadetail{position:static;max-height:none} }
+@media (max-width:860px){ .tamodal{padding:0} .tamodal .box{max-height:100vh;height:100%;border-radius:0;padding:14px} .mcols{grid-template-columns:1fr} .mhead{flex-direction:column} }
 @media (max-width:640px){ .sigboard{grid-template-columns:1fr 1fr} .tacards{grid-template-columns:1fr} }
 
 /* 설치 버튼 */
@@ -788,6 +807,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
     일별 기록은 거래일(코스피가 열린 날) 09시 이후 값만 그 날짜로 저장합니다. 하루 손익은 전 거래일 마지막 기록과 비교한 값입니다. 베타는 코스피 대비 일간 수익률 회귀값, 체크 포인트는 정해 둔 규칙에 따른 자동 신호입니다. 참고용 정보이며 투자 권유가 아닙니다.
   </footer>
 </main>
+<div class="tamodal" id="tamodal" hidden><div class="bg" data-close></div><div class="box" role="dialog" aria-modal="true" aria-label="종목 차트"><div id="tadetail"></div></div></div>
 <div id="tip"></div>
 
 <script>
@@ -1517,7 +1537,6 @@ async function renderTA(){
         <div class="tacards" id="tacards"></div>
         <button class="morebtn" id="tamore" hidden></button>
       </div>
-      <div class="card tadetail" id="tadetail"></div>
     </section>`;
   // 요약 타일
   const n=S.length, c=k=>S.filter(s=>s.sig.some(x=>x.k===k)).length;
@@ -1572,8 +1591,7 @@ function taRenderList(){
   const clr=document.getElementById('taclr'); if(clr) clr.onclick=()=>{ TF.sig=null; renderTA(); };
   document.getElementById('tacards').innerHTML=''; taShown=0; taMore();
   if(!taList.length) document.getElementById('tacards').innerHTML='<div class="empty" style="grid-column:1/-1">조건에 맞는 종목이 없어요.</div>';
-  if(!taSel||!taList.find(s=>s.s===taSel)){ if(taList[0]) taSelect(taList[0].s,0); else document.getElementById('tadetail').innerHTML='<div class="empty">종목을 고르세요.</div>'; }
-  else taRenderDetail();
+  document.querySelectorAll('.tacard').forEach(c=>c.classList.toggle('sel',c.dataset.s===taSel));
 }
 const taIO=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ taIO.unobserve(e.target); const s=TA.stocks.find(x=>x.s===e.target.closest('.tacard').dataset.s); taChart(e.target,s,{height:96}); } }),{rootMargin:'300px'});
 function taCard(s){
@@ -1590,85 +1608,133 @@ function taCard(s){
 function taMore(){
   const chunk=taList.slice(taShown,taShown+TA_PAGE); taShown+=chunk.length;
   const box=document.getElementById('tacards'); box.insertAdjacentHTML('beforeend',chunk.map(taCard).join(''));
-  [...box.querySelectorAll('.tacard')].slice(-chunk.length).forEach(c=>{ c.onclick=()=>{ taSelect(c.dataset.s,0); if(innerWidth<1100) document.getElementById('tadetail').scrollIntoView({behavior:'smooth'}); }; taIO.observe(c.querySelector('.tamini')); });
+  [...box.querySelectorAll('.tacard')].slice(-chunk.length).forEach(c=>{ c.onclick=()=>taOpen(c.dataset.s,0); taIO.observe(c.querySelector('.tamini')); });
   const mb=document.getElementById('tamore'); mb.hidden=taShown>=taList.length; mb.textContent=`더 보기 (${taList.length-taShown}종목 남음)`;
 }
-function taSelect(code,pi){ taSel=code; taPat=pi; document.querySelectorAll('.tacard').forEach(c=>c.classList.toggle('sel',c.dataset.s===code)); taRenderDetail(); }
+// ---------- 가운데 팝업 창 ----------
+const TA_MA=[[20,'20일선','var(--ta20)'],[60,'60일선','var(--ta60)'],[120,'120일선','var(--ta120)'],[200,'200일선','var(--ta200)']];
+let taMaOn=(()=>{ try{ const v=JSON.parse(localStorage.getItem('ta_ma')); if(v) return v; }catch(e){} return {20:true,60:true,120:false,200:true}; })();
+function taOpen(code,pi=0){
+  taSel=code; taPat=pi;
+  document.querySelectorAll('.tacard').forEach(c=>c.classList.toggle('sel',c.dataset.s===code));
+  const m=document.getElementById('tamodal');
+  if(m.hidden){ m.hidden=false; document.body.style.overflow='hidden'; }
+  taRenderDetail();
+}
+function taClose(){ const m=document.getElementById('tamodal'); m.hidden=true; document.body.style.overflow=''; hideTip(); }
+function taStep(d){ const i=taList.findIndex(s=>s.s===taSel); const j=i+d; if(j>=0&&j<taList.length) taOpen(taList[j].s,0); }
+document.getElementById('tamodal').addEventListener('click',e=>{ if(e.target.dataset.close!==undefined) taClose(); });
+addEventListener('keydown',e=>{ if(document.getElementById('tamodal').hidden) return;
+  if(e.key==='Escape') taClose(); else if(e.key==='ArrowRight') taStep(1); else if(e.key==='ArrowLeft') taStep(-1); });
+function taSelect(code,pi){ taOpen(code,pi); }
+
 function taRenderDetail(){
   const s=TA.stocks.find(x=>x.s===taSel), el=document.getElementById('tadetail'); if(!s) return;
-  const p=s.pats[taPat]||null, tr=TREND[s.trend];
+  const p=s.pats[taPat]||null, tr=TREND[s.trend], idx=taList.findIndex(x=>x.s===s.s);
   el.innerHTML=`
-    <div class="card-h" style="margin-bottom:8px"><div><h3 style="font-size:17px">${esc(s.n)} <span class="sym">${s.s}</span></h3>
-      <div class="sub">${s.m==='KOSPI'?'코스피':'코스닥'} 시총 ${s.r}위 · ${won(s.mc)}원 · ${dayLabel(s.date)} 종가</div></div>
-      <a class="link" href="https://finance.naver.com/item/main.naver?code=${s.s}" target="_blank" rel="noopener noreferrer">네이버 증권 ${ico('ext')}</a></div>
+    <div class="mhead">
+      <div style="min-width:0"><div class="mtitle">${esc(s.n)} <span class="sym">${s.s}</span> <span class="stag trend ${tr[1]}">${tr[0]}</span>${s.held?` <span class="tag" style="background:color-mix(in srgb,var(--${s.held}) 15%,transparent);color:var(--${s.held})">내 ${s.held==='long'?'롱':'숏'}</span>`:''}</div>
+        <div class="sub">${s.m==='KOSPI'?'코스피':'코스닥'} 시총 ${s.r}위 · ${won(s.mc)}원 · ${dayLabel(s.date)} 종가</div></div>
+      <div class="mnav">
+        <a class="link" href="https://finance.naver.com/item/main.naver?code=${s.s}" target="_blank" rel="noopener noreferrer">네이버 증권 ${ico('ext')}</a>
+        <button class="mbtn" id="taprev" ${idx<=0?'disabled':''} title="이전 종목 (←)">‹</button>
+        <span class="sub">${idx+1} / ${taList.length}</span>
+        <button class="mbtn" id="tanext" ${idx>=taList.length-1?'disabled':''} title="다음 종목 (→)">›</button>
+        <button class="mbtn" data-close title="닫기 (Esc)">✕</button></div>
+    </div>
     <div class="mrow">
       <div class="metric"><div class="ml">종가</div><div class="mv">${num(s.last)}<span class="mc ${dir(s.chg1)}">${pct(s.chg1)}</span></div></div>
-      <div class="metric"><div class="ml">추세</div><div class="mv ${tr[1]}">${tr[0]}</div></div>
+      <div class="metric"><div class="ml">5일 · 20일</div><div class="mv" style="font-size:14px">${cpct(s.chg5,1)} · ${cpct(s.chg20,1)}</div></div>
       <div class="metric"><div class="ml">RSI 14</div><div class="mv">${s.rsi??'—'}</div></div>
-      <div class="metric"><div class="ml">거래량</div><div class="mv">${s.vr!=null?s.vr.toFixed(1)+'배':'—'}</div></div>
+      <div class="metric"><div class="ml">거래량 (20일 평균 대비)</div><div class="mv">${s.vr!=null?s.vr.toFixed(1)+'배':'—'}</div></div>
+      <div class="metric"><div class="ml">52주 고가 대비</div><div class="mv">${pct(s.last/s.hi52-1,1)}</div></div>
     </div>
-    <div class="legend" style="margin-bottom:6px"><span><i class="lkey" style="background:var(--ma20)"></i>20일선</span><span><i class="lkey" style="background:var(--ma60)"></i>60일선</span><span><i class="lkey" style="background:var(--s3)"></i>120일선</span><span><i class="lkey" style="background:var(--short)"></i>200일선</span>${s.base?'<span><i class="key" style="background:var(--accent-soft);border:1px solid var(--accent)"></i>베이스</span>':''}${p?`<span><i class="lkey" style="background:var(--good)"></i>${side(p)}목표</span><span><i class="lkey" style="background:var(--crit)"></i>${side(p)}손절</span>`:''}</div>
+    <div class="matog">${TA_MA.map(([k,l,c])=>`<button class="mabtn" data-k="${k}" aria-pressed="${!!taMaOn[k]}"><i style="background:${c}${k===200?';height:0;border-top:2px dashed '+c:''}"></i>${l}</button>`).join('')}
+      ${s.base?'<span class="malg"><i class="key" style="background:var(--accent-soft);border:1px dashed var(--accent)"></i>베이스</span>':''}
+      ${p?`<span class="malg"><i class="lkey" style="background:var(--good)"></i>${side(p)}목표 · <i class="lkey" style="background:var(--crit)"></i>${side(p)}손절</span>`:''}</div>
     <div class="chart" id="tabig"></div>
-    <div class="nsec"><span>신호 ${s.sig.length}개</span></div>
-    <div class="tasigs">${s.sig.map(x=>`<div class="tasig"><span class="stag ${x.tone}">${esc(x.name)}</span><span class="sub">${esc(x.note)}${x.ago!=null?` · ${agoTxt(x.ago)}`:''}</span>
-      <div class="sub" style="margin-top:3px;color:var(--ink-2)">${SIG_DESC[x.k==='base_bo'?'base_bo':x.k]||''}</div></div>`).join('')||'<div class="sub">눈에 띄는 신호가 없어요.</div>'}</div>
-    ${s.pats.length?`<div class="nsec"><span>차트 패턴</span></div><div class="seg" id="tapats">${s.pats.map((x,i)=>`<button data-i="${i}" aria-pressed="${i===taPat}">${esc(x.name)} ${x.q}</button>`).join('')}</div>
-      ${p?`<div class="sub" style="margin-top:8px;color:var(--ink-2);line-height:1.6">${PAT_DESC[p.k]||''}${p.bias==='bear'?' <b>하락(숏) 관점이라 목표가는 아래, 손절가는 위에 있어요.</b>':p.bias==='bull'?' <b>상승(롱) 관점이라 목표가는 위, 손절가는 아래에 있어요.</b>':''}</div>
-      <div class="mrow" style="margin-top:8px">
-        <div class="metric"><div class="ml">상태</div><div class="mv">${PST[p.st]}</div></div>
-        <div class="metric"><div class="ml">${side(p)}목표가</div><div class="mv" style="color:var(--good)">${num(p.target)}<span class="mc">${pct(p.target/s.last-1,1)}</span></div></div>
-        <div class="metric"><div class="ml">${side(p)}손절가</div><div class="mv" style="color:var(--crit)">${num(p.stop)}<span class="mc">${pct(p.stop/s.last-1,1)}</span></div></div>
-        <div class="metric"><div class="ml">손익비</div><div class="mv">${p.rr!=null?p.rr.toFixed(2):'—'}</div></div></div>`:''}`:''}
-    <div class="nsec"><span>가격 정보</span></div>
-    <div class="tainfo"><span>5일 · 20일 · 60일</span><span>${cpct(s.chg5,1)} · ${cpct(s.chg20,1)} · ${cpct(s.chg60,1)}</span>
-      <span>52주 고가 · 저가</span><span>${num(s.hi52)} · ${num(s.lo52)}</span><span>고가 대비</span><span>${pct(s.last/s.hi52-1,1)}</span>
-      <span>200일선</span><span>${s.ma200.at(-1)!=null?`${num(s.ma200.at(-1))} (${s.above200?'위':'아래'} ${pct(s.last/s.ma200.at(-1)-1,1)})`:'—'}</span></div>`;
+    <div class="mcols">
+      <div><div class="nsec" style="margin-top:6px"><span>신호 ${s.sig.length}개</span></div>
+        <div class="tasigs">${s.sig.map(x=>`<div class="tasig"><span class="stag ${x.tone}">${esc(x.name)}</span><span class="sub">${esc(x.note)}${x.ago!=null?` · ${agoTxt(x.ago)}`:''}</span>
+          <div class="sub" style="margin-top:3px;color:var(--ink-2)">${SIG_DESC[x.k]||''}</div></div>`).join('')||'<div class="sub">눈에 띄는 신호가 없어요.</div>'}</div></div>
+      <div>${s.pats.length?`<div class="nsec" style="margin-top:6px"><span>차트 패턴</span></div><div class="seg" id="tapats">${s.pats.map((x,i)=>`<button data-i="${i}" aria-pressed="${i===taPat}">${esc(x.name)} ${x.q}</button>`).join('')}</div>
+        ${p?`<div class="sub" style="margin-top:8px;color:var(--ink-2);line-height:1.6">${PAT_DESC[p.k]||''}${p.bias==='bear'?' <b>하락(숏) 관점이라 목표가는 아래, 손절가는 위에 있어요.</b>':p.bias==='bull'?' <b>상승(롱) 관점이라 목표가는 위, 손절가는 아래에 있어요.</b>':''}</div>
+        <div class="mrow" style="margin-top:8px">
+          <div class="metric"><div class="ml">상태</div><div class="mv" style="font-size:14px">${PST[p.st]}</div></div>
+          <div class="metric"><div class="ml">${side(p)}목표가</div><div class="mv" style="color:var(--good);font-size:14px">${num(p.target)}<span class="mc">${pct(p.target/s.last-1,1)}</span></div></div>
+          <div class="metric"><div class="ml">${side(p)}손절가</div><div class="mv" style="color:var(--crit);font-size:14px">${num(p.stop)}<span class="mc">${pct(p.stop/s.last-1,1)}</span></div></div>
+          <div class="metric"><div class="ml">손익비</div><div class="mv" style="font-size:14px">${p.rr!=null?p.rr.toFixed(2):'—'}</div></div></div>`:''}`:''}
+        <div class="nsec"><span>가격 정보</span></div>
+        <div class="tainfo"><span>60일 등락</span><span>${cpct(s.chg60,1)}</span>
+          <span>52주 고가 · 저가</span><span>${num(s.hi52)} · ${num(s.lo52)}</span>
+          <span>200일선</span><span>${s.ma200.at(-1)!=null?`${num(s.ma200.at(-1))} (${s.above200?'위':'아래'} ${pct(s.last/s.ma200.at(-1)-1,1)})`:'—'}</span></div></div>
+    </div>`;
   el.querySelectorAll('#tapats button').forEach(b=>b.onclick=()=>{ taPat=+b.dataset.i; taRenderDetail(); });
-  taChart(document.getElementById('tabig'),s,{height:380,big:true,pat:p});
+  el.querySelectorAll('.mabtn').forEach(b=>b.onclick=()=>{ taMaOn[b.dataset.k]=!taMaOn[b.dataset.k]; try{localStorage.setItem('ta_ma',JSON.stringify(taMaOn));}catch(e){} taRenderDetail(); });
+  document.getElementById('taprev').onclick=()=>taStep(-1);
+  document.getElementById('tanext').onclick=()=>taStep(1);
+  const box=document.getElementById('tabig');
+  taChart(box,s,{height:Math.max(320,Math.min(500,innerHeight*.52)),big:true,pat:p});
 }
-// 캔들 차트 (밝은/어두운 화면 공통 색)
+
+// 캔들 차트 — 큰 차트는 이동평균을 골라 켜고, 글자는 이름표로, 축은 딱 떨어지는 값으로
 function taChart(box,s,{height=96,big=false,pat=null}={}){
   const W=box.clientWidth||280, n=s.c.length, H=height;
-  const m={t:6,r:big?58:4,b:big?18:2,l:4}, volH=big?44:14, gap=big?6:2, pH=H-m.t-m.b-volH-gap;
+  const m={t:big?12:6,r:big?78:4,b:big?22:2,l:big?8:4}, volH=big?56:14, gap=big?8:2, pH=H-m.t-m.b-volH-gap;
+  const mas=big?TA_MA.filter(([k])=>taMaOn[k]):[[20,'','var(--ta20)'],[60,'','var(--ta60)']];
   let lo=Infinity, hi=-Infinity;
   for(let i=0;i<n;i++){ if(s.h[i]!=null){ lo=Math.min(lo,s.l[i]); hi=Math.max(hi,s.h[i]); } }
-  [s.ma20,s.ma60,s.ma120,s.ma200].forEach(a=>a.forEach(v=>{ if(v!=null&&v<hi*1.25&&v>lo*.8){ lo=Math.min(lo,v); hi=Math.max(hi,v);} }));
+  mas.forEach(([k])=>(s['ma'+k]||[]).forEach(v=>{ if(v!=null&&v<hi*1.25&&v>lo*.8){ lo=Math.min(lo,v); hi=Math.max(hi,v);} }));
   if(pat) [pat.target,pat.stop].forEach(v=>{ if(v!=null&&v<hi*1.3&&v>lo*.7){ lo=Math.min(lo,v); hi=Math.max(hi,v);} });
-  const pad=(hi-lo)*.05||1; lo-=pad; hi+=pad;
-  const step=(W-m.l-m.r)/n, x=i=>m.l+(i+.5)*step, y=v=>m.t+pH*(1-(v-lo)/(hi-lo)), cw=Math.max(1,step*.62);
-  let g='';
-  if(big){ for(let k=0;k<=4;k++){ const v=lo+(hi-lo)*k/4; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text class="axis-t" x="${W-m.r+6}" y="${y(v)+4}">${num(v)}</text>`; }
-    const D_=TA.dates||[]; for(let i=0;i<n;i+=20){ const d=D_[D_.length-n+i]; if(d) g+=`<text class="axis-t" x="${x(i)}" y="${H-4}" text-anchor="middle">${md(d)}</text>`; } }
-  if(s.base){ const [a,b,t,bt]=s.base; g+=`<rect x="${x(a)-step/2}" y="${y(t)}" width="${x(b)-x(a)+step}" height="${Math.max(1,y(bt)-y(t))}" fill="var(--accent-soft)" stroke="var(--accent)" stroke-dasharray="3 3"/>`+
-    (big?`<text x="${x(a)+4}" y="${y(t)-4}" font-size="11" fill="var(--accent)" font-weight="700">베이스 ${b-a+1}일</text>`:''); }
-  const line=(arr,c,w,dash)=>{ let d='',pen=false; arr.forEach((v,i)=>{ if(v==null){pen=false;return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1); pen=true; }); return d?`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" ${dash?`stroke-dasharray="${dash}"`:''}/>`:''; };
-  for(let i=0;i<n;i++){ if(s.o[i]==null) continue; const up=s.c[i]>=s.o[i], col=up?'var(--up)':'var(--down)';
-    g+=`<line x1="${x(i)}" x2="${x(i)}" y1="${y(s.h[i])}" y2="${y(s.l[i])}" stroke="${col}"/>`;
+  const pad=(hi-lo)*.06||1; lo-=pad; hi+=pad;
+  const step=(W-m.l-m.r)/n, x=i=>m.l+(i+.5)*step, y=v=>m.t+pH*(1-(v-lo)/(hi-lo)), cw=Math.max(1,step*.66);
+  const pill=(px,py,txt,col,anchor='middle')=>{ const w=txt.length*(big?7.2:6)+12, xx=anchor==='start'?px:anchor==='end'?px-w:px-w/2;
+    return `<rect x="${xx}" y="${py-9}" width="${w}" height="18" rx="9" fill="var(--surface)" stroke="${col}" stroke-width="1.2"/><text x="${xx+w/2}" y="${py+4}" font-size="11" font-weight="700" fill="${col}" text-anchor="middle">${esc(txt)}</text>`; };
+  let g='', labels='';
+  if(big){
+    const st=niceStep(hi-lo,5);
+    for(let v=Math.ceil(lo/st)*st; v<=hi; v+=st) g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)" stroke-width=".8"/><text class="axis-t" x="${W-m.r+8}" y="${y(v)+4}">${num(v)}</text>`;
+    const D_=TA.dates||[]; for(let i=0;i<n;i+=20){ const d=D_[D_.length-n+i]; if(d) g+=`<text class="axis-t" x="${x(i)}" y="${H-5}" text-anchor="middle">${md(d)}</text>`; }
+  }
+  if(s.base){ const [a,b,t,bt]=s.base; g+=`<rect x="${x(a)-step/2}" y="${y(t)}" width="${x(b)-x(a)+step}" height="${Math.max(1,y(bt)-y(t))}" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1" stroke-dasharray="4 3" opacity=".9"/>`;
+    if(big) labels+=pill(x(a),y(t)-12,`베이스 ${b-a+1}일`,'var(--accent)','start'); }
+  // 거래량 (옅게)
+  const vmax=Math.max(1,...s.v), vy=m.t+pH+gap;
+  for(let i=0;i<n;i++){ const hh=volH*s.v[i]/vmax; g+=`<rect x="${x(i)-cw/2}" y="${vy+volH-hh}" width="${cw}" height="${hh}" fill="${s.c[i]>=s.o[i]?'var(--up)':'var(--down)'}" opacity=".22"/>`; }
+  // 캔들 (모두 채움)
+  for(let i=0;i<n;i++){ if(s.o[i]==null) continue; const col=s.c[i]>=s.o[i]?'var(--up)':'var(--down)';
     const a=y(Math.max(s.o[i],s.c[i])), b=y(Math.min(s.o[i],s.c[i]));
-    g+=`<rect x="${x(i)-cw/2}" y="${a}" width="${cw}" height="${Math.max(1,b-a)}" fill="${up?'var(--surface)':col}" stroke="${col}"/>`; }
-  g+=line(s.ma20,'var(--ma20)',big?1.6:1.2)+line(s.ma60,'var(--ma60)',big?1.6:1.2);
-  if(big) g+=line(s.ma120,'var(--s3)',1.5)+line(s.ma200,'var(--short)',1.8,'5 3');
-  // 크로스 표시
-  if(big) s.sig.filter(x_=>['gc','dc','gc_long','dc_long','ma200_up','ma200_dn'].includes(x_.k)&&x_.ago!=null).forEach(x_=>{
-    const i=n-1-x_.ago, arr=x_.k.startsWith('ma200')?s.c:x_.k.endsWith('long')?s.ma60:s.ma20, v=arr[i]; if(v==null) return;
-    const c=x_.tone==='bull'?'var(--up)':'var(--down)';
-    g+=`<circle cx="${x(i)}" cy="${y(v)}" r="6" fill="none" stroke="${c}" stroke-width="2"/><text x="${x(i)}" y="${y(v)+(x_.tone==='bull'?20:-11)}" font-size="10.5" font-weight="700" fill="${c}" text-anchor="middle">${esc(x_.name.replace('장기 ',''))}</text>`; });
+    g+=`<line x1="${x(i)}" x2="${x(i)}" y1="${y(s.h[i])}" y2="${y(s.l[i])}" stroke="${col}" stroke-width="1"/><rect x="${x(i)-cw/2}" y="${a}" width="${cw}" height="${Math.max(1,b-a)}" fill="${col}"/>`; }
+  // 이동평균
+  const line=(arr,c,w,dash)=>{ let d='',pen=false; arr.forEach((v,i)=>{ if(v==null){pen=false;return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1); pen=true; }); return d?`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round" ${dash?`stroke-dasharray="${dash}"`:''} opacity=".95"/>`:''; };
+  mas.forEach(([k,,c])=>{ g+=line(s['ma'+k]||[],c,big?(k===200?2:1.6):1.1,k===200?'6 4':''); });
+  // 패턴 선·목표·손절
   if(pat){
-    const LC={res:['var(--accent)','5 4'],sup:['var(--s3)','5 4'],neck:['var(--accent)',''],pole:['var(--muted)','2 3'],curve:['var(--ma60)','']};
-    pat.lines.forEach(([a,y1,b,y2,k])=>{ const [c,d]=LC[k]||LC.res; g+=`<line x1="${x(a)}" y1="${y(y1)}" x2="${x(b)}" y2="${y(y2)}" stroke="${c}" stroke-width="1.6" ${d?`stroke-dasharray="${d}"`:''}/>`; });
-    const hl=(v,c,lab)=>{ if(v==null||v<lo||v>hi) return; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="3 3"/>`+(big?`<text x="${W-m.r+6}" y="${y(v)-3}" font-size="10.5" font-weight="700" fill="${c}">${lab}</text>`:''); };
+    pat.lines.forEach(([a,y1,b,y2,k])=>{ g+=`<line x1="${x(a)}" y1="${y(y1)}" x2="${x(b)}" y2="${y(y2)}" stroke="var(--ink-2)" stroke-width="${big?1.4:1}" ${k==='neck'?'':'stroke-dasharray="5 4"'} opacity=".75"/>`; });
+    const hl=(v,c,lab)=>{ if(v==null||v<lo||v>hi) return; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="4 4" stroke-width="1.2"/>`;
+      if(big) labels+=pill(W-m.r+4,y(v),lab,c,'start'); };
     hl(pat.target,'var(--good)',side(pat)+'목표'); hl(pat.stop,'var(--crit)',side(pat)+'손절');
   }
-  const vmax=Math.max(1,...s.v), vy=m.t+pH+gap;
-  for(let i=0;i<n;i++){ const hh=volH*s.v[i]/vmax; g+=`<rect x="${x(i)-cw/2}" y="${vy+volH-hh}" width="${cw}" height="${hh}" fill="${s.c[i]>=s.o[i]?'var(--up)':'var(--down)'}" opacity=".35"/>`; }
-  box.innerHTML=`<svg height="${H}" viewBox="0 0 ${W} ${H}" style="display:block;width:100%">${g}${big?`<line class="xh" y1="${m.t}" y2="${H-m.b}" stroke="var(--axis)" style="display:none"/><rect class="hit" x="${m.l}" y="0" width="${W-m.l-m.r}" height="${H}" fill="transparent"/>`:''}</svg>`;
+  // 크로스 표시 (이름표)
+  if(big) s.sig.filter(z=>['gc','dc','gc_long','dc_long','ma200_up','ma200_dn'].includes(z.k)&&z.ago!=null).forEach(z=>{
+    const i=n-1-z.ago, arr=z.k.startsWith('ma200')?s.c:z.k.endsWith('long')?s.ma60:s.ma20, v=arr[i]; if(v==null) return;
+    const c=z.tone==='bull'?'var(--up)':'var(--down)', yy=y(v)+(z.tone==='bull'?26:-26);
+    g+=`<circle cx="${x(i)}" cy="${y(v)}" r="5" fill="var(--surface)" stroke="${c}" stroke-width="2.2"/>`;
+    labels+=pill(Math.min(x(i),W-m.r-60),Math.max(m.t+10,Math.min(m.t+pH-10,yy)),z.name,c,'middle'); });
+  // 현재가 표시
+  if(big){ const v=s.c.at(-1), col=s.c.at(-1)>=s.o.at(-1)?'var(--up)':'var(--down)';
+    g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${col}" stroke-width=".8" stroke-dasharray="1 3"/>`;
+    labels+=`<rect x="${W-m.r+2}" y="${y(v)-10}" width="${m.r-4}" height="20" rx="4" fill="${col}"/><text x="${W-m.r/2}" y="${y(v)+4}" font-size="11.5" font-weight="700" fill="#fff" text-anchor="middle">${num(v)}</text>`; }
+  box.innerHTML=`<svg height="${H}" viewBox="0 0 ${W} ${H}" style="display:block;width:100%">${g}${labels}${big?`<line class="xh" y1="${m.t}" y2="${H-m.b}" stroke="var(--axis)" style="display:none"/><rect class="hit" x="${m.l}" y="0" width="${W-m.l-m.r}" height="${H}" fill="transparent"/>`:''}</svg>`;
   if(big){ const svg=box.querySelector('svg'), xh=svg.querySelector('.xh'), D_=TA.dates||[];
     svg.querySelector('.hit').addEventListener('mousemove',e=>{ const r=svg.getBoundingClientRect(); const i=Math.max(0,Math.min(n-1,Math.floor((e.clientX-r.left-m.l)/step)));
       xh.setAttribute('x1',x(i)); xh.setAttribute('x2',x(i)); xh.style.display='';
-      showTip(e,D_[D_.length-n+i]||'',[['시가',num(s.o[i])],['고가',num(s.h[i])],['저가',num(s.l[i])],['종가',num(s.c[i])],['20일선',num(s.ma20[i])],['60일선',num(s.ma60[i])],['200일선',num(s.ma200[i])],['거래량',num(s.v[i]*1000)]]); });
+      const ch=i>0?s.c[i]/s.c[i-1]-1:null;
+      showTip(e,D_[D_.length-n+i]||'',[['시가',num(s.o[i])],['고가',num(s.h[i])],['저가',num(s.l[i])],['종가',num(s.c[i])],['등락',pct(ch)],
+        ...mas.map(([k,l,c])=>[l,num(s['ma'+k][i]),c]),['거래량',num(s.v[i]*1000)]]); });
     svg.querySelector('.hit').addEventListener('mouseleave',()=>{ xh.style.display='none'; hideTip(); }); }
 }
-function taRedraw(){ if(!TA) return; document.querySelectorAll('.tamini').forEach(m=>{ if(m.innerHTML){ const s=TA.stocks.find(x=>x.s===m.closest('.tacard').dataset.s); taChart(m,s,{height:96}); } }); if(taSel) taRenderDetail(); }
+function taRedraw(){ if(!TA) return; document.querySelectorAll('.tamini').forEach(m=>{ if(m.innerHTML){ const s=TA.stocks.find(x=>x.s===m.closest('.tacard').dataset.s); taChart(m,s,{height:96}); } }); if(taSel&&!document.getElementById('tamodal').hidden) taRenderDetail(); }
 
 // ============================================================
 // 탭 3. 글로벌 시장
