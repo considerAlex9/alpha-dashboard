@@ -203,14 +203,32 @@ def detect(o, h, l, c, v):
     hi, lo = pivots(h, l, base)
     pats = []
 
-    def add(kind, name, fam, bias, status, q, target, stop, lines, pts, brk, level):
+    def add(kind, name, fam, bias, status, q, target, stop, lines, pts, brk, level, level_at=None, height=None):
         last = c[-1]
+        # 기울어진 선(목선·추세선)은 '돌파한 날의 선 높이'를 기준으로 목표를 잡는다 (오늘까지 이어 그린 값이 아니라)
+        if brk is not None and level_at and height and bias in ("bull", "bear"):
+            level = level_at(brk)
+            target = level + height if bias == "bull" else level - height
+            if status in ("confirmed", "retest", "forming") and (
+                    (bias == "bull" and max(h[brk:]) >= target) or (bias == "bear" and min(l[brk:]) <= target)):
+                status = "target"
+        # 점검: 손절선을 이미 넘었으면 무효, 목표가를 이미 지났으면 '목표 도달', 목표·손절이 거꾸로면 무효
         if bias == "bull":
-            rr = (target - last) / (last - stop) if last > stop else None
+            if last <= stop or target <= stop:
+                return
+            if last >= target:
+                status = "target"
         elif bias == "bear":
-            rr = (last - target) / (stop - last) if stop > last else None
-        else:
+            if last >= stop or target >= stop:
+                return
+            if last <= target:
+                status = "target"
+        if status == "target" or bias == "neutral":
             rr = None
+        elif bias == "bull":
+            rr = (target - last) / (last - stop)
+        else:
+            rr = (last - target) / (stop - last)
         q = int(max(30, min(100, q + (8 if _vol_ok(v, brk) else 0))))
         pats.append({"k": kind, "name": name, "fam": fam, "bias": bias, "st": status, "q": q,
                      "target": round(target, 2), "stop": round(stop, 2), "level": round(level, 2) if level else None,
@@ -268,7 +286,8 @@ def detect(o, h, l, c, v):
                     q = 62 + 6 * (len(H3) + len(L3) - 4) + int((0.025 - max(eh, el)) * 600)
                     add(k, name, fam, bias, st, q, target, stop,
                         [[start, res(start), n - 1, res(n - 1), "res"], [start, sup(start), n - 1, sup(n - 1), "sup"]],
-                        [[i, h[i], "H"] for i in H3] + [[i, l[i], "L"] for i in L3], brk, level_at(n - 1))
+                        [[i, h[i], "H"] for i in H3] + [[i, l[i], "L"] for i in L3], brk, level_at(n - 1),
+                        None if k in ("asc_channel", "desc_channel") else level_at, gap0)
 
     # 2) 이중 바닥 / 이중 천장
     for bias, piv, arr in (("bull", lo, l), ("bear", hi, h)):
@@ -325,8 +344,8 @@ def detect(o, h, l, c, v):
         st, brk = _status(bias, c, h, l, neck, i3, target, stop)
         if st:
             q = 74 + int((0.06 - abs(A / C - 1)) * 250)
-            add(k, name, "반전형", bias, st, q, target, stop, [[p1, neck(p1), n - 1, neck(n - 1), "neck"]],
-                [[i1, A, "어깨"], [i2, B, "머리"], [i3, C, "어깨"]], brk, neck(n - 1))
+            add(k, name, "반전형", bias, st, q, target, stop, [[p1, neck(p1), n - 1 if brk is None else min(n - 1, brk + 5), neck(n - 1 if brk is None else min(n - 1, brk + 5)), "neck"]],
+                [[i1, A, "어깨"], [i2, B, "머리"], [i3, C, "어깨"]], brk, neck(n - 1), neck, depth)
 
     # 4) 박스권 (최근 45일, 마지막 3일 제외)
     s0, s1 = n - 45, n - 3
@@ -383,7 +402,7 @@ def detect(o, h, l, c, v):
         if st:
             add(k, name, "지속형", bias, st, 66 + int((0.5 - retr) * 30), target, stop,
                 [[i, c[i], j, c[j], "pole"], [j, line(j), n - 1, line(n - 1), "res" if bias == "bull" else "sup"]],
-                [], brk, line(n - 1))
+                [], brk, line(n - 1), line, pole)
 
     # 6) 둥근 바닥 (최근 100일 종가에 2차 곡선)
     m = min(100, n)

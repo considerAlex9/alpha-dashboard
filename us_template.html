@@ -316,7 +316,7 @@ const LINE={res:['var(--acc)','5 4'],sup:['var(--cyan)','5 4'],neck:['var(--acc)
 function candles(box,s,{height=120,pat=null,big=false,mode='candle'}={}){
   const W=box.clientWidth||300, n=DATES.length;
   const volH=big?60:18, rsiH=big?64:0, gap=big?8:2;
-  const m={t:big?10:4,r:big?62:4,b:big?18:2,l:big?4:4};
+  const m={t:big?10:4,r:big?80:4,b:big?18:2,l:big?4:4};
   const H=height, pH=H-m.t-m.b-volH-gap-(rsiH?rsiH+gap:0);
   const vals=[]; for(let i=0;i<n;i++){ if(s.h[i]!=null){vals.push(s.h[i],s.l[i]);} }
   if(!vals.length){ box.innerHTML='<div class="empty">데이터 없음</div>'; return; }
@@ -343,8 +343,8 @@ function candles(box,s,{height=120,pat=null,big=false,mode='candle'}={}){
     pat.lines.forEach(([a,y1,b,y2,k])=>{ const [c,dash]=LINE[k]||LINE.res; g+=`<line x1="${x(a)}" y1="${y(y1)}" x2="${x(b)}" y2="${y(y2)}" stroke="${c}" stroke-width="${big?1.6:1.2}" ${dash?`stroke-dasharray="${dash}"`:''}/>`; });
     pat.pts.forEach(([a,v,t])=>{ g+=`<circle cx="${x(a)}" cy="${y(v)}" r="${big?3.5:2.2}" fill="none" stroke="var(--acc)" stroke-width="1.4"/>`+(big?`<text x="${x(a)}" y="${y(v)+(t==='H'||t==='머리'&&pat.bias==='bear'?-7:13)}" font-size="9.5" fill="var(--acc)" text-anchor="middle">${esc(t==='H'||t==='L'?'':t)}</text>`:''); });
     const hl=(v,c,lab)=>{ if(v==null||v<lo||v>hi) return; g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="3 3" stroke-width="1"/>`;
-      if(big) g+=`<rect x="${W-m.r+2}" y="${y(v)-8}" width="${m.r-4}" height="15" fill="${c}" opacity=".18"/><text x="${W-m.r+5}" y="${y(v)+3}" font-size="9.5" fill="${c}">${lab}</text>`; };
-    hl(pat.target,'var(--good)',side(pat)+'목표'); hl(pat.stop,'var(--bad)',side(pat)+'손절'); if(pat.level) hl(pat.level,'var(--acc)','돌파선');
+      if(big) g+=`<rect x="${W-m.r+2}" y="${y(v)-8}" width="${Math.max(m.r-4,lab.length*10+8)}" height="16" fill="var(--panel)" stroke="${c}" stroke-width=".8"/><rect x="${W-m.r+2}" y="${y(v)-8}" width="${Math.max(m.r-4,lab.length*10+8)}" height="16" fill="${c}" opacity=".16"/><text x="${W-m.r+6}" y="${y(v)+4}" font-size="10" font-weight="700" fill="${c}">${lab}</text>`; };
+    hl(pat.target,'var(--good)',side(pat)+(pat.st==='target'?'목표✓':'목표')); hl(pat.stop,'var(--bad)',side(pat)+'손절'); if(pat.level) hl(pat.level,'var(--acc)','돌파선');
   }
   // 거래량
   const vmax=Math.max(1,...s.v.filter(v=>v!=null)), vy=m.t+pH+gap;
@@ -467,7 +467,7 @@ function renderDetail(){
       <div class="seg" id="dmode"><button data-m="candle" aria-pressed="${detailMode==='candle'}">캔들</button><button data-m="line" aria-pressed="${detailMode==='line'}">선</button></div></div>
     <div class="lg"><span><i style="background:var(--yellow)"></i>20일선</span><span><i style="background:var(--cyan)"></i>50일선</span><span><i style="background:var(--violet)"></i>200일선</span>${p?`<span><i style="background:var(--good)"></i>${side(p)}목표</span><span><i style="background:var(--bad)"></i>${side(p)}손절</span><span><i style="background:var(--acc)"></i>돌파선·목선</span>`:''}</div>
     <div class="big" id="bigchart" style="padding:4px 4px 0 8px"></div>
-    ${p?`<div class="dsec"><h4>패턴 해설 · ${esc(p.fam)} · ${BIAS[p.bias]}${p.bias==='bear'?' (숏 관점)':p.bias==='bull'?' (롱 관점)':''}</h4>${DESC[p.k]||''}${p.bias==='bear'?' <b style="color:var(--ink)">하락(숏) 관점이라 목표가는 아래, 손절가는 위예요.</b>':''}
+    ${p?`<div class="dsec"><h4>패턴 해설 · ${esc(p.fam)} · ${BIAS[p.bias]}${p.bias==='bear'?' (숏 관점)':p.bias==='bull'?' (롱 관점)':''}</h4>${DESC[p.k]||''}${p.st==='target'?' <b style="color:var(--acc)">이미 목표가에 도달한 패턴이에요. 새로 들어갈 자리가 아니라 지나간 신호로 보세요.</b>':p.bias==='bear'?' <b style="color:var(--ink)">하락(숏) 관점이라 목표가는 아래, 손절가는 위예요.</b>':''}
       <div class="grid2" style="margin-top:8px"><span>${side(p)}목표가</span><span style="color:var(--good)">${usd(p.target)} (${pct(p.target/s.last-1,1)})</span>
       <span>${side(p)}손절가</span><span style="color:var(--bad)">${usd(p.stop)} (${pct(p.stop/s.last-1,1)})</span>
       ${p.level?`<span>돌파선</span><span>${usd(p.level)}</span>`:''}<span>손익비</span><span>${p.rr!=null?p.rr.toFixed(2):'—'}</span>

@@ -7,6 +7,7 @@
 import json
 import re
 from datetime import datetime, timedelta
+from datetime import time as dtime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -112,16 +113,19 @@ def build(kis, mk, news, cal, disc, positions, now, log=print):
     top_value = sorted(movers, key=lambda r: -r["value"])[:10]
     hot = sorted([r for r in movers if abs(r["chg1"]) >= 0.05], key=lambda r: -abs(r["chg1"]))[:8]
 
-    # 오늘 장마감 브리핑(09:00~)과 장전 브리핑
-    eds = (news or {}).get("editions", [])
-    post = next((e for e in eds if e["id"] == f"{today}-post"), None)
-    pre = next((e for e in eds if e["id"] == f"{today}-pre"), None)
+    # 오늘 09:00 이후 텔레그램 글 (원문은 싣지 않고 요약에만 씀)
+    import digest
+    import news as tg
+    errs = []
+    posts = sorted(tg.fetch_posts(tg.MARKET_CHANNELS, datetime.combine(now.date(), dtime(9, 0), now.tzinfo), now, errs),
+                   key=lambda p: p["time"])
 
     def mention(name):
-        for e in (post, pre):
-            for c in (e or {}).get("cards", []):
-                if name in c["title"] or any(name in b for b in c.get("bullets", [])):
-                    return {"title": c["title"], "link": c.get("link"), "sources": c.get("sources", [])}
+        for p in posts:
+            if name in p["text"] and not digest.KR_WRAP.search(p["text"][:40]):
+                r = tg.parse(p["text"])
+                if r:
+                    return {"title": r["title"]}
         return None
     featured = []
     for r in (hot + top_value[:4]):
@@ -163,34 +167,27 @@ def build(kis, mk, news, cal, disc, positions, now, log=print):
     if len(tiles) > 3:
         glance.append("금리·환율 — " + " · ".join(f"{t['label']} {t['value']}({t['chg']})" for t in tiles[2:5]) + ".")
 
-    # 밤사이 미국장·매크로
-    def g(sym, name=None, unit=""):
-        x = G.get(sym)
-        return f"{name or x['name']} {unit}{x['price']:,.2f}({pct(x['chg1'])})" if x and x.get("chg1") is not None else None
-
-    def gc(sym, name=None):
-        x = G.get(sym)
-        return f"{name or x['name']} {pct(x['chg1'])}" if x and x.get("chg1") is not None else None
-    us_date = (G.get("^GSPC") or {}).get("date")
-    overnight = []
-    us = [s for s in (gc("^GSPC", "S&P500"), gc("^IXIC", "나스닥"), gc("^DJI", "다우"), gc("^SOX", "필라델피아 반도체")) if s]
-    if us:
-        overnight.append(f"미국({int(us_date[5:7])}/{int(us_date[8:10])}) — " + " · ".join(us) + "." if us_date else " · ".join(us))
-    mac = [s for s in (f"미국 10년물 {rates['미국 10년T-NOTE 수익률'][0]:.2f}%({sg(rates['미국 10년T-NOTE 수익률'][1] * 100, '.0f')}bp)"
-                       if "미국 10년T-NOTE 수익률" in rates else None,
-                       g("DX-Y.NYB", "달러인덱스"), g("^VIX", "VIX")) if s]
-    if mac:
-        overnight.append("금리·달러 — " + " · ".join(mac) + ".")
-    com = [s for s in (g("CL=F", "WTI", "$"), g("GC=F", "금", "$"), g("BTC-USD", "비트코인", "$")) if s]
-    if com:
-        overnight.append("원자재 — " + " · ".join(com) + ".")
-    asia = [s for s in (gc("^N225", "닛케이"), gc("^HSI", "항셍"), gc("000001.SS", "상해종합")) if s]
-    if asia:
-        overnight.append("아시아 — " + " · ".join(asia) + ".")
-    pre_news = [{"title": c["title"], "sources": c.get("sources", []), "link": c.get("link"), "link_label": c.get("link_label")}
-                for c in (pre or {}).get("cards", [])[:3]]
-    day_news = [{"title": c["title"], "bullets": c.get("bullets", [])[:2], "sources": c.get("sources", []), "topic": c.get("topic"),
-                 "link": c.get("link"), "link_label": c.get("link_label")} for c in (post or {}).get("cards", [])[:6]]
+    # ---------- 주식·채권 마감 시황 (한화투자증권 리서치센터 우선, 다른 채널로 보충) ----------
+    ch = digest.channel_of
+    is_stock_wrap = lambda p: digest.KR_WRAP.search(p["text"][:60]) and re.search(r"KOSPI|코스피|증시", p["text"][:300]) and "채권" not in p["text"][:30]
+    is_bond_wrap = lambda p: re.search(r"채권|국고채|금리", p["text"][:60]) and digest.KR_WRAP.search(p["text"][:80])
+    prio = lambda ps: sorted(ps, key=lambda p: (ch(p) != "hanwhastrategy", ch(p) != "strategy_kis", p["time"]))
+    sw = prio([p for p in posts if is_stock_wrap(p)])
+    bw = prio([p for p in posts if is_bond_wrap(p)])
+    src = lambda ps: list(dict.fromkeys(digest.CHANNEL.get(ch(p), ch(p)) for p in ps))
+    stock_wrap = {"lines": digest.digest(sw, 6), "sources": src(sw)}
+    bond_wrap = {"lines": digest.digest(bw, 5), "nums": digest.numbers(bw, r"국고채|국채|회사채|통안"), "sources": src(bw)}
+    # ---------- 한국장 시간(09:00~15:40) 미국 주식 관련 소식 ----------
+    us_news = []
+    for p in digest.merge_runs([p for p in posts if p["time"].strftime("%H:%M") <= "15:40" and not digest.KR_WRAP.search(p["text"][:60])]):
+        if not digest.US_KW.search(p["text"]):
+            continue
+        t = digest.title(p["text"])
+        if not t or any(digest.similar(t, u["title"]) for u in us_news):
+            continue
+        lines = [l for l in digest.digest([p], 4, need_reason=False) if not digest.similar(l, t)][:2]
+        us_news.append({"time": p["time"].strftime("%H:%M"), "title": t, "lines": lines, "sources": tg.sources_of(p["text"])[:2]})
+    us_news = us_news[:8]
 
     # 헤드라인: 코스피 방향 + 외국인 + 강·약 테마
     head = f"코스피 {abs(K['chg1']) * 100:.2f}% {word(K['chg1'])}"
@@ -209,18 +206,20 @@ def build(kis, mk, news, cal, disc, positions, now, log=print):
     nxt = [e for e in (cal or {}).get("events", [])
            if now <= datetime.fromisoformat(e["time"]) <= horizon and e["impact"] in ("높음", "보통", "휴일")]
 
-    log(f"  장 마감 시황: {head} · 특징주 {len(featured)} · 다음 일정 {len(nxt)}건")
-    return {"date": today, "built_at": now.isoformat(), "headline": head, "tiles": tiles,
-            "index": idx, "flows": flows, "glance": glance, "overnight": overnight, "pre_news": pre_news,
-            "news": day_news, "featured": featured, "top_value": top_value,
-            "strong": strong, "weak": weak, "after": after, "next": nxt}
+    final = now.hour >= 18
+    log(f"  장 마감 시황{' (최종)' if final else ' (1차)'}: {head} · 주식 마감 {len(stock_wrap['lines'])}줄({', '.join(stock_wrap['sources']) or '없음'})"
+        f" · 채권 마감 {len(bond_wrap['lines'])}줄 · 미국 주식 소식 {len(us_news)}건 · 특징주 {len(featured)}")
+    return {"date": today, "built_at": now.isoformat(), "final": final, "headline": head, "tiles": tiles,
+            "index": idx, "flows": flows, "glance": glance, "stock_wrap": stock_wrap, "bond_wrap": bond_wrap, "us_news": us_news,
+            "featured": featured, "top_value": top_value, "strong": strong, "weak": weak, "after": after, "next": nxt}
 
 
 def collect(prev, kis, mk, news, cal, disc, positions, now, log=print):
-    """prev: 지난 wrap.json. 오늘 시황이 이미 있으면 그대로 둔다."""
+    """prev: 지난 wrap.json. 16:30 에 1차, 18시 이후 실행(19:00)에서 한 번 더 최종으로 만든다 (17시대 리서치 정리 글 반영)."""
     wraps = (prev or {}).get("wraps", [])
     today = now.strftime("%Y-%m-%d")
-    if any(w["date"] == today for w in wraps):
+    old = next((w for w in wraps if w["date"] == today), None)
+    if old and (old.get("final") or now.hour < 18):
         log("  장 마감 시황: 오늘 것은 이미 만들어 둠 → 유지")
         return prev
     w = build(kis, mk, news, cal, disc, positions, now, log)
