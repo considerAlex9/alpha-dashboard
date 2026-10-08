@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-08T12:31:12.835224+09:00",
+ "captured_at": "2026-10-08T13:05:26.672073+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "가온전선",
+   "rcept_no": "20261008800258"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "계열금융회사를거래상대방으로한단기금융상품거래의분기별공시",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "가온전선",
+   "rcept_no": "20261008000215"
+  },
   {
    "code": "086790",
    "name": "하나금융지주",
@@ -97,18 +121,6 @@
    "date": "2026-10-06",
    "filer": "산일전기",
    "rcept_no": "20261006800320"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "SK하이닉스",
-   "rcept_no": "20261006000253"
   },
   {
    "code": "039490",
@@ -675,18 +687,6 @@
    "rcept_no": "20260930800489"
   },
   {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "서진우",
-   "rcept_no": "20260930000861"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1011,18 +1011,6 @@
    "rcept_no": "20260922800090"
   },
   {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-22",
-   "filer": "정인철",
-   "rcept_no": "20260922000361"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -1141,18 +1129,6 @@
    "date": "2026-09-18",
    "filer": "한화시스템",
    "rcept_no": "20260918800652"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "조회공시요구(풍문또는보도)에대한답변(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260918800583"
   },
   {
    "code": "272210",
@@ -1647,6 +1623,18 @@
    "rcept_no": "20260911000480"
   },
   {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등거래계획보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-11",
+   "filer": "LS전선",
+   "rcept_no": "20260911000445"
+  },
+  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -1873,18 +1861,6 @@
    "date": "2026-09-10",
    "filer": "키움증권",
    "rcept_no": "20260910000141"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "조회공시요구(풍문또는보도)에대한답변(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260909800559"
   },
   {
    "code": "006400",
@@ -2197,18 +2173,6 @@
    "date": "2026-09-04",
    "filer": "심텍",
    "rcept_no": "20260904900533"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "풍문또는보도에대한해명(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260904800642"
   },
   {
    "code": "006400",
@@ -2727,6 +2691,18 @@
    "rcept_no": "20260831800342"
   },
   {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "가온전선",
+   "rcept_no": "20260831800149"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -2773,6 +2749,18 @@
    "date": "2026-08-31",
    "filer": "삼성SDI",
    "rcept_no": "20260831000478"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "가온전선",
+   "rcept_no": "20260831000415"
   },
   {
    "code": "028300",
@@ -2869,18 +2857,6 @@
    "date": "2026-08-28",
    "filer": "엘아이지",
    "rcept_no": "20260828001248"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260828000879"
   },
   {
    "code": "079550",
@@ -3195,42 +3171,6 @@
    "rcept_no": "20260821900144"
   },
   {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260821800617"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "조회공시요구(풍문또는보도)에대한답변(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260821800524"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "조회공시요구(풍문또는보도)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "유가증권시장본부",
-   "rcept_no": "20260821800214"
-  },
-  {
    "code": "020150",
    "name": "롯데에너지머티리얼즈",
    "side": "long",
@@ -3267,18 +3207,6 @@
    "rcept_no": "20260821800099"
   },
   {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-21",
-   "filer": "김성래",
-   "rcept_no": "20260821000615"
-  },
-  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -3289,102 +3217,6 @@
    "date": "2026-08-21",
    "filer": "삼성SDI",
    "rcept_no": "20260821000547"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "최강국",
-   "rcept_no": "20260821000531"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "손현철",
-   "rcept_no": "20260821000527"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "양동훈",
-   "rcept_no": "20260821000524"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "김정원",
-   "rcept_no": "20260821000519"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "정덕균",
-   "rcept_no": "20260821000516"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "고승범",
-   "rcept_no": "20260821000513"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "김성래",
-   "rcept_no": "20260821000504"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "자기주식처분결과보고서",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260821000495"
   },
   {
    "code": "006400",
@@ -3531,30 +3363,6 @@
    "rcept_no": "20260819900418"
   },
   {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "주식소각결정",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260819800340"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "수시공시의무관련사항(공정공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260819800338"
-  },
-  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -3565,18 +3373,6 @@
    "date": "2026-08-19",
    "filer": "하나금융지주",
    "rcept_no": "20260819800197"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "주요사항보고서(자기주식취득결정)",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260819000254"
   },
   {
    "code": "003230",
@@ -3613,18 +3409,6 @@
    "date": "2026-08-14",
    "filer": "테스",
    "rcept_no": "20260814901389"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "파생상품거래손실발생",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260814802986"
   },
   {
    "code": "192650",
@@ -3709,18 +3493,6 @@
    "date": "2026-08-14",
    "filer": "산일전기",
    "rcept_no": "20260814003544"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260814003509"
   },
   {
    "code": "030200",
@@ -3987,6 +3759,30 @@
    "rcept_no": "20260814001298"
   },
   {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "가온전선",
+   "rcept_no": "20260814001287"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "가온전선",
+   "rcept_no": "20260814001273"
+  },
+  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -3997,6 +3793,18 @@
    "date": "2026-08-14",
    "filer": "삼성SDI",
    "rcept_no": "20260814001113"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "가온전선",
+   "rcept_no": "20260814000919"
   },
   {
    "code": "259960",
@@ -4287,16 +4095,76 @@
    "rcept_no": "20260812000394"
   },
   {
-   "code": "000660",
-   "name": "SK하이닉스",
+   "code": "000500",
+   "name": "가온전선",
    "side": "long",
-   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+   "title": "약관에의한금융거래시계열금융회사의거래상대방의공시",
    "category": "기타",
    "important": false,
    "correction": false,
    "date": "2026-08-12",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260812000344"
+   "filer": "가온전선",
+   "rcept_no": "20260812000390"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-12",
+   "filer": "가온전선",
+   "rcept_no": "20260812000389"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-12",
+   "filer": "가온전선",
+   "rcept_no": "20260812000384"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-12",
+   "filer": "가온전선",
+   "rcept_no": "20260812000378"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-12",
+   "filer": "가온전선",
+   "rcept_no": "20260812000376"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-12",
+   "filer": "가온전선",
+   "rcept_no": "20260812000369"
   },
   {
    "code": "222800",
@@ -4383,18 +4251,6 @@
    "rcept_no": "20260810800468"
   },
   {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "조회공시요구(풍문또는보도)에대한답변(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "SK하이닉스",
-   "rcept_no": "20260810800434"
-  },
-  {
    "code": "010060",
    "name": "OCI홀딩스",
    "side": "long",
@@ -4405,18 +4261,6 @@
    "date": "2026-08-10",
    "filer": "OCI홀딩스",
    "rcept_no": "20260810800314"
-  },
-  {
-   "code": "000660",
-   "name": "SK하이닉스",
-   "side": "long",
-   "title": "조회공시요구(풍문또는보도)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-10",
-   "filer": "유가증권시장본부",
-   "rcept_no": "20260810800101"
   },
   {
    "code": "259960",

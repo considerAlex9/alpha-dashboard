@@ -1,5 +1,20 @@
 [
  {
+  "id": 2004179,
+  "order_id": 27238,
+  "company_id": 37,
+  "company_name": "Gaon Cable Co., Ltd.",
+  "company_symbol": "000500",
+  "side": "buy",
+  "quantity": 6500,
+  "price": 294918.1619,
+  "commission": 1916968.0523,
+  "fx_rate": 1.0,
+  "value_krw": 1916968052.2779,
+  "realized_pnl": null,
+  "created_at": "2026-10-08T04:01:47+00:00"
+ },
+ {
   "id": 2002805,
   "order_id": 27236,
   "company_id": 44,
