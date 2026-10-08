@@ -1,5 +1,35 @@
 [
  {
+  "id": 2017260,
+  "order_id": 27307,
+  "company_id": 2366,
+  "company_name": "Almac Co. Ltd.",
+  "company_symbol": "354320",
+  "side": "short",
+  "quantity": 40658,
+  "price": 56476.6349,
+  "commission": 2296227.0226,
+  "fx_rate": 1.0,
+  "value_krw": 2296227022.6053,
+  "realized_pnl": null,
+  "created_at": "2026-10-08T05:18:40+00:00"
+ },
+ {
+  "id": 2017259,
+  "order_id": 27306,
+  "company_id": 2366,
+  "company_name": "Almac Co. Ltd.",
+  "company_symbol": "354320",
+  "side": "cover",
+  "quantity": 1,
+  "price": 56929.421,
+  "commission": 56.9294,
+  "fx_rate": 1.0,
+  "value_krw": 56929.421,
+  "realized_pnl": 540.7622,
+  "created_at": "2026-10-08T05:18:17+00:00"
+ },
+ {
   "id": 2012975,
   "order_id": 27281,
   "company_id": 985,
