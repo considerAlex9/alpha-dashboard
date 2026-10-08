@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-08T13:05:26.672073+09:00",
+ "captured_at": "2026-10-08T13:25:11.756061+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "006400",
+   "name": "삼성SDI",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "삼성SDI",
+   "rcept_no": "20261008800289"
+  },
   {
    "code": "000500",
    "name": "가온전선",
