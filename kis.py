@@ -184,6 +184,17 @@ class KIS:
                     pass
         return out
 
+    def investor_rank(self, market, who):
+        """외국인·기관 순매수 금액 상위 30 (장중 가집계). market: 0001 코스피, 1001 코스닥 · who: 1 외국인, 2 기관
+        → [{code, name, price, chg1, net(원)}]"""
+        d = self.get("/uapi/domestic-stock/v1/quotations/foreign-institution-total", "FHPTJ04400000",
+                     {"FID_COND_MRKT_DIV_CODE": "V", "FID_COND_SCR_DIV_CODE": "16449", "FID_INPUT_ISCD": market,
+                      "FID_DIV_CLS_CODE": "1", "FID_RANK_SORT_CLS_CODE": "0", "FID_ETC_CLS_CODE": who})
+        key = "frgn_ntby_tr_pbmn" if who == "1" else "orgn_ntby_tr_pbmn"
+        return [{"code": r["mksc_shrn_iscd"], "name": r["hts_kor_isnm"], "price": float(r["stck_prpr"] or 0),
+                 "chg1": float(r["prdy_ctrt"] or 0) / 100, "net": float(r[key] or 0) * 1e6}
+                for r in d.get("output", []) if r.get("mksc_shrn_iscd")]
+
     # ---------- 공매도 ----------
     def short_sale(self, code, days=30):
         end = datetime.now()

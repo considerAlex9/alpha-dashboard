@@ -196,6 +196,45 @@ def _kis_stock_extra(kis, code):
             "short_amt5": sum(_num(r["ssts_tr_pbmn"]) for r in sh)}
 
 
+def investor_ranks(kis, safe, log):
+    """외국인·기관 순매수 상위 (코스피·코스닥 각 30) + 시가총액 대비 비율, 5일·20일 누적"""
+    today = datetime.now(KST).strftime("%Y%m%d")
+    out = {"captured_at": datetime.now(KST).isoformat()}
+    rows = {}
+    for who, key in (("1", "foreign"), ("2", "organ")):
+        lst = []
+        for mk_code, mk in (("0001", "KOSPI"), ("1001", "KOSDAQ")):
+            for r in safe(f"한투 수급 순위 {key} {mk}", lambda m=mk_code, w=who: kis.investor_rank(m, w)) or []:
+                if r["net"] > 0:
+                    lst.append({**r, "market": mk})
+        out[key] = lst
+        for r in lst:
+            rows[r["code"]] = r
+
+    def extra(code):
+        info = safe(f"한투 현재가 {code}", lambda: kis.price(code)) or {}
+        inv = safe(f"한투 종목 수급 {code}", lambda: kis.stock_investor(code)) or []
+        daily = [(x["stck_bsop_date"], _num(x.get("frgn_ntby_tr_pbmn")) * 1e6, _num(x.get("orgn_ntby_tr_pbmn")) * 1e6)
+                 for x in inv if x.get("frgn_ntby_tr_pbmn") not in (None, "")]
+        return code, info.get("mcap"), daily
+    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
+        got = {c: (mc, d) for c, mc, d in ex.map(extra, list(rows))}
+    for key, idx in (("foreign", 1), ("organ", 2)):
+        for r in out[key]:
+            mc, daily = got.get(r["code"], (None, []))
+            r["mcap"] = mc
+            # 누적: 오늘 일별 확정값이 있으면 일별만, 없으면 오늘 가집계 + 지난 확정값
+            past = [d[idx] for d in daily if d[0] != today]
+            has_today = any(d[0] == today for d in daily)
+            cum = lambda k: (sum(d[idx] for d in daily[:k]) if has_today else r["net"] + sum(past[:k - 1]))
+            r["cum5"], r["cum20"] = cum(5), cum(20)
+            for k in ("net", "cum5", "cum20"):
+                r[k + "_pct"] = round(r[k] / mc, 6) if mc else None
+        out[key].sort(key=lambda r: -(r["net_pct"] or 0))
+    log(f"  · 수급 순위: 외국인 {len(out['foreign'])} · 기관 {len(out['organ'])}")
+    return out
+
+
 def theme_board(kis, safe, kospi_bars):
     """테마별 대표 종목의 전일 대비 등락률 → 테마 평균 (단순 평균)"""
     T = json.loads((Path(__file__).resolve().parent / "market_themes.json").read_text(encoding="utf-8"))
@@ -342,6 +381,12 @@ def collect(positions, kis_keys=None, log=print, prev=None):
         t0 = time.time()
         out["themes"] = safe("테마 등락판", lambda: theme_board(kis, safe, idx.get("KOSPI")))
         log(f"  · 테마 등락판 {time.time() - t0:.0f}초")
+
+    # ---------- 외국인·기관 순매수 상위 ----------
+    if kis:
+        t0 = time.time()
+        out["investor_rank"] = safe("수급 순위", lambda: investor_ranks(kis, safe, log))
+        log(f"  · 수급 순위 {time.time() - t0:.0f}초")
 
     # ---------- 페어 분석용 종목 묶음: 보유 종목 + 코스피·코스닥 시총 상위 ----------
     t0 = time.time()

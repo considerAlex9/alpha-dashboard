@@ -455,6 +455,13 @@ tr.click{cursor:pointer}
 @media (max-width:860px){ .tamodal{padding:0} .tamodal .box{max-height:100vh;height:100%;border-radius:0;padding:14px} .mcols{grid-template-columns:1fr} .mhead{flex-direction:column} }
 @media (max-width:640px){ .sigboard{grid-template-columns:1fr 1fr} .tacards{grid-template-columns:1fr} }
 
+/* 외국인·기관 순매수 상위 */
+.invtbl{max-height:560px;overflow:auto}
+.invtbl thead th{position:sticky;top:0;background:var(--surface);z-index:1}
+.invtbl td,.invtbl th{padding:6px 5px;font-size:12px}
+.invtbl td:first-child{max-width:150px;overflow:hidden;text-overflow:ellipsis}
+.invtbl .mk{font-size:10.5px;color:var(--muted);margin-left:5px}
+
 /* 설치 버튼 */
 .installbtn{display:none;cursor:pointer}
 .installbtn.on{display:inline-flex}
@@ -688,6 +695,18 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
       <div class="card">
         <div class="card-h"><div><h3>외국인 순매수 흐름</h3><div class="sub">코스피 · 최근 영업일 · 단위 억원</div></div></div>
         <div class="chart" id="flowchart"></div>
+      </div>
+    </section>
+    <section class="grid c2 mt">
+      <div class="card" style="min-width:0">
+        <div class="card-h"><div><h3>외국인 순매수 상위</h3><div class="sub" id="invsub_foreign"></div></div>
+          <div class="seg" id="invmk_foreign"><button data-m="all" aria-pressed="true">전체</button><button data-m="KOSPI" aria-pressed="false">코스피</button><button data-m="KOSDAQ" aria-pressed="false">코스닥</button></div></div>
+        <div class="tbl-wrap invtbl"><table id="invtbl_foreign"></table></div>
+      </div>
+      <div class="card" style="min-width:0">
+        <div class="card-h"><div><h3>기관 순매수 상위</h3><div class="sub" id="invsub_organ"></div></div>
+          <div class="seg" id="invmk_organ"><button data-m="all" aria-pressed="true">전체</button><button data-m="KOSPI" aria-pressed="false">코스피</button><button data-m="KOSDAQ" aria-pressed="false">코스닥</button></div></div>
+        <div class="tbl-wrap invtbl"><table id="invtbl_organ"></table></div>
       </div>
     </section>
     <section class="card mt">
@@ -1374,6 +1393,30 @@ function drawLive(){
   const vs=[{name:'코스피',color:'var(--idx)',w:2.2,pts:at(K.series,2)}];
   if(Q.series.length) vs.push({name:'코스닥',color:'var(--s1)',w:1.6,pts:at(Q.series,2)});
   lineChart(document.getElementById('valchart'),{series:vs,height:230,endLabel:false,xFmt:x=>x,yFmt:v=>v==null?'—':(v/1e12).toFixed(1)+'조',tipFmt:v=>v==null?'—':won(v)+'원'});
+}
+
+// 외국인·기관 순매수 상위 (장중 가집계)
+const INV=M?.investor_rank||null, invState={foreign:{i:3,desc:true,mk:'all'},organ:{i:3,desc:true,mk:'all'}};
+const invPct=v=>v==null?'—':`<span class="${dir(v)}">${(v*100).toFixed(3)}%</span>`;
+const invCols=[
+  {h:'종목',l:1,v:r=>r.name,f:r=>`${esc(r.name)}<span class="mk">${r.market==='KOSPI'?'코스피':'코스닥'}</span>${posBySym[r.code]?` <span class="tag" style="background:color-mix(in srgb,var(--${posBySym[r.code].side}) 15%,transparent);color:var(--${posBySym[r.code].side})">내 ${posBySym[r.code].side==='long'?'롱':'숏'}</span>`:''}`},
+  {h:'순매수(억)',v:r=>r.net,f:r=>`<span class="up">${num(r.net/1e8,1)}</span>`},
+  {h:'현재가',v:r=>r.chg1,f:r=>`${num(r.price)}<br><small class="${dir(r.chg1)}">${pct(r.chg1,1)}</small>`},
+  {h:'시총 대비',v:r=>r.net_pct,f:r=>invPct(r.net_pct)},
+  {h:'5일 누적',v:r=>r.cum5_pct,f:r=>invPct(r.cum5_pct)},
+  {h:'20일 누적',v:r=>r.cum20_pct,f:r=>invPct(r.cum20_pct)},
+  {h:'시총(억)',v:r=>r.mcap,f:r=>r.mcap?num(r.mcap/1e8):'—'},
+];
+const invDraw={};
+function renderInv(){
+  ['foreign','organ'].forEach(k=>{
+    const el=document.getElementById('invtbl_'+k), sub=document.getElementById('invsub_'+k);
+    if(!INV||!INV[k]?.length){ el.innerHTML='<tbody><tr><td class="l"><div class="empty">다음 자동 업데이트 후 표시됩니다.</div></td></tr></tbody>'; return; }
+    invDraw[k]=sortTable(el,invCols,()=>INV[k].filter(r=>invState[k].mk==='all'||r.market===invState[k].mk),invState[k],
+      list=>sub.textContent=`${KST(INV.captured_at)} 기준 · 장중 가집계 · ${list.length}종목 · 시총 대비 = 순매수 ÷ 시가총액`);
+    invDraw[k]();
+    seg('invmk_'+k,d=>{ invState[k].mk=d.m; invDraw[k](); });
+  });
 }
 
 // 테마별 오늘 등락판
@@ -2219,7 +2262,7 @@ if(nHeldWarn){ const b=document.getElementById('alertbadge'); b.hidden=false; b.
 const nNewDisc=DISC.filter(d=>d.important&&d.date>=daysAgo(3)).length;
 if(nNewDisc){ const b=document.getElementById('discbadge'); b.hidden=false; b.textContent=nNewDisc; b.title=`최근 3일 중요 공시 ${nNewDisc}건`; }
 const drawn={};
-const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();drawRank();}, market:()=>{renderMarket();renderNews();drawLive();drawIdx();renderHeat();}, global:renderGlobal,
+const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();drawRank();}, market:()=>{renderMarket();renderNews();drawLive();drawIdx();renderHeat();renderInv();}, global:renderGlobal,
   wrap:renderWrap, ta:renderTA, holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContestGate};
 const REDRAW={portfolio:()=>{drawNav();drawRank();}, wrap:drawWrapCharts, ta:taRedraw, market:()=>{renderMarket();drawLive();drawIdx();}, global:renderGlobal, pair:drawPair, contest:renderContest};
 let cur=null;
