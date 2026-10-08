@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-08T09:51:34.706563+09:00",
+ "captured_at": "2026-10-08T09:57:56.136316+09:00",
  "days": 60,
  "items": [
   {
@@ -37,18 +37,6 @@
    "date": "2026-10-07",
    "filer": "한화오션",
    "rcept_no": "20261007800450"
-  },
-  {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "풍문또는보도에대한해명(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-07",
-   "filer": "엘앤에프",
-   "rcept_no": "20261007800399"
   },
   {
    "code": "207940",
@@ -109,18 +97,6 @@
    "date": "2026-10-06",
    "filer": "산일전기",
    "rcept_no": "20261006800320"
-  },
-  {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "정성엽",
-   "rcept_no": "20261006000268"
   },
   {
    "code": "000660",
@@ -363,18 +339,6 @@
    "rcept_no": "20261002000337"
   },
   {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "국민연금공단",
-   "rcept_no": "20261002000292"
-  },
-  {
    "code": "222800",
    "name": "심텍",
    "side": "long",
@@ -457,18 +421,6 @@
    "date": "2026-10-02",
    "filer": "국민연금공단",
    "rcept_no": "20261002000192"
-  },
-  {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "새로닉스",
-   "rcept_no": "20261002000082"
   },
   {
    "code": "039490",
@@ -1347,18 +1299,6 @@
    "rcept_no": "20260918000048"
   },
   {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "엘앤에프",
-   "rcept_no": "20260917800658"
-  },
-  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -1597,18 +1537,6 @@
    "date": "2026-09-15",
    "filer": "키움증권",
    "rcept_no": "20260915000140"
-  },
-  {
-   "code": "439960",
-   "name": "코스모로보틱스",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-14",
-   "filer": "엔비에이치캐피탈",
-   "rcept_no": "20260914000391"
   },
   {
    "code": "039490",
@@ -2115,18 +2043,6 @@
    "rcept_no": "20260908900429"
   },
   {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "풍문또는보도에대한해명(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-08",
-   "filer": "엘앤에프",
-   "rcept_no": "20260908800619"
-  },
-  {
    "code": "267260",
    "name": "HD현대일렉트릭",
    "side": "short",
@@ -2209,18 +2125,6 @@
    "date": "2026-09-07",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260907800372"
-  },
-  {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "엘앤에프",
-   "rcept_no": "20260907800340"
   },
   {
    "code": "039490",
@@ -3159,18 +3063,6 @@
    "rcept_no": "20260826000660"
   },
   {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-26",
-   "filer": "새로닉스",
-   "rcept_no": "20260826000546"
-  },
-  {
    "code": "030200",
    "name": "KT",
    "side": "short",
@@ -4011,18 +3903,6 @@
    "rcept_no": "20260814002553"
   },
   {
-   "code": "439960",
-   "name": "코스모로보틱스",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "코스모로보틱스",
-   "rcept_no": "20260814002518"
-  },
-  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -4119,30 +3999,6 @@
    "rcept_no": "20260814001113"
   },
   {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-14",
-   "filer": "엘앤에프",
-   "rcept_no": "20260814000995"
-  },
-  {
-   "code": "066970",
-   "name": "엘앤에프",
-   "side": "short",
-   "title": "[기재정정]사업보고서 (2025.12)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-14",
-   "filer": "엘앤에프",
-   "rcept_no": "20260814000818"
-  },
-  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -4189,18 +4045,6 @@
    "date": "2026-08-13",
    "filer": "산일전기",
    "rcept_no": "20260813800079"
-  },
-  {
-   "code": "439960",
-   "name": "코스모로보틱스",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-13",
-   "filer": "엔비에이치캐피탈",
-   "rcept_no": "20260813001778"
   },
   {
    "code": "476830",
