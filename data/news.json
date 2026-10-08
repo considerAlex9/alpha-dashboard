@@ -1,6 +1,131 @@
 {
  "editions": [
   {
+   "id": "2026-10-09-pre",
+   "name": "장전 브리핑",
+   "start": "2026-10-08T19:00:00+09:00",
+   "end": "2026-10-09T08:00:00+09:00",
+   "final": false,
+   "created_at": "2026-10-09T08:12:03.331631+09:00",
+   "post_count": 8,
+   "metrics": [],
+   "cards": [
+    {
+     "title": "한국증시 관련 수치: 금요일 미 증시 중요, 금리 안정, OpenAI 우려 완화 여부가 월요일 시장에 영향",
+     "bullets": [
+      "FICC: 국제유가, 허리케인, 이란, 재고 등에 급등 후 트럼프 발언에 상승 축소"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11175",
+     "link_label": "텔레그램 원문",
+     "topic": "유가·원자재",
+     "sources": [],
+     "time": "2026-10-09T05:38:56+09:00",
+     "rank": 1
+    },
+    {
+     "title": "미 증시, OpenAI 매출 논란에 AI 관련주 하락, 금리안정에 여타 업종은 견조",
+     "bullets": [
+      "변화요인: 국제유가, 국채 금리, OpenAI"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11172",
+     "link_label": "텔레그램 원문",
+     "topic": "유가·원자재",
+     "sources": [
+      "CNBC",
+      "악시오스"
+     ],
+     "time": "2026-10-09T05:38:14+09:00",
+     "rank": 1
+    },
+    {
+     "title": "TickerTrends",
+     "bullets": [
+      "9월 29일, OpenAI의 연간 수익이 700억 달러에 근접하고 있다는 보도가 나왔습니다.",
+      "당시 우리의 추적 결과는 504.4억 달러로, 그 수치보다 훨씬 낮았습니다.",
+      "오늘, 파이낸셜 타임스는 OpenAI가 투자자들에게 9월에 500억 달러에 근접하고 있다고 밝혔다는 소식을 전했습니다."
+     ],
+     "numbers": [],
+     "link": "https://x.com/tickerplus/status/2108247488780001724",
+     "link_label": "x.com",
+     "topic": null,
+     "sources": [],
+     "time": "2026-10-09T07:22:06+09:00",
+     "rank": 2
+    },
+    {
+     "title": "특징 종목: 엔비디아, 오라클, 마이크론, 아마존, MS, 일라이릴리 하락 Vs. 팔란티어, 애플",
+     "bullets": [
+      "메모리, 스토리지 반도체: 국제유가 등에 하락 후 OpenAI 이슈로 하락 변동성 확대",
+      "AI 반도체: OpenAI 이슈를 빌미로 불확실성 부각되며 대부분 하락",
+      "반도체 장비, 광통신: OpenAI 이슈로 하락",
+      "AI 산업, 데이터센터: 투자자금 회수 불안에 부진",
+      "자동차: 테슬라 하락 Vs. GM, 포드 상승"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11173",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [
+      "골드만삭스",
+      "공개한 추정"
+     ],
+     "time": "2026-10-09T05:38:37+09:00",
+     "rank": 2
+    },
+    {
+     "title": "구글, 범용 업무 AI 에이전트 ‘Gemini Agent’ 공개",
+     "bullets": [
+      ": Gemini at Work 2026에서 기업의 지식 업무, 콘텐츠 제작, 데이터 분석, 코딩을 하나의 인터페이스에서 수행하는 범용 AI 에이전트 ‘Gemini Agen…",
+      ": 사용자가 목표를 제시하면 에이전트가 업무를 계획하고 도구를 활용해 최종 결과물까지 완성",
+      "웹, 모바일, Windows·Mac, CLI, Google Workspace, Microsoft 365, Slack 등에서 동일한 에이전트 사용 가능.",
+      "세션, 의미, 절차, 일화 등 4가지 메모리 체계를 통해 사용자와 조직의 업무 맥락 축적.",
+      "복잡한 작업을 여러 하위 에이전트에 분배해 병렬·순차 실행."
+     ],
+     "numbers": [],
+     "link": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+     "link_label": "cloud.google.com",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-10-08T22:29:21+09:00",
+     "rank": 2
+    },
+    {
+     "title": "OpenAI 매출이 예상보다 낮다는 보도에 기술주 하락",
+     "bullets": [
+      "1. OpenAI 연환산 매출, 기존 보도보다 200억 달러 낮아",
+      "2. 매출 차이의 원인은 회계 기준 차이"
+     ],
+     "numbers": [],
+     "link": "https://ktvz.com/money/cnn-business-consumer/2026/10/08/tech-stocks-drop-after-report-that-openais-revenue-is-lower-than-expected/",
+     "link_label": "ktvz.com",
+     "topic": null,
+     "sources": [
+      "CNN",
+      "FT"
+     ],
+     "time": "2026-10-09T07:20:28+09:00",
+     "rank": 3
+    },
+    {
+     "title": "소비: 개별 호재와 경기 방어 섹터 매수세로 상승",
+     "bullets": [
+      "비트코인: 자금 유출에 하락 후 금리, 유가 변화에 낙폭 축소"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11174",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [],
+     "time": "2026-10-09T05:38:37+09:00",
+     "rank": 3
+    }
+   ],
+   "refs": [],
+   "errors": []
+  },
+  {
    "id": "2026-10-08-post",
    "name": "장마감 브리핑",
    "start": "2026-10-08T09:00:00+09:00",
@@ -2149,309 +2274,7 @@
    ],
    "refs": [],
    "errors": []
-  },
-  {
-   "id": "2026-10-02-pre",
-   "name": "장전 브리핑",
-   "start": "2026-10-01T19:00:00+09:00",
-   "end": "2026-10-02T09:00:00+09:00",
-   "final": true,
-   "created_at": "2026-10-08T09:42:54.424202+09:00",
-   "post_count": 22,
-   "metrics": [
-    {
-     "label": "다우",
-     "value": "50,926.56pt",
-     "chg": "+0.04%"
-    },
-    {
-     "label": "S&P500",
-     "value": "7,666.45pt",
-     "chg": "+0.19%"
-    },
-    {
-     "label": "나스닥",
-     "value": "26,871.60pt",
-     "chg": "+0.04%"
-    },
-    {
-     "label": "미 10년물",
-     "value": "5.36%",
-     "chg": ""
-    },
-    {
-     "label": "미 30년물",
-     "value": "5.61%",
-     "chg": ""
-    },
-    {
-     "label": "WTI",
-     "value": "93.0달러",
-     "chg": ""
-    },
-    {
-     "label": "필라델피아 반도체",
-     "value": "",
-     "chg": "1%"
-    },
-    {
-     "label": "미 국채 2년물",
-     "value": "4.791%",
-     "chg": "-9.6bp"
-    },
-    {
-     "label": "미 국채 10년물",
-     "value": "5.241%",
-     "chg": "-4.4bp"
-    },
-    {
-     "label": "원/달러",
-     "value": "1,358.1원",
-     "chg": "+0.5원"
-    }
-   ],
-   "cards": [
-    {
-     "title": "환율 아침 시황",
-     "bullets": [
-      "원/달러 환율은 대외 이슈들을 반영하며 소폭 상승 마감."
-     ],
-     "numbers": [
-      {
-       "label": "원/달러",
-       "value": "1,358.1원",
-       "chg": "+0.5원"
-      },
-      {
-       "label": "달러인덱스",
-       "value": "102.01pt",
-       "chg": "+0.65pt"
-      }
-     ],
-     "link": "https://t.me/hanwhastrategy/29141",
-     "link_label": "텔레그램 원문",
-     "topic": "환율",
-     "sources": [],
-     "time": "2026-10-02T08:08:37+09:00",
-     "rank": 0
-    },
-    {
-     "title": "주식 아침 시황",
-     "bullets": [
-      "뉴욕 증시는 국채 금리 등락에 연동되며 강보합 마감."
-     ],
-     "numbers": [
-      {
-       "label": "다우",
-       "value": "50,926.56pt",
-       "chg": "+0.04%"
-      },
-      {
-       "label": "S&P500",
-       "value": "7,666.45pt",
-       "chg": "+0.19%"
-      },
-      {
-       "label": "나스닥",
-       "value": "26,871.60pt",
-       "chg": "+0.04%"
-      }
-     ],
-     "link": "https://t.me/hanwhastrategy/29140",
-     "link_label": "텔레그램 원문",
-     "topic": "미국 증시",
-     "sources": [],
-     "time": "2026-10-02T08:08:20+09:00",
-     "rank": 0
-    },
-    {
-     "title": "채권 아침 시황",
-     "bullets": [
-      "미 국채 시장은 대외 이슈와 연준 인사의 발언을 살피며 강세 마감."
-     ],
-     "numbers": [
-      {
-       "label": "미 국채 2년물",
-       "value": "4.791%",
-       "chg": "-9.6bp"
-      },
-      {
-       "label": "미 국채 10년물",
-       "value": "5.241%",
-       "chg": "-4.4bp"
-      }
-     ],
-     "link": "https://t.me/hanwhastrategy/29139",
-     "link_label": "텔레그램 원문",
-     "topic": "금리·연준",
-     "sources": [],
-     "time": "2026-10-02T08:08:07+09:00",
-     "rank": 0
-    },
-    {
-     "title": "장 시작 전 생각: 금리 싸움",
-     "bullets": [
-      "마이크론 +3.0%, 엑센추어 +15.8%, 엔비디아 +1.1%",
-      "2) 9월 ISM 제조업 PMI상 공급 부족 품목에 DRAM이 올해 처음으로 포함됐다는 점은 반도체 등 국내 증시의 실적 가시성 둔화 우려를 완화시켜주고 있습니다."
-     ],
-     "numbers": [
-      {
-       "label": "다우",
-       "value": "",
-       "chg": "+0.04%"
-      },
-      {
-       "label": "S&P500",
-       "value": "",
-       "chg": "+0.19%"
-      },
-      {
-       "label": "나스닥",
-       "value": "",
-       "chg": "+0.04%"
-      },
-      {
-       "label": "미 10년물",
-       "value": "5.36%",
-       "chg": ""
-      }
-     ],
-     "link": "https://www.kiwoom.com/h/invest/research/VMarketSDDetailView?sqno=7214%E3%85%81",
-     "link_label": "kiwoom.com",
-     "topic": "반도체·AI",
-     "sources": [],
-     "time": "2026-10-02T07:41:43+09:00",
-     "rank": 0
-    },
-    {
-     "title": "한국증시 관련 수치: 금리 하락 안정 Vs. 유가 불안",
-     "bullets": [
-      "FICC: 금리 하락 전환, 달러 강세, 멕시코 페소 급락"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11155",
-     "link_label": "텔레그램 원문",
-     "topic": "금리·연준",
-     "sources": [
-      "맥쿼리"
-     ],
-     "time": "2026-10-02T05:27:06+09:00",
-     "rank": 1
-    },
-    {
-     "title": "미 증시, 장 후반 제퍼슨 부의장의 발언에 금리 하락 확대되자 상승 전환 성공",
-     "bullets": [
-      "변화요인: ISM 제조업지수, 건설지출, 국제유가, 국채 금리 변화"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11153",
-     "link_label": "텔레그램 원문",
-     "topic": "경제지표",
-     "sources": [],
-     "time": "2026-10-02T05:25:59+09:00",
-     "rank": 1
-    },
-    {
-     "title": "Global memory tech : J커브 이후 사이클, 마이크론 vs 삼성·하이닉스",
-     "bullets": [
-      "1. J커브 이후 사이클: 성장률 둔화는 있어도 하드랜딩은 없다",
-      "BofA는 4Q26부터 메모리 사이클이 가파른 QoQ 성장 국면(J커브)을 지나 완만한 단계로 넘어간다고 판단",
-      "마이크론의 8월 분기 매출은 QoQ +31%로, 5월 분기 +74%에서 둔화됐고 11월 분기 가이던스는 +13.5%",
-      "둔화는 약세론의 근거가 될 수 있으나, 펀더멘털 상방은 여전히 높다고 봄",
-      "1) 높은 마진 : 마이크론이 11월 분기 매출총이익률 가이던스를 86%로 제시함"
-     ],
-     "numbers": [],
-     "link": "https://t.me/Jstockclass/15166",
-     "link_label": "텔레그램 원문",
-     "topic": "반도체·AI",
-     "sources": [
-      "BofA"
-     ],
-     "time": "2026-10-02T07:19:41+09:00",
-     "rank": 2
-    },
-    {
-     "title": "Retail Radar : 9월 약한 투자심리 지속",
-     "bullets": [
-      "1. 개인투자자 매매 동향",
-      "이번주 개인 자금 유입은 12%ile 수준으로 부진이 이어졌으며, 9월은 2024년 12월 이후 가장 약한 월간 개인 매매 활동을 기록",
-      "일간 유입액은 주가 흐름과 무관하게 15~30%ile 범위에 머물러 시장 이슈에 둔감한 모습",
-      "ETF 유입은 3%ile로 신저점을 탐색 중이고, 개별주 유입도 35%ile로 하락",
-      "9월 월간 ETF 유입은 2025년 모멘텀 언와인드 당시 수준에 근접했고, 이는 이후 '리버레이션 데이 저가매수' 국면의 직전 구간과 유사"
-     ],
-     "numbers": [],
-     "link": "https://t.me/Jstockclass/15163",
-     "link_label": "텔레그램 원문",
-     "topic": "반도체·AI",
-     "sources": [],
-     "time": "2026-10-02T07:13:50+09:00",
-     "rank": 2
-    },
-    {
-     "title": "특징 종목: 반도체, 반도체 장비, 광통신 등 상승 Vs. 애플",
-     "bullets": [
-      "메모리, 스토리지 반도체: 마이크론 발표 및 금리 하락에 상승",
-      "AI 반도체, 광통신, 장비: 마이크론 실적 등에 강세",
-      "자동차: 테슬라, 유럽 자동차 판매 증가 소식에 강세",
-      "대형 기술주: 알파벳, 제미나이 4 발표에도 하락",
-      "소프트웨어: 금리 하락과 엑센츄어 실적 기대 강세"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11154",
-     "link_label": "텔레그램 원문",
-     "topic": "반도체·AI",
-     "sources": [
-      "골드만삭스",
-      "모건스탠리",
-      "씨티"
-     ],
-     "time": "2026-10-02T05:26:34+09:00",
-     "rank": 2
-    },
-    {
-     "title": "우리는 테슬라 AI5 칩의 RAM을 절반으로 줄였습니다 (이제 72GB의 LP5) 그리고 AI6의 경우 1/3으로 줄였습니다 (이제 144GB의…",
-     "bullets": [
-      "이것이 옵티머스 생산을 위한 충분한 물량을 확보하는 유일한 방법이었으며, 비용을 크게 줄일 수 있습니다.",
-      "결과적으로, 우리는 이것이 옵티머스 성능에 미미한 영향만 미칠 것이라고 생각합니다."
-     ],
-     "numbers": [],
-     "link": "https://x.com/elonmusk/status/2105747471045370250",
-     "link_label": "x.com",
-     "topic": "반도체·AI",
-     "sources": [],
-     "time": "2026-10-02T08:00:46+09:00",
-     "rank": 3
-    },
-    {
-     "title": "물론 당시 주도주는 반도체",
-     "bullets": [
-      "매크로로 보면, 3월말에 120불 근처까지 갔던 유가가 더 상승하지 않고 100불 근처에서 왔다갔다 하다가 결국 7월에 70불까지 하락했고.."
-     ],
-     "numbers": [],
-     "link": "https://t.me/Jstockclass/15165",
-     "link_label": "텔레그램 원문",
-     "topic": null,
-     "sources": [],
-     "time": "2026-10-02T07:13:51+09:00",
-     "rank": 3
-    },
-    {
-     "title": "James E. Thorne(웰링턴 수석전략가)",
-     "bullets": [
-      "SI 테마는 아직도 아주 초기 단계에 불과합니다."
-     ],
-     "numbers": [],
-     "link": "https://x.com/DrJStrategy/status/2105427265785860499",
-     "link_label": "x.com",
-     "topic": null,
-     "sources": [],
-     "time": "2026-10-02T06:39:31+09:00",
-     "rank": 3
-    }
-   ],
-   "refs": [],
-   "errors": []
   }
  ],
- "checked_at": "2026-10-08T19:19:32.139639+09:00"
+ "checked_at": "2026-10-09T08:12:03.331631+09:00"
 }
