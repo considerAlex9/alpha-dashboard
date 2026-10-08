@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-08T13:25:11.756061+09:00",
+ "captured_at": "2026-10-08T13:31:53.241417+09:00",
  "days": 60,
  "items": [
   {
@@ -51,6 +51,18 @@
    "rcept_no": "20261008000058"
   },
   {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "투자판단관련주요경영사항 (에페오토인젝터주(에페글레나타이드) 식품의약품안전처 품목허가 승인)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "한미약품",
+   "rcept_no": "20261007800667"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -99,6 +111,18 @@
    "rcept_no": "20261007800306"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "한화솔루션",
+   "rcept_no": "20261007800159"
+  },
+  {
    "code": "222800",
    "name": "심텍",
    "side": "long",
@@ -109,6 +133,18 @@
    "date": "2026-10-07",
    "filer": "삼성자산운용",
    "rcept_no": "20261007000299"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "황일중",
+   "rcept_no": "20261007000044"
   },
   {
    "code": "207940",
@@ -133,6 +169,18 @@
    "date": "2026-10-06",
    "filer": "산일전기",
    "rcept_no": "20261006800320"
+  },
+  {
+   "code": "122640",
+   "name": "예스티",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "조이현",
+   "rcept_no": "20261006000409"
   },
   {
    "code": "039490",
@@ -195,6 +243,18 @@
    "rcept_no": "20261006000240"
   },
   {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "국민연금공단",
+   "rcept_no": "20261006000230"
+  },
+  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -253,6 +313,42 @@
    "date": "2026-10-02",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261002800830"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "대표이사(대표집행임원)변경(안내공시)",
+   "category": "최대주주·경영권",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "대우건설",
+   "rcept_no": "20261002800694"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "임시주주총회결과",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "대우건설",
+   "rcept_no": "20261002800643"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000501"
   },
   {
    "code": "035420",
@@ -349,6 +445,18 @@
    "date": "2026-10-02",
    "filer": "HD현대",
    "rcept_no": "20261002000385"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000346"
   },
   {
    "code": "093370",
@@ -469,6 +577,18 @@
    "date": "2026-10-02",
    "filer": "키움증권",
    "rcept_no": "20261002000035"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "[기재정정]유상증자결정(종속회사의주요경영사항)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-01",
+   "filer": "삼성물산",
+   "rcept_no": "20261001800695"
   },
   {
    "code": "267260",
@@ -663,6 +783,18 @@
    "rcept_no": "20261001000085"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "유상증자결정(종속회사의주요경영사항)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "한화솔루션",
+   "rcept_no": "20260930801200"
+  },
+  {
    "code": "267260",
    "name": "HD현대일렉트릭",
    "side": "short",
@@ -819,6 +951,18 @@
    "rcept_no": "20260930000030"
   },
   {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "투자판단관련주요경영사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-29",
+   "filer": "한미약품",
+   "rcept_no": "20260929800978"
+  },
+  {
    "code": "079550",
    "name": "LIG디펜스앤에어로스페이스",
    "side": "long",
@@ -855,6 +999,18 @@
    "rcept_no": "20260929800154"
   },
   {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-29",
+   "filer": "한미사이언스",
+   "rcept_no": "20260929000668"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -865,6 +1021,42 @@
    "date": "2026-09-29",
    "filer": "한화오션",
    "rcept_no": "20260929000302"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-29",
+   "filer": "국민연금공단",
+   "rcept_no": "20260929000085"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "삼성물산",
+   "rcept_no": "20260928800892"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "투자판단관련주요경영사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "대우건설",
+   "rcept_no": "20260928800723"
   },
   {
    "code": "042660",
@@ -1035,6 +1227,18 @@
    "rcept_no": "20260921800302"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-21",
+   "filer": "대우건설",
+   "rcept_no": "20260921800259"
+  },
+  {
    "code": "192650",
    "name": "드림텍",
    "side": "long",
@@ -1045,6 +1249,18 @@
    "date": "2026-09-21",
    "filer": "드림텍",
    "rcept_no": "20260921800130"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "투자판단관련주요경영사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-21",
+   "filer": "삼성물산",
+   "rcept_no": "20260921800004"
   },
   {
    "code": "006400",
@@ -1107,6 +1323,18 @@
    "rcept_no": "20260918800776"
   },
   {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-18",
+   "filer": "삼성물산",
+   "rcept_no": "20260918800764"
+  },
+  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -1131,6 +1359,18 @@
    "rcept_no": "20260918800689"
   },
   {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-18",
+   "filer": "삼성물산",
+   "rcept_no": "20260918800688"
+  },
+  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -1153,6 +1393,18 @@
    "date": "2026-09-18",
    "filer": "한화시스템",
    "rcept_no": "20260918800456"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-18",
+   "filer": "대우건설",
+   "rcept_no": "20260918800075"
   },
   {
    "code": "272210",
@@ -1335,6 +1587,18 @@
    "rcept_no": "20260917800184"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-17",
+   "filer": "대우건설",
+   "rcept_no": "20260917800057"
+  },
+  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -1417,6 +1681,18 @@
    "date": "2026-09-17",
    "filer": "키움증권",
    "rcept_no": "20260917000049"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "[기재정정]타법인주식및출자증권처분결정(자율공시)",
+   "category": "합병·분할",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-16",
+   "filer": "한화솔루션",
+   "rcept_no": "20260916800377"
   },
   {
    "code": "039490",
@@ -1525,6 +1801,18 @@
    "date": "2026-09-15",
    "filer": "키움증권",
    "rcept_no": "20260915000140"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-14",
+   "filer": "대우건설",
+   "rcept_no": "20260914800540"
   },
   {
    "code": "039490",
@@ -1755,6 +2043,30 @@
    "rcept_no": "20260911000048"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-11",
+   "filer": "한화솔루션",
+   "rcept_no": "20260911000014"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "주주총회소집결의",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "대우건설",
+   "rcept_no": "20260910800555"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -1765,6 +2077,18 @@
    "date": "2026-09-10",
    "filer": "한화오션",
    "rcept_no": "20260910800549"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "주식소각결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "대우건설",
+   "rcept_no": "20260910800468"
   },
   {
    "code": "207940",
@@ -1791,6 +2115,18 @@
    "rcept_no": "20260910800388"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "한화솔루션",
+   "rcept_no": "20260910800347"
+  },
+  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -1801,6 +2137,30 @@
    "date": "2026-09-10",
    "filer": "한화시스템",
    "rcept_no": "20260910800303"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "의결권대리행사권유참고서류",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "대우건설",
+   "rcept_no": "20260910000571"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "주주총회소집공고",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "대우건설",
+   "rcept_no": "20260910000563"
   },
   {
    "code": "086790",
@@ -1875,6 +2235,42 @@
    "rcept_no": "20260910000141"
   },
   {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-09",
+   "filer": "삼성물산",
+   "rcept_no": "20260909800662"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "[기재정정]중대재해발생",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-09-09",
+   "filer": "한화솔루션",
+   "rcept_no": "20260909800610"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-09",
+   "filer": "대우건설",
+   "rcept_no": "20260909800253"
+  },
+  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -1885,6 +2281,18 @@
    "date": "2026-09-09",
    "filer": "삼성SDI",
    "rcept_no": "20260909800178"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-09",
+   "filer": "대우건설",
+   "rcept_no": "20260909800091"
   },
   {
    "code": "042660",
@@ -2031,6 +2439,30 @@
    "rcept_no": "20260908900429"
   },
   {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "한미약품",
+   "rcept_no": "20260908800596"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "한미약품",
+   "rcept_no": "20260908800550"
+  },
+  {
    "code": "267260",
    "name": "HD현대일렉트릭",
    "side": "short",
@@ -2041,6 +2473,42 @@
    "date": "2026-09-08",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20260908800531"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "대우건설",
+   "rcept_no": "20260908800452"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "타법인주식및출자증권처분결정(자율공시)",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "한화솔루션",
+   "rcept_no": "20260908800378"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "한화솔루션",
+   "rcept_no": "20260908800375"
   },
   {
    "code": "006400",
@@ -2065,6 +2533,18 @@
    "date": "2026-09-08",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20260908000386"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "한미사이언스",
+   "rcept_no": "20260908000370"
   },
   {
    "code": "347850",
@@ -2185,6 +2665,18 @@
    "date": "2026-09-04",
    "filer": "심텍",
    "rcept_no": "20260904900533"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-04",
+   "filer": "삼성물산",
+   "rcept_no": "20260904800636"
   },
   {
    "code": "006400",
@@ -2547,6 +3039,18 @@
    "rcept_no": "20260901800215"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "대우건설",
+   "rcept_no": "20260901800137"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -2667,6 +3171,42 @@
    "rcept_no": "20260901000189"
   },
   {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "삼성물산",
+   "rcept_no": "20260831800689"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-31",
+   "filer": "대우건설",
+   "rcept_no": "20260831800597"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-31",
+   "filer": "삼성물산",
+   "rcept_no": "20260831800587"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -2715,6 +3255,18 @@
    "rcept_no": "20260831800149"
   },
   {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "삼성물산",
+   "rcept_no": "20260831001181"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -2749,6 +3301,18 @@
    "date": "2026-08-31",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260831000598"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "한화솔루션",
+   "rcept_no": "20260831000572"
   },
   {
    "code": "006400",
@@ -2799,6 +3363,42 @@
    "rcept_no": "20260828800869"
   },
   {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "[기재정정]타법인주식및출자증권취득결정(종속회사의주요경영사항)",
+   "category": "합병·분할",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-28",
+   "filer": "삼성물산",
+   "rcept_no": "20260828800834"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "유상증자결정(종속회사의주요경영사항)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-28",
+   "filer": "삼성물산",
+   "rcept_no": "20260828800769"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-28",
+   "filer": "한미약품",
+   "rcept_no": "20260828800615"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -2809,6 +3409,18 @@
    "date": "2026-08-28",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260828800325"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-28",
+   "filer": "대우건설",
+   "rcept_no": "20260828800247"
   },
   {
    "code": "020150",
@@ -2857,6 +3469,18 @@
    "date": "2026-08-28",
    "filer": "김근수",
    "rcept_no": "20260828001637"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-28",
+   "filer": "서성덕",
+   "rcept_no": "20260828001432"
   },
   {
    "code": "079550",
@@ -2979,6 +3603,18 @@
    "rcept_no": "20260827800365"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-27",
+   "filer": "대우건설",
+   "rcept_no": "20260827000933"
+  },
+  {
    "code": "020150",
    "name": "롯데에너지머티리얼즈",
    "side": "long",
@@ -3013,6 +3649,30 @@
    "date": "2026-08-27",
    "filer": "SK텔레콤",
    "rcept_no": "20260827000390"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-26",
+   "filer": "대우건설",
+   "rcept_no": "20260826800506"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "[기재정정]투자판단관련주요경영사항 (급성골수성백혈병(AML) 치료 항암신약 HM43239 기술이전 계약 체결)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-26",
+   "filer": "한미약품",
+   "rcept_no": "20260826800466"
   },
   {
    "code": "086790",
@@ -3111,6 +3771,18 @@
    "rcept_no": "20260825900407"
   },
   {
+   "code": "122640",
+   "name": "예스티",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-25",
+   "filer": "예스티",
+   "rcept_no": "20260825900162"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -3171,6 +3843,30 @@
    "rcept_no": "20260825000158"
   },
   {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-24",
+   "filer": "삼성물산",
+   "rcept_no": "20260824800613"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "투자판단관련주요경영사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-24",
+   "filer": "한미약품",
+   "rcept_no": "20260824800144"
+  },
+  {
    "code": "347850",
    "name": "디앤디파마텍",
    "side": "long",
@@ -3181,6 +3877,54 @@
    "date": "2026-08-21",
    "filer": "디앤디파마텍",
    "rcept_no": "20260821900144"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "[기재정정]투자판단관련주요경영사항",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-21",
+   "filer": "한미약품",
+   "rcept_no": "20260821800930"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "[기재정정]투자판단관련주요경영사항",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-21",
+   "filer": "한미약품",
+   "rcept_no": "20260821800876"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-21",
+   "filer": "삼성물산",
+   "rcept_no": "20260821800764"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-21",
+   "filer": "한화솔루션",
+   "rcept_no": "20260821800542"
   },
   {
    "code": "020150",
@@ -3219,6 +3963,18 @@
    "rcept_no": "20260821800099"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-21",
+   "filer": "대우건설",
+   "rcept_no": "20260821800060"
+  },
+  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -3241,6 +3997,18 @@
    "date": "2026-08-21",
    "filer": "삼성SDI",
    "rcept_no": "20260821000464"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "특수관계인에대한출자",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-21",
+   "filer": "한화솔루션",
+   "rcept_no": "20260821000461"
   },
   {
    "code": "042660",
@@ -3277,6 +4045,30 @@
    "date": "2026-08-20",
    "filer": "산일전기",
    "rcept_no": "20260820800341"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-20",
+   "filer": "대우건설",
+   "rcept_no": "20260820800328"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "[기재정정]타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-20",
+   "filer": "대우건설",
+   "rcept_no": "20260820800319"
   },
   {
    "code": "079550",
@@ -3375,6 +4167,18 @@
    "rcept_no": "20260819900418"
   },
   {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-19",
+   "filer": "삼성물산",
+   "rcept_no": "20260819800608"
+  },
+  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -3385,6 +4189,18 @@
    "date": "2026-08-19",
    "filer": "하나금융지주",
    "rcept_no": "20260819800197"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-19",
+   "filer": "대우건설",
+   "rcept_no": "20260819800180"
   },
   {
    "code": "003230",
@@ -3421,6 +4237,30 @@
    "date": "2026-08-14",
    "filer": "테스",
    "rcept_no": "20260814901389"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "한미약품",
+   "rcept_no": "20260814004181"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "삼성물산",
+   "rcept_no": "20260814004109"
   },
   {
    "code": "192650",
@@ -3567,6 +4407,18 @@
    "rcept_no": "20260814003171"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "한화솔루션",
+   "rcept_no": "20260814003076"
+  },
+  {
    "code": "003230",
    "name": "삼양식품",
    "side": "short",
@@ -3589,6 +4441,18 @@
    "date": "2026-08-14",
    "filer": "펩트론",
    "rcept_no": "20260814002979"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "삼성물산",
+   "rcept_no": "20260814002969"
   },
   {
    "code": "035420",
@@ -3735,6 +4599,42 @@
    "rcept_no": "20260814002266"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "대우건설",
+   "rcept_no": "20260814002161"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "한화솔루션",
+   "rcept_no": "20260814001438"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "대우건설",
+   "rcept_no": "20260814001434"
+  },
+  {
    "code": "079550",
    "name": "LIG디펜스앤에어로스페이스",
    "side": "long",
@@ -3853,6 +4753,18 @@
    "date": "2026-08-14",
    "filer": "롯데에너지머티리얼즈",
    "rcept_no": "20260814000240"
+  },
+  {
+   "code": "122640",
+   "name": "예스티",
+   "side": "short",
+   "title": "[첨부추가]반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "예스티",
+   "rcept_no": "20260814000104"
   },
   {
    "code": "062040",
@@ -4011,6 +4923,18 @@
    "rcept_no": "20260813000024"
   },
   {
+   "code": "122640",
+   "name": "예스티",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-12",
+   "filer": "예스티",
+   "rcept_no": "20260812900964"
+  },
+  {
    "code": "003230",
    "name": "삼양식품",
    "side": "short",
@@ -4081,6 +5005,18 @@
    "date": "2026-08-12",
    "filer": "케이티",
    "rcept_no": "20260812800089"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-12",
+   "filer": "한미사이언스",
+   "rcept_no": "20260812000873"
   },
   {
    "code": "042660",
@@ -4191,6 +5127,18 @@
    "rcept_no": "20260811900654"
   },
   {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "한미약품",
+   "rcept_no": "20260811800961"
+  },
+  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -4201,6 +5149,18 @@
    "date": "2026-08-11",
    "filer": "하나금융지주",
    "rcept_no": "20260811800447"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "대우건설",
+   "rcept_no": "20260811800293"
   },
   {
    "code": "006400",
@@ -4227,6 +5187,282 @@
    "rcept_no": "20260811800212"
   },
   {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "황상연",
+   "rcept_no": "20260811000698"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "최창주",
+   "rcept_no": "20260811000697"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "최인영",
+   "rcept_no": "20260811000692"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "정민도",
+   "rcept_no": "20260811000689"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "전해민",
+   "rcept_no": "20260811000687"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "임호택",
+   "rcept_no": "20260811000685"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "이정훈",
+   "rcept_no": "20260811000683"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "이원택",
+   "rcept_no": "20260811000677"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "이승엽",
+   "rcept_no": "20260811000675"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "이상현",
+   "rcept_no": "20260811000668"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "이문희",
+   "rcept_no": "20260811000667"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "이동한",
+   "rcept_no": "20260811000660"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "신해곤",
+   "rcept_no": "20260811000656"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "손지원",
+   "rcept_no": "20260811000653"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "서상현",
+   "rcept_no": "20260811000647"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "배성민",
+   "rcept_no": "20260811000643"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "두명국",
+   "rcept_no": "20260811000635"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "김현정",
+   "rcept_no": "20260811000631"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "김세권",
+   "rcept_no": "20260811000625"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "김상종",
+   "rcept_no": "20260811000622"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "김대진",
+   "rcept_no": "20260811000617"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "김나영",
+   "rcept_no": "20260811000608"
+  },
+  {
+   "code": "128940",
+   "name": "한미약품",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-11",
+   "filer": "구인모",
+   "rcept_no": "20260811000607"
+  },
+  {
    "code": "010060",
    "name": "OCI홀딩스",
    "side": "long",
@@ -4249,6 +5485,30 @@
    "date": "2026-08-10",
    "filer": "크래프톤",
    "rcept_no": "20260810800768"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "long",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-10",
+   "filer": "대우건설",
+   "rcept_no": "20260810800589"
+  },
+  {
+   "code": "028260",
+   "name": "삼성물산",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-10",
+   "filer": "삼성물산",
+   "rcept_no": "20260810800544"
   },
   {
    "code": "272210",

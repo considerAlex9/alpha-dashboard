@@ -1,5 +1,35 @@
 [
  {
+  "id": 2008429,
+  "order_id": 27245,
+  "company_id": 1641,
+  "company_name": "Yest Co. Ltd.",
+  "company_symbol": "122640",
+  "side": "short",
+  "quantity": 49208,
+  "price": 32207.1632,
+  "commission": 1584850.086,
+  "fx_rate": 1.0,
+  "value_krw": 1584850086.0394,
+  "realized_pnl": null,
+  "created_at": "2026-10-08T04:26:38+00:00"
+ },
+ {
+  "id": 2008428,
+  "order_id": 27244,
+  "company_id": 1676,
+  "company_name": "Hanmi Pharm Co., Ltd.",
+  "company_symbol": "128940",
+  "side": "buy",
+  "quantity": 3698,
+  "price": 480427.1231,
+  "commission": 1776619.5011,
+  "fx_rate": 1.0,
+  "value_krw": 1776619501.1482,
+  "realized_pnl": null,
+  "created_at": "2026-10-08T04:26:08+00:00"
+ },
+ {
   "id": 2008259,
   "order_id": 27243,
   "company_id": 985,
