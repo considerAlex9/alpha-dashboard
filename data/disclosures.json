@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-08T13:31:53.241417+09:00",
+ "captured_at": "2026-10-08T13:44:08.110626+09:00",
  "days": 60,
  "items": [
   {
@@ -123,6 +123,18 @@
    "rcept_no": "20261007800159"
   },
   {
+   "code": "080220",
+   "name": "제주반도체",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "삼성자산운용",
+   "rcept_no": "20261007000312"
+  },
+  {
    "code": "222800",
    "name": "심텍",
    "side": "long",
@@ -133,6 +145,18 @@
    "date": "2026-10-07",
    "filer": "삼성자산운용",
    "rcept_no": "20261007000299"
+  },
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "삼성자산운용",
+   "rcept_no": "20261007000292"
   },
   {
    "code": "009830",
@@ -591,6 +615,30 @@
    "rcept_no": "20261001800695"
   },
   {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-01",
+   "filer": "현대로템",
+   "rcept_no": "20261001800654"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "결산실적공시예고(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-01",
+   "filer": "현대로템",
+   "rcept_no": "20261001800649"
+  },
+  {
    "code": "267260",
    "name": "HD현대일렉트릭",
    "side": "short",
@@ -819,6 +867,18 @@
    "rcept_no": "20260930800878"
   },
   {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "현대로템",
+   "rcept_no": "20260930800644"
+  },
+  {
    "code": "010060",
    "name": "OCI홀딩스",
    "side": "long",
@@ -841,6 +901,18 @@
    "date": "2026-09-30",
    "filer": "키움증권",
    "rcept_no": "20260930000655"
+  },
+  {
+   "code": "354320",
+   "name": "알멕",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "다이엑스",
+   "rcept_no": "20260930000558"
   },
   {
    "code": "039490",
@@ -1035,6 +1107,18 @@
    "rcept_no": "20260929000085"
   },
   {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "타법인주식및출자증권취득결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "ISC",
+   "rcept_no": "20260928900382"
+  },
+  {
    "code": "028260",
    "name": "삼성물산",
    "side": "short",
@@ -1107,6 +1191,18 @@
    "rcept_no": "20260928000243"
   },
   {
+   "code": "080220",
+   "name": "제주반도체",
+   "side": "long",
+   "title": "단기차입금증가결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-23",
+   "filer": "제주반도체",
+   "rcept_no": "20260923900683"
+  },
+  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -1117,6 +1213,18 @@
    "date": "2026-09-23",
    "filer": "크래프톤",
    "rcept_no": "20260923800549"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-23",
+   "filer": "현대로템",
+   "rcept_no": "20260923800386"
   },
   {
    "code": "272210",
@@ -1203,6 +1311,30 @@
    "rcept_no": "20260923000042"
   },
   {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-23",
+   "filer": "현대로템",
+   "rcept_no": "20260923000001"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "[기재정정]기업지배구조보고서공시",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-09-22",
+   "filer": "현대로템",
+   "rcept_no": "20260922800468"
+  },
+  {
    "code": "192650",
    "name": "드림텍",
    "side": "long",
@@ -1213,6 +1345,18 @@
    "date": "2026-09-22",
    "filer": "드림텍",
    "rcept_no": "20260922800090"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-21",
+   "filer": "현대로템",
+   "rcept_no": "20260921800391"
   },
   {
    "code": "042660",
@@ -1429,6 +1573,18 @@
    "date": "2026-09-18",
    "filer": "한화시스템",
    "rcept_no": "20260918000460"
+  },
+  {
+   "code": "354320",
+   "name": "알멕",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-18",
+   "filer": "다이엑스",
+   "rcept_no": "20260918000333"
   },
   {
    "code": "039490",
@@ -1681,6 +1837,18 @@
    "date": "2026-09-17",
    "filer": "키움증권",
    "rcept_no": "20260917000049"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-16",
+   "filer": "현대로템",
+   "rcept_no": "20260916800555"
   },
   {
    "code": "009830",
@@ -2437,6 +2605,18 @@
    "date": "2026-09-08",
    "filer": "HLB",
    "rcept_no": "20260908900429"
+  },
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "ISC",
+   "rcept_no": "20260908900075"
   },
   {
    "code": "128940",
@@ -3483,6 +3663,18 @@
    "rcept_no": "20260828001432"
   },
   {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "특수관계인으로부터기타유가증권매수",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-28",
+   "filer": "현대로템",
+   "rcept_no": "20260828001323"
+  },
+  {
    "code": "079550",
    "name": "LIG디펜스앤에어로스페이스",
    "side": "long",
@@ -3493,6 +3685,18 @@
    "date": "2026-08-28",
    "filer": "엘아이지",
    "rcept_no": "20260828001248"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-28",
+   "filer": "현대로템",
+   "rcept_no": "20260828001174"
   },
   {
    "code": "079550",
@@ -3637,6 +3841,18 @@
    "date": "2026-08-27",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20260827000882"
+  },
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-27",
+   "filer": "ISC",
+   "rcept_no": "20260827000586"
   },
   {
    "code": "017670",
@@ -4203,6 +4419,30 @@
    "rcept_no": "20260819800180"
   },
   {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-18",
+   "filer": "ISC",
+   "rcept_no": "20260818900084"
+  },
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-18",
+   "filer": "ISC",
+   "rcept_no": "20260818900082"
+  },
+  {
    "code": "003230",
    "name": "삼양식품",
    "side": "short",
@@ -4237,6 +4477,30 @@
    "date": "2026-08-14",
    "filer": "테스",
    "rcept_no": "20260814901389"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "투자판단관련주요경영사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "현대로템",
+   "rcept_no": "20260814801760"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "현대로템",
+   "rcept_no": "20260814801688"
   },
   {
    "code": "128940",
@@ -4431,6 +4695,18 @@
    "rcept_no": "20260814003053"
   },
   {
+   "code": "354320",
+   "name": "알멕",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "알멕",
+   "rcept_no": "20260814002981"
+  },
+  {
    "code": "087010",
    "name": "펩트론",
    "side": "short",
@@ -4441,6 +4717,18 @@
    "date": "2026-08-14",
    "filer": "펩트론",
    "rcept_no": "20260814002979"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "현대로템",
+   "rcept_no": "20260814002977"
   },
   {
    "code": "028260",
@@ -4719,6 +5007,18 @@
    "rcept_no": "20260814000919"
   },
   {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "현대로템",
+   "rcept_no": "20260814000747"
+  },
+  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -4753,6 +5053,30 @@
    "date": "2026-08-14",
    "filer": "롯데에너지머티리얼즈",
    "rcept_no": "20260814000240"
+  },
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "ISC",
+   "rcept_no": "20260814000128"
+  },
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "ISC",
+   "rcept_no": "20260814000114"
   },
   {
    "code": "122640",
@@ -4801,6 +5125,18 @@
    "date": "2026-08-13",
    "filer": "SK텔레콤",
    "rcept_no": "20260813001728"
+  },
+  {
+   "code": "080220",
+   "name": "제주반도체",
+   "side": "long",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-13",
+   "filer": "제주반도체",
+   "rcept_no": "20260813001713"
   },
   {
    "code": "222800",
