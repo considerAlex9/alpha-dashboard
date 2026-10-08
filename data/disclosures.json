@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-08T01:39:06.969533+09:00",
+ "captured_at": "2026-10-08T09:39:55.094111+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "CapitalResearchandManagementCompany",
+   "rcept_no": "20261008000058"
+  },
   {
    "code": "042660",
    "name": "한화오션",
@@ -2391,6 +2403,18 @@
    "rcept_no": "20260904000018"
   },
   {
+   "code": "087010",
+   "name": "펩트론",
+   "side": "short",
+   "title": "[기재정정]신규시설투자등",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-09-03",
+   "filer": "펩트론",
+   "rcept_no": "20260903900076"
+  },
+  {
    "code": "020150",
    "name": "롯데에너지머티리얼즈",
    "side": "long",
@@ -3183,6 +3207,18 @@
    "rcept_no": "20260826000163"
   },
   {
+   "code": "087010",
+   "name": "펩트론",
+   "side": "short",
+   "title": "투자판단관련주요경영사항(임상시험계획승인신청) (PT403의 제1상 임상시험계획 승인 신청)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-25",
+   "filer": "펩트론",
+   "rcept_no": "20260825900548"
+  },
+  {
    "code": "222800",
    "name": "심텍",
    "side": "long",
@@ -3865,6 +3901,18 @@
    "date": "2026-08-14",
    "filer": "삼양식품",
    "rcept_no": "20260814003053"
+  },
+  {
+   "code": "087010",
+   "name": "펩트론",
+   "side": "short",
+   "title": "반기보고서 (2026.06)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-14",
+   "filer": "펩트론",
+   "rcept_no": "20260814002979"
   },
   {
    "code": "035420",
