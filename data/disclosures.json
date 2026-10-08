@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-08T16:44:33.392000+09:00",
+ "captured_at": "2026-10-08T19:19:06.528306+09:00",
  "days": 60,
  "items": [
   {
@@ -73,6 +73,66 @@
    "date": "2026-10-08",
    "filer": "가온전선",
    "rcept_no": "20261008800258"
+  },
+  {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "임종선",
+   "rcept_no": "20261008000731"
+  },
+  {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "한승렬",
+   "rcept_no": "20261008000727"
+  },
+  {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "홍성우",
+   "rcept_no": "20261008000717"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "키움증권",
+   "rcept_no": "20261008000631"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "키움증권",
+   "rcept_no": "20261008000629"
   },
   {
    "code": "039490",
@@ -3073,30 +3133,6 @@
    "date": "2026-09-02",
    "filer": "키움증권",
    "rcept_no": "20260902000105"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "키움증권",
-   "rcept_no": "20260902000084"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "키움증권",
-   "rcept_no": "20260902000078"
   },
   {
    "code": "017670",
