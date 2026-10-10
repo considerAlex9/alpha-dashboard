@@ -1545,7 +1545,7 @@ function drawWrapCharts(){
 // 기술적 분석 (코스피 전 종목 + 코스닥 시총 상위 100) — 탭을 열 때 data/kr_ta.json 을 따로 불러옴
 // ============================================================
 let TA=null, taLoading=false, taSel=null, taPat=0, taShown=0, taList=[];
-const TF={mk:'all', sig:null, trend:'all', q:'', held:false, sort:'mc'};
+const TF={mk:'all', sig:null, trend:'all', q:'', held:false, sort:'mc', pat:''};
 const TA_PAGE=48;
 const SIG_GROUPS=[
   ['종합 판단',[['vd_long','롱 관점'],['vd_short','숏 관점'],['vd_wait','관망']]],
@@ -1585,7 +1585,11 @@ const PAT_DESC={
   hs:'가운데 고점이 가장 높고 양쪽 고점이 비슷한 모양입니다. 목선이 깨지면 머리 높이만큼 내리는 것을 목표로 봅니다.',
   range:'일정한 범위 안에서 위아래로 움직이는 모양입니다.', bull_flag:'급등 뒤 살짝 내려가며 쉬는 모양입니다. 위쪽 선을 넘으면 다시 오르는 것을 목표로 봅니다.',
   bear_flag:'급락 뒤 살짝 오르며 쉬는 모양입니다. 아래쪽 선이 깨지면 다시 내리는 것을 목표로 봅니다.',
-  round_bottom:'천천히 내려왔다가 천천히 올라가는 그릇 모양입니다. 시작 높이를 넘으면 상승 추세로 이어지기 쉽습니다.'};
+  round_bottom:'천천히 내려왔다가 천천히 올라가는 그릇 모양입니다. 시작 높이를 넘으면 상승 추세로 이어지기 쉽습니다.',
+  tri_bottom:'비슷한 가격에서 세 번 바닥을 확인한 모양입니다. 쌍바닥보다 지지가 더 단단하다는 뜻이라, 세 바닥 사이 고점(목선)을 넘으면 바닥과 목선 차이만큼 오르는 것을 목표로 봅니다.',
+  tri_top:'비슷한 가격에서 세 번 막힌 모양입니다. 위에 매물이 두껍다는 뜻이라, 세 천장 사이 저점(목선)이 깨지면 천장과 목선 차이만큼 내리는 것을 목표로 봅니다.',
+  cup_handle:'둥근 컵(U자 바닥) 뒤에 짧고 얕게 눌리는 손잡이가 붙은 모양입니다. 손잡이에서 남은 매물이 정리되고, 손잡이 고점을 거래량과 함께 넘으면 컵 깊이만큼 오르는 것을 목표로 봅니다.',
+  vcp:'상승 추세 속에서 조정 폭이 점점 줄어드는 모양(예: 20% → 12% → 6%)입니다. 파는 물량이 말라 간다는 뜻이라, 마지막 조정의 고점(피벗)을 거래량과 함께 넘으면 새 상승이 시작되는 경우가 많습니다.'};
 const PST={confirmed:'돌파 확정',retest:'되돌림',forming:'형성 중',target:'목표 도달'};
 const TREND={up:['상승 추세','up'],down:['하락 추세','down'],side:['횡보·혼조','']};
 const side = pt => !pt?'':pt.bias==='bear'?'숏 ':pt.bias==='bull'?'롱 ':'';
@@ -1617,6 +1621,7 @@ async function renderTA(){
           <input type="search" id="taq" placeholder="종목명 · 코드 · 신호 · 패턴" value="${esc(TF.q)}">
           <div class="seg" id="tatrend"><button data-t="all" aria-pressed="true">전체</button><button data-t="up" aria-pressed="false">상승 추세</button><button data-t="down" aria-pressed="false">하락 추세</button><button data-t="side" aria-pressed="false">횡보</button></div>
           <label class="sub" style="display:inline-flex;gap:5px;align-items:center"><input type="checkbox" id="taheld">내 보유 종목만</label>
+          <select id="tapatf" class="tasel" aria-label="패턴 종류"></select>
           <select id="tasort" class="tasel"><option value="mc">시가총액 순</option><option value="chg1">1일 등락 순</option><option value="chg20">20일 등락 순</option><option value="vr">거래량 배수 순</option><option value="vd">종합 점수 (롱 강한 순)</option><option value="vds">종합 점수 (숏 강한 순)</option><option value="sig">신호 많은 순</option><option value="q">패턴 품질 순</option></select>
         </div>
         <div class="sub" id="tacount" style="margin:10px 0 4px"></div>
@@ -1650,6 +1655,10 @@ async function renderTA(){
   document.getElementById('taq').oninput=e=>{ TF.q=e.target.value.trim(); taRenderList(); };
   document.getElementById('taheld').checked=TF.held;
   document.getElementById('taheld').onchange=e=>{ TF.held=e.target.checked; taRenderList(); };
+  const pc={}; S.filter(s=>TF.mk==='all'||s.m===TF.mk).forEach(s=>new Set(s.pats.map(p=>p.name)).forEach(n=>pc[n]=(pc[n]||0)+1));
+  document.getElementById('tapatf').innerHTML=`<option value="">패턴 전체</option>`+Object.entries(pc).sort((a,b)=>b[1]-a[1]).map(([n,c])=>`<option value="${esc(n)}">${esc(n)} (${c})</option>`).join('');
+  document.getElementById('tapatf').value=TF.pat;
+  document.getElementById('tapatf').onchange=e=>{ TF.pat=e.target.value; taRenderList(); };
   document.getElementById('tasort').value=TF.sort;
   document.getElementById('tasort').onchange=e=>{ TF.sort=e.target.value; taRenderList(); };
   document.getElementById('tamore').onclick=taMore;
@@ -1662,6 +1671,7 @@ function taPass(s){
   if(TF.mk!=='all'&&s.m!==TF.mk) return false;
   if(TF.trend!=='all'&&s.trend!==TF.trend) return false;
   if(TF.held&&!s.held) return false;
+  if(TF.pat&&!s.pats.some(p=>p.name===TF.pat)) return false;
   if(TF.sig){ if(TF.sig.startsWith('pat_')){ if(!taPatMatch(s,TF.sig)) return false; } else if(!taSigOf(s,TF.sig)) return false; }
   if(TF.q){ const q=TF.q.toLowerCase(); if(!(s.n.toLowerCase().includes(q)||s.s.includes(q)||s.sig.some(x=>x.name.includes(TF.q))||s.pats.some(p=>p.name.includes(TF.q)))) return false; }
   return true;
@@ -1703,6 +1713,7 @@ const TA_MA=[[20,'20일선','var(--ta20)'],[60,'60일선','var(--ta60)'],[120,'1
 let taMaOn=(()=>{ let v=null; try{ v=JSON.parse(localStorage.getItem('ta_ma')); }catch(e){} v=v||{20:true,60:true,120:false,200:true}; if(v['50w']===undefined) v['50w']=true; return v; })();
 function taOpen(code,pi=0){
   taSel=code; taPat=pi;
+  if(TF.pat){ const st=TA.stocks.find(x=>x.s===code), j=st?st.pats.findIndex(p=>p.name===TF.pat):-1; if(j>=0) taPat=j; }
   document.querySelectorAll('.tacard').forEach(c=>c.classList.toggle('sel',c.dataset.s===code));
   const m=document.getElementById('tamodal');
   if(m.hidden){ m.hidden=false; document.body.style.overflow='hidden'; }
@@ -1840,7 +1851,8 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
     const LC={res:['var(--pres)','6 4'],sup:['var(--psup)','6 4'],neck:['var(--pres)',''],pole:['var(--muted)','2 3'],curve:['var(--ta60)','']};
     pat.lines.forEach(([a,y1,b,y2,k])=>{ const [c,d]=LC[k]||LC.res; g+=`<line x1="${x(a)}" y1="${y(y1)}" x2="${x(b)}" y2="${y(y2)}" stroke="${c}" stroke-width="${big?(k==='neck'?2.6:2.2):1.2}" ${d?`stroke-dasharray="${d}"`:''}/>`; });
     if(big) pat.pts.forEach(([a,v,t])=>{ g+=`<circle cx="${x(a)}" cy="${y(v)}" r="5" fill="none" stroke="var(--pres)" stroke-width="2"/>`;
-      if(t!=='H'&&t!=='L') g+=`<text x="${x(a)}" y="${y(v)+(t==='머리'&&pat.bias==='bear'||t==='1'&&pat.bias==='bear'?-10:18)}" font-size="11" font-weight="700" fill="var(--pres)" text-anchor="middle">${esc(t)}</text>`; });
+      const top_=s.h[a]!=null&&v>=s.h[a]*0.998;                    // 고점에 찍힌 점은 글자를 위에, 저점은 아래에
+      if(t!=='H'&&t!=='L') g+=`<text x="${x(a)}" y="${y(v)+(top_?-11:19)}" font-size="11" font-weight="700" fill="var(--pres)" text-anchor="middle" paint-order="stroke" stroke="var(--surface)" stroke-width="3">${esc(t)}</text>`; });
   }
   // 크로스 표시
   if(big) s.sig.filter(z=>['gc','gc_long','ma200_up','ma200_dn','w50_up','w50_dn'].includes(z.k)&&z.ago!=null).forEach(z=>{

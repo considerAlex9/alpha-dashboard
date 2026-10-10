@@ -432,6 +432,95 @@ def detect(o, h, l, c, v):
                     [[start, rim, n - 1, rim, "neck"]] + [[curve[t][0], curve[t][1], curve[t + 1][0], curve[t + 1][1], "curve"] for t in range(12)],
                     [], brk, rim)
 
+    # 7) 삼중 바닥 / 삼중 천장 — 최근 120일 스윙 저점(고점) 3개가 3.5% 안에서 비슷 → 목선 돌파
+    for bias, piv, arr in (("bull", lo, l), ("bear", hi, h)):
+        P = [i for i in piv if i >= n - 120][-3:]
+        if len(P) < 3:
+            continue
+        i1, i2, i3 = P
+        vals = [arr[i] for i in P]
+        spread = max(vals) / min(vals) - 1
+        if not (spread <= 0.035 and i2 - i1 >= 8 and i3 - i2 >= 8 and i3 >= n - 50):
+            continue
+        if bias == "bull":
+            neck, bottom = max(h[i1:i3 + 1]), min(vals)
+            if neck < max(vals) * 1.05:
+                continue
+            target, stop, name, k = neck + (neck - bottom), bottom * 0.98, "삼중 바닥", "tri_bottom"
+        else:
+            neck, top = min(l[i1:i3 + 1]), max(vals)
+            if neck > min(vals) * 0.95:
+                continue
+            target, stop, name, k = neck - (top - neck), top * 1.02, "삼중 천장", "tri_top"
+        st, brk = _status(bias, c, h, l, lambda i, nk=neck: nk, i3, target, stop)
+        if st:
+            pats[:] = [x for x in pats if x["k"] != ("dbl_bottom" if bias == "bull" else "dbl_top")]   # 같은 바닥이면 삼중을 우선
+            add(k, name, "반전형", bias, st, 76 + int((0.035 - spread) * 400), target, stop, [[i1, neck, n - 1, neck, "neck"]],
+                [[i, arr[i], str(t + 1)] for t, i in enumerate(P)], brk, neck)
+
+    # 8) 컵앤핸들 — 왼쪽 고점 → U자 바닥(깊이 12~35%) → 비슷한 오른쪽 고점 → 3~25일 얕은 손잡이 → 손잡이 고점 돌파
+    best = None
+    for r in [i for i in hi if i >= n - 28]:
+        for a in [i for i in hi if r - 110 <= i <= r - 30]:
+            L_, R_ = h[a], h[r]
+            if not 0.95 <= R_ / L_ <= 1.05 or max(h[a + 1:r]) > max(L_, R_) * 1.02:
+                continue
+            bi = min(range(a, r + 1), key=lambda i: l[i])
+            B_ = l[bi]
+            rim = min(L_, R_)
+            depth = (rim - B_) / rim
+            if not 0.12 <= depth <= 0.35 or not 0.25 <= (bi - a) / (r - a) <= 0.75:
+                continue
+            if sum(1 for i in range(a, r + 1) if l[i] <= B_ + (rim - B_) / 3) < (r - a) * 0.15:     # V자 말고 바닥에서 머문 U자
+                continue
+            score = abs(R_ / L_ - 1)
+            if best is None or score < best[4]:
+                best = (a, bi, r, depth, score)
+    if best:
+        a, bi, r, depth, score = best
+        hd = n - 1 - r
+        L_, B_, R_ = h[a], l[bi], h[r]
+        top = max(L_, R_)
+        hlow_i = min(range(r, n), key=lambda i: l[i]) if hd >= 1 else r
+        hlow = l[hlow_i]
+        if 3 <= hd <= 25 and hlow >= B_ + (top - B_) * 0.5 and (R_ - hlow) / R_ <= 0.15:
+            level = R_
+            target, stop = level + (top - B_), hlow * 0.98
+            st, brk = _status("bull", c, h, l, lambda i: level, r + 2, target, stop)
+            if st:
+                xa, xb, xr = a, bi, r
+                cup = lambda x: max(B_ * 0.995, L_ * (x - xb) * (x - xr) / ((xa - xb) * (xa - xr)) + B_ * (x - xa) * (x - xr) / ((xb - xa) * (xb - xr))
+                                    + R_ * (x - xa) * (x - xb) / ((xr - xa) * (xr - xb)))
+                xs_ = [int(a + (r - a) * t / 14) for t in range(15)]
+                q = 70 + int((0.05 - score) * 200) + (8 if 5 <= hd <= 15 else 0)
+                add("cup_handle", "컵앤핸들", "곡선형", "bull", st, q, target, stop,
+                    [[xs_[t], cup(xs_[t]), xs_[t + 1], cup(xs_[t + 1]), "curve"] for t in range(14)] + [[r, level, n - 1, level, "neck"]],
+                    [[a, L_, "왼쪽 고점"], [bi, B_, "컵 바닥"], [r, R_, "오른쪽 고점"], [hlow_i, hlow, "손잡이"]], brk, level)
+
+    # 9) VCP (변동성 축소) — 상승 추세 속 조정 폭이 점점 줄고(예: 20%→12%→6%) 거래량이 마르는 모양 → 마지막 고점 돌파
+    seq = sorted([(i, "H") for i in hi if i >= n - 110] + [(i, "L") for i in lo if i >= n - 110])
+    cons = [(seq[t][0], seq[t + 1][0], (h[seq[t][0]] - l[seq[t + 1][0]]) / h[seq[t][0]])
+            for t in range(len(seq) - 1) if seq[t][1] == "H" and seq[t + 1][1] == "L"]
+    run = []
+    for x in reversed(cons):                       # 뒤에서부터: 앞선 조정일수록 1.25배 이상 깊어야 함
+        if not run or x[2] >= run[-1][2] * 1.25:
+            run.append(x)
+        else:
+            break
+    run.reverse()
+    if len(run) >= 2 and 0.10 <= run[0][2] <= 0.40 and run[-1][2] <= 0.10 and run[-1][1] >= n - 25:
+        a0 = run[0][0]
+        if c[-1] > sum(c[-50:]) / 50 and h[a0] >= min(l[max(0, a0 - 120):a0 + 1]) * 1.25:
+            pivot = h[run[-1][0]]
+            stop = l[run[-1][1]] * 0.98
+            target = pivot + (h[a0] - l[run[0][1]])
+            dry = sum(v[-10:]) / 10 < sum(v[-50:]) / 50 * 0.85
+            st, brk = _status("bull", c, h, l, lambda i: pivot, run[-1][1], target, stop)
+            if st:
+                lines = [[x0, h[x0], x1, l[x1], "pole"] for x0, x1, _ in run] + [[run[-1][0], pivot, n - 1, pivot, "neck"]]
+                add("vcp", "VCP (변동성 축소)", "지속형", "bull", st, 62 + 6 * len(run) + (10 if dry else 0), target, stop, lines,
+                    [[x0, h[x0], f"-{d * 100:.0f}%"] for x0, _, d in run], brk, pivot)
+
     order = {"confirmed": 0, "retest": 1, "forming": 2, "target": 3}
     pats.sort(key=lambda p: (order[p["st"]], -p["q"]))
     return pats[:3]
