@@ -17,6 +17,7 @@ BT_SIGS = {
     "hi52": ("52주 신고가 (첫날)", "bull"), "base_bo": ("베이스 돌파", "bull"),
     "vol_up": ("거래량 급증 + 양봉", "bull"), "vol_dn": ("거래량 급증 + 음봉", "bear"),
     "rsi_lo": ("RSI 30 아래로 (과매도)", "bull"), "rsi_hi": ("RSI 70 위로 (과매수)", "bear"),
+    "div_bull": ("상승 다이버전스", "bull"), "div_bear": ("하락 다이버전스", "bear"), "rs_hi": ("상대강도 신고가", "bull"),
 }
 H = 20            # 성적을 보는 기간 (거래일)
 START = 260       # 52주·50주선 계산에 필요한 앞부분
@@ -47,7 +48,7 @@ def regime_map(bars):
     return {b[0]: ("up" if c[i] > m[i] else "down") for i, b in enumerate(bars) if m[i]}
 
 
-def backtest(bars, regime):
+def backtest(bars, regime, kmap=None):
     """한 종목 → (신호 사건 목록, 아무 날이나 샀을 때의 기준 성적)"""
     from kr_ta import week_ma
     o, h, l, c, v = ([b[k] for b in bars] for k in range(1, 6))
@@ -58,6 +59,10 @@ def backtest(bars, regime):
     m5, m20, m60, m120, m200 = (us.sma(c, k) for k in (5, 20, 60, 120, 200))
     w50 = week_ma(c, [b[0] for b in bars])
     rs = rsi_series(c)
+    hi_all, lo_all = us.pivots(h, l, 0)
+    hi_set, lo_set = set(hi_all), set(lo_all)
+    dates = [b[0] for b in bars]
+    ratio = [c[i] / kmap[dates[i]] if kmap and kmap.get(dates[i]) else None for i in range(n)]
 
     def cross(a, b, t):
         return None not in (a[t], b[t], a[t - 1], b[t - 1]) and a[t - 1] <= b[t - 1] and a[t] > b[t]
@@ -102,6 +107,18 @@ def backtest(bars, regime):
                 fired.append("rsi_lo")
             if rs[t] >= 70 > rs[t - 1]:
                 fired.append("rsi_hi")
+        i = t - us.K                                # 스윙 점은 K일 뒤에야 확정 → 그날 신호로 침
+        if i in lo_set:
+            prev = [j for j in lo_all if i - 60 <= j < i]
+            if prev and l[i] < l[prev[-1]] and rs[i] and rs[prev[-1]] and rs[i] > rs[prev[-1]] + 3 and rs[i] < 45:
+                fired.append("div_bull")
+        if i in hi_set:
+            prev = [j for j in hi_all if i - 60 <= j < i]
+            if prev and h[i] > h[prev[-1]] and rs[i] and rs[prev[-1]] and rs[i] < rs[prev[-1]] - 3 and rs[prev[-1]] > 55:
+                fired.append("div_bear")
+        win = [x for x in ratio[t - 250:t] if x]
+        if ratio[t] and ratio[t - 1] and len(win) > 120 and ratio[t] >= max(win) and ratio[t - 1] < max(win):
+            fired.append("rs_hi")
         top, bot = max(h[t - 40:t]), min(l[t - 40:t])
         if (top - bot) / top <= 0.15 and min(l[t - 160:t - 40]) * 1.3 <= top and c[t] > top * 1.005 and c[t - 1] <= top:
             fired.append("base_bo")
@@ -227,3 +244,62 @@ def log_summary(log, stocks, dates, kospi):
                 rec[f"kospi{k}"] = round(kc[kd[j + k]] / kc[d] - 1, 4)
         out.append(rec)
     return out
+
+
+def watch(s):
+    """돌파 대기: 지금 가격 바로 위(아래)의 트리거 가격 → {방향, 트리거, 손절, 목표, 근거, 남은 거리, 손익비} (가장 가까운 것 하나)"""
+    last, cands = s["last"], []
+    for p in s["pats"]:
+        lv = p.get("level")
+        if p["st"] != "forming" or not lv:
+            continue
+        if p["bias"] == "bull" and last < lv <= last * 1.03 and p["stop"] < lv < p["target"]:
+            cands.append(("long", lv * 1.002, p["stop"], p["target"], f"{p['name']} 돌파선"))
+        if p["bias"] == "bear" and last * 0.97 <= lv < last and p["target"] < lv < p["stop"]:
+            cands.append(("short", lv * 0.998, p["stop"], p["target"], f"{p['name']} 이탈선"))
+    b = s.get("base")
+    if b and b[4] == "near" and b[2] > last:
+        cands.append(("long", b[2] * 1.002, b[3] * 0.99, b[2] + (b[2] - b[3]), f"베이스 {b[1] - b[0] + 1}일 상단"))
+    if s["hi52"] * 0.97 <= last < s["hi52"]:
+        tr = s["hi52"] * 1.002
+        st = min(s["l"][-10:]) * 0.99
+        cands.append(("long", tr, st, tr + 2 * (tr - st), "52주 신고가"))
+    best = None
+    vd = (s.get("vd") or {}).get("dir", "wait")
+    for d, tr, st, tg, why in cands:
+        if (vd == "long" and d == "short") or (vd == "short" and d == "long"):     # 종합 판단과 반대 방향은 빼기
+            continue
+        risk = tr - st if d == "long" else st - tr
+        if risk <= 0:
+            continue
+        rr = (tg - tr) / risk if d == "long" else (tr - tg) / risk
+        if rr < 1.2:
+            continue
+        dist = tr / last - 1
+        if best is None or abs(dist) < abs(best["dist"]):
+            best = {"dir": d, "trigger": round(tr), "stop": round(st), "target": round(tg), "why": why, "dist": round(dist, 4), "rr": round(rr, 2)}
+    return best
+
+
+def flows(rows):
+    """한국투자증권 종목 투자자 일별(최신순) → 외국인·기관 연속 순매수(+)·순매도(-) 일수와 5일 합(원)"""
+    rows = [x for x in rows if x.get("frgn_ntby_qty") not in (None, "")]
+
+    def num(x):
+        try:
+            return float(x)
+        except (TypeError, ValueError):
+            return 0.0
+
+    def streak(key):
+        vals = [num(x[key]) for x in rows]
+        if not vals or vals[0] == 0:
+            return 0
+        sgn, k = vals[0] > 0, 0
+        for x in vals:
+            if x == 0 or (x > 0) != sgn:
+                break
+            k += 1
+        return k if sgn else -k
+    return {"f": streak("frgn_ntby_qty"), "o": streak("orgn_ntby_qty"),
+            "f5": sum(num(x["frgn_ntby_tr_pbmn"]) for x in rows[:5]) * 1e6, "o5": sum(num(x["orgn_ntby_tr_pbmn"]) for x in rows[:5]) * 1e6}

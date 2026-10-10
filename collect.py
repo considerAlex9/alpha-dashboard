@@ -138,6 +138,16 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"  [경고] 장중 흐름 실패: {e}")
 
+    # 2-2) 장중 트리거 감시 (기술적 분석 '돌파 대기' 종목) — 평일 09:00~15:35
+    if now.weekday() < 5 and 9 * 60 <= now.hour * 60 + now.minute <= 15 * 60 + 35 and trading_now is not False:
+        try:
+            import trig
+            k = get_kis()
+            if k:
+                trig.run(k, now, env.get("TELEGRAM_BOT_TOKEN"), env.get("TELEGRAM_CHAT_ID"))
+        except Exception as e:  # noqa: BLE001
+            print(f"  [경고] 트리거 감시 실패: {e}")
+
     # 3) 원본 스냅샷 (그날 마지막 상태) — trade_date: 이 값이 어느 거래일 값인지 (휴장일·장 시작 전이면 None)
     #    대회 동향(리더보드·참가자 업종 포지션)은 비밀번호로 암호화한 것만 저장한다. 비밀번호가 없으면 저장하지 않음.
     if quick and trading_now is not None:          # 빠른 모드: 오늘 분봉이 있으면 거래일

@@ -368,7 +368,7 @@ tr.click{cursor:pointer}
 @media (max-width:640px){ .wtiles{grid-template-columns:repeat(2,1fr)} .wh h3{font-size:20px} }
 
 /* 기술적 분석 */
-.sigboard{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.sigboard{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:14px}
 .sgt{font-size:11.5px;color:var(--muted);font-weight:650;margin-bottom:6px}
 .sgi{display:flex;flex-wrap:wrap;gap:6px}
 .sigbtn{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--border);background:var(--surface-2);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:12.5px;color:var(--ink)}
@@ -394,7 +394,7 @@ tr.click{cursor:pointer}
 .mabtn[aria-pressed="true"] i{opacity:1}
 .malg{font-size:12px;color:var(--ink-2);display:inline-flex;align-items:center;gap:4px;margin-left:6px}
 .mcols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.tstrip{display:grid;grid-template-columns:repeat(6,1fr);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:12px}
+.tstrip{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:12px}
 .tstrip>div{padding:9px 14px;border-right:1px solid var(--border);min-width:0}
 .tstrip>div:last-child{border-right:0}
 .tstrip .l{font-size:11.5px;color:var(--muted)}
@@ -480,6 +480,16 @@ tr.click{cursor:pointer}
 .btmini{display:inline-block;font-size:11.5px;font-weight:650;padding:2px 8px;border-radius:6px;background:var(--surface-2)}
 .btmini.good{color:var(--good);background:color-mix(in srgb,var(--good) 10%,transparent)} .btmini.bad{color:var(--crit);background:color-mix(in srgb,var(--crit) 8%,transparent)}
 @media (max-width:640px){ .envnums{text-align:left} }
+
+/* 오늘 볼 종목 */
+.accbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:12.5px}
+.accbar input{width:130px;padding:5px 8px;border-radius:8px;border:1px solid var(--border);background:var(--surface-2);color:var(--ink);font:inherit;font-size:12.5px;text-align:right}
+.accbar label:nth-child(2) input{width:64px}
+.todaytbl td{vertical-align:middle}
+.todaytbl small{font-size:11px}
+.tclick{cursor:pointer} .tclick:hover{color:var(--accent);text-decoration:underline}
+.acc-star{color:#d97706}
+.stag.rsb{background:var(--surface-2);color:var(--ink-2)} .stag.rsb.hi{background:color-mix(in srgb,#d97706 16%,transparent);color:#b45309} .stag.rsb.lo{opacity:.7}
 
 /* 설치 버튼 */
 .installbtn{display:none;cursor:pointer}
@@ -1571,6 +1581,7 @@ const SIG_GROUPS=[
   ['추세 전환',[['gc','골든크로스'],['gc_long','장기 골든크로스'],['ma200_up','200일선 돌파'],['ma200_dn','200일선 이탈'],['w50_up','50주선 돌파'],['w50_dn','50주선 이탈']]],
   ['이동평균 배열',[['align_up','정배열'],['align_dn','역배열']]],
   ['베이스',[['base_bo','베이스 돌파'],['base','베이스 형성·근접']]],
+  ['선행 신호',[['squeeze','변동성 수축'],['div_bull','상승 다이버전스'],['div_bear','하락 다이버전스'],['rs_hi','상대강도 신고가'],['f_buy','외국인 연속 매수'],['o_buy','기관 연속 매수']]],
   ['가격·거래량',[['hi52','52주 신고가'],['hi52_near','신고가 근접'],['vol','거래량 급증'],['rsi_hi','RSI 과매수'],['rsi_lo','RSI 과매도']]],
 ];
 const SIG_DESC={
@@ -1582,6 +1593,12 @@ const SIG_DESC={
   align_dn:'짧은 이동평균일수록 아래에 있는 상태(5 < 20 < 60 < 120일선)예요. 모든 기간에서 파는 힘이 우세한 전형적인 하락 추세입니다.',
   ma200_up:'주가가 200일선(약 1년 평균)을 위로 뚫었어요. 장기 투자자들이 가장 많이 보는 선이라, 추세가 바뀌는 신호로 많이 씁니다.',
   ma200_dn:'주가가 200일선 아래로 내려갔어요. 장기 추세가 약해졌다는 신호입니다.',
+  squeeze:'볼린저 밴드(20일 평균 ± 2표준편차) 폭이 6개월 중 가장 좁아요. 가격이 한쪽으로 크게 움직이기 직전에 자주 나타나는 상태라, 어느 쪽으로 뚫리는지 지켜볼 자리예요.',
+  div_bull:'가격은 더 낮은 저점을 만들었는데 RSI는 오히려 높은 저점을 만들었어요. 파는 힘이 약해지고 있다는 뜻으로, 하락 추세가 끝나기 전에 나오는 대표적인 신호예요.',
+  div_bear:'가격은 더 높은 고점을 만들었는데 RSI는 낮은 고점을 만들었어요. 사는 힘이 약해지고 있다는 뜻으로, 상승 추세가 꺾이기 전에 나오는 신호예요.',
+  rs_hi:'코스피 대비 비율선이 1년 중 최고예요. 가격이 신고가를 내기 전에 상대강도가 먼저 신고가를 내는 경우가 많아 주도주를 미리 찾는 데 써요.',
+  f_buy:'외국인이 며칠 연속으로 사고 있어요. 큰손의 매수는 가격보다 먼저 움직이는 경우가 많아요.',
+  o_buy:'기관이 며칠 연속으로 사고 있어요. 큰손의 매수는 가격보다 먼저 움직이는 경우가 많아요.',
   w50_up:'주가가 50주선(주봉 종가 50개 평균, 약 1년)을 위로 뚫었어요. 기관·장기 투자자가 추세 전환을 판단할 때 200일선과 함께 가장 많이 보는 선입니다.',
   w50_dn:'주가가 50주선 아래로 내려갔어요. 1년 단위 장기 추세가 꺾였다는 신호로 봅니다.',
   base:'앞서 30% 이상 오른 뒤, 가격이 좁은 범위 안에서 오래 다져지고 있어요. 매물이 소화되는 구간으로, 상단을 거래량과 함께 넘으면 새 상승이 시작되는 경우가 많습니다.',
@@ -1630,9 +1647,10 @@ async function renderTA(){
   const S=TA.stocks;
   document.getElementById('tasub').textContent=`${dayLabel(TA.date)} 종가 · 코스피 보통주 ${S.filter(s=>s.m==='KOSPI').length} + 코스닥 시총 상위 ${S.filter(s=>s.m==='KOSDAQ').length} · 한국투자증권 일봉 · 매 거래일 16:40 업데이트`;
   box.innerHTML=`${taEnvBanner()}
-    <div class="taviewbar"><div class="seg" id="taview"><button data-v="scan" aria-pressed="true">종목 스캔</button><button data-v="bt" aria-pressed="false">신호 성적표</button></div></div>
+    <div class="taviewbar"><div class="seg" id="taview"><button data-v="today" aria-pressed="true">오늘 볼 종목</button><button data-v="scan" aria-pressed="false">종목 스캔</button><button data-v="bt" aria-pressed="false">신호 성적표</button></div></div>
+    <div id="taview_today"></div>
     <div id="taview_bt" hidden></div>
-    <div id="taview_scan">
+    <div id="taview_scan" hidden>
     <section class="grid c4" id="tatiles"></section>
     <section class="card mt"><div class="card-h"><div><h3>신호판</h3><div class="sub">누르면 그 신호가 나온 종목만 봅니다 · 골든크로스·200일선은 최근 5거래일(장기 골든크로스는 10거래일) 안에 나온 것 · 데드크로스는 잡음이 많아 뺐어요</div></div>
       <div class="seg" id="tamk"><button data-m="all" aria-pressed="true">전체</button><button data-m="KOSPI" aria-pressed="false">코스피</button><button data-m="KOSDAQ" aria-pressed="false">코스닥100</button></div></div>
@@ -1644,7 +1662,7 @@ async function renderTA(){
           <div class="seg" id="tatrend"><button data-t="all" aria-pressed="true">전체</button><button data-t="up" aria-pressed="false">상승 추세</button><button data-t="down" aria-pressed="false">하락 추세</button><button data-t="side" aria-pressed="false">횡보</button></div>
           <label class="sub" style="display:inline-flex;gap:5px;align-items:center"><input type="checkbox" id="taheld">내 보유 종목만</label>
           <select id="tapatf" class="tasel" aria-label="패턴 종류"></select>
-          <select id="tasort" class="tasel"><option value="mc">시가총액 순</option><option value="chg1">1일 등락 순</option><option value="chg20">20일 등락 순</option><option value="vr">거래량 배수 순</option><option value="vd">종합 점수 (롱 강한 순)</option><option value="vds">종합 점수 (숏 강한 순)</option><option value="sig">신호 많은 순</option><option value="q">패턴 품질 순</option></select>
+          <select id="tasort" class="tasel"><option value="mc">시가총액 순</option><option value="chg1">1일 등락 순</option><option value="chg20">20일 등락 순</option><option value="vr">거래량 배수 순</option><option value="rs">상대강도 (RS) 순</option><option value="vd">종합 점수 (롱 강한 순)</option><option value="vds">종합 점수 (숏 강한 순)</option><option value="sig">신호 많은 순</option><option value="q">패턴 품질 순</option></select>
         </div>
         <div class="sub" id="tacount" style="margin:10px 0 4px"></div>
         <div class="tacards" id="tacards"></div>
@@ -1653,7 +1671,7 @@ async function renderTA(){
     </section>
     </div>`;
   document.querySelectorAll('#taview button').forEach(b=>b.onclick=()=>taShowView(b.dataset.v));
-  if(taView!=='scan') taShowView(taView);
+  taShowView(taView);
   // 요약 타일
   const n=S.length, c=k=>S.filter(s=>s.sig.some(x=>x.k===k)).length;
   const up=S.filter(s=>s.trend==='up').length, dn=S.filter(s=>s.trend==='down').length, a200=S.filter(s=>s.above200).length;
@@ -1689,7 +1707,7 @@ async function renderTA(){
   document.getElementById('tamore').onclick=taMore;
   taRenderList();
 }
-const SIG_TONE={vd_long:'bull',vd_short:'bear',vd_wait:'info',w50_up:'bull',w50_dn:'bear',gc:'bull',gc_long:'bull',ma200_up:'bull',align_up:'bull',base_bo:'bull',hi52:'bull',hi52_near:'bull',rsi_lo:'bull',
+const SIG_TONE={squeeze:'info',div_bull:'bull',div_bear:'bear',rs_hi:'bull',f_buy:'bull',o_buy:'bull',vd_long:'bull',vd_short:'bear',vd_wait:'info',w50_up:'bull',w50_dn:'bear',gc:'bull',gc_long:'bull',ma200_up:'bull',align_up:'bull',base_bo:'bull',hi52:'bull',hi52_near:'bull',rsi_lo:'bull',
   dc:'bear',dc_long:'bear',ma200_dn:'bear',align_dn:'bear',rsi_hi:'bear',base:'info',vol:'info'};
 function taPatMatch(s,k){ return k==='pat_bull'?s.pats.some(p=>p.bias==='bull'):k==='pat_bear'?s.pats.some(p=>p.bias==='bear'):s.pats.some(p=>p.st==='confirmed'||p.st==='retest'); }
 function taPass(s){
@@ -1703,11 +1721,12 @@ function taPass(s){
 }
 function taSortKey(s){
   switch(TF.sort){ case 'chg1': return -(s.chg1??-9); case 'chg20': return -(s.chg20??-9); case 'vr': return -(s.vr??0);
+    case 'rs': return -(s.rs??0);
     case 'vd': return -vdOf(s).score; case 'vds': return vdOf(s).score;
     case 'sig': return -s.sig.filter(x=>x.tone!=='info').length*10-(s.sig.some(x=>x.ago===0)?1:0); case 'q': return s.pats[0]?-s.pats[0].q:1e9;
     default: return -s.mc; } }
 // ---------- 시장 환경 띠 · 화면 전환 · 신호 성적표 · 신호 기록장 ----------
-let taView='scan', btReg='all';
+let taView='today', btReg='all';
 const REG={up:['상승장','up'],down:['약세장','down'],mixed:['조정·혼조','']};
 function taEnvBanner(){
   const E=TA.market; if(!E) return '';
@@ -1772,7 +1791,65 @@ function taShowView(v){
   document.querySelectorAll('#taview button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v));
   document.getElementById('taview_scan').hidden=v!=='scan';
   document.getElementById('taview_bt').hidden=v!=='bt';
+  document.getElementById('taview_today').hidden=v!=='today';
   if(v==='bt') renderBT();
+  if(v==='today') renderToday();
+  if(v==='scan') taRedraw();
+}
+
+// ---------- 오늘 볼 종목 ----------
+let ACC=(()=>{ try{ const v=JSON.parse(localStorage.getItem('ta_acc')); if(v&&v.amt) return v; }catch(e){} return {amt:100000000,risk:1}; })();
+function saveAcc(){ try{ localStorage.setItem('ta_acc',JSON.stringify(ACC)); }catch(e){} }
+// 손절까지 잃을 금액이 계좌의 risk% 가 되도록 → 수량
+function qtyOf(entry,stop){ const per=Math.abs(entry-stop); if(!per) return null; const q=Math.floor(ACC.amt*ACC.risk/100/per); return {q, amt:q*entry, loss:q*per}; }
+const qtyTxt=(entry,stop)=>{ const x=qtyOf(entry,stop); return x&&x.q>0?`${num(x.q)}주 <small class="muted">${won(x.amt)}원</small>`:'—'; };
+function trigHit(code){ const T=D.trig; return T&&T.date===todayKST?T.hits?.[code]:null; }
+function trigPx(code){ const T=D.trig; return T&&T.date===todayKST?T.px?.[code]:null; }
+function renderToday(){
+  const el=document.getElementById('taview_today'), S=TA.stocks, by=Object.fromEntries(S.map(s=>[s.s,s]));
+  const W=(TA.watch||[]).map(([code,name,d,trig,stop,target,why,dist,rr])=>({code,name,d,trig,stop,target,why,dist,rr,s:by[code]})).filter(x=>x.s);
+  const wrow=x=>{ const px=trigPx(x.code)||x.s.last, hit=trigHit(x.code), dist=x.trig/px-1, ko=x.d==='long'?'롱':'숏';
+    return `<tr class="click" data-s="${x.code}"><td class="l"><b>${esc(x.name)}</b> <span class="sym">${x.code}</span>${x.s.held?` <span class="tag" style="color:var(--${x.s.held})">내 ${x.s.held==='long'?'롱':'숏'}</span>`:''}<br><small class="muted">${esc(x.why)} · RS ${x.s.rs??'—'}</small></td>
+      <td>${num(px)}${trigPx(x.code)?'<br><small class="muted">10분 전</small>':''}</td><td><b>${num(x.trig)}</b></td>
+      <td>${hit?'<b class="up">돌파</b>':`${dist>0?'+':''}${(dist*100).toFixed(1)}%`}</td>
+      <td style="color:var(--crit)">${num(x.stop)}<br><small>${pct(x.stop/x.trig-1,1)}</small></td>
+      <td style="color:var(--good)">${num(x.target)}<br><small>${pct(x.target/x.trig-1,1)}</small></td>
+      <td>${x.rr.toFixed(1)}</td><td>${qtyTxt(x.trig,x.stop)}</td>
+      <td class="l">${hit?`<span class="stag bull">✓ ${hit.t} 돌파 · ${num(hit.p)}</span>`:`<span class="stag">${ko} 대기</span>`}</td></tr>`; };
+  const tbl=(rows,empty)=>rows.length?`<div class="tbl-wrap"><table class="bttbl todaytbl"><thead><tr><th class="l">종목 · 근거</th><th>현재가</th><th>트리거</th><th>남은 거리</th><th>손절</th><th>목표</th><th>손익비</th><th>살 수량</th><th class="l">장중 상태</th></tr></thead><tbody>${rows.map(wrow).join('')}</tbody></table></div>`:`<div class="sub">${empty}</div>`;
+  const L=W.filter(x=>x.d==='long'), Sh=W.filter(x=>x.d==='short');
+  const pick=(k)=>S.filter(s=>s.sig.some(z=>z.k===k));
+  const mini=(list,f)=>list.length?`<div class="tlist">${list.map(f).join('')}</div>`:'<div class="sub">해당 종목이 없어요.</div>';
+  const nm=s=>`<b class="tclick" data-s="${s.s}">${esc(s.n)}</b> <span class="sym">${s.s}</span>`;
+  const sq=pick('squeeze').sort((a,b)=>(a.bw||9)-(b.bw||9)).slice(0,12);
+  const dv=[...pick('div_bull'),...pick('div_bear')].slice(0,14);
+  const rs=S.filter(s=>(s.rs||0)>=90).sort((a,b)=>b.rs-a.rs).slice(0,15);
+  const fo=S.filter(s=>s.fl&&(s.fl.f>=3||s.fl.o>=3)).sort((a,b)=>Math.max(b.fl.f,b.fl.o)-Math.max(a.fl.f,a.fl.o)).slice(0,15);
+  const E=TA.market;
+  el.innerHTML=`
+    <section class="card">
+      <div class="card-h"><div><h3>돌파 대기 목록</h3><div class="sub">트리거 가격 바로 아래(숏은 바로 위)에 있는 종목 · 형성 중 패턴의 돌파선, 베이스 상단, 52주 신고가 · 장중엔 10분마다 현재가를 확인하고 트리거를 넘으면 표시${D.trig?.updated_at&&D.trig.date===todayKST?` (마지막 확인 ${KST(D.trig.updated_at).slice(-5)})`:''}</div></div>
+        <div class="accbar"><label>계좌 <input type="number" id="accamt" value="${ACC.amt}" step="1000000" min="0"> 원</label><label>1회 위험 <input type="number" id="accrisk" value="${ACC.risk}" step="0.25" min="0.1" max="10"> %</label>
+          <span class="sub">→ 손절가에 닿으면 ${won(ACC.amt*ACC.risk/100)}원 손실이 되도록 수량 계산</span></div></div>
+      ${E&&E.regime==='down'?`<div class="envwarn" style="margin:0 0 8px">⚠ 지금은 약세장이라 롱 돌파가 실패하기 쉬워요. 수량을 줄이거나 확인 후 들어가는 게 좋아요.</div>`:''}
+      <div class="nsec"><span>롱 대기 ${L.length}종목 (가까운 순)</span></div>${tbl(L.slice(0,30),'롱 대기 종목이 없어요.')}
+      <div class="nsec"><span>숏 대기 ${Sh.length}종목</span></div>${tbl(Sh.slice(0,15),'숏 대기 종목이 없어요.')}
+    </section>
+    <section class="grid c2 mt">
+      <div class="card"><div class="card-h"><div><h3>변동성 수축</h3><div class="sub">볼린저 밴드 폭이 6개월 중 가장 좁은 종목 — 큰 움직임 직전에 자주 나와요 · 좁은 순</div></div></div>
+        ${mini(sq,s=>`<div class="ti"><div class="h"><span>${nm(s)}</span><span>${s.dry?'<span class="stag info">거래량 마름</span> ':''}<span class="stag ${VD[vdOf(s).dir][1]==='up'?'bull':VD[vdOf(s).dir][1]==='down'?'bear':''}">${VD[vdOf(s).dir][0]}</span></span></div><div class="s">밴드 폭 ${(s.bw*100).toFixed(1)}% · ${TREND[s.trend][0]} · RS ${s.rs??'—'}${s.w?` · 트리거 ${num(s.w.trigger)}`:''}</div></div>`)}</div>
+      <div class="card"><div class="card-h"><div><h3>다이버전스</h3><div class="sub">가격과 RSI가 반대로 가는 종목 — 추세가 바뀌기 전에 나오는 신호 · 최근 15일 안</div></div></div>
+        ${mini(dv,s=>{ const z=s.sig.find(x=>x.k==='div_bull'||x.k==='div_bear'); return `<div class="ti"><div class="h"><span>${nm(s)}</span><span class="stag ${z.tone}">${esc(z.name)}</span></div><div class="s">${esc(z.note)} · ${agoTxt(z.ago)}</div></div>`; })}</div>
+    </section>
+    <section class="grid c2 mt">
+      <div class="card"><div class="card-h"><div><h3>상대강도 상위</h3><div class="sub">3·6·9·12개월 수익률을 코스피 전체와 비교한 순위(1~99) · 90 이상 · ★ 오늘 상대강도 신고가</div></div></div>
+        ${mini(rs,s=>`<div class="ti"><div class="h"><span>${nm(s)}${s.sig.some(z=>z.k==='rs_hi')?' <span class="acc-star">★</span>':''}</span><span><b>RS ${s.rs}</b></span></div><div class="s">${TREND[s.trend][0]} · 20일 ${pct(s.chg20,1)} · 60일 ${pct(s.chg60,1)} · ${VD[vdOf(s).dir][0]}</div></div>`)}</div>
+      <div class="card"><div class="card-h"><div><h3>외국인·기관 연속 순매수</h3><div class="sub">3일 이상 연속으로 사고 있는 종목 · 가격보다 먼저 움직이는 수급</div></div></div>
+        ${mini(fo,s=>`<div class="ti"><div class="h"><span>${nm(s)}</span><span>${s.fl.f>=3?`<span class="stag bull">외국인 ${s.fl.f}일</span> `:''}${s.fl.o>=3?`<span class="stag bull">기관 ${s.fl.o}일</span>`:''}</span></div><div class="s">5일 외국인 ${won(s.fl.f5,true)} · 기관 ${won(s.fl.o5,true)} · ${TREND[s.trend][0]} · RS ${s.rs??'—'}</div></div>`)}</div>
+    </section>`;
+  el.querySelectorAll('tr[data-s],.tclick').forEach(t=>t.onclick=()=>{ taList=TA.stocks; taOpen(t.dataset.s,0); });
+  const upd=()=>{ ACC.amt=Math.max(0,+document.getElementById('accamt').value||0); ACC.risk=Math.max(0.1,+document.getElementById('accrisk').value||1); saveAcc(); renderToday(); };
+  document.getElementById('accamt').onchange=upd; document.getElementById('accrisk').onchange=upd;
 }
 
 function taRenderList(){
@@ -1793,7 +1870,7 @@ function taCard(s){
       <div class="sub" style="font-size:11.5px">${s.m==='KOSPI'?'코스피':'코스닥'} ${s.r}위 · ${won(s.mc)}</div></div>
       <div style="text-align:right"><div style="font-weight:700">${num(s.last)}</div><div>${cpct(s.chg1)}</div></div></div>
     <div class="tamini"></div>
-    <div class="tatags"><span class="stag vd ${VD[vdOf(s).dir][1]}">${VD[vdOf(s).dir][0]}${vdOf(s).score?` ${vdOf(s).score>0?'+':''}${vdOf(s).score}`:''}</span><span class="stag trend ${tr[1]}">${tr[0]}</span>${tags}</div>
+    <div class="tatags">${s.rs!=null?`<span class="stag rsb ${s.rs>=80?'hi':s.rs<=20?'lo':''}">RS ${s.rs}</span>`:''}${s.w?`<span class="stag info">${s.w.dir==='long'?'롱':'숏'} 트리거 ${pct(s.w.dist,1)}</span>`:''}<span class="stag vd ${VD[vdOf(s).dir][1]}">${VD[vdOf(s).dir][0]}${vdOf(s).score?` ${vdOf(s).score>0?'+':''}${vdOf(s).score}`:''}</span><span class="stag trend ${tr[1]}">${tr[0]}</span>${tags}</div>
     ${p?`<div class="tapat"><span class="${p.bias==='bull'?'up':p.bias==='bear'?'down':''}">${p.bias==='bull'?'▲':p.bias==='bear'?'▼':'■'} ${esc(p.name)}</span><span class="sub">${PST[p.st]} · 품질 ${p.q}</span></div>`:''}
   </div>`; }
 function taMore(){
@@ -1842,6 +1919,7 @@ function taRenderDetail(){
       <div><div class="l">시가총액</div><div class="v">${won(s.mc)}</div></div>
       <div><div class="l">RSI 14</div><div class="v ${s.rsi>=70?'up':s.rsi<=30?'down':''}">${s.rsi??'—'}</div></div>
       <div><div class="l">거래량</div><div class="v">${s.vr!=null?s.vr.toFixed(1)+'배':'—'}</div></div>
+      <div><div class="l">상대강도</div><div class="v">${s.rs??'—'}<small class="muted" style="font-size:12px">/99</small></div></div>
       <div><div class="l">품질</div><div class="v" style="color:var(--accent)">${p?p.q+'/100':'—'}</div></div>
     </div>
     ${(()=>{ const V=vdOf(s), P=V.plan, cls=VD[V.dir][1];
@@ -1851,7 +1929,9 @@ function taRenderDetail(){
         <div>${P?`<div class="vdplan"><div><div class="l">기준가 (종가)</div><div class="v">${num(s.last)}</div></div>
           <div><div class="l">${vdSide(V.dir)}목표가</div><div class="v" style="color:var(--good)">${num(P.target)} <small>${pct(P.target/s.last-1,1)}</small></div></div>
           <div><div class="l">${vdSide(V.dir)}손절가</div><div class="v" style="color:var(--crit)">${num(P.stop)} <small>${pct(P.stop/s.last-1,1)}</small></div></div>
-          <div><div class="l">손익비</div><div class="v">${P.rr.toFixed(2)}</div></div></div>`:''}
+          <div><div class="l">손익비</div><div class="v">${P.rr.toFixed(2)}</div></div></div>
+          <div class="sub" style="margin-top:6px">수량: 계좌 ${won(ACC.amt)}원 · 1회 위험 ${ACC.risk}% 기준 <b>${qtyTxt(s.last,P.stop)}</b> (손절 시 약 ${won((qtyOf(s.last,P.stop)?.loss)||0)}원 손실)</div>`:''}
+          ${s.w?`<div class="sub" style="margin-top:4px">돌파 대기: <b>${s.w.dir==='long'?'롱':'숏'} 트리거 ${num(s.w.trigger)}</b> (${esc(s.w.why)}, ${pct(s.w.dist,1)}) · 손절 ${num(s.w.stop)} · 목표 ${num(s.w.target)} · ${qtyTxt(s.w.trigger,s.w.stop)}${trigHit(s.s)?` · <b class="up">오늘 ${trigHit(s.s).t} 돌파</b>`:''}</div>`:''}
           <div class="vdwhy">${V.why.map(([pt,t])=>`<span class="${pt>0?'p':'m'}">${pt>0?'+':''}${pt} ${esc(t)}</span>`).join('')}</div></div></div>`; })()}
     <div class="pchips2">${s.pats.map((x,i)=>`<button class="pchip2" data-i="${i}" aria-pressed="${i===taPat}">${esc(x.name)} ${x.q}</button>`).join('')||'<span class="sub">찾은 차트 패턴 없음</span>'}</div>
     <div class="ptitle"><div><b class="ptk">${s.n}</b> <b class="${bc}">${p?esc(p.name):'차트'}</b>${p?` <span class="pst ${p.st}">${PST[p.st]}</span>`:''}</div>
@@ -1876,7 +1956,10 @@ function taRenderDetail(){
           <span>돌파 거래량</span><span>${p.vol?'평균의 1.5배 이상 ✓':'—'}</span>
           <span>품질</span><span>${p.q>=85?'교과서':p.q>=72?'양호':'보통'} · ${p.q}</span></div>`:''}
         <div class="nsec"><span>가격 정보</span></div>
-        <div class="tainfo"><span>50주선</span><span>${s.ma50w?.at(-1)!=null?`${num(s.ma50w.at(-1))} (${s.last>s.ma50w.at(-1)?'위':'아래'} ${pct(s.last/s.ma50w.at(-1)-1,1)})`:'—'}</span><span>5일 · 20일 · 60일</span><span>${cpct(s.chg5,1)} · ${cpct(s.chg20,1)} · ${cpct(s.chg60,1)}</span>
+        <div class="tainfo"><span>주봉 추세</span><span>${s.wk==='up'?'<b class="up">상승</b> (주봉이 10·30주선 위)':s.wk==='down'?'<b class="down">하락</b> (주봉이 10·30주선 아래)':s.wk?'횡보':'—'}</span>
+          <span>외국인 · 기관</span><span>${s.fl?`${s.fl.f>0?`<span class="up">${s.fl.f}일 연속 매수</span>`:s.fl.f<0?`<span class="down">${-s.fl.f}일 연속 매도</span>`:'—'} · ${s.fl.o>0?`<span class="up">${s.fl.o}일 연속 매수</span>`:s.fl.o<0?`<span class="down">${-s.fl.o}일 연속 매도</span>`:'—'}`:'—'}</span>
+          <span>5일 순매수</span><span>${s.fl?`외 ${won(s.fl.f5,true)} · 기 ${won(s.fl.o5,true)}`:'—'}</span>
+          <span>50주선</span><span>${s.ma50w?.at(-1)!=null?`${num(s.ma50w.at(-1))} (${s.last>s.ma50w.at(-1)?'위':'아래'} ${pct(s.last/s.ma50w.at(-1)-1,1)})`:'—'}</span><span>5일 · 20일 · 60일</span><span>${cpct(s.chg5,1)} · ${cpct(s.chg20,1)} · ${cpct(s.chg60,1)}</span>
           <span>52주 고가 · 저가</span><span>${num(s.hi52)} · ${num(s.lo52)}</span><span>고가 대비</span><span>${pct(s.last/s.hi52-1,1)}</span>
           <span>200일선</span><span>${s.ma200.at(-1)!=null?`${num(s.ma200.at(-1))} (${s.above200?'위':'아래'} ${pct(s.last/s.ma200.at(-1)-1,1)})`:'—'}</span></div></div>
     </div>`;
@@ -1903,7 +1986,7 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
   for(let i=0;i<n;i++){ if(s.h[i]!=null){ lo=Math.min(lo,s.l[i]); hi=Math.max(hi,s.h[i]); } }
   mas.forEach(([k])=>(s['ma'+k]||[]).forEach(v=>{ if(v!=null&&v<hi*1.25&&v>lo*.8){ lo=Math.min(lo,v); hi=Math.max(hi,v);} }));
   const PLAN=big?vdOf(s).plan:null, PD=vdOf(s).dir;
-  [PLAN?.target,PLAN?.stop,pat?.level].forEach(v=>{ if(v!=null&&v<hi*1.35&&v>lo*.65){ lo=Math.min(lo,v); hi=Math.max(hi,v);} });
+  [PLAN?.target,PLAN?.stop,pat?.level,big?s.w?.trigger:null].forEach(v=>{ if(v!=null&&v<hi*1.35&&v>lo*.65){ lo=Math.min(lo,v); hi=Math.max(hi,v);} });
   const pad=(hi-lo)*.06||1; lo-=pad; hi+=pad;
   const nF=big?12:0;                                          // 오른쪽 빈 칸: 목표·손절 구간 상자
   const step=(W-m.l-m.r)/(n+nF), x=i=>m.l+(i+.5)*step, y=v=>m.t+pH*(1-(v-lo)/(hi-lo)), cw=Math.max(1,step*.62);
@@ -1935,6 +2018,12 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
     g+=`<line x1="${m.l}" x2="${x(n-1)+step}" y1="${y(pat.level)}" y2="${y(pat.level)}" stroke="var(--pres)" stroke-width="2.6"/>`;
     labels+=tag(pat.level,'돌파선','var(--pres)');
   }
+  // 매물대 (왼쪽, 가격대별 거래량)
+  if(big&&s.vp){ const vmx=Math.max(...s.vp.v)||1, maxW=(W-m.l-m.r)*.16;
+    s.vp.v.forEach((f,k)=>{ const p0=s.vp.lo+k*s.vp.step, p1=p0+s.vp.step; if(p1<lo||p0>hi) return;
+      const ya=y(Math.min(hi,p1)), yb=y(Math.max(lo,p0)), wv=maxW*f/vmx;
+      g+=`<rect x="${m.l}" y="${ya+.5}" width="${wv}" height="${Math.max(1,yb-ya-1)}" fill="var(--ta60)" opacity="${f===vmx?.30:.13}"/>`; });
+    g+=`<text x="${m.l+4}" y="${m.t+pH-4}" font-size="10.5" fill="var(--muted)">매물대 (120일)</text>`; }
   // 이동평균
   const line=(arr,c,w,dash)=>{ let d='',pen=false; arr.forEach((v,i)=>{ if(v==null){pen=false;return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1); pen=true; }); return d?`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round" ${dash?`stroke-dasharray="${dash}"`:''}/>`:''; };
   mas.forEach(([k,,c])=>{ g+=line(s['ma'+k]||[],c,big?(k==='50w'?2.4:1.6):1.1,k==='50w'?'9 4':''); });
@@ -1951,6 +2040,11 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
       const top_=s.h[a]!=null&&v>=s.h[a]*0.998;                    // 고점에 찍힌 점은 글자를 위에, 저점은 아래에
       if(t!=='H'&&t!=='L') g+=`<text x="${x(a)}" y="${y(v)+(top_?-11:19)}" font-size="11" font-weight="700" fill="var(--pres)" text-anchor="middle" paint-order="stroke" stroke="var(--surface)" stroke-width="3">${esc(t)}</text>`; });
   }
+  // 다이버전스 (가격)
+  if(big&&s.div){ const [ty,i1,i2,p1,p2]=s.div, c_=ty==='bull'?'var(--up)':'var(--down)';
+    g+=`<line x1="${x(i1)}" y1="${y(p1)}" x2="${x(i2)}" y2="${y(p2)}" stroke="${c_}" stroke-width="2.4" stroke-dasharray="2 3"/><text x="${x(i2)}" y="${y(p2)+(ty==='bull'?22:-12)}" font-size="11" font-weight="700" fill="${c_}" text-anchor="middle" paint-order="stroke" stroke="var(--surface)" stroke-width="3">${ty==='bull'?'상승':'하락'} 다이버전스</text>`; }
+  // 돌파 대기 트리거
+  if(big&&s.w&&s.w.trigger>=lo&&s.w.trigger<=hi){ g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(s.w.trigger)}" y2="${y(s.w.trigger)}" stroke="var(--ta60)" stroke-width="1.6" stroke-dasharray="8 4"/>`; labels+=tag(s.w.trigger,'트리거','var(--ta60)'); }
   // 크로스 표시
   if(big) s.sig.filter(z=>['gc','gc_long','ma200_up','ma200_dn','w50_up','w50_dn'].includes(z.k)&&z.ago!=null).forEach(z=>{
     const i=n-1-z.ago, arr=z.k.startsWith('ma200')||z.k.startsWith('w50')?s.c:z.k==='gc_long'?s.ma60:s.ma20, v=arr[i]; if(v==null) return;
@@ -1966,7 +2060,9 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
     g+=`<rect x="${m.l}" y="${ry}" width="${W-m.l-m.r}" height="${rsiH}" fill="none" stroke="var(--grid)"/>`;
     [30,70].forEach(t=>g+=`<line x1="${m.l}" x2="${W-m.r}" y1="${ry+rsiH*(1-t/100)}" y2="${ry+rsiH*(1-t/100)}" stroke="var(--axis)" stroke-dasharray="2 3"/><text class="axis-t" x="${W-m.r+8}" y="${ry+rsiH*(1-t/100)+4}">${t}</text>`);
     let d='',pen=false; rv.forEach((v,i)=>{ if(v==null){pen=false;return;} d+=(pen?'L':'M')+x(i).toFixed(1)+','+(ry+rsiH*(1-v/100)).toFixed(1); pen=true; });
-    g+=`<path d="${d}" fill="none" stroke="var(--ta60)" stroke-width="1.4"/><text x="${m.l+6}" y="${ry+13}" font-size="11" fill="var(--muted)">RSI 14</text>`; }
+    g+=`<path d="${d}" fill="none" stroke="var(--ta60)" stroke-width="1.4"/><text x="${m.l+6}" y="${ry+13}" font-size="11" fill="var(--muted)">RSI 14</text>`;
+    if(s.div){ const [ty,i1,i2,,,r1,r2]=s.div, c_=ty==='bull'?'var(--up)':'var(--down)', yy=v_=>ry+rsiH*(1-v_/100);
+      g+=`<line x1="${x(i1)}" y1="${yy(r1)}" x2="${x(i2)}" y2="${yy(r2)}" stroke="${c_}" stroke-width="2.4" stroke-dasharray="2 3"/><circle cx="${x(i1)}" cy="${yy(r1)}" r="3" fill="${c_}"/><circle cx="${x(i2)}" cy="${yy(r2)}" r="3" fill="${c_}"/>`; } }
   labels+=drawTags();
   box.innerHTML=`<svg height="${H}" viewBox="0 0 ${W} ${H}" style="display:block;width:100%;overflow:visible">${g}${labels}${big?`<line class="xh" y1="${m.t}" y2="${H-m.b}" stroke="var(--axis)" style="display:none"/><rect class="hit" x="${m.l}" y="0" width="${W-m.l-m.r}" height="${H}" fill="transparent"/>`:''}</svg>`;
   if(big){ const svg=box.querySelector('svg'), xh=svg.querySelector('.xh'), D_=TA.dates||[];
