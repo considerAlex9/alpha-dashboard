@@ -282,6 +282,8 @@ def analyze(meta, bars):
         for k in ("target", "stop", "level"):
             if p.get(k) is not None:
                 p[k] = round(p[k])
+        if p.get("bi") is not None:
+            p["bi"] = w(p["bi"])                       # 돌파일도 화면 창 기준으로
     iv = lambda a: [None if x is None else int(round(x)) for x in a[-SHOW:]]
     chg = lambda k: round(c[-1] / c[-1 - k] - 1, 5) if n > k and c[-1 - k] else None
     av20 = sum(v[-21:-1]) / 20
@@ -296,10 +298,22 @@ def analyze(meta, bars):
 def collect(kis=None, held=None, log=print):
     t0 = time.time()
     held = held or {}
+    import market
+    import ta_lab
     uni = universe(log)
     fails, halted = [], []
     now = datetime.now(KST)
     today, closed = now.strftime("%Y-%m-%d"), now.hour * 60 + now.minute >= 15 * 60 + 40
+
+    def index_bars(kis_code, naver_sym):
+        try:
+            bars = market.daily_bars(naver_sym, 700)          # 성적표 기간 전체의 시장 환경을 보려고 길게 (네이버)
+        except Exception:  # noqa: BLE001
+            bars = kis.index_daily(kis_code, 420) if kis else []
+        bars = [b[:6] for b in bars]
+        return bars[:-1] if bars and bars[-1][0] == today and not closed else bars
+    kospi, kosdaq = index_bars("0001", "KOSPI"), index_bars("1001", "KOSDAQ")
+    regime = ta_lab.regime_map(kospi)
 
     def one(m):
         bars = None
@@ -326,15 +340,29 @@ def collect(kis=None, held=None, log=print):
             fails.append(f"{m['s']}:{len(bars) if bars else 0}일")
             return None
         try:
-            return analyze({**m, "held": held.get(m["s"])}, bars)
+            res = analyze({**m, "held": held.get(m["s"])}, bars)
+            try:                                                # 신호 성적표는 더 긴 네이버 일봉(700일)으로 검증
+                long_bars = [b[:6] for b in naver_bars(m["s"], 700) if b[2] > 0 and b[3] > 0 and b[4] > 0 and b[0] <= bars[-1][0]]
+            except Exception:  # noqa: BLE001
+                long_bars = None
+            try:
+                res["_bt"] = ta_lab.backtest(long_bars if long_bars and len(long_bars) > len(bars) else bars, regime)
+            except Exception:  # noqa: BLE001 — 성적표 계산이 실패해도 종목 분석은 살림
+                res["_bt"] = ([], {"up": [0, 0.0, 0], "down": [0, 0.0, 0]})
+            return res
         except Exception as e:  # noqa: BLE001
             fails.append(f"{m['s']}:{e}")
             return None
     with ThreadPoolExecutor(max_workers=4 if kis else 6) as ex:
         stocks = [r for r in ex.map(one, uni) if r]
+    bt_ev, bt_base = [], []
+    for s in stocks:
+        ev, b = s.pop("_bt")
+        bt_ev += ev
+        bt_base.append(b)
+    bt = ta_lab.aggregate(bt_ev, bt_base)
     last = max(s["date"] for s in stocks)
     stocks = [s for s in stocks if s["date"] == last]              # 거래정지 등으로 오늘 일봉이 없는 종목 제외
-    import market
     ref = market.daily_bars("005930", 400)                          # 날짜 축 (삼성전자 기준)
     dates = [b[0] for b in ref if b[0] <= last][-SHOW:]
     cnt = {}
@@ -343,8 +371,16 @@ def collect(kis=None, held=None, log=print):
             cnt[x["k"]] = cnt.get(x["k"], 0) + 1
     log(f"  기술적 분석: {len(stocks)}종목 · 거래량 0(거래정지) 제외 {len(halted)} {halted[:6]} · 실패 {len(fails)} {fails[:6]} · " + ", ".join(f"{k} {v}" for k, v in sorted(cnt.items())) +
         f" · 패턴 {sum(len(s['pats']) for s in stocks)} · {time.time() - t0:.0f}초")
+    env_ = ta_lab.market_env(kospi, kosdaq, stocks)
+    tlog = ta_lab.update_log(json.loads((DATA / "ta_log.json").read_text(encoding="utf-8")) if (DATA / "ta_log.json").exists() else {},
+                             last, stocks)
+    (DATA / "ta_log.json").write_text(json.dumps(tlog, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    kd = [b[0] for b in kospi]
+    bt["period"] = [kd[min(ta_lab.START, len(kd) - 1)], kd[-1 - ta_lab.H]] if len(kd) > ta_lab.START + ta_lab.H else None
+    log(f"  신호 성적표: 신호·패턴 {len(bt['rows'])}종 · 사건 {len(bt_ev)}건 · 시장 환경 {env_['label']} · 기록장 {len(tlog)}일")
     return {"captured_at": datetime.now(KST).isoformat(), "date": last, "dates": dates, "stocks": stocks,
-            "counts": cnt, "failed": len(fails)}
+            "counts": cnt, "failed": len(fails), "bt": bt, "market": env_,
+            "log": ta_lab.log_summary(tlog, stocks, dates, kospi)}
 
 
 if __name__ == "__main__":
@@ -369,3 +405,9 @@ if __name__ == "__main__":
         print(f"  기술적 분석: {d['date']} 자료가 이미 있음 (휴장일) → 저장 안 함")
         sys.exit(0)
     (DATA / "kr_ta.json").write_text(json.dumps(d, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    if env.get("TELEGRAM_BOT_TOKEN") and env.get("TELEGRAM_CHAT_ID"):        # 내 텔레그램으로 오늘의 기술적 분석 요약
+        try:
+            import alerts
+            alerts.ta_digest(env["TELEGRAM_BOT_TOKEN"], env["TELEGRAM_CHAT_ID"])
+        except Exception as e:  # noqa: BLE001
+            print(f"  [경고] 텔레그램 기술적 분석 요약 실패: {e}")

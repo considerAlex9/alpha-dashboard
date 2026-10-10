@@ -232,7 +232,7 @@ def detect(o, h, l, c, v):
         q = int(max(30, min(100, q + (8 if _vol_ok(v, brk) else 0))))
         pats.append({"k": kind, "name": name, "fam": fam, "bias": bias, "st": status, "q": q,
                      "target": round(target, 2), "stop": round(stop, 2), "level": round(level, 2) if level else None,
-                     "rr": round(rr, 2) if rr is not None else None, "lines": lines, "pts": pts, "vol": _vol_ok(v, brk)})
+                     "rr": round(rr, 2) if rr is not None else None, "lines": lines, "pts": pts, "vol": _vol_ok(v, brk), "bi": brk})
 
     # 1) 삼각형·쐐기·채널: 최근 스윙 고점 3개, 저점 3개
     H3 = [i for i in hi if i >= n - 90][-3:]
@@ -334,6 +334,8 @@ def detect(o, h, l, c, v):
         else:
             p1 = min(range(i1, i2 + 1), key=lambda i: other[i])
             p2 = min(range(i2, i3 + 1), key=lambda i: other[i])
+        if p1 == p2:                                 # 두 꼭짓점이 같은 날이면 목선을 그을 수 없음
+            continue
         sl_ = (other[p2] - other[p1]) / (p2 - p1)
         neck = lambda i, p1=p1, sl_=sl_: other[p1] + sl_ * (i - p1)
         depth = abs(neck(i2) - B)

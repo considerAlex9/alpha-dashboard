@@ -66,6 +66,11 @@ class KIS:
                     d = json.load(r)
             except urllib.error.HTTPError as e:
                 d = json.loads(e.read() or b"{}")
+            except (urllib.error.URLError, ConnectionError, TimeoutError, OSError) as e:     # 연결 끊김 → 잠깐 쉬고 다시
+                if i == tries - 1:
+                    raise RuntimeError(f"{tr_id} 연결 실패: {e}")
+                time.sleep(1.5 * (i + 1))
+                continue
             if d.get("rt_cd") == "0":
                 return d
             if d.get("msg_cd") == "EGW00201":        # 초당 호출 초과 → 잠깐 쉬고 재시도

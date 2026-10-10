@@ -462,6 +462,25 @@ tr.click{cursor:pointer}
 .invtbl td:first-child{max-width:150px;overflow:hidden;text-overflow:ellipsis}
 .invtbl .mk{font-size:10.5px;color:var(--muted);margin-left:5px}
 
+/* 시장 환경 · 신호 성적표 */
+.envbar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:12px;background:var(--surface)}
+.envbar.up{border-color:color-mix(in srgb,var(--up) 40%,transparent);background:color-mix(in srgb,var(--up) 5%,var(--surface))}
+.envbar.down{border-color:color-mix(in srgb,var(--down) 40%,transparent);background:color-mix(in srgb,var(--down) 5%,var(--surface))}
+.envtag{font-weight:800;font-size:14px;padding:3px 10px;border-radius:999px;background:var(--surface-2)}
+.envtag.up{background:var(--up);color:#fff} .envtag.down{background:var(--down);color:#fff}
+.envnums{display:flex;flex-direction:column;gap:2px;font-size:12px;color:var(--ink-2);text-align:right}
+.envwarn{margin-top:6px;font-size:12px;font-weight:650;color:#b45309}
+.taviewbar{margin-bottom:12px}
+.btbase{font-size:12.5px;line-height:1.7;background:var(--surface-2);border-radius:10px;padding:10px 12px;color:var(--ink-2)}
+.bttbl td,.bttbl th{padding:7px 8px;font-size:12.5px}
+.bttbl tr.few td{opacity:.6}
+.wbar{position:relative;display:inline-block;width:110px;height:8px;border-radius:4px;background:var(--surface-2);vertical-align:middle;margin-right:6px}
+.wbar b{position:absolute;left:0;top:0;bottom:0;border-radius:4px} .wbar b.g{background:var(--good)} .wbar b.r{background:var(--crit);opacity:.7}
+.wbar i{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+.btmini{display:inline-block;font-size:11.5px;font-weight:650;padding:2px 8px;border-radius:6px;background:var(--surface-2)}
+.btmini.good{color:var(--good);background:color-mix(in srgb,var(--good) 10%,transparent)} .btmini.bad{color:var(--crit);background:color-mix(in srgb,var(--crit) 8%,transparent)}
+@media (max-width:640px){ .envnums{text-align:left} }
+
 /* 설치 버튼 */
 .installbtn{display:none;cursor:pointer}
 .installbtn.on{display:inline-flex}
@@ -1609,8 +1628,11 @@ async function renderTA(){
     TA.stocks.forEach(s=>{ s.held=posBySym[s.s]?.side||s.held||null; s.above200=s.ma200.at(-1)!=null&&s.c.at(-1)>s.ma200.at(-1); });
   }
   const S=TA.stocks;
-  document.getElementById('tasub').textContent=`${dayLabel(TA.date)} 종가 · 코스피 보통주 ${S.filter(s=>s.m==='KOSPI').length} + 코스닥 시총 상위 ${S.filter(s=>s.m==='KOSDAQ').length} · 네이버 일봉 · 매 거래일 16:40 업데이트`;
-  box.innerHTML=`
+  document.getElementById('tasub').textContent=`${dayLabel(TA.date)} 종가 · 코스피 보통주 ${S.filter(s=>s.m==='KOSPI').length} + 코스닥 시총 상위 ${S.filter(s=>s.m==='KOSDAQ').length} · 한국투자증권 일봉 · 매 거래일 16:40 업데이트`;
+  box.innerHTML=`${taEnvBanner()}
+    <div class="taviewbar"><div class="seg" id="taview"><button data-v="scan" aria-pressed="true">종목 스캔</button><button data-v="bt" aria-pressed="false">신호 성적표</button></div></div>
+    <div id="taview_bt" hidden></div>
+    <div id="taview_scan">
     <section class="grid c4" id="tatiles"></section>
     <section class="card mt"><div class="card-h"><div><h3>신호판</h3><div class="sub">누르면 그 신호가 나온 종목만 봅니다 · 골든크로스·200일선은 최근 5거래일(장기 골든크로스는 10거래일) 안에 나온 것 · 데드크로스는 잡음이 많아 뺐어요</div></div>
       <div class="seg" id="tamk"><button data-m="all" aria-pressed="true">전체</button><button data-m="KOSPI" aria-pressed="false">코스피</button><button data-m="KOSDAQ" aria-pressed="false">코스닥100</button></div></div>
@@ -1628,7 +1650,10 @@ async function renderTA(){
         <div class="tacards" id="tacards"></div>
         <button class="morebtn" id="tamore" hidden></button>
       </div>
-    </section>`;
+    </section>
+    </div>`;
+  document.querySelectorAll('#taview button').forEach(b=>b.onclick=()=>taShowView(b.dataset.v));
+  if(taView!=='scan') taShowView(taView);
   // 요약 타일
   const n=S.length, c=k=>S.filter(s=>s.sig.some(x=>x.k===k)).length;
   const up=S.filter(s=>s.trend==='up').length, dn=S.filter(s=>s.trend==='down').length, a200=S.filter(s=>s.above200).length;
@@ -1681,6 +1706,75 @@ function taSortKey(s){
     case 'vd': return -vdOf(s).score; case 'vds': return vdOf(s).score;
     case 'sig': return -s.sig.filter(x=>x.tone!=='info').length*10-(s.sig.some(x=>x.ago===0)?1:0); case 'q': return s.pats[0]?-s.pats[0].q:1e9;
     default: return -s.mc; } }
+// ---------- 시장 환경 띠 · 화면 전환 · 신호 성적표 · 신호 기록장 ----------
+let taView='scan', btReg='all';
+const REG={up:['상승장','up'],down:['약세장','down'],mixed:['조정·혼조','']};
+function taEnvBanner(){
+  const E=TA.market; if(!E) return '';
+  const k=E.kospi, b=E.breadth, r=REG[E.regime]||['—',''];
+  return `<section class="envbar ${r[1]}"><div><span class="envtag ${r[1]}">시장 환경 · ${r[0]}</span> <span class="sub" style="color:var(--ink-2)">${esc(E.note)}</span></div>
+    <div class="envnums"><span>코스피 ${num(k.close,2)} · 200일선 ${k.above200?'위':'아래'} · 50일선 ${k.above50?'위':'아래'} · 20일 ${pct(k.chg20,1)}</span>
+      <span>200일선 위 종목 ${(b.above200*100).toFixed(0)}% · 상승 추세 ${(b.trend_up*100).toFixed(0)}% · 하락 추세 ${(b.trend_down*100).toFixed(0)}%</span></div></section>`;
+}
+// 신호·패턴 → 성적표 한 줄
+function btRow(kind,k,bias){ const R=TA.bt?.rows||[]; return R.find(r=>kind==='pattern'?(r.kind==='pattern'&&r.k===k&&r.bias===bias):(r.kind==='signal'&&r.k===k)); }
+function btSigKey(x,s){ if(x.k==='align_up'||x.k==='align_dn') return x.name.includes('전환')?x.k:null;
+  if(x.k==='vol') return s.c.at(-1)>=s.o.at(-1)?'vol_up':'vol_dn'; if(x.k==='hi52') return 'hi52';
+  return ['gc','gc_long','ma200_up','ma200_dn','w50_up','w50_dn','rsi_lo','rsi_hi','base_bo'].includes(x.k)?x.k:null; }
+function btMini(row){ if(!row) return ''; const g=row[TA.market?.regime==='down'?'down':TA.market?.regime==='up'?'up':'all']; const a=row.all;
+  const st=(g&&g.n>=20)?g:a; if(!st||!st.n) return '';
+  const base=TA.bt.baseline[(st===a)?'all':(TA.market.regime)]||TA.bt.baseline.all;
+  const edge=row.bias==='bull'?st.avg20-base.avg20:base.avg20-st.avg20;
+  return `<span class="btmini ${edge>0?'good':'bad'}">과거 ${st===a?'':REG[TA.market.regime][0]+' '}20일 적중 ${(st.win20*100).toFixed(0)}% · 평균 ${pct(st.avg20,1)} · 기준 대비 ${edge>0?'+':''}${(edge*100).toFixed(1)}%p (${st.n}회)</span>`; }
+
+function renderBT(){
+  const el=document.getElementById('taview_bt'), B=TA.bt;
+  if(!B){ el.innerHTML='<div class="empty">신호 성적표는 다음 자동 업데이트(거래일 16:40) 후 표시됩니다.</div>'; return; }
+  const base=B.baseline[btReg]||B.baseline.all;
+  const per=B.period?`${B.period[0].replaceAll('-','.')} ~ ${B.period[1].replaceAll('-','.')}`:'';
+  const row=(r)=>{ const g=r[btReg]; if(!g||!g.n) return '';
+    const edge=r.bias==='bull'?g.avg20-base.avg20:base.avg20-g.avg20, few=g.n<30;
+    const wb=r.bias==='bull'?base.up20:1-base.up20;
+    return `<tr class="${few?'few':''}"><td class="l">${esc(r.name)}${few?' <span class="tag plain">표본 적음</span>':''}</td>
+      <td class="l"><span class="stag ${r.bias==='bull'?'bull':'bear'}">${r.bias==='bull'?'상승':'하락'}</span></td>
+      <td>${num(g.n)}</td>
+      ${r.kind==='pattern'?`<td style="color:var(--good);font-weight:650">${(g.hit*100).toFixed(0)}%</td><td style="color:var(--crit)">${(g.stop*100).toFixed(0)}%</td>`:''}
+      <td>${cpct(g.avg5,1)}</td><td>${cpct(g.avg20,1)}</td>
+      <td><b class="${edge>0?'up':'down'}">${edge>0?'+':''}${(edge*100).toFixed(1)}%p</b></td>
+      <td style="min-width:150px"><div class="wbar"><b style="width:${g.win20*100}%" class="${g.win20>wb?'g':'r'}"></b><i style="left:${wb*100}%"></i></div><small>${(g.win20*100).toFixed(0)}%</small></td></tr>`; };
+  const sigs=B.rows.filter(r=>r.kind==='signal').sort((a,b)=>((b[btReg]?.n?1:0)-(a[btReg]?.n?1:0))||((b.bias==='bull'?b[btReg]?.avg20-base.avg20:base.avg20-b[btReg]?.avg20)-(a.bias==='bull'?a[btReg]?.avg20-base.avg20:base.avg20-a[btReg]?.avg20)));
+  const pats=B.rows.filter(r=>r.kind==='pattern').sort((a,b)=>(b[btReg]?.hit||0)-(a[btReg]?.hit||0));
+  const L=TA.log||[];
+  const lg=v=>v==null?'<span class="muted">—</span>':cpct(v,1);
+  el.innerHTML=`
+    <section class="card">
+      <div class="card-h"><div><h3>신호 성적표</h3><div class="sub">과거 ${per} · 국내 ${TA.stocks.length}종목 · 신호가 나온 날 종가에 샀다고(하락 신호는 팔았다고) 했을 때의 성적 · 네이버 일봉 약 1년 8개월</div></div>
+        <div class="seg" id="btreg"><button data-g="all" aria-pressed="${btReg==='all'}">전체 기간</button><button data-g="up" aria-pressed="${btReg==='up'}">상승장일 때</button><button data-g="down" aria-pressed="${btReg==='down'}">약세장일 때</button></div></div>
+      <div class="btbase">기준 — 같은 기간 <b>아무 날이나 샀을 때</b>: 20일 평균 <b class="${dir(base.avg20)}">${pct(base.avg20,1)}</b> · 오른 비율 <b>${(base.up20*100).toFixed(0)}%</b> (${num(base.n)}번).
+        신호가 의미 있으려면 이보다 나아야 해요. <span class="muted">'기준 대비'는 상승 신호면 기준보다 더 오른 정도, 하락 신호면 기준보다 덜 오른(더 내린) 정도예요. '적중률'은 20일 뒤 상승 신호는 올랐는지, 하락 신호는 내렸는지예요. 막대의 세로선은 기준 비율이에요.</span></div>
+      <div class="nsec"><span>이동평균·가격·거래량 신호</span></div>
+      <div class="tbl-wrap"><table class="bttbl"><thead><tr><th class="l">신호</th><th class="l">방향</th><th>횟수</th><th>5일 평균</th><th>20일 평균</th><th>기준 대비</th><th class="l">20일 적중률</th></tr></thead><tbody>${sigs.map(row).join('')}</tbody></table></div>
+      <div class="nsec"><span>차트 패턴 (돌파 확정 다음 날부터 40거래일 동안 목표·손절 중 먼저 닿은 쪽)</span></div>
+      <div class="tbl-wrap"><table class="bttbl"><thead><tr><th class="l">패턴</th><th class="l">방향</th><th>횟수</th><th>목표 먼저</th><th>손절 먼저</th><th>5일 평균</th><th>20일 평균</th><th>기준 대비</th><th class="l">20일 적중률</th></tr></thead><tbody>${pats.map(row).join('')}</tbody></table></div>
+    </section>
+    <section class="card mt">
+      <div class="card-h"><div><h3>신호 기록장</h3><div class="sub">매일 16:40의 종합 판단(롱·숏 관점 종목)을 저장해 두고, 5·20거래일 뒤 평균 수익률을 채워요 · 숏은 내렸을수록 적중</div></div></div>
+      ${L.length?`<div class="tbl-wrap"><table class="bttbl"><thead><tr><th class="l">판단한 날</th><th>롱 종목</th><th>숏 종목</th><th>롱 5일</th><th>숏 5일</th><th>코스피 5일</th><th>롱 20일</th><th>숏 20일</th><th>코스피 20일</th></tr></thead><tbody>
+        ${L.map(r=>`<tr><td class="l">${dayLabel(r.date)}</td><td>${r.n_long}</td><td>${r.n_short}</td><td>${lg(r.long5)}${r.long5_win!=null?` <small class="muted">${(r.long5_win*100).toFixed(0)}%</small>`:''}</td><td>${lg(r.short5)}${r.short5_win!=null?` <small class="muted">${(r.short5_win*100).toFixed(0)}%</small>`:''}</td><td>${lg(r.kospi5)}</td>
+          <td>${lg(r.long20)}</td><td>${lg(r.short20)}</td><td>${lg(r.kospi20)}</td></tr>`).join('')}</tbody></table></div>
+        <div class="sub" style="margin-top:6px">${L.some(r=>r.long5!=null)?'작은 숫자는 적중 비율(롱은 오른 종목, 숏은 내린 종목 비율)이에요.':'기록을 막 시작했어요. 판단한 날로부터 5거래일이 지나면 결과가 채워져요.'}</div>`
+        :'<div class="empty">기록을 막 시작했어요. 판단한 날로부터 5거래일이 지나면 결과가 채워져요.</div>'}
+    </section>`;
+  seg('btreg',d=>{ btReg=d.g; renderBT(); });
+}
+function taShowView(v){
+  taView=v;
+  document.querySelectorAll('#taview button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v));
+  document.getElementById('taview_scan').hidden=v!=='scan';
+  document.getElementById('taview_bt').hidden=v!=='bt';
+  if(v==='bt') renderBT();
+}
+
 function taRenderList(){
   taList=TA.stocks.filter(taPass).sort((a,b)=>taSortKey(a)-taSortKey(b));
   const lab=TF.sig?(SIG_GROUPS.flatMap(g=>g[1]).find(x=>x[0]===TF.sig)?.[1]||{pat_bull:'상승 패턴',pat_bear:'하락 패턴',pat_conf:'패턴 돌파 확정'}[TF.sig]):'';
@@ -1752,7 +1846,8 @@ function taRenderDetail(){
     </div>
     ${(()=>{ const V=vdOf(s), P=V.plan, cls=VD[V.dir][1];
       return `<div class="vdbox ${cls}"><div class="vdhead"><div class="l">종합 판단 (점수 ${V.score>0?'+':''}${V.score})</div><div class="v ${cls}">${VD[V.dir][0]}</div>
-        <div class="n">${V.dir==='wait'?'오를 신호와 내릴 신호가 섞여 방향이 뚜렷하지 않아요':P?esc(P.basis):'목표·손절을 잡을 지지·저항선이 없어요'}</div></div>
+        <div class="n">${V.dir==='wait'?'오를 신호와 내릴 신호가 섞여 방향이 뚜렷하지 않아요':P?esc(P.basis):'목표·손절을 잡을 지지·저항선이 없어요'}</div>
+        ${TA.market&&((V.dir==='long'&&TA.market.regime==='down')||(V.dir==='short'&&TA.market.regime==='up'))?`<div class="envwarn">⚠ 지금은 ${REG[TA.market.regime][0]}이라 ${V.dir==='long'?'롱':'숏'} 신호의 신뢰도가 낮아요</div>`:''}</div>
         <div>${P?`<div class="vdplan"><div><div class="l">기준가 (종가)</div><div class="v">${num(s.last)}</div></div>
           <div><div class="l">${vdSide(V.dir)}목표가</div><div class="v" style="color:var(--good)">${num(P.target)} <small>${pct(P.target/s.last-1,1)}</small></div></div>
           <div><div class="l">${vdSide(V.dir)}손절가</div><div class="v" style="color:var(--crit)">${num(P.stop)} <small>${pct(P.stop/s.last-1,1)}</small></div></div>
@@ -1768,8 +1863,10 @@ function taRenderDetail(){
     <div class="mcols">
       <div><div class="nsec" style="margin-top:6px"><span>신호 ${s.sig.length}개</span></div>
         <div class="tasigs">${s.sig.map(x=>`<div class="tasig"><span class="stag ${x.tone}">${esc(x.name)}</span><span class="sub">${esc(x.note)}${x.ago!=null?` · ${agoTxt(x.ago)}`:''}</span>
+          ${btSigKey(x,s)?`<div style="margin-top:4px">${btMini(btRow('signal',btSigKey(x,s)))}</div>`:''}
           <div class="sub" style="margin-top:3px;color:var(--ink-2)">${SIG_DESC[x.k]||''}</div></div>`).join('')||'<div class="sub">눈에 띄는 신호가 없어요.</div>'}</div></div>
       <div>${p?`<div class="nsec" style="margin-top:6px"><span>패턴 해설 (참고) · ${esc(p.fam)} · ${p.bias==='bull'?'상승 (롱 관점)':p.bias==='bear'?'하락 (숏 관점)':'중립'}</span></div>
+        <div style="margin-bottom:6px">${btMini(btRow('pattern',p.k,p.bias))}</div>
         <div class="sub" style="color:var(--ink-2);line-height:1.65">${PAT_DESC[p.k]||''}${p.st==='target'?' <b style="color:var(--accent)">이미 목표가에 도달한 패턴이에요. 새로 들어갈 자리가 아니라 지나간 신호로 보세요.</b>':p.bias==='bear'?' <b>하락(숏) 관점이라 목표가는 아래, 손절가는 위에 있어요.</b>':p.bias==='bull'?' <b>상승(롱) 관점이라 목표가는 위, 손절가는 아래에 있어요.</b>':''}</div>
         <div class="tainfo" style="margin-top:10px">
           <span>패턴 기준 ${side(p)}목표</span><span style="color:var(--good);font-weight:650">${num(p.target)} (${pct(p.target/s.last-1,1)})</span>

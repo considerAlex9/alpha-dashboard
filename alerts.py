@@ -242,3 +242,39 @@ if __name__ == "__main__":
     else:
         for k, g, t in gather(datetime.now(KST)):
             print(g, "|", k, "|", t)
+
+
+def ta_digest(token, chat, log=print):
+    """거래일 16:40 기술적 분석이 끝나면: 시장 환경 + 오늘 새로 롱·숏 관점이 된 종목 + 새 돌파 확정 패턴 (하루 한 번)"""
+    d = _read(DATA / "kr_ta.json", None)
+    if not d:
+        return
+    st = _read(STATE, {"sent": {}})
+    key = f"ta:{d['date']}"
+    if key in st["sent"]:
+        return
+    tlog = _read(DATA / "ta_log.json", {})
+    days = sorted(tlog)
+    prev = {r[0]: r[2] for r in tlog.get(days[-2], [])} if len(days) >= 2 else {}
+    S = d["stocks"]
+    mk = d.get("market") or {}
+    lines = [f"📈 <b>기술적 분석</b> · {d['date'][5:7]}/{d['date'][8:10]} 종가",
+             f"시장 환경: <b>{e(mk.get('label', '—'))}</b> — {e(mk.get('note', ''))}"]
+    for side, ko in (("long", "롱"), ("short", "숏")):
+        new = [s for s in S if s["vd"]["dir"] == side and prev.get(s["s"]) != side]
+        new.sort(key=lambda s: -abs(s["vd"]["score"]))
+        lines.append(f"\n<b>새로 {ko} 관점</b> {len(new)}종목 (전체 {sum(1 for s in S if s['vd']['dir'] == side)})")
+        for s in new[:6]:
+            p = s["vd"].get("plan") or {}
+            why = ", ".join(w[1] for w in s["vd"]["why"][:2])
+            lines.append(f"• {e(s['n'])} {s['vd']['score']:+d} · 목표 {p.get('target', 0):,} / 손절 {p.get('stop', 0):,} · {e(why)}")
+    fresh = [(s, p) for s in S for p in s["pats"] if p["st"] == "confirmed" and p.get("bi") is not None and p["bi"] >= len(s["c"]) - 2]     # 최근 2거래일 안에 돌파
+    if fresh:
+        lines.append("\n<b>오늘 돌파 확정 패턴</b>")
+        for s, p in sorted(fresh, key=lambda x: -x[1]["q"])[:6]:
+            lines.append(f"• {e(s['n'])} {e(p['name'])} (품질 {p['q']})")
+    lines.append(f'\n<a href="{SITE}#ta">대시보드에서 차트 보기</a>')
+    send(token, chat, "\n".join(lines))
+    st["sent"][key] = datetime.now(KST).isoformat()
+    STATE.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+    log("  텔레그램: 기술적 분석 요약 보냄")
