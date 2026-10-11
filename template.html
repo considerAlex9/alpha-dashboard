@@ -1574,7 +1574,10 @@ function drawWrapCharts(){
 // 기술적 분석 (코스피 전 종목 + 코스닥 시총 상위 100) — 탭을 열 때 data/kr_ta.json 을 따로 불러옴
 // ============================================================
 let TA=null, taLoading=false, taSel=null, taPat=0, taShown=0, taList=[];
-const TF={mk:'all', sig:null, trend:'all', q:'', held:false, sort:'mc', pat:''};
+const TF={mk:'all', sigs:new Set(), mode:'and', trend:'all', q:'', held:false, sort:'mc', pat:''};
+const sigMatch=(s,k)=>k.startsWith('pat_')?taPatMatch(s,k):!!taSigOf(s,k);
+const sigsPass=(s,set)=>!set.size||(TF.mode==='and'?[...set].every(k=>sigMatch(s,k)):[...set].some(k=>sigMatch(s,k)));
+const SIG_LABEL=k=>SIG_GROUPS.flatMap(g=>g[1]).find(x=>x[0]===k)?.[1]||{pat_bull:'상승 패턴',pat_bear:'하락 패턴',pat_conf:'패턴 돌파 확정'}[k]||k;
 const TA_PAGE=48;
 const SIG_GROUPS=[
   ['종합 판단',[['vd_long','롱 관점'],['vd_short','숏 관점'],['vd_wait','관망']]],
@@ -1652,8 +1655,9 @@ async function renderTA(){
     <div id="taview_bt" hidden></div>
     <div id="taview_scan" hidden>
     <section class="grid c4" id="tatiles"></section>
-    <section class="card mt"><div class="card-h"><div><h3>신호판</h3><div class="sub">누르면 그 신호가 나온 종목만 봅니다 · 골든크로스·200일선은 최근 5거래일(장기 골든크로스는 10거래일) 안에 나온 것 · 데드크로스는 잡음이 많아 뺐어요</div></div>
-      <div class="seg" id="tamk"><button data-m="all" aria-pressed="true">전체</button><button data-m="KOSPI" aria-pressed="false">코스피</button><button data-m="KOSDAQ" aria-pressed="false">코스닥100</button></div></div>
+    <section class="card mt"><div class="card-h"><div><h3>신호판</h3><div class="sub">여러 개를 함께 고를 수 있어요 · 「모두 만족」이면 고른 신호가 전부 나온 종목, 「하나라도」면 하나라도 나온 종목 · 숫자는 지금 고른 조건에 더했을 때 남는 종목 수 · 골든크로스·200일선은 최근 5거래일(장기 골든크로스는 10거래일) 안에 나온 것 · 데드크로스는 잡음이 많아 뺐어요</div></div>
+      <div class="ctrl"><button class="link" id="tasigclr" hidden>선택 모두 해제</button><div class="seg" id="tasigmode"><button data-m="and" aria-pressed="true">모두 만족</button><button data-m="or" aria-pressed="false">하나라도</button></div>
+      <div class="seg" id="tamk"><button data-m="all" aria-pressed="true">전체</button><button data-m="KOSPI" aria-pressed="false">코스피</button><button data-m="KOSDAQ" aria-pressed="false">코스닥100</button></div></div></div>
       <div class="sigboard" id="sigboard"></div></section>
     <section class="tawrap mt">
       <div class="card" style="min-width:0">
@@ -1685,12 +1689,15 @@ async function renderTA(){
   const sb=document.getElementById('sigboard');
   const pool=S.filter(s=>TF.mk==='all'||s.m===TF.mk);
   sb.innerHTML=SIG_GROUPS.map(([g,items])=>`<div class="sgroup"><div class="sgt">${g}</div><div class="sgi">${items.map(([k,l])=>{
-      const cnt=pool.filter(s=>taSigOf(s,k)).length, tone=(SIG_TONE[k]||'info');
-      return `<button class="sigbtn ${tone}" data-k="${k}" aria-pressed="${TF.sig===k}"><span>${l}</span><b>${cnt}</b></button>`; }).join('')}</div></div>`).join('')+
+      const cnt=pool.filter(s=>sigMatch(s,k)&&(TF.mode!=='and'||sigsPass(s,TF.sigs))).length, tone=(SIG_TONE[k]||'info');
+      return `<button class="sigbtn ${tone}" data-k="${k}" aria-pressed="${TF.sigs.has(k)}"><span>${l}</span><b>${cnt}</b></button>`; }).join('')}</div></div>`).join('')+
     `<div class="sgroup"><div class="sgt">차트 패턴</div><div class="sgi">${[['pat_bull','상승 패턴'],['pat_bear','하락 패턴'],['pat_conf','돌파 확정']].map(([k,l])=>{
-      const cnt=pool.filter(s=>taPatMatch(s,k)).length;
-      return `<button class="sigbtn ${k==='pat_bear'?'bear':'bull'}" data-k="${k}" aria-pressed="${TF.sig===k}"><span>${l}</span><b>${cnt}</b></button>`; }).join('')}</div></div>`;
-  sb.querySelectorAll('.sigbtn').forEach(b=>b.onclick=()=>{ TF.sig=TF.sig===b.dataset.k?null:b.dataset.k; renderTA(); });
+      const cnt=pool.filter(s=>taPatMatch(s,k)&&(TF.mode!=='and'||sigsPass(s,TF.sigs))).length;
+      return `<button class="sigbtn ${k==='pat_bear'?'bear':'bull'}" data-k="${k}" aria-pressed="${TF.sigs.has(k)}"><span>${l}</span><b>${cnt}</b></button>`; }).join('')}</div></div>`;
+  sb.querySelectorAll('.sigbtn').forEach(b=>b.onclick=()=>{ const k=b.dataset.k; TF.sigs.has(k)?TF.sigs.delete(k):TF.sigs.add(k); renderTA(); });
+  seg('tasigmode',d=>{ TF.mode=d.m; renderTA(); });
+  document.querySelectorAll('#tasigmode button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===TF.mode));
+  const sclr=document.getElementById('tasigclr'); if(sclr){ sclr.hidden=!TF.sigs.size; sclr.onclick=()=>{ TF.sigs.clear(); renderTA(); }; }
   seg('tamk',d=>{ TF.mk=d.m; renderTA(); });
   document.querySelectorAll('#tamk button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===TF.mk));
   seg('tatrend',d=>{ TF.trend=d.t; taRenderList(); });
@@ -1715,7 +1722,7 @@ function taPass(s){
   if(TF.trend!=='all'&&s.trend!==TF.trend) return false;
   if(TF.held&&!s.held) return false;
   if(TF.pat&&!s.pats.some(p=>p.name===TF.pat)) return false;
-  if(TF.sig){ if(TF.sig.startsWith('pat_')){ if(!taPatMatch(s,TF.sig)) return false; } else if(!taSigOf(s,TF.sig)) return false; }
+  if(!sigsPass(s,TF.sigs)) return false;
   if(TF.q){ const q=TF.q.toLowerCase(); if(!(s.n.toLowerCase().includes(q)||s.s.includes(q)||s.sig.some(x=>x.name.includes(TF.q))||s.pats.some(p=>p.name.includes(TF.q)))) return false; }
   return true;
 }
@@ -1854,9 +1861,9 @@ function renderToday(){
 
 function taRenderList(){
   taList=TA.stocks.filter(taPass).sort((a,b)=>taSortKey(a)-taSortKey(b));
-  const lab=TF.sig?(SIG_GROUPS.flatMap(g=>g[1]).find(x=>x[0]===TF.sig)?.[1]||{pat_bull:'상승 패턴',pat_bear:'하락 패턴',pat_conf:'패턴 돌파 확정'}[TF.sig]):'';
-  document.getElementById('tacount').innerHTML=`<b>${taList.length}종목</b>${lab?` · 신호: <b>${lab}</b> <button class="link" id="taclr">해제</button>`:''}`;
-  const clr=document.getElementById('taclr'); if(clr) clr.onclick=()=>{ TF.sig=null; renderTA(); };
+  const lab=[...TF.sigs].map(SIG_LABEL).join(TF.mode==='and'?' + ':' 또는 ');
+  document.getElementById('tacount').innerHTML=`<b>${taList.length}종목</b>${lab?` · 신호: <b>${esc(lab)}</b> <button class="link" id="taclr">해제</button>`:''}`;
+  const clr=document.getElementById('taclr'); if(clr) clr.onclick=()=>{ TF.sigs.clear(); renderTA(); };
   document.getElementById('tacards').innerHTML=''; taShown=0; taMore();
   if(!taList.length) document.getElementById('tacards').innerHTML='<div class="empty" style="grid-column:1/-1">조건에 맞는 종목이 없어요.</div>';
   document.querySelectorAll('.tacard').forEach(c=>c.classList.toggle('sel',c.dataset.s===taSel));

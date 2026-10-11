@@ -22,6 +22,7 @@ DATA = ROOT / "data"
 KST = timezone(timedelta(hours=9))
 SHOW = 120
 KOSDAQ_N = 100
+KOSDAQ_POOL = 120        # 신규 상장 등으로 일봉이 부족한 종목은 빼고 다음 순위로 채우려고 넉넉히 받아 둠
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 PREF = re.compile(r"(\d?우[A-C]?|우\(전환\))$")
 
@@ -40,7 +41,7 @@ def _n(s):
 
 def universe(log):
     out, halted = [], []
-    for mk, limit in (("KOSPI", None), ("KOSDAQ", KOSDAQ_N)):
+    for mk, limit in (("KOSPI", None), ("KOSDAQ", KOSDAQ_POOL)):
         rows, page = [], 1
         while True:
             d = _json(f"https://m.stock.naver.com/api/stocks/marketValue/{mk}?page={page}&pageSize=100")
@@ -447,6 +448,11 @@ def collect(kis=None, held=None, log=print):
     bt = ta_lab.aggregate(bt_ev, bt_base)
     last = max(s["date"] for s in stocks)
     stocks = [s for s in stocks if s["date"] == last]              # 거래정지 등으로 오늘 일봉이 없는 종목 제외
+    kq = sorted((s for s in stocks if s["m"] == "KOSDAQ"), key=lambda s: s["r"])[:KOSDAQ_N]   # 코스닥은 분석된 종목 중 시총 상위 100
+    keep = {s["s"] for s in kq}
+    stocks = [s for s in stocks if s["m"] == "KOSPI" or s["s"] in keep]
+    for i, s in enumerate(kq):
+        s["r"] = i + 1
     ref = market.daily_bars("005930", 400)                          # 날짜 축 (삼성전자 기준)
     dates = [b[0] for b in ref if b[0] <= last][-SHOW:]
     cnt = {}
