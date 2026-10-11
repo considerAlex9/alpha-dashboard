@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-10T19:21:36.363234+09:00",
+ "captured_at": "2026-10-11T14:06:03.522510+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
   {
@@ -132,6 +132,171 @@
    "impact": "보통",
    "forecast": "",
    "previous": "4.6%",
+   "actual": ""
+  },
+  {
+   "key": "JPY|Bank Holiday|2026-10-12",
+   "time": "2026-10-12T08:00:00+09:00",
+   "country": "일본",
+   "title": "휴장 (공휴일)",
+   "title_en": "Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|Bank Holiday|2026-10-12",
+   "time": "2026-10-12T20:00:00+09:00",
+   "country": "미국",
+   "title": "휴장 (공휴일)",
+   "title_en": "Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|Core CPI m/m|2026-10-14",
+   "time": "2026-10-14T21:30:00+09:00",
+   "country": "미국",
+   "title": "근원 소비자물가 (전월 대비)",
+   "title_en": "Core CPI m/m",
+   "impact": "높음",
+   "forecast": "0.2%",
+   "previous": "0.3%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Core CPI y/y|2026-10-14",
+   "time": "2026-10-14T21:30:00+09:00",
+   "country": "미국",
+   "title": "근원 소비자물가 (전년 대비)",
+   "title_en": "Core CPI y/y",
+   "impact": "높음",
+   "forecast": "2.5%",
+   "previous": "2.4%",
+   "actual": ""
+  },
+  {
+   "key": "USD|CPI m/m|2026-10-14",
+   "time": "2026-10-14T21:30:00+09:00",
+   "country": "미국",
+   "title": "소비자물가 (전월 대비)",
+   "title_en": "CPI m/m",
+   "impact": "높음",
+   "forecast": "0.6%",
+   "previous": "0.4%",
+   "actual": ""
+  },
+  {
+   "key": "USD|CPI y/y|2026-10-14",
+   "time": "2026-10-14T21:30:00+09:00",
+   "country": "미국",
+   "title": "소비자물가 (전년 대비)",
+   "title_en": "CPI y/y",
+   "impact": "높음",
+   "forecast": "3.6%",
+   "previous": "3.4%",
+   "actual": ""
+  },
+  {
+   "key": "GBP|GDP m/m|2026-10-15",
+   "time": "2026-10-15T15:00:00+09:00",
+   "country": "영국",
+   "title": "GDP (전월 대비)",
+   "title_en": "GDP m/m",
+   "impact": "높음",
+   "forecast": "-0.1%",
+   "previous": "0.4%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Core PPI m/m|2026-10-15",
+   "time": "2026-10-15T21:30:00+09:00",
+   "country": "미국",
+   "title": "근원 생산자물가 (전월 대비)",
+   "title_en": "Core PPI m/m",
+   "impact": "높음",
+   "forecast": "0.3%",
+   "previous": "0.2%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Core Retail Sales m/m|2026-10-15",
+   "time": "2026-10-15T21:30:00+09:00",
+   "country": "미국",
+   "title": "근원 소매판매 (전월 대비)",
+   "title_en": "Core Retail Sales m/m",
+   "impact": "높음",
+   "forecast": "0.5%",
+   "previous": "1.4%",
+   "actual": ""
+  },
+  {
+   "key": "USD|PPI m/m|2026-10-15",
+   "time": "2026-10-15T21:30:00+09:00",
+   "country": "미국",
+   "title": "생산자물가 (전월 대비)",
+   "title_en": "PPI m/m",
+   "impact": "높음",
+   "forecast": "0.5%",
+   "previous": "0.4%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Retail Sales m/m|2026-10-15",
+   "time": "2026-10-15T21:30:00+09:00",
+   "country": "미국",
+   "title": "소매판매 (전월 대비)",
+   "title_en": "Retail Sales m/m",
+   "impact": "높음",
+   "forecast": "0.3%",
+   "previous": "1.2%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Philly Fed Manufacturing Index|2026-10-15",
+   "time": "2026-10-15T21:30:00+09:00",
+   "country": "미국",
+   "title": "필라델피아 제조업 지수",
+   "title_en": "Philly Fed Manufacturing Index",
+   "impact": "보통",
+   "forecast": "26.5",
+   "previous": "37.8",
+   "actual": ""
+  },
+  {
+   "key": "USD|Unemployment Claims|2026-10-15",
+   "time": "2026-10-15T21:30:00+09:00",
+   "country": "미국",
+   "title": "주간 신규 실업수당 청구",
+   "title_en": "Unemployment Claims",
+   "impact": "보통",
+   "forecast": "195K",
+   "previous": "197K",
+   "actual": ""
+  },
+  {
+   "key": "GBP|BOE Gov Bailey Speaks|2026-10-16",
+   "time": "2026-10-16T11:00:00+09:00",
+   "country": "영국",
+   "title": "영란은행 총재 베일리 발언",
+   "title_en": "BOE Gov Bailey Speaks",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|Fed Chairman Warsh Speaks|2026-10-16",
+   "time": "2026-10-16T12:30:00+09:00",
+   "country": "미국",
+   "title": "연준 의장man 워시 발언",
+   "title_en": "Fed Chairman Warsh Speaks",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
    "actual": ""
   }
  ]
