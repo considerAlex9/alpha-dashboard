@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-12T19:25:38.364604+09:00",
+ "captured_at": "2026-10-13T08:16:42.427479+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
   {
@@ -229,7 +229,7 @@
    "title": "근원 소매판매 (전월 대비)",
    "title_en": "Core Retail Sales m/m",
    "impact": "높음",
-   "forecast": "0.5%",
+   "forecast": "0.6%",
    "previous": "1.4%",
    "actual": ""
   },
@@ -240,7 +240,7 @@
    "title": "생산자물가 (전월 대비)",
    "title_en": "PPI m/m",
    "impact": "높음",
-   "forecast": "0.5%",
+   "forecast": "0.6%",
    "previous": "0.4%",
    "actual": ""
   },
@@ -262,7 +262,7 @@
    "title": "필라델피아 제조업 지수",
    "title_en": "Philly Fed Manufacturing Index",
    "impact": "보통",
-   "forecast": "26.5",
+   "forecast": "28.2",
    "previous": "37.8",
    "actual": ""
   },
@@ -273,7 +273,7 @@
    "title": "주간 신규 실업수당 청구",
    "title_en": "Unemployment Claims",
    "impact": "보통",
-   "forecast": "195K",
+   "forecast": "199K",
    "previous": "197K",
    "actual": ""
   },
