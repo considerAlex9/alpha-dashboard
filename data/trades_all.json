@@ -1,5 +1,20 @@
 [
  {
+  "id": 2057606,
+  "order_id": 28025,
+  "company_id": 1315,
+  "company_name": "Lig Nex1 Co., Ltd.",
+  "company_symbol": "079550",
+  "side": "sell",
+  "quantity": 1991,
+  "price": 600671.4396,
+  "commission": 1195936.8363,
+  "fx_rate": 1.0,
+  "value_krw": 1195936836.3138,
+  "realized_pnl": -296250175.7547,
+  "created_at": "2026-10-12T04:17:51+00:00"
+ },
+ {
   "id": 2017260,
   "order_id": 27307,
   "company_id": 2366,
