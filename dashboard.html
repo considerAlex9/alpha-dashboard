@@ -491,6 +491,26 @@ tr.click{cursor:pointer}
 .acc-star{color:#d97706}
 .stag.rsb{background:var(--surface-2);color:var(--ink-2)} .stag.rsb.hi{background:color-mix(in srgb,#d97706 16%,transparent);color:#b45309} .stag.rsb.lo{opacity:.7}
 
+/* 실적 캘린더 */
+.ercal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.erwd{font-size:11.5px;color:var(--muted);text-align:center;padding:4px 0;font-weight:650}
+.ercell{min-height:96px;border:1px solid var(--grid);border-radius:9px;padding:5px 6px;display:flex;flex-direction:column;gap:3px;min-width:0;background:var(--surface)}
+.ercell.empty{border:0;background:transparent}
+.ercell.wkend{background:var(--surface-2)}
+.ercell.has{cursor:pointer} .ercell.has:hover{border-color:var(--accent)}
+.ercell.today{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.ercell.sel{background:var(--accent-soft);border-color:var(--accent)}
+.ercd{display:flex;justify-content:space-between;align-items:center;font-size:12px}
+.ercd span{font-size:10.5px;color:var(--accent);font-weight:700}
+.erchip{display:block;font-size:11px;padding:1px 6px;border-radius:5px;background:var(--surface-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:3px solid transparent}
+.erchip.held{border-left-color:var(--hc);font-weight:700}
+.erchip.done{background:color-mix(in srgb,var(--good) 10%,transparent)}
+.erchip b{font-size:10.5px}
+.ermore{font-size:10.5px;color:var(--muted)}
+.erdesc{max-width:360px;white-space:normal;font-size:12px;color:var(--ink-2)}
+#p-earn .mk{font-size:10.5px;color:var(--muted)}
+@media (max-width:860px){ .ercell{min-height:64px} .erchip{font-size:10px} }
+
 /* 설치 버튼 */
 .installbtn{display:none;cursor:pointer}
 .installbtn.on{display:inline-flex}
@@ -569,6 +589,7 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
       <button role="tab" data-tab="global"><svg class="i"><use href="#i-globe"/></svg>글로벌 시장</button>
       <button role="tab" data-tab="holdings"><svg class="i"><use href="#i-radar"/></svg>보유종목 시황</button>
       <button role="tab" data-tab="disclosure"><svg class="i"><use href="#i-doc"/></svg>공시<span class="badge" id="discbadge" hidden style="background:var(--accent)"></span></button>
+      <button role="tab" data-tab="earn"><svg class="i"><use href="#i-cal"/></svg>실적 캘린더</button>
       <button role="tab" data-tab="pair"><svg class="i"><use href="#i-pair"/></svg>페어 분석</button>
       <button role="tab" data-tab="alerts"><svg class="i"><use href="#i-shield"/></svg>시장경보<span class="badge" id="alertbadge" hidden></span></button>
       <button role="tab" data-tab="contest"><svg class="i"><use href="#i-trophy"/></svg>대회 동향<svg class="i" id="lockicon" style="width:13px;height:13px;color:var(--muted)"><use href="#i-lock"/></svg></button>
@@ -754,6 +775,30 @@ footer{margin-top:28px;color:var(--muted);font-size:12px;line-height:1.7;border-
   <div class="panel" id="p-ta">
     <div class="ph"><div><h2>기술적 분석</h2><p id="tasub">코스피 전 종목 + 코스닥 시가총액 상위 100 · 이동평균·크로스·베이스·차트 패턴</p></div></div>
     <div id="tabody"></div>
+  </div>
+
+  <!-- ================= 실적 캘린더 ================= -->
+  <div class="panel" id="p-earn">
+    <div class="ph"><div><h2 id="ertitle">실적 캘린더</h2><p id="ersub"></p></div></div>
+    <div id="erbody">
+      <section class="grid c4" id="ertiles"></section>
+      <section class="card mt">
+        <div class="card-h"><div><h3>달력</h3><div class="sub">날짜를 누르면 아래에 그날 일정만 보여요 · ✓ 는 이미 발표(숫자는 영업이익 전년 대비) · 테두리 색은 내 롱·숏 종목</div></div>
+          <div class="ctrl"><input type="search" id="erq" placeholder="기업명 · 코드" class="tasel" style="width:140px">
+            <div class="seg" id="erwho"><button data-f="all" aria-pressed="true">전체</button><button data-f="held" aria-pressed="false">내 보유 종목</button><button data-f="big" aria-pressed="false">시총 1조 이상</button></div>
+            <div class="seg" id="ermk"><button data-m="all" aria-pressed="true">전체</button><button data-m="코스피" aria-pressed="false">코스피</button><button data-m="코스닥" aria-pressed="false">코스닥</button></div>
+            <div class="seg" id="ermonth"></div></div></div>
+        <div class="ercal" id="ercal"></div>
+      </section>
+      <section class="card mt">
+        <div class="card-h"><div><h3 id="erlisttitle">앞으로의 일정</h3><div class="sub">실적 설명회(IR)는 회사가 공시한 일시 · 공시 예정은 '결산실적공시 예고'의 예정일</div></div><button class="link" id="erlistclr" hidden>날짜 선택 해제</button></div>
+        <div class="tbl-wrap"><table id="erlist" class="bttbl"></table></div>
+      </section>
+      <section class="card mt">
+        <div class="card-h"><div><h3>발표된 3분기 잠정실적</h3><div class="sub">다트 '영업(잠정)실적' 공시 · 전년 동기·직전 분기 대비 증감률은 회사 공시값</div></div></div>
+        <div class="tbl-wrap"><table id="erres" class="bttbl"></table></div>
+      </section>
+    </div>
   </div>
 
   <!-- ================= 글로벌 시장 ================= -->
@@ -2084,6 +2129,88 @@ function taChart(box,s,{height=96,big=false,pat=null}={}){
 function taRedraw(){ if(!TA) return; document.querySelectorAll('.tamini').forEach(m=>{ if(m.innerHTML){ const s=TA.stocks.find(x=>x.s===m.closest('.tacard').dataset.s); taChart(m,s,{height:96}); } }); if(taSel&&!document.getElementById('tamodal').hidden) taRenderDetail(); }
 
 // ============================================================
+// 실적 캘린더 (다트 공시 기반)
+// ============================================================
+const ER=D.earnings||null;
+const EF={who:'all', mk:'all', q:'', month:null, day:null};
+const erDart=rn=>`https://dart.fss.or.kr/dsaf001/main.do?rcpNo=${rn}`;
+const erHeld=c=>posBySym[c.code]?.side||null;
+function erPass(c){
+  if(EF.who==='held'&&!erHeld(c)) return false;
+  if(EF.who==='big'&&!((c.mc||0)>=1e12)) return false;
+  if(EF.mk!=='all'&&c.mkt!==EF.mk) return false;
+  if(EF.q&&!(c.name.includes(EF.q)||c.code.includes(EF.q))) return false;
+  return true;
+}
+// 날짜별 사건: 일정(IR·예고) + 발표 완료
+function erEvents(){
+  const ev=[];
+  (ER?.companies||[]).filter(erPass).forEach(c=>{
+    const seen=new Set();
+    c.sched.forEach(x=>{ const k=x.date; if(seen.has(k)) return; seen.add(k);
+      ev.push({date:x.date,time:x.time,c,kind:x.kind,desc:x.desc,how:x.how,rcept:x.rcept_no}); });
+    if(c.result&&!seen.has(c.result.date)) ev.push({date:c.result.date,time:'',c,kind:'result',rcept:c.result.rcept_no});
+  });
+  return ev.sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time)||(b.c.mc||0)-(a.c.mc||0));
+}
+const erYoy=r=>r?.op?.yoy;
+function erChip(e){
+  const h=erHeld(e.c), done=!!e.c.result, y=erYoy(e.c.result);
+  return `<span class="erchip ${done?'done':''} ${h?'held':''}" style="${h?`--hc:var(--${h})`:''}" title="${esc(e.c.name)} · ${e.kind==='result'||done?'발표 완료':e.kind==='ir'?'실적 설명회':'실적 공시 예정'}">${done?'✓ ':''}${esc(e.c.name)}${done&&y!=null?` <b class="${dir(y)}">${y>0?'+':''}${y.toFixed(0)}%</b>`:''}</span>`;
+}
+function renderEarn(){
+  const el=document.getElementById('erbody');
+  if(!ER){ el.innerHTML='<div class="empty">실적 캘린더 자료가 아직 없습니다. 다음 자동 업데이트(거래일 16:40) 후 표시됩니다.</div>'; return; }
+  document.getElementById('ertitle').textContent=`${ER.label} 실적 캘린더`;
+  document.getElementById('ersub').textContent=`다트 공시 기반 · 실적 설명회(IR)·실적공시 예고·잠정실적 · 수집 ${KST(ER.captured_at)} · 매 거래일 16:40 업데이트`;
+  const C=(ER.companies||[]), ev=erEvents();
+  const today=todayKST, wkEnd=daysAgo(-7);
+  const months=[...new Set(ev.map(e=>e.date.slice(0,7)))].sort();
+  if(!EF.month||!months.includes(EF.month)) EF.month=months.find(m=>m>=today.slice(0,7))||months.at(-1)||today.slice(0,7);
+  const tile_=(l,v,n)=>tile(l,v,n);
+  const upcoming=ev.filter(e=>e.kind!=='result'&&e.date>=today);
+  document.getElementById('ertiles').innerHTML=[
+    tile_('일정이 공개된 기업',`${C.filter(c=>c.sched.length).length}곳`,'실적 설명회·공시 예고 기준'),
+    tile_('이미 발표',`${C.filter(c=>c.result).length}곳`,'3분기 잠정실적 공시'),
+    tile_('앞으로 7일',`${upcoming.filter(e=>e.date<=wkEnd).length}곳`,`${dayLabel(today)} ~ ${dayLabel(wkEnd)}`),
+    tile_('내 보유 종목',`${C.filter(c=>erHeld(c)).length}곳`,`발표 완료 ${C.filter(c=>erHeld(c)&&c.result).length}`),
+  ].join('');
+  document.getElementById('ermonth').innerHTML=months.map(m=>`<button data-m="${m}" aria-pressed="${m===EF.month}">${+m.slice(5)}월</button>`).join('');
+  seg('ermonth',d=>{ EF.month=d.m; EF.day=null; renderEarn(); });
+  // 달력
+  const [Y,Mo]=EF.month.split('-').map(Number), first=new Date(Date.UTC(Y,Mo-1,1)), nd=new Date(Date.UTC(Y,Mo,0)).getUTCDate();
+  const byDay={}; ev.forEach(e=>(byDay[e.date]??=[]).push(e));
+  let cells=''; for(let i=0;i<first.getUTCDay();i++) cells+='<div class="ercell empty"></div>';
+  for(let d=1; d<=nd; d++){ const ds=`${EF.month}-${String(d).padStart(2,'0')}`, L=byDay[ds]||[], wd=new Date(Date.UTC(Y,Mo-1,d)).getUTCDay();
+    cells+=`<div class="ercell ${ds===today?'today':''} ${ds===EF.day?'sel':''} ${wd===0||wd===6?'wkend':''} ${L.length?'has':''}" data-d="${ds}">
+      <div class="ercd"><b>${d}</b>${L.length?`<span>${L.length}곳</span>`:''}</div>${L.slice(0,5).map(erChip).join('')}${L.length>5?`<span class="ermore">+${L.length-5}곳</span>`:''}</div>`; }
+  document.getElementById('ercal').innerHTML=['일','월','화','수','목','금','토'].map(x=>`<div class="erwd">${x}</div>`).join('')+cells;
+  document.querySelectorAll('#ercal .ercell.has').forEach(c=>c.onclick=()=>{ EF.day=EF.day===c.dataset.d?null:c.dataset.d; renderEarn(); });
+  // 목록
+  const list=EF.day?ev.filter(e=>e.date===EF.day):ev.filter(e=>e.date>=today&&e.kind!=='result');
+  document.getElementById('erlisttitle').textContent=EF.day?`${dayLabel(EF.day)} 일정 ${list.length}곳`:`앞으로의 일정 ${list.length}곳`;
+  document.getElementById('erlistclr').hidden=!EF.day;
+  document.getElementById('erlist').innerHTML=list.length?`<thead><tr><th class="l">날짜</th><th class="l">시간</th><th class="l">기업</th><th>시가총액</th><th class="l">구분</th><th class="l">내용</th><th></th></tr></thead><tbody>${list.map(e=>{ const h=erHeld(e.c);
+    return `<tr><td class="l">${dayLabel(e.date)}</td><td class="l">${e.time||'—'}</td><td class="l"><b>${esc(e.c.name)}</b> <span class="sym">${e.c.code}</span> <span class="mk">${e.c.mkt}</span>${h?` <span class="tag" style="background:color-mix(in srgb,var(--${h}) 15%,transparent);color:var(--${h})">내 ${h==='long'?'롱':'숏'}</span>`:''}</td>
+      <td>${e.c.mc?won(e.c.mc):'—'}</td><td class="l"><span class="stag ${e.kind==='result'?'bull':e.kind==='ir'?'info':''}">${e.kind==='result'?'발표 완료':e.kind==='ir'?'실적 설명회':'공시 예정'}</span>${e.how?`<br><small class="muted">${esc(e.how)}</small>`:''}</td>
+      <td class="l erdesc">${e.kind==='result'?erResTxt(e.c.result):esc(e.desc||'')}</td><td><a class="link" href="${erDart(e.rcept)}" target="_blank" rel="noopener noreferrer">다트 ${ico('ext')}</a></td></tr>`; }).join('')}</tbody>`:'<tbody><tr><td><div class="empty">해당 일정이 없어요.</div></td></tr></tbody>';
+  // 발표 결과
+  const R=C.filter(erPass).filter(c=>c.result).sort((a,b)=>b.result.date.localeCompare(a.result.date)||(b.mc||0)-(a.mc||0));
+  const cell=x=>x&&x.cur!=null?`${num(x.cur)}${x.yoy!=null?`<br><small class="${dir(x.yoy)}">전년 ${x.yoy>0?'+':''}${x.yoy}%</small>`:''}${x.qoq!=null?` <small class="${dir(x.qoq)}">전분기 ${x.qoq>0?'+':''}${x.qoq}%</small>`:''}`:'—';
+  document.getElementById('erres').innerHTML=R.length?`<thead><tr><th class="l">발표일</th><th class="l">기업</th><th>매출액 (억원)</th><th>영업이익 (억원)</th><th>당기순이익 (억원)</th><th class="l">기준</th><th></th></tr></thead><tbody>${R.map(c=>`<tr>
+    <td class="l">${dayLabel(c.result.date)}</td><td class="l"><b>${esc(c.name)}</b> <span class="sym">${c.code}</span>${erHeld(c)?` <span class="tag" style="color:var(--${erHeld(c)})">내 ${erHeld(c)==='long'?'롱':'숏'}</span>`:''}</td>
+    <td>${cell(c.result.sales)}</td><td>${cell(c.result.op)}</td><td>${cell(c.result.net)}</td><td class="l"><small>${c.result.consolidated?'연결':'별도'}</small></td>
+    <td><a class="link" href="${erDart(c.result.rcept_no)}" target="_blank" rel="noopener noreferrer">다트 ${ico('ext')}</a></td></tr>`).join('')}</tbody>`:'<tbody><tr><td><div class="empty">아직 발표한 기업이 없어요.</div></td></tr></tbody>';
+}
+function erResTxt(r){ if(!r) return ''; const f=(l,x)=>x&&x.cur!=null?`${l} ${num(x.cur)}억${x.yoy!=null?` (${x.yoy>0?'+':''}${x.yoy}%)`:''}`:''; return [f('매출',r.sales),f('영업이익',r.op)].filter(Boolean).join(' · '); }
+function bindEarn(){
+  seg('erwho',d=>{ EF.who=d.f; renderEarn(); });
+  seg('ermk',d=>{ EF.mk=d.m; renderEarn(); });
+  document.getElementById('erq').oninput=e=>{ EF.q=e.target.value.trim(); renderEarn(); };
+  document.getElementById('erlistclr').onclick=()=>{ EF.day=null; renderEarn(); };
+}
+
+// ============================================================
 // 탭 3. 글로벌 시장
 // ============================================================
 // 이번 주 주요 경제 일정
@@ -2475,7 +2602,7 @@ const nNewDisc=DISC.filter(d=>d.important&&d.date>=daysAgo(3)).length;
 if(nNewDisc){ const b=document.getElementById('discbadge'); b.hidden=false; b.textContent=nNewDisc; b.title=`최근 3일 중요 공시 ${nNewDisc}건`; }
 const drawn={};
 const RENDER={portfolio:()=>{renderPortfolio();drawPos();drawNav();drawRank();}, market:()=>{renderMarket();renderNews();drawLive();drawIdx();renderHeat();renderInv();}, global:renderGlobal,
-  wrap:renderWrap, ta:renderTA, holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContestGate};
+  wrap:renderWrap, ta:renderTA, earn:()=>{bindEarn();renderEarn();}, holdings:renderHoldings, disclosure:renderDisclosure, pair:renderPair, alerts:renderAlerts, contest:renderContestGate};
 const REDRAW={portfolio:()=>{drawNav();drawRank();}, wrap:drawWrapCharts, ta:taRedraw, market:()=>{renderMarket();drawLive();drawIdx();}, global:renderGlobal, pair:drawPair, contest:renderContest};
 let cur=null;
 function show(t){

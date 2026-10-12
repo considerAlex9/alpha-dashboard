@@ -84,7 +84,8 @@ def main():
         "calendar": read_opt("calendar.json", None),
         "intraday": read_opt("intraday.json", None),         # 오늘 장중 흐름 (10분마다)
         "wrap": read_opt("wrap.json", None),
-        "trig": read_opt("trig.json", None),                 # 장중 트리거 돌파                 # 장 마감 시황
+        "trig": read_opt("trig.json", None),
+        "earnings": (lambda e: {k: v for k, v in e.items() if k != "cache"} if e else None)(read_opt("earnings_kr.json", None)),   # 실적 캘린더                 # 장중 트리거 돌파                 # 장 마감 시황
         "themes": read_opt("sectors.json", {}, ROOT),
         "limits": read_opt("limits.json", {}, ROOT),
     }

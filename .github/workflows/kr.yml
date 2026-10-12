@@ -22,18 +22,22 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - name: 코스피 전 종목 + 코스닥 100 기술적 분석
+      - name: 코스피 전 종목 + 코스닥 100 기술적 분석 · 실적 캘린더
         env:
           KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
           KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}   # 없으면 알림만 건너뜀
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python kr_ta.py
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: |
+          python kr_ta.py
+          python earnings_kr.py || echo "실적 캘린더 실패 (다음에 다시)"
+          python build.py
       - name: 결과 커밋
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add data/kr_ta.json data/ta_log.json
+          git add data/kr_ta.json data/ta_log.json data/earnings_kr.json index.html dashboard.html us.html
           [ -f data/alerts_state.json ] && git add data/alerts_state.json
           git diff --cached --quiet || git commit -m "ta: $(TZ=Asia/Seoul date +'%F %H:%M') KST"
           for i in 1 2 3; do
