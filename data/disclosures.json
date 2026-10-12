@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-12T15:42:01.901040+09:00",
+ "captured_at": "2026-10-12T16:20:51.968119+09:00",
  "days": 60,
  "items": [
   {
@@ -27,6 +27,18 @@
    "rcept_no": "20261012900006"
   },
   {
+   "code": "006400",
+   "name": "삼성SDI",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "삼성SDI",
+   "rcept_no": "20261012800501"
+  },
+  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -37,6 +49,78 @@
    "date": "2026-10-12",
    "filer": "한화시스템",
    "rcept_no": "20261012800374"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "키움증권",
+   "rcept_no": "20261012000344"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "최준영",
+   "rcept_no": "20261012000340"
+  },
+  {
+   "code": "192650",
+   "name": "드림텍",
+   "side": "long",
+   "title": "신탁계약에의한취득상황보고서",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "드림텍",
+   "rcept_no": "20261012000338"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "키움증권",
+   "rcept_no": "20261012000333"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "박종민",
+   "rcept_no": "20261012000324"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "키움증권",
+   "rcept_no": "20261012000300"
   },
   {
    "code": "039490",
@@ -3121,42 +3205,6 @@
    "date": "2026-09-02",
    "filer": "키움증권",
    "rcept_no": "20260902000239"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "키움증권",
-   "rcept_no": "20260902000181"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "키움증권",
-   "rcept_no": "20260902000172"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "키움증권",
-   "rcept_no": "20260902000136"
   },
   {
    "code": "017670",
