@@ -1,5 +1,20 @@
 [
  {
+  "id": 2062357,
+  "order_id": 28084,
+  "company_id": 1391,
+  "company_name": "Peptron Inc.",
+  "company_symbol": "087010",
+  "side": "cover",
+  "quantity": 15000,
+  "price": 91328.0586,
+  "commission": 1369920.8787,
+  "fx_rate": 1.0,
+  "value_krw": 1369920878.6804,
+  "realized_pnl": 71024812.8196,
+  "created_at": "2026-10-12T05:00:01+00:00"
+ },
+ {
   "id": 2057606,
   "order_id": 28025,
   "company_id": 1315,
