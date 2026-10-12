@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-12T16:52:05.261988+09:00",
+ "captured_at": "2026-10-12T19:24:52.479011+09:00",
  "days": 60,
  "items": [
   {
@@ -49,6 +49,42 @@
    "date": "2026-10-12",
    "filer": "한화시스템",
    "rcept_no": "20261012800374"
+  },
+  {
+   "code": "272210",
+   "name": "한화시스템",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "지상민",
+   "rcept_no": "20261012000429"
+  },
+  {
+   "code": "272210",
+   "name": "한화시스템",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "이성훈",
+   "rcept_no": "20261012000422"
+  },
+  {
+   "code": "272210",
+   "name": "한화시스템",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "김호중",
+   "rcept_no": "20261012000409"
   },
   {
    "code": "039490",
