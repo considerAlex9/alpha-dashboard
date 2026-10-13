@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-13T15:41:23.969320+09:00",
+ "captured_at": "2026-10-13T16:19:31.633731+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "현금ㆍ현물배당결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-13",
+   "filer": "케이티",
+   "rcept_no": "20261013800366"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-13",
+   "filer": "케이티",
+   "rcept_no": "20261013800362"
+  },
   {
    "code": "042660",
    "name": "한화오션",
@@ -25,6 +49,18 @@
    "date": "2026-10-13",
    "filer": "한화오션",
    "rcept_no": "20261013800178"
+  },
+  {
+   "code": "222800",
+   "name": "심텍",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-13",
+   "filer": "심텍홀딩스",
+   "rcept_no": "20261013000275"
   },
   {
    "code": "028300",
