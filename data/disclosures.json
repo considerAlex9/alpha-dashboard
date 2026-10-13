@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-13T16:48:31.415888+09:00",
+ "captured_at": "2026-10-13T19:20:20.662263+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "풍문또는보도에대한해명",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-13",
+   "filer": "SK텔레콤",
+   "rcept_no": "20261013800718"
+  },
   {
    "code": "030200",
    "name": "KT",
