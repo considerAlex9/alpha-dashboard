@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-14T14:40:15.946035+09:00",
+ "captured_at": "2026-10-14T15:51:55.459060+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "080220",
+   "name": "제주반도체",
+   "side": "long",
+   "title": "단기차입금증가결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-14",
+   "filer": "제주반도체",
+   "rcept_no": "20261014900345"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-14",
+   "filer": "키움증권",
+   "rcept_no": "20261014000208"
+  },
   {
    "code": "039490",
    "name": "키움증권",
@@ -3301,18 +3325,6 @@
    "date": "2026-09-03",
    "filer": "키움증권",
    "rcept_no": "20260903000082"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-03",
-   "filer": "키움증권",
-   "rcept_no": "20260903000080"
   },
   {
    "code": "017670",
