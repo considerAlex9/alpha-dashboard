@@ -1,18 +1,7 @@
 {
- "captured_at": "2026-10-14T19:31:15.739035+09:00",
+ "captured_at": "2026-10-15T08:26:41.798637+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "CNY|Bank Holiday|2026-10-05",
-   "time": "2026-10-05T08:01:00+09:00",
-   "country": "중국",
-   "title": "휴장 (공휴일)",
-   "title_en": "Bank Holiday",
-   "impact": "휴일",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "USD|ISM Services PMI|2026-10-05",
    "time": "2026-10-05T23:00:00+09:00",
