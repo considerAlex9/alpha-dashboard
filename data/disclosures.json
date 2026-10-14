@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-14T09:53:14.021494+09:00",
+ "captured_at": "2026-10-14T10:39:09.644063+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-14",
+   "filer": "키움증권",
+   "rcept_no": "20261014000042"
+  },
   {
    "code": "017670",
    "name": "SK텔레콤",
@@ -3301,18 +3313,6 @@
    "date": "2026-09-02",
    "filer": "키움증권",
    "rcept_no": "20260902000241"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-02",
-   "filer": "키움증권",
-   "rcept_no": "20260902000239"
   },
   {
    "code": "017670",
