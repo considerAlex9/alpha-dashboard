@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-15T08:25:57.220877+09:00",
+ "captured_at": "2026-10-15T09:51:59.096896+09:00",
  "days": 60,
  "items": [
   {
@@ -169,18 +169,6 @@
    "date": "2026-10-13",
    "filer": "한화오션",
    "rcept_no": "20261013800178"
-  },
-  {
-   "code": "222800",
-   "name": "심텍",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-13",
-   "filer": "심텍홀딩스",
-   "rcept_no": "20261013000275"
   },
   {
    "code": "028300",
@@ -459,18 +447,6 @@
    "rcept_no": "20261012000060"
   },
   {
-   "code": "222800",
-   "name": "심텍",
-   "side": "long",
-   "title": "전환청구권행사",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-08",
-   "filer": "심텍",
-   "rcept_no": "20261008900522"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -733,18 +709,6 @@
    "date": "2026-10-07",
    "filer": "삼성자산운용",
    "rcept_no": "20261007000312"
-  },
-  {
-   "code": "222800",
-   "name": "심텍",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-07",
-   "filer": "삼성자산운용",
-   "rcept_no": "20261007000299"
   },
   {
    "code": "095340",
@@ -1047,30 +1011,6 @@
    "rcept_no": "20261002000346"
   },
   {
-   "code": "093370",
-   "name": "후성",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "국민연금공단",
-   "rcept_no": "20261002000337"
-  },
-  {
-   "code": "222800",
-   "name": "심텍",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "국민연금공단",
-   "rcept_no": "20261002000233"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1273,18 +1213,6 @@
    "date": "2026-10-01",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261001000449"
-  },
-  {
-   "code": "222800",
-   "name": "심텍",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-01",
-   "filer": "심텍홀딩스",
-   "rcept_no": "20261001000429"
   },
   {
    "code": "039490",
@@ -3195,18 +3123,6 @@
    "rcept_no": "20260907000074"
   },
   {
-   "code": "222800",
-   "name": "심텍",
-   "side": "long",
-   "title": "전환청구권행사",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "심텍",
-   "rcept_no": "20260904900533"
-  },
-  {
    "code": "028260",
    "name": "삼성물산",
    "side": "short",
@@ -3469,18 +3385,6 @@
    "date": "2026-09-01",
    "filer": "김창보",
    "rcept_no": "20260901000194"
-  },
-  {
-   "code": "222800",
-   "name": "심텍",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-01",
-   "filer": "미래에셋자산운용",
-   "rcept_no": "20260901000189"
   },
   {
    "code": "028260",
@@ -3747,18 +3651,6 @@
    "rcept_no": "20260828001676"
   },
   {
-   "code": "093370",
-   "name": "후성",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "김근수",
-   "rcept_no": "20260828001637"
-  },
-  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "long",
@@ -4021,18 +3913,6 @@
    "date": "2026-08-26",
    "filer": "NAVER",
    "rcept_no": "20260826000163"
-  },
-  {
-   "code": "222800",
-   "name": "심텍",
-   "side": "long",
-   "title": "신규시설투자등",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-25",
-   "filer": "심텍",
-   "rcept_no": "20260825900407"
   },
   {
    "code": "122640",
