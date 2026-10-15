@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-15T10:43:18.415535+09:00",
+ "captured_at": "2026-10-15T11:38:51.428245+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "전환가액의조정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "HLB",
+   "rcept_no": "20261015900184"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "하나금융지주",
+   "rcept_no": "20261015800202"
+  },
   {
    "code": "080220",
    "name": "제주반도체",
@@ -3219,18 +3243,6 @@
    "rcept_no": "20260904000018"
   },
   {
-   "code": "020150",
-   "name": "롯데에너지머티리얼즈",
-   "side": "long",
-   "title": "[기재정정]타법인주식및출자증권처분결정",
-   "category": "합병·분할",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-03",
-   "filer": "롯데에너지머티리얼즈",
-   "rcept_no": "20260903800363"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -3615,18 +3627,6 @@
    "rcept_no": "20260828800325"
   },
   {
-   "code": "020150",
-   "name": "롯데에너지머티리얼즈",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "롯데에너지머티리얼즈",
-   "rcept_no": "20260828800130"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -3781,18 +3781,6 @@
    "date": "2026-08-27",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20260827800365"
-  },
-  {
-   "code": "020150",
-   "name": "롯데에너지머티리얼즈",
-   "side": "long",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-27",
-   "filer": "롯데에너지머티리얼즈",
-   "rcept_no": "20260827000908"
   },
   {
    "code": "267260",
@@ -4059,42 +4047,6 @@
    "rcept_no": "20260821800542"
   },
   {
-   "code": "020150",
-   "name": "롯데에너지머티리얼즈",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "롯데에너지머티리얼즈",
-   "rcept_no": "20260821800127"
-  },
-  {
-   "code": "020150",
-   "name": "롯데에너지머티리얼즈",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "롯데에너지머티리얼즈",
-   "rcept_no": "20260821800101"
-  },
-  {
-   "code": "020150",
-   "name": "롯데에너지머티리얼즈",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "롯데에너지머티리얼즈",
-   "rcept_no": "20260821800099"
-  },
-  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -4141,18 +4093,6 @@
    "date": "2026-08-20",
    "filer": "한화오션",
    "rcept_no": "20260820800640"
-  },
-  {
-   "code": "020150",
-   "name": "롯데에너지머티리얼즈",
-   "side": "long",
-   "title": "[기재정정]타법인주식및출자증권처분결정",
-   "category": "합병·분할",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-20",
-   "filer": "롯데에너지머티리얼즈",
-   "rcept_no": "20260820800368"
   },
   {
    "code": "062040",
