@@ -1,5 +1,35 @@
 [
  {
+  "id": 2182236,
+  "order_id": 30172,
+  "company_id": 16645,
+  "company_name": "멜콘",
+  "company_symbol": "179880",
+  "side": "short",
+  "quantity": 80000,
+  "price": 21571.4982,
+  "commission": 1725719.8547,
+  "fx_rate": 1.0,
+  "value_krw": 1725719854.7464,
+  "realized_pnl": null,
+  "created_at": "2026-10-15T01:40:51+00:00"
+ },
+ {
+  "id": 2181867,
+  "order_id": 30168,
+  "company_id": 640,
+  "company_name": "Lotte Energy Materials Corp.",
+  "company_symbol": "020150",
+  "side": "sell",
+  "quantity": 40102,
+  "price": 51426.2883,
+  "commission": 2062297.0129,
+  "fx_rate": 1.0,
+  "value_krw": 2062297012.9252,
+  "realized_pnl": 339558619.636,
+  "created_at": "2026-10-15T01:38:36+00:00"
+ },
+ {
   "id": 2170120,
   "order_id": 29824,
   "company_id": 1460,
