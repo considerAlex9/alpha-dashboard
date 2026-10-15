@@ -1,5 +1,20 @@
 [
  {
+  "id": 2211000,
+  "order_id": 30511,
+  "company_id": 1676,
+  "company_name": "Hanmi Pharm Co., Ltd.",
+  "company_symbol": "128940",
+  "side": "sell",
+  "quantity": 3698,
+  "price": 371999.6678,
+  "commission": 1375654.7714,
+  "fx_rate": 1.0,
+  "value_krw": 1375654771.4393,
+  "realized_pnl": -400964729.7845,
+  "created_at": "2026-10-15T03:47:28+00:00"
+ },
+ {
   "id": 2182236,
   "order_id": 30172,
   "company_id": 16645,
