@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-15T12:38:51.212841+09:00",
+ "captured_at": "2026-10-15T13:38:36.585242+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,42 @@
    "date": "2026-10-15",
    "filer": "하나금융지주",
    "rcept_no": "20261015800202"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "키움증권",
+   "rcept_no": "20261015000124"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "키움증권",
+   "rcept_no": "20261015000117"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "키움증권",
+   "rcept_no": "20261015000112"
   },
   {
    "code": "080220",
@@ -651,18 +687,6 @@
    "rcept_no": "20261008000058"
   },
   {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "투자판단관련주요경영사항 (에페오토인젝터주(에페글레나타이드) 식품의약품안전처 품목허가 승인)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-07",
-   "filer": "한미약품",
-   "rcept_no": "20261007800667"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -855,18 +879,6 @@
    "rcept_no": "20261006000240"
   },
   {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "국민연금공단",
-   "rcept_no": "20261006000230"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -925,18 +937,6 @@
    "date": "2026-10-02",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261002800830"
-  },
-  {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "국민연금공단",
-   "rcept_no": "20261002000501"
   },
   {
    "code": "035420",
@@ -1515,18 +1515,6 @@
    "rcept_no": "20260930000030"
   },
   {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "투자판단관련주요경영사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-29",
-   "filer": "한미약품",
-   "rcept_no": "20260929800978"
-  },
-  {
    "code": "010060",
    "name": "OCI홀딩스",
    "side": "long",
@@ -1551,18 +1539,6 @@
    "rcept_no": "20260929800154"
   },
   {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-29",
-   "filer": "한미사이언스",
-   "rcept_no": "20260929000668"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -1573,18 +1549,6 @@
    "date": "2026-09-29",
    "filer": "한화오션",
    "rcept_no": "20260929000302"
-  },
-  {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-29",
-   "filer": "국민연금공단",
-   "rcept_no": "20260929000085"
   },
   {
    "code": "095340",
@@ -2943,30 +2907,6 @@
    "rcept_no": "20260908900075"
   },
   {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-08",
-   "filer": "한미약품",
-   "rcept_no": "20260908800596"
-  },
-  {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-08",
-   "filer": "한미약품",
-   "rcept_no": "20260908800550"
-  },
-  {
    "code": "267260",
    "name": "HD현대일렉트릭",
    "side": "short",
@@ -3025,18 +2965,6 @@
    "date": "2026-09-08",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20260908000386"
-  },
-  {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-08",
-   "filer": "한미사이언스",
-   "rcept_no": "20260908000370"
   },
   {
    "code": "347850",
@@ -3205,42 +3133,6 @@
    "date": "2026-09-04",
    "filer": "키움증권",
    "rcept_no": "20260904000119"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "키움증권",
-   "rcept_no": "20260904000064"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "키움증권",
-   "rcept_no": "20260904000061"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "키움증권",
-   "rcept_no": "20260904000018"
   },
   {
    "code": "207940",
@@ -3603,18 +3495,6 @@
    "rcept_no": "20260828800769"
   },
   {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "한미약품",
-   "rcept_no": "20260828800615"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -3819,18 +3699,6 @@
    "rcept_no": "20260827000390"
   },
   {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "[기재정정]투자판단관련주요경영사항 (급성골수성백혈병(AML) 치료 항암신약 HM43239 기술이전 계약 체결)",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-26",
-   "filer": "한미약품",
-   "rcept_no": "20260826800466"
-  },
-  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -3975,18 +3843,6 @@
    "rcept_no": "20260824800613"
   },
   {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "투자판단관련주요경영사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-24",
-   "filer": "한미약품",
-   "rcept_no": "20260824800144"
-  },
-  {
    "code": "347850",
    "name": "디앤디파마텍",
    "side": "long",
@@ -3997,30 +3853,6 @@
    "date": "2026-08-21",
    "filer": "디앤디파마텍",
    "rcept_no": "20260821900144"
-  },
-  {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "[기재정정]투자판단관련주요경영사항",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-21",
-   "filer": "한미약품",
-   "rcept_no": "20260821800930"
-  },
-  {
-   "code": "128940",
-   "name": "한미약품",
-   "side": "long",
-   "title": "[기재정정]투자판단관련주요경영사항",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-21",
-   "filer": "한미약품",
-   "rcept_no": "20260821800876"
   },
   {
    "code": "028260",
