@@ -1,5 +1,35 @@
 [
  {
+  "id": 2170120,
+  "order_id": 29824,
+  "company_id": 1460,
+  "company_name": "Foosung Co. Ltd.",
+  "company_symbol": "093370",
+  "side": "sell",
+  "quantity": 130372,
+  "price": 12861.6429,
+  "commission": 1676798.1115,
+  "fx_rate": 1.0,
+  "value_krw": 1676798111.5151,
+  "realized_pnl": -235507536.5993,
+  "created_at": "2026-10-15T00:13:03+00:00"
+ },
+ {
+  "id": 2168847,
+  "order_id": 29739,
+  "company_id": 1971,
+  "company_name": "SIMMTECH Co., Ltd.",
+  "company_symbol": "222800",
+  "side": "sell",
+  "quantity": 9973,
+  "price": 129052.2977,
+  "commission": 1287038.565,
+  "fx_rate": 1.0,
+  "value_krw": 1287038564.9561,
+  "realized_pnl": -227121690.2427,
+  "created_at": "2026-10-15T00:00:26+00:00"
+ },
+ {
   "id": 2062357,
   "order_id": 28084,
   "company_id": 1391,
