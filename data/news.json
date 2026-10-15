@@ -1,6 +1,266 @@
 {
  "editions": [
   {
+   "id": "2026-10-16-pre",
+   "name": "장전 브리핑",
+   "start": "2026-10-15T19:00:00+09:00",
+   "end": "2026-10-16T08:00:00+09:00",
+   "final": false,
+   "created_at": "2026-10-16T08:17:31.736258+09:00",
+   "post_count": 22,
+   "metrics": [
+    {
+     "label": "다우",
+     "value": "",
+     "chg": "+1.1%"
+    },
+    {
+     "label": "S&P500",
+     "value": "",
+     "chg": "+0.3%"
+    },
+    {
+     "label": "나스닥",
+     "value": "",
+     "chg": "+0.1%"
+    },
+    {
+     "label": "미 10년물",
+     "value": "5.07%",
+     "chg": ""
+    },
+    {
+     "label": "미 30년물",
+     "value": "5.42%",
+     "chg": ""
+    },
+    {
+     "label": "WTI",
+     "value": "97.6달러",
+     "chg": ""
+    },
+    {
+     "label": "코스피",
+     "value": "5,100pt",
+     "chg": ""
+    }
+   ],
+   "cards": [
+    {
+     "title": "장 시작 전 생각: 패닉 장세 탈출 방안",
+     "bullets": [
+      "마이크론 +1.9%, 코어위브 +6.0%, 엔비디아 -1.8%"
+     ],
+     "numbers": [
+      {
+       "label": "다우",
+       "value": "",
+       "chg": "+1.1%"
+      },
+      {
+       "label": "S&P500",
+       "value": "",
+       "chg": "+0.3%"
+      },
+      {
+       "label": "나스닥",
+       "value": "",
+       "chg": "+0.1%"
+      },
+      {
+       "label": "미 10년물",
+       "value": "5.07%",
+       "chg": ""
+      }
+     ],
+     "link": "https://www.kiwoom.com/h/invest/research/VMarketSDDetailView?sqno=7228",
+     "link_label": "kiwoom.com",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-10-16T07:46:16+09:00",
+     "rank": 0
+    },
+    {
+     "title": "오늘 개장전 꼭 알아야 할 5가지",
+     "bullets": [
+      "① 미국 인플레 재가열",
+      "② 미 재무부의 국채시장 옵션",
+      "③ IEA 비축유 방출과 중동 리스크",
+      "④ 코어위브 신용 스트레스와 엔비디아 발언",
+      "⑤ 로테이션에 반등한 미 증시와 금리 하락"
+     ],
+     "numbers": [],
+     "link": "https://t.me/lim_econ/2100",
+     "link_label": "텔레그램 원문",
+     "topic": "경제지표",
+     "sources": [
+      "블룸버그",
+      "씨티"
+     ],
+     "time": "2026-10-16T07:54:32+09:00",
+     "rank": 1
+    },
+    {
+     "title": "한국 증시 관련 수치: 강한 반발 매수세 유입 후 케빈 워시 발언 주목",
+     "bullets": [
+      "FICC: 국채 금리, 안전자산 선호, 숏커버로 큰 폭 하락"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11203",
+     "link_label": "텔레그램 원문",
+     "topic": "유가·원자재",
+     "sources": [],
+     "time": "2026-10-16T05:21:43+09:00",
+     "rank": 1
+    },
+    {
+     "title": "미 증시, AI 신용 불안에 반도체 부진에도 젠슨 황 발언과 순환매에 상승 전환 성공",
+     "bullets": [
+      "변화요인: 생산자물가, 소매판매, 금리, 순환매, 옵션 거래 평가"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11200",
+     "link_label": "텔레그램 원문",
+     "topic": "경제지표",
+     "sources": [],
+     "time": "2026-10-16T05:20:22+09:00",
+     "rank": 1
+    },
+    {
+     "title": "이슈 분석",
+     "bullets": [
+      "10월 15일 코스피, 서킷브레이커 발동되며 7%대 폭락.",
+      "투자심리가 크게 훼손된 시기이지만, 과거 7거래일 누적 낙폭 상위 사례를 적용해보면, 단기적인 가격 되돌림이 나타나는 경향이 존재한다는 점에 주목",
+      "(베이스 시나리오) 추가 하락 대비 가격 되돌림의 기대값이 커진 구간이기에, 베이스 시나리오는 시간이 지날수록 지수 회복하는 경로.",
+      "(워스트 시나리오) 수급, 심리적인 요인으로 추가 급락을 겪게 될 수 있는 경로",
+      "워스트 시나리오 현실화 시, 이익 신뢰성이 약해졌음을 고려하면, 선행 PER보다는 이익 변동에 민감도가 낮은 선행 PBR로 바닥을 잡는 것이 합리적"
+     ],
+     "numbers": [],
+     "link": "https://www.kiwoom.com/h/invest/research/VMarketSIDetailView?sqno=1370",
+     "link_label": "kiwoom.com",
+     "topic": null,
+     "sources": [],
+     "time": "2026-10-16T07:33:55+09:00",
+     "rank": 2
+    },
+    {
+     "title": "1. 위쪽 그림: 코스피 선행 PER 밴드",
+     "bullets": [
+      "15일 종가 기준 4.24배로 이미 역사적 밴드 하단을 이탈.",
+      "2. 아래쪽 그림: 코스피 선행 BPR 밴드",
+      "단기 이익 변동에 대한 민감도가 낮은 선행 PBR로 바닥을 잡는 작업이 상대적으로 용이할 전망"
+     ],
+     "numbers": [],
+     "link": "https://t.me/hedgecat0301/2969",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [],
+     "time": "2026-10-16T07:33:40+09:00",
+     "rank": 2
+    },
+    {
+     "title": "1. 위쪽 그림: 코스피의 역대 7거래일 누적 낙폭 상위 10개 사례 이후 주가 변화",
+     "bullets": [
+      "이번이 -20.8%로 역대 3위이며, 과거 사례에서는 급락 이후 단기적인 가격 되돌림 패턴 출현",
+      "2. 아래쪽 그림: 최근 7거래일 간 업종별 등락률 상위",
+      "반도체, IT하드웨어 등 AI 인프라주식들이 주로 급락."
+     ],
+     "numbers": [],
+     "link": "https://t.me/hedgecat0301/2968",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [],
+     "time": "2026-10-16T07:33:22+09:00",
+     "rank": 2
+    },
+    {
+     "title": "특징 종목: 일라이릴리, 세일즈포스 상승, 마이크론 상승 전환, 반도체 낙폭 축소",
+     "bullets": [
+      "네오클라우드: 코어위브, 급락 후 반발 매수로 상승 전환",
+      "메모리, 스토리지 반도체: 큰 폭 하락 후 과도한 하락에 대한 기대에 낙폭 축소",
+      "AI 반도체: 엔비디아, 신제품 발표와 젠슨 황 발언에 낙폭 축소",
+      "파운드리, 광통신: 보수적인 전망, 집행 속도 불안에 하락 후 낙폭 축소",
+      "AI 서버, 컴퓨터 하드웨어: 델, 투자의견 하향과 AI 서버 수익성 논란"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11201",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [
+      "JP모건"
+     ],
+     "time": "2026-10-16T05:21:10+09:00",
+     "rank": 2
+    },
+    {
+     "title": "Gavin Baker",
+     "bullets": [
+      "요약 : 앞으로 앤스로픽이 ARR(연환산 반복매출) 수치를 다시 공개하는 일은 아마 없을 텐데, 이는 건전한 변화다.",
+      "앤스로픽은 3분기에 잉여현금흐름 흑자를 기록했고, 제3자 데이터에 따르면 오퍼스 5.5에 힘입어 10월 들어 성장이 다시 가속되고 있다.",
+      "오픈AI는 3분기에 앤스로픽으로부터 점유율을 가져온 이후에도 같은 속도로 성장하고 있다.",
+      "제3자 데이터는 하이퍼스케일러들의 성장이 3분기에도 계속 가속됐음을 보여준다."
+     ],
+     "numbers": [],
+     "link": "https://x.com/GavinSBaker/status/2110743424400068790",
+     "link_label": "x.com",
+     "topic": null,
+     "sources": [
+      "데이터"
+     ],
+     "time": "2026-10-16T05:18:44+09:00",
+     "rank": 2
+    },
+    {
+     "title": "BT 기판 산업 업데이트: 수급 구조 변화 속 ZDT·Kinsus·NYPCB·Unimicron 목표주가 상향",
+     "bullets": [
+      "BT 기판 업종 모델 업데이트 (2021년 이후 처음)",
+      "메모리 기판 수요 급증(2026~28E CAGR 41%), 공급 증가율은 이전 업사이클보다 둔화(6% vs 9%)",
+      "수급 갭: 2026E 1% → 2027E 11% → 2028E 14%로 확대",
+      "전체 BT 기판 TAM: 2026~28E CAGR 32%, 2028E 168억 달러 (2025년 74억 달러)",
+      "2026년 BT 가격 평균 10% 상승, 2027E +15~20%, 2028E +10~15% 전망"
+     ],
+     "numbers": [],
+     "link": "https://t.me/Jstockclass/15241",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-10-15T22:37:45+09:00",
+     "rank": 2
+    },
+    {
+     "title": "Keybanc",
+     "bullets": [
+      "HP, Dell, 구글, 2030년 이후 메모리 LTA 연장을 모색 중."
+     ],
+     "numbers": [],
+     "link": "https://x.com/pequityresearch/status/2110784936571543618",
+     "link_label": "x.com",
+     "topic": null,
+     "sources": [],
+     "time": "2026-10-16T05:30:05+09:00",
+     "rank": 3
+    },
+    {
+     "title": "양자: 구글의 양자 혁신 발표에 강세",
+     "bullets": [
+      "제약: 임상 결과, 경기 방어성향 수급 유입에 강세",
+      "비트코인: 상승 전화 속 관련주 강세"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11202",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [
+      "모건스탠리"
+     ],
+     "time": "2026-10-16T05:21:10+09:00",
+     "rank": 3
+    }
+   ],
+   "refs": [],
+   "errors": []
+  },
+  {
    "id": "2026-10-15-post",
    "name": "장마감 브리핑",
    "start": "2026-10-15T09:00:00+09:00",
@@ -2289,132 +2549,7 @@
    "cards": [],
    "refs": [],
    "errors": []
-  },
-  {
-   "id": "2026-10-09-pre",
-   "name": "장전 브리핑",
-   "start": "2026-10-08T19:00:00+09:00",
-   "end": "2026-10-09T09:00:00+09:00",
-   "final": true,
-   "created_at": "2026-10-09T09:40:29.767713+09:00",
-   "post_count": 8,
-   "metrics": [],
-   "cards": [
-    {
-     "title": "한국증시 관련 수치: 금요일 미 증시 중요, 금리 안정, OpenAI 우려 완화 여부가 월요일 시장에 영향",
-     "bullets": [
-      "FICC: 국제유가, 허리케인, 이란, 재고 등에 급등 후 트럼프 발언에 상승 축소"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11175",
-     "link_label": "텔레그램 원문",
-     "topic": "유가·원자재",
-     "sources": [],
-     "time": "2026-10-09T05:38:56+09:00",
-     "rank": 1
-    },
-    {
-     "title": "미 증시, OpenAI 매출 논란에 AI 관련주 하락, 금리안정에 여타 업종은 견조",
-     "bullets": [
-      "변화요인: 국제유가, 국채 금리, OpenAI"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11172",
-     "link_label": "텔레그램 원문",
-     "topic": "유가·원자재",
-     "sources": [
-      "CNBC",
-      "악시오스"
-     ],
-     "time": "2026-10-09T05:38:14+09:00",
-     "rank": 1
-    },
-    {
-     "title": "TickerTrends",
-     "bullets": [
-      "9월 29일, OpenAI의 연간 수익이 700억 달러에 근접하고 있다는 보도가 나왔습니다.",
-      "당시 우리의 추적 결과는 504.4억 달러로, 그 수치보다 훨씬 낮았습니다.",
-      "오늘, 파이낸셜 타임스는 OpenAI가 투자자들에게 9월에 500억 달러에 근접하고 있다고 밝혔다는 소식을 전했습니다."
-     ],
-     "numbers": [],
-     "link": "https://x.com/tickerplus/status/2108247488780001724",
-     "link_label": "x.com",
-     "topic": null,
-     "sources": [],
-     "time": "2026-10-09T07:22:06+09:00",
-     "rank": 2
-    },
-    {
-     "title": "특징 종목: 엔비디아, 오라클, 마이크론, 아마존, MS, 일라이릴리 하락 Vs. 팔란티어, 애플",
-     "bullets": [
-      "메모리, 스토리지 반도체: 국제유가 등에 하락 후 OpenAI 이슈로 하락 변동성 확대",
-      "AI 반도체: OpenAI 이슈를 빌미로 불확실성 부각되며 대부분 하락",
-      "반도체 장비, 광통신: OpenAI 이슈로 하락",
-      "AI 산업, 데이터센터: 투자자금 회수 불안에 부진",
-      "자동차: 테슬라 하락 Vs. GM, 포드 상승"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11173",
-     "link_label": "텔레그램 원문",
-     "topic": "반도체·AI",
-     "sources": [
-      "골드만삭스",
-      "공개한 추정"
-     ],
-     "time": "2026-10-09T05:38:37+09:00",
-     "rank": 2
-    },
-    {
-     "title": "구글, 범용 업무 AI 에이전트 ‘Gemini Agent’ 공개",
-     "bullets": [
-      ": Gemini at Work 2026에서 기업의 지식 업무, 콘텐츠 제작, 데이터 분석, 코딩을 하나의 인터페이스에서 수행하는 범용 AI 에이전트 ‘Gemini Agen…",
-      ": 사용자가 목표를 제시하면 에이전트가 업무를 계획하고 도구를 활용해 최종 결과물까지 완성",
-      "웹, 모바일, Windows·Mac, CLI, Google Workspace, Microsoft 365, Slack 등에서 동일한 에이전트 사용 가능.",
-      "세션, 의미, 절차, 일화 등 4가지 메모리 체계를 통해 사용자와 조직의 업무 맥락 축적.",
-      "복잡한 작업을 여러 하위 에이전트에 분배해 병렬·순차 실행."
-     ],
-     "numbers": [],
-     "link": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
-     "link_label": "cloud.google.com",
-     "topic": "반도체·AI",
-     "sources": [],
-     "time": "2026-10-08T22:29:21+09:00",
-     "rank": 2
-    },
-    {
-     "title": "OpenAI 매출이 예상보다 낮다는 보도에 기술주 하락",
-     "bullets": [
-      "1. OpenAI 연환산 매출, 기존 보도보다 200억 달러 낮아",
-      "2. 매출 차이의 원인은 회계 기준 차이"
-     ],
-     "numbers": [],
-     "link": "https://ktvz.com/money/cnn-business-consumer/2026/10/08/tech-stocks-drop-after-report-that-openais-revenue-is-lower-than-expected/",
-     "link_label": "ktvz.com",
-     "topic": null,
-     "sources": [
-      "CNN",
-      "FT"
-     ],
-     "time": "2026-10-09T07:20:28+09:00",
-     "rank": 3
-    },
-    {
-     "title": "소비: 개별 호재와 경기 방어 섹터 매수세로 상승",
-     "bullets": [
-      "비트코인: 자금 유출에 하락 후 금리, 유가 변화에 낙폭 축소"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11174",
-     "link_label": "텔레그램 원문",
-     "topic": null,
-     "sources": [],
-     "time": "2026-10-09T05:38:37+09:00",
-     "rank": 3
-    }
-   ],
-   "refs": [],
-   "errors": []
   }
  ],
- "checked_at": "2026-10-15T19:29:40.232980+09:00"
+ "checked_at": "2026-10-16T08:17:31.736258+09:00"
 }
