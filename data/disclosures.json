@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-15T13:38:36.585242+09:00",
+ "captured_at": "2026-10-15T14:40:59.103521+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "378340",
+   "name": "필에너지",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "필에너지",
+   "rcept_no": "20261015900290"
+  },
   {
    "code": "028300",
    "name": "HLB",
@@ -15,6 +27,18 @@
    "rcept_no": "20261015900184"
   },
   {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "KB금융",
+   "rcept_no": "20261015800283"
+  },
+  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -25,6 +49,30 @@
    "date": "2026-10-15",
    "filer": "하나금융지주",
    "rcept_no": "20261015800202"
+  },
+  {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "이성욱",
+   "rcept_no": "20261015000166"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "키움증권",
+   "rcept_no": "20261015000143"
   },
   {
    "code": "039490",
@@ -759,6 +807,18 @@
    "rcept_no": "20261007000312"
   },
   {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "KB금융",
+   "rcept_no": "20261007000298"
+  },
+  {
    "code": "095340",
    "name": "ISC",
    "side": "short",
@@ -807,6 +867,18 @@
    "rcept_no": "20261006800320"
   },
   {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "KB금융",
+   "rcept_no": "20261006000411"
+  },
+  {
    "code": "122640",
    "name": "예스티",
    "side": "short",
@@ -817,6 +889,18 @@
    "date": "2026-10-06",
    "filer": "조이현",
    "rcept_no": "20261006000409"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "일괄신고추가서류",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "KB금융",
+   "rcept_no": "20261006000400"
   },
   {
    "code": "039490",
@@ -937,6 +1021,54 @@
    "date": "2026-10-02",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261002800830"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "주주총회소집결의",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "KB금융",
+   "rcept_no": "20261002800537"
+  },
+  {
+   "code": "378340",
+   "name": "필에너지",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "문희승",
+   "rcept_no": "20261002000548"
+  },
+  {
+   "code": "378340",
+   "name": "필에너지",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "문종남",
+   "rcept_no": "20261002000542"
+  },
+  {
+   "code": "378340",
+   "name": "필에너지",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "김도영",
+   "rcept_no": "20261002000535"
   },
   {
    "code": "035420",
@@ -1347,6 +1479,18 @@
    "rcept_no": "20261001000085"
   },
   {
+   "code": "378340",
+   "name": "필에너지",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-30",
+   "filer": "필에너지",
+   "rcept_no": "20260930900825"
+  },
+  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "long",
@@ -1587,6 +1731,18 @@
    "rcept_no": "20260928800496"
   },
   {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "기타안내사항(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "KB금융",
+   "rcept_no": "20260928800208"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -1753,6 +1909,18 @@
    "date": "2026-09-23",
    "filer": "현대로템",
    "rcept_no": "20260923000001"
+  },
+  {
+   "code": "378340",
+   "name": "필에너지",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-22",
+   "filer": "필에너지",
+   "rcept_no": "20260922900377"
   },
   {
    "code": "064350",
@@ -2331,6 +2499,30 @@
    "rcept_no": "20260916000342"
   },
   {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-15",
+   "filer": "KB금융",
+   "rcept_no": "20260915800456"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-15",
+   "filer": "KB금융",
+   "rcept_no": "20260915800452"
+  },
+  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -2341,6 +2533,18 @@
    "date": "2026-09-15",
    "filer": "키움증권",
    "rcept_no": "20260915000140"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-14",
+   "filer": "KB금융",
+   "rcept_no": "20260914000279"
   },
   {
    "code": "039490",
@@ -2461,6 +2665,30 @@
    "date": "2026-09-11",
    "filer": "LS전선",
    "rcept_no": "20260911000445"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-11",
+   "filer": "KB금융",
+   "rcept_no": "20260911000434"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "일괄신고추가서류",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-11",
+   "filer": "KB금융",
+   "rcept_no": "20260911000385"
   },
   {
    "code": "035420",
@@ -3111,16 +3339,16 @@
    "rcept_no": "20260904800510"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
    "important": false,
    "correction": false,
    "date": "2026-09-04",
-   "filer": "키움증권",
-   "rcept_no": "20260904000332"
+   "filer": "KB금융",
+   "rcept_no": "20260904800176"
   },
   {
    "code": "039490",
@@ -3132,7 +3360,7 @@
    "correction": false,
    "date": "2026-09-04",
    "filer": "키움증권",
-   "rcept_no": "20260904000119"
+   "rcept_no": "20260904000332"
   },
   {
    "code": "207940",
@@ -3291,6 +3519,18 @@
    "rcept_no": "20260901000194"
   },
   {
+   "code": "378340",
+   "name": "필에너지",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-31",
+   "filer": "필에너지",
+   "rcept_no": "20260831900714"
+  },
+  {
    "code": "028260",
    "name": "삼성물산",
    "side": "short",
@@ -3361,6 +3601,18 @@
    "date": "2026-08-31",
    "filer": "가온전선",
    "rcept_no": "20260831800149"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "KB금융",
+   "rcept_no": "20260831001290"
   },
   {
    "code": "028260",
@@ -3445,6 +3697,18 @@
    "date": "2026-08-31",
    "filer": "가온전선",
    "rcept_no": "20260831000415"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "투자설명서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "KB금융",
+   "rcept_no": "20260831000056"
   },
   {
    "code": "028300",
@@ -3771,6 +4035,18 @@
    "rcept_no": "20260826000163"
   },
   {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "[첨부정정]증권신고서(채무증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-26",
+   "filer": "KB금융",
+   "rcept_no": "20260826000090"
+  },
+  {
    "code": "122640",
    "name": "예스티",
    "side": "short",
@@ -3805,6 +4081,42 @@
    "date": "2026-08-25",
    "filer": "하나금융지주",
    "rcept_no": "20260825800356"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "[발행조건확정]증권신고서(채무증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-25",
+   "filer": "KB금융",
+   "rcept_no": "20260825000482"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "[기재정정]증권신고서(채무증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-25",
+   "filer": "KB금융",
+   "rcept_no": "20260825000479"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "[기재정정]주요사항보고서(상각형조건부자본증권발행결정)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-25",
+   "filer": "KB금융",
+   "rcept_no": "20260825000422"
   },
   {
    "code": "042660",
@@ -3867,6 +4179,18 @@
    "rcept_no": "20260821800764"
   },
   {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "[기재정정]최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-21",
+   "filer": "KB금융",
+   "rcept_no": "20260821800672"
+  },
+  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "long",
@@ -3877,6 +4201,18 @@
    "date": "2026-08-21",
    "filer": "한화솔루션",
    "rcept_no": "20260821800542"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-21",
+   "filer": "KB금융",
+   "rcept_no": "20260821800357"
   },
   {
    "code": "006400",
@@ -3937,6 +4273,42 @@
    "date": "2026-08-20",
    "filer": "산일전기",
    "rcept_no": "20260820800341"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-20",
+   "filer": "KB금융",
+   "rcept_no": "20260820800325"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-20",
+   "filer": "KB금융",
+   "rcept_no": "20260820800322"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-20",
+   "filer": "KB금융",
+   "rcept_no": "20260820800320"
   },
   {
    "code": "272210",
@@ -4047,6 +4419,30 @@
    "rcept_no": "20260819800197"
   },
   {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "증권신고서(채무증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-19",
+   "filer": "KB금융",
+   "rcept_no": "20260819000353"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "[기재정정]주요사항보고서(상각형조건부자본증권발행결정)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-19",
+   "filer": "KB금융",
+   "rcept_no": "20260819000279"
+  },
+  {
    "code": "095340",
    "name": "ISC",
    "side": "short",
@@ -4081,6 +4477,18 @@
    "date": "2026-08-18",
    "filer": "삼양식품",
    "rcept_no": "20260818800427"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "[기재정정]일괄신고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-08-18",
+   "filer": "KB금융",
+   "rcept_no": "20260818000230"
   }
  ]
 }
