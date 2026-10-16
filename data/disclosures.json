@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-16T14:38:53.052171+09:00",
+ "captured_at": "2026-10-16T15:47:21.249057+09:00",
  "days": 60,
  "items": [
   {
@@ -27,6 +27,18 @@
    "rcept_no": "20261016900140"
   },
   {
+   "code": "272210",
+   "name": "한화시스템",
+   "side": "short",
+   "title": "조회공시요구(풍문또는보도)에대한답변(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "한화시스템",
+   "rcept_no": "20261016800541"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -37,6 +49,78 @@
    "date": "2026-10-16",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261016800441"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "김성호",
+   "rcept_no": "20261016000318"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "계열금융회사의약관에의한금융거래-[유가증권-채권]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "키움증권",
+   "rcept_no": "20261016000305"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "계열금융회사의약관에의한금융거래-[유가증권-수익증권]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "키움증권",
+   "rcept_no": "20261016000295"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "계열금융회사의약관에의한금융거래-[장단기차입]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "키움증권",
+   "rcept_no": "20261016000288"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "계열금융회사의약관에의한금융거래-[파생금융상품]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "키움증권",
+   "rcept_no": "20261016000279"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "키움증권",
+   "rcept_no": "20261016000241"
   },
   {
    "code": "039490",
@@ -3015,30 +3099,6 @@
    "rcept_no": "20260910000300"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "키움증권",
-   "rcept_no": "20260910000159"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "키움증권",
-   "rcept_no": "20260910000141"
-  },
-  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "long",
@@ -3087,18 +3147,6 @@
    "rcept_no": "20260909000435"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "키움증권",
-   "rcept_no": "20260909000410"
-  },
-  {
    "code": "030200",
    "name": "KT",
    "side": "short",
@@ -3123,18 +3171,6 @@
    "rcept_no": "20260909000359"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "키움증권",
-   "rcept_no": "20260909000351"
-  },
-  {
    "code": "030200",
    "name": "KT",
    "side": "short",
@@ -3145,18 +3181,6 @@
    "date": "2026-09-09",
    "filer": "케이티",
    "rcept_no": "20260909000349"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "키움증권",
-   "rcept_no": "20260909000282"
   },
   {
    "code": "028300",

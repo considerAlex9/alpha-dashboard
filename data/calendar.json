@@ -1,18 +1,7 @@
 {
- "captured_at": "2026-10-16T14:39:15.994339+09:00",
+ "captured_at": "2026-10-16T15:47:44.401739+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "JPY|BOJ Gov Ueda Speaks|2026-10-06",
-   "time": "2026-10-06T15:35:00+09:00",
-   "country": "일본",
-   "title": "일본은행 총재 우에다 발언",
-   "title_en": "BOJ Gov Ueda Speaks",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "CNY|Bank Holiday|2026-10-07",
    "time": "2026-10-07T08:01:00+09:00",
