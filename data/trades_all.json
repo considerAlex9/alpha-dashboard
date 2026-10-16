@@ -1,5 +1,20 @@
 [
  {
+  "id": 2250198,
+  "order_id": 31182,
+  "company_id": 731,
+  "company_name": "Samsung C&T Corporation",
+  "company_symbol": "028260",
+  "side": "cover",
+  "quantity": 5589,
+  "price": 280104.246,
+  "commission": 1565502.6307,
+  "fx_rate": 1.0,
+  "value_krw": 1565502630.65,
+  "realized_pnl": 241662935.0017,
+  "created_at": "2026-10-16T00:10:15+00:00"
+ },
+ {
   "id": 2235459,
   "order_id": 30895,
   "company_id": 1564,
