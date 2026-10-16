@@ -4,25 +4,25 @@
    "id": "2026-10-16-pre",
    "name": "장전 브리핑",
    "start": "2026-10-15T19:00:00+09:00",
-   "end": "2026-10-16T08:00:00+09:00",
-   "final": false,
-   "created_at": "2026-10-16T08:17:31.736258+09:00",
-   "post_count": 22,
+   "end": "2026-10-16T09:00:00+09:00",
+   "final": true,
+   "created_at": "2026-10-16T09:48:57.199264+09:00",
+   "post_count": 28,
    "metrics": [
     {
      "label": "다우",
-     "value": "",
-     "chg": "+1.1%"
+     "value": "52,177.69pt",
+     "chg": "+1.08%"
     },
     {
      "label": "S&P500",
-     "value": "",
-     "chg": "+0.3%"
+     "value": "7,744.06pt",
+     "chg": "+0.33%"
     },
     {
      "label": "나스닥",
-     "value": "",
-     "chg": "+0.1%"
+     "value": "26,713.03pt",
+     "chg": "+0.08%"
     },
     {
      "label": "미 10년물",
@@ -43,9 +43,101 @@
      "label": "코스피",
      "value": "5,100pt",
      "chg": ""
+    },
+    {
+     "label": "미 국채 2년물",
+     "value": "4.738%",
+     "chg": "-5.9bp"
+    },
+    {
+     "label": "미 국채 10년물",
+     "value": "5.058%",
+     "chg": "-12.7bp"
+    },
+    {
+     "label": "원/달러",
+     "value": "1,342.3원",
+     "chg": "+2.2원"
     }
    ],
    "cards": [
+    {
+     "title": "환율 아침 시황",
+     "bullets": [
+      "원/달러 환율은 대내외 금융시장 변동을 살피며 상승 마감."
+     ],
+     "numbers": [
+      {
+       "label": "원/달러",
+       "value": "1,342.3원",
+       "chg": "+2.2원"
+      },
+      {
+       "label": "달러인덱스",
+       "value": "102.00pt",
+       "chg": "-0.55pt"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29199",
+     "link_label": "텔레그램 원문",
+     "topic": "환율",
+     "sources": [],
+     "time": "2026-10-16T08:07:05+09:00",
+     "rank": 0
+    },
+    {
+     "title": "주식 아침 시황",
+     "bullets": [
+      "뉴욕 증시는 금리 안정과 순환매 유입에 상승 마감."
+     ],
+     "numbers": [
+      {
+       "label": "다우",
+       "value": "52,177.69pt",
+       "chg": "+1.08%"
+      },
+      {
+       "label": "S&P500",
+       "value": "7,744.06pt",
+       "chg": "+0.33%"
+      },
+      {
+       "label": "나스닥",
+       "value": "26,713.03pt",
+       "chg": "+0.08%"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29198",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-10-16T08:06:52+09:00",
+     "rank": 0
+    },
+    {
+     "title": "채권 아침 시황",
+     "bullets": [
+      "미 국채 시장은 위험자산 회피 심리 지속되며 강세 마감."
+     ],
+     "numbers": [
+      {
+       "label": "미 국채 2년물",
+       "value": "4.738%",
+       "chg": "-5.9bp"
+      },
+      {
+       "label": "미 국채 10년물",
+       "value": "5.058%",
+       "chg": "-12.7bp"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29197",
+     "link_label": "텔레그램 원문",
+     "topic": "금리·연준",
+     "sources": [],
+     "time": "2026-10-16T08:06:38+09:00",
+     "rank": 0
+    },
     {
      "title": "장 시작 전 생각: 패닉 장세 탈출 방안",
      "bullets": [
@@ -226,6 +318,19 @@
      "sources": [],
      "time": "2026-10-15T22:37:45+09:00",
      "rank": 2
+    },
+    {
+     "title": "VARA AI Fund 청산 루머 (제2의 레오폴드?)",
+     "bullets": [
+      "최근 AI 인프라 빠진 것 보면 다소 과격한 면이 있는데 그럴수 있겠다 싶음."
+     ],
+     "numbers": [],
+     "link": "https://x.com/KawzInvests/status/2110791366913732740?s=20",
+     "link_label": "x.com",
+     "topic": null,
+     "sources": [],
+     "time": "2026-10-16T08:05:44+09:00",
+     "rank": 3
     },
     {
      "title": "Keybanc",
@@ -2551,5 +2656,5 @@
    "errors": []
   }
  ],
- "checked_at": "2026-10-16T08:17:31.736258+09:00"
+ "checked_at": "2026-10-16T09:48:57.199264+09:00"
 }

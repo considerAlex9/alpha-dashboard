@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-16T08:17:09.809774+09:00",
+ "captured_at": "2026-10-16T09:48:34.430281+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "ISC",
+   "rcept_no": "20261016900141"
+  },
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "ISC",
+   "rcept_no": "20261016900140"
+  },
   {
    "code": "378340",
    "name": "필에너지",
@@ -145,18 +169,6 @@
    "date": "2026-10-14",
    "filer": "제주반도체",
    "rcept_no": "20261014900345"
-  },
-  {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "결산실적공시예고(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-14",
-   "filer": "삼성물산",
-   "rcept_no": "20261014800572"
   },
   {
    "code": "064350",
@@ -1287,18 +1299,6 @@
    "rcept_no": "20261002000035"
   },
   {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": true,
-   "date": "2026-10-01",
-   "filer": "삼성물산",
-   "rcept_no": "20261001800695"
-  },
-  {
    "code": "064350",
    "name": "현대로템",
    "side": "short",
@@ -1731,18 +1731,6 @@
    "rcept_no": "20260928900382"
   },
   {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-28",
-   "filer": "삼성물산",
-   "rcept_no": "20260928800892"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -2007,18 +1995,6 @@
    "rcept_no": "20260921800130"
   },
   {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "투자판단관련주요경영사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-21",
-   "filer": "삼성물산",
-   "rcept_no": "20260921800004"
-  },
-  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -2079,18 +2055,6 @@
    "rcept_no": "20260918800776"
   },
   {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-18",
-   "filer": "삼성물산",
-   "rcept_no": "20260918800764"
-  },
-  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -2113,18 +2077,6 @@
    "date": "2026-09-18",
    "filer": "한화시스템",
    "rcept_no": "20260918800689"
-  },
-  {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "삼성물산",
-   "rcept_no": "20260918800688"
   },
   {
    "code": "272210",
@@ -2967,18 +2919,6 @@
    "rcept_no": "20260910000141"
   },
   {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "삼성물산",
-   "rcept_no": "20260909800662"
-  },
-  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "long",
@@ -3315,18 +3255,6 @@
    "rcept_no": "20260907000092"
   },
   {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "삼성물산",
-   "rcept_no": "20260904800636"
-  },
-  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -3531,30 +3459,6 @@
    "rcept_no": "20260831900714"
   },
   {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "삼성물산",
-   "rcept_no": "20260831800689"
-  },
-  {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-31",
-   "filer": "삼성물산",
-   "rcept_no": "20260831800587"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -3613,18 +3517,6 @@
    "date": "2026-08-31",
    "filer": "KB금융",
    "rcept_no": "20260831001290"
-  },
-  {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "삼성물산",
-   "rcept_no": "20260831001181"
   },
   {
    "code": "042660",
@@ -3733,30 +3625,6 @@
    "date": "2026-08-28",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260828800869"
-  },
-  {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "[기재정정]타법인주식및출자증권취득결정(종속회사의주요경영사항)",
-   "category": "합병·분할",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-28",
-   "filer": "삼성물산",
-   "rcept_no": "20260828800834"
-  },
-  {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "유상증자결정(종속회사의주요경영사항)",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "삼성물산",
-   "rcept_no": "20260828800769"
   },
   {
    "code": "207940",
@@ -4143,18 +4011,6 @@
    "rcept_no": "20260825000280"
   },
   {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-24",
-   "filer": "삼성물산",
-   "rcept_no": "20260824800613"
-  },
-  {
    "code": "347850",
    "name": "디앤디파마텍",
    "side": "long",
@@ -4165,18 +4021,6 @@
    "date": "2026-08-21",
    "filer": "디앤디파마텍",
    "rcept_no": "20260821900144"
-  },
-  {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "삼성물산",
-   "rcept_no": "20260821800764"
   },
   {
    "code": "105560",
@@ -4393,18 +4237,6 @@
    "date": "2026-08-19",
    "filer": "HLB",
    "rcept_no": "20260819900418"
-  },
-  {
-   "code": "028260",
-   "name": "삼성물산",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-19",
-   "filer": "삼성물산",
-   "rcept_no": "20260819800608"
   },
   {
    "code": "086790",
