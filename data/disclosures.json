@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-16T12:42:46.166423+09:00",
+ "captured_at": "2026-10-16T13:42:33.122938+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,42 @@
    "date": "2026-10-16",
    "filer": "ISC",
    "rcept_no": "20261016900140"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "키움증권",
+   "rcept_no": "20261016000129"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "키움증권",
+   "rcept_no": "20261016000124"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "키움증권",
+   "rcept_no": "20261016000121"
   },
   {
    "code": "009830",
@@ -3229,42 +3265,6 @@
    "date": "2026-09-07",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260907800372"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "윤태진",
-   "rcept_no": "20260907000226"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "키움증권",
-   "rcept_no": "20260907000185"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "키움증권",
-   "rcept_no": "20260907000184"
   },
   {
    "code": "028300",
