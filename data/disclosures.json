@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-16T09:48:34.430281+09:00",
+ "captured_at": "2026-10-16T10:41:49.450887+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,30 @@
    "date": "2026-10-16",
    "filer": "ISC",
    "rcept_no": "20261016900140"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "특수관계인에대한출자",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "한화솔루션",
+   "rcept_no": "20261016000056"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "long",
+   "title": "특수관계인에대한담보제공",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "한화솔루션",
+   "rcept_no": "20261016000054"
   },
   {
    "code": "378340",
