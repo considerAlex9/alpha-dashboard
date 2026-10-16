@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-16T17:06:00.606561+09:00",
+ "captured_at": "2026-10-16T19:29:31.980610+09:00",
  "days": 60,
  "items": [
   {
@@ -27,6 +27,18 @@
    "rcept_no": "20261016900140"
   },
   {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "타법인주식및출자증권취득결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "키움증권",
+   "rcept_no": "20261016800887"
+  },
+  {
    "code": "272210",
    "name": "한화시스템",
    "side": "short",
@@ -49,6 +61,18 @@
    "date": "2026-10-16",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261016800441"
+  },
+  {
+   "code": "272210",
+   "name": "한화시스템",
+   "side": "short",
+   "title": "주요사항보고서(타법인주식및출자증권양도결정)",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "한화시스템",
+   "rcept_no": "20261016000478"
   },
   {
    "code": "272210",
@@ -3097,18 +3121,6 @@
    "date": "2026-09-10",
    "filer": "키움증권",
    "rcept_no": "20260910000344"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "키움증권",
-   "rcept_no": "20260910000300"
   },
   {
    "code": "009830",
