@@ -1,73 +1,7 @@
 {
- "captured_at": "2026-10-16T19:30:01.033063+09:00",
+ "captured_at": "2026-10-19T08:15:26.151043+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "CNY|Bank Holiday|2026-10-07",
-   "time": "2026-10-07T08:01:00+09:00",
-   "country": "중국",
-   "title": "휴장 (공휴일)",
-   "title_en": "Bank Holiday",
-   "impact": "휴일",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "USD|President Trump Speaks|2026-10-08",
-   "time": "2026-10-08T02:00:00+09:00",
-   "country": "미국",
-   "title": "대통령 트럼프 발언",
-   "title_en": "President Trump Speaks",
-   "impact": "보통",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "USD|FOMC Meeting Minutes|2026-10-08",
-   "time": "2026-10-08T03:00:00+09:00",
-   "country": "미국",
-   "title": "FOMC 의사록 공개",
-   "title_en": "FOMC Meeting Minutes",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "USD|FOMC Member Waller Speaks|2026-10-08",
-   "time": "2026-10-08T17:30:00+09:00",
-   "country": "미국",
-   "title": "FOMC 위원 월러 발언",
-   "title_en": "FOMC Member Waller Speaks",
-   "impact": "보통",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "GBP|BOE Gov Bailey Speaks|2026-10-08",
-   "time": "2026-10-08T21:15:00+09:00",
-   "country": "영국",
-   "title": "영란은행 총재 베일리 발언",
-   "title_en": "BOE Gov Bailey Speaks",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "USD|Unemployment Claims|2026-10-08",
-   "time": "2026-10-08T21:30:00+09:00",
-   "country": "미국",
-   "title": "주간 신규 실업수당 청구",
-   "title_en": "Unemployment Claims",
-   "impact": "보통",
-   "forecast": "200K",
-   "previous": "197K",
-   "actual": ""
-  },
   {
    "key": "USD|Prelim UoM Consumer Sentiment|2026-10-09",
    "time": "2026-10-09T23:00:00+09:00",
@@ -251,6 +185,94 @@
    "title": "연준 의장man 워시 발언",
    "title_en": "Fed Chairman Warsh Speaks",
    "impact": "높음",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "GBP|CPI y/y|2026-10-21",
+   "time": "2026-10-21T15:00:00+09:00",
+   "country": "영국",
+   "title": "소비자물가 (전년 대비)",
+   "title_en": "CPI y/y",
+   "impact": "높음",
+   "forecast": "3.4%",
+   "previous": "3.1%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Unemployment Claims|2026-10-22",
+   "time": "2026-10-22T21:30:00+09:00",
+   "country": "미국",
+   "title": "주간 신규 실업수당 청구",
+   "title_en": "Unemployment Claims",
+   "impact": "보통",
+   "forecast": "200K",
+   "previous": "199K",
+   "actual": ""
+  },
+  {
+   "key": "USD|Flash Manufacturing PMI|2026-10-23",
+   "time": "2026-10-23T22:45:00+09:00",
+   "country": "미국",
+   "title": "제조업 PMI 속보치",
+   "title_en": "Flash Manufacturing PMI",
+   "impact": "보통",
+   "forecast": "55.5",
+   "previous": "57.0",
+   "actual": ""
+  },
+  {
+   "key": "USD|Flash Services PMI|2026-10-23",
+   "time": "2026-10-23T22:45:00+09:00",
+   "country": "미국",
+   "title": "서비스업 PMI 속보치",
+   "title_en": "Flash Services PMI",
+   "impact": "보통",
+   "forecast": "58.0",
+   "previous": "58.7",
+   "actual": ""
+  },
+  {
+   "key": "USD|Revised UoM Consumer Sentiment|2026-10-23",
+   "time": "2026-10-23T23:00:00+09:00",
+   "country": "미국",
+   "title": "미시간대 소비자심리 (확정)",
+   "title_en": "Revised UoM Consumer Sentiment",
+   "impact": "보통",
+   "forecast": "46.3",
+   "previous": "46.3",
+   "actual": ""
+  },
+  {
+   "key": "USD|Revised UoM Inflation Expectations|2026-10-23",
+   "time": "2026-10-23T23:00:00+09:00",
+   "country": "미국",
+   "title": "수정 UoM Inflation Expectations",
+   "title_en": "Revised UoM Inflation Expectations",
+   "impact": "보통",
+   "forecast": "",
+   "previous": "4.7%",
+   "actual": ""
+  },
+  {
+   "key": "EUR|Daylight Saving Time Shift|2026-10-25",
+   "time": "2026-10-25T10:00:00+09:00",
+   "country": "유로존",
+   "title": "Daylight Saving Time Shift",
+   "title_en": "Daylight Saving Time Shift",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "GBP|Daylight Saving Time Shift|2026-10-25",
+   "time": "2026-10-25T10:00:00+09:00",
+   "country": "영국",
+   "title": "Daylight Saving Time Shift",
+   "title_en": "Daylight Saving Time Shift",
+   "impact": "휴일",
    "forecast": "",
    "previous": "",
    "actual": ""

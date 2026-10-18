@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-16T19:29:31.980610+09:00",
+ "captured_at": "2026-10-19T08:14:58.477194+09:00",
  "days": 60,
  "items": [
   {
@@ -4309,114 +4309,6 @@
    "date": "2026-08-20",
    "filer": "한화시스템",
    "rcept_no": "20260820000123"
-  },
-  {
-   "code": "476830",
-   "name": "알지노믹스",
-   "side": "short",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "알지노믹스",
-   "rcept_no": "20260819900641"
-  },
-  {
-   "code": "028300",
-   "name": "HLB",
-   "side": "short",
-   "title": "증권발행결과(자율공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "HLB",
-   "rcept_no": "20260819900418"
-  },
-  {
-   "code": "086790",
-   "name": "하나금융지주",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "하나금융지주",
-   "rcept_no": "20260819800197"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "증권신고서(채무증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-19",
-   "filer": "KB금융",
-   "rcept_no": "20260819000353"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "[기재정정]주요사항보고서(상각형조건부자본증권발행결정)",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-19",
-   "filer": "KB금융",
-   "rcept_no": "20260819000279"
-  },
-  {
-   "code": "095340",
-   "name": "ISC",
-   "side": "short",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-18",
-   "filer": "ISC",
-   "rcept_no": "20260818900084"
-  },
-  {
-   "code": "095340",
-   "name": "ISC",
-   "side": "short",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-18",
-   "filer": "ISC",
-   "rcept_no": "20260818900082"
-  },
-  {
-   "code": "003230",
-   "name": "삼양식품",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-18",
-   "filer": "삼양식품",
-   "rcept_no": "20260818800427"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "[기재정정]일괄신고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-18",
-   "filer": "KB금융",
-   "rcept_no": "20260818000230"
   }
  ]
 }
