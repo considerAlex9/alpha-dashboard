@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-19T19:35:20.778569+09:00",
+ "captured_at": "2026-10-20T08:27:39.313882+09:00",
  "days": 60,
  "items": [
   {
@@ -4357,90 +4357,6 @@
    "date": "2026-08-21",
    "filer": "한화솔루션",
    "rcept_no": "20260821000461"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "[기재정정]타인에대한채무보증결정",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-20",
-   "filer": "한화오션",
-   "rcept_no": "20260820800640"
-  },
-  {
-   "code": "062040",
-   "name": "산일전기",
-   "side": "long",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "산일전기",
-   "rcept_no": "20260820800341"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "KB금융",
-   "rcept_no": "20260820800325"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "KB금융",
-   "rcept_no": "20260820800322"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "KB금융",
-   "rcept_no": "20260820800320"
-  },
-  {
-   "code": "028300",
-   "name": "HLB",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "진양곤",
-   "rcept_no": "20260820000132"
-  },
-  {
-   "code": "028300",
-   "name": "HLB",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "진양곤",
-   "rcept_no": "20260820000131"
   }
  ]
 }
