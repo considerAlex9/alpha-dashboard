@@ -1,5 +1,20 @@
 [
  {
+  "id": 2338228,
+  "order_id": 32316,
+  "company_id": 1376,
+  "company_name": "Neo Technical System Co. Ltd.",
+  "company_symbol": "085910",
+  "side": "buy",
+  "quantity": 90000,
+  "price": 19310.7935,
+  "commission": 1737971.4133,
+  "fx_rate": 1.0,
+  "value_krw": 1737971413.3019,
+  "realized_pnl": null,
+  "created_at": "2026-10-19T04:04:20+00:00"
+ },
+ {
   "id": 2335914,
   "order_id": 32306,
   "company_id": 1391,
