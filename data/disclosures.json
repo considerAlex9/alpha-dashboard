@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-19T08:14:58.477194+09:00",
+ "captured_at": "2026-10-19T09:50:32.105787+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "키움증권",
+   "rcept_no": "20261019000016"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "키움증권",
+   "rcept_no": "20261019000007"
+  },
   {
    "code": "095340",
    "name": "ISC",
@@ -39,18 +63,6 @@
    "rcept_no": "20261016800887"
   },
   {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "조회공시요구(풍문또는보도)에대한답변(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-16",
-   "filer": "한화시스템",
-   "rcept_no": "20261016800541"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -61,30 +73,6 @@
    "date": "2026-10-16",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261016800441"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "주요사항보고서(타법인주식및출자증권양도결정)",
-   "category": "합병·분할",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-16",
-   "filer": "한화시스템",
-   "rcept_no": "20261016000478"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "[기재정정]특수관계인과의보험거래",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-10-16",
-   "filer": "한화시스템",
-   "rcept_no": "20261016000361"
   },
   {
    "code": "035420",
@@ -589,54 +577,6 @@
    "date": "2026-10-12",
    "filer": "삼성SDI",
    "rcept_no": "20261012800501"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "한화시스템",
-   "rcept_no": "20261012800374"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "지상민",
-   "rcept_no": "20261012000429"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "이성훈",
-   "rcept_no": "20261012000422"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "김호중",
-   "rcept_no": "20261012000409"
   },
   {
    "code": "039490",
@@ -1407,18 +1347,6 @@
    "rcept_no": "20261002000427"
   },
   {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "국민연금공단",
-   "rcept_no": "20261002000420"
-  },
-  {
    "code": "267260",
    "name": "HD현대일렉트릭",
    "side": "short",
@@ -2067,18 +1995,6 @@
    "rcept_no": "20260923800386"
   },
   {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "한화시스템",
-   "rcept_no": "20260923800239"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -2283,90 +2199,6 @@
    "rcept_no": "20260921000126"
   },
   {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "타인에대한채무보증결정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화시스템",
-   "rcept_no": "20260918800776"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "타법인주식및출자증권처분결정(종속회사의주요경영사항)",
-   "category": "합병·분할",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화시스템",
-   "rcept_no": "20260918800703"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "대표이사(대표집행임원)변경(안내공시)",
-   "category": "최대주주·경영권",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화시스템",
-   "rcept_no": "20260918800689"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화시스템",
-   "rcept_no": "20260918800652"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "임시주주총회결과",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화시스템",
-   "rcept_no": "20260918800456"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화에어로스페이스",
-   "rcept_no": "20260918000462"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화시스템",
-   "rcept_no": "20260918000460"
-  },
-  {
    "code": "354320",
    "name": "알멕",
    "side": "short",
@@ -2463,18 +2295,6 @@
    "rcept_no": "20260918000048"
   },
   {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "조회공시요구(풍문또는보도)에대한답변(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "한화시스템",
-   "rcept_no": "20260917800428"
-  },
-  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -2497,18 +2317,6 @@
    "date": "2026-09-17",
    "filer": "하나금융지주",
    "rcept_no": "20260917800269"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "조회공시요구(풍문또는보도)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "유가증권시장본부",
-   "rcept_no": "20260917800184"
   },
   {
    "code": "035420",
@@ -2823,18 +2631,6 @@
    "rcept_no": "20260911800699"
   },
   {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-11",
-   "filer": "한화시스템",
-   "rcept_no": "20260911800620"
-  },
-  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -3003,18 +2799,6 @@
    "rcept_no": "20260911000140"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-11",
-   "filer": "키움증권",
-   "rcept_no": "20260911000048"
-  },
-  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "long",
@@ -3075,18 +2859,6 @@
    "rcept_no": "20260910800347"
   },
   {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "한화시스템",
-   "rcept_no": "20260910800303"
-  },
-  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -3109,18 +2881,6 @@
    "date": "2026-09-10",
    "filer": "하나금융지주",
    "rcept_no": "20260910000425"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "키움증권",
-   "rcept_no": "20260910000344"
   },
   {
    "code": "009830",
@@ -3625,18 +3385,6 @@
    "date": "2026-08-31",
    "filer": "한화오션",
    "rcept_no": "20260831001090"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "한화시스템",
-   "rcept_no": "20260831000656"
   },
   {
    "code": "207940",
@@ -4251,18 +3999,6 @@
    "rcept_no": "20260820800320"
   },
   {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "의결권대리행사권유참고서류",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "한화시스템",
-   "rcept_no": "20260820000142"
-  },
-  {
    "code": "028300",
    "name": "HLB",
    "side": "short",
@@ -4285,30 +4021,6 @@
    "date": "2026-08-20",
    "filer": "진양곤",
    "rcept_no": "20260820000131"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "주주총회소집공고",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-20",
-   "filer": "한화시스템",
-   "rcept_no": "20260820000125"
-  },
-  {
-   "code": "272210",
-   "name": "한화시스템",
-   "side": "short",
-   "title": "[기재정정]반기보고서 (2026.06)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-20",
-   "filer": "한화시스템",
-   "rcept_no": "20260820000123"
   }
  ]
 }

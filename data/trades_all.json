@@ -1,5 +1,20 @@
 [
  {
+  "id": 2305632,
+  "order_id": 32035,
+  "company_id": 2125,
+  "company_name": "Hanwha Systems Co., Ltd.",
+  "company_symbol": "272210",
+  "side": "cover",
+  "quantity": 24927,
+  "price": 74157.117,
+  "commission": 1848514.4562,
+  "fx_rate": 1.0,
+  "value_krw": 1848514456.1911,
+  "realized_pnl": 139130902.2713,
+  "created_at": "2026-10-19T00:37:37+00:00"
+ },
+ {
   "id": 2250198,
   "order_id": 31182,
   "company_id": 731,
