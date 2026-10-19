@@ -1,7 +1,43 @@
 {
- "captured_at": "2026-10-19T09:50:32.105787+09:00",
+ "captured_at": "2026-10-19T10:45:54.894330+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "가온전선",
+   "rcept_no": "20261019800156"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "기타경영사항(자율공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "현대로템",
+   "rcept_no": "20261019800139"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "[기재정정]주요사항보고서(상각형조건부자본증권발행결정)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-19",
+   "filer": "하나금융지주",
+   "rcept_no": "20261019000037"
+  },
   {
    "code": "039490",
    "name": "키움증권",
