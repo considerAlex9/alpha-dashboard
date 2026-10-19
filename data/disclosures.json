@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-19T13:41:33.892149+09:00",
+ "captured_at": "2026-10-19T14:44:17.160091+09:00",
  "days": 60,
  "items": [
   {
@@ -49,6 +49,42 @@
    "date": "2026-10-19",
    "filer": "현대로템",
    "rcept_no": "20261019800139"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "키움증권",
+   "rcept_no": "20261019000157"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "특수관계인으로부터부동산임차",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "현대로템",
+   "rcept_no": "20261019000136"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "특수관계인으로부터영업양수",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "현대로템",
+   "rcept_no": "20261019000134"
   },
   {
    "code": "086790",
@@ -2929,18 +2965,6 @@
    "date": "2026-09-11",
    "filer": "키움증권",
    "rcept_no": "20260911000173"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-11",
-   "filer": "키움증권",
-   "rcept_no": "20260911000140"
   },
   {
    "code": "009830",
