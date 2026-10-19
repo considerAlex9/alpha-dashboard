@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-19T14:44:17.160091+09:00",
+ "captured_at": "2026-10-19T15:51:29.452001+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "주권매매거래정지 (단일판매공급계약)",
+   "category": "거래정지·관리",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "코스닥시장본부",
+   "rcept_no": "20261019900330"
+  },
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "비나텍",
+   "rcept_no": "20261019900317"
+  },
   {
    "code": "440110",
    "name": "파두",
@@ -49,6 +73,18 @@
    "date": "2026-10-19",
    "filer": "현대로템",
    "rcept_no": "20261019800139"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "김성현",
+   "rcept_no": "20261019000211"
   },
   {
    "code": "039490",
@@ -1203,6 +1239,18 @@
    "rcept_no": "20261007000044"
   },
   {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-06",
+   "filer": "비나텍",
+   "rcept_no": "20261006900291"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -1573,6 +1621,18 @@
    "date": "2026-10-02",
    "filer": "키움증권",
    "rcept_no": "20261002000201"
+  },
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000200"
   },
   {
    "code": "095610",
@@ -3267,6 +3327,18 @@
    "rcept_no": "20260907900349"
   },
   {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-07",
+   "filer": "비나텍",
+   "rcept_no": "20260907900269"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -3999,6 +4071,30 @@
    "rcept_no": "20260826000090"
   },
   {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-26",
+   "filer": "성도경",
+   "rcept_no": "20260826000001"
+  },
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-25",
+   "filer": "비나텍",
+   "rcept_no": "20260825900561"
+  },
+  {
    "code": "087010",
    "name": "펩트론",
    "side": "short",
@@ -4105,6 +4201,18 @@
    "date": "2026-08-25",
    "filer": "최현자",
    "rcept_no": "20260825000280"
+  },
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "증권발행결과(자율공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-24",
+   "filer": "비나텍",
+   "rcept_no": "20260824900414"
   },
   {
    "code": "347850",
