@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-19T16:57:58.944038+09:00",
+ "captured_at": "2026-10-19T17:15:57.089111+09:00",
  "days": 60,
  "items": [
   {
@@ -42,6 +42,30 @@
    "code": "064350",
    "name": "현대로템",
    "side": "short",
+   "title": "주주명부폐쇄기간또는기준일설정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "현대로템",
+   "rcept_no": "20261019800593"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "주주총회소집결의",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "현대로템",
+   "rcept_no": "20261019800588"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
    "title": "연결재무제표기준영업(잠정)실적(공정공시)",
    "category": "실적",
    "important": true,
@@ -73,6 +97,18 @@
    "date": "2026-10-19",
    "filer": "현대로템",
    "rcept_no": "20261019800139"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "주요사항보고서(자기주식취득결정)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "현대로템",
+   "rcept_no": "20261019000305"
   },
   {
    "code": "086790",
