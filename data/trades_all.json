@@ -1,5 +1,35 @@
 [
  {
+  "id": 2335914,
+  "order_id": 32306,
+  "company_id": 1391,
+  "company_name": "Peptron Inc.",
+  "company_symbol": "087010",
+  "side": "short",
+  "quantity": 19000,
+  "price": 99357.2785,
+  "commission": 1887788.2915,
+  "fx_rate": 1.0,
+  "value_krw": 1887788291.5477,
+  "realized_pnl": null,
+  "created_at": "2026-10-19T03:50:55+00:00"
+ },
+ {
+  "id": 2335416,
+  "order_id": 32304,
+  "company_id": 2552,
+  "company_name": "FADU Inc.",
+  "company_symbol": "440110",
+  "side": "buy",
+  "quantity": 29410,
+  "price": 55940.4447,
+  "commission": 1645208.4773,
+  "fx_rate": 1.0,
+  "value_krw": 1645208477.3242,
+  "realized_pnl": null,
+  "created_at": "2026-10-19T03:47:11+00:00"
+ },
+ {
   "id": 2305632,
   "order_id": 32035,
   "company_id": 2125,
