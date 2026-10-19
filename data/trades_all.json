@@ -1,5 +1,20 @@
 [
  {
+  "id": 2357289,
+  "order_id": 32449,
+  "company_id": 1662,
+  "company_name": "Vina Tech Co., Ltd.",
+  "company_symbol": "126340",
+  "side": "buy",
+  "quantity": 24000,
+  "price": 82458.7254,
+  "commission": 1979009.4092,
+  "fx_rate": 1.0,
+  "value_krw": 1979009409.2099,
+  "realized_pnl": null,
+  "created_at": "2026-10-19T05:57:20+00:00"
+ },
+ {
   "id": 2338228,
   "order_id": 32316,
   "company_id": 1376,
