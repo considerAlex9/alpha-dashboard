@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-19T11:43:07.296112+09:00",
+ "captured_at": "2026-10-19T12:44:09.961926+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "현대로템",
+   "rcept_no": "20261019800217"
+  },
   {
    "code": "000500",
    "name": "가온전선",
