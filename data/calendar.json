@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-20T16:37:33.078451+09:00",
+ "captured_at": "2026-10-20T16:48:06.737006+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
   {
@@ -196,7 +196,7 @@
    "title": "제조업 PMI 속보치",
    "title_en": "Flash Manufacturing PMI",
    "impact": "보통",
-   "forecast": "55.5",
+   "forecast": "55.4",
    "previous": "57.0",
    "actual": ""
   },
@@ -207,7 +207,7 @@
    "title": "서비스업 PMI 속보치",
    "title_en": "Flash Services PMI",
    "impact": "보통",
-   "forecast": "58.0",
+   "forecast": "57.8",
    "previous": "58.7",
    "actual": ""
   },
