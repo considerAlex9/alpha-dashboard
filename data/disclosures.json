@@ -1,7 +1,43 @@
 {
- "captured_at": "2026-10-20T14:40:36.491745+09:00",
+ "captured_at": "2026-10-20T15:46:17.760903+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "259960",
+   "name": "크래프톤",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-20",
+   "filer": "크래프톤",
+   "rcept_no": "20261020800469"
+  },
+  {
+   "code": "259960",
+   "name": "크래프톤",
+   "side": "short",
+   "title": "결산실적공시예고(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-20",
+   "filer": "크래프톤",
+   "rcept_no": "20261020800466"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-20",
+   "filer": "NAVER",
+   "rcept_no": "20261020800455"
+  },
   {
    "code": "039490",
    "name": "키움증권",
