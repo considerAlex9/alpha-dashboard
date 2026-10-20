@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-20T19:31:30.814938+09:00",
+ "captured_at": "2026-10-21T08:25:04.754012+09:00",
  "days": 60,
  "items": [
   {
@@ -4357,90 +4357,6 @@
    "date": "2026-08-24",
    "filer": "비나텍",
    "rcept_no": "20260824900414"
-  },
-  {
-   "code": "347850",
-   "name": "디앤디파마텍",
-   "side": "long",
-   "title": "투자판단관련주요경영사항(임상시험결과) (대사이상지방간염 (MASH) 치료제 DD01의 미국 임상 제2상 임상시험결과보고서(CSR) 수령)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "디앤디파마텍",
-   "rcept_no": "20260821900144"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "[기재정정]최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": true,
-   "date": "2026-08-21",
-   "filer": "KB금융",
-   "rcept_no": "20260821800672"
-  },
-  {
-   "code": "009830",
-   "name": "한화솔루션",
-   "side": "long",
-   "title": "풍문또는보도에대한해명(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "한화솔루션",
-   "rcept_no": "20260821800542"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "KB금융",
-   "rcept_no": "20260821800357"
-  },
-  {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "특수관계인에대한주식의처분",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "삼성SDI",
-   "rcept_no": "20260821000547"
-  },
-  {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "[첨부추가]주요사항보고서(타법인주식및출자증권양도결정)",
-   "category": "합병·분할",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "삼성SDI",
-   "rcept_no": "20260821000464"
-  },
-  {
-   "code": "009830",
-   "name": "한화솔루션",
-   "side": "long",
-   "title": "특수관계인에대한출자",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-21",
-   "filer": "한화솔루션",
-   "rcept_no": "20260821000461"
   }
  ]
 }
