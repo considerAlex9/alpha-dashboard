@@ -1,7 +1,43 @@
 {
- "captured_at": "2026-10-20T17:03:38.138279+09:00",
+ "captured_at": "2026-10-20T19:31:30.814938+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "122640",
+   "name": "예스티",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-20",
+   "filer": "예스티",
+   "rcept_no": "20261020900678"
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-20",
+   "filer": "HD현대일렉트릭",
+   "rcept_no": "20261020800731"
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "중대재해발생(종속회사의주요경영사항)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-20",
+   "filer": "HD현대일렉트릭",
+   "rcept_no": "20261020800720"
+  },
   {
    "code": "259960",
    "name": "크래프톤",
