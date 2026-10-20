@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-20T08:27:39.313882+09:00",
+ "captured_at": "2026-10-20T09:50:51.634766+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-20",
+   "filer": "국민연금공단",
+   "rcept_no": "20261020000051"
+  },
   {
    "code": "126340",
    "name": "비나텍",
@@ -3073,18 +3085,6 @@
    "date": "2026-09-11",
    "filer": "키움증권",
    "rcept_no": "20260911000185"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-11",
-   "filer": "키움증권",
-   "rcept_no": "20260911000173"
   },
   {
    "code": "009830",
