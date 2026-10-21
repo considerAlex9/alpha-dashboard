@@ -1,18 +1,7 @@
 {
- "captured_at": "2026-10-21T19:36:38.958092+09:00",
+ "captured_at": "2026-10-22T08:21:16.931879+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "JPY|Bank Holiday|2026-10-12",
-   "time": "2026-10-12T08:00:00+09:00",
-   "country": "일본",
-   "title": "휴장 (공휴일)",
-   "title_en": "Bank Holiday",
-   "impact": "휴일",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "USD|Bank Holiday|2026-10-12",
    "time": "2026-10-12T20:00:00+09:00",
@@ -207,7 +196,7 @@
    "title": "서비스업 PMI 속보치",
    "title_en": "Flash Services PMI",
    "impact": "보통",
-   "forecast": "57.8",
+   "forecast": "57.9",
    "previous": "58.7",
    "actual": ""
   },
