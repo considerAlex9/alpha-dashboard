@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-21T14:45:35.056127+09:00",
+ "captured_at": "2026-10-21T15:51:01.485970+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,102 @@
    "date": "2026-10-21",
    "filer": "필에너지",
    "rcept_no": "20261021900088"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261021800344"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "한화오션",
+   "rcept_no": "20261021800343"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "KB금융",
+   "rcept_no": "20261021800314"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "김정식",
+   "rcept_no": "20261021000251"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "이동철",
+   "rcept_no": "20261021000245"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "전정호",
+   "rcept_no": "20261021000232"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "정유한",
+   "rcept_no": "20261021000229"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "최승락",
+   "rcept_no": "20261021000225"
   },
   {
    "code": "039490",
