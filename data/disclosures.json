@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-21T12:43:40.842869+09:00",
+ "captured_at": "2026-10-21T13:43:33.424782+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,18 @@
    "date": "2026-10-21",
    "filer": "필에너지",
    "rcept_no": "20261021900088"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "키움증권",
+   "rcept_no": "20261021000149"
   },
   {
    "code": "039490",
@@ -3037,18 +3049,6 @@
    "date": "2026-09-14",
    "filer": "삼성자산운용",
    "rcept_no": "20260914000251"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-14",
-   "filer": "키움증권",
-   "rcept_no": "20260914000030"
   },
   {
    "code": "207940",
