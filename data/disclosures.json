@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-21T08:25:04.754012+09:00",
+ "captured_at": "2026-10-21T09:49:09.386506+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "378340",
+   "name": "필에너지",
+   "side": "long",
+   "title": "주권매매거래정지 (단일판매공급계약)",
+   "category": "거래정지·관리",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "코스닥시장본부",
+   "rcept_no": "20261021900091"
+  },
+  {
+   "code": "378340",
+   "name": "필에너지",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "필에너지",
+   "rcept_no": "20261021900088"
+  },
   {
    "code": "122640",
    "name": "예스티",
