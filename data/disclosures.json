@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-21T15:51:01.485970+09:00",
+ "captured_at": "2026-10-21T16:34:54.750919+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "주권매매거래정지 (단일판매공급계약)",
+   "category": "거래정지·관리",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "코스닥시장본부",
+   "rcept_no": "20261021900399"
+  },
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "비나텍",
+   "rcept_no": "20261021900383"
+  },
   {
    "code": "378340",
    "name": "필에너지",
@@ -25,6 +49,18 @@
    "date": "2026-10-21",
    "filer": "필에너지",
    "rcept_no": "20261021900088"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "[기재정정]연결재무제표기준영업실적등에대한전망(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-21",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261021800395"
   },
   {
    "code": "207940",
@@ -61,6 +97,42 @@
    "date": "2026-10-21",
    "filer": "KB금융",
    "rcept_no": "20261021800314"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "키움증권",
+   "rcept_no": "20261021000331"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "키움증권",
+   "rcept_no": "20261021000325"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "강유훈",
+   "rcept_no": "20261021000270"
   },
   {
    "code": "035420",
@@ -3087,18 +3159,6 @@
    "rcept_no": "20260915800452"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-15",
-   "filer": "키움증권",
-   "rcept_no": "20260915000140"
-  },
-  {
    "code": "105560",
    "name": "KB금융",
    "side": "long",
@@ -3109,18 +3169,6 @@
    "date": "2026-09-14",
    "filer": "KB금융",
    "rcept_no": "20260914000279"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-14",
-   "filer": "키움증권",
-   "rcept_no": "20260914000269"
   },
   {
    "code": "440110",
