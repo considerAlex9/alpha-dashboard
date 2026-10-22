@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-22T13:42:53.356536+09:00",
+ "captured_at": "2026-10-22T14:43:02.383894+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-22",
+   "filer": "키움증권",
+   "rcept_no": "20261022000126"
+  },
   {
    "code": "039490",
    "name": "키움증권",
@@ -3133,18 +3145,6 @@
    "date": "2026-09-16",
    "filer": "키움증권",
    "rcept_no": "20260916000408"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-16",
-   "filer": "키움증권",
-   "rcept_no": "20260916000384"
   },
   {
    "code": "105560",
