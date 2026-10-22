@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-22T19:32:04.647407+09:00",
+ "captured_at": "2026-10-23T08:27:25.259713+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "키움증권",
+   "rcept_no": "20261023000004"
+  },
   {
    "code": "122640",
    "name": "예스티",
@@ -3169,18 +3181,6 @@
    "date": "2026-09-16",
    "filer": "키움증권",
    "rcept_no": "20260916000417"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-16",
-   "filer": "키움증권",
-   "rcept_no": "20260916000408"
   },
   {
    "code": "105560",
