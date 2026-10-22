@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-22T17:08:29.754181+09:00",
+ "captured_at": "2026-10-22T19:32:04.647407+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,30 @@
    "date": "2026-10-22",
    "filer": "예스티",
    "rcept_no": "20261022900576"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "[기재정정]투자설명서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-22",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261022000475"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "[기재정정]증권신고서(지분증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-22",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261022000473"
   },
   {
    "code": "039490",
