@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-22T16:55:08.744363+09:00",
+ "captured_at": "2026-10-22T17:08:29.754181+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "122640",
+   "name": "예스티",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-22",
+   "filer": "예스티",
+   "rcept_no": "20261022900576"
+  },
   {
    "code": "039490",
    "name": "키움증권",
