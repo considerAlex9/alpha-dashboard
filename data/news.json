@@ -4,10 +4,10 @@
    "id": "2026-10-22-pre",
    "name": "장전 브리핑",
    "start": "2026-10-21T19:00:00+09:00",
-   "end": "2026-10-22T08:00:00+09:00",
-   "final": false,
-   "created_at": "2026-10-22T08:21:11.365174+09:00",
-   "post_count": 17,
+   "end": "2026-10-22T09:00:00+09:00",
+   "final": true,
+   "created_at": "2026-10-22T09:55:03.020720+09:00",
+   "post_count": 23,
    "metrics": [
     {
      "label": "미 10년물",
@@ -16,18 +16,18 @@
     },
     {
      "label": "다우",
-     "value": "",
-     "chg": "+0.7%"
+     "value": "52,856.09pt",
+     "chg": "+0.69%"
     },
     {
      "label": "S&P500",
-     "value": "",
-     "chg": "+0.6%"
+     "value": "7,757.17pt",
+     "chg": "+0.58%"
     },
     {
      "label": "나스닥",
-     "value": "",
-     "chg": "+1.1%"
+     "value": "26,702.86pt",
+     "chg": "+1.05%"
     },
     {
      "label": "미 30년물",
@@ -43,9 +43,101 @@
      "label": "코스피",
      "value": "",
      "chg": "+3.8%"
+    },
+    {
+     "label": "미 국채 2년물",
+     "value": "4.806%",
+     "chg": "+3.0bp"
+    },
+    {
+     "label": "미 국채 10년물",
+     "value": "5.119%",
+     "chg": "+1.1bp"
+    },
+    {
+     "label": "원/달러",
+     "value": "1,327.1원",
+     "chg": "+0.4원"
     }
    ],
    "cards": [
+    {
+     "title": "환율 아침 시황",
+     "bullets": [
+      "원/달러 환율은 수급과 대외 이슈를 반영하며 보합 마감."
+     ],
+     "numbers": [
+      {
+       "label": "원/달러",
+       "value": "1,327.1원",
+       "chg": "+0.4원"
+      },
+      {
+       "label": "달러인덱스",
+       "value": "101.69pt",
+       "chg": "-0.01pt"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29234",
+     "link_label": "텔레그램 원문",
+     "topic": "환율",
+     "sources": [],
+     "time": "2026-10-22T08:10:05+09:00",
+     "rank": 0
+    },
+    {
+     "title": "주식 아침 시황",
+     "bullets": [
+      "뉴욕 증시는 실적 호조와 기술주 강세에 상승 마감."
+     ],
+     "numbers": [
+      {
+       "label": "다우",
+       "value": "52,856.09pt",
+       "chg": "+0.69%"
+      },
+      {
+       "label": "S&P500",
+       "value": "7,757.17pt",
+       "chg": "+0.58%"
+      },
+      {
+       "label": "나스닥",
+       "value": "26,702.86pt",
+       "chg": "+1.05%"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29233",
+     "link_label": "텔레그램 원문",
+     "topic": "미국 증시",
+     "sources": [],
+     "time": "2026-10-22T08:09:46+09:00",
+     "rank": 0
+    },
+    {
+     "title": "채권 아침 시황",
+     "bullets": [
+      "미 국채 시장은 중동 지정학적 이슈로 약세 마감."
+     ],
+     "numbers": [
+      {
+       "label": "미 국채 2년물",
+       "value": "4.806%",
+       "chg": "+3.0bp"
+      },
+      {
+       "label": "미 국채 10년물",
+       "value": "5.119%",
+       "chg": "+1.1bp"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29232",
+     "link_label": "텔레그램 원문",
+     "topic": "금리·연준",
+     "sources": [],
+     "time": "2026-10-22T08:09:28+09:00",
+     "rank": 0
+    },
     {
      "title": "장 시작 전 생각: 계속되는 수싸움",
      "bullets": [
@@ -130,6 +222,36 @@
      "sources": [],
      "time": "2026-10-22T05:32:09+09:00",
      "rank": 1
+    },
+    {
+     "title": "어제 마이크론 기술 웨비나 중",
+     "bullets": [
+      "“When you look at vertical HBM, it again has a very high trade ratio.”",
+      "(vHBM(로직 위에 HBM 수직적층)의 경우, 웨이퍼 트레이드 ratio가 매우 높아진다)",
+      "\"적층 구조뿐 아니라, 대역폭을 높이기 위해 I/O 수를 크게 늘리면 웨이퍼당 생산 가능한 DRAM 다이 수가 줄어들기 때문\""
+     ],
+     "numbers": [],
+     "link": "https://t.me/cahier_de_market/11090",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-10-22T08:44:20+09:00",
+     "rank": 2
+    },
+    {
+     "title": "2027년 주식시장 전망",
+     "bullets": [
+      "1. 꺼지지 않는 음악. 춤은 계속 춰야",
+      "2. KOSPI 리레이팅 공식",
+      "3. 코스닥/스타일/섹터"
+     ],
+     "numbers": [],
+     "link": "https://t.me/lim_econ/2108",
+     "link_label": "텔레그램 원문",
+     "topic": "국내 증시",
+     "sources": [],
+     "time": "2026-10-22T08:08:10+09:00",
+     "rank": 2
     },
     {
      "title": "(뮤즈 네트워크 관련)",
@@ -2942,5 +3064,5 @@
    "errors": []
   }
  ],
- "checked_at": "2026-10-22T08:21:11.365174+09:00"
+ "checked_at": "2026-10-22T09:55:03.020720+09:00"
 }

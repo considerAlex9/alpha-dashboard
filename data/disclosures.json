@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-22T08:20:46.477255+09:00",
+ "captured_at": "2026-10-22T09:54:23.934285+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-22",
+   "filer": "키움증권",
+   "rcept_no": "20261022000013"
+  },
   {
    "code": "126340",
    "name": "비나텍",
@@ -3133,18 +3145,6 @@
    "date": "2026-09-16",
    "filer": "키움증권",
    "rcept_no": "20260916000343"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-16",
-   "filer": "키움증권",
-   "rcept_no": "20260916000342"
   },
   {
    "code": "105560",
