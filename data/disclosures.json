@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-23T08:27:25.259713+09:00",
+ "captured_at": "2026-10-23T09:56:34.950232+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "[기재정정]주요사항보고서(상각형조건부자본증권발행결정)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-23",
+   "filer": "하나금융지주",
+   "rcept_no": "20261023000011"
+  },
   {
    "code": "039490",
    "name": "키움증권",
@@ -1215,18 +1227,6 @@
    "rcept_no": "20261012900006"
   },
   {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "삼성SDI",
-   "rcept_no": "20261012800501"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1489,18 +1489,6 @@
    "date": "2026-10-08",
    "filer": "OCI홀딩스",
    "rcept_no": "20261008800499"
-  },
-  {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-08",
-   "filer": "삼성SDI",
-   "rcept_no": "20261008800289"
   },
   {
    "code": "000500",
@@ -2871,18 +2859,6 @@
    "rcept_no": "20260921800130"
   },
   {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "특수관계인에대한출자",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-21",
-   "filer": "삼성SDI",
-   "rcept_no": "20260921000219"
-  },
-  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -3483,18 +3459,6 @@
    "rcept_no": "20260909800610"
   },
   {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "금전대여결정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "삼성SDI",
-   "rcept_no": "20260909800178"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -3615,18 +3579,6 @@
    "rcept_no": "20260908800375"
   },
   {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-08",
-   "filer": "삼성SDI",
-   "rcept_no": "20260908800099"
-  },
-  {
    "code": "267260",
    "name": "HD현대일렉트릭",
    "side": "short",
@@ -3745,30 +3697,6 @@
    "date": "2026-09-04",
    "filer": "파두",
    "rcept_no": "20260904900273"
-  },
-  {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "타인에대한담보제공결정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "삼성SDI",
-   "rcept_no": "20260904800542"
-  },
-  {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "타인에대한채무보증결정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "삼성SDI",
-   "rcept_no": "20260904800510"
   },
   {
    "code": "105560",
@@ -4057,18 +3985,6 @@
    "date": "2026-08-31",
    "filer": "한화솔루션",
    "rcept_no": "20260831000572"
-  },
-  {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-31",
-   "filer": "삼성SDI",
-   "rcept_no": "20260831000478"
   },
   {
    "code": "000500",
@@ -4393,18 +4309,6 @@
    "date": "2026-08-26",
    "filer": "케이티",
    "rcept_no": "20260826000341"
-  },
-  {
-   "code": "006400",
-   "name": "삼성SDI",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-26",
-   "filer": "장이현",
-   "rcept_no": "20260826000215"
   },
   {
    "code": "035420",
