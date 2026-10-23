@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-23T17:07:58.666048+09:00",
+ "captured_at": "2026-10-23T19:33:57.934611+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "조회공시요구(풍문또는보도)에대한답변(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "케이티",
+   "rcept_no": "20261023800988"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "소송등의제기ㆍ신청(일정금액이상의청구)",
+   "category": "소송·제재",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "케이티",
+   "rcept_no": "20261023800986"
+  },
   {
    "code": "039490",
    "name": "키움증권",
@@ -97,6 +121,54 @@
    "date": "2026-10-23",
    "filer": "하나금융지주",
    "rcept_no": "20261023800545"
+  },
+  {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "김상균",
+   "rcept_no": "20261023000483"
+  },
+  {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "홍성우",
+   "rcept_no": "20261023000482"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "삼성물산",
+   "rcept_no": "20261023000481"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "삼성전자",
+   "rcept_no": "20261023000467"
   },
   {
    "code": "425420",
