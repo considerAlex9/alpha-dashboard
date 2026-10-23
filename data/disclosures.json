@@ -1,7 +1,43 @@
 {
- "captured_at": "2026-10-23T09:56:34.950232+09:00",
+ "captured_at": "2026-10-23T10:46:00.933906+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "[발행조건확정]증권신고서(채무증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "하나금융지주",
+   "rcept_no": "20261023000088"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "[기재정정]증권신고서(채무증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-23",
+   "filer": "하나금융지주",
+   "rcept_no": "20261023000086"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "키움증권",
+   "rcept_no": "20261023000084"
+  },
   {
    "code": "086790",
    "name": "하나금융지주",
@@ -3145,18 +3181,6 @@
    "date": "2026-09-16",
    "filer": "키움증권",
    "rcept_no": "20260916000450"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-16",
-   "filer": "키움증권",
-   "rcept_no": "20260916000417"
   },
   {
    "code": "105560",
