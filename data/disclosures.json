@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-23T10:46:00.933906+09:00",
+ "captured_at": "2026-10-23T11:39:11.296969+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "키움증권",
+   "rcept_no": "20261023000099"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "키움증권",
+   "rcept_no": "20261023000093"
+  },
   {
    "code": "086790",
    "name": "하나금융지주",
@@ -37,6 +61,18 @@
    "date": "2026-10-23",
    "filer": "키움증권",
    "rcept_no": "20261023000084"
+  },
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "[기재정정]주요사항보고서(전환사채권발행결정)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-23",
+   "filer": "비나텍",
+   "rcept_no": "20261023000071"
   },
   {
    "code": "086790",
@@ -3157,30 +3193,6 @@
    "date": "2026-09-16",
    "filer": "한화솔루션",
    "rcept_no": "20260916800377"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-16",
-   "filer": "키움증권",
-   "rcept_no": "20260916000471"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-16",
-   "filer": "키움증권",
-   "rcept_no": "20260916000450"
   },
   {
    "code": "105560",
