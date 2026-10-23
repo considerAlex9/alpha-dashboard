@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-23T15:50:19.084323+09:00",
+ "captured_at": "2026-10-23T16:34:35.415830+09:00",
  "days": 60,
  "items": [
   {
@@ -97,6 +97,30 @@
    "date": "2026-10-23",
    "filer": "하나금융지주",
    "rcept_no": "20261023800545"
+  },
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "박만수",
+   "rcept_no": "20261023000420"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "키움증권",
+   "rcept_no": "20261023000419"
   },
   {
    "code": "039490",
@@ -3181,18 +3205,6 @@
    "date": "2026-09-18",
    "filer": "키움증권",
    "rcept_no": "20260918000051"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "키움증권",
-   "rcept_no": "20260918000048"
   },
   {
    "code": "035420",
