@@ -1,5 +1,20 @@
 [
  {
+  "id": 2496335,
+  "order_id": 34029,
+  "company_id": 349,
+  "company_name": "Samsung SDI Co., Ltd.",
+  "company_symbol": "006400",
+  "side": "sell",
+  "quantity": 3033,
+  "price": 501468.9584,
+  "commission": 1520955.351,
+  "fx_rate": 1.0,
+  "value_krw": 1520955350.9755,
+  "realized_pnl": -130952108.7452,
+  "created_at": "2026-10-23T00:01:05+00:00"
+ },
+ {
   "id": 2357289,
   "order_id": 32449,
   "company_id": 1662,
