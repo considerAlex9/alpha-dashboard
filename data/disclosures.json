@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-26T16:42:03.248115+09:00",
+ "captured_at": "2026-10-26T17:19:11.245059+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,54 @@
    "date": "2026-10-26",
    "filer": "KB금융",
    "rcept_no": "20261026800368"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-26",
+   "filer": "Kevin Sharp",
+   "rcept_no": "20261026000331"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-26",
+   "filer": "김희정",
+   "rcept_no": "20261026000320"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-26",
+   "filer": "황인찬",
+   "rcept_no": "20261026000313"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-26",
+   "filer": "안소연",
+   "rcept_no": "20261026000302"
   },
   {
    "code": "207940",
