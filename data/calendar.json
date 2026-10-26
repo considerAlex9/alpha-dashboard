@@ -1,29 +1,7 @@
 {
- "captured_at": "2026-10-26T10:05:57.488055+09:00",
+ "captured_at": "2026-10-26T15:14:44.095605+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "GBP|BOE Gov Bailey Speaks|2026-10-16",
-   "time": "2026-10-16T11:00:00+09:00",
-   "country": "영국",
-   "title": "영란은행 총재 베일리 발언",
-   "title_en": "BOE Gov Bailey Speaks",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "USD|Fed Chairman Warsh Speaks|2026-10-16",
-   "time": "2026-10-16T12:30:00+09:00",
-   "country": "미국",
-   "title": "연준 의장man 워시 발언",
-   "title_en": "Fed Chairman Warsh Speaks",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "GBP|CPI y/y|2026-10-21",
    "time": "2026-10-21T15:00:00+09:00",
