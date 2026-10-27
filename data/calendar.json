@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-26T21:59:57.180149+09:00",
+ "captured_at": "2026-10-27T10:51:39.746111+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
   {
@@ -97,7 +97,7 @@
    "title": "콘퍼런스보드 소비자신뢰",
    "title_en": "CB Consumer Confidence",
    "impact": "보통",
-   "forecast": "80.5",
+   "forecast": "81.2",
    "previous": "81.9",
    "actual": ""
   },
@@ -174,7 +174,7 @@
    "title": "Advance GDP Price Index (전분기 대비)",
    "title_en": "Advance GDP Price Index q/q",
    "impact": "보통",
-   "forecast": "3.5%",
+   "forecast": "3.3%",
    "previous": "6.2%",
    "actual": ""
   },
