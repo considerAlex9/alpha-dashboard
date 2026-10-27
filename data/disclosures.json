@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-27T10:51:08.686299+09:00",
+ "captured_at": "2026-10-27T13:58:46.687371+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,66 @@
    "date": "2026-10-27",
    "filer": "ISC",
    "rcept_no": "20261027900052"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "한화오션",
+   "rcept_no": "20261027800240"
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "신규시설투자등",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "HD현대일렉트릭",
+   "rcept_no": "20261027800235"
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "HD현대일렉트릭",
+   "rcept_no": "20261027800232"
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "HD현대일렉트릭",
+   "rcept_no": "20261027800226"
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "현금ㆍ현물배당결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "HD현대일렉트릭",
+   "rcept_no": "20261027800213"
   },
   {
    "code": "267260",
