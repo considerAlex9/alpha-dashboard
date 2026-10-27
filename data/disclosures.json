@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-27T13:58:46.687371+09:00",
+ "captured_at": "2026-10-27T19:35:30.664666+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,78 @@
    "date": "2026-10-27",
    "filer": "ISC",
    "rcept_no": "20261027900052"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "주권관련사채권의취득결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "키움증권",
+   "rcept_no": "20261027800534"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "불성실공시법인지정예고",
+   "category": "거래정지·관리",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "유가증권시장본부",
+   "rcept_no": "20261027800532"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "키움증권",
+   "rcept_no": "20261027800530"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "NAVER",
+   "rcept_no": "20261027800510"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "[기재정정]장래사업ㆍ경영계획(공정공시)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-27",
+   "filer": "NAVER",
+   "rcept_no": "20261027800446"
+  },
+  {
+   "code": "062040",
+   "name": "산일전기",
+   "side": "long",
+   "title": "결산실적공시예고(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "산일전기",
+   "rcept_no": "20261027800303"
   },
   {
    "code": "042660",
@@ -85,6 +157,30 @@
    "date": "2026-10-27",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20261027800213"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "특수관계인과의내부거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "NAVER",
+   "rcept_no": "20261027000289"
+  },
+  {
+   "code": "080220",
+   "name": "제주반도체",
+   "side": "long",
+   "title": "주요사항보고서(자기주식처분결정)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "제주반도체",
+   "rcept_no": "20261027000242"
   },
   {
    "code": "267260",
@@ -3577,30 +3673,6 @@
    "date": "2026-09-18",
    "filer": "키움증권",
    "rcept_no": "20260918000173"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "키움증권",
-   "rcept_no": "20260918000168"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "키움증권",
-   "rcept_no": "20260918000092"
   },
   {
    "code": "035420",
