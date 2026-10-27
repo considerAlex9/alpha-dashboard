@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-27T22:30:49.541252+09:00",
+ "captured_at": "2026-10-28T00:49:31.890543+09:00",
  "days": 60,
  "items": [
   {
@@ -4611,42 +4611,6 @@
    "rcept_no": "20260831000056"
   },
   {
-   "code": "028300",
-   "name": "HLB",
-   "side": "short",
-   "title": "전환가액의조정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "HLB",
-   "rcept_no": "20260828900517"
-  },
-  {
-   "code": "207940",
-   "name": "삼성바이오로직스",
-   "side": "long",
-   "title": "주주명부폐쇄기간또는기준일설정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "삼성바이오로직스",
-   "rcept_no": "20260828800869"
-  },
-  {
-   "code": "207940",
-   "name": "삼성바이오로직스",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "삼성바이오로직스",
-   "rcept_no": "20260828800325"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -4657,114 +4621,6 @@
    "date": "2026-09-14",
    "filer": "금융감독원",
    "rcept_no": "20260828100005"
-  },
-  {
-   "code": "207940",
-   "name": "삼성바이오로직스",
-   "side": "long",
-   "title": "증권신고서(지분증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "삼성바이오로직스",
-   "rcept_no": "20260828001676"
-  },
-  {
-   "code": "009830",
-   "name": "한화솔루션",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "서성덕",
-   "rcept_no": "20260828001432"
-  },
-  {
-   "code": "064350",
-   "name": "현대로템",
-   "side": "short",
-   "title": "특수관계인으로부터기타유가증권매수",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "현대로템",
-   "rcept_no": "20260828001323"
-  },
-  {
-   "code": "064350",
-   "name": "현대로템",
-   "side": "short",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "현대로템",
-   "rcept_no": "20260828001174"
-  },
-  {
-   "code": "010060",
-   "name": "OCI홀딩스",
-   "side": "long",
-   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "OCI홀딩스",
-   "rcept_no": "20260828000369"
-  },
-  {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "크래프톤",
-   "rcept_no": "20260828000319"
-  },
-  {
-   "code": "017670",
-   "name": "SK텔레콤",
-   "side": "long",
-   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "SK텔레콤",
-   "rcept_no": "20260828000124"
-  },
-  {
-   "code": "207940",
-   "name": "삼성바이오로직스",
-   "side": "long",
-   "title": "[기재정정]주요사항보고서(타법인주식및출자증권양수결정)",
-   "category": "합병·분할",
-   "important": true,
-   "correction": true,
-   "date": "2026-08-28",
-   "filer": "삼성바이오로직스",
-   "rcept_no": "20260828000016"
-  },
-  {
-   "code": "207940",
-   "name": "삼성바이오로직스",
-   "side": "long",
-   "title": "주요사항보고서(유상증자결정)",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": false,
-   "date": "2026-08-28",
-   "filer": "삼성바이오로직스",
-   "rcept_no": "20260828000001"
   }
  ]
 }
