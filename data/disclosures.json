@@ -1,7 +1,55 @@
 {
- "captured_at": "2026-10-28T00:49:31.890543+09:00",
+ "captured_at": "2026-10-28T11:07:09.314561+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "SK텔레콤",
+   "rcept_no": "20261028800090"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000131"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000129"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000115"
+  },
   {
    "code": "095340",
    "name": "ISC",
@@ -3637,42 +3685,6 @@
    "date": "2026-09-18",
    "filer": "다이엑스",
    "rcept_no": "20260918000333"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "주요사항보고서(자본으로인정되는채무증권발행결정)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "키움증권",
-   "rcept_no": "20260918000296"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "키움증권",
-   "rcept_no": "20260918000279"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "키움증권",
-   "rcept_no": "20260918000173"
   },
   {
    "code": "035420",

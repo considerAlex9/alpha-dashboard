@@ -397,5 +397,24 @@
   "rank": 48,
   "score": 0.4481,
   "participants": 212
+ },
+ {
+  "date": "2026-10-28",
+  "captured_at": "2026-10-28T11:00:19.965460+09:00",
+  "price_as_of": "2026-10-28T01:50:31+00:00",
+  "nav": 99349403487.6016,
+  "total_pnl": -650596512.398407,
+  "total_pnl_pct": -0.00650596512398407,
+  "realized_pnl": -2285679779.9358,
+  "unrealized_pnl": 1847149254.8501,
+  "max_drawdown_pct": -0.0313051,
+  "sharpe_ratio": -0.9891,
+  "long_mv": 27501748300.0,
+  "short_mv": 24897157500.0,
+  "net_exposure_pct": 0.0262164714489206,
+  "gross_exposure": 52398905800.0,
+  "rank": 48,
+  "score": 0.4469,
+  "participants": 212
  }
 ]
