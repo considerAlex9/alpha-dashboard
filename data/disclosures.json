@@ -1,7 +1,43 @@
 {
- "captured_at": "2026-10-28T14:39:07.034468+09:00",
+ "captured_at": "2026-10-28T21:46:24.165372+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "타법인주식및출자증권취득결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "비나텍",
+   "rcept_no": "20261028900775"
+  },
+  {
+   "code": "126340",
+   "name": "비나텍",
+   "side": "long",
+   "title": "증권발행결과(자율공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "비나텍",
+   "rcept_no": "20261028900499"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "하나금융지주",
+   "rcept_no": "20261028800630"
+  },
   {
    "code": "017670",
    "name": "SK텔레콤",
@@ -13,6 +49,102 @@
    "date": "2026-10-28",
    "filer": "SK텔레콤",
    "rcept_no": "20261028800090"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "의결권대리행사권유참고서류",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "KB금융",
+   "rcept_no": "20261028000453"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "주주총회소집공고",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "KB금융",
+   "rcept_no": "20261028000439"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "임희균",
+   "rcept_no": "20261028000425"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000408"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000406"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-상장지수증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000380"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000262"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000244"
   },
   {
    "code": "039490",
@@ -3351,42 +3483,6 @@
    "rcept_no": "20260930000071"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "키움증권",
-   "rcept_no": "20260930000058"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "키움증권",
-   "rcept_no": "20260930000047"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "키움증권",
-   "rcept_no": "20260930000030"
-  },
-  {
    "code": "010060",
    "name": "OCI홀딩스",
    "side": "long",
@@ -3531,18 +3627,6 @@
    "rcept_no": "20260923800386"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "OrbisInvestmentManagementLimited",
-   "rcept_no": "20260923000623"
-  },
-  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -3553,18 +3637,6 @@
    "date": "2026-09-23",
    "filer": "장병규",
    "rcept_no": "20260923000499"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "키움증권",
-   "rcept_no": "20260923000050"
   },
   {
    "code": "064350",
