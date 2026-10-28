@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-28T11:07:47.560980+09:00",
+ "captured_at": "2026-10-28T14:39:45.061330+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
   {
@@ -174,7 +174,7 @@
    "title": "Advance GDP Price Index (전분기 대비)",
    "title_en": "Advance GDP Price Index q/q",
    "impact": "보통",
-   "forecast": "3.3%",
+   "forecast": "3.2%",
    "previous": "6.2%",
    "actual": ""
   },

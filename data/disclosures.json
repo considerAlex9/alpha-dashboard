@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-28T11:07:09.314561+09:00",
+ "captured_at": "2026-10-28T14:39:07.034468+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,66 @@
    "date": "2026-10-28",
    "filer": "SK텔레콤",
    "rcept_no": "20261028800090"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000233"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000204"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000178"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000176"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "키움증권",
+   "rcept_no": "20261028000140"
   },
   {
    "code": "039490",
@@ -3507,42 +3567,6 @@
    "rcept_no": "20260923000050"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "키움증권",
-   "rcept_no": "20260923000046"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "키움증권",
-   "rcept_no": "20260923000044"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "키움증권",
-   "rcept_no": "20260923000042"
-  },
-  {
    "code": "064350",
    "name": "현대로템",
    "side": "short",
@@ -3649,30 +3673,6 @@
    "date": "2026-09-21",
    "filer": "최현자",
    "rcept_no": "20260921000197"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-21",
-   "filer": "키움증권",
-   "rcept_no": "20260921000128"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-21",
-   "filer": "키움증권",
-   "rcept_no": "20260921000126"
   },
   {
    "code": "354320",
