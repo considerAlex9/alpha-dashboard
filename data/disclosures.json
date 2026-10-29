@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-29T16:16:58.150197+09:00",
+ "captured_at": "2026-10-29T16:32:20.868384+09:00",
  "days": 60,
  "items": [
   {
@@ -229,6 +229,30 @@
    "date": "2026-10-29",
    "filer": "삼성전자",
    "rcept_no": "20261029800087"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "특수관계인과의보험거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "삼성전자",
+   "rcept_no": "20261029000525"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "특수관계인에대한출자",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "삼성전자",
+   "rcept_no": "20261029000501"
   },
   {
    "code": "086790",
