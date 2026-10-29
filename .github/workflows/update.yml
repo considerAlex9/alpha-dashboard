@@ -1,16 +1,7 @@
 name: 대시보드 자동 업데이트
 
 on:
-  schedule:
-    # GitHub cron은 UTC 기준. 평일 09:10~16:10 KST 매시 10분 (장중 갱신 + 마감 후 확정값)
-    - cron: "13 0-7 * * 1-5"
-    # 매크로 뉴스 브리핑: 장전 08:00 KST (= 전날 23:00 UTC, 일~목) · 장마감 16:00 KST (09:10 실행이 장전 최종 반영)
-    - cron: "3 23 * * 0-4"
-    - cron: "4 7 * * 1-5"
-    # 장 마감 시황: 16:30 KST (= 07:30 UTC)
-    - cron: "33 7 * * 1-5"
-    # 장마감 브리핑 최종 업데이트: 19:00 KST (= 10:00 UTC)
-    - cron: "3 10 * * 1-5"
+  # 정시 실행은 클라우드플레어 워커(ak-scheduler, scheduler/worker.js)가 깨운다 — 깃허브 예약은 자주 늦거나 빠져서 쓰지 않음
   workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
   push:                   # 코드를 고치면 바로 한 번 돌려서 사이트에 반영
     branches: [main]

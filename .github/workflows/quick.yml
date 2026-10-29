@@ -1,9 +1,7 @@
 name: 장중 10분 업데이트
 
 on:
-  schedule:
-    # GitHub cron은 UTC 기준. 평일 09:00~15:50 KST 10분마다 (매시 10분은 전체 업데이트가 돌아서 뺌)
-    - cron: "3,23,33,43,53 0-6 * * 1-5"
+  # 정시 실행은 클라우드플레어 워커(ak-scheduler, scheduler/worker.js)가 깨운다 — 깃허브 예약은 자주 늦거나 빠져서 쓰지 않음
   workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
 
 permissions:
