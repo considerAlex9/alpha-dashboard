@@ -2311,9 +2311,9 @@ function renderNews(){
       ${c.numbers?.length?`<div class="nnum">${c.numbers.map(m=>`<span>${esc(m.label)} <b>${esc(m.value)}</b>${chg(m.chg)}</span>`).join('')}</div>`:''}
       ${c.bullets.length?`<ul>${c.bullets.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>`:''}
       ${c.link?`<a class="nlink" href="${esc(c.link)}" target="_blank" rel="noopener noreferrer">출처 · ${esc(c.link_label)}${ico('ext')}</a>`:''}</div>`;
-  const cards=e.cards||[], shown=newsMore?cards:cards.slice(0,6);
+  const cards=e.cards||[], shown=newsMore?cards:cards.slice(0,12);
   let html = cards.length
-    ? `<div class="cards">${shown.map(card).join('')}</div>`+(cards.length>6?`<button class="morebtn" id="newsmore">${newsMore?'접기':`시황 ${cards.length-6}개 더 보기`}</button>`:'')
+    ? `<div class="cards">${shown.map(card).join('')}</div>`+(cards.length>12?`<button class="morebtn" id="newsmore">${newsMore?'접기':`시황 ${cards.length-12}개 더 보기`}</button>`:'')
     : '<div class="empty">이 시간대에 올라온 시황 글이 없습니다. (휴장·연휴에는 시황 채널이 쉬어요)</div>';
   if(e.refs?.length) html+=`<div class="nsec"><span>참고 채널 · 최근 글 ${e.refs.length}개</span></div><div class="rlist">`+
     e.refs.map(r=>`<div class="ritem"><time>${r.time.slice(11,16)}</time><span class="t" title="${esc(r.title)}">${esc(r.title)}</span>${(r.sources||[]).slice(0,1).map(s=>`<span class="tag plain">${esc(s)}</span>`).join('')}</div>`).join('')+`</div>`;

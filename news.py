@@ -231,16 +231,16 @@ def parse(text):
     metrics = list({m["label"]: m for m in metrics}.values())
     circled = [l for l in body if l[:1] in CIRCLED]
     if circled:                                                        # ① ② ③ 로 번호 붙인 글은 그 소제목만
-        bullets = [_tidy(l, 70) for l in circled]
+        bullets = [_tidy(l, 160) for l in circled]
     else:
         marked = [l for l in body if BULLET.match(l) and not METRIC.match(LEAD.sub("", l).strip())]
         if marked:                                                     # '-', '•' 항목은 첫 문장만
-            bullets = [_tidy(_first_sentence(LEAD.sub("", l).strip()), 95) for l in marked]
+            bullets = [_tidy(_first_sentence(LEAD.sub("", l).strip()), 200) for l in marked]
         else:                                                          # 문단 글은 '소제목: …' 줄 또는 첫 문장들
             heads = [l for l in body if re.match(r"^\*?[^:：]{2,30}[:：]\s*\S", l) and len(l) < 200]
-            bullets = [_tidy(l, 95) for l in heads] if heads else [_tidy(_first_sentence(l), 95) for l in body if len(l) > 30]
+            bullets = [_tidy(l, 200) for l in heads] if heads else [_tidy(_first_sentence(l), 200) for l in body if len(l) > 30]
     bullets = [b for b in bullets if _meaningful(b) and len(inline_metrics(b)) < 2]    # 숫자만 나열한 줄은 숫자 칩으로 보여주므로 뺌
-    return {"title": title, "bullets": list(dict.fromkeys(bullets))[:5], "metrics": metrics, "lead_src": lead_src}
+    return {"title": title, "bullets": list(dict.fromkeys(bullets))[:7], "metrics": metrics, "lead_src": lead_src}
 
 
 def topic_of(text):
@@ -290,12 +290,62 @@ def _link(p):
     return {"link": p.get("post_url"), "link_label": "텔레그램 원문"}
 
 
+# ---------------- 정보성 거르기 · 문장 다듬기 ----------------
+MARKET_TERMS = re.compile(r"증시|코스피|코스닥|나스닥|S&P|다우|금리|국채|국고채|환율|달러|원화|엔화|유가|WTI|금값|실적|매출|영업이익|순이익|가이던스|컨센서스|"
+                          r"수급|외국인|기관|순매수|순매도|업종|반도체|메모리|HBM|연준|Fed|FOMC|CPI|PCE|고용|인플레|경기|수출|관세|정책|목표주가|투자의견|"
+                          r"상향|하향|밸류에이션|PER|PBR|배당|자사주|공매도|ETF|지수|선물|옵션|변동성|VIX|비트코인|IPO|상장|M&A|인수|합병")
+NUM_UNIT = re.compile(r"[+\-−]?\d[\d,\.]*\s?(%|bp|억|조|만|원|달러|pt|p\b|배|x\b)")
+CASUAL = re.compile(r"\?|ㅋ|ㅎㅎ|ㅠ|네요|죠\b|거든요|같네요|같아요|봅니다|생각합니다|생각해요|개인적|솔직히|아쉽|느낌|!!|\.\.\.?$|,\s*$|인데,|궁금|ㄷㄷ|웃기")
+FILLER = re.compile(r"^(그래도|요즘(은)?|솔직히|근데|아무튼|암튼|역시|참고로|한편|아니|와|오늘은|어쨌든)\s*,?\s*")
+MIN_INFO = 2
+
+
+def info_score(text, r):
+    """글의 정보성: 숫자·출처·시장 용어는 +, 말투형 표현·링크만 있는 짧은 글은 -"""
+    body = URL.sub("", text)
+    sc = min(6, 2 * len(NUM_UNIT.findall(body))) + min(6, len(MARKET_TERMS.findall(body)))
+    sc += 2 if sources_of(text) or (r and r.get("lead_src")) else 0
+    sc += 2 if r and r.get("metrics") else 0
+    sc -= min(6, 2 * len(CASUAL.findall(body)))
+    if len(re.sub(r"[^가-힣A-Za-z0-9]", "", body)) < 40 or re.search(r"링크\s*:?\s*$|텔레그램\s*링크", body):
+        sc -= 5
+    return sc
+
+
+def polish(s):
+    """요약체로: 앞 군말·끝 쉼표·말줄임표 제거, '~했습니다/~네요' → '~함/~음'"""
+    import digest
+    s = FILLER.sub("", s.strip())
+    s = re.sub(r"^(.{2,12}?),\s*,?\s*", r", ", s)               # '미 증시, 미 증시, …' 같은 반복
+    s = re.sub(r"[\s,·]*(\.{2,}|…)+\s*$", "", s).rstrip(" ,·")
+    for pat, rep in ((r"(한데|하는데|하지만)$", "함"), (r"인데$", "임"), (r"는데$", "음")):   # 말 중간에서 끝난 문장 마무리
+        s = re.sub(pat, rep, s)
+    return digest.tone(s)
+
+
+def _best_sentence(text):
+    """본문에서 숫자·시장 용어가 가장 많은 문장"""
+    sents = [x.strip() for x in re.split(r"(?<=[가-힣A-Za-z\)%])\.(?=\s|$)|\n", URL.sub("", text)) if 15 <= len(x.strip()) <= 160]
+    if not sents:
+        return None
+    return max(sents, key=lambda x: (2 * len(NUM_UNIT.findall(x)) + len(MARKET_TERMS.findall(x)) - 2 * len(CASUAL.findall(x)), -len(x)))
+
+
 def organize(market_posts, ref_posts):
     metrics, cards, seen = {}, [], set()
     for p in market_posts:
         r = parse(p["text"])
         if not r or r["title"] in seen:
             continue
+        if info_score(p["text"], r) < MIN_INFO:                       # 사담·링크만 있는 글은 뺌
+            continue
+        if CASUAL.search(r["title"]) or len(r["title"]) < 12 or re.search(r"(,|\.\.|한데|인데|는데|지만|거든|고|며)\s*$", r["title"]):
+            better = _best_sentence(p["text"])                      # 제목이 말 중간이면 정보가 많은 문장으로
+            if better and better != r["title"]:
+                r["title"] = _tidy(better, 120)
+        r["title"] = polish(r["title"])
+        r["bullets"] = [b for b in (polish(x) for x in r["bullets"]) if b and b != r["title"] and len(CASUAL.findall(b)) < 2
+                        and not (len(b) < 25 and re.match(r"^\d{1,2}월\s*\d{1,2}일", b))]            # '10월 29일 ○○ 홍길동' 같은 서명 줄
         seen.add(r["title"])
         for m in r["metrics"]:
             metrics[m["label"]] = m                                    # 같은 지표는 가장 최근 값
