@@ -1,7 +1,91 @@
 {
- "captured_at": "2026-10-29T15:12:30.653122+09:00",
+ "captured_at": "2026-10-29T16:07:43.906595+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "대우건설",
+   "rcept_no": "20261029800449"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "현금ㆍ현물배당결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "KB금융",
+   "rcept_no": "20261029800391"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "현금ㆍ현물배당을위한주주명부폐쇄(기준일)결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "KB금융",
+   "rcept_no": "20261029800387"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "KB금융",
+   "rcept_no": "20261029800350"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)(자회사의 주요경영사항)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "KB금융",
+   "rcept_no": "20261029800346"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "KB금융",
+   "rcept_no": "20261029800345"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "한화솔루션",
+   "rcept_no": "20261029800334"
+  },
   {
    "code": "010060",
    "name": "OCI홀딩스",
@@ -37,6 +121,18 @@
    "date": "2026-10-29",
    "filer": "OCI홀딩스",
    "rcept_no": "20261029800311"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "한화솔루션",
+   "rcept_no": "20261029800252"
   },
   {
    "code": "489790",
@@ -121,6 +217,54 @@
    "date": "2026-10-29",
    "filer": "삼성전자",
    "rcept_no": "20261029800087"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "하나금융지주",
+   "rcept_no": "20261029000460"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "주요사항보고서(상각형조건부자본증권발행결정)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "KB금융",
+   "rcept_no": "20261029000407"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "한화솔루션",
+   "rcept_no": "20261029000371"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "한화솔루션",
+   "rcept_no": "20261029000365"
   },
   {
    "code": "039490",
@@ -1767,18 +1911,6 @@
    "rcept_no": "20261019800139"
   },
   {
-   "code": "086790",
-   "name": "하나금융지주",
-   "side": "short",
-   "title": "효력발생안내( 2026.10.19. 제출 증권신고서(채무증권) )",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-29",
-   "filer": "금융감독원",
-   "rcept_no": "20261019100049"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -2149,6 +2281,30 @@
    "date": "2026-10-16",
    "filer": "키움증권",
    "rcept_no": "20261016000121"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "특수관계인에대한출자",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "한화솔루션",
+   "rcept_no": "20261016000056"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "특수관계인에대한담보제공",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "한화솔루션",
+   "rcept_no": "20261016000054"
   },
   {
    "code": "028300",
@@ -3087,6 +3243,18 @@
    "rcept_no": "20261007800306"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "한화솔루션",
+   "rcept_no": "20261007800159"
+  },
+  {
    "code": "080220",
    "name": "제주반도체",
    "side": "long",
@@ -3133,6 +3301,18 @@
    "date": "2026-10-07",
    "filer": "곽동신",
    "rcept_no": "20261007000050"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "황일중",
+   "rcept_no": "20261007000044"
   },
   {
    "code": "207940",
@@ -3519,6 +3699,18 @@
    "rcept_no": "20261002000385"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000346"
+  },
+  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -3841,6 +4033,18 @@
    "date": "2026-10-01",
    "filer": "하나금융지주",
    "rcept_no": "20261001000085"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "유상증자결정(종속회사의주요경영사항)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "한화솔루션",
+   "rcept_no": "20260930801200"
   },
   {
    "code": "267260",
@@ -4467,6 +4671,18 @@
    "rcept_no": "20260916800424"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "[기재정정]타법인주식및출자증권처분결정(자율공시)",
+   "category": "합병·분할",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-16",
+   "filer": "한화솔루션",
+   "rcept_no": "20260916800377"
+  },
+  {
    "code": "105560",
    "name": "KB금융",
    "side": "long",
@@ -4719,6 +4935,18 @@
    "rcept_no": "20260911000352"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-11",
+   "filer": "한화솔루션",
+   "rcept_no": "20260911000014"
+  },
+  {
    "code": "047040",
    "name": "대우건설",
    "side": "short",
@@ -4779,6 +5007,18 @@
    "rcept_no": "20260910800388"
   },
   {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "한화솔루션",
+   "rcept_no": "20260910800347"
+  },
+  {
    "code": "047040",
    "name": "대우건설",
    "side": "short",
@@ -4837,6 +5077,18 @@
    "date": "2026-09-10",
    "filer": "SK이노베이션",
    "rcept_no": "20260910000298"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "[기재정정]중대재해발생",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-09-09",
+   "filer": "한화솔루션",
+   "rcept_no": "20260909800610"
   },
   {
    "code": "096770",
@@ -5053,6 +5305,30 @@
    "date": "2026-09-08",
    "filer": "대우건설",
    "rcept_no": "20260908800452"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "타법인주식및출자증권처분결정(자율공시)",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "한화솔루션",
+   "rcept_no": "20260908800378"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "한화솔루션",
+   "rcept_no": "20260908800375"
   },
   {
    "code": "267260",
@@ -5485,6 +5761,18 @@
    "date": "2026-08-31",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260831000598"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "한화솔루션",
+   "rcept_no": "20260831000572"
   },
   {
    "code": "489790",
