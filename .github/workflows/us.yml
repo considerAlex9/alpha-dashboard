@@ -3,7 +3,7 @@ name: 미국 패턴 터미널 업데이트
 on:
   schedule:
     # 미국장 마감 후 매일 아침 07:00 KST (= 22:00 UTC, 미국 월~금 거래일 다음 날 아침)
-    - cron: "0 22 * * 1-5"
+    - cron: "7 22 * * 1-5"
   workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
 
 permissions:

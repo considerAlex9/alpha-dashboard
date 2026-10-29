@@ -3,7 +3,7 @@ name: 국내 기술적 분석 업데이트
 on:
   schedule:
     # 거래일 16:40 KST (= 07:40 UTC) — 장 마감 시황(16:30) 다음
-    - cron: "40 7 * * 1-5"
+    - cron: "45 7 * * 1-5"
   workflow_dispatch: {}   # Actions 탭에서 수동 실행 버튼
 
 permissions:
