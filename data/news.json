@@ -1,6 +1,217 @@
 {
  "editions": [
   {
+   "id": "2026-10-30-pre",
+   "name": "장전 브리핑",
+   "start": "2026-10-29T19:00:00+09:00",
+   "end": "2026-10-30T08:00:00+09:00",
+   "final": false,
+   "created_at": "2026-10-30T08:03:05.065069+09:00",
+   "post_count": 15,
+   "metrics": [
+    {
+     "label": "다우",
+     "value": "",
+     "chg": "-0.3%"
+    },
+    {
+     "label": "S&P500",
+     "value": "",
+     "chg": "-0.3%"
+    },
+    {
+     "label": "나스닥",
+     "value": "",
+     "chg": "-1.4%"
+    },
+    {
+     "label": "미 10년물",
+     "value": "4.92%",
+     "chg": ""
+    },
+    {
+     "label": "미 30년물",
+     "value": "5.29%",
+     "chg": ""
+    },
+    {
+     "label": "WTI",
+     "value": "102.8달러",
+     "chg": ""
+    }
+   ],
+   "cards": [
+    {
+     "title": "아마존 -4.3%(시간외 -6%), 인텔 -3.6%(시간와 -21%), 샌디스크 -5.3%(시간외 -3%)",
+     "bullets": [],
+     "numbers": [
+      {
+       "label": "다우",
+       "value": "",
+       "chg": "-0.3%"
+      },
+      {
+       "label": "S&P500",
+       "value": "",
+       "chg": "-0.3%"
+      },
+      {
+       "label": "나스닥",
+       "value": "",
+       "chg": "-1.4%"
+      },
+      {
+       "label": "미 10년물",
+       "value": "4.92%",
+       "chg": ""
+      }
+     ],
+     "link": "https://www.kiwoom.com/h/invest/research/VMarketSDDetailView?sqno=7246",
+     "link_label": "kiwoom.com",
+     "topic": "국내 증시",
+     "sources": [],
+     "time": "2026-10-30T07:40:16+09:00",
+     "rank": 0
+    },
+    {
+     "title": "오늘 개장전 꼭 알아야 할 5가지",
+     "bullets": [
+      "① 알파벳 AI 투자 부담 확대",
+      "② 마이크로소프트 대규모 회사채 발행",
+      "③ 이란 접촉 불발 신호와 이스라엘 연정 불확실",
+      "④ 미국 성장 가속과 PCE 재가열",
+      "⑤ ECB 동결과 라가르드 조기 퇴임"
+     ],
+     "numbers": [],
+     "link": "https://t.me/lim_econ/2118",
+     "link_label": "텔레그램 원문",
+     "topic": "경제지표",
+     "sources": [
+      "블룸버그"
+     ],
+     "time": "2026-10-30T07:35:52+09:00",
+     "rank": 1
+    },
+    {
+     "title": "한국 증시 관련 수치: 인텔과 아마존 여파로 하락 출발 예상",
+     "bullets": [
+      "FICC: 국제유가 하락, 국채 금리 하락, 달러 약세"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11249",
+     "link_label": "텔레그램 원문",
+     "topic": "금리·연준",
+     "sources": [],
+     "time": "2026-10-30T05:35:48+09:00",
+     "rank": 1
+    },
+    {
+     "title": "미 증시, 알파벳과 소프트웨어 실적 충격에 나스닥 중심 하락",
+     "bullets": [
+      "변화요인: AI 산업의 전환, 소프트웨어, 경제지표와 국채금리"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11246",
+     "link_label": "텔레그램 원문",
+     "topic": "경제지표",
+     "sources": [
+      "WSJ"
+     ],
+     "time": "2026-10-30T05:34:34+09:00",
+     "rank": 1
+    },
+    {
+     "title": "삼성전자 3Q26 리뷰: HBM 실행력 입증, 주주환원 카탈리스트는 2027년 1월로 이연",
+     "bullets": [
+      "1. 3Q26 실적 및 주주환원",
+      "영업이익 10.7조원(JPM 추정 대비 +5.5%), DS 영업이익률 73.0%",
+      "26년 환원 프레임워크 90~110조원 유지, 기발표 특별배당 30조원 제외 잔여 55~75조원은 4Q26 콜(27년 1월)에서 확정",
+      "FCF 50% 환원 가정 시 향후 2년 TSR 수익률 13%/18%",
+      "당일 주가 -5%(SK하이닉스 +2%), 시장은 적극적 환원 정책 대기 중",
+      "2. HBM 및 메모리 업황",
+      "HBM4 매출 q-q 3배, HBM4 비중 60% 이상으로 경쟁사 대비 빠른 속도"
+     ],
+     "numbers": [],
+     "link": "https://t.me/Jstockclass/15331",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-10-30T07:58:45+09:00",
+     "rank": 2
+    },
+    {
+     "title": "아마존 2026년 3분기 실적 (시간외 -6%)",
+     "bullets": [
+      "매출: 2,019억 달러 (예상 2,023억 달러), 전년 대비 12% 증가",
+      "주당순이익: 1.89달러 (예상 1.96달러), 앤트로픽 관련 이익 포함",
+      "영업이익: 281억 달러 (예상 262억 달러)",
+      "AWS 매출: 460억 달러 (예상 454억 달러), 전년 대비 39% 증가",
+      "설비투자: 773억 달러 (예상 574.7억 달러)",
+      "매출: 2,400억~2,470억 달러 (예상 2,445억 달러)",
+      "영업이익: 285억~335억 달러 (예상 331억 달러)"
+     ],
+     "numbers": [],
+     "link": "https://t.me/cahier_de_market/11198",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [],
+     "time": "2026-10-30T06:43:49+09:00",
+     "rank": 2
+    },
+    {
+     "title": "특징 종목: 알파벳, 마이크론 하락 Vs. 일라이릴리, 애플, 메타 상승, 아마존, 인텔 시간외 급락",
+     "bullets": [
+      "메모리, 스토리지 반도체: 시간 외 아마존, 인텔 여파로 대부분 하락",
+      "AI 반도체: 인텔, 시간 외 큰 폭으로 하락",
+      "광통신, 네오클라우드: 루멘텀 상승, 그 외 하락",
+      "자동차: 카바나 실적 호조에 급등, 포드는 원가 부담에도 상승",
+      "대형기술주: 알파벳 검색 부진 등에 큰 폭 하락, 아마존 시간 외 하락",
+      "소프트웨어: 서비스나우 급락과 AI 파괴론 부각",
+      "사이버보안: 포티넷 실적 충격에 동반 약세"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11247",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [
+      "골드만삭스",
+      "모건스탠리"
+     ],
+     "time": "2026-10-30T05:35:09+09:00",
+     "rank": 2
+    },
+    {
+     "title": ". 인텔 CEO, PC 수요 둔화·기판 부족 겹쳐 생산 확대 차질",
+     "bullets": [
+      "Disclaimer: 면책고지, 모든 메세지는 벡터 기반 분산 표상형으로 작성 등의 사유로 착오가 발생할 수 있음. 모든 투자 책임은 투자자 본인에게 일체 귀속됨. (증권사 채널 등 100개 추가하기)"
+     ],
+     "numbers": [],
+     "link": "https://www.google.com/search?q=%20%22%EC%9D%B8%ED%85%94%20CEO%2C%20PC%20%EC%88%98%EC%9A%94%20%EB%91%94%ED%99%94%C2%B7%EA%B8%B0%ED%8C%90%20%EB%B6%80%EC%A1%B1%20%EA%B2%B9%EC%B3%90%20%EC%83%9D%EC%82%B0%20%ED%99%95%EB%8C%80%20%EC%B0%A8%EC%A7%88%22%20%0A%0A%0ASearch%20and%20retrieve%20the%20latest%20news%20about%20within%20the%20last%203%20days%20from%20today%20%282026-10-30%2C%20GMT%2B9%29.%F0%9F%9A%A8%20Data%20Filtering%20Criteria%3A-%20Source%3A%20ONLY%20use%20mainstream%20global%20financial%20media%20%28e.g.%2C%20Bloomberg%2C%20Reuters%2C%20WSJ%2C%20CNBC%2C%20FT%29%20or%20official%20government%20press%20releases%20and%20websites.-%20Exclusion%3A%20Completely%20exclude%20AI-generated%20spam%20sites%2C%20automated%20crawlers%2C%20personal%20finance%20blogs%2C%20and%20low-credibility%20scrapers.%20Do%20not%20use%20them%20as%20sources.%F0%9F%9A%A8%20Output%20Format%20%26%20Language%20Requirements%3A%201.%20References%20First%3A%20You%20MUST%20list%20all%20the%20found%20articles%20%28including%20Title%2C%20Source%2C%20and%20Date%29%20at%20the%20VERY%20TOP%20of%20your%20response%20before%20presenting%20the%20rest%20of%20the%20search%20results.%202.%20Language%3A%20ALL%20of%20your%20response%2C%20including%20the%20article%20list%20and%20details%2C%20MUST%20be%20written%20entirely%20in%20Korean%20%28%ED%95%9C%EA%B5%AD%EC%96%B4%29.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&amp;udm=50",
+     "link_label": "google.com",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-10-30T07:11:38+09:00",
+     "rank": 3
+    },
+    {
+     "title": "사모신용, 카드: 블루아울과 마스터카드 실적 호조에 강세",
+     "bullets": [
+      "산업재, 방산: 캐터필러 실적 호조에도 가이던스 실망에 급락, 전력, 방산주는 강세",
+      "비트코인: 기술주 약세에 부담을 보이며 하락"
+     ],
+     "numbers": [],
+     "link": "https://t.me/ehdwl/11248",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [],
+     "time": "2026-10-30T05:35:09+09:00",
+     "rank": 3
+    }
+   ],
+   "refs": [],
+   "errors": []
+  },
+  {
    "id": "2026-10-29-post",
    "name": "장마감 브리핑",
    "start": "2026-10-29T09:00:00+09:00",
@@ -2518,339 +2729,7 @@
    ],
    "refs": [],
    "errors": []
-  },
-  {
-   "id": "2026-10-23-pre",
-   "name": "장전 브리핑",
-   "start": "2026-10-22T19:00:00+09:00",
-   "end": "2026-10-23T09:00:00+09:00",
-   "final": true,
-   "created_at": "2026-10-23T09:57:11.552823+09:00",
-   "post_count": 25,
-   "metrics": [
-    {
-     "label": "다우",
-     "value": "52,867.98pt",
-     "chg": "+0.02%"
-    },
-    {
-     "label": "S&P500",
-     "value": "7,663.43pt",
-     "chg": "-1.21%"
-    },
-    {
-     "label": "나스닥",
-     "value": "26,008.86pt",
-     "chg": "-2.60%"
-    },
-    {
-     "label": "미 10년물",
-     "value": "4.94%",
-     "chg": ""
-    },
-    {
-     "label": "미 30년물",
-     "value": "5.28%",
-     "chg": ""
-    },
-    {
-     "label": "WTI",
-     "value": "98.9달러",
-     "chg": ""
-    },
-    {
-     "label": "미 국채 2년물",
-     "value": "4.640%",
-     "chg": "-16.6bp"
-    },
-    {
-     "label": "미 국채 10년물",
-     "value": "4.953%",
-     "chg": "-16.6bp"
-    },
-    {
-     "label": "원/달러",
-     "value": "1,326.0원",
-     "chg": "-1.0원"
-    },
-    {
-     "label": "달러인덱스",
-     "value": "101.61pt",
-     "chg": "-0.17pt"
-    }
-   ],
-   "cards": [
-    {
-     "title": "환율 아침 시황",
-     "bullets": [
-      "원/달러 환율은 수급과 기술주 우려 등을 살피며 하락 마감."
-     ],
-     "numbers": [
-      {
-       "label": "원/달러",
-       "value": "1,326.0원",
-       "chg": "-1.0원"
-      },
-      {
-       "label": "달러인덱스",
-       "value": "101.61pt",
-       "chg": "-0.17pt"
-      }
-     ],
-     "link": "https://t.me/hanwhastrategy/29240",
-     "link_label": "텔레그램 원문",
-     "topic": "환율",
-     "sources": [],
-     "time": "2026-10-23T08:14:01+09:00",
-     "rank": 0
-    },
-    {
-     "title": "주식 아침 시황",
-     "bullets": [
-      "뉴욕 증시는 기술주 중심 약세를 보이며 혼조 마감."
-     ],
-     "numbers": [
-      {
-       "label": "다우",
-       "value": "52,867.98pt",
-       "chg": "+0.02%"
-      },
-      {
-       "label": "S&P500",
-       "value": "7,663.43pt",
-       "chg": "-1.21%"
-      },
-      {
-       "label": "나스닥",
-       "value": "26,008.86pt",
-       "chg": "-2.60%"
-      }
-     ],
-     "link": "https://t.me/hanwhastrategy/29239",
-     "link_label": "텔레그램 원문",
-     "topic": "미국 증시",
-     "sources": [],
-     "time": "2026-10-23T08:13:43+09:00",
-     "rank": 0
-    },
-    {
-     "title": "채권 아침 시황",
-     "bullets": [
-      "미 국채 시장은 안전자산 선호 매수세 유입되며 강세 마감."
-     ],
-     "numbers": [
-      {
-       "label": "미 국채 2년물",
-       "value": "4.640%",
-       "chg": "-16.6bp"
-      },
-      {
-       "label": "미 국채 10년물",
-       "value": "4.953%",
-       "chg": "-16.6bp"
-      }
-     ],
-     "link": "https://t.me/hanwhastrategy/29238",
-     "link_label": "텔레그램 원문",
-     "topic": "금리·연준",
-     "sources": [],
-     "time": "2026-10-23T08:13:29+09:00",
-     "rank": 0
-    },
-    {
-     "title": "장 시작 전 생각: 반전은 어디서",
-     "bullets": [
-      "메타 -7.0%, 마이크론 -6.3%, 엔비디아 -4.4%"
-     ],
-     "numbers": [
-      {
-       "label": "다우",
-       "value": "",
-       "chg": "+0.02%"
-      },
-      {
-       "label": "S&P500",
-       "value": "",
-       "chg": "-1.2%"
-      },
-      {
-       "label": "나스닥",
-       "value": "",
-       "chg": "-2.6%"
-      },
-      {
-       "label": "미 10년물",
-       "value": "4.94%",
-       "chg": ""
-      }
-     ],
-     "link": "https://www.kiwoom.com/h/invest/research/VMarketSDDetailView?sqno=7237",
-     "link_label": "kiwoom.com",
-     "topic": "반도체·AI",
-     "sources": [],
-     "time": "2026-10-23T07:47:39+09:00",
-     "rank": 0
-    },
-    {
-     "title": "오늘 개장전 꼭 알아야 할 5가지",
-     "bullets": [
-      "① 프랑스 국채 불안과 유로존 전이 조짐",
-      "② 중동 긴장 고조와 에너지 리스크",
-      "③ 홍콩 기술주 급락과 중국 규제 압박",
-      "④ 블랙스톤의 AI 수요 진단",
-      "⑤ 바클레이스, AI 활용 5천명 감원"
-     ],
-     "numbers": [],
-     "link": "https://t.me/lim_econ/2110",
-     "link_label": "텔레그램 원문",
-     "topic": "금리·연준",
-     "sources": [
-      "블룸버그"
-     ],
-     "time": "2026-10-23T07:35:37+09:00",
-     "rank": 1
-    },
-    {
-     "title": "미 증시: AI·반도체 급락에도 확인되는 긍정적인 신호",
-     "bullets": [
-      "행사: Oracle AI World(~28일)",
-      "행사: IBM TechXchange 2026(~29일)",
-      "행사: OpenAI DevDay Exchange — 베를린"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11229",
-     "link_label": "텔레그램 원문",
-     "topic": "반도체·AI",
-     "sources": [],
-     "time": "2026-10-23T07:17:46+09:00",
-     "rank": 1
-    },
-    {
-     "title": "한국증시 관련 수치: 선반영, 외국인 수급 주목",
-     "bullets": [
-      "FICC: 미 10년물 국채 금리, 5.0% 하회"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11228",
-     "link_label": "텔레그램 원문",
-     "topic": "유가·원자재",
-     "sources": [],
-     "time": "2026-10-23T05:33:05+09:00",
-     "rank": 1
-    },
-    {
-     "title": "미 증시, AI 신용 위험과 수급 이슈로 AI, 반도체 중심 큰 폭 하락",
-     "bullets": [
-      "변화요인: 메타와 CDS, 투자회사들 평가, 국제유가, 그리고 수급"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11225",
-     "link_label": "텔레그램 원문",
-     "topic": "반도체·AI",
-     "sources": [
-      "골드만삭스",
-      "JP모건",
-      "씨티"
-     ],
-     "time": "2026-10-23T05:29:00+09:00",
-     "rank": 1
-    },
-    {
-     "title": "(위 차트) Jordi Visser에 의하면",
-     "bullets": [
-      "이것의 의미는",
-      "1) 헤지펀드들이 AI/반도체 포지션에 롱 집중도가 커서 역사적 수준으로 두들겨 맞고 있고",
-      "2) 코어위브, 프랑스 국채 쪽 이벤트로 인한 크레딧과 금리 북 손실로 리스크 한도를 축소해야 하는 멀티스트레티지 펀드들이 크라우디드 주식 롱 포지션도 같이 급격히 축소해…",
-      "헤지펀드 디레버리징이 급격히 일어나는 가운데(국채 숏커버도 그 일환일 수 있음), 한편에서는 이를 이용한 주식 숏포지션도 늘리는 상황",
-      "결국 관건은 디그로싱해야할 포지션이 얼마나 남았느냐, 그리고 원인이 된 크레딧과 프랑스 쪽이 어떻게 진행되느냐"
-     ],
-     "numbers": [],
-     "link": "https://t.me/cahier_de_market/11107",
-     "link_label": "텔레그램 원문",
-     "topic": null,
-     "sources": [],
-     "time": "2026-10-23T07:29:26+09:00",
-     "rank": 2
-    },
-    {
-     "title": "특징 종목: 모더나, 마이크론, 엔비디아, 알파벳, 오라클, 팔란티어, 스페이스X 하락 Vs. 일라이릴리, 월마트",
-     "bullets": [
-      "메모리, 스토리지 반도체: 웨스턴디지털, 시간 외 하락 중",
-      "AI 반도체: AI 투자 부담과 수급 불안 등에 하락",
-      "반도체 장비, 광통신, 네오클라우드: AI 인프라 기업 높아진 실적 기대 및 신용 위험에 하락",
-      "자동차: 테슬라, 하락 변동성 확대 관련 수급 여파로 부진",
-      "대형 기술주: 애플 상승, 반도체업종과 상관관계가 -0.9 기록"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11226",
-     "link_label": "텔레그램 원문",
-     "topic": "반도체·AI",
-     "sources": [
-      "씨티"
-     ],
-     "time": "2026-10-23T05:30:04+09:00",
-     "rank": 2
-    },
-    {
-     "title": "네비우스, 씨티와 35억 달러 규모의 금융 약정 체결",
-     "bullets": [
-      "만기: 364일 (단기 브릿지 성격의 크레딧 라인)",
-      "금리: 초기 금리는 Term SOFR + 연 2.75%이며, 조건에 따라 최대 + 연 3.50%까지 상승 가능.",
-      "자금 사용처: 데이터센터 개발, GPU 조달 및 일반 기업 운영 자금."
-     ],
-     "numbers": [],
-     "link": "https://www.businesswire.com/news/home/20261022371869/en/Nebius-secures-%243.5-billion-financing-facility-with-Citi",
-     "link_label": "businesswire.com",
-     "topic": null,
-     "sources": [],
-     "time": "2026-10-22T21:11:48+09:00",
-     "rank": 2
-    },
-    {
-     "title": "iM증권 고의영(전기전자)",
-     "bullets": [
-      "신규시설투자 공시 코멘트: 투자 로드맵이 ‘30년까지 확장"
-     ],
-     "numbers": [],
-     "link": "https://lrl.kr/bFCSV",
-     "link_label": "lrl.kr",
-     "topic": "반도체·AI",
-     "sources": [],
-     "time": "2026-10-23T08:14:38+09:00",
-     "rank": 3
-    },
-    {
-     "title": "헤지펀드의 공격적 매도속도",
-     "bullets": [
-      "현재 넷 포지션 축소 규모는 올해 3월, 7월에 육박하는 수준",
-      "특히 최근 들어 숏 레버리지 증가속도가 롱 레버리지를 크게 상회하며 숏 인터레스트 크게 증가"
-     ],
-     "numbers": [],
-     "link": "https://t.me/cahier_de_market/11104",
-     "link_label": "텔레그램 원문",
-     "topic": null,
-     "sources": [],
-     "time": "2026-10-23T05:42:31+09:00",
-     "rank": 3
-    },
-    {
-     "title": "제약, 바이오: 모더나 급락 Vs. 여타 종목 경기 방어 성향 반영하며 강세",
-     "bullets": [
-      "소매유통, 통신, 필수 소비재: 기술주 매도에 따른 순환매 등에 강세",
-      "비트코인: 위험자산 회피 속 3% 대 하락"
-     ],
-     "numbers": [],
-     "link": "https://t.me/ehdwl/11227",
-     "link_label": "텔레그램 원문",
-     "topic": null,
-     "sources": [],
-     "time": "2026-10-23T05:30:04+09:00",
-     "rank": 3
-    }
-   ],
-   "refs": [],
-   "errors": []
   }
  ],
- "checked_at": "2026-10-29T19:10:18.352609+09:00"
+ "checked_at": "2026-10-30T08:03:05.065069+09:00"
 }

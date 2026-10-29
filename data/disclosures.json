@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-29T19:09:40.557560+09:00",
+ "captured_at": "2026-10-30T08:02:37.908951+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "[기재정정]주요사항보고서(유상증자결정)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-30",
+   "filer": "NAVER",
+   "rcept_no": "20261030000001"
+  },
   {
    "code": "017670",
    "name": "SK텔레콤",
