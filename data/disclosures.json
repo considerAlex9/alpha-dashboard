@@ -1,30 +1,18 @@
 {
- "captured_at": "2026-10-29T01:31:46.485786+09:00",
+ "captured_at": "2026-10-29T09:41:50.342371+09:00",
  "days": 60,
  "items": [
   {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "타법인주식및출자증권취득결정",
-   "category": "합병·분할",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-28",
-   "filer": "비나텍",
-   "rcept_no": "20261028900775"
-  },
-  {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "증권발행결과(자율공시)",
-   "category": "기타",
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "투자설명서",
+   "category": "증권 발행 서류",
    "important": false,
    "correction": false,
-   "date": "2026-10-28",
-   "filer": "비나텍",
-   "rcept_no": "20261028900499"
+   "date": "2026-10-29",
+   "filer": "하나금융지주",
+   "rcept_no": "20261029000023"
   },
   {
    "code": "086790",
@@ -37,6 +25,18 @@
    "date": "2026-10-28",
    "filer": "하나금융지주",
    "rcept_no": "20261028800630"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "대우건설",
+   "rcept_no": "20261028800616"
   },
   {
    "code": "017670",
@@ -267,6 +267,18 @@
    "rcept_no": "20261027900052"
   },
   {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "주주명부폐쇄기간또는기준일설정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "한전KPS",
+   "rcept_no": "20261027800540"
+  },
+  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -397,6 +409,18 @@
    "date": "2026-10-27",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20261027800213"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-27",
+   "filer": "대우건설",
+   "rcept_no": "20261027800048"
   },
   {
    "code": "035420",
@@ -687,6 +711,18 @@
    "rcept_no": "20261023800986"
   },
   {
+   "code": "353200",
+   "name": "대덕전자",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "대덕전자",
+   "rcept_no": "20261023800826"
+  },
+  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -783,6 +819,18 @@
    "rcept_no": "20261023800545"
   },
   {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-23",
+   "filer": "한전KPS",
+   "rcept_no": "20261023800526"
+  },
+  {
    "code": "476830",
    "name": "알지노믹스",
    "side": "short",
@@ -865,6 +913,30 @@
    "date": "2026-10-23",
    "filer": "키움증권",
    "rcept_no": "20261023000419"
+  },
+  {
+   "code": "353200",
+   "name": "대덕전자",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "신영환",
+   "rcept_no": "20261023000401"
+  },
+  {
+   "code": "353200",
+   "name": "대덕전자",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-23",
+   "filer": "대덕",
+   "rcept_no": "20261023000378"
   },
   {
    "code": "039490",
@@ -963,18 +1035,6 @@
    "rcept_no": "20261023000084"
   },
   {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "[기재정정]주요사항보고서(전환사채권발행결정)",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": true,
-   "date": "2026-10-23",
-   "filer": "비나텍",
-   "rcept_no": "20261023000071"
-  },
-  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -1009,6 +1069,18 @@
    "date": "2026-10-22",
    "filer": "예스티",
    "rcept_no": "20261022900576"
+  },
+  {
+   "code": "353200",
+   "name": "대덕전자",
+   "side": "long",
+   "title": "신규시설투자등",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-22",
+   "filer": "대덕전자",
+   "rcept_no": "20261022800677"
   },
   {
    "code": "207940",
@@ -1081,30 +1153,6 @@
    "date": "2026-10-22",
    "filer": "키움증권",
    "rcept_no": "20261022000013"
-  },
-  {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "주권매매거래정지 (단일판매공급계약)",
-   "category": "거래정지·관리",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-21",
-   "filer": "코스닥시장본부",
-   "rcept_no": "20261021900399"
-  },
-  {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-21",
-   "filer": "비나텍",
-   "rcept_no": "20261021900383"
   },
   {
    "code": "378340",
@@ -1189,6 +1237,30 @@
    "date": "2026-10-21",
    "filer": "KB금융",
    "rcept_no": "20261021800314"
+  },
+  {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "한전KPS",
+   "rcept_no": "20261021800137"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "결산실적공시예고(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-21",
+   "filer": "대우건설",
+   "rcept_no": "20261021800110"
   },
   {
    "code": "039490",
@@ -1407,18 +1479,6 @@
    "rcept_no": "20261020800455"
   },
   {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "주요사항보고서(전환사채권발행결정)",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-20",
-   "filer": "비나텍",
-   "rcept_no": "20261020000332"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1429,30 +1489,6 @@
    "date": "2026-10-20",
    "filer": "국민연금공단",
    "rcept_no": "20261020000051"
-  },
-  {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "주권매매거래정지 (단일판매공급계약)",
-   "category": "거래정지·관리",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-19",
-   "filer": "코스닥시장본부",
-   "rcept_no": "20261019900330"
-  },
-  {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-19",
-   "filer": "비나텍",
-   "rcept_no": "20261019900317"
   },
   {
    "code": "440110",
@@ -1525,6 +1561,18 @@
    "date": "2026-10-19",
    "filer": "현대로템",
    "rcept_no": "20261019800139"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "효력발생안내( 2026.10.19. 제출 증권신고서(채무증권) )",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "금융감독원",
+   "rcept_no": "20261019100049"
   },
   {
    "code": "042660",
@@ -1693,6 +1741,18 @@
    "date": "2026-10-16",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261016800441"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "대우건설",
+   "rcept_no": "20261016800313"
   },
   {
    "code": "035420",
@@ -1909,6 +1969,42 @@
    "date": "2026-10-15",
    "filer": "파두",
    "rcept_no": "20261015900127"
+  },
+  {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "한전KPS",
+   "rcept_no": "20261015800691"
+  },
+  {
+   "code": "353200",
+   "name": "대덕전자",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "대덕전자",
+   "rcept_no": "20261015800468"
+  },
+  {
+   "code": "353200",
+   "name": "대덕전자",
+   "side": "long",
+   "title": "결산실적공시예고(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "대덕전자",
+   "rcept_no": "20261015800458"
   },
   {
    "code": "105560",
@@ -2173,6 +2269,18 @@
    "date": "2026-10-13",
    "filer": "한화오션",
    "rcept_no": "20261013800178"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-13",
+   "filer": "대우건설",
+   "rcept_no": "20261013800134"
   },
   {
    "code": "028300",
@@ -2571,6 +2679,18 @@
    "rcept_no": "20261008000472"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "특수관계인과의내부거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "대우건설",
+   "rcept_no": "20261008000296"
+  },
+  {
    "code": "000500",
    "name": "가온전선",
    "side": "long",
@@ -2703,18 +2823,6 @@
    "rcept_no": "20261007000044"
   },
   {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "비나텍",
-   "rcept_no": "20261006900291"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -2773,6 +2881,18 @@
    "date": "2026-10-06",
    "filer": "KB금융",
    "rcept_no": "20261006000400"
+  },
+  {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "[기재정정]독립이사의선임ㆍ해임또는중도퇴임에관한신고",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-06",
+   "filer": "한전KPS",
+   "rcept_no": "20261006000298"
   },
   {
    "code": "039490",
@@ -2895,6 +3015,42 @@
    "rcept_no": "20261002800830"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "대표이사(대표집행임원)변경(안내공시)",
+   "category": "최대주주·경영권",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "대우건설",
+   "rcept_no": "20261002800694"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "임시주주총회결과",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "대우건설",
+   "rcept_no": "20261002800643"
+  },
+  {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "임시주주총회결과",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "한전KPS",
+   "rcept_no": "20261002800611"
+  },
+  {
    "code": "105560",
    "name": "KB금융",
    "side": "long",
@@ -2955,6 +3111,18 @@
    "rcept_no": "20261002000471"
   },
   {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "독립이사의선임ㆍ해임또는중도퇴임에관한신고",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "한전KPS",
+   "rcept_no": "20261002000456"
+  },
+  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -2989,6 +3157,18 @@
    "date": "2026-10-02",
    "filer": "국민연금공단",
    "rcept_no": "20261002000438"
+  },
+  {
+   "code": "353200",
+   "name": "대덕전자",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000437"
   },
   {
    "code": "062040",
@@ -3085,18 +3265,6 @@
    "date": "2026-10-02",
    "filer": "키움증권",
    "rcept_no": "20261002000201"
-  },
-  {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "국민연금공단",
-   "rcept_no": "20261002000200"
   },
   {
    "code": "095610",
@@ -3531,6 +3699,18 @@
    "rcept_no": "20260928900382"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "투자판단관련주요경영사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-28",
+   "filer": "대우건설",
+   "rcept_no": "20260928800723"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -3723,6 +3903,18 @@
    "rcept_no": "20260921800302"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-21",
+   "filer": "대우건설",
+   "rcept_no": "20260921800259"
+  },
+  {
    "code": "192650",
    "name": "드림텍",
    "side": "long",
@@ -3745,6 +3937,18 @@
    "date": "2026-09-21",
    "filer": "최현자",
    "rcept_no": "20260921000197"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-18",
+   "filer": "대우건설",
+   "rcept_no": "20260918800075"
   },
   {
    "code": "354320",
@@ -3783,6 +3987,18 @@
    "rcept_no": "20260917800269"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-17",
+   "filer": "대우건설",
+   "rcept_no": "20260917800057"
+  },
+  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -3819,6 +4035,18 @@
    "rcept_no": "20260917000236"
   },
   {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "주주총회소집공고",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-17",
+   "filer": "한전KPS",
+   "rcept_no": "20260917000219"
+  },
+  {
    "code": "064350",
    "name": "현대로템",
    "side": "short",
@@ -3829,6 +4057,18 @@
    "date": "2026-09-16",
    "filer": "현대로템",
    "rcept_no": "20260916800555"
+  },
+  {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "주주총회소집결의",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-16",
+   "filer": "한전KPS",
+   "rcept_no": "20260916800424"
   },
   {
    "code": "009830",
@@ -3867,6 +4107,18 @@
    "rcept_no": "20260915800452"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-14",
+   "filer": "대우건설",
+   "rcept_no": "20260914800540"
+  },
+  {
    "code": "105560",
    "name": "KB금융",
    "side": "long",
@@ -3901,6 +4153,18 @@
    "date": "2026-09-14",
    "filer": "삼성자산운용",
    "rcept_no": "20260914000251"
+  },
+  {
+   "code": "353200",
+   "name": "대덕전자",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-14",
+   "filer": "국민연금공단",
+   "rcept_no": "20260914000230"
   },
   {
    "code": "207940",
@@ -4059,6 +4323,18 @@
    "rcept_no": "20260911000014"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "주주총회소집결의",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "대우건설",
+   "rcept_no": "20260910800555"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -4069,6 +4345,18 @@
    "date": "2026-09-10",
    "filer": "한화오션",
    "rcept_no": "20260910800549"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "주식소각결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "대우건설",
+   "rcept_no": "20260910800468"
   },
   {
    "code": "207940",
@@ -4107,6 +4395,30 @@
    "rcept_no": "20260910800347"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "의결권대리행사권유참고서류",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "대우건설",
+   "rcept_no": "20260910000571"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "주주총회소집공고",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "대우건설",
+   "rcept_no": "20260910000563"
+  },
+  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -4141,6 +4453,30 @@
    "date": "2026-09-09",
    "filer": "한화솔루션",
    "rcept_no": "20260909800610"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-09-09",
+   "filer": "대우건설",
+   "rcept_no": "20260909800253"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-09",
+   "filer": "대우건설",
+   "rcept_no": "20260909800091"
   },
   {
    "code": "042660",
@@ -4239,6 +4575,18 @@
    "rcept_no": "20260908800531"
   },
   {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "대우건설",
+   "rcept_no": "20260908800452"
+  },
+  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "long",
@@ -4323,18 +4671,6 @@
    "rcept_no": "20260907900349"
   },
   {
-   "code": "126340",
-   "name": "비나텍",
-   "side": "long",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-07",
-   "filer": "비나텍",
-   "rcept_no": "20260907900269"
-  },
-  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -4407,6 +4743,18 @@
    "rcept_no": "20260903900076"
   },
   {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "지속가능경영보고서등관련사항(자율공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-03",
+   "filer": "한전KPS",
+   "rcept_no": "20260903800388"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -4465,6 +4813,18 @@
    "date": "2026-09-01",
    "filer": "NAVER",
    "rcept_no": "20260901800215"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-01",
+   "filer": "대우건설",
+   "rcept_no": "20260901800137"
   },
   {
    "code": "042660",
@@ -4573,6 +4933,18 @@
    "date": "2026-08-31",
    "filer": "필에너지",
    "rcept_no": "20260831900714"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-08-31",
+   "filer": "대우건설",
+   "rcept_no": "20260831800597"
   },
   {
    "code": "207940",
