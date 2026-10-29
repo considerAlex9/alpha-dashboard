@@ -1,5 +1,20 @@
 [
  {
+  "id": 2685033,
+  "order_id": 36962,
+  "company_id": 450,
+  "company_name": "Hanwha Solutions Corp.",
+  "company_symbol": "009830",
+  "side": "short",
+  "quantity": 67441,
+  "price": 23613.2536,
+  "commission": 1592501.436,
+  "fx_rate": 1.0,
+  "value_krw": 1592501435.9908,
+  "realized_pnl": null,
+  "created_at": "2026-10-29T06:20:30+00:00"
+ },
+ {
   "id": 2675142,
   "order_id": 36907,
   "company_id": 450,
