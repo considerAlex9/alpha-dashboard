@@ -38,9 +38,15 @@ def jo(won):
     return f"{won / 1e12:.1f}조"
 
 
-def _theme_of():
-    T = json.loads((ROOT / "market_themes.json").read_text(encoding="utf-8"))
-    return {c: t for t, m in T.items() if not t.startswith("_") for c in m}
+def _theme_of(mk):
+    """등락판 구성 종목 → 테마. 여러 테마에 속하면 market_themes.json 에서 앞에 적힌 테마"""
+    order = [t for t in json.loads((ROOT / "market_themes.json").read_text(encoding="utf-8")) if not t.startswith("_")]
+    rows = sorted((mk.get("themes") or {}).get("rows", []), key=lambda r: order.index(r["theme"]) if r["theme"] in order else 99)
+    out = {}
+    for r in rows:
+        for c in r.get("codes") or [s["code"] for s in r.get("stocks", [])]:
+            out.setdefault(c, r["theme"])
+    return out
 
 
 def _streak(days, who="외국인", mk="KOSPI"):
@@ -59,7 +65,7 @@ def _streak(days, who="외국인", mk="KOSPI"):
 def build(kis, mk, news, cal, disc, positions, now, log=print):
     today = now.strftime("%Y-%m-%d")
     held = {p["company_symbol"]: p["side"] for p in positions}
-    theme_of = _theme_of()
+    theme_of = _theme_of(mk)
 
     # ---------- 지수 ----------
     idx = {}

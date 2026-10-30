@@ -318,6 +318,10 @@ tr.click{cursor:pointer}
 .hcell .hv{font-size:21px;font-weight:760;margin-top:1px;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 .hcell .hs{font-size:11.5px;margin-top:3px;line-height:1.55;opacity:.92}
 .hcell .hs span{white-space:nowrap}
+.hcell .hr{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;line-height:1.55;opacity:.92}
+.hcell .hr span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.hcell .hr span:last-child{font-variant-numeric:tabular-nums;font-weight:650;white-space:nowrap}
+.hcell .hreps{margin-top:5px}
 .mine{display:inline-block;font-size:10.5px;font-weight:700;padding:1px 6px;border-radius:999px;background:var(--surface);color:var(--ink);margin-left:2px}
 
 /* 경제 일정 */
@@ -1497,18 +1501,24 @@ function renderInv(){
 function renderHeat(){
   const T=M?.themes, el=document.getElementById('heat');
   if(!T?.rows?.length){ el.innerHTML='<div class="empty" style="grid-column:1/-1">테마 등락 데이터가 아직 없습니다. 다음 자동 업데이트 후 표시됩니다.</div>'; return; }
-  document.getElementById('heatsub').textContent=`${dayLabel(T.date)} 기준 · 테마 대표 종목 등락률의 평균 · 한국투자증권 현재가 · 대표 종목은 market_themes.json 에서 바꿀 수 있어요`;
+  const full=T.rows.some(t=>t.codes);
+  document.getElementById('heatsub').textContent=full
+    ? `${dayLabel(T.date)} 기준 · 테마에 속한 시장 전체 종목(우선주·거래정지 제외)의 시가총액 가중 평균 · 대표 종목은 거래대금 10억 원 이상 중 가장 많이 오른 2개·내린 2개 · 네이버 증권 업종·테마 분류 (market_themes.json 에서 바꿀 수 있어요)`
+    : `${dayLabel(T.date)} 기준 · 테마 대표 종목 등락률의 평균 · 다음 업데이트부터 시장 전체 종목 기준으로 바뀌어요`;
   el.innerHTML=T.rows.map(t=>{
     const a=Math.min(1,Math.abs(t.chg1)/.04), k=Math.round(8+a*72);
     const bg=t.chg1===0?'var(--surface-2)':`color-mix(in srgb,var(--${t.chg1>0?'up':'down'}) ${k}%,var(--surface))`;
-    const mine=[...new Set(t.stocks.filter(s=>posBySym[s.code]).map(s=>posBySym[s.code].side==='long'?'롱':'숏'))];
-    const top=[...t.stocks].sort((a,b)=>Math.abs(b.chg1)-Math.abs(a.chg1)).slice(0,3);
-    const tipTxt=t.stocks.map(s=>`${s.name} ${pct(s.chg1,1)}${posBySym[s.code]?(posBySym[s.code].side==='long'?' (내 롱)':' (내 숏)'):''}`).join('\n');
+    const codes=t.codes||t.stocks.map(s=>s.code), held=codes.filter(c=>posBySym[c]);
+    const mine=[...new Set(held.map(c=>posBySym[c].side==='long'?'롱':'숏'))];
+    const ups=t.stocks.filter(s=>s.chg1>0).sort((a,b)=>b.chg1-a.chg1).slice(0,2), downs=t.stocks.filter(s=>s.chg1<0).sort((a,b)=>a.chg1-b.chg1).slice(0,2);
+    const line=arr=>arr.map(s=>`<div class="hr" title="${esc(s.name)}"><span>${s.chg1>0?'▲':'▼'} ${esc(s.name)}</span><span>${pct(s.chg1,1)}</span></div>`).join('');
+    const tipTxt=[t.groups?`분류: ${t.groups.join(', ')}`:'', `전체 ${t.n??codes.length}종목 · 상승 ${t.up} · 하락 ${t.down}${t.flat!=null?` · 보합 ${t.flat}`:''}`,
+      ...held.map(c=>`내 ${posBySym[c].side==='long'?'롱':'숏'}: ${posBySym[c].company_alias||c}`)].filter(Boolean).join('\n');
     return `<div class="hcell" style="--hc:${bg};--hk:${k>45?'#fff':'var(--ink)'}" title="${esc(tipTxt)}">
       <div class="ht"><span>${esc(t.theme)}</span><span>${mine.map(x=>`<span class="mine">${x}</span>`).join('')}</span></div>
       <div class="hv">${pct(t.chg1,2)}</div>
-      <div class="hs">${top.map(s=>`<span>${esc(s.name)} ${pct(s.chg1,1)}</span>`).join(' · ')}</div>
-      <div class="hs">상승 ${t.up} · 하락 ${t.down}</div></div>`; }).join('');
+      <div class="hreps">${line(ups)||'<div class="hr"><span style="opacity:.75">▲ 상승 종목 없음</span></div>'}${line(downs)||'<div class="hr"><span style="opacity:.75">▼ 하락 종목 없음</span></div>'}</div>
+      <div class="hs">상승 ${t.up} · 하락 ${t.down}${t.n?` <span style="opacity:.75">/ 전체 ${t.n}종목</span>`:''}</div></div>`; }).join('');
 }
 
 // ============================================================

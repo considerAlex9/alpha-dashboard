@@ -235,27 +235,53 @@ def investor_ranks(kis, safe, log):
     return out
 
 
-def theme_board(kis, safe, kospi_bars):
-    """테마별 대표 종목의 전일 대비 등락률 → 테마 평균 (단순 평균)"""
-    T = json.loads((Path(__file__).resolve().parent / "market_themes.json").read_text(encoding="utf-8"))
-    items = [(t, c, n) for t, m in T.items() if not t.startswith("_") for c, n in m.items()]
+PREF = re.compile(r"\d?우[A-C]?$|우\(전환\)$")   # 우선주는 본주와 겹치니 뺀다
+MIN_REP_VALUE = 10e8                             # 대표 종목은 거래대금 10억 원 이상에서 고른다
 
-    def one(it):
-        t, c, n = it
-        return t, c, n, safe(f"한투 현재가 {c}", lambda: kis.price(c))
-    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
-        res = list(ex.map(one, items))
-    board = {}
-    for t, c, n, info in res:
-        if info and info.get("price"):
-            board.setdefault(t, []).append({"code": c, "name": n, "chg1": round(info["chg1"], 4),
-                                            "mcap": info["mcap"], "tv": info["tv"]})
+
+def _naver_group(kind, no):
+    """네이버 증권 업종(industry)·테마(theme) 구성 종목 전체"""
+    out, page = [], 1
+    while True:
+        d = _get(f"https://m.stock.naver.com/api/stocks/{kind}/{no}?page={page}&pageSize=100")
+        out += d.get("stocks") or []
+        if not d.get("stocks") or len(out) >= d.get("totalCount", 0):
+            return out
+        page += 1
+
+
+def theme_board(safe, kospi_bars):
+    """테마별(네이버 업종·테마 묶음) 전체 종목의 오늘 등락 — 시총 가중 평균, 상승·하락 개수, 많이 오른·내린 대표 종목"""
+    T = json.loads((Path(__file__).resolve().parent / "market_themes.json").read_text(encoding="utf-8"))
+    T = {t: m for t, m in T.items() if not t.startswith("_")}
+    groups = {(("industry" if k.startswith("업종") else "theme"), k.split()[-1]) for m in T.values() for k in m}
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        got = dict(zip(groups, ex.map(lambda g: safe(f"네이버 {g[0]} {g[1]}", lambda: _naver_group(*g)), groups)))
     rows = []
-    for t, st in board.items():
-        rows.append({"theme": t, "chg1": round(sum(r["chg1"] for r in st) / len(st), 4),
+    for t, m in T.items():
+        st = {}
+        for k in m:
+            for x in got.get((("industry" if k.startswith("업종") else "theme"), k.split()[-1])) or []:
+                if x.get("stockEndType") != "stock" or PREF.search(x.get("stockName", "")) \
+                        or (x.get("tradeStopType") or {}).get("name") == "HALTED":
+                    continue
+                st[x["itemCode"]] = {"code": x["itemCode"], "name": x["stockName"], "chg1": round(_num(x["fluctuationsRatio"]) / 100, 4),
+                                     "mcap": _num(x.get("marketValueRaw")), "tv": _num(x.get("accumulatedTradingValueRaw"))}
+        if not st:
+            continue
+        st = list(st.values())
+        w = sum(r["mcap"] for r in st)
+        liquid = [r for r in st if r["tv"] >= MIN_REP_VALUE] or st
+        ups = sorted([r for r in liquid if r["chg1"] > 0], key=lambda r: -r["chg1"])[:2]
+        downs = sorted([r for r in liquid if r["chg1"] < 0], key=lambda r: r["chg1"])[:2]
+        rows.append({"theme": t, "groups": list(m.values()), "n": len(st),
+                     "chg1": round(sum(r["chg1"] * r["mcap"] for r in st) / w if w else sum(r["chg1"] for r in st) / len(st), 4),
                      "up": sum(r["chg1"] > 0 for r in st), "down": sum(r["chg1"] < 0 for r in st),
-                     "stocks": sorted(st, key=lambda r: -r["chg1"])})
-    return {"date": kospi_bars[-1][0] if kospi_bars else None, "rows": sorted(rows, key=lambda r: -r["chg1"])}
+                     "flat": sum(r["chg1"] == 0 for r in st),
+                     "stocks": [{k: r[k] for k in ("code", "name", "chg1")} for r in ups + downs[::-1]],
+                     "codes": [r["code"] for r in sorted(st, key=lambda r: -r["mcap"])]})
+    return {"date": kospi_bars[-1][0] if kospi_bars else None, "source": "네이버 증권 업종·테마 분류",
+            "rows": sorted(rows, key=lambda r: -r["chg1"])}
 
 
 def collect(positions, kis_keys=None, log=print, prev=None):
@@ -376,11 +402,10 @@ def collect(positions, kis_keys=None, log=print, prev=None):
         out["warnings"] = warn
     log(f"  · 시장경보 {time.time() - t0:.0f}초")
 
-    # ---------- 테마별 오늘 등락판 (market_themes.json 의 대표 종목 현재가) ----------
-    if kis:
-        t0 = time.time()
-        out["themes"] = safe("테마 등락판", lambda: theme_board(kis, safe, idx.get("KOSPI")))
-        log(f"  · 테마 등락판 {time.time() - t0:.0f}초")
+    # ---------- 테마별 오늘 등락판 (market_themes.json 의 네이버 업종·테마 묶음 전체 종목) ----------
+    t0 = time.time()
+    out["themes"] = safe("테마 등락판", lambda: theme_board(safe, idx.get("KOSPI")))
+    log(f"  · 테마 등락판 {time.time() - t0:.0f}초")
 
     # ---------- 외국인·기관 순매수 상위 ----------
     if kis:
