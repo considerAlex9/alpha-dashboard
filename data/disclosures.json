@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-30T10:17:03.640006+09:00",
+ "captured_at": "2026-10-30T11:13:26.060638+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "대우건설",
+   "rcept_no": "20261030800384"
+  },
+  {
+   "code": "047040",
+   "name": "대우건설",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "대우건설",
+   "rcept_no": "20261030800255"
+  },
   {
    "code": "042660",
    "name": "한화오션",
@@ -37,6 +61,30 @@
    "date": "2026-10-30",
    "filer": "키움증권",
    "rcept_no": "20261030800044"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "키움증권",
+   "rcept_no": "20261030000119"
+  },
+  {
+   "code": "009830",
+   "name": "한화솔루션",
+   "side": "short",
+   "title": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "한화솔루션",
+   "rcept_no": "20261030000118"
   },
   {
    "code": "030200",
@@ -4393,18 +4441,6 @@
    "date": "2026-10-01",
    "filer": "키움증권",
    "rcept_no": "20261001000141"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-01",
-   "filer": "키움증권",
-   "rcept_no": "20261001000140"
   },
   {
    "code": "086790",
