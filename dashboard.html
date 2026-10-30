@@ -322,6 +322,8 @@ tr.click{cursor:pointer}
 .hcell .hr span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .hcell .hr span:last-child{font-variant-numeric:tabular-nums;font-weight:650;white-space:nowrap}
 .hcell .hreps{margin-top:5px}
+.hcell .ar{display:inline-block;font-size:9px;line-height:13px;width:13px;text-align:center;border-radius:3px;background:#fff;margin-right:4px;vertical-align:1px}
+.hcell .ar.u{color:#d03b3b}.hcell .ar.d{color:#2a78d6}
 .mine{display:inline-block;font-size:10.5px;font-weight:700;padding:1px 6px;border-radius:999px;background:var(--surface);color:var(--ink);margin-left:2px}
 
 /* 경제 일정 */
@@ -1511,13 +1513,13 @@ function renderHeat(){
     const codes=t.codes||t.stocks.map(s=>s.code), held=codes.filter(c=>posBySym[c]);
     const mine=[...new Set(held.map(c=>posBySym[c].side==='long'?'롱':'숏'))];
     const ups=t.stocks.filter(s=>s.chg1>0).sort((a,b)=>b.chg1-a.chg1).slice(0,2), downs=t.stocks.filter(s=>s.chg1<0).sort((a,b)=>a.chg1-b.chg1).slice(0,2);
-    const line=arr=>arr.map(s=>`<div class="hr" title="${esc(s.name)}"><span>${s.chg1>0?'▲':'▼'} ${esc(s.name)}</span><span>${pct(s.chg1,1)}</span></div>`).join('');
+    const line=arr=>arr.map(s=>`<div class="hr" title="${esc(s.name)}"><span>${s.chg1>0?'<i class="ar u">▲</i>':'<i class="ar d">▼</i>'}${esc(s.name)}</span><span>${pct(s.chg1,1)}</span></div>`).join('');
     const tipTxt=[t.groups?`분류: ${t.groups.join(', ')}`:'', `전체 ${t.n??codes.length}종목 · 상승 ${t.up} · 하락 ${t.down}${t.flat!=null?` · 보합 ${t.flat}`:''}`,
       ...held.map(c=>`내 ${posBySym[c].side==='long'?'롱':'숏'}: ${posBySym[c].company_alias||c}`)].filter(Boolean).join('\n');
     return `<div class="hcell" style="--hc:${bg};--hk:${k>45?'#fff':'var(--ink)'}" title="${esc(tipTxt)}">
       <div class="ht"><span>${esc(t.theme)}</span><span>${mine.map(x=>`<span class="mine">${x}</span>`).join('')}</span></div>
       <div class="hv">${pct(t.chg1,2)}</div>
-      <div class="hreps">${line(ups)||'<div class="hr"><span style="opacity:.75">▲ 상승 종목 없음</span></div>'}${line(downs)||'<div class="hr"><span style="opacity:.75">▼ 하락 종목 없음</span></div>'}</div>
+      <div class="hreps">${line(ups)||'<div class="hr"><span style="opacity:.75"><i class="ar u">▲</i>상승 종목 없음</span></div>'}${line(downs)||'<div class="hr"><span style="opacity:.75"><i class="ar d">▼</i>하락 종목 없음</span></div>'}</div>
       <div class="hs">상승 ${t.up} · 하락 ${t.down}${t.n?` <span style="opacity:.75">/ 전체 ${t.n}종목</span>`:''}</div></div>`; }).join('');
 }
 
