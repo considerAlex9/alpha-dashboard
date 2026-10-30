@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-10-30T16:32:13.944701+09:00",
+ "captured_at": "2026-10-30T19:06:29.542552+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "347850",
+   "name": "디앤디파마텍",
+   "side": "long",
+   "title": "전환가액의조정 (제2회차)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "디앤디파마텍",
+   "rcept_no": "20261030901174"
+  },
+  {
+   "code": "437730",
+   "name": "삼현",
+   "side": "short",
+   "title": "전환청구권행사 (제1회차)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "삼현",
+   "rcept_no": "20261030901154"
+  },
   {
    "code": "259960",
    "name": "크래프톤",
@@ -169,6 +193,114 @@
    "date": "2026-10-30",
    "filer": "키움증권",
    "rcept_no": "20261030800044"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "윤주한",
+   "rcept_no": "20261030000719"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "삼성물산",
+   "rcept_no": "20261030000716"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "특수관계인의유상증자참여",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261030000702"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "특수관계인의유상증자참여",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261030000696"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "김기중",
+   "rcept_no": "20261030000685"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "이규호",
+   "rcept_no": "20261030000674"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "[기재정정]임원ㆍ주요주주특정증권등거래계획보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-30",
+   "filer": "LS전선",
+   "rcept_no": "20261030000667"
+  },
+  {
+   "code": "080220",
+   "name": "제주반도체",
+   "side": "long",
+   "title": "자기주식처분결과보고서",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "제주반도체",
+   "rcept_no": "20261030000638"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "키움증권",
+   "rcept_no": "20261030000613"
   },
   {
    "code": "005935",
@@ -4681,18 +4813,6 @@
    "date": "2026-10-01",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261001000449"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-01",
-   "filer": "키움증권",
-   "rcept_no": "20261001000403"
   },
   {
    "code": "005935",
