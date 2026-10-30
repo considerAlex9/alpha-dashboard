@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-30T13:16:55.765841+09:00",
+ "captured_at": "2026-10-30T14:19:10.718328+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "키움증권",
+   "rcept_no": "20261030800503"
+  },
   {
    "code": "047040",
    "name": "대우건설",
@@ -61,6 +73,30 @@
    "date": "2026-10-30",
    "filer": "키움증권",
    "rcept_no": "20261030800044"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "키움증권",
+   "rcept_no": "20261030000209"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "키움증권",
+   "rcept_no": "20261030000185"
   },
   {
    "code": "039490",
@@ -4383,18 +4419,6 @@
    "rcept_no": "20261001000363"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-01",
-   "filer": "키움증권",
-   "rcept_no": "20261001000310"
-  },
-  {
    "code": "005935",
    "name": "삼성전자우",
    "side": "long",
@@ -4407,18 +4431,6 @@
    "rcept_no": "20261001000251"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-01",
-   "filer": "키움증권",
-   "rcept_no": "20261001000241"
-  },
-  {
    "code": "005935",
    "name": "삼성전자우",
    "side": "long",
@@ -4429,18 +4441,6 @@
    "date": "2026-10-01",
    "filer": "이석림",
    "rcept_no": "20261001000203"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-01",
-   "filer": "키움증권",
-   "rcept_no": "20261001000200"
   },
   {
    "code": "086790",
