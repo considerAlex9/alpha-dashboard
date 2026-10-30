@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-10-30T08:02:37.908951+09:00",
+ "captured_at": "2026-10-30T09:16:20.145935+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "키움증권",
+   "rcept_no": "20261030800044"
+  },
   {
    "code": "035420",
    "name": "NAVER",
@@ -121,6 +133,18 @@
    "date": "2026-10-29",
    "filer": "KB금융",
    "rcept_no": "20261029800387"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261029800352"
   },
   {
    "code": "105560",
@@ -433,6 +457,18 @@
    "date": "2026-10-29",
    "filer": "한화솔루션",
    "rcept_no": "20261029000371"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "특수관계인에대한출자",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-29",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261029000366"
   },
   {
    "code": "009830",
@@ -1623,6 +1659,18 @@
    "rcept_no": "20261022800677"
   },
   {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-10-22",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261022800491"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -2053,6 +2101,18 @@
    "date": "2026-10-19",
    "filer": "현대로템",
    "rcept_no": "20261019800588"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "타법인주식및출자증권처분결정(종속회사의주요경영사항)",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-19",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261019800494"
   },
   {
    "code": "064350",
@@ -2991,6 +3051,30 @@
    "rcept_no": "20261012000281"
   },
   {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "임경욱",
+   "rcept_no": "20261012000268"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "송치웅",
+   "rcept_no": "20261012000264"
+  },
+  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -3001,6 +3085,42 @@
    "date": "2026-10-12",
    "filer": "김훈민",
    "rcept_no": "20261012000260"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "박병호",
+   "rcept_no": "20261012000259"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "노석만",
+   "rcept_no": "20261012000253"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-12",
+   "filer": "김성민",
+   "rcept_no": "20261012000247"
   },
   {
    "code": "042660",
@@ -3193,6 +3313,42 @@
    "date": "2026-10-08",
    "filer": "OCI홀딩스",
    "rcept_no": "20261008800499"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261008800488"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261008800486"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "결산실적공시예고(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261008800483"
   },
   {
    "code": "000500",
@@ -3433,6 +3589,18 @@
    "date": "2026-10-07",
    "filer": "한화솔루션",
    "rcept_no": "20261007800159"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "특수관계인과의수익증권거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261007000413"
   },
   {
    "code": "080220",
@@ -4275,18 +4443,6 @@
    "rcept_no": "20260930800489"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "키움증권",
-   "rcept_no": "20260930000655"
-  },
-  {
    "code": "354320",
    "name": "알멕",
    "side": "short",
@@ -4527,6 +4683,18 @@
    "rcept_no": "20260923800331"
   },
   {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-23",
+   "filer": "한화",
+   "rcept_no": "20260923000545"
+  },
+  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -4585,6 +4753,18 @@
    "date": "2026-09-22",
    "filer": "허은녕",
    "rcept_no": "20260922000524"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "특수관계인과의수익증권거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-22",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260922000520"
   },
   {
    "code": "085910",
@@ -4669,6 +4849,42 @@
    "date": "2026-09-18",
    "filer": "삼성전자",
    "rcept_no": "20260918800754"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-18",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260918800735"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "대표이사(대표집행임원)변경(안내공시)",
+   "category": "최대주주·경영권",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-18",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260918800717"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "임시주주총회결과",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-18",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260918800693"
   },
   {
    "code": "047040",
@@ -5007,6 +5223,18 @@
    "rcept_no": "20260911800699"
   },
   {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결(자율공시)",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-11",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260911800004"
+  },
+  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -5185,6 +5413,30 @@
    "date": "2026-09-10",
    "filer": "삼성바이오로직스",
    "rcept_no": "20260910800388"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260910800374"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260910800366"
   },
   {
    "code": "009830",
@@ -5571,6 +5823,18 @@
    "rcept_no": "20260907800372"
   },
   {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-07",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260907800087"
+  },
+  {
    "code": "028300",
    "name": "HLB",
    "side": "short",
@@ -5907,6 +6171,18 @@
    "rcept_no": "20260831800149"
   },
   {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260831800137"
+  },
+  {
    "code": "105560",
    "name": "KB금융",
    "side": "long",
@@ -5917,6 +6193,18 @@
    "date": "2026-08-31",
    "filer": "KB금융",
    "rcept_no": "20260831001290"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-08-31",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20260831001183"
   },
   {
    "code": "042660",
