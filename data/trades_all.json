@@ -1,5 +1,20 @@
 [
  {
+  "id": 2716951,
+  "order_id": 37527,
+  "company_id": 2421,
+  "company_name": "DL E&C Co., Ltd.",
+  "company_symbol": "375500",
+  "side": "short",
+  "quantity": 34730,
+  "price": 52285.8617,
+  "commission": 1815887.9776,
+  "fx_rate": 1.0,
+  "value_krw": 1815887977.6482,
+  "realized_pnl": null,
+  "created_at": "2026-10-30T06:10:39+00:00"
+ },
+ {
   "id": 2716040,
   "order_id": 37516,
   "company_id": 1164,
