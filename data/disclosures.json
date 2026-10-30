@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-10-30T15:02:50.072656+09:00",
+ "captured_at": "2026-10-30T15:13:43.306729+09:00",
  "days": 60,
  "items": [
   {
@@ -49,6 +49,30 @@
    "date": "2026-10-30",
    "filer": "한화오션",
    "rcept_no": "20261030800228"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20261030800215"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20261030800194"
   },
   {
    "code": "042700",
@@ -2787,6 +2811,18 @@
    "rcept_no": "20261015800283"
   },
   {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20261015800277"
+  },
+  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -2797,6 +2833,30 @@
    "date": "2026-10-15",
    "filer": "하나금융지주",
    "rcept_no": "20261015800202"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20261015800116"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "결산실적공시예고(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-15",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20261015800111"
   },
   {
    "code": "039490",
@@ -3723,6 +3783,18 @@
    "rcept_no": "20261007800351"
   },
   {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20261007800333"
+  },
+  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -4189,6 +4261,18 @@
    "date": "2026-10-02",
    "filer": "국민연금공단",
    "rcept_no": "20261002000399"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000386"
   },
   {
    "code": "267260",
@@ -4803,6 +4887,18 @@
    "rcept_no": "20260922800468"
   },
   {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-22",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20260922800320"
+  },
+  {
    "code": "192650",
    "name": "드림텍",
    "side": "long",
@@ -5115,6 +5211,18 @@
    "rcept_no": "20260917000097"
   },
   {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-16",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20260916800589"
+  },
+  {
    "code": "064350",
    "name": "현대로템",
    "side": "short",
@@ -5293,6 +5401,18 @@
    "date": "2026-09-11",
    "filer": "크래프톤",
    "rcept_no": "20260911800699"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "유형자산취득결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-11",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20260911800638"
   },
   {
    "code": "012450",
@@ -6037,6 +6157,30 @@
    "date": "2026-09-02",
    "filer": "SK이노베이션",
    "rcept_no": "20260902800513"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-02",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20260902800408"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-02",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20260902800378"
   },
   {
    "code": "017670",
