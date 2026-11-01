@@ -1,29 +1,7 @@
 {
- "captured_at": "2026-10-30T19:07:20.562613+09:00",
+ "captured_at": "2026-11-02T08:03:38.513236+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "GBP|CPI y/y|2026-10-21",
-   "time": "2026-10-21T15:00:00+09:00",
-   "country": "영국",
-   "title": "소비자물가 (전년 대비)",
-   "title_en": "CPI y/y",
-   "impact": "높음",
-   "forecast": "3.4%",
-   "previous": "3.1%",
-   "actual": ""
-  },
-  {
-   "key": "USD|Unemployment Claims|2026-10-22",
-   "time": "2026-10-22T21:30:00+09:00",
-   "country": "미국",
-   "title": "주간 신규 실업수당 청구",
-   "title_en": "Unemployment Claims",
-   "impact": "보통",
-   "forecast": "200K",
-   "previous": "199K",
-   "actual": ""
-  },
   {
    "key": "USD|Flash Manufacturing PMI|2026-10-23",
    "time": "2026-10-23T22:45:00+09:00",
@@ -275,6 +253,204 @@
    "impact": "보통",
    "forecast": "0.8%",
    "previous": "0.9%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Daylight Saving Time Shift|2026-11-01",
+   "time": "2026-11-01T16:00:00+09:00",
+   "country": "미국",
+   "title": "Daylight Saving Time Shift",
+   "title_en": "Daylight Saving Time Shift",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|ISM Manufacturing PMI|2026-11-03",
+   "time": "2026-11-03T00:00:00+09:00",
+   "country": "미국",
+   "title": "ISM 제조업 지수",
+   "title_en": "ISM Manufacturing PMI",
+   "impact": "보통",
+   "forecast": "54.7",
+   "previous": "54.5",
+   "actual": ""
+  },
+  {
+   "key": "JPY|Bank Holiday|2026-11-03",
+   "time": "2026-11-03T09:00:00+09:00",
+   "country": "일본",
+   "title": "휴장 (공휴일)",
+   "title_en": "Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|JOLTS Job Openings|2026-11-04",
+   "time": "2026-11-04T00:00:00+09:00",
+   "country": "미국",
+   "title": "JOLTS 구인 건수",
+   "title_en": "JOLTS Job Openings",
+   "impact": "보통",
+   "forecast": "7.11M",
+   "previous": "7.08M",
+   "actual": ""
+  },
+  {
+   "key": "USD|Congressional Elections|2026-11-04",
+   "time": "2026-11-04T00:16:00+09:00",
+   "country": "미국",
+   "title": "Congressional Elections",
+   "title_en": "Congressional Elections",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|ISM Services PMI|2026-11-05",
+   "time": "2026-11-05T00:00:00+09:00",
+   "country": "미국",
+   "title": "ISM 서비스업 지수",
+   "title_en": "ISM Services PMI",
+   "impact": "보통",
+   "forecast": "54.9",
+   "previous": "54.9",
+   "actual": ""
+  },
+  {
+   "key": "GBP|BOE Monetary Policy Report|2026-11-05",
+   "time": "2026-11-05T21:00:00+09:00",
+   "country": "영국",
+   "title": "BOE Monetary Policy Report",
+   "title_en": "BOE Monetary Policy Report",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "GBP|Monetary Policy Summary|2026-11-05",
+   "time": "2026-11-05T21:00:00+09:00",
+   "country": "영국",
+   "title": "Monetary Policy Summary",
+   "title_en": "Monetary Policy Summary",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "GBP|MPC Official Bank Rate Votes|2026-11-05",
+   "time": "2026-11-05T21:00:00+09:00",
+   "country": "영국",
+   "title": "MPC 영국 기준금리 결정 Votes",
+   "title_en": "MPC Official Bank Rate Votes",
+   "impact": "높음",
+   "forecast": "7-0-2",
+   "previous": "3-0-6",
+   "actual": ""
+  },
+  {
+   "key": "GBP|Official Bank Rate|2026-11-05",
+   "time": "2026-11-05T21:00:00+09:00",
+   "country": "영국",
+   "title": "영국 기준금리 결정",
+   "title_en": "Official Bank Rate",
+   "impact": "높음",
+   "forecast": "4.00%",
+   "previous": "3.75%",
+   "actual": ""
+  },
+  {
+   "key": "GBP|BOE Gov Bailey Speaks|2026-11-05",
+   "time": "2026-11-05T21:30:00+09:00",
+   "country": "영국",
+   "title": "영란은행 총재 베일리 발언",
+   "title_en": "BOE Gov Bailey Speaks",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|Unemployment Claims|2026-11-05",
+   "time": "2026-11-05T22:30:00+09:00",
+   "country": "미국",
+   "title": "주간 신규 실업수당 청구",
+   "title_en": "Unemployment Claims",
+   "impact": "보통",
+   "forecast": "197K",
+   "previous": "194K",
+   "actual": ""
+  },
+  {
+   "key": "USD|Average Hourly Earnings m/m|2026-11-06",
+   "time": "2026-11-06T22:30:00+09:00",
+   "country": "미국",
+   "title": "시간당 임금 (전월 대비)",
+   "title_en": "Average Hourly Earnings m/m",
+   "impact": "높음",
+   "forecast": "0.3%",
+   "previous": "0.1%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Non-Farm Employment Change|2026-11-06",
+   "time": "2026-11-06T22:30:00+09:00",
+   "country": "미국",
+   "title": "비농업 고용",
+   "title_en": "Non-Farm Employment Change",
+   "impact": "높음",
+   "forecast": "63K",
+   "previous": "29K",
+   "actual": ""
+  },
+  {
+   "key": "USD|Unemployment Rate|2026-11-06",
+   "time": "2026-11-06T22:30:00+09:00",
+   "country": "미국",
+   "title": "실업률",
+   "title_en": "Unemployment Rate",
+   "impact": "높음",
+   "forecast": "4.2%",
+   "previous": "4.2%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Prelim UoM Consumer Sentiment|2026-11-07",
+   "time": "2026-11-07T00:00:00+09:00",
+   "country": "미국",
+   "title": "미시간대 소비자심리 (예비)",
+   "title_en": "Prelim UoM Consumer Sentiment",
+   "impact": "보통",
+   "forecast": "47.8",
+   "previous": "46.3",
+   "actual": ""
+  },
+  {
+   "key": "USD|Prelim UoM Inflation Expectations|2026-11-07",
+   "time": "2026-11-07T00:00:00+09:00",
+   "country": "미국",
+   "title": "미시간대 기대인플레이션 (예비)",
+   "title_en": "Prelim UoM Inflation Expectations",
+   "impact": "보통",
+   "forecast": "",
+   "previous": "4.7%",
+   "actual": ""
+  },
+  {
+   "key": "JPY|BOJ Gov Ueda Speaks|2026-11-07",
+   "time": "2026-11-07T01:00:00+09:00",
+   "country": "일본",
+   "title": "일본은행 총재 우에다 발언",
+   "title_en": "BOJ Gov Ueda Speaks",
+   "impact": "높음",
+   "forecast": "",
+   "previous": "",
    "actual": ""
   }
  ]
