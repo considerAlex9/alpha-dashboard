@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-02T09:17:01.298836+09:00",
+ "captured_at": "2026-11-02T10:16:57.946973+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "003160",
+   "name": "디아이",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "디아이",
+   "rcept_no": "20261102800245"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20261102800220"
+  },
   {
    "code": "207940",
    "name": "삼성바이오로직스",
@@ -13,6 +37,18 @@
    "date": "2026-11-02",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261102800004"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "최영환",
+   "rcept_no": "20261102000017"
   },
   {
    "code": "347850",
@@ -123,30 +159,6 @@
    "rcept_no": "20261030800503"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-30",
-   "filer": "대우건설",
-   "rcept_no": "20261030800384"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-30",
-   "filer": "대우건설",
-   "rcept_no": "20261030800255"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -181,18 +193,6 @@
    "date": "2026-10-30",
    "filer": "LG씨엔에스",
    "rcept_no": "20261030800194"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
-   "category": "실적",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-30",
-   "filer": "한미반도체",
-   "rcept_no": "20261030800184"
   },
   {
    "code": "039490",
@@ -351,6 +351,18 @@
    "rcept_no": "20261030000299"
   },
   {
+   "code": "108490",
+   "name": "로보티즈",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-30",
+   "filer": "표윤석",
+   "rcept_no": "20261030000292"
+  },
+  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -505,18 +517,6 @@
    "date": "2026-10-29",
    "filer": "KB금융",
    "rcept_no": "20261029800570"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "풍문또는보도에대한해명(미확정)",
-   "category": "조회공시·해명",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-29",
-   "filer": "대우건설",
-   "rcept_no": "20261029800449"
   },
   {
    "code": "105560",
@@ -951,6 +951,18 @@
    "rcept_no": "20261029000023"
   },
   {
+   "code": "108490",
+   "name": "로보티즈",
+   "side": "long",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "로보티즈",
+   "rcept_no": "20261028900684"
+  },
+  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -961,18 +973,6 @@
    "date": "2026-10-28",
    "filer": "하나금융지주",
    "rcept_no": "20261028800630"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "타인에대한채무보증결정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-28",
-   "filer": "대우건설",
-   "rcept_no": "20261028800616"
   },
   {
    "code": "375500",
@@ -1393,18 +1393,6 @@
    "date": "2026-10-27",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20261027800213"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
-   "category": "실적",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-27",
-   "filer": "대우건설",
-   "rcept_no": "20261027800048"
   },
   {
    "code": "035420",
@@ -2271,18 +2259,6 @@
    "rcept_no": "20261021800137"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "결산실적공시예고(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-21",
-   "filer": "대우건설",
-   "rcept_no": "20261021800110"
-  },
-  {
    "code": "489790",
    "name": "한화비전",
    "side": "long",
@@ -2473,6 +2449,18 @@
    "date": "2026-10-20",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20261020800720"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-20",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20261020800513"
   },
   {
    "code": "259960",
@@ -2799,18 +2787,6 @@
    "rcept_no": "20261016800441"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-16",
-   "filer": "대우건설",
-   "rcept_no": "20261016800313"
-  },
-  {
    "code": "005935",
    "name": "삼성전자우",
    "side": "long",
@@ -2977,6 +2953,18 @@
    "date": "2026-10-16",
    "filer": "키움증권",
    "rcept_no": "20261016000124"
+  },
+  {
+   "code": "003160",
+   "name": "디아이",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-16",
+   "filer": "J.P.MORGANSECURITIESPLC",
+   "rcept_no": "20261016000123"
   },
   {
    "code": "039490",
@@ -3411,16 +3399,16 @@
    "rcept_no": "20261013800178"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
+   "code": "003160",
+   "name": "디아이",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
    "correction": false,
    "date": "2026-10-13",
-   "filer": "대우건설",
-   "rcept_no": "20261013800134"
+   "filer": "디아이",
+   "rcept_no": "20261013800146"
   },
   {
    "code": "005935",
@@ -4011,18 +3999,6 @@
    "rcept_no": "20261008000472"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "특수관계인과의내부거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-08",
-   "filer": "대우건설",
-   "rcept_no": "20261008000296"
-  },
-  {
    "code": "000500",
    "name": "가온전선",
    "side": "long",
@@ -4167,18 +4143,6 @@
    "rcept_no": "20261007000292"
   },
   {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-07",
-   "filer": "곽동신",
-   "rcept_no": "20261007000050"
-  },
-  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "short",
@@ -4215,16 +4179,16 @@
    "rcept_no": "20261006800320"
   },
   {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결(자율공시)",
-   "category": "계약·수주",
-   "important": true,
+   "code": "108490",
+   "name": "로보티즈",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
    "correction": false,
    "date": "2026-10-06",
-   "filer": "한미반도체",
-   "rcept_no": "20261006800023"
+   "filer": "표윤석",
+   "rcept_no": "20261006000459"
   },
   {
    "code": "105560",
@@ -4419,30 +4383,6 @@
    "rcept_no": "20261002800830"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "대표이사(대표집행임원)변경(안내공시)",
-   "category": "최대주주·경영권",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "대우건설",
-   "rcept_no": "20261002800694"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "임시주주총회결과",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "대우건설",
-   "rcept_no": "20261002800643"
-  },
-  {
    "code": "051600",
    "name": "한전KPS",
    "side": "short",
@@ -4477,6 +4417,18 @@
    "date": "2026-10-02",
    "filer": "KB금융",
    "rcept_no": "20261002800537"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "[기재정정]타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-10-02",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20261002800003"
   },
   {
    "code": "375500",
@@ -4791,6 +4743,18 @@
    "rcept_no": "20261001800144"
   },
   {
+   "code": "003160",
+   "name": "디아이",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결(자율공시)",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-10-01",
+   "filer": "디아이",
+   "rcept_no": "20261001800054"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -4923,18 +4887,6 @@
    "rcept_no": "20260930800489"
   },
   {
-   "code": "354320",
-   "name": "알멕",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "다이엑스",
-   "rcept_no": "20260930000558"
-  },
-  {
    "code": "096770",
    "name": "SK이노베이션",
    "side": "long",
@@ -5007,18 +4959,6 @@
    "rcept_no": "20260929800152"
   },
   {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결(자율공시)",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-29",
-   "filer": "한미반도체",
-   "rcept_no": "20260929800083"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -5041,18 +4981,6 @@
    "date": "2026-09-28",
    "filer": "ISC",
    "rcept_no": "20260928900382"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "투자판단관련주요경영사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-28",
-   "filer": "대우건설",
-   "rcept_no": "20260928800723"
   },
   {
    "code": "042660",
@@ -5319,18 +5247,6 @@
    "rcept_no": "20260921800302"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-21",
-   "filer": "대우건설",
-   "rcept_no": "20260921800259"
-  },
-  {
    "code": "192650",
    "name": "드림텍",
    "side": "long",
@@ -5403,42 +5319,6 @@
    "rcept_no": "20260918800693"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "대우건설",
-   "rcept_no": "20260918800075"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한미반도체",
-   "rcept_no": "20260918800064"
-  },
-  {
-   "code": "354320",
-   "name": "알멕",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "다이엑스",
-   "rcept_no": "20260918000333"
-  },
-  {
    "code": "005935",
    "name": "삼성전자우",
    "side": "long",
@@ -5497,18 +5377,6 @@
    "date": "2026-09-17",
    "filer": "하나금융지주",
    "rcept_no": "20260917800269"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-17",
-   "filer": "대우건설",
-   "rcept_no": "20260917800057"
   },
   {
    "code": "035420",
@@ -5643,28 +5511,64 @@
    "rcept_no": "20260915800452"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "타인에대한채무보증결정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-14",
-   "filer": "대우건설",
-   "rcept_no": "20260914800540"
-  },
-  {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
    "title": "기업설명회(IR)개최(안내공시)",
    "category": "기타",
    "important": false,
    "correction": false,
    "date": "2026-09-14",
-   "filer": "한미반도체",
-   "rcept_no": "20260914800059"
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20260914800522"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "금전대여결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-14",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20260914800466"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-14",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20260914800425"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "유상증자결정(종속회사의주요경영사항)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-14",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20260914800417"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "타법인주식및출자증권취득결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-14",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20260914800415"
   },
   {
    "code": "105560",
@@ -5907,18 +5811,6 @@
    "rcept_no": "20260911000014"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "주주총회소집결의",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "대우건설",
-   "rcept_no": "20260910800555"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -5929,18 +5821,6 @@
    "date": "2026-09-10",
    "filer": "한화오션",
    "rcept_no": "20260910800549"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "주식소각결정",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "대우건설",
-   "rcept_no": "20260910800468"
   },
   {
    "code": "207940",
@@ -6001,30 +5881,6 @@
    "date": "2026-09-10",
    "filer": "한화솔루션",
    "rcept_no": "20260910800347"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "의결권대리행사권유참고서류",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "대우건설",
-   "rcept_no": "20260910000571"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "주주총회소집공고",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "대우건설",
-   "rcept_no": "20260910000563"
   },
   {
    "code": "086790",
@@ -6099,18 +5955,6 @@
    "rcept_no": "20260909800519"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-09",
-   "filer": "대우건설",
-   "rcept_no": "20260909800253"
-  },
-  {
    "code": "489790",
    "name": "한화비전",
    "side": "long",
@@ -6121,18 +5965,6 @@
    "date": "2026-09-09",
    "filer": "한화비전",
    "rcept_no": "20260909800205"
-  },
-  {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "대우건설",
-   "rcept_no": "20260909800091"
   },
   {
    "code": "042660",
@@ -6219,18 +6051,6 @@
    "rcept_no": "20260909000113"
   },
   {
-   "code": "042700",
-   "name": "한미반도체",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등거래계획보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "곽동신",
-   "rcept_no": "20260909000058"
-  },
-  {
    "code": "028300",
    "name": "HLB",
    "side": "short",
@@ -6279,18 +6099,6 @@
    "rcept_no": "20260908800531"
   },
   {
-   "code": "047040",
-   "name": "대우건설",
-   "side": "short",
-   "title": "타인에대한채무보증결정",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-08",
-   "filer": "대우건설",
-   "rcept_no": "20260908800452"
-  },
-  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "short",
@@ -6313,6 +6121,42 @@
    "date": "2026-09-08",
    "filer": "한화솔루션",
    "rcept_no": "20260908800375"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20260908800147"
+  },
+  {
+   "code": "108490",
+   "name": "로보티즈",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "김병수",
+   "rcept_no": "20260908000413"
+  },
+  {
+   "code": "108490",
+   "name": "로보티즈",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-08",
+   "filer": "김병수",
+   "rcept_no": "20260908000406"
   },
   {
    "code": "267260",
@@ -6399,6 +6243,42 @@
    "rcept_no": "20260907800087"
   },
   {
+   "code": "003160",
+   "name": "디아이",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-07",
+   "filer": "박원호",
+   "rcept_no": "20260907000243"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-07",
+   "filer": "POSCO홀딩스",
+   "rcept_no": "20260907000196"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-07",
+   "filer": "POSCO홀딩스",
+   "rcept_no": "20260907000183"
+  },
+  {
    "code": "028300",
    "name": "HLB",
    "side": "short",
@@ -6459,18 +6339,6 @@
    "rcept_no": "20260904100016"
   },
   {
-   "code": "087010",
-   "name": "펩트론",
-   "side": "short",
-   "title": "[기재정정]신규시설투자등",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-09-03",
-   "filer": "펩트론",
-   "rcept_no": "20260903900076"
-  },
-  {
    "code": "375500",
    "name": "DL이앤씨",
    "side": "short",
@@ -6493,6 +6361,18 @@
    "date": "2026-09-03",
    "filer": "한전KPS",
    "rcept_no": "20260903800388"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-03",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20260903800385"
   },
   {
    "code": "207940",
