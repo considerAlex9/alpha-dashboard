@@ -1,5 +1,20 @@
 [
  {
+  "id": 2723081,
+  "order_id": 37734,
+  "company_id": 187,
+  "company_name": "D.I Corporation",
+  "company_symbol": "003160",
+  "side": "buy",
+  "quantity": 51196,
+  "price": 40838.2233,
+  "commission": 2090753.6799,
+  "fx_rate": 1.0,
+  "value_krw": 2090753679.9114,
+  "realized_pnl": null,
+  "created_at": "2026-11-02T00:48:07+00:00"
+ },
+ {
   "id": 2722334,
   "order_id": 37731,
   "company_id": 985,
