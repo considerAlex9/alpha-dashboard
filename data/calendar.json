@@ -1,51 +1,7 @@
 {
- "captured_at": "2026-11-02T19:06:33.025444+09:00",
+ "captured_at": "2026-11-03T08:03:18.541980+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "USD|Flash Manufacturing PMI|2026-10-23",
-   "time": "2026-10-23T22:45:00+09:00",
-   "country": "미국",
-   "title": "제조업 PMI 속보치",
-   "title_en": "Flash Manufacturing PMI",
-   "impact": "보통",
-   "forecast": "55.4",
-   "previous": "57.0",
-   "actual": ""
-  },
-  {
-   "key": "USD|Flash Services PMI|2026-10-23",
-   "time": "2026-10-23T22:45:00+09:00",
-   "country": "미국",
-   "title": "서비스업 PMI 속보치",
-   "title_en": "Flash Services PMI",
-   "impact": "보통",
-   "forecast": "57.9",
-   "previous": "58.7",
-   "actual": ""
-  },
-  {
-   "key": "USD|Revised UoM Consumer Sentiment|2026-10-23",
-   "time": "2026-10-23T23:00:00+09:00",
-   "country": "미국",
-   "title": "미시간대 소비자심리 (확정)",
-   "title_en": "Revised UoM Consumer Sentiment",
-   "impact": "보통",
-   "forecast": "46.3",
-   "previous": "46.3",
-   "actual": ""
-  },
-  {
-   "key": "USD|Revised UoM Inflation Expectations|2026-10-23",
-   "time": "2026-10-23T23:00:00+09:00",
-   "country": "미국",
-   "title": "수정 UoM Inflation Expectations",
-   "title_en": "Revised UoM Inflation Expectations",
-   "impact": "보통",
-   "forecast": "",
-   "previous": "4.7%",
-   "actual": ""
-  },
   {
    "key": "EUR|Daylight Saving Time Shift|2026-10-25",
    "time": "2026-10-25T10:00:00+09:00",
@@ -295,7 +251,7 @@
    "title": "JOLTS 구인 건수",
    "title_en": "JOLTS Job Openings",
    "impact": "보통",
-   "forecast": "7.11M",
+   "forecast": "7.15M",
    "previous": "7.08M",
    "actual": ""
   },
@@ -317,7 +273,7 @@
    "title": "ISM 서비스업 지수",
    "title_en": "ISM Services PMI",
    "impact": "보통",
-   "forecast": "54.9",
+   "forecast": "54.8",
    "previous": "54.9",
    "actual": ""
   },
@@ -405,7 +361,7 @@
    "title": "비농업 고용",
    "title_en": "Non-Farm Employment Change",
    "impact": "높음",
-   "forecast": "63K",
+   "forecast": "65K",
    "previous": "29K",
    "actual": ""
   },
@@ -427,7 +383,7 @@
    "title": "미시간대 소비자심리 (예비)",
    "title_en": "Prelim UoM Consumer Sentiment",
    "impact": "보통",
-   "forecast": "47.8",
+   "forecast": "48.1",
    "previous": "46.3",
    "actual": ""
   },

@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-02T19:05:48.477576+09:00",
+ "captured_at": "2026-11-03T08:02:43.489318+09:00",
  "days": 60,
  "items": [
   {
@@ -6421,90 +6421,6 @@
    "date": "2026-09-04",
    "filer": "KB금융",
    "rcept_no": "20260904800176"
-  },
-  {
-   "code": "375500",
-   "name": "DL이앤씨",
-   "side": "short",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-03",
-   "filer": "DL이앤씨",
-   "rcept_no": "20260903800597"
-  },
-  {
-   "code": "051600",
-   "name": "한전KPS",
-   "side": "short",
-   "title": "지속가능경영보고서등관련사항(자율공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-03",
-   "filer": "한전KPS",
-   "rcept_no": "20260903800388"
-  },
-  {
-   "code": "047050",
-   "name": "포스코인터내셔널",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-03",
-   "filer": "포스코인터내셔널",
-   "rcept_no": "20260903800385"
-  },
-  {
-   "code": "207940",
-   "name": "삼성바이오로직스",
-   "side": "long",
-   "title": "[기재정정]기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-09-03",
-   "filer": "삼성바이오로직스",
-   "rcept_no": "20260903800071"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-03",
-   "filer": "한화오션",
-   "rcept_no": "20260903800002"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "소송등의제기ㆍ신청(일정금액이상의청구)",
-   "category": "소송·제재",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-03",
-   "filer": "한화오션",
-   "rcept_no": "20260903800001"
-  },
-  {
-   "code": "375500",
-   "name": "DL이앤씨",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-03",
-   "filer": "DL",
-   "rcept_no": "20260903000348"
   },
   {
    "code": "207940",
