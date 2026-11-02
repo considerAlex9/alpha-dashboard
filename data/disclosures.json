@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-02T11:13:27.773471+09:00",
+ "captured_at": "2026-11-02T12:13:29.075012+09:00",
  "days": 60,
  "items": [
   {
@@ -109,42 +109,6 @@
    "date": "2026-10-30",
    "filer": "크래프톤",
    "rcept_no": "20261030800865"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "[기재정정]금전대여결정(자회사의 주요경영사항)",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-10-30",
-   "filer": "SK이노베이션",
-   "rcept_no": "20261030800841"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "[기재정정]금전대여결정(자회사의 주요경영사항)",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-10-30",
-   "filer": "SK이노베이션",
-   "rcept_no": "20261030800838"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "[기재정정]채무인수결정(자회사의 주요경영사항)",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-10-30",
-   "filer": "SK이노베이션",
-   "rcept_no": "20261030800831"
   },
   {
    "code": "353200",
@@ -699,18 +663,6 @@
    "rcept_no": "20261029800140"
   },
   {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
-   "category": "실적",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-29",
-   "filer": "SK이노베이션",
-   "rcept_no": "20261029800138"
-  },
-  {
    "code": "005935",
    "name": "삼성전자우",
    "side": "long",
@@ -1093,30 +1045,6 @@
    "date": "2026-10-28",
    "filer": "키움증권",
    "rcept_no": "20261028000380"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "[기재정정]증권신고서(합병)",
-   "category": "합병·분할",
-   "important": true,
-   "correction": true,
-   "date": "2026-10-28",
-   "filer": "SK이노베이션",
-   "rcept_no": "20261028000313"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "[기재정정]주요사항보고서(회사합병결정)",
-   "category": "합병·분할",
-   "important": true,
-   "correction": true,
-   "date": "2026-10-28",
-   "filer": "SK이노베이션",
-   "rcept_no": "20261028000291"
   },
   {
    "code": "039490",
@@ -3135,18 +3063,6 @@
    "rcept_no": "20261015800458"
   },
   {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-15",
-   "filer": "SK이노베이션",
-   "rcept_no": "20261015800448"
-  },
-  {
    "code": "105560",
    "name": "KB금융",
    "side": "long",
@@ -3517,18 +3433,6 @@
    "date": "2026-10-12",
    "filer": "HLB",
    "rcept_no": "20261012900006"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "[기재정정]단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-10-12",
-   "filer": "SK이노베이션",
-   "rcept_no": "20261012800752"
   },
   {
    "code": "005935",
@@ -4635,18 +4539,6 @@
    "rcept_no": "20261002000417"
   },
   {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "국민연금공단",
-   "rcept_no": "20261002000399"
-  },
-  {
    "code": "064400",
    "name": "LG씨엔에스",
    "side": "long",
@@ -4971,42 +4863,6 @@
    "rcept_no": "20260930800489"
   },
   {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "금전대여결정(자회사의 주요경영사항)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-29",
-   "filer": "SK이노베이션",
-   "rcept_no": "20260929800640"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "금전대여결정(자회사의 주요경영사항)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-29",
-   "filer": "SK이노베이션",
-   "rcept_no": "20260929800635"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "채무인수결정(자회사의 주요경영사항)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-29",
-   "filer": "SK이노베이션",
-   "rcept_no": "20260929800625"
-  },
-  {
    "code": "010060",
    "name": "OCI홀딩스",
    "side": "long",
@@ -5077,18 +4933,6 @@
    "date": "2026-09-28",
    "filer": "한화오션",
    "rcept_no": "20260928800496"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "단일판매ㆍ공급계약체결(자회사의 주요경영사항)",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-28",
-   "filer": "SK이노베이션",
-   "rcept_no": "20260928800380"
   },
   {
    "code": "105560",
@@ -6087,18 +5931,6 @@
    "rcept_no": "20260910000425"
   },
   {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "SK이노베이션",
-   "rcept_no": "20260910000298"
-  },
-  {
    "code": "009830",
    "name": "한화솔루션",
    "side": "short",
@@ -6109,30 +5941,6 @@
    "date": "2026-09-09",
    "filer": "한화솔루션",
    "rcept_no": "20260909800610"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "SK이노베이션",
-   "rcept_no": "20260909800523"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "[기재정정]기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-09-09",
-   "filer": "SK이노베이션",
-   "rcept_no": "20260909800519"
   },
   {
    "code": "489790",
@@ -6505,18 +6313,6 @@
    "date": "2026-09-04",
    "filer": "KB금융",
    "rcept_no": "20260904800176"
-  },
-  {
-   "code": "096770",
-   "name": "SK이노베이션",
-   "side": "long",
-   "title": "정정신고서제출요구( 2026.08.26. 제출 증권신고서(합병) )",
-   "category": "합병·분할",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "금융감독원",
-   "rcept_no": "20260904100016"
   },
   {
    "code": "375500",
