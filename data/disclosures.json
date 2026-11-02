@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-02T10:16:57.946973+09:00",
+ "captured_at": "2026-11-02T11:13:27.773471+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "347850",
+   "name": "디앤디파마텍",
+   "side": "long",
+   "title": "투자판단관련주요경영사항 (미국 자회사 보유 파이프라인 해당 권리의 모회사 이전 계약 체결)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "디앤디파마텍",
+   "rcept_no": "20261102900320"
+  },
   {
    "code": "003160",
    "name": "디아이",
@@ -37,6 +49,18 @@
    "date": "2026-11-02",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261102800004"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "키움증권",
+   "rcept_no": "20261102000043"
   },
   {
    "code": "042660",
@@ -1143,6 +1167,18 @@
    "rcept_no": "20261028000204"
   },
   {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-28",
+   "filer": "국민연금공단",
+   "rcept_no": "20261028000179"
+  },
+  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -1429,6 +1465,42 @@
    "date": "2026-10-26",
    "filer": "HD현대일렉트릭",
    "rcept_no": "20261026800468"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-26",
+   "filer": "두산",
+   "rcept_no": "20261026800444"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-26",
+   "filer": "두산",
+   "rcept_no": "20261026800394"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "결산실적공시예고(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-26",
+   "filer": "두산",
+   "rcept_no": "20261026800380"
   },
   {
    "code": "105560",
@@ -3987,6 +4059,18 @@
    "rcept_no": "20261008000545"
   },
   {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-08",
+   "filer": "박정원",
+   "rcept_no": "20261008000518"
+  },
+  {
    "code": "437730",
    "name": "삼현",
    "side": "short",
@@ -4141,6 +4225,18 @@
    "date": "2026-10-07",
    "filer": "삼성자산운용",
    "rcept_no": "20261007000292"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-07",
+   "filer": "국민연금공단",
+   "rcept_no": "20261007000059"
   },
   {
    "code": "009830",
@@ -4671,18 +4767,6 @@
    "rcept_no": "20261002000036"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "키움증권",
-   "rcept_no": "20261002000035"
-  },
-  {
    "code": "064350",
    "name": "현대로템",
    "side": "short",
@@ -5115,6 +5199,18 @@
    "rcept_no": "20260923000545"
   },
   {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-23",
+   "filer": "김용운",
+   "rcept_no": "20260923000504"
+  },
+  {
    "code": "259960",
    "name": "크래프톤",
    "side": "short",
@@ -5125,6 +5221,18 @@
    "date": "2026-09-23",
    "filer": "장병규",
    "rcept_no": "20260923000499"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-23",
+   "filer": "이준호",
+   "rcept_no": "20260923000490"
   },
   {
    "code": "064350",
@@ -5319,6 +5427,18 @@
    "rcept_no": "20260918800693"
   },
   {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-18",
+   "filer": "박정원",
+   "rcept_no": "20260918000335"
+  },
+  {
    "code": "005935",
    "name": "삼성전자우",
    "side": "long",
@@ -5379,6 +5499,54 @@
    "rcept_no": "20260917800269"
   },
   {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "투자판단관련주요경영사항 (채무보증 제공의 건)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-17",
+   "filer": "두산",
+   "rcept_no": "20260917800260"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "투자판단관련주요경영사항 (증설 투자의 건)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-17",
+   "filer": "두산",
+   "rcept_no": "20260917800240"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "매매거래정지및정지해제(중요내용공시)",
+   "category": "거래정지·관리",
+   "important": true,
+   "correction": false,
+   "date": "2026-09-17",
+   "filer": "유가증권시장본부",
+   "rcept_no": "20260917800165"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "주식소각결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-17",
+   "filer": "두산",
+   "rcept_no": "20260917800163"
+  },
+  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -5425,6 +5593,18 @@
    "date": "2026-09-17",
    "filer": "한전KPS",
    "rcept_no": "20260917000219"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "특수관계인에대한담보제공",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-17",
+   "filer": "두산",
+   "rcept_no": "20260917000118"
   },
   {
    "code": "005935",
