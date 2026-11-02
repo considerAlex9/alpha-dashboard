@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-02T16:36:34.315991+09:00",
+ "captured_at": "2026-11-02T19:05:48.477576+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,42 @@
    "date": "2026-11-02",
    "filer": "디앤디파마텍",
    "rcept_no": "20261102900320"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "NAVER",
+   "rcept_no": "20261102800774"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "삼양식품",
+   "rcept_no": "20261102800768"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "삼양식품",
+   "rcept_no": "20261102800763"
   },
   {
    "code": "207940",
@@ -61,6 +97,66 @@
    "date": "2026-11-02",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261102800004"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261102000307"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261102000293"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261102000290"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "독립이사의선임ㆍ해임또는중도퇴임에관한신고",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261102000276"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "증권신고서(채무증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-02",
+   "filer": "KB금융",
+   "rcept_no": "20261102000262"
   },
   {
    "code": "039490",
