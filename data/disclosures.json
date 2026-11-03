@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-03T16:32:35.754252+09:00",
+ "captured_at": "2026-11-03T19:02:21.695830+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-11-03",
+   "filer": "파두",
+   "rcept_no": "20261103900506"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "[기재정정]장래사업ㆍ경영계획(공정공시)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-03",
+   "filer": "NAVER",
+   "rcept_no": "20261103800603"
+  },
   {
    "code": "375500",
    "name": "DL이앤씨",
@@ -37,6 +61,30 @@
    "date": "2026-11-03",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261103800043"
+  },
+  {
+   "code": "375500",
+   "name": "DL이앤씨",
+   "side": "short",
+   "title": "신탁계약에의한취득상황보고서",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-03",
+   "filer": "DL이앤씨",
+   "rcept_no": "20261103000365"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "[기재정정]주요사항보고서(유상증자결정)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": true,
+   "date": "2026-11-03",
+   "filer": "NAVER",
+   "rcept_no": "20261103000311"
   },
   {
    "code": "259960",
