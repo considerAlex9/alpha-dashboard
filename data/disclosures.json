@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-03T13:13:59.930325+09:00",
+ "captured_at": "2026-11-03T14:15:42.287732+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-03",
+   "filer": "케이티",
+   "rcept_no": "20261103800232"
+  },
   {
    "code": "207940",
    "name": "삼성바이오로직스",
