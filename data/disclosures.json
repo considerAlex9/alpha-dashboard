@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-03T19:02:21.695830+09:00",
+ "captured_at": "2026-11-04T08:06:30.136882+09:00",
  "days": 60,
  "items": [
   {
@@ -6493,42 +6493,6 @@
    "date": "2026-09-07",
    "filer": "BlackRockFundAdvisors",
    "rcept_no": "20260907000092"
-  },
-  {
-   "code": "440110",
-   "name": "파두",
-   "side": "long",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "파두",
-   "rcept_no": "20260904900277"
-  },
-  {
-   "code": "440110",
-   "name": "파두",
-   "side": "long",
-   "title": "기업설명회(IR)개최",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "파두",
-   "rcept_no": "20260904900273"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-04",
-   "filer": "KB금융",
-   "rcept_no": "20260904800176"
   },
   {
    "code": "207940",
