@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-04T09:12:34.353952+09:00",
+ "captured_at": "2026-11-04T10:18:08.035877+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "SK텔레콤",
+   "rcept_no": "20261104800085"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "SK텔레콤",
+   "rcept_no": "20261104800081"
+  },
   {
    "code": "440110",
    "name": "파두",

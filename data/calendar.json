@@ -1,29 +1,7 @@
 {
- "captured_at": "2026-11-04T09:13:08.268796+09:00",
+ "captured_at": "2026-11-04T10:18:50.677113+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "EUR|Daylight Saving Time Shift|2026-10-25",
-   "time": "2026-10-25T10:00:00+09:00",
-   "country": "유로존",
-   "title": "Daylight Saving Time Shift",
-   "title_en": "Daylight Saving Time Shift",
-   "impact": "휴일",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "GBP|Daylight Saving Time Shift|2026-10-25",
-   "time": "2026-10-25T10:00:00+09:00",
-   "country": "영국",
-   "title": "Daylight Saving Time Shift",
-   "title_en": "Daylight Saving Time Shift",
-   "impact": "휴일",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "USD|CB Consumer Confidence|2026-10-27",
    "time": "2026-10-27T23:00:00+09:00",
