@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-04T08:06:30.136882+09:00",
+ "captured_at": "2026-11-04T09:12:34.353952+09:00",
  "days": 60,
  "items": [
   {
@@ -85,18 +85,6 @@
    "date": "2026-11-03",
    "filer": "NAVER",
    "rcept_no": "20261103000311"
-  },
-  {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "주요사항보고서(자기주식취득결정)",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-11-03",
-   "filer": "크래프톤",
-   "rcept_no": "20261103000268"
   },
   {
    "code": "005935",
@@ -231,18 +219,6 @@
    "rcept_no": "20261102000293"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(약식)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-11-02",
-   "filer": "국민연금공단",
-   "rcept_no": "20261102000290"
-  },
-  {
    "code": "012450",
    "name": "한화에어로스페이스",
    "side": "short",
@@ -291,18 +267,6 @@
    "rcept_no": "20261102000043"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-11-02",
-   "filer": "최영환",
-   "rcept_no": "20261102000017"
-  },
-  {
    "code": "347850",
    "name": "디앤디파마텍",
    "side": "long",
@@ -325,18 +289,6 @@
    "date": "2026-10-30",
    "filer": "삼현",
    "rcept_no": "20261030901154"
-  },
-  {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-30",
-   "filer": "크래프톤",
-   "rcept_no": "20261030800865"
   },
   {
    "code": "353200",
@@ -373,18 +325,6 @@
    "date": "2026-10-30",
    "filer": "키움증권",
    "rcept_no": "20261030800503"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-30",
-   "filer": "한화오션",
-   "rcept_no": "20261030800228"
   },
   {
    "code": "064400",
@@ -1527,18 +1467,6 @@
    "rcept_no": "20261027800303"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
-   "category": "실적",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-27",
-   "filer": "한화오션",
-   "rcept_no": "20261027800240"
-  },
-  {
    "code": "267260",
    "name": "HD현대일렉트릭",
    "side": "short",
@@ -1861,18 +1789,6 @@
    "date": "2026-10-26",
    "filer": "John Chongbo Rim",
    "rcept_no": "20261026000214"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "자기주식취득결과보고서",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-26",
-   "filer": "한화오션",
-   "rcept_no": "20261026000196"
   },
   {
    "code": "105560",
@@ -2451,18 +2367,6 @@
    "rcept_no": "20261021800344"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-21",
-   "filer": "한화오션",
-   "rcept_no": "20261021800343"
-  },
-  {
    "code": "105560",
    "name": "KB금융",
    "side": "long",
@@ -2691,30 +2595,6 @@
    "rcept_no": "20261020800513"
   },
   {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-20",
-   "filer": "크래프톤",
-   "rcept_no": "20261020800469"
-  },
-  {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "결산실적공시예고(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-20",
-   "filer": "크래프톤",
-   "rcept_no": "20261020800466"
-  },
-  {
    "code": "035420",
    "name": "NAVER",
    "side": "short",
@@ -2833,18 +2713,6 @@
    "date": "2026-10-19",
    "filer": "현대로템",
    "rcept_no": "20261019800139"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-19",
-   "filer": "한화에어로스페이스",
-   "rcept_no": "20261019000344"
   },
   {
    "code": "005935",
@@ -3591,30 +3459,6 @@
    "rcept_no": "20261013800362"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-13",
-   "filer": "한화오션",
-   "rcept_no": "20261013800180"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "결산실적공시예고(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-13",
-   "filer": "한화오션",
-   "rcept_no": "20261013800178"
-  },
-  {
    "code": "003160",
    "name": "디아이",
    "side": "long",
@@ -3687,18 +3531,6 @@
    "rcept_no": "20261012000344"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "최준영",
-   "rcept_no": "20261012000340"
-  },
-  {
    "code": "192650",
    "name": "드림텍",
    "side": "long",
@@ -3721,18 +3553,6 @@
    "date": "2026-10-12",
    "filer": "키움증권",
    "rcept_no": "20261012000333"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "박종민",
-   "rcept_no": "20261012000324"
   },
   {
    "code": "039490",
@@ -3783,18 +3603,6 @@
    "rcept_no": "20261012000264"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "김훈민",
-   "rcept_no": "20261012000260"
-  },
-  {
    "code": "012450",
    "name": "한화에어로스페이스",
    "side": "short",
@@ -3831,42 +3639,6 @@
    "rcept_no": "20261012000247"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "조짐모",
-   "rcept_no": "20261012000242"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "노대규",
-   "rcept_no": "20261012000231"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "윤동원",
-   "rcept_no": "20261012000205"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -3879,30 +3651,6 @@
    "rcept_no": "20261012000178"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "박호정",
-   "rcept_no": "20261012000156"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "유상태",
-   "rcept_no": "20261012000139"
-  },
-  {
    "code": "039490",
    "name": "키움증권",
    "side": "short",
@@ -3913,18 +3661,6 @@
    "date": "2026-10-12",
    "filer": "키움증권",
    "rcept_no": "20261012000085"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "도규환",
-   "rcept_no": "20261012000060"
   },
   {
    "code": "489790",
@@ -3985,30 +3721,6 @@
    "date": "2026-10-08",
    "filer": "파두",
    "rcept_no": "20261008900573"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "[기재정정]타법인주식및출자증권취득결정(자율공시)(종속회사의주요경영사항)",
-   "category": "합병·분할",
-   "important": true,
-   "correction": true,
-   "date": "2026-10-08",
-   "filer": "한화오션",
-   "rcept_no": "20261008800626"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": true,
-   "date": "2026-10-08",
-   "filer": "한화오션",
-   "rcept_no": "20261008800617"
   },
   {
    "code": "010060",
@@ -4237,30 +3949,6 @@
    "date": "2026-10-08",
    "filer": "CapitalResearchandManagementCompany",
    "rcept_no": "20261008000058"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "[기재정정]타법인주식및출자증권취득결정",
-   "category": "합병·분할",
-   "important": true,
-   "correction": true,
-   "date": "2026-10-07",
-   "filer": "한화오션",
-   "rcept_no": "20261007800463"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "[기재정정]유상증자결정(종속회사의주요경영사항)",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": true,
-   "date": "2026-10-07",
-   "filer": "한화오션",
-   "rcept_no": "20261007800450"
   },
   {
    "code": "207940",
@@ -5043,18 +4731,6 @@
    "rcept_no": "20260930801077"
   },
   {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "주식소각결정",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-30",
-   "filer": "크래프톤",
-   "rcept_no": "20260930800878"
-  },
-  {
    "code": "064350",
    "name": "현대로템",
    "side": "short",
@@ -5115,18 +4791,6 @@
    "rcept_no": "20260929800152"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "특수관계인과의내부거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-29",
-   "filer": "한화오션",
-   "rcept_no": "20260929000302"
-  },
-  {
    "code": "095340",
    "name": "ISC",
    "side": "short",
@@ -5137,18 +4801,6 @@
    "date": "2026-09-28",
    "filer": "ISC",
    "rcept_no": "20260928900382"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-28",
-   "filer": "한화오션",
-   "rcept_no": "20260928800496"
   },
   {
    "code": "105560",
@@ -5163,42 +4815,6 @@
    "rcept_no": "20260928800208"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "주요사항보고서(자기주식취득결정)",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-28",
-   "filer": "한화오션",
-   "rcept_no": "20260928000252"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-28",
-   "filer": "한화오션",
-   "rcept_no": "20260928000249"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "약관에의한금융거래시계열금융회사의거래상대방의공시",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-28",
-   "filer": "한화오션",
-   "rcept_no": "20260928000243"
-  },
-  {
    "code": "080220",
    "name": "제주반도체",
    "side": "long",
@@ -5209,18 +4825,6 @@
    "date": "2026-09-23",
    "filer": "제주반도체",
    "rcept_no": "20260923900683"
-  },
-  {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "크래프톤",
-   "rcept_no": "20260923800549"
   },
   {
    "code": "064350",
@@ -5269,18 +4873,6 @@
    "date": "2026-09-23",
    "filer": "김용운",
    "rcept_no": "20260923000504"
-  },
-  {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-23",
-   "filer": "장병규",
-   "rcept_no": "20260923000499"
   },
   {
    "code": "000150",
@@ -5401,18 +4993,6 @@
    "date": "2026-09-21",
    "filer": "현대로템",
    "rcept_no": "20260921800391"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-09-21",
-   "filer": "한화오션",
-   "rcept_no": "20260921800302"
   },
   {
    "code": "192650",
@@ -5895,18 +5475,6 @@
    "rcept_no": "20260911900389"
   },
   {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-11",
-   "filer": "크래프톤",
-   "rcept_no": "20260911800699"
-  },
-  {
    "code": "064400",
    "name": "LG씨엔에스",
    "side": "long",
@@ -5929,30 +5497,6 @@
    "date": "2026-09-11",
    "filer": "한화에어로스페이스",
    "rcept_no": "20260911800004"
-  },
-  {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-11",
-   "filer": "장병규",
-   "rcept_no": "20260911000576"
-  },
-  {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-11",
-   "filer": "김창한",
-   "rcept_no": "20260911000568"
   },
   {
    "code": "207940",
@@ -6049,18 +5593,6 @@
    "date": "2026-09-11",
    "filer": "한화솔루션",
    "rcept_no": "20260911000014"
-  },
-  {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-10",
-   "filer": "한화오션",
-   "rcept_no": "20260910800549"
   },
   {
    "code": "207940",
@@ -6171,18 +5703,6 @@
    "rcept_no": "20260909800205"
   },
   {
-   "code": "042660",
-   "name": "한화오션",
-   "side": "short",
-   "title": "투자판단관련주요경영사항",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "한화오션",
-   "rcept_no": "20260909800003"
-  },
-  {
    "code": "005935",
    "name": "삼성전자우",
    "side": "long",
@@ -6217,18 +5737,6 @@
    "date": "2026-09-09",
    "filer": "케이티",
    "rcept_no": "20260909000391"
-  },
-  {
-   "code": "259960",
-   "name": "크래프톤",
-   "side": "short",
-   "title": "자기주식취득결과보고서",
-   "category": "자사주·배당",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-09",
-   "filer": "크래프톤",
-   "rcept_no": "20260909000359"
   },
   {
    "code": "030200",

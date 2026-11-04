@@ -1,5 +1,35 @@
 [
  {
+  "id": 2787281,
+  "order_id": 38580,
+  "company_id": 2079,
+  "company_name": "Krafton Inc.",
+  "company_symbol": "259960",
+  "side": "cover",
+  "quantity": 9445,
+  "price": 205425.0156,
+  "commission": 1940239.2719,
+  "fx_rate": 1.0,
+  "value_krw": 1940239271.8716,
+  "realized_pnl": -56487380.4546,
+  "created_at": "2026-11-04T00:06:27+00:00"
+ },
+ {
+  "id": 2787256,
+  "order_id": 38577,
+  "company_id": 940,
+  "company_name": "Hanwha Ocean Co. Ltd.",
+  "company_symbol": "042660",
+  "side": "cover",
+  "quantity": 21280,
+  "price": 54737.7238,
+  "commission": 1164818.7621,
+  "fx_rate": 1.0,
+  "value_krw": 1164818762.1213,
+  "realized_pnl": 529132945.9427,
+  "created_at": "2026-11-04T00:05:05+00:00"
+ },
+ {
   "id": 2733460,
   "order_id": 37817,
   "company_id": 1494,
