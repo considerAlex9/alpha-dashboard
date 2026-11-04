@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-04T16:35:49.397014+09:00",
+ "captured_at": "2026-11-04T19:02:09.692351+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "삼성전자",
+   "rcept_no": "20261104800612"
+  },
   {
    "code": "051600",
    "name": "한전KPS",
@@ -85,6 +97,42 @@
    "date": "2026-11-04",
    "filer": "SK텔레콤",
    "rcept_no": "20261104800081"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "제임스최",
+   "rcept_no": "20261104000338"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "김희정",
+   "rcept_no": "20261104000332"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "자기주식처분결과보고서",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "삼성전자",
+   "rcept_no": "20261104000325"
   },
   {
    "code": "353200",
