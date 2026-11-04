@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-04T14:20:14.356324+09:00",
+ "captured_at": "2026-11-04T15:17:26.384281+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,102 @@
    "date": "2026-11-04",
    "filer": "SK텔레콤",
    "rcept_no": "20261104800081"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "가온전선",
+   "rcept_no": "20261104000191"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "가온전선",
+   "rcept_no": "20261104000189"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "가온전선",
+   "rcept_no": "20261104000187"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "가온전선",
+   "rcept_no": "20261104000186"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "가온전선",
+   "rcept_no": "20261104000185"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "가온전선",
+   "rcept_no": "20261104000182"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "가온전선",
+   "rcept_no": "20261104000181"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-04",
+   "filer": "키움증권",
+   "rcept_no": "20261104000174"
   },
   {
    "code": "039490",
@@ -4705,18 +4801,6 @@
    "date": "2026-10-02",
    "filer": "키움증권",
    "rcept_no": "20261002000223"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-02",
-   "filer": "키움증권",
-   "rcept_no": "20261002000217"
   },
   {
    "code": "095610",
