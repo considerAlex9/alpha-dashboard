@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-05T15:12:57.576180+09:00",
+ "captured_at": "2026-11-05T16:02:17.117310+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "인바디",
+   "rcept_no": "20261105900410"
+  },
+  {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "주요사항보고서(자기주식처분결정)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "인바디",
+   "rcept_no": "20261105000245"
+  },
   {
    "code": "080220",
    "name": "제주반도체",
@@ -145,6 +169,18 @@
    "date": "2026-11-05",
    "filer": "키움증권",
    "rcept_no": "20261105000092"
+  },
+  {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "피델리티매니지먼트앤리서치컴퍼니엘엘씨",
+   "rcept_no": "20261105000050"
   },
   {
    "code": "005935",
@@ -5043,6 +5079,18 @@
    "rcept_no": "20261002000192"
   },
   {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-10-02",
+   "filer": "국민연금공단",
+   "rcept_no": "20261002000146"
+  },
+  {
    "code": "064350",
    "name": "현대로템",
    "side": "short",
@@ -5221,6 +5269,18 @@
    "date": "2026-09-30",
    "filer": "OCI홀딩스",
    "rcept_no": "20260930800489"
+  },
+  {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-30",
+   "filer": "김도성",
+   "rcept_no": "20260930000360"
   },
   {
    "code": "010060",
@@ -5533,6 +5593,30 @@
    "date": "2026-09-21",
    "filer": "드림텍",
    "rcept_no": "20260921800130"
+  },
+  {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-21",
+   "filer": "차인준",
+   "rcept_no": "20260921000333"
+  },
+  {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-21",
+   "filer": "차인준",
+   "rcept_no": "20260921000302"
   },
   {
    "code": "006400",
@@ -6193,6 +6277,18 @@
    "date": "2026-09-10",
    "filer": "하나금융지주",
    "rcept_no": "20260910000425"
+  },
+  {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-09-10",
+   "filer": "피델리티매니지먼트앤리서치컴퍼니엘엘씨",
+   "rcept_no": "20260910000274"
   },
   {
    "code": "006400",
