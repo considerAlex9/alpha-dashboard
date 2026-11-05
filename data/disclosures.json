@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-05T16:13:13.723142+09:00",
+ "captured_at": "2026-11-05T16:35:46.947061+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,30 @@
    "date": "2026-11-05",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261105800618"
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "김지홍",
+   "rcept_no": "20261105000483"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "[기재정정]투자설명서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-05",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261105000423"
   },
   {
    "code": "207940",
