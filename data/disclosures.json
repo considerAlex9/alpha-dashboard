@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-05T16:35:46.947061+09:00",
+ "captured_at": "2026-11-05T19:02:21.925916+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,54 @@
    "date": "2026-11-05",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261105800618"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "박세근",
+   "rcept_no": "20261105000566"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "키움증권",
+   "rcept_no": "20261105000560"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "키움증권",
+   "rcept_no": "20261105000497"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "키움증권",
+   "rcept_no": "20261105000491"
   },
   {
    "code": "267260",
@@ -4885,42 +4933,6 @@
    "date": "2026-10-06",
    "filer": "국민연금공단",
    "rcept_no": "20261006000244"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "키움증권",
-   "rcept_no": "20261006000243"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "키움증권",
-   "rcept_no": "20261006000240"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "국민연금공단",
-   "rcept_no": "20261006000200"
   },
   {
    "code": "010060",
