@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-05T16:02:17.117310+09:00",
+ "captured_at": "2026-11-05T16:13:13.723142+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,42 @@
    "date": "2026-11-05",
    "filer": "인바디",
    "rcept_no": "20261105900410"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "유상증자신주발행가액(안내공시)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261105800618"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "[발행조건확정]증권신고서(지분증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261105000415"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "[기재정정]주요사항보고서(유상증자결정)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": true,
+   "date": "2026-11-05",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261105000355"
   },
   {
    "code": "041830",
