@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-05T12:16:24.477194+09:00",
+ "captured_at": "2026-11-05T13:17:09.205757+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-05",
+   "filer": "김선길",
+   "rcept_no": "20261105000139"
+  },
   {
    "code": "039490",
    "name": "키움증권",
