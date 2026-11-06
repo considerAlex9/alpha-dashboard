@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-06T15:17:18.282212+09:00",
+ "captured_at": "2026-11-06T16:06:03.542217+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,66 @@
    "date": "2026-11-06",
    "filer": "ISC",
    "rcept_no": "20261106900158"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "삼양식품",
+   "rcept_no": "20261106800648"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "한화오션",
+   "rcept_no": "20261106800647"
+  },
+  {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "한전KPS",
+   "rcept_no": "20261106800620"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "삼양식품",
+   "rcept_no": "20261106800605"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "주식소각결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "삼양식품",
+   "rcept_no": "20261106800567"
   },
   {
    "code": "035420",
