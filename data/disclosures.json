@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-06T09:12:28.609895+09:00",
+ "captured_at": "2026-11-06T10:17:06.941085+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "파두",
+   "rcept_no": "20261106900228"
+  },
   {
    "code": "095340",
    "name": "ISC",
@@ -25,6 +37,42 @@
    "date": "2026-11-06",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261106800008"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "키움증권",
+   "rcept_no": "20261106000034"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "키움증권",
+   "rcept_no": "20261106000033"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "LS전선",
+   "rcept_no": "20261106000032"
   },
   {
    "code": "005935",
@@ -4945,30 +4993,6 @@
    "date": "2026-10-06",
    "filer": "키움증권",
    "rcept_no": "20261006000250"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "키움증권",
-   "rcept_no": "20261006000248"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-06",
-   "filer": "키움증권",
-   "rcept_no": "20261006000246"
   },
   {
    "code": "375500",
