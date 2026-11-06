@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-06T08:02:49.549552+09:00",
+ "captured_at": "2026-11-06T09:12:28.609895+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "ISC",
+   "rcept_no": "20261106900158"
+  },
   {
    "code": "207940",
    "name": "삼성바이오로직스",
@@ -13,6 +25,18 @@
    "date": "2026-11-06",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261106800008"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-06",
+   "filer": "홍희일",
+   "rcept_no": "20261106000022"
   },
   {
    "code": "207940",
