@@ -1,139 +1,7 @@
 {
- "captured_at": "2026-11-06T19:03:30.378789+09:00",
+ "captured_at": "2026-11-09T08:07:14.770206+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "USD|CB Consumer Confidence|2026-10-27",
-   "time": "2026-10-27T23:00:00+09:00",
-   "country": "미국",
-   "title": "콘퍼런스보드 소비자신뢰",
-   "title_en": "CB Consumer Confidence",
-   "impact": "보통",
-   "forecast": "81.2",
-   "previous": "81.9",
-   "actual": ""
-  },
-  {
-   "key": "GBP|Annual Budget Release|2026-10-28",
-   "time": "2026-10-28T21:30:00+09:00",
-   "country": "영국",
-   "title": "Annual Budget Release",
-   "title_en": "Annual Budget Release",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "USD|Federal Funds Rate|2026-10-29",
-   "time": "2026-10-29T03:00:00+09:00",
-   "country": "미국",
-   "title": "미국 기준금리 결정",
-   "title_en": "Federal Funds Rate",
-   "impact": "높음",
-   "forecast": "4.00%",
-   "previous": "4.00%",
-   "actual": ""
-  },
-  {
-   "key": "USD|FOMC Statement|2026-10-29",
-   "time": "2026-10-29T03:00:00+09:00",
-   "country": "미국",
-   "title": "FOMC 성명서",
-   "title_en": "FOMC Statement",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "USD|FOMC Press Conference|2026-10-29",
-   "time": "2026-10-29T03:30:00+09:00",
-   "country": "미국",
-   "title": "FOMC 기자회견",
-   "title_en": "FOMC Press Conference",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "USD|Advance GDP q/q|2026-10-29",
-   "time": "2026-10-29T21:30:00+09:00",
-   "country": "미국",
-   "title": "GDP 속보치 (전분기 대비)",
-   "title_en": "Advance GDP q/q",
-   "impact": "높음",
-   "forecast": "3.2%",
-   "previous": "1.5%",
-   "actual": ""
-  },
-  {
-   "key": "USD|Core PCE Price Index m/m|2026-10-29",
-   "time": "2026-10-29T21:30:00+09:00",
-   "country": "미국",
-   "title": "근원 PCE 물가 (전월 대비)",
-   "title_en": "Core PCE Price Index m/m",
-   "impact": "높음",
-   "forecast": "0.3%",
-   "previous": "0.2%",
-   "actual": ""
-  },
-  {
-   "key": "USD|Advance GDP Price Index q/q|2026-10-29",
-   "time": "2026-10-29T21:30:00+09:00",
-   "country": "미국",
-   "title": "Advance GDP Price Index (전분기 대비)",
-   "title_en": "Advance GDP Price Index q/q",
-   "impact": "보통",
-   "forecast": "3.2%",
-   "previous": "6.2%",
-   "actual": ""
-  },
-  {
-   "key": "USD|Unemployment Claims|2026-10-29",
-   "time": "2026-10-29T21:30:00+09:00",
-   "country": "미국",
-   "title": "주간 신규 실업수당 청구",
-   "title_en": "Unemployment Claims",
-   "impact": "보통",
-   "forecast": "198K",
-   "previous": "194K",
-   "actual": ""
-  },
-  {
-   "key": "EUR|Main Refinancing Rate|2026-10-29",
-   "time": "2026-10-29T22:15:00+09:00",
-   "country": "유로존",
-   "title": "ECB 기준금리 결정",
-   "title_en": "Main Refinancing Rate",
-   "impact": "높음",
-   "forecast": "2.65%",
-   "previous": "2.65%",
-   "actual": ""
-  },
-  {
-   "key": "EUR|Monetary Policy Statement|2026-10-29",
-   "time": "2026-10-29T22:15:00+09:00",
-   "country": "유로존",
-   "title": "통화정책 성명",
-   "title_en": "Monetary Policy Statement",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "EUR|ECB Press Conference|2026-10-29",
-   "time": "2026-10-29T22:45:00+09:00",
-   "country": "유로존",
-   "title": "ECB 기자회견",
-   "title_en": "ECB Press Conference",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "JPY|BOJ Policy Rate|2026-10-30",
    "time": "2026-10-30T12:02:00+09:00",
@@ -385,6 +253,105 @@
    "impact": "높음",
    "forecast": "",
    "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|FOMC Member Waller Speaks|2026-11-10",
+   "time": "2026-11-10T18:00:00+09:00",
+   "country": "미국",
+   "title": "FOMC 위원 월러 발언",
+   "title_en": "FOMC Member Waller Speaks",
+   "impact": "보통",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|Core CPI m/m|2026-11-10",
+   "time": "2026-11-10T22:30:00+09:00",
+   "country": "미국",
+   "title": "근원 소비자물가 (전월 대비)",
+   "title_en": "Core CPI m/m",
+   "impact": "높음",
+   "forecast": "0.2%",
+   "previous": "0.3%",
+   "actual": ""
+  },
+  {
+   "key": "USD|CPI m/m|2026-11-10",
+   "time": "2026-11-10T22:30:00+09:00",
+   "country": "미국",
+   "title": "소비자물가 (전월 대비)",
+   "title_en": "CPI m/m",
+   "impact": "높음",
+   "forecast": "0.3%",
+   "previous": "0.6%",
+   "actual": ""
+  },
+  {
+   "key": "EUR|French Bank Holiday|2026-11-11",
+   "time": "2026-11-11T16:01:00+09:00",
+   "country": "유로존",
+   "title": "프랑스 휴장 (공휴일)",
+   "title_en": "French Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|Bank Holiday|2026-11-11",
+   "time": "2026-11-11T22:00:00+09:00",
+   "country": "미국",
+   "title": "휴장 (공휴일)",
+   "title_en": "Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "GBP|GDP m/m|2026-11-12",
+   "time": "2026-11-12T16:00:00+09:00",
+   "country": "영국",
+   "title": "GDP (전월 대비)",
+   "title_en": "GDP m/m",
+   "impact": "높음",
+   "forecast": "0.0%",
+   "previous": "0.1%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Unemployment Claims|2026-11-12",
+   "time": "2026-11-12T22:30:00+09:00",
+   "country": "미국",
+   "title": "주간 신규 실업수당 청구",
+   "title_en": "Unemployment Claims",
+   "impact": "보통",
+   "forecast": "194K",
+   "previous": "189K",
+   "actual": ""
+  },
+  {
+   "key": "USD|Core PPI m/m|2026-11-13",
+   "time": "2026-11-13T22:30:00+09:00",
+   "country": "미국",
+   "title": "근원 생산자물가 (전월 대비)",
+   "title_en": "Core PPI m/m",
+   "impact": "높음",
+   "forecast": "0.3%",
+   "previous": "0.7%",
+   "actual": ""
+  },
+  {
+   "key": "USD|PPI m/m|2026-11-13",
+   "time": "2026-11-13T22:30:00+09:00",
+   "country": "미국",
+   "title": "생산자물가 (전월 대비)",
+   "title_en": "PPI m/m",
+   "impact": "높음",
+   "forecast": "0.4%",
+   "previous": "1.3%",
    "actual": ""
   }
  ]
