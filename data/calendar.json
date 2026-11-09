@@ -1,40 +1,7 @@
 {
- "captured_at": "2026-11-09T11:13:05.593386+09:00",
+ "captured_at": "2026-11-09T12:13:43.419633+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "JPY|BOJ Policy Rate|2026-10-30",
-   "time": "2026-10-30T12:02:00+09:00",
-   "country": "일본",
-   "title": "일본은행 기준금리 결정",
-   "title_en": "BOJ Policy Rate",
-   "impact": "높음",
-   "forecast": "<1.25%",
-   "previous": "<1.25%",
-   "actual": ""
-  },
-  {
-   "key": "JPY|Monetary Policy Statement|2026-10-30",
-   "time": "2026-10-30T12:02:00+09:00",
-   "country": "일본",
-   "title": "통화정책 성명",
-   "title_en": "Monetary Policy Statement",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "JPY|BOJ Outlook Report|2026-10-30",
-   "time": "2026-10-30T12:02:00+09:00",
-   "country": "일본",
-   "title": "BOJ Outlook Report",
-   "title_en": "BOJ Outlook Report",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "JPY|BOJ Press Conference|2026-10-30",
    "time": "2026-10-30T15:30:00+09:00",
