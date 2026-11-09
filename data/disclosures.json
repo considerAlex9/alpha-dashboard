@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-09T14:18:22.913265+09:00",
+ "captured_at": "2026-11-09T15:16:15.985510+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "주식소각결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-09",
+   "filer": "파두",
+   "rcept_no": "20261109900367"
+  },
   {
    "code": "437730",
    "name": "삼현",
