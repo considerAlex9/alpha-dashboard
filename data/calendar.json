@@ -1,18 +1,7 @@
 {
- "captured_at": "2026-11-09T19:08:02.278977+09:00",
+ "captured_at": "2026-11-10T08:03:14.418905+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "USD|Employment Cost Index q/q|2026-10-30",
-   "time": "2026-10-30T21:30:00+09:00",
-   "country": "미국",
-   "title": "Employment Cost Index (전분기 대비)",
-   "title_en": "Employment Cost Index q/q",
-   "impact": "보통",
-   "forecast": "0.8%",
-   "previous": "0.9%",
-   "actual": ""
-  },
   {
    "key": "USD|Daylight Saving Time Shift|2026-11-01",
    "time": "2026-11-01T16:00:00+09:00",
