@@ -1,18 +1,7 @@
 {
- "captured_at": "2026-11-09T15:16:57.629001+09:00",
+ "captured_at": "2026-11-09T16:10:43.220078+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "JPY|BOJ Press Conference|2026-10-30",
-   "time": "2026-10-30T15:30:00+09:00",
-   "country": "일본",
-   "title": "일본은행 기자회견",
-   "title_en": "BOJ Press Conference",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "USD|Employment Cost Index q/q|2026-10-30",
    "time": "2026-10-30T21:30:00+09:00",
