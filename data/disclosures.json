@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-09T08:06:30.540206+09:00",
+ "captured_at": "2026-11-09T09:12:33.310610+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-09",
+   "filer": "채교석",
+   "rcept_no": "20261109000007"
+  },
   {
    "code": "440110",
    "name": "파두",

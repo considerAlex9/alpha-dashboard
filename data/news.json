@@ -4,18 +4,130 @@
    "id": "2026-11-09-pre",
    "name": "장전 브리핑",
    "start": "2026-11-06T19:00:00+09:00",
-   "end": "2026-11-09T08:00:00+09:00",
-   "final": false,
-   "created_at": "2026-11-09T08:07:10.085404+09:00",
-   "post_count": 30,
+   "end": "2026-11-09T09:00:00+09:00",
+   "final": true,
+   "created_at": "2026-11-09T09:13:07.300395+09:00",
+   "post_count": 34,
    "metrics": [
     {
      "label": "WTI",
      "value": "100달러",
      "chg": ""
+    },
+    {
+     "label": "미 국채 2년물",
+     "value": "4.512%",
+     "chg": "+4.9bp"
+    },
+    {
+     "label": "미 국채 10년물",
+     "value": "4.857%",
+     "chg": "+2.3bp"
+    },
+    {
+     "label": "다우",
+     "value": "51,285.73pt",
+     "chg": "-0.46%"
+    },
+    {
+     "label": "S&P500",
+     "value": "7,376.86pt",
+     "chg": "+0.31%"
+    },
+    {
+     "label": "나스닥",
+     "value": "24,579.43pt",
+     "chg": "+1.09%"
+    },
+    {
+     "label": "원/달러",
+     "value": "1,365.3원",
+     "chg": "+6.4원"
+    },
+    {
+     "label": "달러인덱스",
+     "value": "102.30pt",
+     "chg": "+0.75pt"
     }
    ],
    "cards": [
+    {
+     "title": "원/달러 환율 1,365.3원 +6.4원",
+     "bullets": [
+      "원/달러 환율은 달러 강세 흐름에 상승 마감"
+     ],
+     "numbers": [
+      {
+       "label": "원/달러",
+       "value": "1,365.3원",
+       "chg": "+6.4원"
+      },
+      {
+       "label": "달러인덱스",
+       "value": "102.30pt",
+       "chg": "+0.75pt"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29328",
+     "link_label": "텔레그램 원문",
+     "topic": "환율",
+     "sources": [],
+     "time": "2026-11-09T08:10:25+09:00",
+     "rank": 0
+    },
+    {
+     "title": "나스닥지수 24,579.43pt +1.09%",
+     "bullets": [
+      "뉴욕 증시는 반발 매수세 유입에 혼조 마감"
+     ],
+     "numbers": [
+      {
+       "label": "다우",
+       "value": "51,285.73pt",
+       "chg": "-0.46%"
+      },
+      {
+       "label": "S&P500",
+       "value": "7,376.86pt",
+       "chg": "+0.31%"
+      },
+      {
+       "label": "나스닥",
+       "value": "24,579.43pt",
+       "chg": "+1.09%"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29327",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-11-09T08:10:10+09:00",
+     "rank": 0
+    },
+    {
+     "title": "미 국채 10년물 4.857% +2.3bp",
+     "bullets": [
+      "미 국채 시장은 고용지표를 반영하며 약세 마감"
+     ],
+     "numbers": [
+      {
+       "label": "미 국채 2년물",
+       "value": "4.512%",
+       "chg": "+4.9bp"
+      },
+      {
+       "label": "미 국채 10년물",
+       "value": "4.857%",
+       "chg": "+2.3bp"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29326",
+     "link_label": "텔레그램 원문",
+     "topic": "금리·연준",
+     "sources": [],
+     "time": "2026-11-09T08:09:53+09:00",
+     "rank": 0
+    },
     {
      "title": "Kiwoom Weekly, 키움 전략 한지영",
      "bullets": [],
@@ -67,6 +179,21 @@
      ],
      "time": "2026-11-07T06:28:49+09:00",
      "rank": 1
+    },
+    {
+     "title": "[한투증권 김대준] 강제 디레버리징 국면과 대응 방안",
+     "bullets": [
+      "코스피 변동성 확대로 투자심리 위축",
+      "코스피 일드갭 측면에서 하방 경직성이 강화될 수 있는 국면",
+      "AI 투자 리스크를 고려하여 AI 이외 업종을 추가 편입할 필요"
+     ],
+     "numbers": [],
+     "link": "https://bit.ly/4enJRR0",
+     "link_label": "bit.ly",
+     "topic": "국내 증시",
+     "sources": [],
+     "time": "2026-11-09T08:49:25+09:00",
+     "rank": 2
     },
     {
      "title": "젠슨 황의 직원들에게 보낸 초안 메모, AXIOS가 입수함",
@@ -209,20 +336,6 @@
      "topic": null,
      "sources": [],
      "time": "2026-11-09T00:48:57+09:00",
-     "rank": 3
-    },
-    {
-     "title": "지상 랙 가격으로 환산한 하드웨어 규모는 약 420억~450억 달러",
-     "bullets": [
-      "“SpaceX가 2028년 말까지 우주에 약 1GW 규모의 AI 컴퓨팅 인프라를 구축할 수 있다”",
-      "SpaceX가 한 서버 제조사에 2027년분 우주용 랙 6,000개를 주문"
-     ],
-     "numbers": [],
-     "link": "https://fundaai.substack.com/p/deepspace-compute-spcx-could-reach?utm_source=share&utm_medium=android&r=6hkvpp",
-     "link_label": "fundaai.substack.com",
-     "topic": null,
-     "sources": [],
-     "time": "2026-11-08T23:03:56+09:00",
      "rank": 3
     },
     {
@@ -2930,5 +3043,5 @@
    "errors": []
   }
  ],
- "checked_at": "2026-11-09T08:07:10.085404+09:00"
+ "checked_at": "2026-11-09T09:13:07.300395+09:00"
 }
