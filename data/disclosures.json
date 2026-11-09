@@ -1,7 +1,55 @@
 {
- "captured_at": "2026-11-09T13:12:45.928186+09:00",
+ "captured_at": "2026-11-09T14:18:22.913265+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "437730",
+   "name": "삼현",
+   "side": "short",
+   "title": "[기재정정]전환청구권행사 (제1회차)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-09",
+   "filer": "삼현",
+   "rcept_no": "20261109900298"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-09",
+   "filer": "키움증권",
+   "rcept_no": "20261109000139"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "특수관계인과의수익증권거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-09",
+   "filer": "두산",
+   "rcept_no": "20261109000091"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-09",
+   "filer": "키움증권",
+   "rcept_no": "20261109000076"
+  },
   {
    "code": "005935",
    "name": "삼성전자우",
@@ -4921,30 +4969,6 @@
    "date": "2026-10-08",
    "filer": "키움증권",
    "rcept_no": "20261008000631"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-08",
-   "filer": "키움증권",
-   "rcept_no": "20261008000629"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-상장지수증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-08",
-   "filer": "키움증권",
-   "rcept_no": "20261008000610"
   },
   {
    "code": "003230",
