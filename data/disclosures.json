@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-10T14:14:31.047845+09:00",
+ "captured_at": "2026-11-10T15:12:39.253493+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-10",
+   "filer": "하나금융지주",
+   "rcept_no": "20261110800419"
+  },
   {
    "code": "030200",
    "name": "KT",
@@ -25,6 +37,18 @@
    "date": "2026-11-10",
    "filer": "케이티",
    "rcept_no": "20261110800099"
+  },
+  {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "자기주식처분결과보고서",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-10",
+   "filer": "인바디",
+   "rcept_no": "20261110000210"
   },
   {
    "code": "064350",
