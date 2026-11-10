@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-10T16:16:01.898943+09:00",
+ "captured_at": "2026-11-10T16:32:16.484176+09:00",
  "days": 60,
  "items": [
   {
@@ -37,6 +37,42 @@
    "date": "2026-11-10",
    "filer": "케이티",
    "rcept_no": "20261110800099"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "의결권대리행사권유참고서류",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-10",
+   "filer": "현대로템",
+   "rcept_no": "20261110000372"
+  },
+  {
+   "code": "476830",
+   "name": "알지노믹스",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-10",
+   "filer": "한국산업은행",
+   "rcept_no": "20261110000368"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "주주총회소집공고",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-10",
+   "filer": "현대로템",
+   "rcept_no": "20261110000360"
   },
   {
    "code": "005935",
