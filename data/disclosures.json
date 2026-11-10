@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-10T16:32:16.484176+09:00",
+ "captured_at": "2026-11-10T19:05:48.776013+09:00",
  "days": 60,
  "items": [
   {
@@ -37,6 +37,54 @@
    "date": "2026-11-10",
    "filer": "케이티",
    "rcept_no": "20261110800099"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-10",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261110000424"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-10",
+   "filer": "키움증권",
+   "rcept_no": "20261110000394"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-10",
+   "filer": "키움증권",
+   "rcept_no": "20261110000389"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-상장지수증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-10",
+   "filer": "키움증권",
+   "rcept_no": "20261110000382"
   },
   {
    "code": "064350",
@@ -4911,18 +4959,6 @@
    "rcept_no": "20261012000205"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "키움증권",
-   "rcept_no": "20261012000178"
-  },
-  {
    "code": "042660",
    "name": "한화오션",
    "side": "short",
@@ -4945,18 +4981,6 @@
    "date": "2026-10-12",
    "filer": "유상태",
    "rcept_no": "20261012000139"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-12",
-   "filer": "키움증권",
-   "rcept_no": "20261012000085"
   },
   {
    "code": "042660",
@@ -5185,18 +5209,6 @@
    "date": "2026-10-08",
    "filer": "삼성물산",
    "rcept_no": "20261008000706"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-08",
-   "filer": "키움증권",
-   "rcept_no": "20261008000631"
   },
   {
    "code": "003230",
