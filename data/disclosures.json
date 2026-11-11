@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-11T13:16:26.201217+09:00",
+ "captured_at": "2026-11-11T14:17:40.993875+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-11",
+   "filer": "파두",
+   "rcept_no": "20261111900279"
+  },
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-11",
+   "filer": "파두",
+   "rcept_no": "20261111900277"
+  },
   {
    "code": "207940",
    "name": "삼성바이오로직스",
