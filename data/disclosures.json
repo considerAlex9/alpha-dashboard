@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-11T11:12:39.372318+09:00",
+ "captured_at": "2026-11-11T12:17:00.117333+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,18 @@
    "date": "2026-11-11",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261111800082"
+  },
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-11",
+   "filer": "J.P.MORGANSECURITIESPLC",
+   "rcept_no": "20261111000123"
   },
   {
    "code": "005935",
