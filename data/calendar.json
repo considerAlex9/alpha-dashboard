@@ -1,18 +1,7 @@
 {
- "captured_at": "2026-11-11T15:17:33.240861+09:00",
+ "captured_at": "2026-11-11T16:03:04.645649+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "USD|Daylight Saving Time Shift|2026-11-01",
-   "time": "2026-11-01T16:00:00+09:00",
-   "country": "미국",
-   "title": "Daylight Saving Time Shift",
-   "title_en": "Daylight Saving Time Shift",
-   "impact": "휴일",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "USD|ISM Manufacturing PMI|2026-11-03",
    "time": "2026-11-03T00:00:00+09:00",

@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-11T15:16:50.666494+09:00",
+ "captured_at": "2026-11-11T16:02:30.202798+09:00",
  "days": 60,
  "items": [
   {
@@ -27,6 +27,30 @@
    "rcept_no": "20261111900277"
   },
   {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "벌금등의부과(자회사의 주요경영사항)",
+   "category": "소송·제재",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-11",
+   "filer": "KB금융",
+   "rcept_no": "20261111800534"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "타법인주식및출자증권취득결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-11",
+   "filer": "삼양식품",
+   "rcept_no": "20261111800496"
+  },
+  {
    "code": "207940",
    "name": "삼성바이오로직스",
    "side": "long",
@@ -37,6 +61,18 @@
    "date": "2026-11-11",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261111800082"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-11",
+   "filer": "한화오션",
+   "rcept_no": "20261111000263"
   },
   {
    "code": "440110",
