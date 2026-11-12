@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-12T10:17:14.900701+09:00",
+ "captured_at": "2026-11-12T11:16:21.620359+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "347850",
+   "name": "디앤디파마텍",
+   "side": "long",
+   "title": "타법인주식및출자증권취득결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-12",
+   "filer": "디앤디파마텍",
+   "rcept_no": "20261112900320"
+  },
   {
    "code": "035420",
    "name": "NAVER",
