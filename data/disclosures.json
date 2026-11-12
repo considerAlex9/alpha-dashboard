@@ -1,7 +1,55 @@
 {
- "captured_at": "2026-11-12T08:02:40.707387+09:00",
+ "captured_at": "2026-11-12T09:16:32.851813+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-12",
+   "filer": "NAVER",
+   "rcept_no": "20261112800028"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-12",
+   "filer": "NAVER",
+   "rcept_no": "20261112800027"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-12",
+   "filer": "송기재",
+   "rcept_no": "20261112000017"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "투자설명서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-12",
+   "filer": "KB금융",
+   "rcept_no": "20261112000011"
+  },
   {
    "code": "440110",
    "name": "파두",
