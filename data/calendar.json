@@ -1,18 +1,7 @@
 {
- "captured_at": "2026-11-12T19:02:40.872632+09:00",
+ "captured_at": "2026-11-13T08:07:58.083237+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "USD|ISM Manufacturing PMI|2026-11-03",
-   "time": "2026-11-03T00:00:00+09:00",
-   "country": "미국",
-   "title": "ISM 제조업 지수",
-   "title_en": "ISM Manufacturing PMI",
-   "impact": "보통",
-   "forecast": "54.5",
-   "previous": "54.5",
-   "actual": ""
-  },
   {
    "key": "JPY|Bank Holiday|2026-11-03",
    "time": "2026-11-03T09:00:00+09:00",
