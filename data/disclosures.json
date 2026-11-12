@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-12T16:32:20.384023+09:00",
+ "captured_at": "2026-11-12T19:02:05.881559+09:00",
  "days": 60,
  "items": [
   {
@@ -39,6 +39,18 @@
    "rcept_no": "20261112900320"
   },
   {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "거래처와의거래중단",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-12",
+   "filer": "한전KPS",
+   "rcept_no": "20261112800989"
+  },
+  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -73,6 +85,18 @@
    "date": "2026-11-12",
    "filer": "NAVER",
    "rcept_no": "20261112800027"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-12",
+   "filer": "KB금융",
+   "rcept_no": "20261112000614"
   },
   {
    "code": "039490",
@@ -1477,18 +1501,6 @@
    "date": "2026-11-04",
    "filer": "SK텔레콤",
    "rcept_no": "20261104800081"
-  },
-  {
-   "code": "105560",
-   "name": "KB금융",
-   "side": "long",
-   "title": "효력발생안내( 2026.11.2. 제출 증권신고서(채무증권) )",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-11-12",
-   "filer": "금융감독원",
-   "rcept_no": "20261104100001"
   },
   {
    "code": "207940",
