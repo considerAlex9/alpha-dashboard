@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-13T16:12:23.059693+09:00",
+ "captured_at": "2026-11-13T16:36:52.493033+09:00",
  "days": 60,
  "items": [
   {
@@ -49,6 +49,42 @@
    "date": "2026-11-13",
    "filer": "DL이앤씨",
    "rcept_no": "20261113800306"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "삼성전자",
+   "rcept_no": "20261113001338"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "삼성전자",
+   "rcept_no": "20261113001302"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "삼성전자",
+   "rcept_no": "20261113001281"
   },
   {
    "code": "035420",
