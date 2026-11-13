@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-13T15:22:26.731361+09:00",
+ "captured_at": "2026-11-13T16:02:30.642524+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "하나금융지주",
+   "rcept_no": "20261113801137"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "삼성전자",
+   "rcept_no": "20261113801115"
+  },
   {
    "code": "047050",
    "name": "포스코인터내셔널",
@@ -25,6 +49,54 @@
    "date": "2026-11-13",
    "filer": "DL이앤씨",
    "rcept_no": "20261113800306"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "김소연",
+   "rcept_no": "20261113001011"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "나군호",
+   "rcept_no": "20261113000976"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "오성권",
+   "rcept_no": "20261113000928"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "임동아",
+   "rcept_no": "20261113000885"
   },
   {
    "code": "035420",
