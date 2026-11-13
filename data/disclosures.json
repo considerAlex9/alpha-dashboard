@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-13T14:13:57.532726+09:00",
+ "captured_at": "2026-11-13T15:22:26.731361+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,30 @@
    "date": "2026-11-13",
    "filer": "DL이앤씨",
    "rcept_no": "20261113800306"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "특수관계인으로부터주식의취득",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "NAVER",
+   "rcept_no": "20261113000789"
+  },
+  {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "OCI홀딩스",
+   "rcept_no": "20261113000606"
   },
   {
    "code": "041830",
