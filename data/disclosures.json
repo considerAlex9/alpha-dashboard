@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-13T16:02:30.642524+09:00",
+ "captured_at": "2026-11-13T16:12:23.059693+09:00",
  "days": 60,
  "items": [
   {
@@ -49,6 +49,42 @@
    "date": "2026-11-13",
    "filer": "DL이앤씨",
    "rcept_no": "20261113800306"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "NAVER",
+   "rcept_no": "20261113001140"
+  },
+  {
+   "code": "375500",
+   "name": "DL이앤씨",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "DL이앤씨",
+   "rcept_no": "20261113001106"
+  },
+  {
+   "code": "347850",
+   "name": "디앤디파마텍",
+   "side": "long",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "디앤디파마텍",
+   "rcept_no": "20261113001099"
   },
   {
    "code": "035420",
