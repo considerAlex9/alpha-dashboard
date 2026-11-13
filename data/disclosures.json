@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-13T12:15:42.922841+09:00",
+ "captured_at": "2026-11-13T13:13:33.896141+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "[기재정정]타인에대한채무보증결정",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-13",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20261113800617"
+  },
   {
    "code": "375500",
    "name": "DL이앤씨",
@@ -13,6 +25,18 @@
    "date": "2026-11-13",
    "filer": "DL이앤씨",
    "rcept_no": "20261113800306"
+  },
+  {
+   "code": "041830",
+   "name": "인바디",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "피델리티매니지먼트앤리서치컴퍼니엘엘씨",
+   "rcept_no": "20261113000375"
   },
   {
    "code": "080220",
