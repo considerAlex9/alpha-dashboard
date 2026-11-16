@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-16T15:17:57.071614+09:00",
+ "captured_at": "2026-11-16T16:16:01.455905+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "095610",
+   "name": "테스",
+   "side": "long",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "테스",
+   "rcept_no": "20261116901271"
+  },
+  {
+   "code": "000500",
+   "name": "가온전선",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "가온전선",
+   "rcept_no": "20261116800983"
+  },
   {
    "code": "207940",
    "name": "삼성바이오로직스",
@@ -13,6 +37,150 @@
    "date": "2026-11-16",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261116800009"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "하나금융지주",
+   "rcept_no": "20261116001351"
+  },
+  {
+   "code": "062040",
+   "name": "산일전기",
+   "side": "long",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "산일전기",
+   "rcept_no": "20261116001322"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20261116001319"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "삼양라운드스퀘어",
+   "rcept_no": "20261116001289"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "현대로템",
+   "rcept_no": "20261116001138"
+  },
+  {
+   "code": "085910",
+   "name": "네오티스",
+   "side": "long",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "네오티스",
+   "rcept_no": "20261116001120"
+  },
+  {
+   "code": "192650",
+   "name": "드림텍",
+   "side": "long",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "드림텍",
+   "rcept_no": "20261116001099"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "삼양식품",
+   "rcept_no": "20261116001082"
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "HD현대일렉트릭",
+   "rcept_no": "20261116001028"
+  },
+  {
+   "code": "051600",
+   "name": "한전KPS",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "한전KPS",
+   "rcept_no": "20261116000889"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "[기재정정]일괄신고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-16",
+   "filer": "키움증권",
+   "rcept_no": "20261116000877"
+  },
+  {
+   "code": "108490",
+   "name": "로보티즈",
+   "side": "long",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "로보티즈",
+   "rcept_no": "20261116000816"
   },
   {
    "code": "041830",
@@ -5353,18 +5521,6 @@
    "date": "2026-10-15",
    "filer": "LG씨엔에스",
    "rcept_no": "20261015800111"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-15",
-   "filer": "키움증권",
-   "rcept_no": "20261015000208"
   },
   {
    "code": "476830",
