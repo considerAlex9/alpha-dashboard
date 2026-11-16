@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-16T09:12:50.067248+09:00",
+ "captured_at": "2026-11-16T10:17:40.670614+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,54 @@
    "date": "2026-11-16",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261116800009"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "[기재정정]일괄신고서(기타파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-16",
+   "filer": "키움증권",
+   "rcept_no": "20261116000094"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "[기재정정]일괄신고서(기타파생결합증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-16",
+   "filer": "키움증권",
+   "rcept_no": "20261116000089"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "[기재정정]일괄신고서(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-16",
+   "filer": "키움증권",
+   "rcept_no": "20261116000085"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "[기재정정]일괄신고서(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-16",
+   "filer": "키움증권",
+   "rcept_no": "20261116000080"
   },
   {
    "code": "095340",
@@ -205,6 +253,18 @@
    "date": "2026-11-13",
    "filer": "삼성전자",
    "rcept_no": "20261113001281"
+  },
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-13",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20261113001240"
   },
   {
    "code": "035420",
@@ -433,6 +493,18 @@
    "date": "2026-11-12",
    "filer": "NAVER",
    "rcept_no": "20261112800027"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-12",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261112000647"
   },
   {
    "code": "105560",
@@ -5281,54 +5353,6 @@
    "date": "2026-10-15",
    "filer": "이성욱",
    "rcept_no": "20261015000166"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-15",
-   "filer": "키움증권",
-   "rcept_no": "20261015000143"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-15",
-   "filer": "키움증권",
-   "rcept_no": "20261015000124"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-15",
-   "filer": "키움증권",
-   "rcept_no": "20261015000117"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-15",
-   "filer": "키움증권",
-   "rcept_no": "20261015000112"
   },
   {
    "code": "080220",
