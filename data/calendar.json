@@ -1,73 +1,7 @@
 {
- "captured_at": "2026-11-16T19:07:02.982282+09:00",
+ "captured_at": "2026-11-17T08:03:44.975128+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "USD|Average Hourly Earnings m/m|2026-11-06",
-   "time": "2026-11-06T22:30:00+09:00",
-   "country": "미국",
-   "title": "시간당 임금 (전월 대비)",
-   "title_en": "Average Hourly Earnings m/m",
-   "impact": "높음",
-   "forecast": "0.3%",
-   "previous": "0.1%",
-   "actual": ""
-  },
-  {
-   "key": "USD|Non-Farm Employment Change|2026-11-06",
-   "time": "2026-11-06T22:30:00+09:00",
-   "country": "미국",
-   "title": "비농업 고용",
-   "title_en": "Non-Farm Employment Change",
-   "impact": "높음",
-   "forecast": "65K",
-   "previous": "29K",
-   "actual": ""
-  },
-  {
-   "key": "USD|Unemployment Rate|2026-11-06",
-   "time": "2026-11-06T22:30:00+09:00",
-   "country": "미국",
-   "title": "실업률",
-   "title_en": "Unemployment Rate",
-   "impact": "높음",
-   "forecast": "4.2%",
-   "previous": "4.2%",
-   "actual": ""
-  },
-  {
-   "key": "USD|Prelim UoM Consumer Sentiment|2026-11-07",
-   "time": "2026-11-07T00:00:00+09:00",
-   "country": "미국",
-   "title": "미시간대 소비자심리 (예비)",
-   "title_en": "Prelim UoM Consumer Sentiment",
-   "impact": "보통",
-   "forecast": "48.1",
-   "previous": "46.3",
-   "actual": ""
-  },
-  {
-   "key": "USD|Prelim UoM Inflation Expectations|2026-11-07",
-   "time": "2026-11-07T00:00:00+09:00",
-   "country": "미국",
-   "title": "미시간대 기대인플레이션 (예비)",
-   "title_en": "Prelim UoM Inflation Expectations",
-   "impact": "보통",
-   "forecast": "",
-   "previous": "4.7%",
-   "actual": ""
-  },
-  {
-   "key": "JPY|BOJ Gov Ueda Speaks|2026-11-07",
-   "time": "2026-11-07T01:00:00+09:00",
-   "country": "일본",
-   "title": "일본은행 총재 우에다 발언",
-   "title_en": "BOJ Gov Ueda Speaks",
-   "impact": "높음",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "USD|FOMC Member Waller Speaks|2026-11-10",
    "time": "2026-11-10T18:00:00+09:00",
@@ -196,7 +130,7 @@
    "title": "소매판매 (전월 대비)",
    "title_en": "Retail Sales m/m",
    "impact": "높음",
-   "forecast": "0.2%",
+   "forecast": "0.1%",
    "previous": "0.8%",
    "actual": ""
   },
