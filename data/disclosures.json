@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-16T16:16:01.455905+09:00",
+ "captured_at": "2026-11-16T16:33:07.179405+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,18 @@
    "date": "2026-11-16",
    "filer": "테스",
    "rcept_no": "20261116901271"
+  },
+  {
+   "code": "006400",
+   "name": "삼성SDI",
+   "side": "long",
+   "title": "[기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": true,
+   "date": "2026-11-16",
+   "filer": "삼성SDI",
+   "rcept_no": "20261116801515"
   },
   {
    "code": "000500",
@@ -37,6 +49,30 @@
    "date": "2026-11-16",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261116800009"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "[기재정정]일괄신고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-16",
+   "filer": "하나금융지주",
+   "rcept_no": "20261116001607"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "분기보고서 (2026.09)",
+   "category": "정기보고서",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-16",
+   "filer": "케이티",
+   "rcept_no": "20261116001593"
   },
   {
    "code": "086790",
