@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-17T16:12:19.086133+09:00",
+ "captured_at": "2026-11-17T16:32:23.668516+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-11-17",
+   "filer": "현대로템",
+   "rcept_no": "20261117800497"
+  },
   {
    "code": "207940",
    "name": "삼성바이오로직스",
