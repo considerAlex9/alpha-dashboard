@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-17T15:12:51.091298+09:00",
+ "captured_at": "2026-11-17T16:07:10.801161+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "유상증자또는주식관련사채등의발행결과(자율공시)",
+   "category": "자금조달·희석",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-17",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261117800347"
+  },
   {
    "code": "105560",
    "name": "KB금융",
@@ -25,6 +37,18 @@
    "date": "2026-11-17",
    "filer": "케이티",
    "rcept_no": "20261117800141"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-17",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261117000127"
   },
   {
    "code": "095610",
