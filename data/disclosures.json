@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-17T19:02:37.088011+09:00",
+ "captured_at": "2026-11-18T08:02:39.462010+09:00",
  "days": 60,
  "items": [
   {
@@ -7357,90 +7357,6 @@
    "date": "2026-09-21",
    "filer": "최현자",
    "rcept_no": "20260921000197"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "삼성전자",
-   "rcept_no": "20260918800754"
-  },
-  {
-   "code": "012450",
-   "name": "한화에어로스페이스",
-   "side": "short",
-   "title": "최대주주등소유주식변동신고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화에어로스페이스",
-   "rcept_no": "20260918800735"
-  },
-  {
-   "code": "012450",
-   "name": "한화에어로스페이스",
-   "side": "short",
-   "title": "대표이사(대표집행임원)변경(안내공시)",
-   "category": "최대주주·경영권",
-   "important": true,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화에어로스페이스",
-   "rcept_no": "20260918800717"
-  },
-  {
-   "code": "012450",
-   "name": "한화에어로스페이스",
-   "side": "short",
-   "title": "임시주주총회결과",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "한화에어로스페이스",
-   "rcept_no": "20260918800693"
-  },
-  {
-   "code": "000150",
-   "name": "두산",
-   "side": "long",
-   "title": "주식등의대량보유상황보고서(일반)",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "박정원",
-   "rcept_no": "20260918000335"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "조혜경",
-   "rcept_no": "20260918000212"
-  },
-  {
-   "code": "005935",
-   "name": "삼성전자우",
-   "side": "long",
-   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
-   "category": "지분 변동",
-   "important": false,
-   "correction": false,
-   "date": "2026-09-18",
-   "filer": "이혁재",
-   "rcept_no": "20260918000191"
   }
  ]
 }

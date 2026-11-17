@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-17T19:03:16.932652+09:00",
+ "captured_at": "2026-11-18T08:03:13.047967+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
   {
@@ -185,7 +185,7 @@
    "title": "필라델피아 제조업 지수",
    "title_en": "Philly Fed Manufacturing Index",
    "impact": "보통",
-   "forecast": "19.2",
+   "forecast": "20.6",
    "previous": "20.9",
    "actual": ""
   },
@@ -196,7 +196,7 @@
    "title": "주간 신규 실업수당 청구",
    "title_en": "Unemployment Claims",
    "impact": "보통",
-   "forecast": "199K",
+   "forecast": "198K",
    "previous": "200K",
    "actual": ""
   },
@@ -218,7 +218,7 @@
    "title": "미시간대 소비자심리 (확정)",
    "title_en": "Revised UoM Consumer Sentiment",
    "impact": "보통",
-   "forecast": "52.1",
+   "forecast": "51.7",
    "previous": "51.0",
    "actual": ""
   },
