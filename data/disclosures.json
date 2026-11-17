@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-17T10:17:25.335974+09:00",
+ "captured_at": "2026-11-17T11:16:52.305442+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "[기재정정]상각형조건부자본증권발행결정(자회사의 주요경영사항)",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-17",
+   "filer": "KB금융",
+   "rcept_no": "20261117800231"
+  },
   {
    "code": "030200",
    "name": "KT",
