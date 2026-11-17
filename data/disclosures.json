@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-17T09:16:48.820276+09:00",
+ "captured_at": "2026-11-17T10:17:25.335974+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "풍문또는보도에대한해명(미확정)",
+   "category": "조회공시·해명",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-17",
+   "filer": "케이티",
+   "rcept_no": "20261117800141"
+  },
   {
    "code": "095610",
    "name": "테스",
