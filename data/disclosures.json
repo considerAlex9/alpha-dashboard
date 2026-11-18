@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-18T14:20:13.923670+09:00",
+ "captured_at": "2026-11-18T15:13:48.757734+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-18",
+   "filer": "하나금융지주",
+   "rcept_no": "20261118800225"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-18",
+   "filer": "GOYAL SIDDHARTH",
+   "rcept_no": "20261118000151"
+  },
   {
    "code": "064350",
    "name": "현대로템",
