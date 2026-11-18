@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-18T16:12:25.412659+09:00",
+ "captured_at": "2026-11-18T16:37:35.049371+09:00",
  "days": 60,
  "items": [
   {
@@ -37,6 +37,30 @@
    "date": "2026-11-18",
    "filer": "하나금융지주",
    "rcept_no": "20261118800225"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-18",
+   "filer": "John Chongbo Rim",
+   "rcept_no": "20261118000249"
+  },
+  {
+   "code": "003230",
+   "name": "삼양식품",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등거래계획보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-18",
+   "filer": "전인장",
+   "rcept_no": "20261118000246"
   },
   {
    "code": "005935",
