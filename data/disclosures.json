@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-18T15:13:48.757734+09:00",
+ "captured_at": "2026-11-18T16:02:11.339281+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "437730",
+   "name": "삼현",
+   "side": "short",
+   "title": "[기재정정]단일판매ㆍ공급계약체결(자율공시)",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-11-18",
+   "filer": "삼현",
+   "rcept_no": "20261118900252"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-18",
+   "filer": "삼성바이오로직스",
+   "rcept_no": "20261118800334"
+  },
   {
    "code": "086790",
    "name": "하나금융지주",
