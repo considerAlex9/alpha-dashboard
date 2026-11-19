@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-19T16:05:54.636403+09:00",
+ "captured_at": "2026-11-19T16:15:44.411660+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,30 @@
    "date": "2026-11-19",
    "filer": "한화오션",
    "rcept_no": "20261119800082"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-19",
+   "filer": "국민연금공단",
+   "rcept_no": "20261119000279"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "[기재정정]특수관계인과의수익증권거래",
+   "category": "기타",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-19",
+   "filer": "키움증권",
+   "rcept_no": "20261119000275"
   },
   {
    "code": "085910",
@@ -5703,18 +5727,6 @@
    "rcept_no": "20261016000129"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-16",
-   "filer": "키움증권",
-   "rcept_no": "20261016000124"
-  },
-  {
    "code": "003160",
    "name": "디아이",
    "side": "long",
@@ -5725,18 +5737,6 @@
    "date": "2026-10-16",
    "filer": "J.P.MORGANSECURITIESPLC",
    "rcept_no": "20261016000123"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-16",
-   "filer": "키움증권",
-   "rcept_no": "20261016000121"
   },
   {
    "code": "028300",
