@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-19T10:12:44.083213+09:00",
+ "captured_at": "2026-11-19T11:16:17.122088+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,18 @@
    "date": "2026-11-19",
    "filer": "한화오션",
    "rcept_no": "20261119800082"
+  },
+  {
+   "code": "085910",
+   "name": "네오티스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-19",
+   "filer": "KWON SANG HOON",
+   "rcept_no": "20261119000070"
   },
   {
    "code": "437730",
