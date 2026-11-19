@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-19T16:15:44.411660+09:00",
+ "captured_at": "2026-11-19T16:36:33.860809+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "최대주주등소유주식변동신고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-19",
+   "filer": "KB금융",
+   "rcept_no": "20261119800497"
+  },
   {
    "code": "047050",
    "name": "포스코인터내셔널",
@@ -25,6 +37,18 @@
    "date": "2026-11-19",
    "filer": "한화오션",
    "rcept_no": "20261119800082"
+  },
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-19",
+   "filer": "J.P.MORGANSECURITIESPLC",
+   "rcept_no": "20261119000315"
   },
   {
    "code": "039490",
