@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-20T13:19:24.462217+09:00",
+ "captured_at": "2026-11-20T14:13:50.347870+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,54 @@
    "date": "2026-11-20",
    "filer": "로보티즈",
    "rcept_no": "20261120900120"
+  },
+  {
+   "code": "095610",
+   "name": "테스",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "주숭일",
+   "rcept_no": "20261120000344"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "키움증권",
+   "rcept_no": "20261120000309"
+  },
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "동일인등출자계열회사와의상품ㆍ용역거래",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20261120000300"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "키움증권",
+   "rcept_no": "20261120000293"
   },
   {
    "code": "039490",
@@ -5413,30 +5461,6 @@
    "date": "2026-10-21",
    "filer": "키움증권",
    "rcept_no": "20261021000120"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-21",
-   "filer": "키움증권",
-   "rcept_no": "20261021000094"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-21",
-   "filer": "키움증권",
-   "rcept_no": "20261021000065"
   },
   {
    "code": "122640",
