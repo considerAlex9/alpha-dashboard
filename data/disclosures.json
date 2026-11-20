@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-20T16:12:45.387327+09:00",
+ "captured_at": "2026-11-20T16:32:32.527477+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "080220",
+   "name": "제주반도체",
+   "side": "long",
+   "title": "타법인주식및출자증권취득결정",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "제주반도체",
+   "rcept_no": "20261120900770"
+  },
   {
    "code": "108490",
    "name": "로보티즈",
