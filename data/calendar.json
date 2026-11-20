@@ -1,18 +1,7 @@
 {
- "captured_at": "2026-11-20T16:33:04.547184+09:00",
+ "captured_at": "2026-11-20T19:03:08.122431+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "USD|FOMC Member Waller Speaks|2026-11-10",
-   "time": "2026-11-10T18:00:00+09:00",
-   "country": "미국",
-   "title": "FOMC 위원 월러 발언",
-   "title_en": "FOMC Member Waller Speaks",
-   "impact": "보통",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
   {
    "key": "USD|Core CPI m/m|2026-11-10",
    "time": "2026-11-10T22:30:00+09:00",

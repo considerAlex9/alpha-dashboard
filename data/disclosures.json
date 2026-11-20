@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-20T16:32:32.527477+09:00",
+ "captured_at": "2026-11-20T19:02:28.269963+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "[기재정정]단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": true,
+   "date": "2026-11-20",
+   "filer": "파두",
+   "rcept_no": "20261120900839"
+  },
   {
    "code": "080220",
    "name": "제주반도체",
@@ -49,6 +61,30 @@
    "date": "2026-11-20",
    "filer": "KB금융",
    "rcept_no": "20261120800667"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "삼성전자",
+   "rcept_no": "20261120000607"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "삼성물산",
+   "rcept_no": "20261120000596"
   },
   {
    "code": "012450",
