@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-20T15:12:37.609475+09:00",
+ "captured_at": "2026-11-20T16:07:18.212160+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,42 @@
    "date": "2026-11-20",
    "filer": "로보티즈",
    "rcept_no": "20261120900120"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "대표이사(대표집행임원)변경(안내공시)",
+   "category": "최대주주·경영권",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "KB금융",
+   "rcept_no": "20261120800745"
+  },
+  {
+   "code": "105560",
+   "name": "KB금융",
+   "side": "long",
+   "title": "임시주주총회결과",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "KB금융",
+   "rcept_no": "20261120800667"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "자기주식취득결과보고서",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-20",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261120000501"
   },
   {
    "code": "095610",
