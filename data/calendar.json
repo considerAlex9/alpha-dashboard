@@ -1,73 +1,7 @@
 {
- "captured_at": "2026-11-20T19:03:08.122431+09:00",
+ "captured_at": "2026-11-23T08:06:48.626820+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "USD|Core CPI m/m|2026-11-10",
-   "time": "2026-11-10T22:30:00+09:00",
-   "country": "미국",
-   "title": "근원 소비자물가 (전월 대비)",
-   "title_en": "Core CPI m/m",
-   "impact": "높음",
-   "forecast": "0.2%",
-   "previous": "0.3%",
-   "actual": ""
-  },
-  {
-   "key": "USD|CPI m/m|2026-11-10",
-   "time": "2026-11-10T22:30:00+09:00",
-   "country": "미국",
-   "title": "소비자물가 (전월 대비)",
-   "title_en": "CPI m/m",
-   "impact": "높음",
-   "forecast": "0.3%",
-   "previous": "0.6%",
-   "actual": ""
-  },
-  {
-   "key": "EUR|French Bank Holiday|2026-11-11",
-   "time": "2026-11-11T16:01:00+09:00",
-   "country": "유로존",
-   "title": "프랑스 휴장 (공휴일)",
-   "title_en": "French Bank Holiday",
-   "impact": "휴일",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "USD|Bank Holiday|2026-11-11",
-   "time": "2026-11-11T22:00:00+09:00",
-   "country": "미국",
-   "title": "휴장 (공휴일)",
-   "title_en": "Bank Holiday",
-   "impact": "휴일",
-   "forecast": "",
-   "previous": "",
-   "actual": ""
-  },
-  {
-   "key": "GBP|GDP m/m|2026-11-12",
-   "time": "2026-11-12T16:00:00+09:00",
-   "country": "영국",
-   "title": "GDP (전월 대비)",
-   "title_en": "GDP m/m",
-   "impact": "높음",
-   "forecast": "0.0%",
-   "previous": "0.1%",
-   "actual": ""
-  },
-  {
-   "key": "USD|Unemployment Claims|2026-11-12",
-   "time": "2026-11-12T22:30:00+09:00",
-   "country": "미국",
-   "title": "주간 신규 실업수당 청구",
-   "title_en": "Unemployment Claims",
-   "impact": "보통",
-   "forecast": "194K",
-   "previous": "189K",
-   "actual": ""
-  },
   {
    "key": "USD|Core PPI m/m|2026-11-13",
    "time": "2026-11-13T22:30:00+09:00",
@@ -220,6 +154,105 @@
    "impact": "보통",
    "forecast": "",
    "previous": "4.3%",
+   "actual": ""
+  },
+  {
+   "key": "JPY|Bank Holiday|2026-11-23",
+   "time": "2026-11-23T09:00:00+09:00",
+   "country": "일본",
+   "title": "휴장 (공휴일)",
+   "title_en": "Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
+   "actual": ""
+  },
+  {
+   "key": "USD|Flash Manufacturing PMI|2026-11-23",
+   "time": "2026-11-23T23:45:00+09:00",
+   "country": "미국",
+   "title": "제조업 PMI 속보치",
+   "title_en": "Flash Manufacturing PMI",
+   "impact": "보통",
+   "forecast": "54.5",
+   "previous": "56.0",
+   "actual": ""
+  },
+  {
+   "key": "USD|Flash Services PMI|2026-11-23",
+   "time": "2026-11-23T23:45:00+09:00",
+   "country": "미국",
+   "title": "서비스업 PMI 속보치",
+   "title_en": "Flash Services PMI",
+   "impact": "보통",
+   "forecast": "55.6",
+   "previous": "57.9",
+   "actual": ""
+  },
+  {
+   "key": "USD|CB Consumer Confidence|2026-11-25",
+   "time": "2026-11-25T00:00:00+09:00",
+   "country": "미국",
+   "title": "콘퍼런스보드 소비자신뢰",
+   "title_en": "CB Consumer Confidence",
+   "impact": "보통",
+   "forecast": "92.1",
+   "previous": "91.7",
+   "actual": ""
+  },
+  {
+   "key": "USD|Core PCE Price Index m/m|2026-11-25",
+   "time": "2026-11-25T22:30:00+09:00",
+   "country": "미국",
+   "title": "근원 PCE 물가 (전월 대비)",
+   "title_en": "Core PCE Price Index m/m",
+   "impact": "높음",
+   "forecast": "0.3%",
+   "previous": "0.3%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Prelim GDP q/q|2026-11-25",
+   "time": "2026-11-25T22:30:00+09:00",
+   "country": "미국",
+   "title": "GDP 잠정치 (전분기 대비)",
+   "title_en": "Prelim GDP q/q",
+   "impact": "높음",
+   "forecast": "3.5%",
+   "previous": "3.4%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Prelim GDP Price Index q/q|2026-11-25",
+   "time": "2026-11-25T22:30:00+09:00",
+   "country": "미국",
+   "title": "예비 GDP Price Index (전분기 대비)",
+   "title_en": "Prelim GDP Price Index q/q",
+   "impact": "보통",
+   "forecast": "2.3%",
+   "previous": "2.3%",
+   "actual": ""
+  },
+  {
+   "key": "USD|Unemployment Claims|2026-11-25",
+   "time": "2026-11-25T22:30:00+09:00",
+   "country": "미국",
+   "title": "주간 신규 실업수당 청구",
+   "title_en": "Unemployment Claims",
+   "impact": "보통",
+   "forecast": "201K",
+   "previous": "203K",
+   "actual": ""
+  },
+  {
+   "key": "USD|Bank Holiday|2026-11-26",
+   "time": "2026-11-26T22:00:00+09:00",
+   "country": "미국",
+   "title": "휴장 (공휴일)",
+   "title_en": "Bank Holiday",
+   "impact": "휴일",
+   "forecast": "",
+   "previous": "",
    "actual": ""
   }
  ]
