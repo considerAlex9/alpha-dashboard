@@ -1,29 +1,7 @@
 {
- "captured_at": "2026-11-23T19:08:03.614912+09:00",
+ "captured_at": "2026-11-24T08:07:03.232772+09:00",
  "source": "Forex Factory 주간 일정",
  "events": [
-  {
-   "key": "USD|Core PPI m/m|2026-11-13",
-   "time": "2026-11-13T22:30:00+09:00",
-   "country": "미국",
-   "title": "근원 생산자물가 (전월 대비)",
-   "title_en": "Core PPI m/m",
-   "impact": "높음",
-   "forecast": "0.3%",
-   "previous": "0.7%",
-   "actual": ""
-  },
-  {
-   "key": "USD|PPI m/m|2026-11-13",
-   "time": "2026-11-13T22:30:00+09:00",
-   "country": "미국",
-   "title": "생산자물가 (전월 대비)",
-   "title_en": "PPI m/m",
-   "impact": "높음",
-   "forecast": "0.4%",
-   "previous": "1.3%",
-   "actual": ""
-  },
   {
    "key": "USD|Fed Chairman Warsh Speaks|2026-11-17",
    "time": "2026-11-17T02:00:00+09:00",
@@ -196,7 +174,7 @@
    "title": "콘퍼런스보드 소비자신뢰",
    "title_en": "CB Consumer Confidence",
    "impact": "보통",
-   "forecast": "92.1",
+   "forecast": "92.4",
    "previous": "91.7",
    "actual": ""
   },
