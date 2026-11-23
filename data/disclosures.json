@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-23T16:32:08.381647+09:00",
+ "captured_at": "2026-11-23T19:07:11.488612+09:00",
  "days": 60,
  "items": [
   {
@@ -47,8 +47,104 @@
    "important": false,
    "correction": false,
    "date": "2026-11-23",
+   "filer": "황인찬",
+   "rcept_no": "20261123000359"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-23",
+   "filer": "조영진",
+   "rcept_no": "20261123000352"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-23",
+   "filer": "이재선",
+   "rcept_no": "20261123000346"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-23",
+   "filer": "윤여완",
+   "rcept_no": "20261123000339"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-23",
+   "filer": "안소연",
+   "rcept_no": "20261123000328"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-23",
+   "filer": "서상원",
+   "rcept_no": "20261123000316"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-23",
+   "filer": "Kevin Sharp",
+   "rcept_no": "20261123000312"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-23",
    "filer": "김동중",
    "rcept_no": "20261123000306"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "주요사항보고서(자기주식취득결정)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-23",
+   "filer": "한화오션",
+   "rcept_no": "20261123000302"
   },
   {
    "code": "039490",
