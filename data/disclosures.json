@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-24T16:36:25.942108+09:00",
+ "captured_at": "2026-11-24T19:02:09.186498+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,18 @@
    "date": "2026-11-24",
    "filer": "OCI홀딩스",
    "rcept_no": "20261124800539"
+  },
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-24",
+   "filer": "J.P.MORGANSECURITIESPLC",
+   "rcept_no": "20261124000533"
   },
   {
    "code": "039490",
