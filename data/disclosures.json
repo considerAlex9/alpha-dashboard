@@ -1,7 +1,43 @@
 {
- "captured_at": "2026-11-24T13:16:49.834455+09:00",
+ "captured_at": "2026-11-24T14:13:46.631688+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "122640",
+   "name": "예스티",
+   "side": "short",
+   "title": "단일판매ㆍ공급계약체결(자율공시)",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-24",
+   "filer": "예스티",
+   "rcept_no": "20261124900509"
+  },
+  {
+   "code": "010060",
+   "name": "OCI홀딩스",
+   "side": "long",
+   "title": "투자판단관련주요경영사항(자회사의 주요경영사항)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-24",
+   "filer": "OCI홀딩스",
+   "rcept_no": "20261124800539"
+  },
+  {
+   "code": "006400",
+   "name": "삼성SDI",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-24",
+   "filer": "박정준",
+   "rcept_no": "20261124000223"
+  },
   {
    "code": "267260",
    "name": "HD현대일렉트릭",
