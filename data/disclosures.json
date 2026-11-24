@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-24T08:06:16.010878+09:00",
+ "captured_at": "2026-11-24T09:16:25.348008+09:00",
  "days": 60,
  "items": [
   {
@@ -625,18 +625,6 @@
    "date": "2026-11-19",
    "filer": "KWON SANG HOON",
    "rcept_no": "20261119000070"
-  },
-  {
-   "code": "437730",
-   "name": "삼현",
-   "side": "short",
-   "title": "[기재정정]단일판매ㆍ공급계약체결(자율공시)",
-   "category": "계약·수주",
-   "important": true,
-   "correction": true,
-   "date": "2026-11-18",
-   "filer": "삼현",
-   "rcept_no": "20261118900252"
   },
   {
    "code": "051600",
@@ -1297,18 +1285,6 @@
    "date": "2026-11-13",
    "filer": "DL이앤씨",
    "rcept_no": "20261113800306"
-  },
-  {
-   "code": "437730",
-   "name": "삼현",
-   "side": "short",
-   "title": "분기보고서 (2026.09)",
-   "category": "정기보고서",
-   "important": false,
-   "correction": false,
-   "date": "2026-11-13",
-   "filer": "삼현",
-   "rcept_no": "20261113001572"
   },
   {
    "code": "039490",
@@ -2209,18 +2185,6 @@
    "date": "2026-11-09",
    "filer": "파두",
    "rcept_no": "20261109900367"
-  },
-  {
-   "code": "437730",
-   "name": "삼현",
-   "side": "short",
-   "title": "[기재정정]전환청구권행사 (제1회차)",
-   "category": "기타",
-   "important": false,
-   "correction": true,
-   "date": "2026-11-09",
-   "filer": "삼현",
-   "rcept_no": "20261109900298"
   },
   {
    "code": "062040",
@@ -3541,18 +3505,6 @@
    "date": "2026-10-30",
    "filer": "디앤디파마텍",
    "rcept_no": "20261030901174"
-  },
-  {
-   "code": "437730",
-   "name": "삼현",
-   "side": "short",
-   "title": "전환청구권행사 (제1회차)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-30",
-   "filer": "삼현",
-   "rcept_no": "20261030901154"
   },
   {
    "code": "353200",
@@ -6781,18 +6733,6 @@
    "date": "2026-10-08",
    "filer": "박정원",
    "rcept_no": "20261008000518"
-  },
-  {
-   "code": "437730",
-   "name": "삼현",
-   "side": "short",
-   "title": "주요사항보고서(자기전환사채만기전취득결정)",
-   "category": "자금조달·희석",
-   "important": true,
-   "correction": false,
-   "date": "2026-10-08",
-   "filer": "삼현",
-   "rcept_no": "20261008000472"
   },
   {
    "code": "000500",
