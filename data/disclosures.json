@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-24T09:16:25.348008+09:00",
+ "captured_at": "2026-11-24T11:12:25.762489+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-24",
+   "filer": "김관중",
+   "rcept_no": "20261124000102"
+  },
+  {
+   "code": "267260",
+   "name": "HD현대일렉트릭",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-24",
+   "filer": "이재웅",
+   "rcept_no": "20261124000101"
+  },
   {
    "code": "375500",
    "name": "DL이앤씨",
