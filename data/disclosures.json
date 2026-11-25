@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-25T15:17:01.132765+09:00",
+ "captured_at": "2026-11-25T16:06:42.086258+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "연결재무제표기준영업실적등에대한전망(공정공시)",
+   "category": "실적",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "파두",
+   "rcept_no": "20261125900365"
+  },
   {
    "code": "064350",
    "name": "현대로템",
@@ -25,6 +37,66 @@
    "date": "2026-11-25",
    "filer": "한화오션",
    "rcept_no": "20261125800147"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "하나금융지주",
+   "rcept_no": "20261125000575"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "특수관계인에대한자산양도",
+   "category": "합병·분할",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261125000535"
+  },
+  {
+   "code": "012450",
+   "name": "한화에어로스페이스",
+   "side": "short",
+   "title": "특수관계인에대한출자",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "한화에어로스페이스",
+   "rcept_no": "20261125000526"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "키움증권",
+   "rcept_no": "20261125000523"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "키움증권",
+   "rcept_no": "20261125000473"
   },
   {
    "code": "039490",
@@ -5329,30 +5401,6 @@
    "date": "2026-10-23",
    "filer": "대덕전자",
    "rcept_no": "20261023800826"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "기업설명회(IR)개최(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-23",
-   "filer": "키움증권",
-   "rcept_no": "20261023800736"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "결산실적공시예고(안내공시)",
-   "category": "기타",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-23",
-   "filer": "키움증권",
-   "rcept_no": "20261023800734"
   },
   {
    "code": "086790",
