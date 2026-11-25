@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-25T12:16:16.516932+09:00",
+ "captured_at": "2026-11-25T13:12:30.620970+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "임시주주총회결과",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "현대로템",
+   "rcept_no": "20261125800220"
+  },
   {
    "code": "042660",
    "name": "한화오션",
@@ -13,6 +25,18 @@
    "date": "2026-11-25",
    "filer": "한화오션",
    "rcept_no": "20261125800147"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "주요사항보고서(자기주식처분결정)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "현대로템",
+   "rcept_no": "20261125000244"
   },
   {
    "code": "039490",
