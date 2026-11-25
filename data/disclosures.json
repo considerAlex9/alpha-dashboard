@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-25T09:15:55.801273+09:00",
+ "captured_at": "2026-11-25T10:16:19.730621+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "키움증권",
+   "rcept_no": "20261125000067"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "NAVER",
+   "rcept_no": "20261125000041"
+  },
   {
    "code": "122640",
    "name": "예스티",
@@ -5605,18 +5629,6 @@
    "date": "2026-10-22",
    "filer": "삼성바이오로직스",
    "rcept_no": "20261022000473"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-22",
-   "filer": "키움증권",
-   "rcept_no": "20261022000126"
   },
   {
    "code": "064350",
