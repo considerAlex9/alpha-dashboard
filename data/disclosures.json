@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-25T16:12:02.333275+09:00",
+ "captured_at": "2026-11-25T16:37:10.810623+09:00",
  "days": 60,
  "items": [
   {
@@ -37,6 +37,18 @@
    "date": "2026-11-25",
    "filer": "한화오션",
    "rcept_no": "20261125800147"
+  },
+  {
+   "code": "003160",
+   "name": "디아이",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "J.P.MORGANSECURITIESPLC",
+   "rcept_no": "20261125000641"
   },
   {
    "code": "086790",
