@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-25T16:37:10.810623+09:00",
+ "captured_at": "2026-11-25T19:06:28.003732+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "028300",
+   "name": "HLB",
+   "side": "short",
+   "title": "기업설명회(IR)개최",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "HLB",
+   "rcept_no": "20261125900706"
+  },
   {
    "code": "440110",
    "name": "파두",
@@ -13,6 +25,18 @@
    "date": "2026-11-25",
    "filer": "파두",
    "rcept_no": "20261125900365"
+  },
+  {
+   "code": "042660",
+   "name": "한화오션",
+   "side": "short",
+   "title": "투자판단관련주요경영사항",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "한화오션",
+   "rcept_no": "20261125800748"
   },
   {
    "code": "064350",
@@ -37,6 +61,42 @@
    "date": "2026-11-25",
    "filer": "한화오션",
    "rcept_no": "20261125800147"
+  },
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "최석진",
+   "rcept_no": "20261125000717"
+  },
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "조재근",
+   "rcept_no": "20261125000707"
+  },
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "박종현",
+   "rcept_no": "20261125000692"
   },
   {
    "code": "003160",
