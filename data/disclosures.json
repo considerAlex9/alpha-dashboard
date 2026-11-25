@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-25T13:12:30.620970+09:00",
+ "captured_at": "2026-11-25T14:17:51.821009+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,66 @@
    "date": "2026-11-25",
    "filer": "한화오션",
    "rcept_no": "20261125800147"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "키움증권",
+   "rcept_no": "20261125000350"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "투자설명서(일괄신고)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "키움증권",
+   "rcept_no": "20261125000344"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "키움증권",
+   "rcept_no": "20261125000282"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(기타파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "키움증권",
+   "rcept_no": "20261125000271"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-25",
+   "filer": "키움증권",
+   "rcept_no": "20261125000269"
   },
   {
    "code": "064350",
@@ -5499,18 +5559,6 @@
    "rcept_no": "20261023000378"
   },
   {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-23",
-   "filer": "키움증권",
-   "rcept_no": "20261023000278"
-  },
-  {
    "code": "086790",
    "name": "하나금융지주",
    "side": "short",
@@ -5521,42 +5569,6 @@
    "date": "2026-10-23",
    "filer": "하나금융지주",
    "rcept_no": "20261023000244"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-23",
-   "filer": "키움증권",
-   "rcept_no": "20261023000177"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-23",
-   "filer": "키움증권",
-   "rcept_no": "20261023000099"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-23",
-   "filer": "키움증권",
-   "rcept_no": "20261023000093"
   },
   {
    "code": "086790",
@@ -5581,18 +5593,6 @@
    "date": "2026-10-23",
    "filer": "하나금융지주",
    "rcept_no": "20261023000086"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-23",
-   "filer": "키움증권",
-   "rcept_no": "20261023000084"
   },
   {
    "code": "086790",
