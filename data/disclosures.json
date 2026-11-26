@@ -1,7 +1,31 @@
 {
- "captured_at": "2026-11-26T13:12:22.617687+09:00",
+ "captured_at": "2026-11-26T14:14:20.221053+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "단일판매ㆍ공급계약체결",
+   "category": "계약·수주",
+   "important": true,
+   "correction": false,
+   "date": "2026-11-26",
+   "filer": "파두",
+   "rcept_no": "20261126900276"
+  },
+  {
+   "code": "095610",
+   "name": "테스",
+   "side": "long",
+   "title": "주식소각결정",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-26",
+   "filer": "테스",
+   "rcept_no": "20261126900254"
+  },
   {
    "code": "006400",
    "name": "삼성SDI",
@@ -13,6 +37,42 @@
    "date": "2026-11-26",
    "filer": "삼성SDI",
    "rcept_no": "20261126800186"
+  },
+  {
+   "code": "030200",
+   "name": "KT",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(대표회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-26",
+   "filer": "케이티",
+   "rcept_no": "20261126000325"
+  },
+  {
+   "code": "006400",
+   "name": "삼성SDI",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-26",
+   "filer": "유희은",
+   "rcept_no": "20261126000319"
+  },
+  {
+   "code": "095610",
+   "name": "테스",
+   "side": "long",
+   "title": "주요사항보고서(자기주식취득신탁계약체결결정)",
+   "category": "자사주·배당",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-26",
+   "filer": "테스",
+   "rcept_no": "20261126000283"
   },
   {
    "code": "005935",
