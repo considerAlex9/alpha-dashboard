@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-26T15:12:34.765215+09:00",
+ "captured_at": "2026-11-26T16:02:21.197932+09:00",
  "days": 60,
  "items": [
   {
@@ -27,6 +27,18 @@
    "rcept_no": "20261126900254"
   },
   {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "유형자산취득결정",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-26",
+   "filer": "두산",
+   "rcept_no": "20261126800446"
+  },
+  {
    "code": "006400",
    "name": "삼성SDI",
    "side": "long",
@@ -37,6 +49,30 @@
    "date": "2026-11-26",
    "filer": "삼성SDI",
    "rcept_no": "20261126800186"
+  },
+  {
+   "code": "086790",
+   "name": "하나금융지주",
+   "side": "short",
+   "title": "[기재정정]일괄신고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-26",
+   "filer": "하나금융지주",
+   "rcept_no": "20261126000627"
+  },
+  {
+   "code": "095340",
+   "name": "ISC",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-26",
+   "filer": "ISC",
+   "rcept_no": "20261126000558"
   },
   {
    "code": "039490",
