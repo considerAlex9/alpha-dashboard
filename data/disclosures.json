@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-26T08:02:44.222696+09:00",
+ "captured_at": "2026-11-26T09:12:10.698014+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "047050",
+   "name": "포스코인터내셔널",
+   "side": "long",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-26",
+   "filer": "포스코인터내셔널",
+   "rcept_no": "20261126000008"
+  },
   {
    "code": "028300",
    "name": "HLB",
