@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-26T14:14:20.221053+09:00",
+ "captured_at": "2026-11-26T15:12:34.765215+09:00",
  "days": 60,
  "items": [
   {
@@ -37,6 +37,18 @@
    "date": "2026-11-26",
    "filer": "삼성SDI",
    "rcept_no": "20261126800186"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-26",
+   "filer": "키움증권",
+   "rcept_no": "20261126000392"
   },
   {
    "code": "030200",
@@ -5737,18 +5749,6 @@
    "date": "2026-10-23",
    "filer": "박만수",
    "rcept_no": "20261023000420"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "증권발행실적보고서",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-23",
-   "filer": "키움증권",
-   "rcept_no": "20261023000419"
   },
   {
    "code": "353200",
