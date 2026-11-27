@@ -1,7 +1,55 @@
 {
- "captured_at": "2026-11-27T08:06:46.234485+09:00",
+ "captured_at": "2026-11-27T09:12:21.993594+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "이응규",
+   "rcept_no": "20261127000031"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "김봉수",
+   "rcept_no": "20261127000021"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "김지훈",
+   "rcept_no": "20261127000008"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "이윤수",
+   "rcept_no": "20261127000007"
+  },
   {
    "code": "005935",
    "name": "삼성전자우",
