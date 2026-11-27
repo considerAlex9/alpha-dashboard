@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-27T10:13:07.083611+09:00",
+ "captured_at": "2026-11-27T12:16:14.538311+09:00",
  "days": 60,
  "items": [
   {
@@ -13,6 +13,42 @@
    "date": "2026-11-27",
    "filer": "DL이앤씨",
    "rcept_no": "20261127800183"
+  },
+  {
+   "code": "006400",
+   "name": "삼성SDI",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "김일학",
+   "rcept_no": "20261127000671"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "문창성",
+   "rcept_no": "20261127000388"
+  },
+  {
+   "code": "017670",
+   "name": "SK텔레콤",
+   "side": "long",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "SK텔레콤",
+   "rcept_no": "20261127000370"
   },
   {
    "code": "039490",
