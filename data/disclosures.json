@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-27T14:13:54.489788+09:00",
+ "captured_at": "2026-11-27T15:12:52.422892+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,42 @@
    "date": "2026-11-27",
    "filer": "DL이앤씨",
    "rcept_no": "20261127800183"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "키움증권",
+   "rcept_no": "20261127001302"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "하찬효",
+   "rcept_no": "20261127001284"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": true,
+   "date": "2026-11-27",
+   "filer": "이응규",
+   "rcept_no": "20261127001233"
   },
   {
    "code": "006400",
@@ -5293,18 +5329,6 @@
    "date": "2026-10-28",
    "filer": "키움증권",
    "rcept_no": "20261028000129"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-28",
-   "filer": "키움증권",
-   "rcept_no": "20261028000115"
   },
   {
    "code": "095340",
