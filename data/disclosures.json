@@ -1,7 +1,19 @@
 {
- "captured_at": "2026-11-27T13:16:05.685398+09:00",
+ "captured_at": "2026-11-27T14:13:54.489788+09:00",
  "days": 60,
  "items": [
+  {
+   "code": "064400",
+   "name": "LG씨엔에스",
+   "side": "long",
+   "title": "기업설명회(IR)개최(안내공시)",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "LG씨엔에스",
+   "rcept_no": "20261127800401"
+  },
   {
    "code": "375500",
    "name": "DL이앤씨",
@@ -13,6 +25,54 @@
    "date": "2026-11-27",
    "filer": "DL이앤씨",
    "rcept_no": "20261127800183"
+  },
+  {
+   "code": "006400",
+   "name": "삼성SDI",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "정찬윤",
+   "rcept_no": "20261127001023"
+  },
+  {
+   "code": "064350",
+   "name": "현대로템",
+   "side": "short",
+   "title": "대규모기업집단현황공시[분기별공시(개별회사용)]",
+   "category": "기타",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "현대로템",
+   "rcept_no": "20261127000985"
+  },
+  {
+   "code": "005935",
+   "name": "삼성전자우",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "김현진",
+   "rcept_no": "20261127000959"
+  },
+  {
+   "code": "440110",
+   "name": "파두",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(약식)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "J.P.MORGANSECURITIESPLC",
+   "rcept_no": "20261127000924"
   },
   {
    "code": "006400",
