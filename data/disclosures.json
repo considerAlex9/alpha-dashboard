@@ -1,5 +1,5 @@
 {
- "captured_at": "2026-11-27T15:12:52.422892+09:00",
+ "captured_at": "2026-11-27T16:06:09.211137+09:00",
  "days": 60,
  "items": [
   {
@@ -25,6 +25,102 @@
    "date": "2026-11-27",
    "filer": "DL이앤씨",
    "rcept_no": "20261127800183"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "키움증권",
+   "rcept_no": "20261127001618"
+  },
+  {
+   "code": "000150",
+   "name": "두산",
+   "side": "long",
+   "title": "주식등의대량보유상황보고서(일반)",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "박정원",
+   "rcept_no": "20261127001607"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "오성권",
+   "rcept_no": "20261127001600"
+  },
+  {
+   "code": "035420",
+   "name": "NAVER",
+   "side": "short",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "이종주",
+   "rcept_no": "20261127001578"
+  },
+  {
+   "code": "207940",
+   "name": "삼성바이오로직스",
+   "side": "long",
+   "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+   "category": "지분 변동",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "김슬기",
+   "rcept_no": "20261127001561"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "키움증권",
+   "rcept_no": "20261127001484"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "키움증권",
+   "rcept_no": "20261127001458"
+  },
+  {
+   "code": "039490",
+   "name": "키움증권",
+   "side": "short",
+   "title": "증권발행실적보고서",
+   "category": "증권 발행 서류",
+   "important": false,
+   "correction": false,
+   "date": "2026-11-27",
+   "filer": "키움증권",
+   "rcept_no": "20261127001442"
   },
   {
    "code": "039490",
@@ -5281,54 +5377,6 @@
    "date": "2026-10-28",
    "filer": "키움증권",
    "rcept_no": "20261028000178"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합증권-주가연계증권)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-28",
-   "filer": "키움증권",
-   "rcept_no": "20261028000176"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-28",
-   "filer": "키움증권",
-   "rcept_no": "20261028000140"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "일괄신고추가서류(파생결합사채-주가연계파생결합사채)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-28",
-   "filer": "키움증권",
-   "rcept_no": "20261028000131"
-  },
-  {
-   "code": "039490",
-   "name": "키움증권",
-   "side": "short",
-   "title": "투자설명서(일괄신고)",
-   "category": "증권 발행 서류",
-   "important": false,
-   "correction": false,
-   "date": "2026-10-28",
-   "filer": "키움증권",
-   "rcept_no": "20261028000129"
   },
   {
    "code": "095340",

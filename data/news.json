@@ -1,6 +1,152 @@
 {
  "editions": [
   {
+   "id": "2026-11-27-post",
+   "name": "장마감 브리핑",
+   "start": "2026-11-27T09:00:00+09:00",
+   "end": "2026-11-27T16:00:00+09:00",
+   "final": false,
+   "created_at": "2026-11-27T16:06:53.176746+09:00",
+   "post_count": 12,
+   "metrics": [
+    {
+     "label": "국고채 3년물",
+     "value": "3.687%",
+     "chg": "+7.5bp"
+    },
+    {
+     "label": "국고채 10년물",
+     "value": "3.835%",
+     "chg": "+6.0bp"
+    },
+    {
+     "label": "코스피",
+     "value": "4,915.68pt",
+     "chg": "+4.34%"
+    },
+    {
+     "label": "코스닥",
+     "value": "708.99pt",
+     "chg": "+8.13%"
+    }
+   ],
+   "cards": [
+    {
+     "title": "신약 개발 및 기술이전 기대감에 펩트론(+15.7%), 알테오젠(+9.40%) 등 제약 업종 강세",
+     "bullets": [
+      "국내 증시는 증안펀드 기대와 외국인 매수세에 급등 마감"
+     ],
+     "numbers": [
+      {
+       "label": "코스피",
+       "value": "4,915.68pt",
+       "chg": "+4.34%"
+      },
+      {
+       "label": "코스닥",
+       "value": "708.99pt",
+       "chg": "+8.13%"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29426",
+     "link_label": "텔레그램 원문",
+     "topic": "국내 증시",
+     "sources": [],
+     "time": "2026-11-27T15:50:51+09:00",
+     "rank": 0
+    },
+    {
+     "title": "국고채 10년물 3.835% +6.0bp",
+     "bullets": [
+      "국고채 시장은 증시 급등 영향으로 약세 마감"
+     ],
+     "numbers": [
+      {
+       "label": "국고채 3년물",
+       "value": "3.687%",
+       "chg": "+7.5bp"
+      },
+      {
+       "label": "국고채 10년물",
+       "value": "3.835%",
+       "chg": "+6.0bp"
+      }
+     ],
+     "link": "https://t.me/hanwhastrategy/29425",
+     "link_label": "텔레그램 원문",
+     "topic": "채권",
+     "sources": [],
+     "time": "2026-11-27T15:50:37+09:00",
+     "rank": 0
+    },
+    {
+     "title": "전기전자 섹터 수급현황",
+     "bullets": [
+      "별다른 이슈 없이(전날 미장 휴장) 외인 1조 매수는 오랫만인듯",
+      "혹시 김용범(전 정책실장 말고 메리츠 부회장님) 효과?",
+      "그외에 증안펀드 기대, 삼전 배당금 수취 등"
+     ],
+     "numbers": [],
+     "link": "https://t.me/cahier_de_market/11614",
+     "link_label": "텔레그램 원문",
+     "topic": null,
+     "sources": [],
+     "time": "2026-11-27T13:30:53+09:00",
+     "rank": 2
+    },
+    {
+     "title": "다음주 테크 주요 일정",
+     "bullets": [
+      "AWS re:Invent 2026 개막",
+      "23:35 엔비디아 UBS 콘퍼런스",
+      "00:15 마이크론 UBS 콘퍼런스",
+      "01:30 AWS 맷 가먼·샘 올트먼 키노트",
+      "01:35 코어위브·램리서치 UBS 콘퍼런스",
+      "02:55 AMD UBS 콘퍼런스",
+      "03:35 델 UBS 콘퍼런스"
+     ],
+     "numbers": [],
+     "link": "https://t.me/cahier_de_market/11611",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-11-27T09:30:45+09:00",
+     "rank": 2
+    },
+    {
+     "title": "4. 2028년 ASP 40~50% 하락 민감도 분석 (SK하이닉스)",
+     "bullets": [
+      "DRAM/NAND ASP를 각각 40%/50% 낮춰도 영업이익 180조 원, EPS 19만 원 유지 (EPS 추정치 하향폭은 50%대 후반)",
+      "2028E P/E 6배 vs 현재 3배",
+      "DRAM OPM은 현재 80%+ → 50~60%로 하락에 그침, 과거 다운턴 대비 월등히 높은 수익성 (HBM, LTA 효과)",
+      "삼성전자도 유사한 민감도"
+     ],
+     "numbers": [],
+     "link": "https://t.me/cahier_de_market/11610",
+     "link_label": "텔레그램 원문",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-11-27T09:14:22+09:00",
+     "rank": 2
+    },
+    {
+     "title": "GF증권, 디램 추정치 하향",
+     "bullets": [
+      "그리고 28년 스트레스 테스트 (bear case 기준 asp -75%)"
+     ],
+     "numbers": [],
+     "link": "https://wccftech.com/analyst-jeff-pu-says-dram-prices-could-halve-in-2028-as-the-ai-memory-boom-cools-but-cheaper-ram-isnt-coming-next-year/amp/",
+     "link_label": "wccftech.com",
+     "topic": "반도체·AI",
+     "sources": [],
+     "time": "2026-11-27T15:21:14+09:00",
+     "rank": 3
+    }
+   ],
+   "refs": [],
+   "errors": []
+  },
+  {
    "id": "2026-11-27-pre",
    "name": "장전 브리핑",
    "start": "2026-11-26T19:00:00+09:00",
@@ -2537,176 +2683,7 @@
    ],
    "refs": [],
    "errors": []
-  },
-  {
-   "id": "2026-11-20-post",
-   "name": "장마감 브리핑",
-   "start": "2026-11-20T09:00:00+09:00",
-   "end": "2026-11-20T19:00:00+09:00",
-   "final": true,
-   "created_at": "2026-11-20T19:03:02.654302+09:00",
-   "post_count": 11,
-   "metrics": [
-    {
-     "label": "국고채 3년물",
-     "value": "3.645%",
-     "chg": "-7.1bp"
-    },
-    {
-     "label": "국고채 10년물",
-     "value": "3.856%",
-     "chg": "-8.4bp"
-    },
-    {
-     "label": "코스피",
-     "value": "4,869.96pt",
-     "chg": "-5.21%"
-    },
-    {
-     "label": "코스닥",
-     "value": "645.68pt",
-     "chg": "-5.71%"
-    }
-   ],
-   "cards": [
-    {
-     "title": "원/달러 환율: 1,336.2원 (+6.2원), 국고채 3년물: 3.642% (-7.4bp)",
-     "bullets": [
-      "코스피는 약세 마감. AMD의 대중국 수출 통제 위반 의혹에 AI 규제·순환금융 우려 재부각. 외국인·기관 동반 매도에 4,900p선 하회",
-      "코스닥은 약세 마감. 위험회피 심리 확대되며 소부장·2차전지 중심 낙폭 확대. 바이오 및 게임·엔터 등 중국 소비주는 상대적 선방",
-      "코스피: 외국인 -11,335억원, 개인 +15,952억원, 기관 -9,505억원(16시 KRX 기준)",
-      "코스피 업종: 기계·장비(-7.86%), 통신(-7.78%), 전기·전자(-6.57%) 등 약세",
-      "특징주: HD건설기계(-12.81%)는 미·중·러 정상회담의 우크라이나 종전 성과 부재와 회담 직후 러시아의 키이우 공격 재개 소식에 급락"
-     ],
-     "numbers": [
-      {
-       "label": "코스피",
-       "value": "4,869.96pt",
-       "chg": "-5.21%"
-      },
-      {
-       "label": "코스닥",
-       "value": "645.68pt",
-       "chg": "-5.71%"
-      }
-     ],
-     "link": "https://t.me/strategy_kis/14562",
-     "link_label": "텔레그램 원문",
-     "topic": "국내 증시",
-     "sources": [],
-     "time": "2026-11-20T16:52:21+09:00",
-     "rank": 0
-    },
-    {
-     "title": "외국인과 기관의 대규모 매도세에 개인 순매수에도 코스피 5,000pt 하회",
-     "bullets": [
-      "국내 증시는 외국인 및 기관 동반 매도세에 급락 마감"
-     ],
-     "numbers": [
-      {
-       "label": "코스피",
-       "value": "4,869.96pt",
-       "chg": "-5.21%"
-      },
-      {
-       "label": "코스닥",
-       "value": "645.68pt",
-       "chg": "-5.71%"
-      }
-     ],
-     "link": "https://t.me/hanwhastrategy/29396",
-     "link_label": "텔레그램 원문",
-     "topic": "국내 증시",
-     "sources": [],
-     "time": "2026-11-20T15:55:43+09:00",
-     "rank": 0
-    },
-    {
-     "title": "국고채 10년물 3.856% -8.4bp",
-     "bullets": [
-      "국고채 시장은 증시와 대외금리 영향으로 강세 마감"
-     ],
-     "numbers": [
-      {
-       "label": "국고채 3년물",
-       "value": "3.645%",
-       "chg": "-7.1bp"
-      },
-      {
-       "label": "국고채 10년물",
-       "value": "3.856%",
-       "chg": "-8.4bp"
-      }
-     ],
-     "link": "https://t.me/hanwhastrategy/29395",
-     "link_label": "텔레그램 원문",
-     "topic": "채권",
-     "sources": [],
-     "time": "2026-11-20T15:55:33+09:00",
-     "rank": 0
-    },
-    {
-     "title": "BAAJA #인허가 #전력인프라 #데이터센터",
-     "bullets": [
-      "미국 상원은 11월 19일 BAAJA 법안을 찬성 62표, 반대 33표로 통과",
-      "환경심사 기한 단축, 송전망 건설 촉진, 연방기관의 기존 허가 철회 권한 제한 등이 핵심",
-      "초당적정책센터에 따르면 20MW 이상 신규 데이터센터는 전력공급을 위해 건설되는 인프라의 추가 비용 전액을 부담하도록 규정",
-      "환경단체와 일부 원주민 단체는 환경심사 및 협의 절차 완화에 반대"
-     ],
-     "numbers": [],
-     "link": "https://www.nbcnews.com/politics/congress/senate-passes-sweeping-bill-simplifying-permitting-rules-build-america-rcna610196",
-     "link_label": "nbcnews.com",
-     "topic": null,
-     "sources": [],
-     "time": "2026-11-20T13:33:08+09:00",
-     "rank": 2
-    },
-    {
-     "title": "James E. Thorne",
-     "bullets": [
-      "1966년 이후 평균인 2.4%를 밑돌고, 1996~2019년 평균인 0.2%에 가깝다",
-      "유가에 대한 공포가 잦아들자, 연준은 이제 AI에 관한 일화적 사례들로 논점을 돌렸다",
-      "이런 지표가 나오는 상황에서 금리를 올리는 것은 경계심의 발로가 아니다"
-     ],
-     "numbers": [],
-     "link": "https://x.com/DrJStrategy/status/2123535715262980567?a=D70jbdc8U5TdDAaCwM4&s=19",
-     "link_label": "x.com",
-     "topic": "경제지표",
-     "sources": [],
-     "time": "2026-11-20T09:22:23+09:00",
-     "rank": 2
-    },
-    {
-     "title": "두바이유가 약 88달러이니, 일부 이라크산 원유는 이제 배럴당 약 55달러에 공급되고 있다는 뜻임",
-     "bullets": [
-      "이라크가 기준유 가격보다 배럴당 29~33달러 할인된 가격에 다시 원유를 내놓고 있음",
-      "이처럼 큰 할인 폭 자체는 새로운 일이 아닙니다"
-     ],
-     "numbers": [],
-     "link": "https://x.com/JavierBlas/status/2123491957507023283?a=icElprwRjNIlu-mdb-c&s=19",
-     "link_label": "x.com",
-     "topic": "유가·원자재",
-     "sources": [],
-     "time": "2026-11-20T09:28:11+09:00",
-     "rank": 3
-    },
-    {
-     "title": "미국 기술주 밸류에이션이 시장 조정 속에 2020년 3월 이후 최저 수준에 도달함",
-     "bullets": [
-      "S&P 500 Info Tech Index의 주가수익비율(P/E 비율)은 현재 2020년 3월 20일 이후 최저인 16.4배 수준임"
-     ],
-     "numbers": [],
-     "link": "https://x.com/kobeissiletter/status/2123506602015887795?a=wcutOC_g_uTFVigFsW8&s=46",
-     "link_label": "x.com",
-     "topic": null,
-     "sources": [],
-     "time": "2026-11-20T09:07:35+09:00",
-     "rank": 3
-    }
-   ],
-   "refs": [],
-   "errors": []
   }
  ],
- "checked_at": "2026-11-27T15:13:21.892898+09:00"
+ "checked_at": "2026-11-27T16:06:53.176746+09:00"
 }
